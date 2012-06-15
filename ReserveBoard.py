@@ -13,14 +13,13 @@ class ReserveBoard(Tkinter.Frame):
 
         self.parent = parent
 
-        self.margin = 4
-
+        self.flippedDisplay = 0
         self.pieceWidth = pieceWidth
         self.pieceHeight = pieceHeight
-        self.width = 2*pieceWidth + 2*self.margin
-        self.height = 8*pieceHeight + 2*self.margin
+        self.width = 2*pieceWidth
+        self.height = 8*pieceHeight
 
-        self.canvas = Tkinter.Canvas(parent, width=self.width, height=self.height)
+        self.canvas = Tkinter.Canvas(self, width=self.width, height=self.height)
 
         self.pieces = {'P':1, 'N':1, 'R':1, 'B':1, 'Q':1, 'K':0, \
                        'p':1, 'n':1, 'r':1, 'b':1, 'q':1, 'k':0}
@@ -44,7 +43,7 @@ class ReserveBoard(Tkinter.Frame):
 
             imgPath = './images/' + imgF
 
-            print 'setting self.bitmaps[%s] = %s' % (key, imgPath)
+            #print 'setting self.bitmaps[%s] = %s' % (key, imgPath)
             self.bitmaps[key] = Tkinter.PhotoImage(file=imgPath)
 
 
@@ -69,7 +68,7 @@ class ReserveBoard(Tkinter.Frame):
                           'K':'kl', 'k':'kd'
                           }
 
-        square = ['d', 'l'][square]
+        square = 'l'
 
         if p == ' ':
             return self.bitmaps[square + 'sq48']
@@ -79,43 +78,56 @@ class ReserveBoard(Tkinter.Frame):
 
             return self.bitmaps[fenPieceToImg[p] + square + '48']
 
+    def flip(self):
+        print "ReserveBoard is flipped!"
+        self.flippedDisplay = 1
+
     def draw(self):
         w = self.pieceWidth
-        xCoord = self.margin + w/2
-        yCoord = self.margin + w/2
+        xCoord = w/2
+        yCoord = w/2
 
         pieceToCoords = {}
-        pieceToCoords['P'] = [xCoord, yCoord]
-        pieceToCoords['B'] = [xCoord + w, yCoord]
-        pieceToCoords['N'] = [xCoord, yCoord + w]
-        pieceToCoords['R'] = [xCoord + w, yCoord + w]
-        pieceToCoords['Q'] = [xCoord, yCoord + 2*w]
-        pieceToCoords['K'] = [xCoord + w, yCoord + 2*w]
 
-        yCoord = self.margin + w/2 + 4*w
-        pieceToCoords['p'] = [xCoord, yCoord]
-        pieceToCoords['b'] = [xCoord + w, yCoord]
-        pieceToCoords['n'] = [xCoord, yCoord + w]
-        pieceToCoords['r'] = [xCoord + w, yCoord + w]
-        pieceToCoords['q'] = [xCoord, yCoord + 2*w]
-        pieceToCoords['k'] = [xCoord + w, yCoord + 2*w]
-   
+        ptcSequence = 'pbnrqkPBNRQK'
+        if self.flippedDisplay:
+            ptcSequence = 'PBNRQKpbnrqk'
+
+        pieceToCoords[ptcSequence[0]] = [xCoord, yCoord]
+        pieceToCoords[ptcSequence[1]] = [xCoord + w, yCoord]
+        pieceToCoords[ptcSequence[2]] = [xCoord, yCoord + w]
+        pieceToCoords[ptcSequence[3]] = [xCoord + w, yCoord + w]
+        pieceToCoords[ptcSequence[4]] = [xCoord, yCoord + 2*w]
+        pieceToCoords[ptcSequence[5]] = [xCoord + w, yCoord + 2*w]
+
+        yCoord = w/2 + 4*w
+        pieceToCoords[ptcSequence[6]] = [xCoord, yCoord]
+        pieceToCoords[ptcSequence[7]] = [xCoord + w, yCoord]
+        pieceToCoords[ptcSequence[8]] = [xCoord, yCoord + w]
+        pieceToCoords[ptcSequence[9]] = [xCoord + w, yCoord + w]
+        pieceToCoords[ptcSequence[10]] = [xCoord, yCoord + 2*w]
+        pieceToCoords[ptcSequence[11]] = [xCoord + w, yCoord + 2*w]
+  
+
         self.canvas.delete(Tkinter.ALL)
 
         for (p,n) in self.pieces.iteritems():
-            if not n:
-                continue
 
             [x,y] = pieceToCoords[p]
 
-            print 'drawing a %s at (%d,%d)' % (p, x, y)
+            #print 'drawing a %s at (%d,%d)' % (p, x, y)
+
+            # if piece no present, print empty square
+            if not n:
+                p = ' '
 
             self.canvas.create_image( \
                 [x, y], \
                 image = self.fenPieceToBitmap(p, 0)
             )
-
-            self.canvas.create_text(x-w/2, y-w/2, text="%d" % n, anchor=Tkinter.NW)
+    
+            if n:
+                self.canvas.create_text(x-w/2, y-w/2, text="%d" % n, anchor=Tkinter.NW)
 
 def doTest():
     # root window

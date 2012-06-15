@@ -9,6 +9,8 @@ class ChessBoard(Tkinter.Frame):
 
         self.parent = parent
 
+        self.flippedDisplay = 0
+
         self.pieceWidth = pieceWidth
         self.pieceHeight = pieceHeight
         self.width = 8*pieceWidth
@@ -48,7 +50,7 @@ class ChessBoard(Tkinter.Frame):
 
             imgPath = './images/' + imgF
 
-            print 'setting self.bitmaps[%s] = %s' % (key, imgPath)
+            #print 'setting self.bitmaps[%s] = %s' % (key, imgPath)
             self.bitmaps[key] = Tkinter.PhotoImage(file=imgPath)
 
     def pushFEN(self, fen):
@@ -97,16 +99,24 @@ class ChessBoard(Tkinter.Frame):
 
             return self.bitmaps[fenPieceToImg[p] + square + '48']
 
+    def flip(self):
+        print "ChessBoard is flipped!"
+        self.flippedDisplay = 1
+
     def draw(self):
+        pieceGetSequence = range(64)
+        if self.flippedDisplay:
+            pieceGetSequence.reverse()
+
         for i in range(64):
             xCoord = self.pieceWidth/2 + self.pieceWidth * (i%8)
             yCoord = self.pieceHeight/2 + self.pieceHeight * (i/8)
 
-            print 'drawing a %s at (%d,%d)' % (self.state[i], xCoord, yCoord)
+            #print 'drawing a %s at (%d,%d)' % (self.state[i], xCoord, yCoord)
 
             self.stateImg[i] = self.canvas.create_image( \
                 [xCoord, yCoord], \
-                image = self.fenPieceToBitmap(self.state[i], (i + i/8)%2)
+                image = self.fenPieceToBitmap(self.state[pieceGetSequence[i]], (i + i/8 + 1)%2)
             )
 
 def doTest():
@@ -118,6 +128,8 @@ def doTest():
     cb = ChessBoard(root)
     cb.draw()
     cb.grid(row=0, column=0)
+    cb.flip()
+    cb.draw()
 
     # run
     root.mainloop() 

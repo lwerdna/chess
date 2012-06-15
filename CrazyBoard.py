@@ -21,33 +21,41 @@ class CrazyBoard(Tkinter.Frame):
         self.reserveBoard = ReserveBoard.ReserveBoard(self, pieceWidth, pieceHeight)
         self.reserveBoard.draw()
 
-        self.margin = 4;
-        self.width = self.margin + self.chessBoard.width + self.reserveBoard.width + self.margin
-        self.height = self.margin + self.chessBoard.height + self.margin
+        self.width = self.chessBoard.width + self.reserveBoard.width
+        self.height = self.chessBoard.height
 
         #self.chessBoard.pack(side=Tkinter.LEFT)
         #self.reserveBoard.pack(side=Tkinter.LEFT)
 
-        self.chessBoard.grid(row=0, column=0)
-        self.reserveBoard.grid(row=0, column=1)
+        self.chessBoard.grid(row=0, column=0, padx=2)
+        self.reserveBoard.grid(row=0, column=1, pady=2)
 
         #print self.chessBoard.grid_info()
         #print self.reserveBoard.grid_info()
-        w = Tkinter.Label(self, text="row0_column2", bg="red", fg="white")
-        w.grid(row=0, column=2)
-        w = Tkinter.Label(self, text="row1_column2", bg="red", fg="white")
-        w.grid(row=1, column=2)
-        w = Tkinter.Label(self, text="row2_column2", bg="red", fg="white")
-        w.grid(row=2, column=2)
+        #w = Tkinter.Label(self, text="row0_column2", bg="red", fg="white")
+        #w.grid(row=0, column=2)
+        #w = Tkinter.Label(self, text="row1_column2", bg="red", fg="white")
+        #w.grid(row=1, column=2)
+        #w = Tkinter.Label(self, text="row2_column2", bg="red", fg="white")
+        #w.grid(row=2, column=2)
         #w = Tkinter.Label(self, text="Red", bg="red", fg="white")
         #w.grid(row=0, column=0)
         #w = Tkinter.Label(self, text="Red", bg="red", fg="white")
         #w.grid(row=0, column=0)
+
+    def flip(self):
+        self.chessBoard.flip()
+        self.reserveBoard.flip()
+
+    def draw(self):
+        self.chessBoard.draw()
+        self.reserveBoard.draw()
 
 def doTest():
     # root window
     root = Tkinter.Tk()
     root.wm_title("Crazy Board Test\n")
+    root.configure(background = 'black')
 
     # reserve board on root
     cb = CrazyBoard(root)
