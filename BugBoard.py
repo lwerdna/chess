@@ -16,29 +16,57 @@ class BugBoard(Tkinter.Frame):
         self.parent = parent
 
         # two boards
-        self.leftBoard = CrazyBoard.CrazyBoard(self, pieceWidth, pieceHeight)
-        self.rightBoard = CrazyBoard.CrazyBoard(self, pieceWidth, pieceHeight)
-        self.rightBoard.flip()
-        self.rightBoard.draw()
+        self.boardA = CrazyBoard.CrazyBoard(self, pieceWidth, pieceHeight)
+        self.boardB = CrazyBoard.CrazyBoard(self, pieceWidth, pieceHeight)
 
-        self.width = 2*self.leftBoard.width
-        self.height = 2*self.leftBoard.height
+        # turn CrazyHouse transfer off on both boards (we direct pieces to different boards)
+        self.boardA.transferPieces = 0
+        self.boardB.transferPieces = 0
+        self.boardB.flip()
 
-        self.leftBoard.grid(row=0, column=0)
-        self.rightBoard.grid(row=0, column=1)
+        self.width = 2*self.boardA.width
+        self.height = 2*self.boardA.height
+
+        self.boardA.grid(row=0, column=0)
+        self.boardB.grid(row=0, column=1)
+
+    def execMoveSan(self, move):
+        # we strip off player indicator to decide which board to send the move to
+
+        pieceChangeColorMap = {'p':'P', 'P':'p'
+                               'r':'R', 'R':'r'
+                               'b':'B', 'B':'b'
+                               'n':'N', 'N':'n'
+                               'q':'Q', 'Q':'q'}
+
+        # we mainly thunk through to CrazyBoard
+        self.chessBoard.execMoveSan(move)
+
+        # but if transfering is enabled (normal CrazyHouse) we intercept:
+        if self.transferPiece:
+            # captures (to add to holdings)
+            m = re.find('x([prnbqkPRNBQK])', move)
+            if m:
+                self.reserveBoard.addPiece(pieceChangeColorMap(m.group(1)))
+        
+            # drops (to remove from holdings)
+            m = re.find('([prnbqkPRNBQK])@', move)
+            if m:
+                self.reserveBoard.removePiece(m.group(1))
+
 
     def setBFEN(self, bfen):
         [l,r] = bfen.split(' | ')
 
-        self.leftBoard.setFEN(l)
-        self.rightBoard.setFEN(r)
+        self.boardA.setFEN(l)
+        self.boardB.setFEN(r)
 
     def getBFEN(self, bfen):
-        return self.leftBoard.getFEN() + ' | ' + self.rightBoard.getFEN()
+        return self.boardA.getFEN() + ' | ' + self.boardB.getFEN()
 
     def draw(self):
-        self.leftBoard.draw()
-        self.rightBoard.draw()
+        self.boardA.draw()
+        self.boardB.draw()
 
 def doTest():
     # root window

@@ -14,6 +14,9 @@ class CrazyBoard(Tkinter.Frame):
 
         self.parent = parent
 
+        # on piece capture, send to other side
+        self.transferPieces = 1
+
         # left side
         self.chessBoard = ChessBoard.ChessBoard(self, pieceWidth, pieceHeight)
         self.chessBoard.draw()
@@ -81,6 +84,28 @@ class CrazyBoard(Tkinter.Frame):
         
         # reassemble, return
         return l + ' ' + r
+
+    def execMoveSan(self, move):
+        pieceChangeColorMap = {'p':'P', 'P':'p'
+                               'r':'R', 'R':'r'
+                               'b':'B', 'B':'b'
+                               'n':'N', 'N':'n'
+                               'q':'Q', 'Q':'q'}
+
+        # we mainly thunk through to ChessBoard
+        self.chessBoard.execMoveSan(move)
+
+        # but if transfering is enabled (normal CrazyHouse) we intercept:
+        if self.transferPieces:
+            # captures (to add to holdings)
+            m = re.find('x([prnbqkPRNBQK])', move)
+            if m:
+                self.reserveBoard.addPiece(pieceChangeColorMap(m.group(1)))
+        
+            # drops (to remove from holdings)
+            m = re.find('([prnbqkPRNBQK])@', move)
+            if m:
+                self.reserveBoard.removePiece(m.group(1))
 
     def flip(self):
         self.chessBoard.flip()

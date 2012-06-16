@@ -1,5 +1,7 @@
 #!/usr/bin/python
 
+# parse BPGN (game metadata + moves) into position strings
+
 import re
 import sys
 
