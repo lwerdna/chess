@@ -26,7 +26,9 @@ class ChessBoard(Tkinter.Frame):
         self.loadBitmaps() 
 
         # set up initial positions
-        self.pushFEN("rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1")
+        [self.FENactive, self.FENcastling, self.FENenpassant, self.FENhalfmove, self.FENfullmove] = \
+            [None, None, None, None, None]
+        self.setFEN("rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1")
 
         # the canvas can directly bind
         #self.canvas.bind("<Button-1>", canvasClick)
@@ -53,8 +55,8 @@ class ChessBoard(Tkinter.Frame):
             #print 'setting self.bitmaps[%s] = %s' % (key, imgPath)
             self.bitmaps[key] = Tkinter.PhotoImage(file=imgPath)
 
-    def pushFEN(self, fen):
-        [places, active, castling, enpassant, halfmove, fullmove] = \
+    def setFEN(self, fen):
+        [places, self.FENactive, self.FENcastling, self.FENenpassant, self.FENhalfmove, self.FENfullmove] = \
             re.split(' ', fen)
 
         # starts rank 8 (top, 8), goes down to rank 1 (bottom, 1)
@@ -77,7 +79,18 @@ class ChessBoard(Tkinter.Frame):
 
         # ok load that into the state
         self.state = list(full64)
-      
+     
+    def getFEN(self):
+        answer = ''
+
+        for i,p in enumerate(full64):
+            if p == ' ':
+                answer += 1
+            else:
+                answer += p
+
+        return answer + ' ' + ' '.join([self.FENplaces, self.FENactive, self.FENcastling, self.FENenpassant, self.FENhalfmove, self.FENfullmove])
+
     def fenPieceToBitmap(self, p, square):
         # square is either 'd'/0 (dark) or 'l'/1 (light)
 

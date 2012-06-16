@@ -1,0 +1,346 @@
+BPGN - Bughouse Portable Game Notation
+--------------------------------------
+
+Table of Contents
+
+1. Introduction
+   1.1 Reason for BPGN
+   1.2 Details of problem
+2. BPGN Standard 1.0 (DrZukhar)
+   2.1 Proposed solution
+   2.2 Sample game
+3. BPGN Standard 1.1 (WhoAmI)
+   3.1 Addition of commentary information 
+   3.2 Inserting variations of the main line
+   3.3 BFEN Extension
+4. BPGN Standard 1.2
+
+
+
+
+1. Introduction
+
+1.1 Reason for BPGN
+
+   The PGN standard has been very successful in providing a standard format
+   for regular chess games and positions. There are now hundreds of thousands
+   of games available in the PGN format. It is desirable to have a similar
+   system for bughouse games. This document contains a proposal for a BPGN 
+   format (Bughouse Portable Game Notation). This will enable the development 
+   of bughouse theory by allowing the recording and analysis of bughouse
+   matches.
+
+   This standard is intended primarily for games played on the internet
+   chess servers. These games represent the majority of bughouse matches 
+   being played as well as the highest quality. Very few OTB bughouse matches
+   are recorded because Bughouse is usually played with short time controls.
+
+
+1.2 Details of problem
+
+   There are several aspects of Bughouse that make it unsuitable for the
+   regular PGN standard.
+
+      1. A bughouse match is composed of two separate chess games. What happens
+         on one board may not make sense unless the situation on the other
+         board is known.
+      2. When replaying a match, move order and time used are crucial to
+         the understanding of the match. One important tactic in Bughouse is to
+         get an advantage in time and then sit and wait for a crucial piece.
+         Likewise many bughouse sacrifices seem nonsensical without knowledge of
+         the other game.
+
+2. BPGN Standard 1.0 (DrZukhar)
+
+2.1 Proposed solution
+
+   BPGN is based on the existing PGN standard. Rather than re-quote the
+   entire PGN document only the differences between the file types will be
+   described here. Relevant sections of the PGN standard will be referenced
+   by number. 
+    
+    BPGN is designed to record bughouse *matches*. A match consists of two 
+    boards. The boards are designated A and B.
+
+    Here’s a crude diagram showing the basic configuration:
+
+             BlackA                    WhiteB
+        +---------------+         +---------------+
+        |               |         |               |
+        |               |         |               |
+        |               |         |               |
+        |    Board A    |         |    Board B    |
+        |               |         |               |
+        |               |         |               |
+        |               |         |               |
+        |               |         |               |
+        +---------------+         +---------------+
+             WhiteA                    BlackB
+     
+    WhiteA and BlackB form one team.
+
+    PGN has a mandatory seven tag roster (see PGN standard section 8.1.1).
+    For BPGN these tags have been changed slightly to support bughouse matches.
+
+        [Event] - the name of the tournament or match event
+            example: [Event "fics rated bughouse match"]
+        This tag indicates that it’s a bughouse match and whether it’s 
+        rated or unrated. See PGN standard section 8.1.1.1 for details.
+
+        [Site] - the location of the event
+            example: [Site "fics, Oklahoma City, OK USA"]
+        This is the location of the server the game was played on. It’s 
+        important information because player names can vary between servers.
+        WhoAmI on FICS isn’t necessarily the same player as WhoAmI on ICC.
+        See PGN standard section 8.1.1.2 for details on the format for Site.
+
+        [Date] - the starting date of the game
+            example: [Date "1996.08.07"]
+        The date tag is always in the format YYYY.MM.DD. See PGN standard 
+        section 8.1.1.3 for details on correct Date formatting. 
+
+        [Round] - the playing round ordinal of the game
+            example: [Round -1-]
+        While this is mandatory for PGN file, Round is not a mandatory BPGN
+        tag. It is optional because most bughouse games are not part of a
+        tournament or match. See PGN section 8.1.1.4.
+
+        [WhiteA] - the player of the white pieces on the A board
+        [WhiteB] - the player of the white pieces on the B board
+        [BlackA] - the player of the black pieces on the A board
+        [BlackB] - the player of the black pieces on the B board 
+            example: [WhiteA "raven"]
+                     [BlackA "Gnejs"]
+                     [WhiteB "Paaso"]
+                     [BlackB "death"]
+
+        [WhiteAElo] - the rating of the white player on the A board
+        [WhiteBElo] - the rating of the white player on the B board 
+        [BlackAElo] - the rating of the black player on the A board 
+        [BlackBElo] - the rating of the black player on the B board 
+	    example: [WhiteAElo "2165"]
+                     [BlackAElo "2724"]
+                     [WhiteBElo "1925"]
+                     [BlackBElo "2307"]
+        The name and rating tags are often combined on one line for
+        readability.
+            example: [WhiteA "raven"][WhiteAElo "2165"]
+                     [BlackA "Gnejs"][BlackAElo "2724"]
+        See PGN standard section 9.1.2 for details on formatting ratings.
+	
+	[TimeControl] - the time control of the game, the format is
+	 starting time in seconds + increment in seconds
+            example: [TimeControl "300+0"]
+
+        [Result] - the result of the game
+            example: [Result "0-1"]
+        The [Result] tag is stated in terms of the White player on board A.
+        "1-0" means his team won, "0-1" means his team lost. See PGN standard
+        section 8.1.1.7 for details on how to format Result tags.
+
+    The biggest difference between the notations is the actual game score.
+    In order to maintain continuity both games are recorded together.
+    This preserves the sequence of the match. In order to distinguish 
+    between the two games the move numbers have a letter added to identify
+    which player made the move. In a bughouse match there are 4 first moves
+    which may occur in any order (well, not *any* order, white still moves 
+    first). So move numbers on board A have a letter added. Uppercase for
+    White, lowercase for black. 
+
+        1A. e4      Board A white's first move
+        1a. Nf6     Board A black's first move
+        1B. Nf3     Board B white's first move
+        1b. Nc6     Board B black's first move
+
+    Also the amount of time remaining in the game is recorded
+    (in seconds as reported by the server). This number is in parenthesis
+    after the move ex: 1A. e4 {178}  In a 3 minute game this would indicate
+    that White on Board A took 2 seconds to play e4.
+
+    The actual movetext follows the PGN standard section 8.2.3 with the
+    exception of drop moves. Drops are indicated using the @ sign. So the
+    text N@g5 means a knight was dropped on the g5 square. P@f7 indicates
+    that a pawn was dropped on f7.
+
+
+2.2 Sample game
+
+    A sample game in BPGN format, featuring the redoubtable Gnejs:
+
+[Event "fics rated bughouse match"]
+[Site "fics, Oklahoma City, OK USA"]
+[Date "1996.08.07"]
+[Round "-"]
+[WhiteA "raven"][WhiteAElo "2165"]
+[BlackA "Gnejs"][BlackAElo "2724"]
+[WhiteB "Paaso"][WhiteBElo "1925"]
+[BlackB "death"][BlackBElo "2307"]
+[TimeControl "300+0"]
+[Result "0-1"]
+1A. d4 {298} 1a. e6 {298} 2A. e4 {296} 2a. Nf6 {297} 3A. Bd3 {294} 
+1B. e4 {290} 1b. Nc6 {299} 3a. Nc6 {295} 4A. e5 {292} 2B. Nc3 {287} 
+2b. Nf6 {298} 4a. Nd5 {293} 3B. Nf3 {285} 3b. d5 {297} 4B. exd5 {285} 
+5A. Nf3 {288} 4b. Nxd5 {295} 5a. d6 {292} 5B. d3 {282} 6A. Bb5 {285} 
+6a. Bd7 {291} 5b. e5 {290} 7A. Bxc6 {278} 6B. Nxd5 {278} 7a. Bxc6 {289} 
+6b. Qxd5 {288} 7B. B@e4 {276} 8A. P@e4 {273} 7b. Qd6 {283} 8a. Nb4 {286} 
+9A. Nc3 {272} 8B. Bxc6+ {274} 8b. bxc6 {282} 9a. P@g4 {279} 9B. Be3 {268} 
+10A. Ng5 {268} 10a. dxe5 {278} 11A. Nxf7 {266} 9b. P@d4 {272} 11a. Kxf7 {274} 
+12A. N@g5+ {263} 10B. N@e4 {262} 12a. Qxg5 {272} 13A. Bxg5 {261} 
+13a. exd4 {270} 14A. Nd5 {253} 14a. exd5 {264} 10b. dxe3 {239} 
+15A. B@e6+ {238} 15a. Kxe6 {262} 16A. B@f5+ {236} 16a. Kf7 {260} 
+11B. Qe2 {250} 11b. exf2+ {237} 17A. P@e6+ {229} 17a. Ke8 {259} 
+18A. exd5 {207} 18a. Nxd5 {257} 19A. Qxg4 {187} 19a. Bb4+ {255} 
+12B. Qxf2 {188} 20A. Kf1 {176} 20a. Bb5+ {251} 21A. Kg1 {170} 
+21a. N@e2+ {248} 22A. Qxe2 {168} 22a. Bxe2 {247} 12b. Qxd3 {215} 
+23A. P@f7+ {159} 23a. Kf8 {245} 24A. h4 {145} 24a. Bb5 {243} 13B. Bxd3 {162} 
+13b. Bb4+ {211} 25A. Rh3 {136} 25a. P@e2 {240} 26A. h5 {130} 26a. Q@f1+ {237} 
+14B. P@c3 {139} 14b. Bxc3+ {210} 15B. bxc3 {138} 27A. Kh2 {108} 
+27a. B@g1+ {232} 28A. Kg3 {107} 28a. Qxf2+ {231} 15b. P@e7 {187} 
+29A. Kg4 {105} 29a. N@e5+ {229} 
+{death checkmated} 0-1 
+
+
+3. BPGN Standard 1.1 (WhoAmI)
+
+3.1 Addition of commentary information 
+
+    BugMaster WhoAmI's program 'BPGN viewer' uses the following symbols
+    *inside* parenthesis to mean specific things to his program:
+
+       {A:...} an annotation, for example 1.e4 {29} {A:!} stands for 1. e4! in the four column display
+       {C:...} a comment 
+       {D:}    a diagram should be inserted here
+               (used when printing the game in four column mode)
+
+    This isn't part of the BPGN standard, but it's not illegal since it's inside
+    parenthesis.
+
+3.2 Inserting variations of the main line
+
+    Variations played while studying the game can be saved in the BPGN file by the use of round brackets;
+    nested variations are equally permitted.
+
+    As an example consider this sequence of moves
+
+    47A. P@f7+ {112} (47A. N@e7+ {114} 47a. Kf7 {20} 48A. Nd5 {114} (48A. Ng6 {114} 
+    48a. hxg6 {20}) 48a. exd5 {20}) 47a. Kxf7 {19} (47A. P@e7 {114})
+
+    Which, in a somewhat more readable format should be intrepreted as
+
+    47A. P@f7+ {112}                                          --> Level 0: Main line
+	(47A. N@e7+ {114} 47a. Kf7 {20} 48A. Nd5 {114}        --> Level 1: first deviation
+		(48A. Ng6 {114} 48a. hxg6 {20})               --> Level 2: first deviation 
+	48a. exd5 {20})                                       --> Level 1: first deviation continued
+        (47A. P@e7 {114})                                     --> Level 1: second deviation
+    47a. Kxf7 {19}                                            --> Level 0: Main line
+
+3.3 BFEN Extension
+    
+    Thief 1.0 introduced 2 new tags in BPGN. Tag Setup "1" indicates that BPGN starts from 
+    position different from normal initial bughouse position. It should be followed by FEN 
+    tag that encodes the starting position in BFEN format.
+
+    BFEN is an extension of the FEN format for describing an arbitrary bughouse position. 
+    It is used for logging adjourned games (resuming a game). It can also be used to log 
+    Fisher random bughouse games.
+
+
+    BFEN example: 
+    
+    r2k1r2/pbppNppp/1p2p1nb/1P5N/3N4/4Pn1q/PPP1QP1P/2KR2R1/BrpBBqppN w - - 45 56 | Q~4rk1/8/8/8/8/8/8/R3K2R w KQ - 45 60 
+    
+    Specificiations
+    ***************
+    
+    As you see in the example, bfen has the following structure: board A
+    bfen, followed by separator '|' followed by board B bfen. 
+    
+    Board A bfen has the following structure: 
+    -----------------------------------------
+    	
+    1. standard FEN for position
+    Fen consists of 8 parts separated by slash
+    (r2k1r2/pbppNppp/1p2p1nb/1P5N/3N4/4Pn1q/PPP1QP1P/2KR2R1). Each part
+    represents a rank on the chessboard. The first part(r2k1r2) represents
+    8th rank and the last part (2KR2R1) represents 1st rank. Numbers in fen
+    stand for empty squares, letters in lowercase stand for black pieces and
+    letters in uppercase stand for white pieces. For example, r2k1r2 means
+    black rook (on a-file) followed by 2 empty squares (on files "b" and
+    "c") , followed by black king (on d-file), followed by an empty square
+    (on e-file) followed by black rook (on f-file), followed by 2 empty
+    squares (on g- and h-files). 
+    There is one modification from the normal FEN: ~ after piece denotes
+    promoted piece (on board B white queen on a8 is a promoted one) 
+    
+    2. slash(/)
+    
+    3. holdings 
+    BrpBBqppN; pieces in uppercase belong to white, pieces in lowercase belong
+    to black; in the example white holds 3 bishops and a knight, black holds 
+    rook, queen and 3 pawns 
+    
+    4. space
+    
+    5. side to move (w if white's move, b if black's move),
+    
+    6. space
+
+    7. castling possibilities 
+    Dash denotes that nobody can castle, K=white can castle kingside, k=black
+    can castle kingside, Q=white can castle queenside, q=black can castle 
+    queenside. On board A we have we have dash in the BFEN, so nobody can 
+    castle. On board B we have KQ in the bfen, ergo white can castle both 
+    kingside and queenside, while black cannot castle at all. 
+    
+    8. space
+    
+    9. enpassant posibilities 
+    Dash=no enpassant possible, otherwise enpassant square,i.e e3 or d6, etc. 
+    In our example there are no enpassant possibilities.
+    
+    10. space
+     
+    11. white's time in seconds (45)
+    
+    12. space
+    
+    13. black's time in seconds (56) 
+    
+    
+    Board B bfen 
+    ------------
+    
+    Board B bfen has similar structure. You may notice that pieces in hand are absent, so
+    holdings and slash before holdings are omited. 
+    
+    Finally a game example which illustrates the use of the setup and fen tag:
+
+
+[Event "fics unrated bughouse match"]
+[Site "fics"]
+[Date "2002.05.25"]
+[WhiteA "VampireGod"][WhiteAElo "2334"]
+[BlackA "JohnnyCarwash"][BlackAElo "UNR"]
+[WhiteB "Fudpucker"][WhiteBElo "2138"]
+[BlackB "GuestGuest"][BlackBElo "UNR"]
+[TimeControl "180+0"]
+[Result "1-0"]
+[Setup "1"]
+[FEN "r1b1k1nr/ppp1qpPp/2n5/1B1p1n1N/3P4/2P5/P1P1QPnP/R1BK2NR/PPBpp b kq - 142 164 | 2Nrkb1r/pPpbqppp/2p5/8/3N4/2P1B3/P1P1QPpP/R3K2R/Ppb w KQk - 142 163"]
+14B. Nxe7 {140} 11a. Q@e1+ {160} 14b. gxh1=Q+ {162} 15B. Kd2 {138}
+15b. Qxa1 {159} 16B. Qd1 {137} 16b. Qxd1+ {154} 17B. Kxd1 {136} 17b. Bxe7 {154}
+18B. b8=Q {134} 18b. Bg4+ {150} 19B. P@f3 {132} 19b. Rxb8 {150}
+{GuestGuest resigns} 1-0
+
+
+4. BPGN Standard 1.2 
+
+Possibly will include movetimes in milliseconds and lag per move.
+
+Skacz suggest the following format:
+Lag per move could be denoted like {L:100} 
+Movetimes in milliseconds could possibly be denoted like {T:1200} (thinking time!)
+
+I would suggest just to use the time left on the clock in milliseconds, for example
+ Qxa1 {159.3} as to avoid clutter.
+

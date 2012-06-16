@@ -43,6 +43,45 @@ class CrazyBoard(Tkinter.Frame):
         #w = Tkinter.Label(self, text="Red", bg="red", fg="white")
         #w.grid(row=0, column=0)
 
+    def setFEN(self, fen):
+        # is normal FEN string, except the 9'th rank designates the holding area
+        # eg input: 
+        # r2k1r2/pbppNppp/1p2p1nb/1P5N/3N4/4Pn1q/PPP1QP1P/2KR2R1/BrpBBqppN w - - 45 56
+        #
+        # so we lazily split off the holdings rank, then send the rest to the chessboard
+        [l,r] = re.split(r' ', fen, maxsplit=1)
+
+        ranks = re.split(r'/', l)
+
+        holdings = ''
+
+        if len(ranks) == 8:
+            # no holdings
+            pass
+        elif len(ranks) == 9:   
+            holdings = ranks[8]
+        else:
+            raise "invalid FEN string for CrazyBoard!"
+
+        # normal chessboard
+        normalFEN = '/'.join(ranks[0:8]) + ' ' + r
+        self.chessBoard.setFEN(normalFEN)
+
+        # reserve board
+        self.reserveBoard.setFEN(holdings)
+
+    def getFEN(self):
+        fen = self.chessBoard.getFEN()
+
+        # split off ranks
+        [l,r] = re.split(r' ', fen, maxsplit=1)
+
+        # add holdings rank
+        l = l + '/' + self.reserveBoard.getFEN()
+        
+        # reassemble, return
+        return l + ' ' + r
+
     def flip(self):
         self.chessBoard.flip()
         self.reserveBoard.flip()

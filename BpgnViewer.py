@@ -1,13 +1,12 @@
 #!/usr/bin/python
 
-# a Crazy(House) board is a chessboard with a little reserve area to the side
-
 import re
 import Tkinter
 
 import ChessBoard
-import ReserveBoard
 import CrazyBoard
+import ReserveBoard
+import BugBoard
 
 class BpgnViewer(Tkinter.Frame):
     def __init__(self, parent, pieceWidth=48, pieceHeight=48):
@@ -16,13 +15,9 @@ class BpgnViewer(Tkinter.Frame):
         self.parent = parent
 
         # two boards
-        self.leftBoard = CrazyBoard.CrazyBoard(self, pieceWidth, pieceHeight)
-        self.rightBoard = CrazyBoard.CrazyBoard(self, pieceWidth, pieceHeight)
-        self.rightBoard.flip()
-        self.rightBoard.draw()
-
-        self.width = 2*self.leftBoard.width
-        self.height = 2*self.leftBoard.height
+        self.bugBoard = BugBoard.BugBoard(self, pieceWidth, pieceHeight)
+        self.bugBoard.setBFEN("r1b1k1nr/ppp1qpPp/2n5/1B1p1n1N/3P4/2P5/P1P1QPnP/R1BK2NR/PPBpp b kq - 142 164 | 2Nrkb1r/pPpbqppp/2p5/8/3N4/2P1B3/P1P1QPpP/R3K2R/Ppb w KQk - 142 163")
+        self.bugBoard.draw()
 
         # status thingies
         self.a1Status = Tkinter.Label(self, text="JackJohnson [00:00]", bg="white", fg="black")
@@ -30,24 +25,28 @@ class BpgnViewer(Tkinter.Frame):
         self.b1Status = Tkinter.Label(self, text="JerryJaundice [00:00]", bg="black", fg="white")
         self.b2Status = Tkinter.Label(self, text="KellyKapowsky [00:00]", bg="white", fg="black")
     
-        # buttons
-        self.btnBackward = Tkinter.Button(self, text="<", command=self.btnBackwardCb)
-        self.btnForward = Tkinter.Button(self, text=">", command=self.btnForwardCb)
+        # buttons go into frame
+        self.btnFrame = Tkinter.Frame(self)
+        self.btnBackward = Tkinter.Button(self.btnFrame, text="<", command=self.btnBackwardCb)
+        self.btnForward = Tkinter.Button(self.btnFrame, text=">", command=self.btnForwardCb)
 
         self.b1Status.grid(row=0, column=0, sticky=Tkinter.E + Tkinter.W)
         self.b2Status.grid(row=0, column=1, sticky=Tkinter.E + Tkinter.W)
-        self.leftBoard.grid(row=1, column=0)
-        self.rightBoard.grid(row=1, column=1)
+        self.bugBoard.grid(row=1, column=0, columnspan=2)
         self.a1Status.grid(row=2, column=0, sticky=Tkinter.E + Tkinter.W)
         self.a2Status.grid(row=2, column=1, sticky=Tkinter.E + Tkinter.W)
-        self.btnBackward.grid(row=3, column=0)
-        self.btnForward.grid(row=3, column=1)
+
+        self.btnBackward.pack(side=Tkinter.LEFT)
+        self.btnForward.pack(side=Tkinter.LEFT)
+        self.btnFrame.grid(row=3, columnspan=2)
+
 
     def btnBackwardCb(self):
         print "You go backward"
 
     def btnForwardCb(self):
         print "You go forward"
+
 def doTest():
     # root window
     root = Tkinter.Tk()

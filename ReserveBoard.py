@@ -21,8 +21,9 @@ class ReserveBoard(Tkinter.Frame):
 
         self.canvas = Tkinter.Canvas(self, width=self.width, height=self.height)
 
-        self.pieces = {'P':1, 'N':1, 'R':1, 'B':1, 'Q':1, 'K':0, \
-                       'p':1, 'n':1, 'r':1, 'b':1, 'q':1, 'k':0}
+        self.pieces = {}
+        
+        self.setFEN('BrpBBqppN')
 
         # bitmaps
         self.bitmaps = {}
@@ -128,6 +129,26 @@ class ReserveBoard(Tkinter.Frame):
     
             if n:
                 self.canvas.create_text(x-w/2, y-w/2, text="%d" % n, anchor=Tkinter.NW)
+
+    # this parses the "holdings" string from BFEN notation...
+    # pieces in uppercase belong to white; lowercase belong to white
+    # eg BrpBBqppN (white holds 3 bishops and knight, black holds rook, queen, and 3 pawns)
+    def setFEN(self, fen):
+        # clear current piece holdings count
+        for p in list("PNRBKQpnrbkq"):
+            self.pieces[p] = 0
+
+        # load it up
+        for p in list(fen):
+            self.pieces[p] += 1
+
+    def getFEN(self):
+        answer = ''
+
+        for p in list("PNRBKQpnrbkq"):
+            answer += p*self.pieces[p]
+
+        return answer
 
 def doTest():
     # root window
