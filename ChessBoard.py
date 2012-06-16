@@ -97,50 +97,50 @@ class ChessBoard(Tkinter.Frame):
     #--------------------------------------------------------------------------
     # board access stuff
     #--------------------------------------------------------------------------
-    def sanToStateIndex(square):
+    def sanToStateIndex(self, square):
         return 8 * (8-int(square[1])) + \
-            {'a':1, 'b':2, 'c':3, 'd':4, 'e':5, 'f':6, 'g':7, 'h':8}[square[0]] \
+            {'a':0, 'b':1, 'c':2, 'd':3, 'e':4, 'f':5, 'g':6, 'h':7}[square[0]] \
 
     # given 'a4', return the piece at a4
-    def sanGetPieceAt(square):
+    def sanGetPieceAt(self, square):
         return self.state[self.sanToStateIndex(square)]
 
-    def sanSetPieceAt(square, p):
+    def sanSetPieceAt(self, square, p):
         self.state[self.sanToStateIndex(square)] = p
 
     # given 'b4' and [-1,-1] (move left one, up one), return a5
-    def sanSquareShift(square, movement):
-        col = {'a':1, 'b':2, 'c':3, 'd':4, 'e':5, 'f':6, 'g':7, 'h':8}[square[0]]
-        row = int(square[1])
+    def sanSquareShift(self, square, movement):
+        x = {'a':1, 'b':2, 'c':3, 'd':4, 'e':5, 'f':6, 'g':7, 'h':8}[square[0]]
+        y = int(square[1])
 
-        row += movement[0]
-        col += movement[1]
+        x += movement[0]
+        y += movement[1]
 
-        if row<1 or row>8 or col<1 or col>8:
+        if x<1 or x>8 or y<1 or y>8:
             return None
 
-        return {1:'a', 2:'b', 3:'c', 4:'d', 5:'e', 6:'f', 7:'g', 8:'h'}[col] + \
-            str(row)
+        return {1:'a', 2:'b', 3:'c', 4:'d', 5:'e', 6:'f', 7:'g', 8:'h'}[x] + \
+            str(y)
    
-    def sanSquareShifts(square, movements):
-        return map(lambda x: sanSquareShift(square, x), movements)
+    def sanSquareShifts(self, square, movements):
+        return map(lambda x: self.sanSquareShift(square, x), movements)
 
-    def sanIsSameRank(a, b):
+    def sanIsSameRank(self, a, b):
         return a[1] == b[1]
 
-    def sanIsSameFile(a, b):
+    def sanIsSameFile(self, a, b):
         return a[0] == b[0]
 
     #--------------------------------------------------------------------------
     # PGN movetext parsing
     #--------------------------------------------------------------------------
-    def getSourceSquares(destSquare, piece):
+    def getMoveSourceSquares(self, destSquare, piece):
         answers = []
 
         # these "searchLines" across the chessboard define a line of search that
         # could be blocked by interposing pieces
-        searchLinesPawnB = [[[1,-1]],[[-1,-1]]]
-        searchLinesPawnW = [[[1,1],[-1,1]]]
+        searchLinesPawnB = [[[0,1]],[[0,2]]]
+        searchLinesPawnW = [[[0,-1],[0,-2]]]
 
         searchLinesKing = [ \
             [[1,0]], \
@@ -183,14 +183,16 @@ class ChessBoard(Tkinter.Frame):
         pieceToSearchLines = { \
                         'p': searchLinesPawnB, 'P':searchLinesPawnW, \
                         'r': searchLinesRook, 'R':searchLinesRook, \
-                        'n': searchLinesNight, 'N':searchLinesNight, \
+                        'n': searchLinesKnight, 'N':searchLinesKnight, \
                         'q': searchLinesQueen, 'Q':searchLinesQueen, \
                         'b': searchLinesBishop, 'B':searchLinesBishop, \
                         'k': searchLinesKing, 'K':searchLinesKing }
 
-        for searchLine in pieceToSearchLines[p]:
-            for sq in sanSquareShifts(destSquare, searchLine):
-                p = sanGetPieceAt(sq)
+        for searchLine in pieceToSearchLines[piece]:
+            for sq in filter(lambda x: x, self.sanSquareShifts(destSquare, searchLine)):
+                print "a sq from sanSquareShifts: " + sq
+
+                p = self.sanGetPieceAt(sq)
                 # empty square? keep along the searchLine
                 if p == ' ':
                     continue
@@ -202,101 +204,70 @@ class ChessBoard(Tkinter.Frame):
 
         return answers
 
+    def getAttackSourceSquares(self, destSquare, piece):
+        if piece == 'p':
+            return self.sanSquareShifts(destSquare, [[[-1,1], [1,1]]])
+        elif piece == 'P':
+            return self.sanSquareShifts(destSquare, [[[1,-1], [-1,-1]]])
+        else:
+            return self.getMoveSourceSquares(destSquare, piece)
 
     def execMoveSan(self, move):
         # extended with some bughouse constructs
 
         origMove = move
 
-        srcPiece = ''
-        srcHint = ''
-        action = ''
-        destSquare = ''
-        promote = ''
+        regex = r'(?P<srcPiece>[PNBRQKpnbrqk])?' + \
+                r'(?P<srcHint>[a-h1-8]{1,2})?' + \
+                r'(?P<action>x)?' + \
+                r'(?P<dstSquare>[a-h][1-8])' + \
+                r'(?P<promote>=[PNBRQKpnbrqk])?' + \
+                r'(?P<check>\+)?'
 
-        # parse source piece
-        if re.match(r'^[PRNBQKprnbqk]', move):
-            srcPiece = move[0]
-            move = move[1:]
+        m = re.match(regex, move)
+        if not m:
+            raise Exception("cannot parse move: %s" % move)
 
-            # possible source hint? (rank or file or both of source piece)
-            m = re.match(r'^([a-h\d]{1,2})', move)
-            if m:
-                srcHint = m.group(1)
-                move = move[len(srcHint):]
-        else:
-            srcPiece = {'b':p, 'w':P}[self.whoseTurn]
-       
-        # parse action
-        if move[0] == 'x':
-            action = 'capture'
-        elif move[0] == '@':
-            action = 'drop'
-        elif re.match(r'^[a-h]\d', move):
-            action = 'move'
-            pass
-        else:
-            raise "unknown action character '%s'" % move[0]
+        srcPiece = m.group('srcPiece') or {'w':'P', 'b':'p'}[self.whoseTurn]
+        srcHint = m.group('srcHint')
+        action = m.group('action')
+        dstSquare = m.group('dstSquare')
+        promote = m.group('promote')
+        check = m.group('check')
 
-        move = move[1:]
-
-        # parse destination square
-        m = re.match(r'^([a-h]\d)', move)
-        if m:
-            destSquare = m.group(1)
-            move = move[2:]
-        else:
-            raise "expected destination square at (...%s)" % move
-
-        # promotion suffix?
-        m = re.match(r'^([PRNBQKprnbqk]=)', move)
-        if m:
-            promote = m.group(1)
-            move = move[2:]
-
-        # anything left?
-        if move:
-            raise "unexpected remaining characters! (...%s)" % move
-      
-        # for moves that are not drops, a source square is required
-        # translate source piece and hint into source square
+        # resolve the srcSquare
         srcSquare = ''
-
-        if action != 'drop':
-            if len(srcHint) == 2:
-                srcSquare = srcHint
-            else:
-                srcSquares = getSourceSquares(destSquare, srcPiece)
-
-                if srcHint:
-                    if re.match(r'^\d$', srcHint):
-                        # filter source squares of this rank
-                        srcSquares = filter(lambda x: x[1] == srcHint, srcSquares)
-                    elif re.match(r'^[a-hA-H]$', srcHint):
-                        # filter source squares of this file
-                        srcSquares = filter(lambda x: x[0] == srcHint, srcSquares)
-                    else:
-                        raise "unknown hint of source square '%s'" % srcHint
-              
-                if len(srcSquares) < 1:
-                    raise "could not find square with source piece for move '%s'" \
-                        % origMove
-    
-                if len(srcSquares) > 1:
-                    raise "ambiguous which piece to choose for move '%s'" % origMove
-    
-                srcSquare = srcSquares[0]
-    
-        # depending on which action, modify the state
-        if action == 'drop':
-            if self.sanGetPieceAt(dstSquare) != ' ':
-                raise "dropping on occupied square at move '%s'" % origMove
-
-            sanSetPieceAt(dstSquare, srcPiece)
-
+        if srcHint and re.match(r'^[a-h][1-8]$', srcHint):
+            # given a full hint, source square is resolved
+            srcSquare = srcHint
         else:
-            sanSetPieceAt(srcSquare, ' ')
-            sanSetPieceAt(dstSquare, srcPiece)
+            # where could piece have come from?
+            srcSquares = []
+            if action == 'x':
+                srcSquares = self.getAttackSourceSquares(dstSquare, srcPiece)
+            else:
+                srcSquares = self.getMoveSourceSquares(dstSquare, srcPiece)
+
+            print "srcSquares: ", srcSquares
+
+            if srcHint and re.match(r'^[1-8]$', srcHint):
+                # given a rank hint, consider only source squres in this rank
+                srcSquares = filter(lambda x: x[1] == srcHint, srcSquares)
+            elif srcHint and re.match(r'^[a-h]$', srcHint):
+                # given a file hint, consider only source squares in that file
+                srcSquares = filter(lambda x: x[0] == srcHint, srcSquares)
+
+            # hopefully we're left with one square by now
+            if len(srcSquares) < 1:
+                raise Exception("could not find source square for move %s" % move)
+            elif len(srcSquares) > 1:
+                raise Exception("ambiguous source square for move %s" % move)
+               
+            srcSquare = srcSquares[0]
+   
+        # modify the state
+        self.sanSetPieceAt(srcSquare, ' ')
+        self.sanSetPieceAt(dstSquare, srcPiece)
 
         # swap whose turn it is
         self.whoseTurn = {'w':'b', 'b':'w'}[self.whoseTurn]
@@ -327,7 +298,7 @@ class ChessBoard(Tkinter.Frame):
 
     def flip(self):
         print "ChessBoard is flipped!"
-        self.flippedDisplay = 1
+        self.flippedDisplay = (self.flippedDisplay + 1) & 1
 
     def draw(self):
         pieceGetSequence = range(64)
@@ -345,17 +316,42 @@ class ChessBoard(Tkinter.Frame):
                 image = self.fenPieceToBitmap(self.state[pieceGetSequence[i]], (i + i/8 + 1)%2)
             )
 
+class ChessBoardTest(Tkinter.Frame):
+    def __init__(self, parent, pieceWidth=48, pieceHeight=48):
+        Tkinter.Frame.__init__(self, parent)
+        self.parent = parent
+   
+        self.cb = ChessBoard(self)
+        self.cb.draw()
+        self.cb.pack()
+
+        self.b = Tkinter.Button(self, text="flip", command=self.flipIt)
+        self.b.pack()
+
+        self.moveEntry = Tkinter.Entry(self)
+        self.moveEntry.pack()
+        self.execMove = Tkinter.Button(self, text="execute move", command=self.executeMove)
+        self.execMove.pack()
+
+    def flipIt(self):
+        self.cb.flip()
+        self.cb.draw()
+
+    def executeMove(self):
+        whatMove = self.moveEntry.get()
+        print "Executing: " + whatMove
+        self.cb.execMoveSan(whatMove)
+        self.cb.draw()
+
 def doTest():
     # root window
     root = Tkinter.Tk()
     root.wm_title("Chess Board Test\n")
 
     # reserve board on root
-    cb = ChessBoard(root)
-    cb.draw()
-    cb.grid(row=0, column=0)
-    cb.flip()
-    cb.draw()
+    cbt = ChessBoardTest(root)
+    cbt.pack()
+
 
     # run
     root.mainloop() 

@@ -5,19 +5,6 @@
 import re
 import sys
 
-class Move:
-    def __init__(self, moveNum, moveTxt, time):
-        self.moveNum = moveNum
-        self.moveTxt = moveTxt
-        self.time = time
-
-    def __str__(self):
-        answer = ''
-
-        answer += '%s %s %s' % (self.moveNum, self.moveTxt, self.time)
-
-        return answer
-
 class Parser:
     def __init__(self, fpath):
 
@@ -49,10 +36,8 @@ class Parser:
 
             # parse movetext
             if re.match(r'^[12][abAB]\.', line):
-                for m in re.finditer(r'(\d+[abAB])\. (.*?)({.*?})', line):
-                    (moveNum, moveTxt, time) = m.group(1,2,3)
-
-                    self.moves.append(Move(moveNum, moveTxt, time))
+                for m in re.finditer(r'(\d+[abAB]\. .*?{.*?})', line):
+                    self.moves.append(m.group(1))
 
         #for i,s in enumerate(lines):
         #    print "[%d] %s\n" % (i,s)

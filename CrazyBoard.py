@@ -1,12 +1,12 @@
 #!/usr/bin/python
 
-# a Crazy(House) board is a chessboard with a little reserve area to the side
+# a Crazy(House) board is a chessboard with a little holding area to the side
 
 import re
 import Tkinter
 
 import ChessBoard
-import ReserveBoard
+import HoldingBoard
 
 class CrazyBoard(Tkinter.Frame):
     def __init__(self, parent, pieceWidth=48, pieceHeight=48):
@@ -21,20 +21,20 @@ class CrazyBoard(Tkinter.Frame):
         self.chessBoard = ChessBoard.ChessBoard(self, pieceWidth, pieceHeight)
         self.chessBoard.draw()
         # right side
-        self.reserveBoard = ReserveBoard.ReserveBoard(self, pieceWidth, pieceHeight)
-        self.reserveBoard.draw()
+        self.holdingBoard = HoldingBoard.HoldingBoard(self, pieceWidth, pieceHeight)
+        self.holdingBoard.draw()
 
-        self.width = self.chessBoard.width + self.reserveBoard.width
+        self.width = self.chessBoard.width + self.holdingBoard.width
         self.height = self.chessBoard.height
 
         #self.chessBoard.pack(side=Tkinter.LEFT)
-        #self.reserveBoard.pack(side=Tkinter.LEFT)
+        #self.holdingBoard.pack(side=Tkinter.LEFT)
 
         self.chessBoard.grid(row=0, column=0, padx=2)
-        self.reserveBoard.grid(row=0, column=1, pady=2)
+        self.holdingBoard.grid(row=0, column=1, pady=2)
 
         #print self.chessBoard.grid_info()
-        #print self.reserveBoard.grid_info()
+        #print self.holdingBoard.grid_info()
         #w = Tkinter.Label(self, text="row0_column2", bg="red", fg="white")
         #w.grid(row=0, column=2)
         #w = Tkinter.Label(self, text="row1_column2", bg="red", fg="white")
@@ -70,8 +70,8 @@ class CrazyBoard(Tkinter.Frame):
         normalFEN = '/'.join(ranks[0:8]) + ' ' + r
         self.chessBoard.setFEN(normalFEN)
 
-        # reserve board
-        self.reserveBoard.setFEN(holdings)
+        # holding board
+        self.holdingBoard.setFEN(holdings)
 
     def getFEN(self):
         fen = self.chessBoard.getFEN()
@@ -80,7 +80,7 @@ class CrazyBoard(Tkinter.Frame):
         [l,r] = re.split(r' ', fen, maxsplit=1)
 
         # add holdings rank
-        l = l + '/' + self.reserveBoard.getFEN()
+        l = l + '/' + self.holdingBoard.getFEN()
         
         # reassemble, return
         return l + ' ' + r
@@ -92,38 +92,69 @@ class CrazyBoard(Tkinter.Frame):
                                'n':'N', 'N':'n', \
                                'q':'Q', 'Q':'q'}
 
-        # we mainly thunk through to ChessBoard
-        self.chessBoard.execMoveSan(move)
+        # filter out drops (normal chessboard doesn't understand)
+        m = re.match('^([prnbqkPRNBQK])@([a-h][1-8])$', move)
+        if m:
+            self.holdingBoard.removePiece(m.group(1))
+            self.chessBoard.sanSetPieceAt(m.group(2), m.group(1))
+        else:
+            # for other moves, make the chessboard make them
+            self.chessBoard.execMoveSan(move)
 
-        # but if transfering is enabled (normal CrazyHouse) we intercept:
-        if self.transferPieces:
-            # captures (to add to holdings)
-            m = re.find('x([prnbqkPRNBQK])', move)
-            if m:
-                self.reserveBoard.addPiece(pieceChangeColorMap(m.group(1)))
-        
-            # drops (to remove from holdings)
-            m = re.find('([prnbqkPRNBQK])@', move)
-            if m:
-                self.reserveBoard.removePiece(m.group(1))
+            # but add captured pieces to holdings
+            if self.transferPieces:
+                # captures (to add to holdings)
+                m = re.search('x([prnbqkPRNBQK])', move)
+                if m:
+                    self.holdingBoard.addPiece(pieceChangeColorMap[m.group(1)])
+
+    def holdingAddPiece(self, p):
+        self.holdingBoard.addPiece(p)
 
     def flip(self):
         self.chessBoard.flip()
-        self.reserveBoard.flip()
+        self.holdingBoard.flip()
 
     def draw(self):
         self.chessBoard.draw()
-        self.reserveBoard.draw()
+        self.holdingBoard.draw()
+
+class CrazyBoardTest(Tkinter.Frame):
+    def __init__(self, parent, pieceWidth=48, pieceHeight=48):
+        Tkinter.Frame.__init__(self, parent)
+        self.parent = parent
+   
+        self.cb = CrazyBoard(self)
+        self.cb.draw()
+        self.cb.pack()
+
+        self.b = Tkinter.Button(self, text="flip", command=self.flipIt)
+        self.b.pack()
+
+        self.moveEntry = Tkinter.Entry(self)
+        self.moveEntry.pack()
+        self.execMove = Tkinter.Button(self, text="execute move", command=self.executeMove)
+        self.execMove.pack()
+
+    def flipIt(self):
+        self.cb.flip()
+        self.cb.draw()
+
+    def executeMove(self):
+        whatMove = self.moveEntry.get()
+        print "Executing: " + whatMove
+        self.cb.execMoveSan(whatMove)
+        self.cb.draw()
 
 def doTest():
     # root window
     root = Tkinter.Tk()
-    root.wm_title("Crazy Board Test\n")
-    root.configure(background = 'black')
+    root.wm_title("CrazyBoard Test\n")
 
-    # reserve board on root
-    cb = CrazyBoard(root)
-    cb.grid()
+    # holding board on root
+    cbt = CrazyBoardTest(root)
+    cbt.pack()
+
 
     # run
     root.mainloop() 

@@ -31,29 +31,29 @@ class BugBoard(Tkinter.Frame):
         self.boardB.grid(row=0, column=1)
 
     def execMoveSan(self, move):
+        playerToBoard = {'a':self.boardA, 'A':self.boardA, 'b':self.boardB, 'B':self.boardB}
+        playerToBoardOpp = {'a':self.boardB, 'A':self.boardB, 'b':self.boardA, 'B':self.boardA}
+
         # we strip off player indicator to decide which board to send the move to
+        regex = r'^\d([AaBb])\. (.*?){\d+\.\d+}$'
 
-        pieceChangeColorMap = {'p':'P', 'P':'p', \
-                               'r':'R', 'R':'r', \
-                               'b':'B', 'B':'b', \
-                               'n':'N', 'N':'n', \
-                               'q':'Q', 'Q':'q'}
+        m = re.match(regex, move)
+        if not m:
+            raise Exception("invalid move -%s-" % move)
 
-        # we mainly thunk through to CrazyBoard
-        self.chessBoard.execMoveSan(move)
+        [player, move] = [m.group(1), m.group(2)]
 
-        # but if transfering is enabled (normal CrazyHouse) we intercept:
-        if self.transferPiece:
-            # captures (to add to holdings)
-            m = re.find('x([prnbqkPRNBQK])', move)
-            if m:
-                self.reserveBoard.addPiece(pieceChangeColorMap(m.group(1)))
-        
-            # drops (to remove from holdings)
-            m = re.find('([prnbqkPRNBQK])@', move)
-            if m:
-                self.reserveBoard.removePiece(m.group(1))
+        # CrazyBoard handles removal from holdings during piece drop
+        playerToBoard[player].execMoveSan(move)
 
+        # but for captures, we've turned off CrazyBoard's transfer and instead
+        # transfer across the table (board A <-> board B)
+        m = re.search('x([prnbqkPRNBQK])', move)
+        if m:
+            newPiece = {'p':'P','P':'p','r':'R', 'R':'r', \
+                'b':'B','B':'b','n':'N', 'N':'n','q':'Q', 'Q':'q'}[m.group(1)]
+
+            playerToBoardOpp[player].holdingAddPiece(newPiece)
 
     def setBFEN(self, bfen):
         [l,r] = bfen.split(' | ')

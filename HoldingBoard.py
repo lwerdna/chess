@@ -7,7 +7,7 @@
 import re
 import Tkinter
  
-class ReserveBoard(Tkinter.Frame):
+class HoldingBoard(Tkinter.Frame):
     def __init__(self, parent, pieceWidth=48, pieceHeight=48):
         Tkinter.Frame.__init__(self, parent)
 
@@ -23,7 +23,7 @@ class ReserveBoard(Tkinter.Frame):
 
         self.pieces = {}
         
-        self.setFEN('BrpBBqppN')
+        self.setFEN('')
 
         # bitmaps
         self.bitmaps = {}
@@ -48,11 +48,10 @@ class ReserveBoard(Tkinter.Frame):
             self.bitmaps[key] = Tkinter.PhotoImage(file=imgPath)
 
 
-    def addPiece(p):
+    def addPiece(self, p):
         self.pieces[p] += 1
-        draw()
 
-    def removePiece(p):
+    def removePiece(self, p):
         if self.pieces[p] == 0:
             raise "removing non-existent piece from reserve!"
 
@@ -80,7 +79,7 @@ class ReserveBoard(Tkinter.Frame):
             return self.bitmaps[fenPieceToImg[p] + square + '48']
 
     def flip(self):
-        print "ReserveBoard is flipped!"
+        print "HoldingBoard is flipped!"
         self.flippedDisplay = 1
 
     def draw(self):
@@ -108,7 +107,6 @@ class ReserveBoard(Tkinter.Frame):
         pieceToCoords[ptcSequence[9]] = [xCoord + w, yCoord + w]
         pieceToCoords[ptcSequence[10]] = [xCoord, yCoord + 2*w]
         pieceToCoords[ptcSequence[11]] = [xCoord + w, yCoord + 2*w]
-  
 
         self.canvas.delete(Tkinter.ALL)
 
@@ -156,7 +154,7 @@ def doTest():
     root.wm_title("Reserve Board Test\n")
 
     # reserve board on root
-    rb = ReserveBoard(root)
+    rb = HoldingBoard(root)
     rb.draw()
 
     # run
