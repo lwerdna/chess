@@ -86,10 +86,10 @@ class CrazyBoard(Tkinter.Frame):
         return l + ' ' + r
 
     def execMoveSan(self, move):
-        pieceChangeColorMap = {'p':'P', 'P':'p'
-                               'r':'R', 'R':'r'
-                               'b':'B', 'B':'b'
-                               'n':'N', 'N':'n'
+        pieceChangeColorMap = {'p':'P', 'P':'p', \
+                               'r':'R', 'R':'r', \
+                               'b':'B', 'B':'b', \
+                               'n':'N', 'N':'n', \
                                'q':'Q', 'Q':'q'}
 
         # we mainly thunk through to ChessBoard

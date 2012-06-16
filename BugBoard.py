@@ -33,10 +33,10 @@ class BugBoard(Tkinter.Frame):
     def execMoveSan(self, move):
         # we strip off player indicator to decide which board to send the move to
 
-        pieceChangeColorMap = {'p':'P', 'P':'p'
-                               'r':'R', 'R':'r'
-                               'b':'B', 'B':'b'
-                               'n':'N', 'N':'n'
+        pieceChangeColorMap = {'p':'P', 'P':'p', \
+                               'r':'R', 'R':'r', \
+                               'b':'B', 'B':'b', \
+                               'n':'N', 'N':'n', \
                                'q':'Q', 'Q':'q'}
 
         # we mainly thunk through to CrazyBoard

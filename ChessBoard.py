@@ -116,7 +116,7 @@ class ChessBoard(Tkinter.Frame):
         row += movement[0]
         col += movement[1]
 
-        if row<1 || row>8 || col<1 || col>8:
+        if row<1 or row>8 or col<1 or col>8:
             return None
 
         return {1:'a', 2:'b', 3:'c', 4:'d', 5:'e', 6:'f', 7:'g', 8:'h'}[col] + \
@@ -145,7 +145,7 @@ class ChessBoard(Tkinter.Frame):
         searchLinesKing = [ \
             [[1,0]], \
             [[1,-1]], \
-            [[0,-]], \
+            [[0,-1]], \
             [[-1,1]], \
             [[-1,0]], \
             [[-1,1]], \
@@ -188,11 +188,11 @@ class ChessBoard(Tkinter.Frame):
                         'b': searchLinesBishop, 'B':searchLinesBishop, \
                         'k': searchLinesKing, 'K':searchLinesKing }
 
-        for searchLine in pieceToSearchLines[p]
+        for searchLine in pieceToSearchLines[p]:
             for sq in sanSquareShifts(destSquare, searchLine):
-                p = sanGetPieceAt(sq)c
+                p = sanGetPieceAt(sq)
                 # empty square? keep along the searchLine
-                if p == ' '
+                if p == ' ':
                     continue
                 # found it?
                 if p == piece:
@@ -220,7 +220,8 @@ class ChessBoard(Tkinter.Frame):
             move = move[1:]
 
             # possible source hint? (rank or file or both of source piece)
-            m = re.match(r'^([a-h\d]{1,2})', move):
+            m = re.match(r'^([a-h\d]{1,2})', move)
+            if m:
                 srcHint = m.group(1)
                 move = move[len(srcHint):]
         else:
