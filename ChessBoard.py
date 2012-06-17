@@ -39,21 +39,12 @@ class ChessBoard(Tkinter.Frame):
         # 
         self.canvas.grid(row=0, column=0)
 
-    def loadBitmaps(self):
-        imageFiles = [ \
-            'bdd48.gif', 'dsq48.gif', 'kll48.gif', 'nld48.gif', 'pld48.gif', 'qld48.gif', \
-            'bdl48.gif', 'kdd48.gif', 'lsq48.gif', 'nll48.gif', 'pll48.gif', 'qll48.gif', \
-            'rld48.gif', 'bld48.gif', 'kdl48.gif', 'ndd48.gif', 'pdd48.gif', 'qdd48.gif', \
-            'rdd48.gif', 'rll48.gif', 'bll48.gif', 'kld48.gif', 'ndl48.gif', 'pdl48.gif', \
-            'qdl48.gif', 'rdl48.gif']
 
-        for imgF in imageFiles:
-            key = re.sub(r'^(.*)\.gif$', r'\1', imgF)
-
-            imgPath = './images/' + imgF
-
-            #print 'setting self.bitmaps[%s] = %s' % (key, imgPath)
-            self.bitmaps[key] = Tkinter.PhotoImage(file=imgPath)
+    #--------------------------------------------------------------------------
+    # internal 
+    #--------------------------------------------------------------------------
+    def toggleTurn(self):
+        self.whoseTurn = {'w':'b', 'b':'w'}[self.whoseTurn]
 
     #--------------------------------------------------------------------------
     # FEN notation import/export
@@ -86,13 +77,20 @@ class ChessBoard(Tkinter.Frame):
     def getFEN(self):
         answer = ''
 
-        for i,p in enumerate(full64):
+        for i,p in enumerate(self.state):
             if p == ' ':
-                answer += 1
+                answer += '1'
             else:
                 answer += p
 
-        return answer + ' ' + ' '.join([self.whoseTurn, self.FENcastling, self.FENenpassant, self.FENhalfmove, self.FENfullmove])
+            if (i+1) % 8 == 0 and i != len(self.state)-1:
+                answer += '/'
+
+        answer = answer + ' ' + ' '.join([self.whoseTurn, self.FENcastling, self.FENenpassant, self.FENhalfmove, self.FENfullmove])
+
+        #print "returning -%s-" % answer
+        
+        return answer
 
     #--------------------------------------------------------------------------
     # board access stuff
@@ -146,7 +144,7 @@ class ChessBoard(Tkinter.Frame):
             [[1,0]], \
             [[1,-1]], \
             [[0,-1]], \
-            [[-1,1]], \
+            [[-1,-1]], \
             [[-1,0]], \
             [[-1,1]], \
             [[0,1]], \
@@ -161,7 +159,7 @@ class ChessBoard(Tkinter.Frame):
             [[1,-2]], \
             [[2,-1]], \
             [[-1,-2]], \
-            [[2,-1]] \
+            [[-2,-1]] \
         ]
 
         searchLinesRook = [ \
@@ -190,7 +188,7 @@ class ChessBoard(Tkinter.Frame):
 
         for searchLine in pieceToSearchLines[piece]:
             for sq in filter(lambda x: x, self.sanSquareShifts(destSquare, searchLine)):
-                print "a sq from sanSquareShifts: " + sq
+                #print "a sq from sanSquareShifts: " + sq
 
                 p = self.sanGetPieceAt(sq)
                 # empty square? keep along the searchLine
@@ -205,72 +203,96 @@ class ChessBoard(Tkinter.Frame):
         return answers
 
     def getAttackSourceSquares(self, destSquare, piece):
+        l = []
+
         if piece == 'p':
-            return self.sanSquareShifts(destSquare, [[[-1,1], [1,1]]])
+            l = self.sanSquareShifts(destSquare, [[-1,1], [1,1]])
         elif piece == 'P':
-            return self.sanSquareShifts(destSquare, [[[1,-1], [-1,-1]]])
+            l = self.sanSquareShifts(destSquare, [[1,-1], [-1,-1]])
         else:
-            return self.getMoveSourceSquares(destSquare, piece)
+            l = self.getMoveSourceSquares(destSquare, piece)
+
+        return filter(lambda x: x, l)
 
     def execMoveSan(self, move):
-        # extended with some bughouse constructs
-
-        origMove = move
-
-        regex = r'(?P<srcPiece>[PNBRQKpnbrqk])?' + \
-                r'(?P<srcHint>[a-h1-8]{1,2})?' + \
-                r'(?P<action>x)?' + \
-                r'(?P<dstSquare>[a-h][1-8])' + \
-                r'(?P<promote>=[PNBRQKpnbrqk])?' + \
-                r'(?P<check>\+)?'
-
-        m = re.match(regex, move)
-        if not m:
-            raise Exception("cannot parse move: %s" % move)
-
-        srcPiece = m.group('srcPiece') or {'w':'P', 'b':'p'}[self.whoseTurn]
-        srcHint = m.group('srcHint')
-        action = m.group('action')
-        dstSquare = m.group('dstSquare')
-        promote = m.group('promote')
-        check = m.group('check')
-
-        # resolve the srcSquare
-        srcSquare = ''
-        if srcHint and re.match(r'^[a-h][1-8]$', srcHint):
-            # given a full hint, source square is resolved
-            srcSquare = srcHint
-        else:
-            # where could piece have come from?
-            srcSquares = []
-            if action == 'x':
-                srcSquares = self.getAttackSourceSquares(dstSquare, srcPiece)
+        if move == 'O-O':
+            print "considering castle! (whoseTurn==%s)" % self.whoseTurn
+            if self.whoseTurn == 'w':
+                print "did white castle!"
+                self.sanSetPieceAt('h1', ' ')
+                self.sanSetPieceAt('e1', ' ')
+                self.sanSetPieceAt('g1', 'K')
+                self.sanSetPieceAt('f1', 'R')
             else:
-                srcSquares = self.getMoveSourceSquares(dstSquare, srcPiece)
-
-            print "srcSquares: ", srcSquares
-
-            if srcHint and re.match(r'^[1-8]$', srcHint):
-                # given a rank hint, consider only source squres in this rank
-                srcSquares = filter(lambda x: x[1] == srcHint, srcSquares)
-            elif srcHint and re.match(r'^[a-h]$', srcHint):
-                # given a file hint, consider only source squares in that file
-                srcSquares = filter(lambda x: x[0] == srcHint, srcSquares)
-
-            # hopefully we're left with one square by now
-            if len(srcSquares) < 1:
-                raise Exception("could not find source square for move %s" % move)
-            elif len(srcSquares) > 1:
-                raise Exception("ambiguous source square for move %s" % move)
-               
-            srcSquare = srcSquares[0]
-   
-        # modify the state
-        self.sanSetPieceAt(srcSquare, ' ')
-        self.sanSetPieceAt(dstSquare, srcPiece)
+                self.sanSetPieceAt('h8', ' ')
+                self.sanSetPieceAt('e8', ' ')
+                self.sanSetPieceAt('g8', 'k')
+                self.sanSetPieceAt('f8', 'r')
+        elif move == 'O-O-O':
+            if self.whoseTurn == 'w':
+                self.sanSetPieceAt('a1', ' ')
+                self.sanSetPieceAt('e1', ' ')
+                self.sanSetPieceAt('c1', 'K')
+                self.sanSetPieceAt('d1', 'R')
+            else:
+                self.sanSetPieceAt('a8', ' ')
+                self.sanSetPieceAt('e8', ' ')
+                self.sanSetPieceAt('c8', 'k')
+                self.sanSetPieceAt('d8', 'r')
+        else:
+            regex = r'(?P<srcPiece>[PNBRQKpnbrqk])?' + \
+                    r'(?P<srcHint>[a-h1-8]{1,2})?' + \
+                    r'(?P<action>x)?' + \
+                    r'(?P<dstSquare>[a-h][1-8])' + \
+                    r'(?P<promote>=[PNBRQKpnbrqk])?' + \
+                    r'(?P<check>\+)?'
+    
+            m = re.match(regex, move)
+            if not m:
+                raise Exception("cannot parse move: %s" % move)
+    
+            srcPiece = m.group('srcPiece') or {'w':'P', 'b':'p'}[self.whoseTurn]
+            srcHint = m.group('srcHint')
+            action = m.group('action')
+            dstSquare = m.group('dstSquare')
+            promote = m.group('promote')
+            check = m.group('check')
+    
+            # resolve the srcSquare
+            srcSquare = ''
+            if srcHint and re.match(r'^[a-h][1-8]$', srcHint):
+                # given a full hint, source square is resolved
+                srcSquare = srcHint
+            else:
+                # where could piece have come from?
+                srcSquares = []
+                if action == 'x':
+                    srcSquares = self.getAttackSourceSquares(dstSquare, srcPiece)
+                else:
+                    srcSquares = self.getMoveSourceSquares(dstSquare, srcPiece)
+    
+                if srcHint and re.match(r'^[1-8]$', srcHint):
+                    # given a rank hint, consider only source squres in this rank
+                    srcSquares = filter(lambda x: x[1] == srcHint, srcSquares)
+                elif srcHint and re.match(r'^[a-h]$', srcHint):
+                    # given a file hint, consider only source squares in that file
+                    srcSquares = filter(lambda x: x[0] == srcHint, srcSquares)
+    
+                # hopefully we're left with one square by now
+                if len(srcSquares) < 1:
+                    raise Exception("could not find source square for move %s" % move)
+                elif len(srcSquares) > 1:
+                    raise Exception("ambiguous source square for move %s " + \
+                        "(could be any of %s)" % (move, str(srcSquares)))
+                   
+                srcSquare = srcSquares[0]
+       
+            # modify the state
+            self.sanSetPieceAt(srcSquare, ' ')
+            self.sanSetPieceAt(dstSquare, srcPiece)
 
         # swap whose turn it is
-        self.whoseTurn = {'w':'b', 'b':'w'}[self.whoseTurn]
+        self.toggleTurn()
 
     #--------------------------------------------------------------------------
     # drawing stuff
@@ -297,8 +319,23 @@ class ChessBoard(Tkinter.Frame):
             return self.bitmaps[fenPieceToImg[p] + square + '48']
 
     def flip(self):
-        print "ChessBoard is flipped!"
         self.flippedDisplay = (self.flippedDisplay + 1) & 1
+
+    def loadBitmaps(self):
+        imageFiles = [ \
+            'bdd48.gif', 'dsq48.gif', 'kll48.gif', 'nld48.gif', 'pld48.gif', 'qld48.gif', \
+            'bdl48.gif', 'kdd48.gif', 'lsq48.gif', 'nll48.gif', 'pll48.gif', 'qll48.gif', \
+            'rld48.gif', 'bld48.gif', 'kdl48.gif', 'ndd48.gif', 'pdd48.gif', 'qdd48.gif', \
+            'rdd48.gif', 'rll48.gif', 'bll48.gif', 'kld48.gif', 'ndl48.gif', 'pdl48.gif', \
+            'qdl48.gif', 'rdl48.gif']
+
+        for imgF in imageFiles:
+            key = re.sub(r'^(.*)\.gif$', r'\1', imgF)
+
+            imgPath = './images/' + imgF
+
+            #print 'setting self.bitmaps[%s] = %s' % (key, imgPath)
+            self.bitmaps[key] = Tkinter.PhotoImage(file=imgPath)
 
     def draw(self):
         pieceGetSequence = range(64)

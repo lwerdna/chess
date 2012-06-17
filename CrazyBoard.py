@@ -85,6 +85,9 @@ class CrazyBoard(Tkinter.Frame):
         # reassemble, return
         return l + ' ' + r
 
+    def sanGetPieceAt(self, square):
+        return self.chessBoard.sanGetPieceAt(square)
+
     def execMoveSan(self, move):
         pieceChangeColorMap = {'p':'P', 'P':'p', \
                                'r':'R', 'R':'r', \
@@ -93,10 +96,11 @@ class CrazyBoard(Tkinter.Frame):
                                'q':'Q', 'Q':'q'}
 
         # filter out drops (normal chessboard doesn't understand)
-        m = re.match('^([prnbqkPRNBQK])@([a-h][1-8])$', move)
+        m = re.match('^([prnbqkPRNBQK])@([a-h][1-8])\+?$', move)
         if m:
             self.holdingBoard.removePiece(m.group(1))
             self.chessBoard.sanSetPieceAt(m.group(2), m.group(1))
+            self.chessBoard.toggleTurn()
         else:
             # for other moves, make the chessboard make them
             self.chessBoard.execMoveSan(move)
@@ -104,9 +108,13 @@ class CrazyBoard(Tkinter.Frame):
             # but add captured pieces to holdings
             if self.transferPieces:
                 # captures (to add to holdings)
-                m = re.search('x([prnbqkPRNBQK])', move)
+                m = re.search('x([a-h][1-8])', move)
                 if m:
-                    self.holdingBoard.addPiece(pieceChangeColorMap[m.group(1)])
+                    self.holdingBoard.addPiece( \
+                        pieceChangeColorMap[ \
+                            self.board.sanGetPieceAt(m.group(1)) \
+                        ] \
+                    )
 
     def holdingAddPiece(self, p):
         self.holdingBoard.addPiece(p)

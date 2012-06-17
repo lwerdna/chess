@@ -35,7 +35,7 @@ class BugBoard(Tkinter.Frame):
         playerToBoardOpp = {'a':self.boardB, 'A':self.boardB, 'b':self.boardA, 'B':self.boardA}
 
         # we strip off player indicator to decide which board to send the move to
-        regex = r'^\d([AaBb])\. (.*?){\d+\.\d+}$'
+        regex = r'^\d+([AaBb])\. (.*?){\d+\.\d+}$'
 
         m = re.match(regex, move)
         if not m:
@@ -43,17 +43,47 @@ class BugBoard(Tkinter.Frame):
 
         [player, move] = [m.group(1), m.group(2)]
 
-        # CrazyBoard handles removal from holdings during piece drop
-        playerToBoard[player].execMoveSan(move)
-
+        # BPGN uses capital letters for all source pieces in a move
+        # PGN distinguishes, using capital letters for white pieces, lowercase for black
+        # thus translation is necessary before sending the move down
+        if move != 'O-O' and move != 'O-O-O':
+            # note the difference here between this and the normal SAN movetext
+            # - source pieces are always capitalized (differentiates between b for
+            #   bishop and b rank source hint
+            # - "action" character @ added for drop
+            regex = r'(?P<srcPiece>[PNBRQK])?' + \
+                    r'(?P<srcHint>[a-h1-8]{1,2})?' + \
+                    r'(?P<action>[x@])?' + \
+                    r'(?P<dstSquare>[a-h][1-8])' + \
+                    r'(?P<promote>=[PNBRQKpnbrqk])?' + \
+                    r'(?P<check>\+)?'
+    
+            m = re.match(regex, move)
+            if not m:
+                raise Exception("cannot parse move: %s" % move)
+    
+            srcPiece = m.group('srcPiece') or {'A':'P','B':'P','a':'p','b':'p'}[player]
+                
+            if player in 'ab':
+                srcPiece = srcPiece.lower()
+            else:
+                srcPiece = srcPiece.upper()
+    
+            move = ''.join(filter(lambda x: x, \
+                [srcPiece, m.group('srcHint'), m.group('action'), m.group('dstSquare'), \
+                    m.group('promote'), m.group('check')]))
+        
         # but for captures, we've turned off CrazyBoard's transfer and instead
         # transfer across the table (board A <-> board B)
-        m = re.search('x([prnbqkPRNBQK])', move)
+        # and unlike CrazyBoard's flip of the color, the captured piece's color is preserved in bug
+        m = re.search('x([a-h][1-8])', move)
         if m:
-            newPiece = {'p':'P','P':'p','r':'R', 'R':'r', \
-                'b':'B','B':'b','n':'N', 'N':'n','q':'Q', 'Q':'q'}[m.group(1)]
+            playerToBoardOpp[player].holdingAddPiece( \
+                playerToBoard[player].sanGetPieceAt(m.group(1)) \
+            )
 
-            playerToBoardOpp[player].holdingAddPiece(newPiece)
+        # CrazyBoard handles removal from holdings during piece drop
+        playerToBoard[player].execMoveSan(move)
 
     def setBFEN(self, bfen):
         [l,r] = bfen.split(' | ')
@@ -61,7 +91,7 @@ class BugBoard(Tkinter.Frame):
         self.boardA.setFEN(l)
         self.boardB.setFEN(r)
 
-    def getBFEN(self, bfen):
+    def getBFEN(self):
         return self.boardA.getFEN() + ' | ' + self.boardB.getFEN()
 
     def draw(self):

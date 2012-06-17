@@ -49,6 +49,7 @@ class HoldingBoard(Tkinter.Frame):
 
 
     def addPiece(self, p):
+        print "added piece -%s-" % p
         self.pieces[p] += 1
 
     def removePiece(self, p):
@@ -79,7 +80,6 @@ class HoldingBoard(Tkinter.Frame):
             return self.bitmaps[fenPieceToImg[p] + square + '48']
 
     def flip(self):
-        print "HoldingBoard is flipped!"
         self.flippedDisplay = 1
 
     def draw(self):
