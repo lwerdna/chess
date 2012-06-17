@@ -6,7 +6,6 @@ import re
 import Tkinter
 
 import ChessBoard
-import ReserveBoard
 import CrazyBoard
 
 class BugBoard(Tkinter.Frame):

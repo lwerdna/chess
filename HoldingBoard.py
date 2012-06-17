@@ -49,7 +49,6 @@ class HoldingBoard(Tkinter.Frame):
 
 
     def addPiece(self, p):
-        print "added piece -%s-" % p
         self.pieces[p] += 1
 
     def removePiece(self, p):

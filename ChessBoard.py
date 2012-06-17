@@ -216,9 +216,7 @@ class ChessBoard(Tkinter.Frame):
 
     def execMoveSan(self, move):
         if move == 'O-O':
-            print "considering castle! (whoseTurn==%s)" % self.whoseTurn
             if self.whoseTurn == 'w':
-                print "did white castle!"
                 self.sanSetPieceAt('h1', ' ')
                 self.sanSetPieceAt('e1', ' ')
                 self.sanSetPieceAt('g1', 'K')
