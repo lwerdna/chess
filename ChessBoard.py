@@ -243,7 +243,7 @@ class ChessBoard(Tkinter.Frame):
                     r'(?P<action>x)?' + \
                     r'(?P<dstSquare>[a-h][1-8])' + \
                     r'(?P<promote>=[PNBRQKpnbrqk])?' + \
-                    r'(?P<check>\+)?'
+                    r'(?P<check>[\+#])?'
     
             m = re.match(regex, move)
             if not m:
