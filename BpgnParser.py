@@ -2,6 +2,7 @@
 
 # parse BPGN (game metadata + moves) into position strings
 
+import os
 import re
 import sys
 
@@ -27,10 +28,11 @@ class Match:
         self.comments = []
 
     def __str__(self):
-        answer = '%s[%s]&%s[%s] vs %s[%s]&%s[%s]\n' % ( \
+        answer = '%s[%s],%s[%s] vs %s[%s],%s[%s]\n' % ( \
             self.tags['WhiteA'], self.tags['WhiteAElo'], self.tags['BlackA'], self.tags['BlackAElo'], \
             self.tags['BlackB'], self.tags['BlackBElo'], self.tags['WhiteA'], self.tags['WhiteAElo'] \
         )
+
         answer += "TAGS:\n"
         for tag,value in self.tags.iteritems():
             answer += "%s: \"%s\"\n" % (tag, value)
@@ -75,13 +77,13 @@ class MatchIteratorFile:
 
     def next(self):
         # skip to next match
-        print "consuming newlines at %s:%d" % (self.path, self.lineNum)
+        #print "consuming newlines at %s:%d" % (self.path, self.lineNum)
         if not self.consumeNewLines():
             raise StopIteration
         
         match = Match()
 
-        print "consuming tags at %s:%d" % (self.path, self.lineNum)
+        #print "consuming tags at %s:%d" % (self.path, self.lineNum)
         line = self.readLine()
         if not re.match(r'^\[Event', line):
             raise Exception("expected Event tag at %s:%d" % (self.path, self.lineNum))
@@ -92,7 +94,7 @@ class MatchIteratorFile:
 
             line = self.readLine()
 
-        print "consuming optional comments and newlines at %s:%d" % (self.path, self.lineNum)
+        #print "consuming optional comments and newlines at %s:%d" % (self.path, self.lineNum)
         while 1:
             if not self.consumeNewLines():
                 raise StopIteration
@@ -104,7 +106,7 @@ class MatchIteratorFile:
             else:
                 break
 
-        print "consuming movetext at %s:%d" % (self.path, self.lineNum)
+        #print "consuming movetext at %s:%d" % (self.path, self.lineNum)
         # join the rest of the lines (until newline separator) as the movetext
         moveText = self.readLine()
         while not re.match(r'^\s*$', self.peekLine()):
@@ -126,7 +128,8 @@ class MatchIteratorFile:
                 # MOVE NUMBER TOKEN ... save last move, start new one
                 m = re.match(r'^(\d+[abAB]\.)\s*', moveText)
                 if m:
-                    match.moves.append(move)
+                    if move:
+                        match.moves.append(move)
                     move = Move()
                     move.moveNum = m.group(1)
 
@@ -167,7 +170,7 @@ class MatchIteratorFile:
 
         match.moves.append(move)
 
-        print "consuming optional comments at %s:%d" % (self.path, self.lineNum)
+       # print "consuming optional comments at %s:%d" % (self.path, self.lineNum)
         while 1:
             line = self.peekLine()
             m = re.match('^{(.*)}$', line)
@@ -184,10 +187,48 @@ class MatchIteratorFile:
 
 class MatchIteratorDir:
     def __init__(self, path):
-        pass
+        self.walkObj = os.walk(path)
+        self.matchIterFileObj = None
+        self.filesList = []
+
+    def __iter__(self):
+        return self
+
+    def next(self):
+        while 1:
+            # first level: does the file iterator still have something left?
+            if self.matchIterFileObj:
+                try:
+                    return self.matchIterFileObj.next()
+                except StopIteration: 
+                    self.matchIterFileObj = None
+    
+            # second level, is current list of files exhausted? can we create a new
+            # file iterator?
+            if self.filesList:
+                self.matchIterFileObj = MatchIteratorFile(self.filesList.pop())
+                continue
+    
+            # third level: no file iterator, no files list, descend!
+            # purposely don't trap exception: StopIterations should bubble up and tell
+            # caller that we're done
+            (root, subFolder, files) = self.walkObj.next()
+    
+            for f in files:
+                (dummy, ext) = os.path.splitext(f)
+                if ext == '.bpgn':
+                    self.filesList.append(os.path.join(root, f))
+
+def getFileSystemMatchIterator(path):
+    if os.path.isfile(path):
+        return MatchIteratorFile(path)
+    elif os.path.isdir(path):
+        return MatchIteratorDir(path)
+    else:
+        raise Exception("WTF?")
 
 if __name__ == '__main__':
-    for m in MatchIteratorFile(sys.argv[1]):
+    for m in getFileSystemMatchIterator(sys.argv[1]):
         print str(m)
 
         #raw_input("hit enter for next game")
