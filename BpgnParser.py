@@ -6,6 +6,9 @@ import os
 import re
 import sys
 
+import Common
+import BugLogic
+
 class Move:
     def __init__(self):
         self.moveNum = ''
@@ -23,9 +26,23 @@ class Move:
 
 class Match:
     def __init__(self):
+        self.initState = ''
         self.moves = []
         self.tags = {}
         self.comments = []
+        self.states = []
+
+    def populateStates(self):
+        self.states = [self.initState]
+
+        for move in self.moves:
+            fullMove = move.moveNum + ' ' + move.san
+
+            print "populating on move: -%s-" % fullMove
+
+            self.states.append(BugLogic.nextState(self.states[-1], fullMove))
+
+            print "returned: -%s-" % self.states[-1]
 
     def __str__(self):
         answer = '%s[%s],%s[%s] vs %s[%s],%s[%s]\n' % ( \
@@ -82,6 +99,7 @@ class MatchIteratorFile:
             raise StopIteration
         
         match = Match()
+        match.initState = Common.initBugFEN
 
         #print "consuming tags at %s:%d" % (self.path, self.lineNum)
         line = self.readLine()

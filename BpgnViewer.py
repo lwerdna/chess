@@ -4,6 +4,7 @@ import re
 import sys
 import Tkinter
 
+import Common
 import ChessBoard
 import CrazyBoard
 import BugBoard
@@ -14,22 +15,16 @@ class BpgnViewer(Tkinter.Frame):
         Tkinter.Frame.__init__(self, parent)
 
         self.parent = parent
-        
-        self.initBFEN = 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR/ w KQkq - 0 1 | rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR/ w KQkq - 0 1'
+       
+        self.boardMap = {}
 
         self.bpgnParser = None
-        # state after 0'th move is initial board state
-        # state after 1'st move is in moveNumberToBFEN[1]
-        # etc...
-        self.moveNumberToBFEN = {0: self.initBFEN}
-        # 0 is initial state, 1 is first move, etc.
         self.moveNumber = 0
 
         # two boards
         self.bugBoard = BugBoard.BugBoard(self, pieceWidth, pieceHeight)
 
-        self.bugBoard.setBFEN(self.initBFEN)
-        self.bugBoard.draw()
+        self.bugBoard.setBugFEN(Common.initBugFEN)
 
         # status thingies
         self.playerTimeAValue = 0
@@ -70,14 +65,17 @@ class BpgnViewer(Tkinter.Frame):
         self.btnFrame.grid(row=3, columnspan=4)
 
     def loadBpgn(self, path):
-        p = self.bpgnParser = BpgnParser.Parser(path)
+        match = self.match = BpgnParser.MatchIteratorFile(path).next()
+        print match
+        match.populateStates()
 
-        self.playerInfoA.config(text= (p.tags['WhiteA'] + ' [%s]' % p.tags['WhiteAElo']))
-        self.playerInfoa.config(text= (p.tags['BlackA'] + ' [%s]' % p.tags['BlackAElo']))
-        self.playerInfoB.config(text= (p.tags['WhiteB'] + ' [%s]' % p.tags['WhiteBElo']))
-        self.playerInfob.config(text= (p.tags['BlackB'] + ' [%s]' % p.tags['BlackBElo']))
 
-        m = re.match(r'^(\d+)\+(\d+)$', p.tags['TimeControl'])
+        self.playerInfoA.config(text= (match.tags['WhiteA'] + ' [%s]' % match.tags['WhiteAElo']))
+        self.playerInfoa.config(text= (match.tags['BlackA'] + ' [%s]' % match.tags['BlackAElo']))
+        self.playerInfoB.config(text= (match.tags['WhiteB'] + ' [%s]' % match.tags['WhiteBElo']))
+        self.playerInfob.config(text= (match.tags['BlackB'] + ' [%s]' % match.tags['BlackBElo']))
+
+        m = re.match(r'^(\d+)\+(\d+)$', match.tags['TimeControl'])
         initTime = float(m.group(1))
 
         self.playerTimeAValue = self.playerTimeaValue = \
@@ -88,7 +86,6 @@ class BpgnViewer(Tkinter.Frame):
         self.playerTimeB.config(text=('%s' % initTime))
         self.playerTimeb.config(text=('%s' % initTime))
 
-        self.moveNumberToBFEN = {0: self.initBFEN}
         self.moveNumber = 0
 
     def processMoveTime(self, move):
@@ -134,32 +131,26 @@ class BpgnViewer(Tkinter.Frame):
 
         playerToTimeLabel[player].config(text=('%s' % time))
 
+    def showStateAfterMove(self):
+        self.processMoveTime(self.match.moves[self.moveNumber])
+        self.bugBoard.setBugFEN(self.match.states[self.moveNumber])
+        self.bugBoard.draw()
+
     def btnBackwardCb(self):
         if self.moveNumber <= 0:
             print "at beginning"
         else:
             self.moveNumber -= 1;
-            priorState = self.moveNumberToBFEN[self.moveNumber]
-            self.processMoveTime(self.bpgnParser.moves[self.moveNumber])
-            self.bugBoard.setBFEN(priorState)
-            self.bugBoard.draw()
+
+        self.showStateAfterMove()
 
     def btnForwardCb(self):
-        if self.moveNumber >= len(self.bpgnParser.moves):
+        if self.moveNumber >= len(self.match.moves)-1:
             print "no more moves"
         else:
             self.moveNumber += 1
 
-            if self.moveNumber in self.moveNumberToBFEN:
-                self.bugBoard.setBFEN(self.moveNumberToBFEN[self.moveNumber])
-            else:
-                move = self.bpgnParser.moves[self.moveNumber-1]
-                self.processMoveTime(move)
-                self.bugBoard.execMoveSan(move) 
-                self.moveNumberToBFEN[self.moveNumber] = self.bugBoard.getBFEN()
-                #print "move[%d] = %s" % (self.moveNumber, self.moveNumberToBFEN[self.moveNumber])
-
-            self.bugBoard.draw()
+        self.showStateAfterMove()
 
 if __name__ == "__main__":
     # root window
