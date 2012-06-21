@@ -36,7 +36,7 @@ class BugBoard(Tkinter.Frame):
         self.boardB.setBoardMap(self.boardMap['boardB'])
 
     def setBugFEN(self, bfen):
-        self.boardMap = BugLogic.fenToBoardMap(bfen)
+        self.setBoardMap(BugLogic.fenToBoardMap(bfen))
 
     def draw(self):
         self.boardA.draw()

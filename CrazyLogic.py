@@ -53,9 +53,15 @@ def nextStateInternal(bm, move, addHoldings=1):
     fallThruChess = 1
 
     # filter out drops (normal chessboard doesn't understand)
-    m = re.match('^([prnbqkPRNBQK])@([a-h][1-8])\+?$', move)
+    m = re.match('^([PRNBQK])@([a-h][1-8])\+?$', move)
     if m:
         srcPiece = m.group(1)
+
+        if bm['activePlayer'] == 'w':
+            srcPiece = srcPiece.upper()
+        else:
+            srcPiece = srcPiece.lower()
+
         dstSquare = m.group(2)
 
         if bm[dstSquare] != ' ':
@@ -66,10 +72,13 @@ def nextStateInternal(bm, move, addHoldings=1):
             raise Exception("dropping non-existent piece!")
 
         # remove holdings
-        bm['holdings'] = re.sub(srcPiece, '', count=1)
+        bm['holdings'] = re.sub(srcPiece, '', bm['holdings'], count=1)
 
         # add to board
         bm[dstSquare] = srcPiece
+
+        # toggle turn
+        bm['activePlayer'] = {'b':'w', 'w':'b'}[bm['activePlayer']]
 
         fallThruChess = 0
 

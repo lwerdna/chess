@@ -92,12 +92,17 @@ def nextStateInternal(bm, move):
             bm['c8'] = 'k'
             bm['d8'] = 'r'
     else:
-        srcPiece = m.group('srcPiece') or {'w':'P', 'b':'p'}[bm['activePlayer']]
+        srcPiece = m.group('srcPiece') or 'P'
         srcHint = m.group('srcHint')
         action = m.group('action')
         dstSquare = m.group('dstSquare')
         promote = m.group('promote')
         check = m.group('check')
+
+        print "original move: -%s-" % move
+        print "srcPiece: ", srcPiece
+        print "srcHint: ", srcHint
+        print "dstSquare: ", dstSquare
 
         # resolve the srcSquare
         srcSquare = ''
@@ -110,9 +115,10 @@ def nextStateInternal(bm, move):
             if action == 'x':
                 if bm[dstSquare] == ' ':
                     raise Exception("capture onto empty square?")
-                srcSquares = getAttackSourceSquares(bm, dstSquare, srcPiece)
+                srcSquares = getAttackSourceSquares(bm, dstSquare, srcPiece, bm['activePlayer'])
             else:
-                srcSquares = getMoveSourceSquares(bm, dstSquare, srcPiece)
+                srcSquares = getMoveSourceSquares(bm, dstSquare, srcPiece, bm['activePlayer'])
+                print srcSquares
 
             if srcHint and re.match(r'^[1-8]$', srcHint):
                 # given a rank hint, consider only source squres in this rank
@@ -125,14 +131,14 @@ def nextStateInternal(bm, move):
             if len(srcSquares) < 1:
                 raise Exception("could not find source square for move %s" % move)
             elif len(srcSquares) > 1:
-                raise Exception("ambiguous source square for move %s " + \
-                    "(could be any of %s)" % (move, str(srcSquares)))
+                raise Exception(("ambiguous source square for move %s " + \
+                    "(could be any of %s)") % (move, str(srcSquares)))
                
             srcSquare = srcSquares[0]
    
         # modify the state
+        bm[dstSquare] = bm[srcSquare]
         bm[srcSquare] = ' '
-        bm[dstSquare] = srcPiece
 
     # swap whose turn it is
     bm['activePlayer'] = {'b':'w', 'w':'b'}[bm['activePlayer']]
@@ -170,7 +176,7 @@ def sanIsSameFile(a, b):
 
 # given a square and piece type, return the possible source squares from
 # which this piece could move from
-def getMoveSourceSquares(boardMap, destSquare, pieceType):
+def getMoveSourceSquares(boardMap, destSquare, pieceType, player):
     answers = []
 
     # these "searchLines" across the chessboard define a line of search that
@@ -217,39 +223,49 @@ def getMoveSourceSquares(boardMap, destSquare, pieceType):
     searchLinesQueen = searchLinesRook + searchLinesBishop
 
     pieceToSearchLines = { \
-                    'p': searchLinesPawnB, 'P':searchLinesPawnW, \
-                    'r': searchLinesRook, 'R':searchLinesRook, \
-                    'n': searchLinesKnight, 'N':searchLinesKnight, \
-                    'q': searchLinesQueen, 'Q':searchLinesQueen, \
-                    'b': searchLinesBishop, 'B':searchLinesBishop, \
-                    'k': searchLinesKing, 'K':searchLinesKing }
+                    'Pb': searchLinesPawnB, 'Pw':searchLinesPawnW, \
+                    'Rb': searchLinesRook, 'Rw':searchLinesRook, \
+                    'Nb': searchLinesKnight, 'Nw':searchLinesKnight, \
+                    'Qb': searchLinesQueen, 'Qw':searchLinesQueen, \
+                    'Bb': searchLinesBishop, 'Bw':searchLinesBishop, \
+                    'Kb': searchLinesKing, 'Kw':searchLinesKing }
 
-    for searchLine in pieceToSearchLines[pieceType]:
+    matchPiece = pieceType
+    if player == 'w':
+        matchPiece = matchPiece.upper()
+    else:
+        matchPiece = matchPiece.lower()
+
+
+    for searchLine in pieceToSearchLines[pieceType + player]:
         for sq in filter(lambda x: x, sanSquareShifts(destSquare, searchLine)):
-            #print "a sq from sanSquareShifts: " + sq
+            print "a sq from sanSquareShifts: " + sq + " (has square %s ==? %s)" % (boardMap[sq], matchPiece)
 
             p = boardMap[sq]
             # empty square? keep along the searchLine
             if p == ' ':
                 continue
             # found it?
-            if p == pieceType:
+            if p == matchPiece:
                 answers.append(sq)
             # found or not, square is occupied and blocks attacking bishop
             break
 
     return answers
 
-def getAttackSourceSquares(boardMap, destSquare, pieceType):
+def getAttackSourceSquares(boardMap, destSquare, pieceType, player):
     l = []
 
-    if pieceType == 'p':
-        l = sanSquareShifts(destSquare, [[-1,1], [1,1]])
-    elif pieceType == 'P':
-        l = sanSquareShifts(destSquare, [[1,-1], [-1,-1]])
+    # pawn is only piece that attacks differently than it moves
+    if pieceType == 'P':
+        if player == 'b':
+            l = sanSquareShifts(destSquare, [[-1,1], [1,1]])
+        else:
+            l = sanSquareShifts(destSquare, [[1,-1], [-1,-1]])
     else:
-        l = getMoveSourceSquares(boardMap, destSquare, pieceType)
+        l = getMoveSourceSquares(boardMap, destSquare, pieceType, player)
 
+    print "pre-filter", l
     return filter(lambda x: x, l)
 
 

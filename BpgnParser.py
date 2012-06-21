@@ -11,13 +11,14 @@ import BugLogic
 
 class Move:
     def __init__(self):
+        self.player = ''
         self.moveNum = ''
         self.san = ''
         self.comments = []
         pass
 
     def __str__(self):
-        answer = self.moveNum + ' ' + self.san
+        answer = self.moveNum + self.player + '. ' + self.san
 
         for c in self.comments:
             answer += ' {%s}' % c
@@ -26,23 +27,27 @@ class Move:
 
 class Match:
     def __init__(self):
-        self.initState = ''
+        self.initState = Common.initBugFEN
         self.moves = []
         self.tags = {}
         self.comments = []
-        self.states = []
+        self.states = [self.initState]
+
+    def populateState(self, i):
+        while len(self.moves) > len(self.states):
+            self.states += ['']
+        
+        fullMove = self.moves[i].moveNum + self.moves[i].player + '. ' + self.moves[i].san
+        print "populating on move: -%s-" % fullMove
+        self.states[i+1] = BugLogic.nextState(self.states[i], self.moves[i].player, self.moves[i].san)
+        print "returned: -%s-" % self.states[i+1]
+        print '----------'
 
     def populateStates(self):
         self.states = [self.initState]
 
-        for move in self.moves:
-            fullMove = move.moveNum + ' ' + move.san
-
-            print "populating on move: -%s-" % fullMove
-
-            self.states.append(BugLogic.nextState(self.states[-1], fullMove))
-
-            print "returned: -%s-" % self.states[-1]
+        for i in range(len(self.moves)):
+            populateState(i)
 
     def __str__(self):
         answer = '%s[%s],%s[%s] vs %s[%s],%s[%s]\n' % ( \
@@ -76,11 +81,11 @@ class MatchIteratorFile:
     def peekLine(self):
         line = self.fp.readline()
         self.fp.seek(-1*len(line), 1)
-        return line
+        return line.rstrip()
 
     def readLine(self):
         self.lineNum += 1
-        return self.fp.readline()
+        return self.fp.readline().rstrip()
 
     def consumeNewLines(self):
         while 1:
@@ -144,12 +149,13 @@ class MatchIteratorFile:
 
             else:
                 # MOVE NUMBER TOKEN ... save last move, start new one
-                m = re.match(r'^(\d+[abAB]\.)\s*', moveText)
+                m = re.match(r'^(\d+)([abAB])\.\s*', moveText)
                 if m:
                     if move:
                         match.moves.append(move)
                     move = Move()
                     move.moveNum = m.group(1)
+                    move.player = m.group(2)
 
                 else:
                     # SAN TOKEN ... encodes the move

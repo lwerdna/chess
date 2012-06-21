@@ -1,17 +1,19 @@
 
+# note that only in FEN (chess or crazy or bug) are upper/lower letters used
 initFEN = 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 0'
 initCrazyFEN = 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR/ w KQkq - 0 0'
 initBugFEN = initCrazyFEN + ' | ' + initCrazyFEN
 
+# in actual SAN movetext, all pieces are in caps
 regexSan = \
    r'^(?:' + \
    r'(?P<kCastle>O-O)|' + \
    r'(?P<qCastle>O-O-O)|' + \
-   r'(?P<srcPiece>[PNBRQKpnbrqk])?' + \
+   r'(?P<srcPiece>[PNBRQK])?' + \
    r'(?P<srcHint>[a-h1-8]{1,2})?' + \
    r'(?P<action>[x@])?' + \
    r'(?P<dstSquare>[a-h][1-8])' + \
-   r'(?P<promote>=[PNBRQKpnbrqk])?' + \
+   r'(?P<promote>=[PNBRQK])?' + \
    r')' + \
    r'(?P<check>[\+#])?'
 

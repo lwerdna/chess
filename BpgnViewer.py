@@ -23,7 +23,6 @@ class BpgnViewer(Tkinter.Frame):
 
         # two boards
         self.bugBoard = BugBoard.BugBoard(self, pieceWidth, pieceHeight)
-
         self.bugBoard.setBugFEN(Common.initBugFEN)
 
         # status thingies
@@ -67,8 +66,6 @@ class BpgnViewer(Tkinter.Frame):
     def loadBpgn(self, path):
         match = self.match = BpgnParser.MatchIteratorFile(path).next()
         print match
-        match.populateStates()
-
 
         self.playerInfoA.config(text= (match.tags['WhiteA'] + ' [%s]' % match.tags['WhiteAElo']))
         self.playerInfoa.config(text= (match.tags['BlackA'] + ' [%s]' % match.tags['BlackAElo']))
@@ -87,11 +84,12 @@ class BpgnViewer(Tkinter.Frame):
         self.playerTimeb.config(text=('%s' % initTime))
 
         self.moveNumber = 0
+        self.bugBoard.setBugFEN(self.match.states[0])
 
-    def processMoveTime(self, move):
-        m = re.match(r'^\d+([AaBb]).*{(.*)}$', move)
-        player = m.group(1)
-        time = float(m.group(2))
+        self.bugBoard.draw()
+
+    def processMoveTime(self, player, time):
+        time = float(time)
 
         playerToTimeValue = { \
             'a' : self.playerTimeaValue, 'A' : self.playerTimeAValue, \
@@ -132,7 +130,8 @@ class BpgnViewer(Tkinter.Frame):
         playerToTimeLabel[player].config(text=('%s' % time))
 
     def showStateAfterMove(self):
-        self.processMoveTime(self.match.moves[self.moveNumber])
+        self.processMoveTime(self.match.moves[self.moveNumber].player, \
+                            self.match.moves[self.moveNumber].comments[0])
         self.bugBoard.setBugFEN(self.match.states[self.moveNumber])
         self.bugBoard.draw()
 
@@ -141,15 +140,19 @@ class BpgnViewer(Tkinter.Frame):
             print "at beginning"
         else:
             self.moveNumber -= 1;
+        
+        self.match.populateState(self.moveNumber)
 
         self.showStateAfterMove()
 
     def btnForwardCb(self):
+        self.match.populateState(self.moveNumber)
+
         if self.moveNumber >= len(self.match.moves)-1:
             print "no more moves"
         else:
             self.moveNumber += 1
-
+        
         self.showStateAfterMove()
 
 if __name__ == "__main__":
