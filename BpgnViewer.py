@@ -94,6 +94,7 @@ class BpgnViewer(Tkinter.Frame):
 
     def processMoveTime(self, player, time):
         time = float(time)
+        #print "time is: ", time
 
         playerToTimeValue = { \
             'a' : self.playerTimeaValue, 'A' : self.playerTimeAValue, \

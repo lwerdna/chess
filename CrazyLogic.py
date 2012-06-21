@@ -96,8 +96,12 @@ def nextStateInternal(bm, move, addHoldings=1):
         dstPiece = bm[dstSquare]
 
         # promoted pieces go back to pawns
-        if re.match(r'^.*~$', dstPiece):
-            dstPiece = {'w':'p', 'b':'P'}[bm['activePlayer']]
+        m = re.match(r'^(.*)~$', dstPiece)
+        if m:
+            dstPiece = Common.casePieceByPlayer('p', bm['activePlayer'])
+
+            # strip the ~ (which Chess wouldn't understand)
+            bm[dstSquare] = m.group(1)
 
         # add to holdings
         if addHoldings:

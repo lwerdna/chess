@@ -45,4 +45,18 @@ pieceChangeColorMap = {'p':'P', 'P':'p', \
                        'n':'N', 'N':'n', \
                        'q':'Q', 'Q':'q'}
 
+def casePieceByPlayer(piece, player):
+    if player == 'w':
+        return piece.upper()
+    elif player == 'b':
+        return piece.lower()
+    else:
+        raise Exception("unknown player: -%s-" % player)
 
+def toggleCase(piece):
+    temp = piece.upper()
+
+    if piece == temp:
+        return piece.lower()
+        
+    return temp

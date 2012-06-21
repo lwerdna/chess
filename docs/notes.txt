@@ -1,0 +1,8 @@
+
+if someone forfeits on time, bughousedb.org seems to record whatever their prior move was at time 0
+to be the move at top zero, with comment that they lost on time ....
+
+notice here that move 35a is repeated
+
+35A. Rd2{0.385} 35a. B@g4+{57.392} 29b. Kb8{62.265} 30B. Qxd8+{18.241} 35a. B@g4+{57.392} {Conquerer forfeits on time} 0-1
+

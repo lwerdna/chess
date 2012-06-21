@@ -45,7 +45,13 @@ def nextStateInternal(bm, player, move):
     # and unlike CrazyBoard's flip of the color, the captured piece's color is preserved in bug
     m = re.search('x([a-h][1-8])', move)
     if m:
-        playerToBoardOpp[player]['holdings'] += playerToBoard[player][m.group(1)]
+        pieceCode = playerToBoard[player][m.group(1)]
+
+        # promoted pieces back to pawns
+        if re.match(r'^(.*)~$', pieceCode):
+            pieceCode = {'a':'P', 'b':'P', 'A':'p', 'B':'p'}[player]
+
+        playerToBoardOpp[player]['holdings'] += pieceCode
 
     # CrazyBoard handles removal from holdings during piece drop
     temp = CrazyLogic.nextStateInternal(playerToBoard[player], move, False)

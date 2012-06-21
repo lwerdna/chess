@@ -142,7 +142,7 @@ def nextStateInternal(bm, move):
 
         # did it promote?
         if promote:
-            bm[dstSquare] = promote[1]
+            bm[dstSquare] = Common.casePieceByPlayer(promote[1], bm['activePlayer'])
 
     # swap whose turn it is
     bm['activePlayer'] = {'b':'w', 'w':'b'}[bm['activePlayer']]
@@ -243,9 +243,11 @@ def getMoveSourceSquares(boardMap, destSquare, pieceType, player):
 
     for searchLine in pieceToSearchLines[pieceType + player]:
         for sq in filter(lambda x: x, sanSquareShifts(destSquare, searchLine)):
-            print "a sq from sanSquareShifts: " + sq + " (has square %s ==? %s)" % (boardMap[sq], matchPiece)
+            #print "a sq from sanSquareShifts: " + sq + " (has square %s ==? %s)" % (boardMap[sq], matchPiece)
 
-            p = boardMap[sq]
+            # we purposely take just the first character here
+            # (for chess there is only one character anyways)
+            p = boardMap[sq][0]
             # empty square? keep along the searchLine
             if p == ' ':
                 continue

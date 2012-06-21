@@ -33,13 +33,23 @@ class Match:
         self.comments = []
         self.states = [self.initState]
 
+        self.movesSeenBefore = {}
+
     def populateState(self, i):
         while len(self.moves) >= len(self.states):
             self.states += ['']
         
         fullMove = self.moves[i].moveNum + self.moves[i].player + '. ' + self.moves[i].san
         print "populating on move: -%s-" % fullMove
-        self.states[i+1] = BugLogic.nextState(self.states[i], self.moves[i].player, self.moves[i].san)
+
+        # when someone forfeits on time, a repeat instance of their last move (even the time) is
+        # logged ... we thus remember moves we've seen before and not act on them
+        if fullMove in self.movesSeenBefore:
+            self.states[i+1] = self.states[i]
+        else:
+            self.movesSeenBefore[fullMove] = 1
+            self.states[i+1] = BugLogic.nextState(self.states[i], self.moves[i].player, self.moves[i].san)
+
         print "returned: -%s-" % self.states[i+1]
         print '----------'
 
@@ -47,7 +57,7 @@ class Match:
         self.states = [self.initState]
 
         for i in range(len(self.moves)):
-            populateState(i)
+            self.populateState(i)
 
     def __str__(self):
         answer = '%s[%s],%s[%s] vs %s[%s],%s[%s]\n' % ( \
@@ -78,18 +88,24 @@ class MatchIteratorFile:
         self.lineNum = -1
         return self
 
-    def peekLine(self):
+    def peekLine(self, doStrip=1):
         line = self.fp.readline()
         self.fp.seek(-1*len(line), 1)
-        return line.rstrip()
+
+        if doStrip:
+            line = line.rstrip()
+
+        return line
 
     def readLine(self):
         self.lineNum += 1
-        return self.fp.readline().rstrip()
+        temp = self.fp.readline().rstrip()
+        print "read: %s" % temp
+        return temp
 
     def consumeNewLines(self):
         while 1:
-            line = self.peekLine()
+            line = self.peekLine(False)
             if not line:
                 return False
             if not re.match(r'^\s+$', line):
@@ -253,7 +269,11 @@ def getFileSystemMatchIterator(path):
 
 if __name__ == '__main__':
     for m in getFileSystemMatchIterator(sys.argv[1]):
+        m.populateStates()
         print str(m)
+
+        for s in m.states:
+            print s
 
         #raw_input("hit enter for next game")
 
