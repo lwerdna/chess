@@ -17,20 +17,26 @@ def fenToBoardMap(fen):
 
     squares = iter(Common.squaresSan)
 
-    for c in places:
-        # map normal pieces
-        if re.match(r'^[PRQKNBprqknb]~?$', c):
-            mapping[squares.next()] = c
-        # map blank squares
-        elif c in '12345678':
-            for j in range(int(c)):
+    while places:
+        # map normal pieces (possibly marked with promotion)
+        m = re.match(r'^([PRQKNBprqknb]~?)', places)
+        if m:
+            mapping[squares.next()] = m.group(0)
+            places = places[len(m.group(0)):]
+
+        # map blank squares (indicated by number)
+        elif places[0] in '12345678':
+            for j in range(int(places[0])):
                 mapping[squares.next()] = ' '
-        # rank separator
-        elif c == '/':
-            pass
+            places = places[1:]
+
+        # rank separator (ignored)
+        elif places[0] == '/':
+            places = places[1:]
+
         # ???
         else:
-            raise Exception('unknown character \'%s\' in fen' % c)
+            raise Exception('unknown character \'%s\' in fen' % places[0])
 
     return mapping
 
@@ -53,7 +59,7 @@ def nextStateInternal(bm, move, addHoldings=1):
     fallThruChess = 1
 
     # filter out drops (normal chessboard doesn't understand)
-    m = re.match('^([PRNBQK])@([a-h][1-8])\+?$', move)
+    m = re.match('^([PRNBQK])@([a-h][1-8])[\+#]?$', move)
     if m:
         srcPiece = m.group(1)
 
@@ -100,5 +106,10 @@ def nextStateInternal(bm, move, addHoldings=1):
     # let Chess do the rest
     if fallThruChess:
         bm = ChessLogic.nextStateInternal(bm, move)
+
+    # if it was a promotion, mark the promoted piece with '~'
+    m = re.search('([a-h][1-8])=([QKPRBN])', move)
+    if m:
+        bm[m.group(1)] += '~'
 
     return bm

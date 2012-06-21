@@ -140,6 +140,10 @@ def nextStateInternal(bm, move):
         bm[dstSquare] = bm[srcSquare]
         bm[srcSquare] = ' '
 
+        # did it promote?
+        if promote:
+            bm[dstSquare] = promote[1]
+
     # swap whose turn it is
     bm['activePlayer'] = {'b':'w', 'w':'b'}[bm['activePlayer']]
     

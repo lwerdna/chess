@@ -35,7 +35,14 @@ class CrazyBoard(Tkinter.Frame):
 
     def setBoardMap(self, bm):
         self.boardMap = bm
-        self.chessBoard.setBoardMap(bm)
+
+        # filter out stuff that normal chess doesn't understand
+        # filter '~' promotion marker
+        temp = {}
+        for key,val in bm.iteritems():
+            temp[key] = val.replace('~', '')
+        self.chessBoard.setBoardMap(temp)
+
         self.holdingBoard.setFEN(bm['holdings'])
 
     def flip(self):

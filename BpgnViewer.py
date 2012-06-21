@@ -19,7 +19,7 @@ class BpgnViewer(Tkinter.Frame):
         self.boardMap = {}
 
         self.bpgnParser = None
-        self.moveNumber = 0
+        self.moveIndex = 0
 
         # two boards
         self.bugBoard = BugBoard.BugBoard(self, pieceWidth, pieceHeight)
@@ -72,7 +72,16 @@ class BpgnViewer(Tkinter.Frame):
         self.playerInfoB.config(text= (match.tags['WhiteB'] + ' [%s]' % match.tags['WhiteBElo']))
         self.playerInfob.config(text= (match.tags['BlackB'] + ' [%s]' % match.tags['BlackBElo']))
 
-        m = re.match(r'^(\d+)\+(\d+)$', match.tags['TimeControl'])
+        self.setInitialTimes()
+
+        self.moveIndex = -1
+        self.stateIndex = 0
+        self.bugBoard.setBugFEN(self.match.states[self.stateIndex])
+
+        self.bugBoard.draw()
+
+    def setInitialTimes(self):
+        m = re.match(r'^(\d+)\+(\d+)$', self.match.tags['TimeControl'])
         initTime = float(m.group(1))
 
         self.playerTimeAValue = self.playerTimeaValue = \
@@ -82,11 +91,6 @@ class BpgnViewer(Tkinter.Frame):
         self.playerTimea.config(text=('%s' % initTime))
         self.playerTimeB.config(text=('%s' % initTime))
         self.playerTimeb.config(text=('%s' % initTime))
-
-        self.moveNumber = 0
-        self.bugBoard.setBugFEN(self.match.states[0])
-
-        self.bugBoard.draw()
 
     def processMoveTime(self, player, time):
         time = float(time)
@@ -130,30 +134,37 @@ class BpgnViewer(Tkinter.Frame):
         playerToTimeLabel[player].config(text=('%s' % time))
 
     def showStateAfterMove(self):
-        self.processMoveTime(self.match.moves[self.moveNumber].player, \
-                            self.match.moves[self.moveNumber].comments[0])
-        self.bugBoard.setBugFEN(self.match.states[self.moveNumber])
+        if self.moveIndex < 0:
+            self.setInitialTimes()
+        else:
+            self.processMoveTime(self.match.moves[self.moveIndex].player, \
+                                self.match.moves[self.moveIndex].comments[0])
+            
+        self.bugBoard.setBugFEN(self.match.states[self.moveIndex+1])
+
         self.bugBoard.draw()
 
     def btnBackwardCb(self):
-        if self.moveNumber <= 0:
+        if self.moveIndex < 0:
             print "at beginning"
         else:
-            self.moveNumber -= 1;
-        
-        self.match.populateState(self.moveNumber)
+            self.moveIndex -= 1
+            self.stateIndex -= 1
 
         self.showStateAfterMove()
 
     def btnForwardCb(self):
-        self.match.populateState(self.moveNumber)
-
-        if self.moveNumber >= len(self.match.moves)-1:
-            print "no more moves"
+        # the x'th move transitions state x to x+1
+        if self.moveIndex >= len(self.match.moves)-1:
+            print "on last move"
         else:
-            self.moveNumber += 1
-        
+            self.moveIndex += 1
+            self.stateIndex += 1
+
+        self.match.populateState(self.moveIndex)
+
         self.showStateAfterMove()
+
 
 if __name__ == "__main__":
     # root window

@@ -34,7 +34,7 @@ class Match:
         self.states = [self.initState]
 
     def populateState(self, i):
-        while len(self.moves) > len(self.states):
+        while len(self.moves) >= len(self.states):
             self.states += ['']
         
         fullMove = self.moves[i].moveNum + self.moves[i].player + '. ' + self.moves[i].san
