@@ -96,7 +96,7 @@ def nextStateInternal(bm, move):
             bm['c1'] = 'K'
             bm['d1'] = 'R'
         else:
-            if bm['e1'] != 'k' or bm['a1'] != 'r':
+            if bm['e8'] != 'k' or bm['a8'] != 'r':
                 raise Exception("illegal queenside castle!")
 
             bm['a8'] = ' '
