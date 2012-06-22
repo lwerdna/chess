@@ -70,11 +70,17 @@ def nextStateInternal(bm, move):
 
     if m.group('kCastle'):
         if bm['activePlayer'] == 'w':
+            if bm['e1'] != 'K' or bm['h1'] != 'R':
+                raise Exception("illegal kingside castle!")
+
             bm['h1'] = ' '
             bm['e1'] = ' '
             bm['g1'] = 'K'
             bm['f1'] = 'R'
         else:
+            if bm['e8'] != 'k' or bm['h8'] != 'r':
+                raise Exception("illegal kingside castle!")
+
             bm['h8'] = ' '
             bm['e8'] = ' '
             bm['g8'] = 'k'
@@ -82,11 +88,17 @@ def nextStateInternal(bm, move):
 
     elif m.group('qCastle'):
         if bm['activePlayer'] == 'w':
+            if bm['e1'] != 'K' or bm['a1'] != 'R':
+                raise Exception("illegal queenside castle!")
+
             bm['a1'] = ' '
             bm['e1'] = ' '
             bm['c1'] = 'K'
             bm['d1'] = 'R'
         else:
+            if bm['e1'] != 'k' or bm['a1'] != 'r':
+                raise Exception("illegal queenside castle!")
+
             bm['a8'] = ' '
             bm['e8'] = ' '
             bm['c8'] = 'k'
@@ -118,19 +130,38 @@ def nextStateInternal(bm, move):
                 srcSquares = getAttackSourceSquares(bm, dstSquare, srcPiece, bm['activePlayer'])
             else:
                 srcSquares = getMoveSourceSquares(bm, dstSquare, srcPiece, bm['activePlayer'])
-                print srcSquares
 
+            # filter based on the hint
             if srcHint and re.match(r'^[1-8]$', srcHint):
                 # given a rank hint, consider only source squres in this rank
                 srcSquares = filter(lambda x: x[1] == srcHint, srcSquares)
             elif srcHint and re.match(r'^[a-h]$', srcHint):
                 # given a file hint, consider only source squares in that file
                 srcSquares = filter(lambda x: x[0] == srcHint, srcSquares)
+           
+            # (rare) filter moves that would result in check
+            if len(srcSquares) > 1:
+                temp = srcSquares
+                srcSquares = []
 
-            # hopefully we're left with one square by now
+                for sqr in temp:
+                    # create hypothetical board with piece removed
+                    bm2 = bm.copy()
+
+                    # with piece moved
+                    if dstSquare:
+                        bm2[dstSquare] = bm2[sqr]
+                    bm2[sqr] = ' '
+
+                    # if hypothetical board does not produce a king check
+                    if not isInCheckInternal(bm2, bm['activePlayer']):
+                        srcSquares.append(sqr)
+            
             if len(srcSquares) < 1:
                 raise Exception("could not find source square for move %s" % move)
-            elif len(srcSquares) > 1:
+
+            # hopefully we're left with one square by now
+            if len(srcSquares) > 1:
                 raise Exception(("ambiguous source square for move %s " + \
                     "(could be any of %s)") % (move, str(srcSquares)))
                
@@ -240,10 +271,9 @@ def getMoveSourceSquares(boardMap, destSquare, pieceType, player):
     else:
         matchPiece = matchPiece.lower()
 
-
     for searchLine in pieceToSearchLines[pieceType + player]:
         for sq in filter(lambda x: x, sanSquareShifts(destSquare, searchLine)):
-            #print "a sq from sanSquareShifts: " + sq + " (has square %s ==? %s)" % (boardMap[sq], matchPiece)
+            print "a sq from sanSquareShifts: " + sq + " (has square %s ==? %s)" % (boardMap[sq], matchPiece)
 
             # we purposely take just the first character here
             # (for chess there is only one character anyways)
@@ -271,7 +301,35 @@ def getAttackSourceSquares(boardMap, destSquare, pieceType, player):
     else:
         l = getMoveSourceSquares(boardMap, destSquare, pieceType, player)
 
-    print "pre-filter", l
     return filter(lambda x: x, l)
 
+def isInCheck(fenState, player):
+    return isInCheckInternal(fenToBoardMap(fenState), player)
 
+def isInCheckInternal(boardMap, player):
+    coloredKing = Common.casePieceByPlayer('k', player)
+
+    # find king square
+    sqrKing = ''
+    for sqr, p in boardMap.iteritems():
+        if p == coloredKing:
+            sqrKing = sqr
+            break
+
+    if not sqrKing:
+        raise Exception("could not find the -%s- king -%s-!" % player, coloredKing)
+
+    # get code for opponent
+    opp = Common.togglePlayer(player)
+
+    # for all types of pieces, see if there are any attacking squares:
+    for piece in ['Q','K','R','B','N']:
+        # found! in check!
+        attackSquares = getAttackSourceSquares(boardMap, sqrKing, piece, opp)
+        if attackSquares:
+            print "yes, these guys can attack king: ", attackSquares
+            return True
+
+    # none found? not in check
+    return False
+        

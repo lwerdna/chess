@@ -1,0 +1,15 @@
+[Event "FICS rated bughouse match"]
+[Date "2010-07-26"]
+[Time "14:55:56"]
+[TimeControl "120+0"]
+[WhiteA "Liverppol"][WhiteAElo "2157"]
+[WhiteB "Conquerer"][WhiteBElo "1609"]
+[BlackA "YScorpion"][BlackAElo "2384"]
+[BlackB "shadew"][BlackBElo "1934"]
+[Lag "112 451 671 967 857 837 879 760 524 521 752 377 815 665 378 392 776 1162 797 709 373 770 409 362 371 367 773 1238 525 380 1473 918 411 536"]
+[Result "*"]
+{C:This is game number 450 at http://www.bughousedb.com}
+
+1B. e4{119.729} 1A. e3{118.781} 1a. e5{119.621} 2A. d4{118.681} 2a. Nc6{119.521} 3A. dxe5{118.041} 3a. Nxe5{119.421} 4A. Nf3{117.941} 4a. Nxf3+{118.844} 5A. gxf3{117.613} 5a. Ne7{118.744} 6A. Rg1{117.191} 6a. Ng6{118.644} 7A. Nc3{117.066} 7a. d6{117.981} 8A. Bd2{115.941} 8a. Be7{117.881} 9A. Bd3{115.628} 9a. O-O{117.781} 10A. Qe2{115.528} 10a. Bf6{117.070} 11A. O-O-O{115.428} 11a. Be6{116.702} 12A. Kb1{114.912} 12a. a5{116.227} 13A. h4{113.099} 13a. a4{116.127} 14A. h5{112.474} 14a. Ne5{115.612} 15A. h6{111.146} 15a. g6{114.319} 16A. Ne4{106.646} 16a. Nxd3{112.473} 17A. Qxd3{104.989} {C: Liverppol requests to abort the game.} {Game aborted by mutual agreement} *
+
+

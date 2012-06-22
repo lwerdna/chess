@@ -5,10 +5,12 @@ initCrazyFEN = 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR/ w KQkq - 0 0'
 initBugFEN = initCrazyFEN + ' | ' + initCrazyFEN
 
 # in actual SAN movetext, all pieces are in caps
+
+# note: queen castle detection must come first (king castle is substring)
 regexSan = \
    r'^(?:' + \
-   r'(?P<kCastle>O-O)|' + \
    r'(?P<qCastle>O-O-O)|' + \
+   r'(?P<kCastle>O-O)|' + \
    r'(?P<srcPiece>[PNBRQK])?' + \
    r'(?P<srcHint>[a-h1-8]{1,2})?' + \
    r'(?P<action>[x@])?' + \
@@ -60,3 +62,16 @@ def toggleCase(piece):
         return piece.lower()
         
     return temp
+
+def togglePlayer(player):
+    if player == 'w':
+        return 'b'
+    elif player == 'b':
+        return 'w'
+    raise Exception('uknown player code -%s-' % player)
+
+def coloredPieceToPlayer(piece):
+    if piece == piece.upper():
+        return 'w'
+    else:
+        return 'b'
