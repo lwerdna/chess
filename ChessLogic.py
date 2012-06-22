@@ -216,7 +216,7 @@ def getMoveSourceSquares(boardMap, destSquare, pieceType, player):
 
     # these "searchLines" across the chessboard define a line of search that
     # could be blocked by interposing pieces
-    searchLinesPawnB = [[[0,1]],[[0,2]]]
+    searchLinesPawnB = [[[0,1],[0,2]]]
     searchLinesPawnW = [[[0,-1],[0,-2]]]
 
     searchLinesKing = [ \
@@ -275,7 +275,7 @@ def getMoveSourceSquares(boardMap, destSquare, pieceType, player):
         for sq in filter(lambda x: x, sanSquareShifts(destSquare, searchLine)):
             print "a sq from sanSquareShifts: " + sq + " (has square %s ==? %s)" % (boardMap[sq], matchPiece)
 
-            # we purposely take just the first character here
+            # we purposely take just the first character here (workaround for, say, 'Q~')
             # (for chess there is only one character anyways)
             p = boardMap[sq][0]
             # empty square? keep along the searchLine
