@@ -25,6 +25,11 @@ class Move:
 
         return answer
 
+class MatchMovesOOOException(Exception):
+    pass
+class MatchZeroMovesException(Exception):
+    pass
+
 class Match:
     def __init__(self):
         self.initState = Common.initBugFEN
@@ -58,6 +63,36 @@ class Match:
 
         for i in range(len(self.moves)):
             self.populateState(i)
+
+    def incrMoveNum(self, fullMove):
+        m = re.match(r'^(\d+)([AaBb])$', fullMove)
+        [num, letter] = [int(m.group(1)), m.group(2)]
+        
+        if letter in 'ab':
+            num += 1
+
+        letter = {'A':'a', 'a':'A', 'B':'b', 'b':'B'}[letter]
+
+        return str(num) + letter
+
+    def sanityCheck(self):
+        # does the game have ANY moves in it?
+        if len(self.moves) == 0:
+            raise MatchZeroMovesException("no moves recorded")
+
+        # does the game have missing/out-of-order moves in it?
+        expectA = '1A'
+        expectB = '1B'
+        for m in self.moves:
+            fullMove = m.moveNum + m.player
+
+            if fullMove == expectA:
+                expectA = self.incrMoveNum(expectA)
+            elif fullMove == expectB:
+                expectB = self.incrMoveNum(expectB)
+            else:
+                raise MatchMovesOOOException("expected move %s or %s (got instead %s)" % \
+                    (expectA, expectB, m.moveNum))
 
     def __str__(self):
         answer = '%s[%s],%s[%s] vs %s[%s],%s[%s]\n' % ( \
@@ -208,7 +243,8 @@ class MatchIteratorFile:
             # reduce the moveText by the size of the consumed token
             moveText = moveText[len(m.group(0)):]
 
-        match.moves.append(move)
+        if move:
+            match.moves.append(move)
 
        # print "consuming optional comments at %s:%d" % (self.path, self.lineNum)
         while 1:
@@ -268,12 +304,28 @@ def getFileSystemMatchIterator(path):
         raise Exception("WTF?")
 
 if __name__ == '__main__':
+    gamesCount = 0
+    goodGamesCount = 0
+
     for m in getFileSystemMatchIterator(sys.argv[1]):
+        gamesCount += 1
+
+        try:
+            m.sanityCheck()
+        except MatchMovesOOOException as e:
+            print "skipping match due to out of order (or missing) moves", e
+            continue
+        except MatchZeroMovesException:
+            print "skipping match due to it being empty (no moves whatsoever)"
+            continue
+
         m.populateStates()
         print str(m)
 
         for s in m.states:
             print s
 
+        goodGamesCount += 1
         #raw_input("hit enter for next game")
 
+    print "%d/%d games are good" % (goodGamesCount, gamesCount)
