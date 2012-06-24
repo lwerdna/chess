@@ -95,6 +95,14 @@ def nextStateInternal(bm, move, addHoldings=1):
         
         dstPiece = bm[dstSquare]
 
+        # look for en-passant
+        if dstPiece == ' ':
+            # then is it the en-passant target square?
+            if dstSquare != bm['enPassTarget']:
+                raise Exception("capting onto empty square!")
+                
+            dstPiece = Common.casePieceByPlayer('p', bm['activePlayer'])
+
         # promoted pieces go back to pawns
         m = re.match(r'^(.*)~$', dstPiece)
         if m:

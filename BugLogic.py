@@ -47,6 +47,14 @@ def nextStateInternal(bm, player, move):
     if m:
         pieceCode = playerToBoard[player][m.group(1)]
 
+        # look for en-passant
+        if pieceCode == ' ':
+            # then is it the en-passant target square?
+            if m.group(1) != playerToBoard[player]['enPassTarget']:
+                raise Exception("capturing onto empty square!")
+                
+            pieceCode = {'a':'P', 'b':'P', 'A':'p', 'B':'p'}[player]
+
         # promoted pieces back to pawns
         if re.match(r'^(.*)~$', pieceCode):
             pieceCode = {'a':'P', 'b':'P', 'A':'p', 'B':'p'}[player]

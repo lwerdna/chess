@@ -126,7 +126,9 @@ def nextStateInternal(bm, move):
             srcSquares = []
             if action == 'x':
                 if bm[dstSquare] == ' ':
-                    raise Exception("capture onto empty square?")
+                    if srcPiece != 'P' or dstSquare != bm['enPassTarget']:
+                        raise Exception("capture onto empty square?")
+
                 srcSquares = getAttackSourceSquares(bm, dstSquare, srcPiece, bm['activePlayer'])
             else:
                 srcSquares = getMoveSourceSquares(bm, dstSquare, srcPiece, bm['activePlayer'])
@@ -166,8 +168,29 @@ def nextStateInternal(bm, move):
                     "(could be any of %s)") % (move, str(srcSquares)))
                
             srcSquare = srcSquares[0]
-   
+        
         # modify the state
+ 
+        # en-passant piece removal
+        if srcPiece in 'pP' and bm[dstSquare] == ' ' and dstSquare == bm['enPassTarget']:
+            if dstSquare[1]=='6':
+                bm[dstSquare[0]+'5'] = ' '
+            elif dstSquare[1]=='3':
+                bm[dstSquare[0]+'4'] = ' '
+            else:
+                raise Exception("destination square %s should be on rank 3 or 6" % \
+                    dstSquare)
+
+        # en-passant next state calculation
+        bm['enPassTarget'] = '-'
+        if srcPiece in 'pP':
+            if srcSquare[0]==dstSquare[0]:
+                if srcSquare[1]=='2' and dstSquare[1]=='4':
+                    bm['enPassTarget'] = srcSquare[0] + '3'
+                elif srcSquare[1]=='7' and dstSquare[1]=='5':
+                    bm['enPassTarget'] = srcSquare[0] + '6'
+
+        # normal movement
         bm[dstSquare] = bm[srcSquare]
         bm[srcSquare] = ' '
 
