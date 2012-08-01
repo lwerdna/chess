@@ -45,7 +45,7 @@ class Match:
             self.states += ['']
         
         fullMove = self.moves[i].moveNum + self.moves[i].player + '. ' + self.moves[i].san
-        print "populating on move: -%s-" % fullMove
+        #print "populating on move: -%s-" % fullMove
 
         # when someone forfeits on time, a repeat instance of their last move (even the time) is
         # logged ... we thus remember moves we've seen before and not act on them
@@ -55,8 +55,8 @@ class Match:
             self.movesSeenBefore[fullMove] = 1
             self.states[i+1] = BugLogic.nextState(self.states[i], self.moves[i].player, self.moves[i].san)
 
-        print "returned: -%s-" % self.states[i+1]
-        print '----------'
+        #print "returned: -%s-" % self.states[i+1]
+        #print '----------'
 
     def populateStates(self):
         self.states = [self.initState]
@@ -135,7 +135,7 @@ class MatchIteratorFile:
     def readLine(self):
         self.lineNum += 1
         temp = self.fp.readline().rstrip()
-        print "read: %s" % temp
+        #print "read: %s" % temp
         return temp
 
     def consumeNewLines(self):
@@ -219,11 +219,13 @@ class MatchIteratorFile:
                         r'(?P<dstSquare>[a-h][1-8])' + \
                         r'(?P<promote>=[PNBRQKpnbrqk])?' + \
                         r')' + \
-                        r'(?P<check>[\+#])?'
+                        r'(?P<check>[\+#])?' + \
+                        r'\s*'
  
                     m = re.match(regex, moveText)
                     if m:
                         move.san = m.group(0)
+                        move.san = move.san.rstrip()
                     
                     # END OF MATCH TOKEN ... done hopefully
                     else:

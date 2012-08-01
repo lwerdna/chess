@@ -111,10 +111,10 @@ def nextStateInternal(bm, move):
         promote = m.group('promote')
         check = m.group('check')
 
-        print "original move: -%s-" % move
-        print "srcPiece: ", srcPiece
-        print "srcHint: ", srcHint
-        print "dstSquare: ", dstSquare
+        #print "original move: -%s-" % move
+        #print "srcPiece: ", srcPiece
+        #print "srcHint: ", srcHint
+        #print "dstSquare: ", dstSquare
 
         # resolve the srcSquare
         srcSquare = ''
@@ -296,7 +296,7 @@ def getMoveSourceSquares(boardMap, destSquare, pieceType, player):
 
     for searchLine in pieceToSearchLines[pieceType + player]:
         for sq in filter(lambda x: x, sanSquareShifts(destSquare, searchLine)):
-            print "a sq from sanSquareShifts: " + sq + " (has square %s ==? %s)" % (boardMap[sq], matchPiece)
+            #print "a sq from sanSquareShifts: " + sq + " (has square %s ==? %s)" % (boardMap[sq], matchPiece)
 
             # we purposely take just the first character here (workaround for, say, 'Q~')
             # (for chess there is only one character anyways)
@@ -350,7 +350,7 @@ def isInCheckInternal(boardMap, player):
         # found! in check!
         attackSquares = getAttackSourceSquares(boardMap, sqrKing, piece, opp)
         if attackSquares:
-            print "yes, these guys can attack king: ", attackSquares
+            #print "yes, these guys can attack king: ", attackSquares
             return True
 
     # none found? not in check

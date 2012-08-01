@@ -166,7 +166,6 @@ class BpgnViewer(Tkinter.Frame):
 
         self.showStateAfterMove()
 
-
 if __name__ == "__main__":
     # root window
     root = Tkinter.Tk()
