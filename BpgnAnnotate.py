@@ -26,6 +26,8 @@ def holdingsDifference(x, y):
 matchIterator = BpgnParser.MatchIteratorFile(sys.argv[1])
 m = matchIterator.next()
 
+print '[Event "%s"]' % (m.tags['Event'])
+del m.tags['Event']
 for k,v in m.tags.iteritems():
     print '[%s "%s"]' % (k,v)
 
@@ -46,13 +48,12 @@ for i, s in enumerate(m.states):
         bmLast = BugLogic.fenToBoardMap(lastState)
         bmThis = BugLogic.fenToBoardMap(s)
     
-
         xfer = holdingsDifference(bmThis['boardA']['holdings'], bmLast['boardA']['holdings'])
         if xfer:
-            comment += '{captured ' + xfer + '} '
+            comment += '{captured on B: ' + xfer + '} '
         xfer = holdingsDifference(bmThis['boardB']['holdings'], bmLast['boardB']['holdings'])
         if xfer:
-            comment += '{captured ' + xfer + '} '
+            comment += '{captured on A: ' + xfer + '} '
 
         comment = comment.lstrip()
         comment = comment.rstrip()
@@ -66,5 +67,5 @@ for i, s in enumerate(m.states):
 
     lastState = s
 
-
+print ' ', m.tags['Result']
 

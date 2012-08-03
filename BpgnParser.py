@@ -187,7 +187,8 @@ class MatchIteratorFile:
             moveText = moveText.rstrip() + self.readLine()
 
         if not re.match(r'^.*(0-0$|0-1$|1-0$|1/2-1/2$|\*$)', moveText):
-            raise Exception("expected match movetext at %s:%d" % (self.path, self.lineNum))
+            raise Exception("expected match result at %s:%d (\"%s...\")" \
+                % (self.path, self.lineNum, moveText[0:8]))
 
         move = None
 
