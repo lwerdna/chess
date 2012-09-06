@@ -8,13 +8,18 @@ import sys
 
 import Common
 import BugLogic
+import BpgnTokenizer
 
+###############################################################################
+# Move
+# - contains number, san, player of a move
+###############################################################################
 class Move:
     def __init__(self):
-        self.player = ''
-        self.moveNum = ''
-        self.san = ''
-        self.comments = []
+        self.player = '' # 'a','A','b','B'
+        self.moveNum = '' # 1,2,3,...
+        self.san = '' # P@e7+
+        self.comments = [] # {53.057}
         pass
 
     def __str__(self):
@@ -30,6 +35,11 @@ class MatchMovesOOOException(Exception):
 class MatchZeroMovesException(Exception):
     pass
 
+###############################################################################
+# Match
+# - contains tags, comments, moves, and states of a bughouse chess match
+# - is able to load itself from bpgn match text
+###############################################################################
 class Match:
     def __init__(self):
         self.initState = Common.initBugFEN
@@ -37,6 +47,8 @@ class Match:
         self.tags = {}
         self.comments = []
         self.states = [self.initState]
+
+        self.path = ''
 
         self.movesSeenBefore = {}
 
@@ -92,13 +104,64 @@ class Match:
                 expectB = self.incrMoveNum(expectB)
             else:
                 raise MatchMovesOOOException("expected move %s or %s (got instead %s)" % \
-                    (expectA, expectB, m.moveNum))
+                    (expectA, expectB, fullMove))
+
+    def parseBpgn(self, text):
+        tokens = BpgnTokenizer.tokenize(text)
+
+        currMove = 0
+
+        for token in tokens:
+            #print "on token: -%s-" % token
+
+            # tag tokens
+            m = re.match(r'\[(.*?) "(.*?)"\]', token)
+            if m:
+                self.tags[m.group(1)] = m.group(2)
+
+                continue
+
+            # comment tokens
+            m = re.match('^{(.*)}$', token)
+            if m:
+                # if we're in the moves section, comment applies to a move
+                if self.moves:
+                    self.moves[-1].comments.append(m.group(1))
+                else:
+                    self.comments.append(m.group(1))
+
+                continue
+
+            # result tokens
+            m = re.match(r'^.*(0-0$|0-1$|1-0$|1/2-1/2$|\*$)', token)
+            if m:
+                self.result = token
+
+                if token != tokens[-1]:
+                    raise Exception("expected match result")
+
+                continue
+
+            # move number token
+            m = re.match(r'(\d+)([abAB])\.', token)
+            if m:
+                move = Move()
+                move.moveNum = m.group(1)
+                move.player = m.group(2)
+                self.moves.append(move)
+
+            # normal move (SAN)
+            m = re.match(Common.regexSan, token)
+            if m:
+                self.moves[-1].san = token
+
 
     def __str__(self):
-        answer = '%s[%s],%s[%s] vs %s[%s],%s[%s]\n' % ( \
-            self.tags['WhiteA'], self.tags['WhiteAElo'], self.tags['BlackA'], self.tags['BlackAElo'], \
-            self.tags['BlackB'], self.tags['BlackBElo'], self.tags['WhiteA'], self.tags['WhiteAElo'] \
-        )
+        answer = ''
+        #answer = '%s[%s],%s[%s] vs %s[%s],%s[%s]\n' % ( \
+        #    self.tags['WhiteA'], self.tags['WhiteAElo'], self.tags['BlackA'], self.tags['BlackAElo'], \
+        #    self.tags['BlackB'], self.tags['BlackBElo'], self.tags['WhiteA'], self.tags['WhiteAElo'] \
+        #)
 
         answer += "TAGS:\n"
         for tag,value in self.tags.iteritems():
@@ -111,6 +174,11 @@ class Match:
             answer += str(m) + "\n"
         return answer
 
+###############################################################################
+# MatchIteratorFile
+# - return matches from file containing multiple matches
+# - basically, split the text around '[Event "..."]' tags
+###############################################################################
 class MatchIteratorFile:
     def __init__(self, path):
         self.path = path
@@ -134,7 +202,7 @@ class MatchIteratorFile:
 
     def readLine(self):
         self.lineNum += 1
-        temp = self.fp.readline().rstrip()
+        temp = self.fp.readline()
         #print "read: %s" % temp
         return temp
 
@@ -148,122 +216,45 @@ class MatchIteratorFile:
             self.readLine()
         return True
 
+    # strategy here is simple: consume lines until an Event tag is found
+    # in other words, Event tags delimit the matches
     def next(self):
-        # skip to next match
-        #print "consuming newlines at %s:%d" % (self.path, self.lineNum)
         if not self.consumeNewLines():
             raise StopIteration
         
+        matchText = self.readLine()
+
+        if not re.match(r'^\[Event', matchText):
+            raise Exception(("expected Event tag at %s:%d\n" + \
+                "(instead got: %s)") % (self.path, self.lineNum, matchText))
+
+        # so long as the next line is not an Event tag, add to current match
+        while 1:
+            line = self.peekLine()
+            if not re.match(r'^\[Event', line):
+                matchText += '\n' + line
+                if not self.readLine():
+                    break
+            else:
+                break
+
+        # return a match
         match = Match()
-        match.initState = Common.initBugFEN
-
-        #print "consuming tags at %s:%d" % (self.path, self.lineNum)
-        line = self.readLine()
-        if not re.match(r'^\[Event', line):
-            raise Exception("expected Event tag at %s:%d" % (self.path, self.lineNum))
-
-        while re.match(r'^\[', line):
-            for m in re.finditer(r'\[(.*?) "(.*?)"\]', line):
-                match.tags[m.group(1)] = m.group(2)
-
-            line = self.readLine()
-
-        #print "consuming optional comments and newlines at %s:%d" % (self.path, self.lineNum)
-        while 1:
-            if not self.consumeNewLines():
-                raise StopIteration
-            line = self.peekLine()
-            m = re.match('^{(.*)}$', line)
-            if m:
-                match.comments.append(m.group(1))
-                self.readLine()
-            else:
-                break
-
-        #print "consuming movetext at %s:%d" % (self.path, self.lineNum)
-        # join the rest of the lines (until newline separator) as the movetext
-        moveText = self.readLine()
-        while not re.match(r'^\s*$', self.peekLine()):
-            moveText = moveText.rstrip() + self.readLine()
-
-        if not re.match(r'^.*(0-0$|0-1$|1-0$|1/2-1/2$|\*$)', moveText):
-            raise Exception("expected match result at %s:%d (\"%s...\")" \
-                % (self.path, self.lineNum, moveText[0:8]))
-
-        move = None
-
-        while moveText and not re.match(r'^\s+$', moveText):
-            # COMMENT TOKEN ... place onto match or onto a move
-            m = re.match(r'^{(.*?)}\s*', moveText)
-            if m:
-                where = move or match
-                where.comments.append(m.group(1))
-
-            else:
-                # MOVE NUMBER TOKEN ... save last move, start new one
-                m = re.match(r'^(\d+)([abAB])\.\s*', moveText)
-                if m:
-                    if move:
-                        match.moves.append(move)
-                    move = Move()
-                    move.moveNum = m.group(1)
-                    move.player = m.group(2)
-
-                else:
-                    # SAN TOKEN ... encodes the move
-                    regex = r'^(?:' + \
-                        r'O-O-O|' + \
-                        r'O-O|' + \
-                        r'(?P<srcPiece>[PNBRQK])?' + \
-                        r'(?P<srcHint>[a-h1-8]{1,2})?' + \
-                        r'(?P<action>[x@])?' + \
-                        r'(?P<dstSquare>[a-h][1-8])' + \
-                        r'(?P<promote>=[PNBRQKpnbrqk])?' + \
-                        r')' + \
-                        r'(?P<check>[\+#])?' + \
-                        r'\s*'
- 
-                    m = re.match(regex, moveText)
-                    if m:
-                        move.san = m.group(0)
-                        move.san = move.san.rstrip()
-                    
-                    # END OF MATCH TOKEN ... done hopefully
-                    else:
-                        m = re.match(r'^(0-0$|0-1$|1-0$|1/2-1/2$|\*)$', moveText)
-                        if m:
-                            if match.tags['Result'] != m.group(1):
-                                raise Exception("Result tag doesn't match " + \
-                                    "movetext result at %s:%d" % \
-                                    (self.path, self.lineNum))
-
-                        # WTF?
-                        else:
-                            raise Exception("don't know how to proceed " + \
-                                "with remaining movetext -%s- at %s:%d" % \
-                                (moveText, self.path, self.lineNum))
-                   
-            # reduce the moveText by the size of the consumed token
-            moveText = moveText[len(m.group(0)):]
-
-        if move:
-            match.moves.append(move)
-
-       # print "consuming optional comments at %s:%d" % (self.path, self.lineNum)
-        while 1:
-            line = self.peekLine()
-            m = re.match('^{(.*)}$', line)
-            if m:
-                match.comments.push(m.group(1))
-            else:
-                break
-
-        # done
+        match.path = self.path
+        match.parseBpgn(matchText)
         return match
 
     def __del__(self):
-        self.fp.close()
+        if self.fp:
+            self.fp.close()
 
+        self.fp = None
+
+###############################################################################
+# MatchIteratorDir
+# - return matches from a directory containing files
+# - basically, loop over MatchIteratorFile for every file in a directory
+###############################################################################
 class MatchIteratorDir:
     def __init__(self, path):
         self.walkObj = os.walk(path)
@@ -298,37 +289,42 @@ class MatchIteratorDir:
                 if ext == '.bpgn':
                     self.filesList.append(os.path.join(root, f))
 
-def getFileSystemMatchIterator(path):
-    if os.path.isfile(path):
-        return MatchIteratorFile(path)
-    elif os.path.isdir(path):
-        return MatchIteratorDir(path)
-    else:
-        raise Exception("WTF?")
-
+###############################################################################
+# main()
+###############################################################################
 if __name__ == '__main__':
     gamesCount = 0
     goodGamesCount = 0
 
-    for m in getFileSystemMatchIterator(sys.argv[1]):
+    path = sys.argv[1]
+    it = None
+    if os.path.isfile(path):
+        it = MatchIteratorFile(path)
+    elif os.path.isdir(path):
+        it = MatchIteratorDir(path)
+    else:
+        raise Exception("WTF?")
+
+    for m in it:
         gamesCount += 1
 
         try:
             m.sanityCheck()
         except MatchMovesOOOException as e:
-            print "skipping match due to out of order (or missing) moves", e
+            print "%s: skipping match due to out of order (or missing) moves\n%s\n%s" % (m.path, '\n'.join(m.comments), str(e))
             continue
         except MatchZeroMovesException:
-            print "skipping match due to it being empty (no moves whatsoever)"
+            print "%s: skipping match due to it being empty (no moves whatsoever)\n%s\n%s" % (m.path, '\n'.join(m.comments), str(e))
             continue
 
         m.populateStates()
-        print str(m)
+        #print str(m)
 
-        for s in m.states:
-            print s
+        #for s in m.states:
+        #    print s
 
         goodGamesCount += 1
         #raw_input("hit enter for next game")
+        print "%d/%d games are good (%02.2f%%)" % (goodGamesCount, gamesCount, 1.0*goodGamesCount/gamesCount)
 
-    print "%d/%d games are good" % (goodGamesCount, gamesCount)
+
