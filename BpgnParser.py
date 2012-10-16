@@ -14,17 +14,38 @@ import BpgnTokenizer
 # Move
 # - contains number, san, player of a move
 ###############################################################################
+
 class Move:
     def __init__(self):
-        self.player = '' # 'a','A','b','B'
-        self.moveNum = '' # 1,2,3,...
-        self.san = '' # P@e7+
-        self.comments = [] # {53.057}
-        pass
+        self.player = ''    # 'a','A','b','B'
+        self.moveNum = ''   # 1,2,3,...
+        self.san = ''       # P@e7+
+        self.comments = []  # {53.057}
+        self.time = None    # 118.953
+        self.flags = {}     # 'TIME_FORFEIT', etc.
+
+    def addComment(self, comment):
+        # time comment?
+        if re.match(r'\d+\.\d+', comment):
+            self.time = float(comment)
+        # forfeit on time comment? (these are repeated in bughouse-db results)
+        elif re.search('forfeits on time', comment):
+            self.flags['TIME_FORFEIT'] = 1
+
+        # add to list
+        self.comments.append(comment)
 
     def __str__(self):
         answer = self.moveNum + self.player + '. ' + self.san
 
+        if self.time:
+            answer += "\nTIME: %s " % self.time
+
+        answer += "\nFLAGS: "
+        for k,v in self.flags.iteritems():
+            answer += k + ' '
+
+        answer += '\nCOMMENTS: '
         for c in self.comments:
             answer += ' {%s}' % c
 
@@ -56,19 +77,14 @@ class Match:
         while len(self.moves) >= len(self.states):
             self.states += ['']
         
-        fullMove = self.moves[i].moveNum + self.moves[i].player + '. ' + self.moves[i].san
-        #print "populating on move: -%s-" % fullMove
+        move = self.moves[i]
 
-        # when someone forfeits on time, a repeat instance of their last move (even the time) is
-        # logged ... we thus remember moves we've seen before and not act on them
-        if fullMove in self.movesSeenBefore:
+        # exceptions (repeated moves due to time forfeiture, etc.) just carry state along...
+        if 'TIME_FORFEIT' in move.flags:
             self.states[i+1] = self.states[i]
+        # valid moves progress the state
         else:
-            self.movesSeenBefore[fullMove] = 1
-            self.states[i+1] = BugLogic.nextState(self.states[i], self.moves[i].player, self.moves[i].san)
-
-        #print "returned: -%s-" % self.states[i+1]
-        #print '----------'
+            self.states[i+1] = BugLogic.nextState(self.states[i], move.player, move.san)
 
     def populateStates(self):
         self.states = [self.initState]
@@ -77,6 +93,8 @@ class Match:
             self.populateState(i)
 
     def incrMoveNum(self, fullMove):
+        old = fullMove
+
         m = re.match(r'^(\d+)([AaBb])$', fullMove)
         [num, letter] = [int(m.group(1)), m.group(2)]
         
@@ -85,7 +103,11 @@ class Match:
 
         letter = {'A':'a', 'a':'A', 'B':'b', 'b':'B'}[letter]
 
-        return str(num) + letter
+        new = str(num) + letter
+
+        #print "incremented from %s to %s" % (old, new)
+
+        return new
 
     def sanityCheck(self):
         # does the game have ANY moves in it?
@@ -96,6 +118,13 @@ class Match:
         expectA = '1A'
         expectB = '1B'
         for m in self.moves:
+
+            if 'TIME_FORFEIT' in m.flags:
+                continue
+
+            # bughouse-db games store a repeated move at the end when
+            # that player forfeits on time
+
             fullMove = m.moveNum + m.player
 
             if fullMove == expectA:
@@ -103,8 +132,8 @@ class Match:
             elif fullMove == expectB:
                 expectB = self.incrMoveNum(expectB)
             else:
-                raise MatchMovesOOOException("expected move %s or %s (got instead %s)" % \
-                    (expectA, expectB, fullMove))
+                raise MatchMovesOOOException("expected move %s or %s (got instead:\n %s)" % \
+                    (expectA, expectB, str(m)))
 
     def parseBpgn(self, text):
         tokens = BpgnTokenizer.tokenize(text)
@@ -126,7 +155,7 @@ class Match:
             if m:
                 # if we're in the moves section, comment applies to a move
                 if self.moves:
-                    self.moves[-1].comments.append(m.group(1))
+                    self.moves[-1].addComment(m.group(1))
                 else:
                     self.comments.append(m.group(1))
 
@@ -313,7 +342,7 @@ if __name__ == '__main__':
         except MatchMovesOOOException as e:
             print "%s: skipping match due to out of order (or missing) moves\n%s\n%s" % (m.path, '\n'.join(m.comments), str(e))
             continue
-        except MatchZeroMovesException:
+        except MatchZeroMovesException as e:
             print "%s: skipping match due to it being empty (no moves whatsoever)\n%s\n%s" % (m.path, '\n'.join(m.comments), str(e))
             continue
 
@@ -325,6 +354,6 @@ if __name__ == '__main__':
 
         goodGamesCount += 1
         #raw_input("hit enter for next game")
-        print "%d/%d games are good (%02.2f%%)" % (goodGamesCount, gamesCount, 1.0*goodGamesCount/gamesCount)
+        print "%d/%d games are good (%02.2f%%)" % (goodGamesCount, gamesCount, 100.0*goodGamesCount/gamesCount)
 
 
