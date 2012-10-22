@@ -73,6 +73,21 @@ class Match:
 
         self.movesSeenBefore = {}
 
+    def getMovesBoard(self, which):
+        result = []
+        for m in self.moves:
+            if which == 'A' and (m.player == 'a' or m.player == 'A'):
+                result.append(m)
+            elif which == 'B' and (m.player == 'b' or m.player == 'B'):
+                result.append(m)
+        return result
+
+    def getMovesBoardA(self):
+        return self.getMovesBoard('A')
+
+    def getMovesBoardB(self):
+        return self.getMovesBoard('B')
+
     def populateState(self, i):
         while len(self.moves) >= len(self.states):
             self.states += ['']
