@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 import re
+import sys
 import Tkinter
 
 import Common
@@ -27,6 +28,9 @@ class ChessBoard(Tkinter.Frame):
         self.stateImg = [None]*64
 
         # bitmaps
+        # maps 'bdd' to 'bdd48.gif', etc.
+        self.bitmapFiles = {}
+        # maps 'bdd' to PhotoImage instance, etc.
         self.bitmaps = {}
         self.loadBitmaps() 
 
@@ -40,10 +44,13 @@ class ChessBoard(Tkinter.Frame):
     #--------------------------------------------------------------------------
     # drawing stuff
     #--------------------------------------------------------------------------
-    def fenPieceToBitmap(self, p, square):
+
+    # maps {p,b,n,r,q,k,P,B,N,R,Q,K} X {0,1} to eg: "bdd48"
+    #
+    def fenPieceToBitmapFileRootName(self, p, square):
         # square is either 'd'/0 (dark) or 'l'/1 (light)
 
-        fenPieceToImg = { 'P':'pl', 'p':'pd',
+        mapping =       { 'P':'pl', 'p':'pd',
                           'B':'bl', 'b':'bd',
                           'N':'nl', 'n':'nd',
                           'R':'rl', 'r':'rd',
@@ -51,15 +58,24 @@ class ChessBoard(Tkinter.Frame):
                           'K':'kl', 'k':'kd'
                           }
 
-        square = ['d', 'l'][square]
+        colorChar = ['d', 'l'][square]
 
         if p == ' ':
-            return self.bitmaps[square + 'sq48']
+            return colorChar + 'sq48'
         else:
-            if not p in fenPieceToImg:
+            if not p in mapping:
                 raise "invalid piece!"
 
-            return self.bitmaps[fenPieceToImg[p] + square + '48']
+            return mapping[p] + colorChar + '48'
+
+
+    def fenPieceToBitmap(self, p, square):
+        rootName = self.fenPieceToBitmapFileRootName(p, square)
+        return self.bitmaps[rootName]
+
+    def fenPieceToBitmapFile(self, p, square):
+        rootName = self.fenPieceToBitmapFileRootName(p, square)
+        return './images/' + rootName + '.gif'
 
     def flip(self):
         self.flippedDisplay = (self.flippedDisplay + 1) & 1
@@ -73,11 +89,13 @@ class ChessBoard(Tkinter.Frame):
             'qdl48.gif', 'rdl48.gif']
 
         for imgF in imageFiles:
+            # strip off the ".gif" - keys are just "bdd", "dsq", etc.
             key = re.sub(r'^(.*)\.gif$', r'\1', imgF)
 
             imgPath = './images/' + imgF
 
             #print 'setting self.bitmaps[%s] = %s' % (key, imgPath)
+            self.bitmapFiles[key] = imgPath
             self.bitmaps[key] = Tkinter.PhotoImage(file=imgPath)
 
     def draw(self):
@@ -104,6 +122,43 @@ class ChessBoard(Tkinter.Frame):
                 )
             )
 
+    def draw_html(self):
+        if not self.boardMap:
+            raise Exception("ChessBoard cannot draw without boardMap being set!")
+
+        html = '<table border=0 cellpadding=0 cellspacing=0>\n'
+
+        pieceGetSequence = range(64)
+        if self.flippedDisplay:
+            pieceGetSequence.reverse()
+
+        html += '<tr>\n'
+
+        for i in range(64):
+            # end current row, start new row
+            if not (i%8):
+                html += '\n</tr>\n'
+                html += '<tr>\n'
+
+            # table cell has image in it
+            # get either 0,1,2,... or 63,62,61,...
+            tmp = pieceGetSequence[i]
+            # map 0->'a8', 63->'h1', etc.
+            tmp = Common.squaresSan[tmp]
+            # map 'a8' to 'r' or 'R' for example (getting piece)
+            tmp = self.boardMap[tmp]
+            # finally, map that piece to a filename
+            tmp = self.fenPieceToBitmapFile(tmp, (i+i/8+1)%2)
+
+            html += ' <td><img src="%s" /></td>\n' %  tmp
+
+        html += '\n</tr>\n'
+        html += '</table>\n'
+
+        return html
+
+# test frame that holds a ChessBoard widget
+#
 class ChessBoardTest(Tkinter.Frame):
     def __init__(self, parent, pieceWidth=48, pieceHeight=48):
         Tkinter.Frame.__init__(self, parent)
@@ -119,6 +174,9 @@ class ChessBoardTest(Tkinter.Frame):
         self.b = Tkinter.Button(self, text="flip", command=self.flipIt)
         self.b.pack()
 
+        self.b = Tkinter.Button(self, text="html", command=self.html)
+        self.b.pack()
+
         self.moveEntry = Tkinter.Entry(self)
         self.moveEntry.pack()
         self.execMove = Tkinter.Button(self, text="execute move", command=self.executeMove)
@@ -127,6 +185,9 @@ class ChessBoardTest(Tkinter.Frame):
     def flipIt(self):
         self.cb.flip()
         self.cb.draw()
+
+    def html(self):
+        print self.cb.draw_html()
 
     def executeMove(self):
         whatMove = self.moveEntry.get()
@@ -149,3 +210,4 @@ def doTest():
 
 if __name__ == "__main__":
     doTest()
+

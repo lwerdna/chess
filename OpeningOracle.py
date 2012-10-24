@@ -46,7 +46,7 @@ if __name__ == '__main__':
     gamesCount = 0
     goodGamesCount = 0
 
-    conn = sqlite3.connect("openings_.db")
+    conn = sqlite3.connect("openings.db")
     curs = conn.cursor()
 
     currentLine = []
