@@ -53,7 +53,7 @@ def nextState(fen, move, addHoldings=1):
     bm = nextStateInternal(bm, move, addHoldings)
     return boardMapToFen(bm)
 
-def nextStateInternal(bm, move, addHoldings=1):
+def nextStateInternal(bm, move, addHoldings=1, ghostHoldings=0):
     bm = bm.copy()
 
     fallThruChess = 1
@@ -74,11 +74,15 @@ def nextStateInternal(bm, move, addHoldings=1):
             raise Exception("drop on non-empty square -%s-" % dstSquare)
         if srcPiece in 'Pp' and dstSquare[1] in '18':
             raise Exception("illegal pawn drop on rank 1 or 8")
-        if not srcPiece in bm['holdings']:
-            raise Exception("dropping non-existent piece!")
 
-        # remove holdings
-        bm['holdings'] = re.sub(srcPiece, '', bm['holdings'], count=1)
+        if not srcPiece in bm['holdings']:
+            if ghostHoldings:
+                # it's ok! we allow ghost drops
+                pass
+            else:
+                raise Exception("dropping non-existent piece!")
+        else:
+            bm['holdings'] = re.sub(srcPiece, '', bm['holdings'], count=1)
 
         # add to board
         bm[dstSquare] = srcPiece
@@ -111,7 +115,7 @@ def nextStateInternal(bm, move, addHoldings=1):
             # strip the ~ (which Chess wouldn't understand)
             bm[dstSquare] = m.group(1)
 
-        # add to holdings
+        # add to holdings (true for crazy, false for bug (goes to partner board instead)
         if addHoldings:
             bm['holdings'] += Common.pieceChangeColorMap[dstPiece]
 

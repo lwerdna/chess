@@ -68,6 +68,9 @@ class ChessBoard(Tkinter.Frame):
 
             return mapping[p] + colorChar + '48'
 
+    def fenPieceToBitmap(self, p, square):
+        rootName = self.fenPieceToBitmapFileRootName(p, square)
+        return self.bitmaps[rootName]
 
     def fenPieceToBitmap(self, p, square):
         rootName = self.fenPieceToBitmapFileRootName(p, square)
