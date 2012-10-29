@@ -71,25 +71,40 @@ def nextStateInternal(bm, move):
     if m.group('kCastle'):
         if bm['activePlayer'] == 'w':
             if bm['e1'] != 'K' or bm['h1'] != 'R':
-                raise Exception("illegal kingside castle!")
+                raise Exception("illegal kingside castle! (square not correct)")
+
+            if not 'K' in bm['castleAvail']:
+                raise Exception("illegal kingside castle! (availability gone)")
 
             bm['h1'] = ' '
             bm['e1'] = ' '
             bm['g1'] = 'K'
             bm['f1'] = 'R'
+       
+            bm['castleAvail'] = re.sub('K', '', bm['castleAvail'])
+
         else:
             if bm['e8'] != 'k' or bm['h8'] != 'r':
                 raise Exception("illegal kingside castle!")
+
+            if not 'k' in bm['castleAvail']:
+                raise Exception("illegal kingside castle! (availability gone)")
 
             bm['h8'] = ' '
             bm['e8'] = ' '
             bm['g8'] = 'k'
             bm['f8'] = 'r'
+            
+            bm['castleAvail'] = re.sub('k', '', bm['castleAvail'])
+            
 
     elif m.group('qCastle'):
         if bm['activePlayer'] == 'w':
             if bm['e1'] != 'K' or bm['a1'] != 'R':
                 raise Exception("illegal queenside castle!")
+
+            if not 'Q' in bm['castleAvail']:
+                raise Exception("illegal kingside castle! (availability gone)")
 
             bm['a1'] = ' '
             bm['e1'] = ' '
@@ -99,10 +114,14 @@ def nextStateInternal(bm, move):
             if bm['e8'] != 'k' or bm['a8'] != 'r':
                 raise Exception("illegal queenside castle!")
 
+            if not 'q' in bm['castleAvail']:
+                raise Exception("illegal kingside castle! (availability gone)")
+
             bm['a8'] = ' '
             bm['e8'] = ' '
             bm['c8'] = 'k'
             bm['d8'] = 'r'
+
     else:
         srcPiece = m.group('srcPiece') or 'P'
         srcHint = m.group('srcHint')
