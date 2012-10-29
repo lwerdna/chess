@@ -1,5 +1,4 @@
 #!/usr/bin/python
-# bughouse opening oracle, 2012 andrewl
 
 import re
 import os

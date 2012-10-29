@@ -74,4 +74,3 @@ if __name__ == '__main__':
             print e
             print "shit", sys.exc_info()[0]
             print traceback.print_tb(sys.exc_traceback)
-            break
