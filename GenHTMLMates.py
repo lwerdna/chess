@@ -5,6 +5,7 @@ import sys
 import sqlite3
 import string
 import traceback
+import random
 
 import re
 import GenTools
@@ -13,7 +14,17 @@ import CrazyLogic
 ###############################################################################
 # main()
 ###############################################################################
+
+puzzleArray = []
+
 if __name__ == '__main__':
+
+    imgPath = './images/'
+
+    anki = False
+    if len(sys.argv) > 1 and sys.argv[1] == 'anki':
+        anki = True
+        imgPath = '' # just drop 'em in whatever.media
 
     conn = sqlite3.connect("MineMissedMates.db")
     curs = conn.cursor()
@@ -36,10 +47,18 @@ if __name__ == '__main__':
         if boardMap['activePlayer'] == 'b':
             flipped = 1
 
-        html = GenTools.boardMapToHtml(boardMap, flipped, './images/')
+        html = GenTools.boardMapToHtml(boardMap, flipped, imgPath)
+        html += "<h2>Puzzle %d</h2>\n" % rowIdx
+        html += "<hr>\n"
 
-        print "<h2>Puzzle %d</h2>" % rowIdx
-        print html
+        if anki:
+            html = re.sub('\n', '', html)
+            html = '%s;figure it out?' % html
 
+        puzzleArray.append(html)
 
-        
+    #if anki:
+        #random.shuffle(puzzleArray)
+
+    for p in puzzleArray:
+        print p

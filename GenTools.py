@@ -31,6 +31,7 @@ def fenPieceToBitmapFile(p, square):
 
 def holdingsTableToHtml(holdingsString, color, imgPath=''):
     html = ''
+    #html += '<!-- generating holdings table for %s -->\n' %  holdingsString
 
     pieceChars = []
     if color == 'w':
@@ -55,11 +56,12 @@ def boardMapToHtml(boardMap, flipped=0, imgPath=''):
 
     if(flipped):
         pieceGetSequence.reverse()
-        html += holdingsTableToHtml(boardMap['holdings'], 'b', imgPath)
-    else:
         html += holdingsTableToHtml(boardMap['holdings'], 'w', imgPath)
+    else:
+        html += holdingsTableToHtml(boardMap['holdings'], 'b', imgPath)
 
-    html = '<table border=0 cellpadding=0 cellspacing=0>\n'
+    html += '<br>\n'
+    html += '<table border=0 cellpadding=0 cellspacing=0>\n'
     html += '<tr>\n'
 
     for i in range(64):
@@ -83,11 +85,13 @@ def boardMapToHtml(boardMap, flipped=0, imgPath=''):
     html += '\n</tr>\n'
     html += '</table>\n'
 
+    html += '<br>\n'
+
     if(flipped):
         pieceGetSequence.reverse()
-        html += holdingsTableToHtml(boardMap['holdings'], 'w', imgPath)
-    else:
         html += holdingsTableToHtml(boardMap['holdings'], 'b', imgPath)
+    else:
+        html += holdingsTableToHtml(boardMap['holdings'], 'w', imgPath)
 
     return html
 
