@@ -364,8 +364,8 @@ if __name__ == '__main__':
         m.populateStates()
         #print str(m)
 
-        #for s in m.states:
-        #    print s
+        for s in m.states:
+            print s
 
         goodGamesCount += 1
         #raw_input("hit enter for next game")

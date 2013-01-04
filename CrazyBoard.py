@@ -73,6 +73,12 @@ class CrazyBoardTest(Tkinter.Frame):
         self.execMove = Tkinter.Button(self, text="execute move", command=self.executeMove)
         self.execMove.pack()
 
+        self.fenEntry = Tkinter.Entry(self)
+        self.fenEntry.pack()
+        self.loadFen = Tkinter.Button(self, text="load fen", command=self.loadFen)
+        self.loadFen.pack()
+
+
     def flipIt(self):
         self.cb.flip()
         self.cb.draw()
@@ -81,6 +87,13 @@ class CrazyBoardTest(Tkinter.Frame):
         whatMove = self.moveEntry.get()
         print "Executing: " + whatMove
         self.boardMap = CrazyLogic.nextStateInternal(self.boardMap, whatMove)
+        self.cb.setBoardMap(self.boardMap)
+        self.cb.draw()
+
+    def loadFen(self):
+        whatFen = self.fenEntry.get()
+        print "Loading fen: " + whatFen
+        self.boardMap = CrazyLogic.fenToBoardMap(whatFen)
         self.cb.setBoardMap(self.boardMap)
         self.cb.draw()
 

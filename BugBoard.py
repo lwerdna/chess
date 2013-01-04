@@ -3,6 +3,7 @@
 # a Bughouse Board is two Crazyhouse Boards, one flipped
 
 import re
+import sys
 import Tkinter
 
 import ChessLogic
@@ -42,16 +43,17 @@ class BugBoard(Tkinter.Frame):
         self.boardA.draw()
         self.boardB.draw()
 
-def doTest():
+def doTest(fen = 'default'):
     # root window
     root = Tkinter.Tk()
     root.wm_title("BugBoard")
 
     cb = BugBoard(root)
 
-    fen = "r1b1k1nr/ppp1qpPp/2n5/1B1p1n1N/3P4/2P5/P1P1QPnP/R1BK2NR/PPBpp b kq - 142 164" + \
-            " | " + \
-            "2Nrkb1r/pPpbqppp/2p5/8/3N4/2P1B3/P1P1QPpP/R3K2R/Ppb w KQk - 142 163"
+    if fen == 'default':
+        fen = "r1b1k1nr/ppp1qpPp/2n5/1B1p1n1N/3P4/2P5/P1P1QPnP/R1BK2NR/PPBpp b kq - 142 164" + \
+                " | " + \
+                "2Nrkb1r/pPpbqppp/2p5/8/3N4/2P1B3/P1P1QPpP/R3K2R/Ppb w KQk - 142 163"
 
     cb.setBoardMap(BugLogic.fenToBoardMap(fen))
     cb.draw()
@@ -62,5 +64,8 @@ def doTest():
     root.mainloop() 
 
 if __name__ == "__main__":
-    doTest()
+    if len(sys.argv) > 1:
+        doTest(sys.argv[1])
+    else:
+        doTest()
 
