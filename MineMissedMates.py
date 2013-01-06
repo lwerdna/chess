@@ -7,7 +7,8 @@ import string
 import traceback
 
 import BpgnParser
-import Sunsetter
+#import Sunsetter
+import Sjeng
 
 ###############################################################################
 # main()
@@ -57,8 +58,8 @@ if __name__ == '__main__':
                         print "ALREADY SEEN THIS POSITION!"
                         continue
 
-                    print "appealing to sunsetter..."
-                    line = Sunsetter.searchMate(state)
+                    print "appealing to Sjeng..."
+                    line = Sjeng.searchMate(state)
 
                     if line:
                         print "FOUND MATE! %s" % line
