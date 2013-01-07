@@ -38,14 +38,14 @@ class Move:
     def __str__(self):
         answer = self.moveNum + self.player + '. ' + self.san
 
-        if self.time:
-            answer += "\nTIME: %s " % self.time
+        #if self.time:
+        #    answer += " {TIME: %s}" % self.time
 
-        answer += "\nFLAGS: "
+        #answer += "\nFLAGS: "
         for k,v in self.flags.iteritems():
-            answer += k + ' '
+            answer += " {%s}" % k
 
-        answer += '\nCOMMENTS: '
+        #answer += '\nCOMMENTS: '
         for c in self.comments:
             answer += ' {%s}' % c
 

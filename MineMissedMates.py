@@ -59,7 +59,7 @@ if __name__ == '__main__':
                         continue
 
                     print "appealing to Sjeng..."
-                    line = Sjeng.searchMate(state)
+                    line = Sjeng.searchMate(8, state)
 
                     if line:
                         print "FOUND MATE! %s" % line

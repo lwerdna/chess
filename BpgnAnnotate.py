@@ -2,8 +2,11 @@
 
 import re
 import sys
-import BpgnParser
+import string
+
+import Sjeng
 import BugLogic
+import BpgnParser
 
 def holdingsDifference(x, y):
     while 1:
@@ -22,50 +25,72 @@ def holdingsDifference(x, y):
 
     return ''
 
-
-matchIterator = BpgnParser.MatchIteratorFile(sys.argv[1])
-m = matchIterator.next()
-
-print '[Event "%s"]' % (m.tags['Event'])
-del m.tags['Event']
-for k,v in m.tags.iteritems():
-    print '[%s "%s"]' % (k,v)
-
-for c in m.comments:
-    print '{%s}' % c
-
-m.populateStates()
-
-lastState = ''
-for i, s in enumerate(m.states):
-
-    if not lastState:
-        lastState = s
-        continue
+if __name__ == '__main__':
+    if len(sys.argv) < 3:
+        print "syntax: %s <bpgn> <player>" % sys.argv[0]
+        exit(-1)
    
-    comment = ''    
-    if re.search(r'x', m.moves[i-1].san):
-        bmLast = BugLogic.fenToBoardMap(lastState)
-        bmThis = BugLogic.fenToBoardMap(s)
+    bpgnfile = sys.argv[1]
+    player = sys.argv[2] 
+
+    matchIterator = BpgnParser.MatchIteratorFile(bpgnfile)
+    m = matchIterator.next()
+    print m.tags
+
+    # can find player in the match comments?
+    playerChar = ''
+    if m.tags['WhiteA'] == player:
+        playerChar = 'A'
+    elif m.tags['BlackA'] == player:
+        playerChar = 'a'
+    elif m.tags['WhiteB'] == player:
+        playerChar = 'B'
+    elif m.tags['BlackB'] == player:
+        playerChar = 'b'
+    else:
+        print "couldn't find player in this game!"
+        exit(-1)
+
+    # just repeat the first part of the BPGN
+    #
+    print '[Event "%s"]' % (m.tags['Event'])
+    del m.tags['Event']
+    for k,v in m.tags.iteritems():
+        print '[%s "%s"]' % (k,v)
     
-        xfer = holdingsDifference(bmThis['boardA']['holdings'], bmLast['boardA']['holdings'])
-        if xfer:
-            comment += '{captured on B: ' + xfer + '} '
-        xfer = holdingsDifference(bmThis['boardB']['holdings'], bmLast['boardB']['holdings'])
-        if xfer:
-            comment += '{captured on A: ' + xfer + '} '
+    for c in m.comments:
+        print '{%s}' % c
+    
+    # for each move, add a comment showing sjeng's analysis
+    #
+    m.populateStates()
+    
+    for i, move in enumerate(m.moves):
+        comment = ''
 
-        comment = comment.lstrip()
-        comment = comment.rstrip()
+        #print "move.player is -%s-" % move.player
 
-    print m.moves[i-1], ' ', comment
+        if move.player == playerChar:
+            boardState = ''
+            boardStates = string.split(m.states[i], ' | ')
+            if playerChar in "Aa":
+                boardState = boardStates[0]
+            else:
+                boardState = boardStates[1]
 
-#    print('left holdings before: ' + ''.join(list(leftHoldings)))
-#    print('left holdings after: ' + ''.join(list(leftHoldings_)))
-#    print('right holdings before: ' + ''.join(list(rightHoldings)))
-#    print('right holdings after: ' + ''.join(list(rightHoldings_)))
+            #print "!!!!!!!!!!!!!!!!!!!"
+            #print "!!!!!!!!!!!!!!!!!!!"
+            #print "!!!!!!!!!!!!!!!!!!!"
+            #print "!!!!!!!!!!!!!!!!!!!"
+            #print "calling searchPossibilitiesBug(16, %s)" % boardState
 
-    lastState = s
-
-print ' ', m.tags['Result']
-
+            analysis = Sjeng.searchPossibilitiesBug(16, boardState)
+    
+            comment = '{\n%s\n}' % analysis
+    
+        print move, ' ', comment
+   
+    # repeat the last part of the BPGN
+    #
+    print ' ', m.tags['Result']
+    

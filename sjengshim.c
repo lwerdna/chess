@@ -4,9 +4,6 @@
 
 #include <sys/types.h>
 
-/* how many seconds to search for mate */
-#define TIME_LIMIT 8
-
 int sjeng_read_chunk(int fd, char *buff, int cap)
 {
     int i, n;
@@ -48,7 +45,7 @@ int main(int ac, char **av)
     char holdings_white[64];
     char holdings_black[64];
     pid_t childpid;
-    char *variant, *fen;
+    char *variant, *fen, *timelimit;
     char buff[4096];
     char *args_sjeng[] = { (char *)0 };
 
@@ -58,13 +55,14 @@ int main(int ac, char **av)
     int fds_up[2];
 
     /* parse args */
-    if(ac < 3) {
-        printf("syntax: %s <variant> <fen>\n", av[0]);
+    if(ac < 4) {
+        printf("syntax: %s <variant> <time limit> <fen>\n", av[0]);
         goto cleanup;
     }
     
     variant = av[1];
-    fen = av[2];
+    timelimit = av[2];
+    fen = av[3];
   
     {
         int n_fen;
@@ -80,7 +78,7 @@ int main(int ac, char **av)
             }
         }
         if(i_first_space == 0) {
-            printf("ERROR: fen string\n");
+            printf("ERROR: fen string (couldn't locate first space in \"%s\")\n", fen);
             goto cleanup;
         }
 
@@ -91,8 +89,8 @@ int main(int ac, char **av)
                 break;
             }
         }
-        if(i_first_space == 0) {
-            printf("ERROR: fen string\n");
+        if(i_last_slash == 0) {
+            printf("ERROR: fen string (couldn't find last slash in \"%s\")\n", fen);
             goto cleanup;
         }
 
@@ -202,7 +200,7 @@ int main(int ac, char **av)
         if(sjeng_read_chunk(fds_up[0], buff, sizeof(buff)) < 0)
             goto cleanup;
 
-        sprintf(buff, "st %d", TIME_LIMIT);
+        sprintf(buff, "st %s", timelimit);
         sjeng_write(fds_down[1], buff);
         if(sjeng_read_chunk(fds_up[0], buff, sizeof(buff)) < 0)
             goto cleanup;
