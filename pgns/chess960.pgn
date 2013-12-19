@@ -1,0 +1,13 @@
+[Event "CCM8 - 7. FiNet Chess960 Open"]
+[Site "Mainz"]
+[Date "2008.07.31"]
+[Round "4"]
+[White "Buhmann, R."]
+[Black "Nakamura, H."]
+[Result "0-1"]
+[Annotator "Chess Tigers"]
+[Variant "chess 960"]
+[SetUp "1"]
+[FEN "rqbknbnr/pppppppp/8/8/8/8/PPPPPPPP/RQBKNBNR w KQkq - 0 1"]
+
+{SP 694} 1.d4 g6 2.Ngf3 Bg7 3.e4 d6 4.Bc4 Nh6 5.Bxh6 Bxh6 6.Bxf7 Nf6 7. e5 Ne4 8.Nd3 Bg4 9.O-O Bxf3 10.gxf3 Ng5 11.Bd5 c6 12.f4 Nh3+ 13.Kg2 Nxf4+ 14.Nxf4 Bxf4 15.Be6 Kc7 16.c4 Qf8 17.Qe4 dxe5 18.d5 Qf6 19.b4 Rad8 20. Rad1 Rhf8 21.Rd3 h5 22.h3 g5 23.f3 Kb8 24.Rfd1 Rd6 25.c5 Rdd8 26.a4 cxd5 27.Rxd5 Rxd5 28.Qxd5 Qh8 29.Qd7 e4 30.Kh1 Bc7 31.Qxe7 Re8 32.Qf7 Rf8 33. Qe7 exf3 34.b5 Rd8 35.Rxd8+ Bxd8 36.Qd6+ Bc7 0-1

@@ -1,16 +1,26 @@
+/* includes */
 #include <stdio.h>
 #include <unistd.h>
 #include <string.h>
+#include <signal.h>
 
 #include <sys/types.h>
+    
+/* globals */
+int g_analyze = 0;
 
-int sjeng_read_chunk(int fd, char *buff, int cap)
+/* macros */
+#define SJENG_READ_BLOCK(a,b,c) sjeng_read_until(a,b,c,"Sjeng: ")
+#define SJENG_READ_LINE(a,b,c) sjeng_read_until(a,b,c,"\n")
+
+int sjeng_read_until(int fd, char *buff, int cap, char *terminator)
 {
     int i, n;
     int rc = -1;
 
     memset(buff, '\0', cap);
 
+    /* read one character at a time until terminator found */
     for(i=0; i<(cap-1); ++i) {
         n = read(fd, buff+i, 1);
 
@@ -18,7 +28,8 @@ int sjeng_read_chunk(int fd, char *buff, int cap)
             goto cleanup;
         }
     
-        if(strstr(buff, "Sjeng: ")) {
+        /* is terminating string found? */
+        if(strstr(buff, terminator)) {
             rc = i+1;
             goto cleanup;
         }
@@ -34,6 +45,12 @@ int sjeng_write(int fd, char *buff)
     write(fd, buff, strlen(buff));
     write(fd, "\n", strlen("\n"));
     return 0;
+}
+
+void handler_SIGALRM(int sig)
+{
+    printf("SIGALRM detected!\n");
+    g_analyze = 0;
 }
 
 int main(int ac, char **av)
@@ -168,59 +185,113 @@ int main(int ac, char **av)
     }
     /* parent activity */
     else {
+        int stat_loc;
+        struct sigaction act;
+
+        printf("spawned child process: %d\n", childpid);
+
+/*
+        act.sa_handler = handler_SIGALRM;
+        sigemptyset(&act.sa_mask);
+        sigaction(SIGALRM, &act, 0);
+*/
         /* close reader from down pipes (we write to child) */
         close(fds_down[0]); 
         /* close writer from up pipes (we read from child) */
         close(fds_up[1]);
+        printf("yo dawn\n");
 
         /* consume sjeng's initial blurb */
-        i = sjeng_read_chunk(fds_up[0], buff, sizeof(buff));
+        i = SJENG_READ_BLOCK(fds_up[0], buff, sizeof(buff));
         if(i < 0) {
             goto cleanup;
         }
+        printf("yo dawn\n");
 
         /* set the variant */
         sprintf(buff, "variant %s", variant);
         sjeng_write(fds_down[1], buff);
-        if(sjeng_read_chunk(fds_up[0], buff, sizeof(buff)) < 0)
+        if(SJENG_READ_BLOCK(fds_up[0], buff, sizeof(buff)) < 0)
             goto cleanup;
 
         sprintf(buff, "setboard %s", fen);
         sjeng_write(fds_down[1], buff);
-        if(sjeng_read_chunk(fds_up[0], buff, sizeof(buff)) < 0)
+        if(SJENG_READ_BLOCK(fds_up[0], buff, sizeof(buff)) < 0)
             goto cleanup;
  
         sprintf(buff, "holding [%s] [%s]", holdings_white, holdings_black);
         sjeng_write(fds_down[1], buff);
-        if(sjeng_read_chunk(fds_up[0], buff, sizeof(buff)) < 0)
+        if(SJENG_READ_BLOCK(fds_up[0], buff, sizeof(buff)) < 0)
             goto cleanup;
 
         sprintf(buff, "%s", colorchar == 'w' ? "white" : "black");
         sjeng_write(fds_down[1], buff);
-        if(sjeng_read_chunk(fds_up[0], buff, sizeof(buff)) < 0)
+        if(SJENG_READ_BLOCK(fds_up[0], buff, sizeof(buff)) < 0)
             goto cleanup;
 
+        /* for "go" this has an effect ... for "analyze" it doesn't */
+        /*
         sprintf(buff, "st %s", timelimit);
         sjeng_write(fds_down[1], buff);
-        if(sjeng_read_chunk(fds_up[0], buff, sizeof(buff)) < 0)
+        if(SJENG_READ_BLOCK(fds_up[0], buff, sizeof(buff)) < 0)
+            goto cleanup;
+        */
+
+        /* set up timeout */
+        printf("alarm(%s)\n", timelimit);
+        alarm(atoi(timelimit));
+        g_analyze = 1;
+
+        sjeng_write(fds_down[1], "analyze");
+
+        while(1) {
+            //printf("reading sjeng line...\n");
+            i = SJENG_READ_LINE(fds_up[0], buff, sizeof(buff));
+
+            if(i<=0) {
+                break;
+            }
+
+            printf("%s", buff);
+
+            if(strstr(buff, "Used time : ")) {
+                printf("analyze is finished! breaking!\n");
+                SJENG_READ_BLOCK(fds_up[0], buff, sizeof(buff));
+
+                /* after analyze, an "exit" is met with nothing...
+                    yes, you must send it twice, try it manually... */
+                sjeng_write(fds_down[1], "exit\nexit");
+                SJENG_READ_BLOCK(fds_up[0], buff, sizeof(buff));
+                
+                break;
+            }
+
+            if(!g_analyze) {
+                printf("time limit reached, killing, breaking from analyze loop...\n");
+                kill(childpid, SIGTERM);
+                break;
+            }
+        }
+
+        waitpid(childpid, 0, 0);
+
+        /*
+        if(SJENG_READ_BLOCK(fds_up[0], buff, sizeof(buff)) < 0)
             goto cleanup;
 
-        sjeng_write(fds_down[1], "go");
-        if(sjeng_read_chunk(fds_up[0], buff, sizeof(buff)) < 0)
-            goto cleanup;
-
-        printf("result of go:\n");
+        printf("result of analyze:\n");
         printf("%s", buff);
 
         sjeng_write(fds_down[1], "exit");
-        if(sjeng_read_chunk(fds_up[0], buff, sizeof(buff)) < 0)
+        if(SJENG_READ_BLOCK(fds_up[0], buff, sizeof(buff)) < 0)
             goto cleanup;
 
         printf("waiting for child to close...\n");
         waitpid(childpid, 0, 0);
+        */
+
         printf("done\n");
     }
-
 
     cleanup:
     return rc;

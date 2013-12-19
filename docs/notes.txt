@@ -6,3 +6,16 @@ notice here that move 35a is repeated
 
 35A. Rd2{0.385} 35a. B@g4+{57.392} 29b. Kb8{62.265} 30B. Qxd8+{18.241} 35a. B@g4+{57.392} {Conquerer forfeits on time} 0-1
 
+sjeng gets this completely wrong ... :/ ugh debug
+3k3r/pp1b1ppp/4p3/8/5N2/2b1Pp1B/PPP2P1P/3R1KR1/pq b KQkq - 0 0|Q@a1 Rxa1 Bb5+ Ne2 Bxe2#
+
+PGN - portable game notation
+    - the file format of saved games, including the tags, comments, moves
+      lists, result tokens, etc.
+FEN - Forsyth-Edwards notation
+    - that long string that holds the state of the board (discluding time)
+    - CAN be part of PGN
+SAN - standard algebraic notation
+    - that often ambiguous notation for encoding specific moves
+    - is a part of PGN
+    - is NOT part of FEN

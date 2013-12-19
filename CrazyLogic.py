@@ -1,11 +1,38 @@
+#!/usr/bin/python
+
+# Copyright 2012, 2013 Andrew Lamoureux
+#
+# This file is a part of FunChess
+#
+# FunChess is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
 
 import re
 
 import Common
-import ChessLogic
 
 # this differs from ChessLogic due to the holdings board and promoted pieces marker '~'
 def fenToBoardMap(fen):
+    # board map is like:
+    # bm['activePlayer'] : 'w'
+    # bm['castleAvail'] : 'KQkq'
+    # bm['enPassTarget'] : 'e3'
+    # bm['halfMoveClock'] : 0
+    # bm['fullMoveClock'] : 2
+    # bm['a8'] = 'r'
+    # bm['b8'] = 'n'
+    # ...
     mapping = {}
 
     # split off the piece placement data
@@ -41,7 +68,7 @@ def fenToBoardMap(fen):
     return mapping
 
 def boardMapToFen(bm):
-    temp = ChessLogic.boardMapToFen(bm)
+    temp = cl.boardMapToFen(bm)
 
     # re-add the holdings area
     (places, rest) = re.split(r' ', temp, maxsplit=1)
@@ -121,7 +148,7 @@ def nextStateInternal(bm, move, addHoldings=1, ghostHoldings=0):
 
     # let Chess do the rest
     if fallThruChess:
-        bm = ChessLogic.nextStateInternal(bm, move)
+        bm = cl.nextStateInternal(bm, move)
 
     # if it was a promotion, mark the promoted piece with '~'
     m = re.search('([a-h][1-8])=([QKPRBN])', move)

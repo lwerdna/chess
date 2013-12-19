@@ -1,0 +1,12 @@
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[FEN "3r1rk1/1p2n1qp/p1p4n/3pPpp1/1QPP4/5BP1/PP2N2P/R5K1 b KQkq - 0 1"]
+
+{the passed pawn candidate is f5} 
+1...f4 2.gxf4 g4 3.Bg2 Nhf5 4.Qb3 {sacrifice of a "candidate" with the result that the square f5 is cleared for the Knight on h6} 4...dxc4 5.Qxc4+ Kh8 6.Qc3 h5 7.Rd1 h4 8.Rd3 Nd5 9.Qd2 Rg8 {black supports his pawn majority with vigor} 10.Bxd5 cxd5 11.Kh1 g3 {black gets the attack} *
+

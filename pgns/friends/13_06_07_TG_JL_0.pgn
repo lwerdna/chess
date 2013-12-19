@@ -1,0 +1,10 @@
+[Event "asdf"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+
+1.e4 e6 2.f4 d5 3.exd5 Qxd5 {test} 4.Qg4 e5 5.Qxc8+ Qd8 6.Qxb7 exf4 7.Qxa8 Nf6 8.Qxa7 Ne4 9.d3 Bc5 10.Qa4+ Qd7 11.Qxe4+ Qe6 12.Bxf4 Qxe4+ 13.dxe4 Bd6 14.Bxd6 cxd6 15.Bc4 O-O 16.Nf3 Nc6 17.Ng5 h6 18.Bxf7+ Rxf7 19.Nxf7 Kxf7 20.Rf1+ Ke7 21.Nc3 Nd4 22.Nd5+ Kd7 23.Rf7+ Kc6 24.O-O-O Ne2+ 25.Kb1 g5 26.Rc7+ Kb5 27.a4+ Kxa4 28.b3+ Ka5 29.Ra7+ Kb5 30.Nc7+ Kc5 31.Rd5+ Kc6 32.Kb2 g4 33.h3 gxh3 34.gxh3 Ng1 35.Ka3 Nxh3 36.Kb4 h5 37.Ra6+ Kxc7 38.Kb5 Nf2 39.Rdxd6 Kc8 *
+

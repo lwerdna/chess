@@ -1,4 +1,23 @@
 #!/usr/bin/python
+
+# Copyright 2012, 2013 Andrew Lamoureux
+#
+# This file is a part of FunChess
+#
+# FunChess is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+#!/usr/bin/python
 import re
 import os
 import sys
@@ -6,6 +25,7 @@ import tempfile
 import sqlite3
 
 import BpgnParser
+
 '''
 /* hold 10 full moves in */
 create table openings(ply1 string, ply2 string, ply3 string, ply4 string,
@@ -13,6 +33,11 @@ ply5 string, ply6 string, ply7 string, ply8 string, ply9 string, ply10 string,
 ply11 string, ply12 string, ply13 string, ply14 string, ply15 string, ply16
 string, ply17 string, ply18 string, ply19 string, ply20 string, count int);
 '''
+
+    # get in database
+    # sqlite> .schema
+    # CREATE TABLE data(position string, move string);
+    # CREATE INDEX position_index on data(position);
 
 ###############################################################################
 # main()

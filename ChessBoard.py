@@ -1,11 +1,30 @@
 #!/usr/bin/python
 
+# Copyright 2012, 2013 Andrew Lamoureux
+#
+# This file is a part of FunChess
+#
+# FunChess is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+#!/usr/bin/python
+
 import re
 import sys
 import Tkinter
 
 import Common
-import ChessLogic
+from ChessState import ChessState
 
 class ChessBoard(Tkinter.Frame):
     def __init__(self, parent, pieceWidth=48, pieceHeight=48):
@@ -13,7 +32,7 @@ class ChessBoard(Tkinter.Frame):
 
         self.parent = parent
 
-        self.boardMap = {} 
+        self.chessState = {} 
 
         self.flippedDisplay = 0
 
@@ -37,9 +56,11 @@ class ChessBoard(Tkinter.Frame):
         # 
         self.canvas.grid(row=0, column=0)
 
-    def setBoardMap(self, boardMap):
-        self.boardMap = boardMap.copy()
-     
+    def setState(self, state):
+        self.chessState = state.copy()
+
+    def setFEN(self, fen):
+        self.chessState = ChessState(fen)
 
     #--------------------------------------------------------------------------
     # drawing stuff
@@ -102,8 +123,8 @@ class ChessBoard(Tkinter.Frame):
             self.bitmaps[key] = Tkinter.PhotoImage(file=imgPath)
 
     def draw(self):
-        if not self.boardMap:
-            raise Exception("ChessBoard cannot draw without boardMap being set!")
+        if not self.chessState:
+            raise Exception("ChessBoard cannot draw without chessState being set!")
 
         pieceGetSequence = range(64)
         if self.flippedDisplay:
@@ -118,7 +139,7 @@ class ChessBoard(Tkinter.Frame):
             self.stateImg[i] = self.canvas.create_image( \
                 [xCoord, yCoord], \
                 image = self.fenPieceToBitmap( \
-                    self.boardMap[ \
+                    self.chessState.squares[ \
                         Common.squaresSan[pieceGetSequence[i]] \
                     ], \
                     (i + i/8 + 1)%2 \
@@ -126,8 +147,8 @@ class ChessBoard(Tkinter.Frame):
             )
 
     def draw_html(self):
-        if not self.boardMap:
-            raise Exception("ChessBoard cannot draw without boardMap being set!")
+        if not self.chessState:
+            raise Exception("ChessBoard cannot draw without chessState being set!")
 
         html = '<table border=0 cellpadding=0 cellspacing=0>\n'
 
@@ -149,7 +170,7 @@ class ChessBoard(Tkinter.Frame):
             # map 0->'a8', 63->'h1', etc.
             tmp = Common.squaresSan[tmp]
             # map 'a8' to 'r' or 'R' for example (getting piece)
-            tmp = self.boardMap[tmp]
+            tmp = self.chessState.squares[tmp]
             # finally, map that piece to a filename
             tmp = self.fenPieceToBitmapFile(tmp, (i+i/8+1)%2)
 
@@ -167,10 +188,10 @@ class ChessBoardTest(Tkinter.Frame):
         Tkinter.Frame.__init__(self, parent)
         self.parent = parent
   
-        self.boardMap = ChessLogic.fenToBoardMap(Common.initFEN)
+        self.chessState = ChessState(Common.initChessFEN)
 
         self.cb = ChessBoard(self)
-        self.cb.setBoardMap(self.boardMap)
+        self.cb.setState(self.chessState)
         self.cb.draw()
         self.cb.pack()
 
@@ -195,8 +216,8 @@ class ChessBoardTest(Tkinter.Frame):
     def executeMove(self):
         whatMove = self.moveEntry.get()
         print "Executing: " + whatMove
-        self.boardMap = ChessLogic.nextStateInternal(self.boardMap, whatMove)
-        self.cb.setBoardMap(self.boardMap)
+        self.chessState = self.chessState.transition(whatMove)
+        self.cb.setState(self.chessState)
         self.cb.draw()
 
 def doTest():

@@ -1,5 +1,24 @@
 #!/usr/bin/python
 
+# Copyright 2012, 2013 Andrew Lamoureux
+#
+# This file is a part of FunChess
+#
+# FunChess is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+#!/usr/bin/python
+
 # parse BPGN (game metadata + moves) into position strings
 
 import os
@@ -7,105 +26,23 @@ import re
 import sys
 
 import Common
-import BugLogic
-import BpgnTokenizer
+import ChessMove
+import PgnTokenizer
 
-###############################################################################
-# Move
-# - contains number, san, player of a move
-###############################################################################
-
-class Move:
-    def __init__(self):
-        self.player = ''    # 'a','A','b','B'
-        self.moveNum = ''   # 1,2,3,...
-        self.san = ''       # P@e7+
-        self.comments = []  # {53.057}
-        self.time = None    # 118.953
-        self.flags = {}     # 'TIME_FORFEIT', etc.
-
-    def addComment(self, comment):
-        # time comment?
-        if re.match(r'\d+\.\d+', comment):
-            self.time = float(comment)
-        # forfeit on time comment? (these are repeated in bughouse-db results)
-        elif re.search('forfeits on time', comment):
-            self.flags['TIME_FORFEIT'] = 1
-
-        # add to list
-        self.comments.append(comment)
-
-    def __str__(self):
-        answer = self.moveNum + self.player + '. ' + self.san
-
-        #if self.time:
-        #    answer += " {TIME: %s}" % self.time
-
-        #answer += "\nFLAGS: "
-        for k,v in self.flags.iteritems():
-            answer += " {%s}" % k
-
-        #answer += '\nCOMMENTS: '
-        for c in self.comments:
-            answer += ' {%s}' % c
-
-        return answer
-
-class MatchMovesOOOException(Exception):
-    pass
-class MatchZeroMovesException(Exception):
-    pass
 
 ###############################################################################
 # Match
 # - contains tags, comments, moves, and states of a bughouse chess match
 # - is able to load itself from bpgn match text
 ###############################################################################
-class Match:
+class PgnChessMatch:
     def __init__(self):
-        self.initState = Common.initBugFEN
+        self.initState = Common.initChessFEN
         self.moves = []
         self.tags = {}
         self.comments = []
         self.states = [self.initState]
 
-        self.path = ''
-
-        self.movesSeenBefore = {}
-
-    def getMovesBoard(self, which):
-        result = []
-        for m in self.moves:
-            if which == 'A' and (m.player == 'a' or m.player == 'A'):
-                result.append(m)
-            elif which == 'B' and (m.player == 'b' or m.player == 'B'):
-                result.append(m)
-        return result
-
-    def getMovesBoardA(self):
-        return self.getMovesBoard('A')
-
-    def getMovesBoardB(self):
-        return self.getMovesBoard('B')
-
-    def populateState(self, i):
-        while len(self.moves) >= len(self.states):
-            self.states += ['']
-        
-        move = self.moves[i]
-
-        # exceptions (repeated moves due to time forfeiture, etc.) just carry state along...
-        if 'TIME_FORFEIT' in move.flags:
-            self.states[i+1] = self.states[i]
-        # valid moves progress the state
-        else:
-            self.states[i+1] = BugLogic.nextState(self.states[i], move.player, move.san)
-
-    def populateStates(self):
-        self.states = [self.initState]
-
-        for i in range(len(self.moves)):
-            self.populateState(i)
 
     def incrMoveNum(self, fullMove):
         old = fullMove
@@ -150,55 +87,92 @@ class Match:
                 raise MatchMovesOOOException("expected move %s or %s (got instead:\n %s)" % \
                     (expectA, expectB, str(m)))
 
-    def parseBpgn(self, text):
-        tokens = BpgnTokenizer.tokenize(text)
+    # - parses, populates the tags member
+    # - parses, populates the moves member
+    # - parses, populates the comments member
+    # - calculates the states member
+    #
+    def parsePgn(self, text):
+        tokens = PgnTokenizer.tokenize(text)
+        moveNum = 1
+        player = 'W'
 
-        currMove = 0
+        while tokens:
+            token = tokens.pop(0)
 
-        for token in tokens:
-            #print "on token: -%s-" % token
+            print "on token: -%s-" % token
 
-            # tag tokens
+            # tag tokens eg: [Event "May 2013 Tourney"]
             m = re.match(r'\[(.*?) "(.*?)"\]', token)
             if m:
                 self.tags[m.group(1)] = m.group(2)
-
                 continue
 
-            # comment tokens
+            # comment tokens eg: { good move! also consider Rxe8 }
             m = re.match('^{(.*)}$', token)
             if m:
                 # if we're in the moves section, comment applies to a move
                 if self.moves:
                     self.moves[-1].addComment(m.group(1))
+                # else it applies to the match comments
                 else:
                     self.comments.append(m.group(1))
 
                 continue
 
-            # result tokens
-            m = re.match(r'^.*(0-0$|0-1$|1-0$|1/2-1/2$|\*$)', token)
+            # result tokens eg: 0-1
+            m = re.match(Common.regexResults, token)
             if m:
                 self.result = token
 
-                if token != tokens[-1]:
-                    raise Exception("expected match result")
+                if tokens:
+                    raise Exception("result token was not the final token! next is: " + tokens[0])
 
                 continue
 
-            # move number token
-            m = re.match(r'(\d+)([abAB])\.', token)
+            # move number token eg: 34.
+            m = re.match(r'(\d+)\.', token)
             if m:
-                move = Move()
-                move.moveNum = m.group(1)
-                move.player = m.group(2)
-                self.moves.append(move)
+                if moveNum == int(m.group(1)) + 1:
+                    raise Exception("out of order move number: " + token)
+
+                moveNum += 1;
+                player = 'W'
 
             # normal move (SAN)
-            m = re.match(Common.regexSan, token)
+            m = re.match(Common.regexSanChess, token)
             if m:
-                self.moves[-1].san = token
+                move = ChessMove.ChessMove()
+                move.moveNum = moveNum
+                move.player = player
+                move.san = token
+                self.moves.append(move)
 
+                player = {'W':'B', 'B':'W'}[player]
+
+        # calculate all board states
+        self.states = [self.initState] 
+
+        for move in self.moves:
+            # exceptions (repeated moves due to time forfeiture, etc.) just carry state along...
+            if 'TIME_FORFEIT' in move.flags:
+                self.states.append(self.states[-1])
+                continue
+                
+            currState = self.states[-1]
+            nextState = x.nextState(self.states[-1], move.san)
+
+            print "current state: " + currState
+            print "next state: " + nextState
+
+            self.states.append(nextState)
+
+    # return list of lists 
+    def getOccupancyArrays(self):
+        result = []
+
+        for state in self.states:
+            result.append(x. 
 
     def __str__(self):
         answer = ''
@@ -223,7 +197,7 @@ class Match:
 # - return matches from file containing multiple matches
 # - basically, split the text around '[Event "..."]' tags
 ###############################################################################
-class MatchIteratorFile:
+class PgnChessMatchIteratorFile:
     def __init__(self, path):
         self.path = path
 
@@ -283,9 +257,9 @@ class MatchIteratorFile:
                 break
 
         # return a match
-        match = Match()
+        match = PgnChessMatch()
         match.path = self.path
-        match.parseBpgn(matchText)
+        match.parsePgn(matchText)
         return match
 
     def __del__(self):
@@ -299,7 +273,7 @@ class MatchIteratorFile:
 # - return matches from a directory containing files
 # - basically, loop over MatchIteratorFile for every file in a directory
 ###############################################################################
-class MatchIteratorDir:
+class PgnChessMatchIteratorDir:
     def __init__(self, path):
         self.walkObj = os.walk(path)
         self.matchIterFileObj = None
@@ -360,9 +334,6 @@ if __name__ == '__main__':
         except MatchZeroMovesException as e:
             print "%s: skipping match due to it being empty (no moves whatsoever)\n%s\n%s" % (m.path, '\n'.join(m.comments), str(e))
             continue
-
-        m.populateStates()
-        #print str(m)
 
         for s in m.states:
             print s

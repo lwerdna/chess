@@ -1,0 +1,72 @@
+// sources:
+// sjeng opening book (books/bug.opn)
+// FICS help file http://www.freechess.org/Help/HelpFiles/bughouse_strat.html
+// interview with Kazim Gulamali http://www.uschess.org/content/view/11764/671
+// 318 CLO / "The Secrets of Brooklyn's Bughouse Champs, Part I: Openings" http://www.uschess.org/content/view/11243/632
+
+ // horrible moves and responses
+ a2a3?  e5!
+ a2a4?  e5!
+  Na3?  e5!
+
+  Nc3?  e6! // why?
+ 
+
+    b3?! 
+    b4?! /* aim for long diagonal with fianch bishop, and opportunity to hit b5 N */
+ 
+    c3?  e5! /* black attempts to reverse the system (play white) */
+    c4?! e5! /* not as bad, according to sjeng */
+    d3?  e5! /* black plays white */
+ 
+    d4 /* passive, but solid */
+ 
+    e3?! e5! /* white plans Nf2 or b3 */
+ 
+    // e4 lines
+
+    e4   b6?!  d4!
+    e4   Nc6=        // most likely transpose
+ 
+
+    e4   Nf6   e5    
+    e4   Nf6   e5    d5!    exf6   exf6!                        // black plans development Nc6, Bd6, Bf5 (or B pins N if on f3)
+                                                                // 0-0 afterwards with Re8+ is good
+    e4   Nf6   e5    d5!    exf6   Nf3    P@e4
+    e4   Nf6   e5    d5!    exf6   Nf3    Bg4                   // with sights on P@e4
+    e4   Nf6   e5    d5!    exf6   d3?
+    e4   Nf6   e5    d5!    exf6   d4
+    e4   Nf6   e5    d5!    exf6   d4     Bb4+                  // black gets castle opportunity
+    e4   Nf6   e5    d5!    exf6   d4     Bb4+  c3?   Bf5       // black gets castle opportunity
+    e4   Nf6   e5    d5!    d4                                  // uncommon refuse N after e5
+    e4   Nf6   e5    Ne4                                        // simple, attack f2 KBP
+    e4   Nf6   e5    Ne4    Be3
+    e4   Nf6   e5    Nd5 // preferred by Vaboris
+    e4   Nf6   Nc3!  d5
+    e4   Nf6   Nc3!  d5     e5     Nc6
+    e4   Nf6   Nc3!  d5     exd5   Nxd5
+    e4   Nf6   Nc3!  d5     exd5   Nxd5   Nxd5  Qxd5 // white looks for B@c4
+    e4   Nf6   Nc3!  d5     exd5   Nxd5   Bc4   e6
+    e4   Nf6   Nc3!  d5     exd5   Nxd5   Bc4   e6 // black looks for opportunity to Nxc3, p@d5 or p@f6 defence
+
+
+    e4   c5?   bc3!  // c5 to block d4?
+    e4   c6?   d4!   d5     exd5   cxd5   bf4 // swap middle to arrive at bishop threat on c7
+ 
+    e4   d6    // transpose to wall probably
+    e4   d6    d4    e5
+
+    e4   e5    Bc4   Nf6    d3     Nc6    nf3   bc5  0-0  0-0 // h3 and h6 are weak spots ... 
+    e4   e5    Bc4   Nf6    d3     Nc6    nf3   bc5  0-0  0-0 p@f5 // stop black diagonal and generate threats on e6 and g6
+
+    e4   e6             
+    e4   e6    d4    d5 // french defense
+
+
+   // the leaf!
+   e4   d5?
+
+   // transposes to wall?
+   e4   d6=
+   d4   
+
