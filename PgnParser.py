@@ -20,6 +20,7 @@
 import os
 import re
 import sys
+import copy
 
 import Common
 import ChessMove
@@ -38,6 +39,10 @@ class PgnChessMatch:
         self.tags = {}
         self.comments = []
         self.states = [self.initState]
+        self.result = None
+
+    def copy(self):
+        return copy.deepcopy(self)
 
     # - parses, populates the tags member
     # - parses, populates the moves member
@@ -100,7 +105,6 @@ class PgnChessMatch:
                 move.player = player
                 move.san = token
                 self.moves.append(move)
-
                 player = {'w':'b', 'b':'w'}[player]
 
         # calculate all board states
@@ -119,7 +123,7 @@ class PgnChessMatch:
             if 'TIME_FORFEIT' in move.flags:
                 self.states.append(self.states[-1])
                 continue
-              
+             
             currState = self.states[-1]
             nextState = currState.transition(move)
 
@@ -132,15 +136,17 @@ class PgnChessMatch:
         #    self.tags['BlackB'], self.tags['BlackBElo'], self.tags['WhiteA'], self.tags['WhiteAElo'] \
         #)
 
-        answer += "TAGS:\n"
         for tag,value in self.tags.iteritems():
-            answer += "%s: \"%s\"\n" % (tag, value)
-        answer += "COMMENTS:\n"
-        for c in self.comments:
-            answer += c + "\n"
-        answer += "MOVES (%d total):\n" % len(self.moves)
+            answer += "[%s \"%s\"]\n" % (tag, value)
+        #answer += "COMMENTS:\n"
+        #for c in self.comments:
+        #    answer += c + "\n"
+        #answer += "MOVES (%d total):\n" % len(self.moves)
         for m in self.moves:
-            answer += str(m) + "\n"
+            answer += str(m) + ' '
+        # blah
+        answer += self.result
+        # done 
         return answer
 
 ###############################################################################

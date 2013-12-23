@@ -5,6 +5,8 @@
 
 #include <sys/types.h>
 
+#define PATH_STOCKFISH "/usr/games/stockfish"
+
 /* macros */
 #define STOCKFISH_WRITE_BLOCK(a,b,c) stockfish_read_until(a,b,c, "stockfish: ")
 #define STOCKFISH_READ_LINE(a,b,c) stockfish_read_until(a,b,c,"\n")
@@ -52,7 +54,9 @@ int main(int ac, char **av)
     pid_t childpid;
     char buff[4096];
     char fen[512];
-    char *args_stockfish[] = { (char *)0 };
+
+    // Both argv and envp must be terminated by a NULL pointer.
+    char *args_stockfish[] = { PATH_STOCKFISH, NULL };
     char *search_move;
 
     /* these fd's used to send commands down to stockfish */
@@ -145,21 +149,20 @@ int main(int ac, char **av)
 
         sprintf(buff, "go movetime 2000");
         if(strcmp(search_move, "all") != 0) {
-            sprintf(buff, "go searchmoves %s movetime 2000", search_move);
+            sprintf(buff, "go movetime 2000 searchmoves %s", search_move);
         }
 
-        printf("sending: -%s-", buff);
         stockfish_write(fds_down[1], buff);
         
         while(1) {
             STOCKFISH_READ_LINE(fds_up[0], buff, sizeof(buff));
+            
+            printf("%s\n", buff);
 
             if(strstr(buff, "bestmove")) {
                 printf("done! breaking!\n");
                 break;
             }
-
-            printf("%s\n", buff);
         }
 
         printf("done\n");

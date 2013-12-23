@@ -49,6 +49,8 @@ def tokenize(code):
         m = ''
         snippet = code[0:16] + "..."
 
+        #print "code[0] is: " + repr(code[0])
+
         # tags
         if code[0] == '[':
             m = re.match(r'^\[\w+ ".*?"\]', code)
@@ -73,7 +75,7 @@ def tokenize(code):
                 raise TokenizerMalformedMoveNumberException(snippet)
 
         # ignore spaces
-        elif code[0] in ' \n':
+        elif re.match('\s', code[0]):
             code = code[1:]
             continue
 

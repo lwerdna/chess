@@ -86,9 +86,17 @@ class ChessState:
             rankStrs.append(rankStr)
     
         # return it all
-        return ' '.join(['/'.join(rankStrs), self.activePlayer, \
-            self.castleAvail, self.enPassTarget, \
-            str(self.halfMoveClock), str(self.fullMoveNum)])
+        result = ''
+        result += '/'.join(rankStrs)
+        result += ' ' + self.activePlayer
+        if self.castleAvail:
+            result += ' ' + self.castleAvail
+        else:
+            result += ' -'
+        result += ' ' + self.enPassTarget
+        result += ' ' + str(self.halfMoveClock)
+        result += ' ' + str(self.fullMoveNum)
+        return result
     
     def occupancy(self):
         result = []
@@ -109,8 +117,6 @@ class ChessState:
 
         newBoardState = copy.deepcopy(self)
     
-        #print "processing move: -%s-" % move
-    
         m = re.match(Common.regexSanChess, move.san)
         if not m:
             raise Exception("cannot parse move: %s" % move)
@@ -124,6 +130,8 @@ class ChessState:
                 raise Exception("illegal castle! currently in check!")
 
         # BUG TODO: check that squares in-between are empty and not attacked
+
+        srcSquare = None
 
         # deal with king castling
         #
@@ -200,7 +208,6 @@ class ChessState:
             #print "dstSquare: ", dstSquare
     
             # resolve the srcSquare
-            srcSquare = ''
             if srcHint and re.match(r'^[a-h][1-8]$', srcHint):
                 # given a full hint, source square is resolved
                 srcSquare = srcHint
@@ -279,13 +286,14 @@ class ChessState:
                         newBoardState.enPassTarget = srcSquare[0] + '3'
                     elif srcSquare[1]=='7' and dstSquare[1]=='5':
                         newBoardState.enPassTarget = srcSquare[0] + '6'
-    
-            # normal movement
-            newBoardState.squares[dstSquare] = newBoardState.squares[srcSquare]
-            newBoardState.squares[srcSquare] = ' '
-   
+
+            # mark capturing
             if newBoardState.squares[dstSquare] != ' ':
                 move.flags['CAPTURE'] = 1
+
+            # finalize movement
+            newBoardState.squares[dstSquare] = newBoardState.squares[srcSquare]
+            newBoardState.squares[srcSquare] = ' '
 
             # did it promote?
             if promote:
@@ -295,8 +303,8 @@ class ChessState:
         if newBoardState.isInCheck():
             raise Exception("move results in self-check!")
 
-        # active player loses castle rights if he castled
-        if m.group('qCastle') or m.group('kCastle'):
+        # active player loses castle rights if he castled, or moved king
+        if m.group('qCastle') or m.group('kCastle') or self.squares[srcSquare] in 'kK':
             if self.activePlayer == 'w':
                 newBoardState.castleAvail = re.sub('K', '', newBoardState.castleAvail)
                 newBoardState.castleAvail = re.sub('Q', '', newBoardState.castleAvail)
@@ -312,7 +320,7 @@ class ChessState:
             move.flags['CHECKS'] = 1
       
         # halfmove clock reset after captures or pawn moves, incremented otherwise
-        if ('CAPTURE' in move.flags) or (boardState.squares[srcSquare] in 'pP'):
+        if ('CAPTURE' in move.flags) or (srcSquare and self.squares[srcSquare] in 'pP'):
             newBoardState.halfMoveClock = 0
         else:
             newBoardState.halfMoveClock += 1
@@ -320,7 +328,7 @@ class ChessState:
         # fullmove clock increments after black's turn
         if newBoardState.activePlayer == 'b':
             newBoardState.fullMoveNum += 1
-
+        
         # return the move properties and the new board state
         return newBoardState
     
@@ -563,13 +571,13 @@ class ChessState:
         if what == 'activePlayer':
             return self.activePlayer
         if what == 'castleAvail':
-            return self.activePlayer
+            return self.castleAvail
         if what == 'enPassTarget':
-            return self.activePlayer
+            return self.enPassTarget
         if what == 'halfMoveClock':
-            return self.activePlayer
+            return self.halfMoveClock
         if what == 'fullMoveNum':
-            return self.activePlayer
+            return self.fullMoveNUm
 
         if re.match(Common.regexSquare, what):
             return self.squares[what]

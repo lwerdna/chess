@@ -20,14 +20,26 @@
 #!/usr/bin/python
 
 class ChessMove:
-    def __init__(self, player_='', moveNum_='', san_='', canonical_='', comments_=[], time_=None, flags_={}):
+    def __init__(self, player_='', moveNum_='', san_='', canonical_='', comments_=None, time_=None, flags_=None):
         self.player = player_       # ['w','b', 'W', 'B'] in chess, ['a','A','b','B'] in bug
         self.moveNum = moveNum_     # 1,2,3,...
         self.san = san_             # bxh3
         self.canonical = canonical_ # c7h3
         self.comments = comments_   # [53.057, 'adds pressure to kingside'] (input is like "{53.057}")
         self.time = time_           # 118.953
-        self.flags = flags_         # 'TIME_FORFEIT', 'CAPTURE', 'PROMOTE', etc.
+        self.extraString = ''
+
+        # see "Default Parameter Values in Python" http://effbot.org/zone/default-values.htm
+        # for why to do this...
+        if comments_ is None:
+            self.comments = {}
+        else:
+            self.comments = comments_         # 'TIME_FORFEIT', 'CAPTURE', 'PROMOTE', etc.
+
+        if flags_ is None:
+            self.flags = {}
+        else:
+            self.flags = flags_         # 'TIME_FORFEIT', 'CAPTURE', 'PROMOTE', etc.
 
     def addComment(self, comment):
         # time comment?
@@ -72,6 +84,8 @@ class ChessMove:
         #answer += '\nCOMMENTS: '
         for c in self.comments:
             answer += ' {%s}' % c
+
+        answer += self.extraString
 
         return answer
 
