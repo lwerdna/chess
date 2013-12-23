@@ -128,11 +128,14 @@ if __name__ == '__main__':
             print "with move: %s" % str(match.moves[i])
 
         output = runGetOutput(['./stockfishshim', 'all', state.toFEN()])
-        variations = parseVariations(state.fullMoveNum+1, state.activePlayer, output)
+        variations = parseVariations(state.fullMoveNum, state.activePlayer, output)
 
         top3moves = []
         top3scores = []
         for (score, line) in variations:
+            matchQuiz.moves[i].comments = {''}
+            matchAnswers.moves[i].comments = {''}
+
             temp = "({%.2f} %s)" % (score, line)
             print temp
             if i < len(match.moves):
@@ -156,7 +159,7 @@ if __name__ == '__main__':
                 playedScore = top3scores[top3moves.index(playedMove)]
             else: 
                 output = runGetOutput(['./stockfishshim', playedMove, state.toFEN()])
-                variations = parseVariations(state.fullMoveNum+1, state.activePlayer, output)
+                variations = parseVariations(state.fullMoveNum, state.activePlayer, output)
                 print variations
                 temp = "({%.2f} %s)" % (variations[0][0], variations[0][1])
                 print temp
@@ -174,7 +177,6 @@ if __name__ == '__main__':
                 print "Innacuracy!"
             
             if i < len(match.moves):
-                matchQuiz.moves[i].comments = {''}
                 if diff > 2:
                     matchQuiz.moves[i].comments = {'BLUNDER'}
                 elif diff > 0.9:

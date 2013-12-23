@@ -298,6 +298,7 @@ class ChessState:
             # did it promote?
             if promote:
                 newBoardState.squares[dstSquare] = Common.casePieceByPlayer(promote[1], newBoardState.activePlayer)
+                move.canonical += Common.casePieceByPlayer(promote[1], newBoardState.activePlayer)
 
         # if the active player (the one who just moved) is in check, it's illegal
         if newBoardState.isInCheck():
@@ -312,12 +313,6 @@ class ChessState:
                 newBoardState.castleAvail = re.sub('k', '', newBoardState.castleAvail)
                 newBoardState.castleAvail = re.sub('q', '', newBoardState.castleAvail)
 
-        # swap whose turn it is
-        newBoardState.activePlayer = {'b':'w', 'w':'b'}[newBoardState.activePlayer]
-    
-        # mark if this checks
-        if newBoardState.isInCheck():
-            move.flags['CHECKS'] = 1
       
         # halfmove clock reset after captures or pawn moves, incremented otherwise
         if ('CAPTURE' in move.flags) or (srcSquare and self.squares[srcSquare] in 'pP'):
@@ -325,9 +320,17 @@ class ChessState:
         else:
             newBoardState.halfMoveClock += 1
 
-        # fullmove clock increments after black's turn
-        if newBoardState.activePlayer == 'b':
-            newBoardState.fullMoveNum += 1
+        # swap whose turn it is
+        if newBoardState.activePlayer == 'w':
+            newBoardState.activePlayer = 'b'
+        else:
+            newBoardState.activePlayer = 'w'
+            # fullmove clock increments after black's turn
+            newBoardState.fullMoveNum += 1;
+    
+        # mark if this checks
+        if newBoardState.isInCheck():
+            move.flags['CHECKS'] = 1
         
         # return the move properties and the new board state
         return newBoardState

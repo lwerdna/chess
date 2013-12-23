@@ -19,8 +19,8 @@
 
 
 # note that only in FEN (chess or crazy or bug) are upper/lower letters used
-initChessFEN = 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 0'
-initCrazyFEN = 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR/ w KQkq - 0 0'
+initChessFEN = 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1'
+initCrazyFEN = 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR/ w KQkq - 0 1'
 initBugFEN = initCrazyFEN + ' | ' + initCrazyFEN
 
 # SAN - [s]tandard [a]lgebraic [n]otation
