@@ -169,7 +169,7 @@ class ChessState:
             move.flags['CASTLE'] = 1
     
             if newBoardState.activePlayer == 'w':
-                if newBoardState.e1 != 'K' or newBoardState.a1 != 'R':
+                if newBoardState['e1'] != 'K' or newBoardState['a1'] != 'R':
                     raise Exception("illegal queenside castle!")
     
                 if not 'Q' in newBoardState.castleAvail:
@@ -302,7 +302,7 @@ class ChessState:
 
         # if the active player (the one who just moved) is in check, it's illegal
         if newBoardState.isInCheck():
-            raise Exception("move results in self-check!")
+            raise Exception("with state \"%s\" move \"%s\" results in self-check!" % (self.toFEN(), move.san))
 
         # active player loses castle rights if he castled, or moved king
         if m.group('qCastle') or m.group('kCastle') or self.squares[srcSquare] in 'kK':

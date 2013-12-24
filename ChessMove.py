@@ -27,7 +27,7 @@ class ChessMove:
         self.canonical = canonical_ # c7h3
         self.comments = comments_   # [53.057, 'adds pressure to kingside'] (input is like "{53.057}")
         self.time = time_           # 118.953
-        self.extraString = ''
+        self.variations = []
 
         # see "Default Parameter Values in Python" http://effbot.org/zone/default-values.htm
         # for why to do this...
@@ -74,18 +74,13 @@ class ChessMove:
     def __str__(self):
         answer = self.strSmall()
 
-        #if self.time:
-        #    answer += " {TIME: %s}" % self.time
-
-        #answer += "\nFLAGS: "
-        for k,v in self.flags.iteritems():
-            answer += " {%s}" % k
-
-        #answer += '\nCOMMENTS: '
         for c in self.comments:
-            answer += ' {%s}' % c
+            if c:
+                answer += ' {%s}' % c
 
-        answer += self.extraString
+        if self.variations:
+            answer += " "
+            answer += " ".join(self.variations)
 
         return answer
 

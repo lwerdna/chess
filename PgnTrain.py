@@ -1,5 +1,5 @@
 #!/usr/bin/python
-
+#------------------------------------------------------------------------------
 # Copyright 2012, 2013 Andrew Lamoureux
 #
 # This file is a part of FunChess
@@ -16,6 +16,9 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#------------------------------------------------------------------------------
+# use stockfish to create a quiz/answer pgn from a game pgn
+#------------------------------------------------------------------------------
 
 import os
 import re
@@ -41,10 +44,91 @@ def runGetOutput(cmdAndArgs):
     except Exception as e:
         print e
 
+# translate stockfish's custom way of representing moves
+#
+# stockfish|SAN
+# ---------+---
+# e8c8     |O-O-O
+# e7e8q    |e8=q
+#
+# this requires playing through the moves of the variation, which is very inefficient :/
+#
+# input:
+#   variation, eg: "b2b4 c5f2 f3f2 e8c8 g8f6 d2d3 c6b4 e7e8q..."
+# returns:
+#   normalized variation, eg: "b2b4 c5f2 f3f2 e8c8 g8f6 d2d3 c6b4 e8=Q..."
+#
+def destockfishifyVariation(variation, chessState):
+    state = chessState.copy()
+    sans = variation.split(' ')
+    result = []
+
+    print "destocking: %s" % variation
+
+    for before in sans:
+        if before == 'e8c8' and (state['a8'] + state['b8'] + state['c8'] + state['d8'] + state['e8'] == 'r   k'):
+            if state.activePlayer != 'b':
+                raise "stockfish wants to castle with e8c8, but it's not black's turn!"
+            if not 'q' in state.castleAvail:
+                raise "stockfish wants to castle with e8c8, but black queenside castle is not available!"
+            after = 'O-O-O'
+
+        elif before == 'e8g8' and (state['e8'] + state['f8'] + state['g8'] + state['h8'] == 'k  r'):
+            if state.activePlayer != 'b':
+                raise "stockfish wants to castle with e8g8, but it's not black's turn!"
+            if not 'k' in state.castleAvail:
+                raise "stockfish wants to castle with e8g8, but black kingside castle is not available!"
+            after = 'O-O'
+
+        elif before == 'e1c1' and (state['a1'] + state['b1'] + state['c1'] + state['d1'] + state['e1'] == 'R   K'):
+            if state.activePlayer != 'w':
+                raise "stockfish wants to castle with e1c1, but it's not white's turn!"
+            if not 'Q' in state.castleAvail:
+                raise "stockfish wants to castle with e1c1, but white queenside castle is not available!"
+            after = 'O-O-O'
+
+        elif before == 'e1g1' and (state['e1'] + state['f1'] + state['g1'] + state['h1'] == 'K  R'):
+            if state.activePlayer != 'w':
+                raise "stockfish wants to castle with e1g1, but it's not white's turn!"
+            if not 'K' in state.castleAvail:
+                raise "stockfish wants to castle with e1g1, but white kingside castle is not available!"
+            after = 'O-O'
+
+        elif len(before) == 5:
+            if not before[4] in 'nbrqNBRQ':
+                raise "don't know how to handle stockfish move %s (thought it was a promotion)" % before
+
+            after = before[2:4] + '=' + before[4].upper()
+
+        else:
+            # no translated needed
+            after = before
+
+        if after != before:
+            print "translated %s to %s" % (before, after)
+
+        
+        # we have to carefully see if stockfish can play the moves it gives
+        # I made bug report here: http://support.stockfishchess.org/discussions/problems/3265-bug-stockfish-moves-into-check-with-queenside-castle
+        try:
+            # progress the state to to be able to translate further moves...
+            temp = ChessMove.ChessMove(state.activePlayer, '1', after)
+            state = state.transition(temp)
+
+            # save the translated move (if it was able to be played!)
+            result.append(after)
+        except:
+            print "WTF! Stockfish played another illegal move!" 
+            break
+
+    return ' '.join(result)
+
 def numberizeVariation(moveNum, color, pv):
     answer = []
 
     moves = pv.split(' ')
+
+    moves = moves[0:8]
 
     while(moves):
         if (not answer) and (color in ['b', 'B']):
@@ -64,48 +148,45 @@ def numberizeVariation(moveNum, color, pv):
     temp = ' '.join(answer)
     return temp
 
-def parseVariations(moveNum, color, output):
-    # return array of [score, variation] pairs
+# returns array of [score, variation] pairs
+def parseVariations(moveNum, color, output, state):
     answer = []    
 
     strings = output.split("\n")
    
     for string in strings:
-        # if stockfish finds mate, he won't output the usual mult-pv, he'll just
-        # spit out the mate line, for example:
+        # example line we're trying to parse:
+        # info depth 14 seldepth 23 score cp 266 nodes 1938924 nps 1990681 time 974 multipv 2 pv b2b4 c5f2 f3f2 g8f6 d2d3 c6b4 ... 
+        # or in the case of mate:
         # info depth 100 seldepth 3 score mate -1 nodes 607 nps 14116 time 43 multipv 1 pv f8c5 f3f7
-        # bestmove f8c5 ponder f3f7
-#        m = re.search(r' score mate .* pv (.*)', string)
-#        if m:
-#            bestScore = 1000;
-#            if color in 'bB':
-#                bestScore *= -1;
-#            temp = numberizeVariation(moveNum, color, m.group(1)) 
-#            answer = [ [ bestScore, temp ], \
-#                        [ bestScore, temp ], \
-#                        [ bestScore, temp ] ]
-#            break;
-
-        m1 = re.search(r'score (mate|cp) (-?\d+)', string)
-        m2 = re.search(r'multipv (\d+) pv (.*)', string)
-        if m1 and m2:
-            varIndex = int(m2.group(1))-1
-
-            score = int(m1.group(2)) * .01
-            if(m1.group(1) == 'mate'):
-                score *= 1000;
-
-            variation = m2.group(2)
-
+        m = re.search(r'score (mate|cp) (-?\d+).*multipv (\d+) pv (.*)', string)
+        if m: 
+            # score parsing
+            score = int(m.group(2)) * .01
+            # adjust for black 
             if color in ['b', 'B']:
                 score *= -1
+            # adjust for mate (convention: score of 1000 pawns)
+            if(m.group(1) == 'mate'):
+                score *= 100000;
 
             # ensure answer array has enough size for this MultiPV
+            varIndex = int(m.group(3))-1
             while varIndex >= len(answer):
-                answer.append([None,None])
-             
-            answer[varIndex] = [score, numberizeVariation(moveNum, color, variation)]
+                answer.append(None)
+           
+            # save
+            variation = m.group(4)
+            answer[varIndex] = [score, variation]
 
+    # post-process variations (stockfish -> more readable)
+    for i in range(len(answer)):
+        variation = answer[i][1]
+        variation = destockfishifyVariation(variation, state)
+        variation = numberizeVariation(moveNum, color, variation)
+        answer[i][1] = variation
+
+    # done
     return answer
 
 ###############################################################################
@@ -117,29 +198,36 @@ if __name__ == '__main__':
 
     pgnPath = sys.argv[1]
 
+    startMove = 1
+    if len(sys.argv) > 2:
+        startMove = int(sys.argv[2])
+
     match = PgnParser.PgnChessMatchIteratorFile(pgnPath).next()
     matchQuiz = match.copy()
     matchAnswers = match.copy()
 
     for (i,state) in enumerate(match.states):
+        if state.fullMoveNum < startMove:
+            continue
+
         print "on state: " + state.toFEN()
 
         if i < len(match.moves):
             print "with move: %s" % str(match.moves[i])
+            matchQuiz.moves[i].comments = {''}
+            matchAnswers.moves[i].comments = {''}
 
         output = runGetOutput(['./stockfishshim', 'all', state.toFEN()])
-        variations = parseVariations(state.fullMoveNum, state.activePlayer, output)
+        variations = parseVariations(state.fullMoveNum, state.activePlayer, output, state)
 
         top3moves = []
         top3scores = []
         for (score, line) in variations:
-            matchQuiz.moves[i].comments = {''}
-            matchAnswers.moves[i].comments = {''}
 
             temp = "({%.2f} %s)" % (score, line)
             print temp
             if i < len(match.moves):
-                matchAnswers.moves[i].extraString += ("\n%s" % temp)
+                matchAnswers.moves[i].variations.append(temp)
 
             m = re.match(r'^\d+\.{1,3} ?(\S+)', line)
             if m:
@@ -159,11 +247,11 @@ if __name__ == '__main__':
                 playedScore = top3scores[top3moves.index(playedMove)]
             else: 
                 output = runGetOutput(['./stockfishshim', playedMove, state.toFEN()])
-                variations = parseVariations(state.fullMoveNum, state.activePlayer, output)
-                print variations
+                variations = parseVariations(state.fullMoveNum, state.activePlayer, output, state)
                 temp = "({%.2f} %s)" % (variations[0][0], variations[0][1])
                 print temp
-                matchAnswers.moves[i].extraString += ("\n%s" % temp)
+
+                matchAnswers.moves[i].variations.append(temp)
                 playedScore = variations[0][0]
 
             # classify the move
