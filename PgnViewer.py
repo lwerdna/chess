@@ -28,7 +28,7 @@ import ChessBoard
 import PgnParser
 
 class PgnViewer(Tkinter.Frame):
-    def __init__(self, parent, pieceWidth=48, pieceHeight=48):
+    def __init__(self, parent, pieceWidth=64, pieceHeight=64):
         Tkinter.Frame.__init__(self, parent)
 
         self.parent = parent
@@ -39,15 +39,11 @@ class PgnViewer(Tkinter.Frame):
         self.stateIndex = 0
 
         # widget
-        self.chessBoard = ChessBoard.ChessBoard(self)
+        self.chessBoard = ChessBoard.ChessBoard(self, pieceWidth, pieceHeight)
         self.chessBoard.setFEN(Common.initChessFEN)
+        self.chessBoard.refreshCanvasFromState()
 
         # status thingies
-        self.playerTimeAValue = 0
-        self.playerTimeaValue = 0
-        self.playerTimeBValue = 0
-        self.playerTimebValue = 0
-
         self.playerInfoW = Tkinter.Label(self, text="", bg="white", fg="black")
         self.playerTimeW = Tkinter.Label(self, text="", bg="green", fg="black")
         self.playerInfoB = Tkinter.Label(self, text="", bg="black", fg="white")
@@ -55,6 +51,7 @@ class PgnViewer(Tkinter.Frame):
     
         # buttons go into frame
         self.btnFrame = Tkinter.Frame(self)
+        self.btnFlip = Tkinter.Button(self.btnFrame, text="FLIP", command=self.btnFlipCb)
         self.btnStart = Tkinter.Button(self.btnFrame, text="|<", command=self.btnStartCb)
         self.btnBackward = Tkinter.Button(self.btnFrame, text="<", command=self.btnBackwardCb)
         self.btnForward = Tkinter.Button(self.btnFrame, text=">", command=self.btnForwardCb)
@@ -71,6 +68,7 @@ class PgnViewer(Tkinter.Frame):
         self.playerInfoB.grid(row=2, column=2, sticky=Tkinter.E + Tkinter.W)
         self.playerTimeB.grid(row=2, column=3)
 
+        self.btnFlip.pack(side=Tkinter.LEFT)
         self.btnStart.pack(side=Tkinter.LEFT)
         self.btnBackward.pack(side=Tkinter.LEFT)
         self.btnForward.pack(side=Tkinter.LEFT)
@@ -82,21 +80,21 @@ class PgnViewer(Tkinter.Frame):
     def loadPgn(self, path):
         match = self.match = PgnParser.PgnChessMatchIteratorFile(path).next()
 
-        self.chessBoard = ChessBoard.ChessBoard(self)
-
         initFen = Common.initChessFEN
         if 'SetUp' in match.tags:
             if match.tags['SetUp'] == '1':
                 if 'FEN' in match.tags:
                     initFen = match.comments['FEN']
-        
+      
+        self.playerInfoW.config(text=match.tags['White'])
+        self.playerInfoB.config(text=match.tags['Black'])
         self.chessBoard.setState(match.states[0])
         self.stateIndex = 0
         self.updateDisplay()
 
     def updateDisplay(self):
+        self.chessBoard.clear()
         self.chessBoard.setState(self.match.states[self.stateIndex])
-        self.chessBoard.draw()
 
     def btnBackwardCb(self):
         if self.stateIndex <= 0:
@@ -120,6 +118,10 @@ class PgnViewer(Tkinter.Frame):
 
     def btnEndCb(self):
         self.stateIndex = len(self.match.states)-1
+        self.updateDisplay()
+
+    def btnFlipCb(self):
+        self.chessBoard.flip()
         self.updateDisplay()
 
 if __name__ == "__main__":

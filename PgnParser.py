@@ -206,17 +206,19 @@ class PgnChessMatchIteratorFile:
         # so long as the next line is not an Event tag, add to current match
         while 1:
             line = self.peekLine()
-            if not re.match(r'^\[Event', line):
-                matchText += '\n' + line
-                if not self.readLine():
-                    break
-            else:
+            if re.match(r'^\[Event ', line):
+                break
+
+            matchText += '\n' + line
+            # consume the peek'd line, breaking if error
+            if not self.readLine():
                 break
 
         # return a match
         match = PgnChessMatch()
         match.path = self.path
         match.parsePgn(matchText)
+
         return match
 
     def __del__(self):
