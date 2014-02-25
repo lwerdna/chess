@@ -54,8 +54,8 @@ class ChessBoard(Tkinter.Frame):
         for ridx, rname in enumerate(list('87654321')):
             for fidx, fname in enumerate(list('abcdefgh')):
                 tag = fname + rname
-                color = [DARK_SQUARE_COLOR, LIGHT_SQUARE_COLOR][(ridx-fidx)%2]
-                shade = ['dark', 'light'][(ridx-fidx)%2]
+                color = [LIGHT_SQUARE_COLOR, DARK_SQUARE_COLOR][(ridx-fidx)%2]
+                shade = ['light', 'dark'][(ridx-fidx)%2]
 
                 tags = [fname+rname, shade, 'square']
 
