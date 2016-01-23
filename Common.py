@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-# Copyright 2012, 2013 Andrew Lamoureux
+# Copyright 2012, 2016 Andrew Lamoureux
 #
 # This file is a part of FunChess
 #
@@ -17,11 +17,17 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+import re
 
 # note that only in FEN (chess or crazy or bug) are upper/lower letters used
 initChessFEN = 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1'
 initCrazyFEN = 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR/ w KQkq - 0 1'
 initBugFEN = initCrazyFEN + ' | ' + initCrazyFEN
+
+t = r'[rnbqkpRNBQKP12345678]{1,8}'
+regexFenLazy = r'^'+t+'/'+t+'/'+t+'/'+t+'/'+t+'/'+t+'/'+t+'/'+t+'$'
+regexFen = regexFenLazy[:-1] + r' [wb] (?:(?:K?Q?k?q?)|-) (?:(?:[a-h][1-8])|-) \d+ \d+$'
+
 
 # SAN - [s]tandard [a]lgebraic [n]otation
 # notes: 
@@ -134,3 +140,16 @@ def coloredPieceToPlayer(piece):
         return 'w'
     else:
         return 'b'
+
+if __name__ == '__main__':
+    t = r'[rnbqkpRNBQKP1-8]{1,8}'
+    regexFenLazy = r'^'+t+'/'+t+'/'+t+'/'+t+'/'+t+'/'+t+'/'+t+'/'+t+'$'
+    regexFen = regexFenLazy[:-1] + r' [wb] (?:(?:K?Q?k?q?)|-) (?:(?:[a-h][1-8])|-) \d+ \d+$'
+
+    test = '8/6k1/8/8/8/1R5K/7R/8 w - - 0 0'
+    
+    if re.match(regexFen, test):
+        print "YES"
+    else:
+        print "NO"
+

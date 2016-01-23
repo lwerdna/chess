@@ -19,6 +19,8 @@ import sys
 
 import re
 
+import Common
+
 def parseCards(fileNames):
     cards = []
 
@@ -46,9 +48,13 @@ def parseCards(fileNames):
         if state == 'WAIT':
             if re.match(r'^\s*$', line): continue
             # must be FEN
-            if not re.match(r'^[qrbnpkQRBNPK12345678\/]+.*$', line):
+            if re.match(Common.regexFen, line):
+                currFen = line
+            elif re.match(Common.regexFenLazy, line):
+                currFen = line + 'w KQkq - 0 1'
+            else:
                 raise Exception("expected FEN string, got: -%s-" % line)
-            currFen = line
+
             state = 'WAITQUESTION'
             continue
 
