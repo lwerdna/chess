@@ -1,0 +1,147 @@
+# this is from Daniel Rensch's lecture: Pawn Structure 101: Every Opening Explained!
+# and is a work in progress
+
+r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3
+identify the opening
+Ruy Lopez / Spanish
+
+r1bqkbnr/1pp2ppp/p1p5/4p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 5
+identify the opening; which pawns will be exchanged for each other?
+Ruy Lopez / Spanish (exchange variation); the e2 and d5 pawn are likely to be exchanged after 5.d4 exd4 6.Nxd4
+
+r1bqkbnr/1pp2ppp/p1p5/8/3NP3/8/PPP2PPP/RNBQK2R b KQkq - 0 6
+identify the opening; what key pawn structures exist here?
+kingside 4-on-3 for white
+
+r1bqkbnr/1pp2ppp/p1p5/8/3NP3/8/PPP2PPP/RNBQK2R b KQkq - 0 6
+name the middlegame advantages of black and white
+white has positional advantage with 4-on-3 kingside pawns and black has bishop pair, and quick access center and bishop diagonals
+
+r1bqkb1r/pppp1ppp/2n2n2/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4
+identify the opening
+Ruy Lopez / Spanish (Berlin Defense)
+
+r1bk1b1r/ppp2ppp/2p5/4Pn2/8/5N2/PPP2PPP/RNB2RK1 w - - 0 9
+recall the move order for this main line Berlin defense
+1.e4 e5 2.Nf3 Nc6 3.Bb5 Nf6 4.O-O Nxe4 5.d4 Nd6 6.Bxc6 dxc6 7.dxe5 Nf5 8.Qxd8+ Kxd8 *
+
+r1bqkbnr/1ppp1ppp/p1n5/4p3/B3P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 1 4
+identify the opening
+Ruy Lopez / Spanish (Morphy Defense)
+
+r1bq1rk1/2p1bppp/p2p1n2/np2p3/4P3/2P2N1P/PPBP1PP1/RNBQR1K1 b - - 2 10
+what's a common continuation in this main line Ruy Lopez?
+10.c5 11.e4 Qc7 {black prepares Re8 in case file opens?}
+
+r1b2rk1/2q1bppp/p2p1n2/npp1p3/3PP3/2P2N1P/PPB2PP1/RNBQR1K1 w - - 1 12
+what weak squares do white players often identify in this position, and how to they use them?
+e5 and f5; they try to maneuver their b knight to them via Ne2, Nf1, Ne3 or Ng3
+
+r1b2rk1/2q1bppp/p2p1n2/npp1p3/3PP3/2P2N1P/PPB2PP1/RNBQR1K1 w - - 1 12
+if white closes the center with e5, what does this usually do?
+a closed center often segregates and makes an attack on one particular side of the board possible; here white considers relocating the b knight to kingside and considering a pawn storm there
+
+r1b2rk1/2q1bppp/p2p1n2/npp1p3/3PP3/2P2N1P/PPB2PP1/RNBQR1K1 w - - 1 12
+if white closes the center with e5, what should black be thinking?
+black has uninhibited queenside attack that is more advanced than white
+
+r1b2rk1/2q1bppp/p2p1n2/npp1p3/3PP3/2P2N1P/PPB2PP1/RNBQR1K1 w - - 1 12
+what are the three main options here, for both sides?
+take (c,d,e pawns), advance (d5), or leave it (eg: ...Rd8)
+
+r1b2rk1/2q1bppp/p2p1n2/npp1p3/3PP3/2P2N1P/PPB2PP1/RNBQR1K1 w - - 1 12
+what weak square can black identify? what's a common plan if white plays 12.dxe5 ?
+the weak suare is d3; 12.dxe5 dxe5 13.Nbd2 Rd8 14.Qe2 c4 {with N relocation plans like Nb7 Nc5 Nd3}
+
+r1bq1rk1/2ppbppp/p1n2n2/1p2p3/4P3/1BP2N2/PP1P1PPP/RNBQR1K1 b - - 0 8
+what just played c3, what attack becomes possible?
+Marshall Counterattack 9...d5 {instead of mainline d6, to open the center} 10.exd5 Nxd5 11.Nxe5 Nxe5 {sacrificing pawn} 12.Rxe5 c6 {protect N} 13.d4 Bd6 {devel with tempo} 14.Re1 Qh4 { white's minor pieces still on a,b,c }
+
+r1bq1rk1/2ppbppp/p1n2n2/1p2p3/4P3/1B3N1P/PPPP1PP1/RNBQ1RK1 w - - 3 8
+why does white's move h3 (instead of c3) stop the Marshall Counterattack?
+because after 9...d5 10.exd5 Nxd5 11.Nxe5 Nxe5 12.Rxe5 c6 13.Nc3 {catching up in development, stockfish recommends Re1}
+
+r1bq1rk1/2ppbppp/p1n2n2/1p2p3/4P3/1B3N2/PPPP1PPP/RNBQR1K1 w - - 2 8
+identify this opening, its move order, with justifications per move
+Ruy Lopez / Spanish (main line) 1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 {will you exchange?} 4.Ba4 Nf6 {pressure e4} 5.O-O {setup trick response to black's Nxe4} Be7 { block the trick response, prepare to castle} 6.Re1 {guard e4 since trick is gone} b5 {prevent a capture-the-defender Bxc6} 7.Bb3 {run} O-O
+
+r1b2rk1/5ppp/p1pb4/1p1n4/3P3q/1BP5/PP3PPP/RNBQR1K1 w - - 3 14
+here the Marshall attack has occured, but stockfish says it's +0.56; how should white proceed?
+14.g3 { must monitor g2 closely now! } Qh3 15.Bxd5 cxd5 16.Qf3 {to meet 16...Bg4 with 17.Qxd5}
+
+r1bqkbnr/pppp1ppp/2n5/4p3/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 3
+identify the opening, what's the idea?
+Scotch, to challenge the center quickly
+
+r1bqkbnr/pppp1ppp/2n5/8/3NP3/8/PPP2PPP/RNBQKB1R b KQkq - 0 4
+the exchange has happened in the Scotch, what pawn structure is this most similar to? what are white's plans?
+the Ruy Lopez with 4-on-3 kingside, except black's d-pawn is still present; regardless, the 4-on-3 makes a fast mobile attack during middle game - after castling, the f pawn can advance and join the e pawn, optionally with king tucked to h1
+
+r1bqk1nr/pppp1ppp/2n5/2b5/3NP3/8/PPP2PPP/RNBQKB1R w KQkq - 1 5
+identify the opening (black just played Bc5) and continue the main line; what pawn structure results? critique the players
+Scotch, classical, now 5.Nxc6 Qf6 {threatening mate} 6.Qd2 dxc6 {if 6...Qxc6, white gets jump on d5 with 7.Nc3} and we have the 4-on-3 just like the Ruy Lopez; both players have bishop pairs, black leads slightly in development (Stockfish says it's even)
+
+r3kb1r/p1ppqppp/b1p5/3nP3/2P5/1P6/P3QPPP/RNB1KB1R b KQkq - 0 9
+identify the opening, recall the move order, critique the position
+Scotch (Mises variation) 1.e4 e5 2.Nf3 Nc6 3.d4 exd4 4.Nxd4 Nf6 5.Nxc6 bxc6 6.e5 Qe7 7.Qe2 Nd5 8.c4 Ba6 9.b3 * black has bad queenside pawn structure, but lead in development; white has made only pawn and queen moves, but has space advantage
+
+rnbqkbnr/ppp2ppp/4p3/3p4/3PP3/8/PPP2PPP/RNBQKBNR w KQkq - 0 3
+identify the opening, what does Daniel call this family of structures?
+French; the "e5 chains"
+
+rnbqkbnr/pp3ppp/4p3/2ppP3/3P4/2P5/PP3PPP/RNBQKBNR b KQkq - 0 4
+identify the opening, critique the position
+French (advance variation); white has space, the pawns pointing kingside and the pawn on e5 suggest a kingside attack; black has room on the queenside to add pressure with moves like Qb6, Nc6, Bd7 and Bb5
+
+rnbqkbnr/ppp2ppp/8/3p4/3P4/8/PPP2PPP/RNBQKBNR w KQkq - 0 4
+identify the opening; what does Daniel call the pawn structure? critique the position
+French (exchange variation); Daniel calls it just "symmetrical"; slower, less tactical play here, with critical e-file opened
+
+rnbqkbnr/ppp2ppp/8/8/2BP4/8/PP3PPP/RNBQK1NR b KQkq - 0 5
+identify the opening and all moves; what pawn structure resulted, and what does it mean for the players?
+French (exchange variation); then 4.c4 dxc4 5.Bxc4; now white has isolated queen's pawn (IQP) and will try to be aggressive as possible with minor pieces on the squares that the IQP protects, while black will exchange minor pieces while targetting the IQP
+
+rnbqk1nr/ppp2ppp/4p3/3p4/1b1PP3/2N5/PPP2PPP/R1BQKBNR w KQkq - 2 4
+identify the opening
+French (Winawer variation)
+
+rnbqk1nr/pp3ppp/4p3/2ppP3/3P4/P1P5/2P2PPP/R1BQKBNR b KQkq - 0 6
+identify the opening and the move order; critique the position
+French (Winawer variation) 1.e4 e6 2.d4 d5 3.Nc3 Bb4 4.e5 c5 5.a3 Bxc3+ 6.bxc3 *; white's queenside is a bit destroyed, white exchanged his b knight for black's dark-squared bishop, black's kingside is weak without it and white looks to Qg5 (black should first play Ne7 to stop this)
+
+r1b1kb1r/pp1n1ppp/1qn1p3/2ppP3/3P1P2/2P2N2/PP2N1PP/R1BQKB1R b KQkq - 4 8
+identify the opening and the move order, what are the plans?
+French defense, Tarrasch Closed ... 1.e4 e6 2.d4 d5 3.Nd2 Nf6 4.e5 Nfd7 5.f4 c5 6.c3 Nc6 7.Ndf3 Qb6 8.Ne2 ... white has the b2 e5 diagonal, suggesting kingside attack, black has slight lead in development, using the queenside to put pressure on white's center ... stockfish suggests 8..Be2; if 8..cxd4 then 9.cxd4
+
+rnbqkbnr/pp2pppp/2p5/8/3PN3/8/PPP2PPP/R1BQKBNR b KQkq - 0 4
+what is this pawn structure? show the French defense and Caro Kann lines that reach here; what are plans?
+Caro family of Caro-Slav structure; via Caro-Kann: 1.e4 c6 2.d4 d5 3.Nc3 dxe4 4.Nxe4 e6 and via French: 1.e4 e6 2.d4 d5 3.Nc3 dxe4 4.Nxe4 c6; black eventually wants c5 or e5 (else white plays c4 with huge space gains) and pressure the d-file with Q ... white wants to eventually play d5
+
+rnbqkbnr/pp2pppp/2p5/3pP3/3P4/8/PPP2PPP/RNBQKBNR b KQkq - 0 3
+what pawn structure is this related to? what are plans?
+Caro-Slav structure arrising from Caro-Kann advance ... white wants to attack kingside along the b2-h8 diagonal while black wants to attack queenside along the a3-f8 diagonal
+
+rnbqkbnr/pp3ppp/4p3/3p4/3P4/2PB4/PP3PPP/RNBQK1NR b KQkq - 0 5
+what structure? how was it reached? plans?
+notice the 3-pawn diags meeting at d4/d5: reversed QGD; 1.e4 c6 2.d4 d5 3.exd5 cxd5 4.Bd3 e6 5.c3; black suggested to play for minority attack (advance b pawn) and white for kingside attack
+
+r1bq1rk1/pp1nbppp/2p2n2/3p2B1/3P4/2NBPN2/PP3PPP/R2QK2R w KQ - 0 9
+what structure? how was it reached? plans?
+notice the 3-pawn diags meeting at d4/d5: QGD structure with 1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5 Be7 5.e3 O-O 6.Nf3 Nbd7 7.cxd5 exd5 8.Bd3 c6; white plays for minority attack (advanced b pawn, create backwards c pawn) while black attacks kingside
+
+rnbqk2r/pp3ppp/4p3/3n4/1b1P4/2N2N2/PP1B1PPP/R2QKB1R b KQkq - 1 8
+what is the name of this pawn structure? this arrose from the Panov-Botvinnik attack: recite it
+IQP; 1.e4 c6 2.d4 d5 3.exd5 cxd5 4.c4 Nf6 5.Nc3 e6 6.Nf3 Bb4 7.cxd5 Nxd5 8.Bd2
+
+rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2
+what is black's goal with the Sicilian? what two branches does it take depending on white's next move?
+black wants to control center and d4 without using center pawns; white can contest this with 2.d4 (open Sicilian) or not with like 2.Nc3 (closed Sicilian) and he'll need compensation for lost d4 control with moves like 3.f4 next to start an attack of his own
+
+r1bqk2r/pp1pnpbp/2n1p1p1/2p5/2B1PP2/2NP1N2/PPP3PP/R1BQK2R w KQkq - 1 7
+name the opening and move order; what are the plans?
+closed Sicilian: grand prix attack: 1.e4 c5 2.Nc3 Nc6 3.f4 g6 4.Nf3 Bg7 5.Bc4 e6 6.d3 Nge7; white wants to attack along the f-file with his pawn chain and rook
+
+r1bqk2r/pp1pnpbp/2n1p1p1/2p5/2B1P3/2NP1N2/PPP2PPP/R1BQ1RK1 w kq - 1 7
+name the opening, recite the line, show a critical white diversion from the grand prix attack, and make a case for black
+closed Sicilian, but white played 3.Nf3 instead of 3.f4, blocking the f-pawn; black controls dark squares d4 and e5, and can challenge light squares with d5, and start queenside attack with Rb8-a6-b5
+
