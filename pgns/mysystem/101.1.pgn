@@ -1,0 +1,14 @@
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+
+1.e4 c6 2.d4 d5 3.Nc3 dxe4 4.Nxe4 Nf6 5.Qd3 e5 
+    ( 5...Nxe4 6.Qxe4 Nd7 {with ...Nf6 planned for a solid game} )
+6.dxe5 Qa5+ 7.Bd2 Qxe5 8.O-O-O Nxe4 
+    ( 8...Bd7 {Nimzo says to play this} )
+9.Qd8+ Kxd8 10.Bg5+ Kc7 11.Bd8# *
+
