@@ -1,0 +1,956 @@
+8/8/8/4k3/5R2/8/8/3QK3 w - - 0 1
+Endgame 001: white to move
+Queen and Rook Roll: 1.Qd4+ 1... Ke6 2.Rf6+ 2... Ke7 3.Qd6+ 3... Ke8 4.Rf8#
+
+8/8/8/4k3/1R6/Q7/8/4K3 w - - 0 1
+Endgame 002: white to move
+Rolling Barrier: 1.Qa5+ 1... Kd6 2.Rb6+ 2... Kc7 3.Qa7+ 3... Kc8 4.Rb8#
+
+6k1/8/8/8/8/8/7R/5K1R w - - 0 1
+Endgame 003: white to move
+Rook Barrier: 1.Rf2 1... Kg7 2.Rg1+ 2... Kh6 3.Rh2#
+
+k7/3Q4/8/3K4/8/8/8/8 w - - 0 1
+Endgame 004: white to move
+Closing In: 1.Kc6 1... Kb8 2.Qb7#
+
+k7/8/1Q6/3K4/8/8/8/8 w - - 0 1
+Endgame 005: white to move
+Backing Off: 1.Qb5 1... Ka7 2.Kc6 2... Ka8 3.Qb7#
+
+6Q1/5K2/8/7k/8/8/8/8 w - - 0 1
+Endgame 006: white to move
+Cut-Off: 1.Qg3 1... Kh6 2.Qg6#
+
+4k3/8/8/2K5/8/8/8/7Q w - - 0 1
+Endgame 007: white to move
+Erecting the Barrier: 1.Qh7 1... Kf8 2.Kd6 2... Ke8 3.Qe7#
+
+5k2/R7/4K3/8/8/8/8/8 w - - 0 1
+Endgame 008: white to move
+Waiting-Move Mate: 1.Rb7 1... Kg8 2.Kf6 2... Kh8 3.Kg6 3... Kg8 4.Rb8#
+
+5k2/8/4K3/3R4/8/8/8/8 w - - 0 1
+Endgame 009: white to move
+The 'Cut-Off' Mate: 1.Rg5 1... Ke8 2.Rg8#
+
+4k3/8/4K3/8/8/8/4R3/8 w - - 0 1
+Endgame 010: white to move
+The Any-Rook Move Mate: 1.Re5 1... Kd8 2.Rc5 2... Ke8
+
+8/6k1/8/4RK2/8/8/8/8 w - - 0 1
+Endgame 011: white to move
+Closing the Net: 1.Re7+ 1... Kf8 2.Kf6 2... Kg8 3.Kg6 3... Kf8 4.Re6 4... Kg8 5.Re8#
+
+8/2K5/k7/8/1B6/1B6/8/8 w - - 0 1
+Endgame 012: white to move
+The Bishop Roll: 1.Bc4+ 1... Ka7 2.Bc5+ 2... Ka8 3.Bd5#
+
+1k6/8/2K1BB2/8/8/8/8/8 w - - 0 1
+Endgame 013: white to move
+Positioning the King: 1.Kb6 1... Ka8 2.Be7 2... Kb8 3.Bd6+ 3... Ka8 4.Bd5#
+
+1k6/5BB1/2K5/8/8/8/8/8 w - - 0 1
+Endgame 014: white to move
+Closing the Door: 1.Bd4 1... Kc8 2.Bf6 2... Kb8 3.Kb6 3... Kc8 4.Be6+ 4... Kb8 5.Be5+ 5... Ka8 6.Bd5#
+
+5k2/8/2K5/3BB3/8/8/8/8 w - - 0 1
+Endgame 015: white to move
+Taking Away Squares: 1.Kd6 1... Ke8 2.Bg7 2... Kd8 3.Bf7 3... Kc8 4.Kc6 4... Kd8 5.Bf6+ 5... Kc8 6.Be6+ 6... Kb8 7.Kb6
+
+5B1k/5K2/8/8/6N1/8/8/8 w - - 0 1
+Endgame 016: white to move
+Mate in Two: 1.Bg7+ 1... Kh7 2.Nf6#
+
+7k/5K2/8/4N1B1/8/8/8/8 w - - 0 1
+Endgame 017: white to move
+Mate in Three: 1.Ng6+ 1... Kh7 2.Nf8+ 2... Kh8 3.Bf6#
+
+6k1/6N1/6K1/8/1B6/8/8/8 w - - 0 1
+Endgame 018: white to move
+Mate in Four: 1.Nf5 1... Kh8 2.Be7 2... Kg8 3.Nh6+ 3... Kh8 4.Bf6#
+
+4KBk1/8/8/4N3/8/8/8/8 w - - 0 1
+Endgame 019: white to move
+Another Mate in Four: 1.Nd7 1... Kh7 2.Kf7 2... Kh8 3.Bg7+ 3... Kh7 4.Nf8#
+
+8/4N2k/4K3/6B1/8/8/8/8 w - - 0 1
+Endgame 020: white to move
+A Third Mate in Four: 1.Kf7 1... Kh8 2.Ng6+ 2... Kh7 3.Nf8+ 3... Kh8 4.Bf6#
+
+4k3/8/3K4/4N1B1/8/8/8/8 w - - 0 1
+Endgame 021: white to move
+The Lock: 1.Kc7 1... Kf8 2.Kd7 2... Kg7 3.Ke7 3... Kg8 4.Bh6 4... Kh7 5.Bf8 5... Kg8 6.Ng4 6... Kh7 7.Kf7 7... Kh8 8.Bg7+ 8... Kh7 9.Nf6#
+
+8/4Nk2/3K4/8/8/4B3/8/8 w - - 0 1
+Endgame 022: white to move
+Transition to the Lock: 1.Bg5 1... Ke8 2.Ng6 2... Kf7 3.Ne5+ 3... Ke8 4.Kc6 4... Kf8 5.Kd7 5... Kg7 6.Ke7 6... Kh8 7.Bh6 7... Kh7 8.Bf8 8... Kg8 9.Ng4 9... Kh7 10.Kf7 10... Kh8 11.Bg7+ 11... Kh7 12.Nf6#
+
+4k3/B7/2K5/3N4/8/8/8/8 w - - 0 1
+Endgame 023: white to move
+The King Shift: 1.Kd6 1... Kf7 2.Ne7 2... Kf6 3.Be3 3... Kf7 4.Bg5 4... Ke8 5.Ng6 5... Kf7 6.Ne5+ 6... Ke8 7.Kc7 7... Kf8 8.Kd7 8... Kg7 9.Ke7 9... Kh8 10.Bh6 10... Kh7 11.Bf8 11... Kh8 12.Ng4 12... Kh7 13.Kf7 13... Kh8 14.Bg7+ 14... Kh7 15.Nf6#
+
+k7/8/2K5/3N4/8/4B3/8/8 w - - 0 1
+Endgame 024: white to move
+The Drive: 1.Nc7+ 1... Kb8 2.Bb6 2... Kc8 3.Ba7 3... Kd8 4.Nd5 4... Ke8 5.Kd6 5... Kf7 6.Ne7 6... Kf6 7.Be3 7... Kf7 8.Bf4 8... Ke8 9.Ng6 9... Kf7 10.Ne5+ 10... Ke8 11.Kc7 11... Kf8 12.Kd7 12... Kg7 13.Ke7 13... Kh8 14.Bh6 14... Kh7 15.Bf8 15... Kg8 16.Ng4 16... Kh7 17.Kf7 17... Kh8 18.Bg7+ 18... Kh7 19.Nf6#
+
+8/8/8/8/8/1K6/7q/3Q2qk w - - 0 1
+Endgame 025: white to move
+Perpetual Check: 1.Qf3+ 1... Qgg2 2.Qd1+ 2... Qhg1 3.Qh5+ 3... Q2h2 4.Qf3+ 4... Qgg2 5.Qd1+ 5... Qhg1 6.Qh5+
+
+8/8/8/8/1K6/8/3Q4/qk6 w - - 0 1
+Endgame 026: white to move
+Forced Mate: 1.Kb3 1... Qc3+ 2.Kxc3 2... Ka1 3.Qb2#
+
+4Q3/8/3K1k2/8/8/8/8/6q1 w - - 0 1
+Endgame 027: white to move
+X-Ray Attack: 1.Qf8+ 1... Kg6 2.Qg8+ 2... Kf5 3.Qxg1
+
+8/8/8/8/8/5qk1/7R/6K1 w - - 0 1
+Endgame 028: white to move
+Stalemate Sacrifice: 1.Rh3+ 1... Kxh3
+
+8/8/8/8/8/4q2k/6R1/5K2 w - - 0 1
+Endgame 029: white to move
+Perpetual Attack: 1.Rh2+ 1... Kg3 2.Rg2+ 2... Kf3 3.Rg3+ 3... Kxg3
+
+4Q3/6rk/5K2/8/8/8/8/8 w - - 0 1
+Endgame 030: white to move
+Philidor's Position: 1.Qe4+ 1... Kg8 2.Qa8+ 2... Kh7 3.Qe8 3... Ra7 4.Qe4+ 4... Kg8 5.Qd5+ 5... Kh7 6.Qh1+ 6... Kg8 7.Qg1+
+
+2k5/r7/3K4/1Q6/8/8/8/8 w - - 0 1
+Endgame 031: white to move
+From Edge to Edge: 1.Qe8+ 1... Kb7 2.Qd7+ 2... Kb8 3.Qd8+ 3... Kb7 4.Qc7+ 4... Ka6 5.Qc6+ 5... Ka5 6.Kc5 6... Rc7 7.Qxc7+ 7... Ka4 8.Qg3 8... Ka5 9.Qa3#
+
+3k4/3r4/4K3/2Q5/8/8/8/8 w - - 0 1
+Endgame 032: white to move
+Double-Threat Queen: 1.Qb5 1... Re7+ 2.Kd6 2... Rc7 3.Qb6 3... Ke8 4.Qxc7 4... Kf8 5.Qh7 5... Ke8 6.Qe7#
+
+3k4/8/4K3/8/8/2Q5/8/3r4 w - - 0 1
+Endgame 033: white to move
+Dual Methods: 1.Qh8+ 1... Kc7 2.Qh2+ 2... Kb7 3.Qb2+ 3... Ka7 4.Qa3+ 4... Kb7 5.Qb3+ 5... Kc6 6.Qxd1
+
+8/8/6k1/8/8/1q6/5R2/K7 w - - 0 1
+Endgame 034: white to move
+Perpetual Attack 2: 1.Rg2+ 1... Kf5 2.Rf2+ 2... Ke4 3.Re2+ 3... Kd3 4.Rd2+ 4... Kc4 5.Rc2+
+
+7B/4r3/8/8/8/6k1/8/7K w - - 0 1
+Endgame 035: white to move
+The Right-Corner Draw: 1.Bd4 1... Re1+ 2.Bg1 2... Rd1
+
+1k6/5b2/1K6/8/8/8/1R6/8 w - - 0 1
+Endgame 036: white to move
+Pin and Win: 1.Rf2 1... Be6 2.Rf8+ 2... Bc8 3.Rh8 3... Ka8 4.Rxc8#
+
+6k1/5R2/6K1/8/8/8/8/6b1 w - - 0 1
+Endgame 037: white to move
+The Chase: 1.Rf1 1... Bh2 2.Rf2 2... Bg3 3.Rg2 3... Bd6 4.Rd2 4... Be7 5.Rc2 5... Bd6 6.Rc8+ 6... Bf8 7.Ra8 7... Kh8 8.Rxf8#
+
+4k3/3R4/1b1K4/8/8/8/8/8 w - - 0 1
+Endgame 038: white to move
+Corner Drive: 1.Ke6 1... Kf8 2.Rf7+ 2... Kg8 3.Kf6 3... Bd4+ 4.Kg6 4... Bg1 5.Rf1 5... Bh2 6.Rf2 6... Bg3 7.Rg2
+
+8/8/8/8/8/4k1B1/4r3/3K4 w - - 0 1
+Endgame 039: white to move
+Positional Draw: 1.Kc1 1... Kd3 2.Kb1 2... Kc3 3.Kc1
+
+4n3/8/2R5/1k2K3/8/8/8/8 w - - 0 1
+Endgame 040: white to move
+Separation: 1.Rc8 1... Ng7 2.Rg8 2... Nh5 3.Rg5
+
+5K2/7r/4k2N/8/8/8/8/8 w - - 0 1
+Endgame 041: white to move
+Togetherness: 1.Ng8 1... Rf7+ 2.Ke8 2... Ra7 3.Kf8 3... Rh7 4.Ke8 4... Rf7 5.Nh6 5... Rf1 6.Ng8
+
+2k1r3/5R2/3K4/3B4/8/8/8/8 w - - 0 1
+Endgame 042: white to move
+Attacking the Weak Side: 1.Ra7 1... Rd8+ 2.Kc6 2... Kb8 3.Ra5 3... Rh8 4.Kb6 4... Rh6+ 5.Bc6 5... Rxc6+ 6.Kxc6 6... Kc8 7.Ra8#
+
+4k3/5R2/3K4/3B4/8/4r3/8/8 w - - 0 1
+Endgame 043: white to move
+Rook Lift 1: 1.Rf4 1... Kd8 2.Be4 2... Ke8 3.Bc6+ 3... Kd8 4.Rf8+ 4... Re8 5.Rxe8#
+
+3k4/5R2/3K4/3B4/8/4r3/8/8 w - - 0 1
+Endgame 044: white to move
+Breaking Coordination: 1.Rd7+ 1... Ke8 2.Rb7 2... Kf8 3.Rf7+ 3... Ke8 4.Rf4 4... Kd8 5.Be4 5... Ke8 6.Bc6+ 6... Kd8 7.Rf8+ 7... Re8 8.Rxe8#
+
+4k3/5R2/3K4/8/8/5B2/8/4r3 w - - 0 1
+Endgame 045: white to move
+Rook Lift 2: 1.Rf5 1... Kd8 2.Bh5 2... Kc8 3.Rb5 3... Rc1 4.Bg4+ 4... Kd8 5.Rb8+ 5... Rc8 6.Rxc8#
+
+3k4/6R1/3K4/3B4/8/8/8/4r3 w - - 0 1
+Endgame 046: white to move
+Shifting Sides: 1.Ra7 1... Rc1 2.Rf7 2... Re1 3.Bf3 3... Re3 4.Bc6 4... Rd3+ 5.Bd5 5... Re3 6.Rd7+
+
+3k4/4r3/3K4/3B4/8/8/8/5R2 w - - 0 1
+Endgame 047: white to move
+Philidor's Position: 1.Rf8+ 1... Re8 2.Rf7 2... Re2 3.Rg7 3... Re1 4.Ra7 4... Rc1 5.Rf7 5... Re1 6.Bf3 6... Re3 7.Bc6 7... Rd3+ 8.Bd5 8... Re3 9.Rd7+ 9... Ke8 10.Rb7 10... Kf8 11.Rf7+ 11... Ke8 12.Rf4 12... Kd8 13.Be4 13... Ke8 14.Bc6+ 14... Kd8 15.Rf8+ 15... Re8 16.Rxe8#
+
+6k1/8/8/8/8/8/P7/7K w - - 0 1
+Endgame 048: white to move
+Square of the Pawn: 1.a4 1... Kf7 2.a5 2... Ke6 3.a6 3... Kd6 4.a7 4... Kc7 5.a8=Q
+
+k7/8/2K5/7p/8/8/8/8 w - - 0 1
+Endgame 049: white to move
+Stepping into the Square: 1.Kd5 1... h4 2.Ke4 2... h3 3.Kf3 3... h2 4.Kg2 4... h1=Q+ 5.Kxh1
+
+8/3k4/1K6/8/8/8/P7/8 w - - 0 1
+Endgame 050: white to move
+Clearing the Path: 1.Kb7 1... Kd6 2.a4 2... Kc5 3.a5 3... Kb5 4.a6
+
+8/8/8/6K1/8/5k2/P7/8 w - - 0 1
+Endgame 051: white to move
+Shielding Off: 1.Kf5 1... Ke3 2.Ke5 2... Kd3 3.Kd5 3... Kc3 4.Kc5 4... Kb2 5.a4
+
+5k2/8/5PK1/8/8/8/8/8 w - - 0 1
+Endgame 052: white to move
+The Squeeze: 1.f7 1... Ke7 2.Kg7 2... Kd6 3.f8=Q+ 3... Kd5 4.Qb4 4... Kc6 5.Kf6 5... Kd5 6.Kf5 6... Kc6 7.Ke6 7... Kc7 8.Qb5 8... Kc8 9.Kd6 9... Kd8 10.Qd7#
+
+8/8/8/8/8/5pk1/8/5K2 w - - 0 1
+Endgame 053: white to move
+Opposing: 1.Kg1 1... f2+ 2.Kf1 2... Kf3
+
+3k4/8/4P3/3K4/8/8/8/8 w - - 0 1
+Endgame 054: white to move
+Oppositional Squeeze: 1.Kd6 1... Ke8 2.e7 2... Kf7 3.Kd7 3... Kf6 4.e8=Q 4... Kf5 5.Qe3 5... Kf6 6.Qe4 6... Kg5 7.Ke6 7... Kh6 8.Kf6 8... Kh5 9.Qd4 9... Kh6 10.Qh4#
+
+3k4/8/2P5/K7/8/8/8/8 w - - 0 1
+Endgame 055: white to move
+Diagonal Squeeze: 1.Kb6 1... Kc8 2.c7 2... Kd7 3.Kb7 3... Kd6 4.c8=Q 4... Kd5 5.Qg4 5... Ke5 6.Kc6 6... Kf6 7.Kd6 7... Kf7 8.Qg5 8... Kf8 9.Ke6 9... Ke8 10.Qe7#
+
+k7/8/2P5/K7/8/8/8/8 w - - 0 1
+Endgame 056: white to move
+Vertical Squeeze: 1.Ka6 1... Kb8 2.Kb6 2... Kc8 3.c7 3... Kd7 4.Kb7 4... Kd6 5.c8=Q 5... Ke5 6.Qg4 6... Kd5 7.Qf4 7... Kc5 8.Qe4 8... Kd6 9.Kb6 9... Kd7 10.Qe5 10... Kd8 11.Kc6 11... Kc8 12.Qc7#
+
+8/8/8/8/4k3/4p3/4K3/8 w - - 0 1
+Endgame 057: white to move
+Frontal Defense: 1.Ke1 1... Kd3 2.Kd1 2... e2+ 3.Ke1 3... Ke3
+
+8/6k1/4P3/6K1/8/8/8/8 w - - 0 1
+Endgame 058: white to move
+Transition to a Squeeze: 1.Kf5 1... Kg8 2.Kg6 2... Kf8 3.Kf6 3... Ke8 4.e7 4... Kd7 5.Kf7 5... Kd6 6.e8=Q 6... Kd5 7.Qa4 7... Kc5 8.Ke6 8... Kb6 9.Kd6 9... Kb7 10.Qa5 10... Kb8 11.Kc6 11... Kc8 12.Qc7#
+
+8/8/8/8/8/5kp1/7K/8 w - - 0 1
+Endgame 059: white to move
+Stalemate: 1.Kh1 1... g2+ 2.Kg1 2... Kg3
+
+5k2/8/4K3/5P2/8/8/8/8 w - - 0 1
+Endgame 060: white to move
+Direct Opposition: 1.Kf6 1... Ke8 2.Kg7 2... Ke7 3.f6+ 3... Ke6 4.f7 4... Kd5 5.f8=Q 5... Kc4 6.Qa3 6... Kd5 7.Kf6 7... Ke4 8.Qc3 8... Kd5 9.Kf5 9... Kd6 10.Qc4 10... Kd7 11.Qc5 11... Ke8 12.Ke6 12... Kd8 13.Qc3 13... Ke8 14.Qh8#
+
+8/1k6/8/2PK4/8/8/8/8 w - - 0 1
+Endgame 061: white to move
+Critical Squares: 1.Kd6 1... Kc8 2.Kc6 2... Kb8 3.Kd7 3... Kb7 4.c6+ 4... Kb6 5.c7 5... Kc5 6.c8=Q+ 6... Kd4 7.Ke6 7... Ke4 8.Qc3 8... Kf4 9.Qd3 9... Kg4 10.Qe3 10... Kh5 11.Kf5 11... Kh4 12.Qc3 12... Kh5 13.Qh8#
+
+7k/5K2/8/6P1/8/8/8/8 w - - 0 1
+Endgame 062: white to move
+Knight-Pawn Trap: 1.Kg6 1... Kg8 2.Kh6 2... Kh8 3.g6 3... Kg8 4.g7 4... Kf7 5.Kh7 5... Kf6 6.g8=Q 6... Ke5 7.Qc4 7... Kd6 8.Kg6 8... Ke5 9.Kg5 9... Kd6 10.Kf6 10... Kd7 11.Qc5 11... Kd8 12.Qa7 12... Kc8 13.Ke6 13... Kd8 14.Qb8#
+
+8/8/8/1kp5/8/8/8/K7 w - - 0 1
+Endgame 063: white to move
+Distant Opposition: 1.Kb1 1... Kb4 2.Kb2 2... Kc4 3.Kc2 3... Kd4 4.Kd2 4... c4 5.Kc2 5... c3 6.Kc1 6... Kd3 7.Kd1 7... c2+ 8.Kc1 8... Kc3
+
+5k2/8/8/8/3PK3/8/8/8 w - - 0 1
+Endgame 064: white to move
+Outside Critical Square: 1.Kd5 1... Ke7 2.Kc6 2... Kd8 3.Kd6 3... Kc8 4.Ke7 4... Kc7 5.d5 5... Kc8 6.d6 6... Kb7 7.d7 7... Kc6 8.d8=Q
+
+k7/8/8/8/4P3/8/1K6/8 w - - 0 1
+Endgame 065: white to move
+Extended Overpass: 1.Kc3 1... Kb7 2.Kd4 2... Kc6 3.Ke5 3... Kd7 4.Kf6 4... Ke8 5.Ke6 5... Kf8 6.Kd7 6... Kf7 7.e5 7... Kf8 8.e6 8... Kg7 9.e7 9... Kf6 10.e8=Q
+
+2k5/8/8/8/6P1/8/8/4K3 w - - 0 1
+Endgame 066: white to move
+The Underpass 1: 1.Kf2 1... Kd7 2.Kg3 2... Ke6 3.Kh4 3... Kf6 4.Kh5 4... Kg7 5.Kg5 5... Kh7 6.Kf6 6... Kh8 7.Kg6 7... Kg8 8.g5 8... Kh8 9.Kf7 9... Kh7 10.g6+ 10... Kh6 11.g7 11... Kg5 12.g8=Q+
+
+8/8/2p5/2k5/8/3K4/8/8 w - - 0 1
+Endgame 067: white to move
+Opposition: 1.Kc3 1... Kd5 2.Kd3 2... c5 3.Kc3 3... c4 4.Kc2 4... Kd4 5.Kd2 5... c3+ 6.Kc2 6... Kc4 7.Kc1 7... Kb3 8.Kb1 8... c2+ 9.Kc1 9... Kc3
+
+8/6k1/8/6K1/8/6P1/8/8 w - - 0 1
+Endgame 068: white to move
+Reserve Tempo: 1.g4 1... Kh7 2.Kf6 2... Kh8 3.Kg6 3... Kg8 4.g5 4... Kh8 5.Kf7 5... Kh7 6.g6+ 6... Kh6 7.g7 7... Kg5 8.g8=Q+
+
+4k3/8/8/8/8/1P6/8/2K5 w - - 0 1
+Endgame 069: white to move
+The Underpass 2: 1.Kb2 1... Kd7 2.Ka3 2... Kc6 3.Ka4 3... Kb6 4.Kb4 4... Ka6 5.Kc5 5... Kb7 6.Kb5 6... Kc7 7.Ka6 7... Kc6 8.b4 8... Kc7 9.b5 9... Kb8 10.Kb6 10... Ka8 11.Kc7 11... Ka7 12.b6+ 12... Ka8 13.b7+ 13... Ka7 14.b8=Q+ 14... Ka6 15.Qb6#
+
+8/8/8/1k6/8/K7/6P1/8 w - - 0 1
+Endgame 070: white to move
+Maintaining the Opposition: 1.Kb3 1... Kc5 2.Kc3 2... Kd5 3.Kd3 3... Ke5 4.Ke3 4... Kf5 5.Kf3 5... Kg5 6.Kg3 6... Kf5 7.Kh4 7... Kg6 8.Kg4 8... Kf6 9.Kh5 9... Kg7 10.Kg5 10... Kf7 11.Kh6 11... Kg8 12.Kg6 12... Kh8 13.g4 13... Kg8 14.g5 14... Kh8 15.Kf7 15... Kh7 16.g6+ 16... Kh8 17.g7+ 17... Kh7 18.g8=Q+ 18... Kh6 19.Qg6#
+
+4k3/8/8/8/8/8/4P3/4K3 w - - 0 1
+Endgame 071: white to move
+Critical Squares #2: 1.Kd2 1... Kd8 2.Ke3 2... Ke7 3.Ke4 3... Ke6 4.e3 4... Kd6 5.Kf5 5... Kd5 6.e4+ 6... Kd6 7.Kf6 7... Kd7 8.e5 8... Ke8 9.Ke6 9... Kf8 10.Kd7 10... Kf7 11.e6+ 11... Kf8 12.e7+ 12... Kf7 13.e8=Q+
+
+2k5/2p5/8/8/8/8/8/2K5 w - - 0 1
+Endgame 072: white to move
+Long-Distance Opposition: 1.Kc2 1... Kb7 2.Kb3 2... Kc6 3.Kc4 3... Kd6 4.Kd4 4... c6 5.Kc4 5... c5 6.Kc3 6... Kd5 7.Kd3 7... c4+ 8.Kc3 8... Kc5 9.Kc2 9... Kb4 10.Kb2 10... c3+ 11.Kc2 11... Kc4 12.Kc1 12... Kd3 13.Kd1 13... c2+ 14.Kc1 14... Kc3
+
+8/8/8/8/8/6kp/8/5K2 w - - 0 1
+Endgame 073: white to move
+Rook-Pawn Draws: 1.Kg1 1... h2+ 2.Kh1 2... Kh3
+
+8/8/8/p7/8/1k6/3K4/8 w - - 0 1
+Endgame 074: white to move
+Controlling the Critical Squa: 1.Kc1 1... a4 2.Kb1 2... a3 3.Ka1 3... a2
+
+8/8/8/8/5K2/7p/8/7k w - - 0 1
+Endgame 075: white to move
+Rear Defense: 1.Kg3 1... h2 2.Kf2
+
+1k6/8/1PK5/1P6/8/8/8/8 w - - 0 1
+Endgame 076: white to move
+Pawn Pitch 1: 1.b7 1... Ka7 2.b8=Q+ 2... Kxb8 3.Kb6 3... Ka8 4.Kc7 4... Ka7 5.b6+ 5... Ka8 6.b7+ 6... Ka7 7.b8=Q+ 7... Ka6 8.Qb6#
+
+8/1k6/8/1P6/1P6/1K6/8/8 w - - 0 1
+Endgame 077: white to move
+King Dance: 1.Kc3 1... Kc7 2.Kd4 2... Kb6 3.Kc4 3... Kc7 4.Kc5 4... Kb7 5.b6 5... Ka6 6.b7 6... Kxb7 7.Kb5 7... Ka7 8.Kc6 8... Kb8 9.Kb6 9... Ka8 10.b5 10... Kb8 11.Ka6 11... Ka8 12.b6 12... Kb8 13.b7 13... Kc7 14.Ka7 14... Kc6 15.b8=Q
+
+6k1/6P1/6KP/8/8/8/8/8 w - - 0 1
+Endgame 078: white to move
+Pawn Mate: 1.h7#
+
+8/Pk6/1P6/3K4/8/8/8/8 w - - 0 1
+Endgame 079: white to move
+Pawn Pitch 2: 1.a8=Q+ 1... Kxa8 2.Kc6 2... Kb8 3.b7 3... Ka7 4.Kc7 4... Ka6 5.b8=Q 5... Ka5 6.Qb3 6... Ka6 7.Qb6#
+
+8/8/8/5k2/5P1P/8/8/6K1 w - - 0 1
+Endgame 080: white to move
+Split Pawn Defense: 1.h5 1... Kf6 2.Kg2 2... Kg7 3.f5 3... Kh6 4.f6 4... Kh7 5.Kg3 5... Kg8 6.h6 6... Kf7 7.h7 7... Kxf6 8.h8=Q+
+
+8/1k6/8/2P5/P7/8/8/7K w - - 0 1
+Endgame 081: white to move
+Alignment: 1.a5 1... Kc6 2.a6 2... Kc7 3.Kg2 3... Kc6 4.Kf3 4... Kc7 5.Ke4 5... Kc6 6.Ke5 6... Kc7 7.Kd5 7... Kc8 8.c6 8... Kb8 9.Kc5 9... Ka8 10.c7 10... Ka7 11.c8=R 11... Kxa6 12.Rc7 12... Ka5 13.Ra7#
+
+8/2k5/8/1p1p4/3K4/8/8/8 w - - 0 1
+Endgame 082: white to move
+Opposition: 1.Kc5 1... b4 2.Kxb4 2... Kd6 3.Kc3 3... Ke5 4.Kd3 4... d4 5.Kd2 5... Ke4 6.Ke2 6... d3+ 7.Kd2 7... Kd4 8.Kd1 8... Kc3 9.Kc1 9... d2+ 10.Kd1 10... Kd3
+
+8/8/8/8/3k3p/7K/5p2/8 w - - 0 1
+Endgame 083: white to move
+Getting Back: 1.Kg2 1... Ke3 2.Kf1 2... Kf3
+
+8/8/8/4k3/1P2P3/8/8/7K w - - 0 1
+Endgame 084: white to move
+Decoy: 1.b5 1... Kd6 2.Kg2 2... Kc5 3.Kf3 3... Kxb5 4.Kf4 4... Kc5 5.Ke5 5... Kc6 6.Ke6 6... Kc7 7.e5 7... Kd8 8.Kf7 8... Kd7 9.e6+ 9... Kd6 10.e7 10... Ke5 11.e8=Q+
+
+7k/8/8/4p2p/8/6K1/8/8 w - - 0 1
+Endgame 085: white to move
+Inside the Pawn's Square: 1.Kh4 1... e4 2.Kg3 2... Kg7 3.Kf4 3... Kg6 4.Kxe4 4... Kg5 5.Kf3 5... h4 6.Kg2 6... Kg4 7.Kh2 7... h3 8.Kh1 8... Kg3 9.Kg1 9... h2+ 10.Kh1 10... Kh3
+
+k7/8/1p6/1P6/8/8/7K/8 w - - 0 1
+Endgame 086: white to move
+Outflanking: 1.Kg3 1... Kb7 2.Kf4 2... Kc7 3.Ke5 3... Kd7 4.Kd5 4... Kc7 5.Ke6 5... Kc8 6.Kd6 6... Kb7 7.Kd7 7... Kb8 8.Kc6 8... Ka7 9.Kc7 9... Ka8 10.Kxb6 10... Kb8 11.Ka6 11... Ka8 12.b6 12... Kb8 13.b7 13... Kc7 14.Ka7 14... Kc6 15.b8=Q
+
+8/2K5/4p3/4P3/6k1/8/8/8 w - - 0 1
+Endgame 087: white to move
+Trebuchet: 1.Kd7 1... Kf5 2.Kd6 2... Kg6 3.Kxe6 3... Kg7 4.Kd7 4... Kf7 5.e6+ 5... Kf8 6.e7+ 6... Kf7 7.e8=Q+
+
+K7/5k2/4p3/4P3/8/8/8/8 w - - 0 1
+Endgame 088: white to move
+Outflanking Trebuchet: 1.Kb7 1... Ke7 2.Kc7 2... Ke8 3.Kd6 3... Kf7 4.Kd7 4... Kf8 5.Kxe6 5... Ke8 6.Kf6 6... Kf8 7.e6 7... Ke8 8.e7 8... Kd7 9.Kf7 9... Kd6 10.e8=Q
+
+8/8/8/5p2/3k4/5P2/8/6K1 w - - 0 1
+Endgame 089: white to move
+Defensive Pitch: 1.f4 1... Ke4 2.Kg2 2... Kxf4 3.Kf2 3... Ke4 4.Ke2 4... f4 5.Kf2 5... f3 6.Kf1 6... Ke3 7.Ke1 7... f2+ 8.Kf1 8... Kf3
+
+1K6/8/1k6/8/8/7p/7P/8 w - - 0 1
+Endgame 090: white to move
+Critical Retreating Diagonal: 1.Ka8 1... Kc6 2.Ka7 2... Kd5 3.Kb6 3... Ke4 4.Kc5 4... Kf3 5.Kd4 5... Kg2 6.Ke3 6... Kxh2 7.Kf2 7... Kh1 8.Kg3 8... h2 9.Kh3
+
+8/p7/P3K3/8/8/2k5/8/8 w - - 0 1
+Endgame 091: white to move
+Shielding Off: 1.Kd5 1... Kb4 2.Kc6 2... Ka5 3.Kb7 3... Kb5 4.Kxa7 4... Kc6 5.Kb8 5... Kb6 6.a7
+
+k7/p7/3K4/1P6/8/8/8/8 w - - 0 1
+Endgame 092: white to move
+Squeeze: 1.Kc7 1... a5 2.b6 2... a4 3.b7+ 3... Ka7 4.b8=Q+ 4... Ka6 5.Qb6#
+
+8/8/5p2/8/4P1k1/8/7K/8 w - - 0 1
+Endgame 093: white to move
+Changing the Critical Squares: 1.e5 1... fxe5 2.Kg2 2... Kf4 3.Kf2 3... e4 4.Ke2 4... e3 5.Ke1 5... Kf3 6.Kf1 6... e2+ 7.Ke1 7... Ke3
+
+8/8/2p5/1k6/3P4/8/8/K7 w - - 0 1
+Endgame 094: white to move
+Distant Opposition: 1.d5 1... cxd5 2.Kb1 2... Kc5 3.Kc1 3... Kc4 4.Kc2 4... d4 5.Kd2 5... d3 6.Kd1 6... Kc3 7.Kc1 7... d2+ 8.Kd1 8... Kd3
+
+8/8/5k2/8/p7/8/1PK5/8 w - - 0 1
+Endgame 095: white to move
+Underpass: 1.Kb1 1... a3 2.b3 2... Ke5 3.Ka2 3... Kd5 4.Kxa3 4... Kc5 5.Ka4 5... Kb6 6.Kb4 6... Ka6 7.Kc5 7... Kb7 8.Kb5 8... Ka7 9.Kc6 9... Kb8 10.b4 10... Ka7 11.b5 11... Kb8 12.Kb6 12... Ka8 13.Kc7 13... Ka7 14.b6+ 14... Ka8 15.b7+ 15... Ka7 16.b8=Q+ 16... Ka6 17.Qb6#
+
+8/3k4/1Pp5/8/1K6/8/8/8 w - - 0 1
+Endgame 096: white to move
+Squeezing In: 1.Kc5 1... Kd8 2.Kd6 2... Kc8 3.Kxc6 3... Kb8 4.b7 4... Ka7 5.Kc7 5... Ka6 6.b8=Q 6... Ka5 7.Qb3 7... Ka6 8.Qb6#
+
+8/8/5p2/8/8/2k5/7P/3K4 w - - 0 1
+Endgame 097: white to move
+Diagonal Block: 1.h4 1... Kd4 2.h5 2... Ke5 3.h6 3... Kf5 4.h7 4... Kg6 5.h8=Q
+
+8/P7/8/8/8/3k4/5p1K/8 w - - 0 1
+Endgame 098: white to move
+The Skewer: 1.a8=Q 1... f1=Q 2.Qa6+ 2... Kd2 3.Qxf1
+
+3K4/8/5p2/8/Pk6/8/8/8 w - - 0 1
+Endgame 099: white to move
+The Feint: 1.Kc7 1... f5 2.Kb6 2... f4 3.a5 3... f3 4.a6 4... f2 5.a7 5... f1=Q 6.a8=Q
+
+7K/8/k1P5/7p/8/8/8/8 w - - 0 1
+Endgame 100: white to move
+Diagonal March: 1.Kg7 1... h4 2.Kf6 2... h3 3.Ke6 3... h2 4.c7 4... h1=Q 5.c8=Q+
+
+8/6k1/3pPp2/5K2/8/8/8/8 w - - 0 1
+Endgame 101: white to move
+Clearance: 1.e7 1... Kf7 2.e8=Q+ 2... Kxe8 3.Ke6 3... f5 4.Kxf5 4... Kd7 5.Ke4 5... Kc6 6.Kd4
+
+8/1p6/2p2P1k/K7/8/8/8/8 w - - 0 1
+Endgame 102: white to move
+Diagonal March: 1.Kb6 1... Kg6 2.Kxb7 2... c5 3.Kc6 3... c4 4.Kd5 4... c3 5.Ke6 5... c2 6.f7 6... c1=Q 7.f8=Q
+
+8/5k2/7p/4PK1P/8/8/8/8 w - - 0 1
+Endgame 103: white to move
+Outside Passed Pawn: 1.e6+ 1... Ke7 2.Ke5 2... Ke8 3.Kf6 3... Kf8 4.Kg6 4... Ke7 5.Kxh6 5... Kxe6 6.Kg7 6... Kf5 7.h6 7... Kg5 8.h7 8... Kf5 9.h8=Q
+
+5k2/5P1p/4K3/8/8/8/7P/8 w - - 0 1
+Endgame 104: white to move
+Temporizing: 1.Kf6 1... h5 2.h3 2... h4 3.Kg6 3... Ke7 4.Kg7 4... Ke6 5.f8=Q
+
+2k5/8/p1P5/P2K4/8/8/8/8 w - - 0 1
+Endgame 105: white to move
+Triangulation: 1.Kd4 1... Kd8 2.Kc4 2... Kc8 3.Kd5 3... Kc7 4.Kc5 4... Kc8 5.Kb6 5... Kb8 6.Kxa6 6... Kc7 7.Kb5 7... Kc8 8.Kb6 8... Kb8 9.c7+ 9... Kc8 10.a6 10... Kd7 11.a7 11... Kc8 12.a8=Q+ 12... Kd7 13.Qe4 13... Kc8 14.Qe8#
+
+8/8/8/4p1p1/8/5P2/6K1/3k4 w - - 0 1
+Endgame 106: white to move
+Distant Opposition: 1.Kh1 1... Ke1 2.Kg1 2... Ke2 3.Kg2 3... Kd2 4.Kh2 4... Ke3 5.Kg3 5... Kd3 6.Kh3 6... g4+ 7.Kxg4 7... Ke3 8.Kf5 8... Kxf3 9.Kxe5
+
+5k2/8/5Pp1/4K1P1/8/8/8/8 w - - 0 1
+Endgame 107: white to move
+Pawn Pitch: 1.f7 1... Kxf7 2.Kd6 2... Kf8 3.Ke6 3... Kg7 4.Ke7 4... Kg8 5.Kf6 5... Kh7 6.Kf7 6... Kh8 7.Kxg6 7... Kg8 8.Kh6 8... Kh8 9.g6 9... Kg8 10.g7 10... Kf7 11.Kh7 11... Kf6 12.g8=Q
+
+8/2k5/8/pP6/P2K4/8/8/8 w - - 0 1
+Endgame 108: white to move
+Knight's Move Opposition: 1.Kd5 1... Kb6 2.Kd6 2... Kb7 3.Kc5 3... Ka7 4.Kc6 4... Ka8 5.Kb6 5... Kb8 6.Kxa5
+
+k7/1p1K4/1P6/2P5/8/8/8/8 w - - 0 1
+Endgame 109: white to move
+Pawn Sac: 1.c6 1... bxc6 2.Kc7 2... c5 3.b7+ 3... Ka7 4.b8=Q+ 4... Ka6 5.Qb6#
+
+8/3k2p1/6P1/3K1P2/8/8/8/8 w - - 0 1
+Endgame 110: white to move
+Breakthrough 1: 1.f6 1... gxf6 2.g7 2... Ke7 3.g8=Q
+
+8/4k1p1/6P1/4KP2/8/8/8/8 w - - 0 1
+Endgame 111: white to move
+Outflanking-Opposition: 1.Kd5 1... Kf6 2.Ke4 2... Ke7 3.Ke5 3... Ke8 4.Ke6 4... Kf8 5.Kd7 5... Kg8 6.Ke8 6... Kh8 7.f6 7... gxf6 8.Kf7 8... f5 9.g7+ 9... Kh7 10.g8=Q+ 10... Kh6 11.Qg6#
+
+8/3k2p1/8/3K1PP1/8/8/8/8 w - - 0 1
+Endgame 112: white to move
+Outflanking 1: 1.Ke5 1... Ke7 2.g6 2... Ke8 3.Ke6 3... Kf8 4.Kd7 4... Kg8 5.Ke8 5... Kh8 6.f6 6... gxf6 7.Kf7 7... f5 8.g7+ 8... Kh7 9.g8=Q+ 9... Kh6 10.Qg6#
+
+8/8/8/3k2p1/6P1/4K3/7P/8 w - - 0 1
+Endgame 113: white to move
+Corresponding Squares: 1.Kf3 1... Ke5 2.Kg3 2... Kf6 3.Kg2 3... Ke6 4.Kf2 4... Kf6 5.Kg3 5... Kg6 6.Kf3 6... Kf6 7.Ke4 7... Ke6 8.h3 8... Kf6 9.Kd5 9... Kf7 10.Ke5 10... Kg6 11.Ke6 11... Kg7 12.Kf5 12... Kh6 13.Kf6 13... Kh7 14.Kxg5
+
+k7/8/5p2/4p3/4P3/8/8/K7 w - - 0 1
+Endgame 114: white to move
+Long-Distant Opposition: 1.Ka2 1... Ka7 2.Ka3 2... Ka6 3.Ka4 3... Kb6 4.Kb4 4... Kb7 5.Kb3 5... Kc6 6.Kc4 6... Kc7 7.Kc3 7... Kd7 8.Kd3 8... Ke7 9.Ke3 9... Kf7 10.Kf3 10... Kg7 11.Kg3 11... Kg6 12.Kg4 12... Kh6 13.Kh4
+
+8/5p2/8/6Pk/5P2/8/8/7K w - - 0 1
+Endgame 115: white to move
+Jettison: 1.g6 1... fxg6 2.f5 2... gxf5 3.Kg1 3... Kg5 4.Kf1 4... Kg4 5.Kg2 5... f4 6.Kf2 6... f3 7.Kf1 7... Kg3 8.Kg1 8... f2+ 9.Kf1 9... Kf3
+
+8/7p/8/4k1PP/6K1/8/8/8 w - - 0 1
+Endgame 116: white to move
+Breakthrough: 1.h6 1... Ke6 2.g6 2... hxg6 3.h7 3... Kf7 4.h8=Q
+
+8/8/2p1k3/8/2PP4/4K3/8/8 w - - 0 1
+Endgame 117: white to move
+Outflanking: 1.Ke4 1... Kd6 2.Kf5 2... Kd7 3.Ke5 3... Ke7 4.c5 4... Kd7 5.Kf6 5... Kd8 6.Ke6 6... Kc7 7.Ke7 7... Kc8 8.Kd6 8... Kb7 9.Kd7 9... Kb8 10.Kxc6 10... Kc8 11.Kb6 11... Kb8 12.c6 12... Kc8 13.c7 13... Kd7 14.Kb7 14... Kd6 15.c8=Q
+
+6k1/7p/7K/6P1/8/8/7P/8 w - - 0 1
+Endgame 118: white to move
+Reserve Tempo: 1.h3 1... Kh8 2.h4 2... Kg8 3.h5 3... Kh8 4.g6 4... hxg6 5.hxg6 5... Kg8 6.g7 6... Kf7 7.Kh7 7... Kf6 8.g8=Q
+
+8/8/1K6/p1p5/P1P5/1k6/8/8 w - - 0 1
+Endgame 119: white to move
+Direct Opposition: 1.Kb5 1... Ka3 2.Kxa5 2... Kb3 3.Kb5 3... Kc3 4.a5
+
+8/7k/4K1p1/5p1p/5P1P/6P1/8/8 w - - 0 1
+Endgame 120: white to move
+Horizontal Opposition: 1.Kf7 1... Kh6 2.Kg8 2... g5 3.hxg5+ 3... Kg6 4.Kh8 4... Kf7 5.Kh7 5... Kf8 6.g6 6... Ke7 7.g7 7... Kf7 8.g8=Q+
+
+6K1/8/6kp/4p2p/4P2P/8/8/8 w - - 0 1
+Endgame 121: white to move
+Rear Outflanking: 1.Kh8 1... Kf6 2.Kh7 2... Kf7 3.Kxh6 3... Kf6 4.Kxh5 4... Kf7 5.Kg5 5... Kg7 6.Kf5 6... Kh6 7.Kxe5 7... Kh5 8.Kf6 8... Kxh4 9.e5
+
+4k3/8/2p1P3/2p2K2/1pP5/1P6/8/8 w - - 0 1
+Endgame 122: white to move
+Triangulation: 1.Ke4 1... Kd8 2.Kf4 2... Ke8 3.Kf5 3... Ke7 4.Ke5 4... Ke8 5.Kd6 5... Kd8 6.Kxc6 6... Ke7 7.Kd5 7... Ke8 8.Kxc5
+
+8/8/6p1/p4p1p/5P1P/kP4P1/2K5/8 w - - 0 1
+Endgame 123: white to move
+Oppositional Fight: 1.Kc3 1... Ka2 2.b4 2... axb4+ 3.Kxb4 3... Kb2 4.Kc5 4... Kc2 5.Kd5 5... Kd2 6.Ke6 6... Ke3 7.Kf6 7... Kf3 8.Kxg6 8... Kxg3 9.Kg5
+
+8/4k1pp/8/4KPPP/8/8/8/8 w - - 0 1
+Endgame 124: white to move
+Oppositional Field: 1.g6 1... h6 2.Kd5 2... Kf6 3.Ke4 3... Kg5 4.Ke5 4... Kxh5 5.Ke6 5... Kg5 6.f6 6... Kxg6 7.f7 7... h5 8.f8=Q
+
+8/5p2/4p3/8/3P4/5k2/P7/5K2 w - - 0 1
+Endgame 125: white to move
+Blocking the Critical Diagona: 1.d5 1... exd5 2.a4 2... d4 3.a5 3... d3 4.Ke1
+
+7k/ppp5/8/PPP5/8/8/8/7K w - - 0 1
+Endgame 126: white to move
+Breakthrough Combination 1: 1.b6 1... axb6 2.c6 2... bxc6 3.a6 3... b5 4.a7 4... b4 5.a8=Q+
+
+8/5pp1/4p2p/4P2P/5PP1/k7/8/K7 w - - 0 1
+Endgame 127: white to move
+Breakthrough Combination 2: 1.f5 1... Kb4 2.g5 2... hxg5 3.f6 3... gxf6 4.h6 4... g4 5.h7 5... g3 6.h8=Q 6... g2 7.Qg7
+
+8/2p5/P1k5/2P5/5ppp/8/6K1/8 w - - 0 1
+Endgame 128: white to move
+Tempo: 1.Kg1 1... f3 2.Kf2 2... h3 3.Kg3 3... f2 4.Kxf2 4... h2 5.Kg2 5... g3 6.Kh1 6... Kxc5 7.a7 7... Kb6 8.a8=Q
+
+6K1/8/3Q4/8/8/8/5kp1/8 w - - 0 1
+Endgame 129: white to move
+Blocking the Queening Square: 1.Qf4+ 1... Ke2 2.Qg3 2... Kf1 3.Qf3+ 3... Kg1 4.Kg7 4... Kh2 5.Qf2 5... Kh1 6.Qh4+ 6... Kg1 7.Kg6 7... Kf1 8.Qf4+ 8... Ke2 9.Qg3 9... Kf1 10.Qf3+ 10... Kg1 11.Kg5 11... Kh2 12.Qf2 12... Kh1 13.Qh4+ 13... Kg1 14.Kg4 14... Kf1 15.Qh3 15... Kf2 16.Qf3+ 16... Kg1 17.Kg3 17... Kh1 18.Qxg2#
+
+8/5K1P/8/8/3q4/8/8/2k5 w - - 0 1
+Endgame 130: white to move
+Stalemate 1: 1.Kg8 1... Qd8+ 2.Kg7 2... Qg5+ 3.Kf8 3... Qh6+ 4.Kg8 4... Qg6+ 5.Kh8
+
+8/5P2/3K4/8/8/1k6/8/q7 w - - 0 1
+Endgame 131: white to move
+Stalemate 2: 1.Ke7 1... Qe5+ 2.Kd8 2... Qf6+ 3.Ke8 3... Qe6+ 4.Kf8 4... Kc4 5.Kg7 5... Qe7 6.Kg8 6... Qg5+ 7.Kh7 7... Qf6 8.Kg8 8... Qg6+ 9.Kh8 9... Qxf7
+
+8/8/8/8/8/6Q1/2K2p2/5k2 w - - 0 1
+Endgame 132: white to move
+Mate in Two: 1.Qg4 1... Ke1 2.Qd1#
+
+6Q1/6K1/8/8/8/8/7p/7k w - - 0 1
+Endgame 133: white to move
+Gaining Time: 1.Kg6 1... Kg2 2.Kf5+ 2... Kf2 3.Qd5 3... Kg1 4.Qd1+ 4... Kg2 5.Qe2+ 5... Kg1 6.Kg4 6... h1=Q 7.Kg3 7... Qd5 8.Qe1#
+
+5KQ1/8/8/8/6p1/8/p7/k7 w - - 0 1
+Endgame 134: white to move
+No Stalemate: 1.Qb3 1... g3 2.Qc2 2... g2 3.Qc1#
+
+K7/1R6/6k1/7p/8/8/8/8 w - - 0 1
+Endgame 135: white to move
+Cut-Off Along Rank: 1.Rb5 1... Kh6 2.Kb7 2... Kg6 3.Kc6 3... Kh6 4.Kd6 4... Kg6 5.Ke6 5... Kh6 6.Kf7 6... h4 7.Kf6 7... h3 8.Rb3 8... Kh7 9.Rxh3+ 9... Kg8 10.Rh6 10... Kf8 11.Rh8#
+
+6R1/8/5K2/2k5/1p6/8/8/8 w - - 0 1
+Endgame 136: white to move
+Getting Back: 1.Ke5 1... Kc4 2.Ke4 2... Kc3 3.Ke3 3... b3 4.Rc8+ 4... Kb2 5.Kd2 5... Ka2 6.Rb8 6... Kb2 7.Rb7 7... Ka2 8.Kc3 8... Kb1 9.Kxb3 9... Kc1 10.Rd7 10... Kb1 11.Rd1#
+
+1R6/8/8/8/8/2K5/p7/k7 w - - 0 1
+Endgame 137: white to move
+Reposition: 1.Kb3 1... Kb1 2.Ka3+ 2... Ka1 3.Rh8 3... Kb1 4.Rh1+ 4... Kc2 5.Kxa2
+
+8/1K6/8/1k6/1p6/8/1R6/8 w - - 0 1
+Endgame 138: white to move
+Tempo Finesse-Opposition: 1.Rb1 1... Kc4 2.Ka6 2... b3 3.Ka5 3... Kc3 4.Ka4 4... b2 5.Ka3 5... Kc2 6.Rxb2+
+
+8/8/5KP1/7r/8/8/8/1k6 w - - 0 1
+Endgame 139: white to move
+Badly Placed Rook: 1.g7 1... Rh6+ 2.Kf5 2... Rh5+ 3.Kf4 3... Rh4+ 4.Kf3 4... Rh3+ 5.Kg2
+
+8/8/1KP5/3r4/8/8/8/k7 w - - 0 1
+Endgame 140: white to move
+Underpromotion: 1.c7 1... Rd6+ 2.Kb5 2... Rd5+ 3.Kb4 3... Rd4+ 4.Kb3 4... Rd3+ 5.Kc2 5... Rd4 6.c8=R 6... Ra4 7.Kb3
+
+8/1r6/3P4/4P3/8/1k6/8/7K w - - 0 1
+Endgame 141: white to move
+Connected Pawns on 6th Rank: 1.e6 1... Kc4 2.d7 2... Rb8 3.e7 3... Kd5 4.d8=Q+ 4... Rxd8 5.exd8=Q+
+
+K6k/1R6/8/8/4p3/3p4/8/8 w - - 0 1
+Endgame 142: white to move
+Rear Attack on Advanced Pawn: 1.Rd7 1... Kg8 2.Kb7 2... Kf8 3.Kc6 3... Ke8 4.Rd4 4... Kf7 5.Kd5 5... e3 6.Rxd3 6... e2 7.Re3 7... e1=Q 8.Rxe1
+
+8/1k3K2/8/8/5p2/4p3/6R1/8 w - - 0 1
+Endgame 143: white to move
+Frontal Attack: 1.Re2 1... Kc6 2.Kf6 2... Kd5 3.Kf5 3... f3 4.Rxe3 4... f2 5.Rf3 5... f1=Q 6.Rxf1
+
+5k2/8/5K2/8/8/6R1/6pp/8 w - - 0 1
+Endgame 144: white to move
+Perpetual Attack: 1.Ra3 1... Kg8 2.Rg3+ 2... Kh7 3.Rh3+ 3... Kg8 4.Rg3+ 4... Kf8 5.Ra3 5... Ke8 6.Ke6 6... Kd8 7.Kd6 7... Kc8 8.Kc6 8... Kb8 9.Rb3+ 9... Ka7 10.Ra3+ 10... Kb8 11.Rb3+ 11... Kc8 12.Ra3 12... Kd8 13.Kd6 13... Ke8 14.Ke6 14... Kf8 15.Kf6
+
+k7/p7/2K5/3B4/8/8/8/8 w - - 0 1
+Endgame 145: white to move
+Discovered Mate: 1.Kc7#
+
+8/8/5k1b/P2K4/6P1/8/8/8 w - - 0 1
+Endgame 146: white to move
+Creating a Block: 1.g5+ 1... Bxg5 2.Ke4 2... Bh6 3.a6 3... Bf8 4.a7 4... Bd6 5.a8=Q
+
+8/K7/8/8/8/1k6/1N1p4/8 w - - 0 1
+Endgame 147: white to move
+Pawn's Way: 1.Nd1 1... Kc2 2.Nf2 2... Kc3 3.Kb6 3... Kd4 4.Kb5 4... Ke3 5.Nd1+ 5... Kd3 6.Kb4 6... Kc2 7.Nf2 7... Kb1 8.Kb3 8... Kc1 9.Kc3 9... d1=Q 10.Nxd1 10... Kxd1
+
+8/8/4N3/8/8/6K1/5p2/6k1 w - - 0 1
+Endgame 148: white to move
+Perpetual Check: 1.Ng5 1... f1=Q 2.Nh3+ 2... Kh1 3.Nf2+ 3... Kg1 4.Nh3+ 4... Kh1 5.Nf2+ 5... Kg1 6.Nh3+
+
+8/8/8/8/4N3/1k6/1p5K/8 w - - 0 1
+Endgame 149: white to move
+Knight Fork: 1.Nd2+ 1... Kc2 2.Nc4 2... b1=Q 3.Na3+ 3... Kc1 4.Nxb1 4... Kxb1
+
+1K6/8/1P3n2/8/7k/8/8/8 w - - 0 1
+Endgame 150: white to move
+The Board's Edge: 1.b7 1... Nd7+ 2.Kc8 2... Nb6+ 3.Kd8
+
+8/7K/8/8/4k3/N7/p7/8 w - - 0 1
+Endgame 151: white to move
+Setting the Barrier: 1.Nc2 1... Kf3 2.Kg6 2... Ke2 3.Kf5 3... Kd2 4.Na1 4... Kc1 5.Ke4 5... Kb2 6.Kd3 6... Kxa1 7.Kc2
+
+8/7K/8/8/3N4/4k3/p7/8 w - - 0 1
+Endgame 152: white to move
+Setting the Barrier 2: 1.Nb3 1... Ke4 2.Kg6 2... Kd5 3.Kf5 3... Kc4 4.Na1 4... Kc3 5.Ke4 5... Kb2 6.Kd3 6... Kxa1 7.Kc2
+
+8/8/K7/8/6N1/6kp/8/8 w - - 0 1
+Endgame 153: white to move
+The Circuit: 1.Ne3 1... Kf3 2.Nf1 2... Kf2 3.Nh2 3... Kg2 4.Ng4 4... Kg3
+
+8/8/8/8/8/p7/2K1N3/k7 w - - 0 1
+Endgame 154: white to move
+Mate in the Corner: 1.Nc1 1... a2 2.Nb3#
+
+3k4/1n6/8/P7/8/8/7K/8 w - - 0 1
+Endgame 155: white to move
+The Dangerous Rook-Pawn: 1.a6 1... Kc7 2.a7 2... Nd6 3.a8=Q
+
+8/8/8/8/6N1/6Kp/7N/7k w - - 0 1
+Endgame 156: white to move
+Mate in Two Moves: 1.Nf3 1... h2 2.Nf2#
+
+8/8/8/8/6K1/8/3N1p2/5Nk1 w - - 0 1
+Endgame 157: white to move
+Mate in Three Moves: 1.Kh3 1... Kh1 2.Ng3+ 2... Kg1 3.Nf3#
+
+6k1/3N4/6K1/8/8/7p/7N/8 w - - 0 1
+Endgame 158: white to move
+Mate in Four Moves: 1.Ng4 1... h2 2.Nh6+ 2... Kh8 3.Nf6 3... h1=Q 4.Nf7#
+
+7B/8/8/5k1K/8/5P2/8/8 w - - 0 1
+Endgame 159: white to move
+Critical Square 1: 1.Be5 1... Kxe5 2.Kg5 2... Ke6 3.f4 3... Kf7 4.Kf5 4... Ke7 5.Kg6 5... Kf8 6.f5 6... Kg8 7.f6 7... Kh8 8.Kf7 8... Kh7 9.Ke7 9... Kg6 10.f7 10... Kf5 11.f8=Q+
+
+8/8/2k5/8/4K3/6p1/7b/8 w - - 0 1
+Endgame 160: white to move
+Misplaced Bishop: 1.Kf3 1... Kd5 2.Kg2 2... Ke4 3.Kh1 3... Kf4 4.Kg2 4... Bg1 5.Kxg1 5... Kf3 6.Kf1 6... g2+ 7.Kg1 7... Kg3
+
+8/8/8/4b3/8/6kp/8/5K2 w - - 0 1
+Endgame 161: white to move
+Wrong Color Bishop: 1.Kg1 1... h2+ 2.Kh1 2... Kf2
+
+6k1/4B3/6KP/8/8/8/8/8 w - - 0 1
+Endgame 162: white to move
+Right Color Bishop: 1.h7+ 1... Kh8 2.Bf6#
+
+2K5/8/k7/P7/1B6/8/8/8 w - - 0 1
+Endgame 163: white to move
+Critical Square 2: 1.Kb8 1... Kb5 2.Be1 2... Ka6 3.Bd2 3... Kb5 4.Kb7
+
+8/5k2/7P/8/4B3/5K2/8/8 w - - 0 1
+Endgame 164: white to move
+Critical-Square Fight: 1.Bh7 1... Kf6 2.Kf4 2... Ke6 3.Kg5 3... Kf7 4.Kf5 4... Ke7 5.Kg6 5... Kf8 6.Kf6 6... Ke8 7.Bg8 7... Kf8 8.h7 8... Ke8 9.h8=Q
+
+8/8/8/8/2p5/2K5/bP6/7k w - - 0 1
+Endgame 165: white to move
+Misplaced Bishop: 1.b4 1... cxb3 2.Kb2 2... Kg2 3.Kc1 3... Kf3 4.Kb2 4... Ke2 5.Kc1 5... Kd3 6.Kb2 6... Kd2 7.Ka1 7... Kc3
+
+7k/7p/5K1P/4B3/8/8/8/8 w - - 0 1
+Endgame 166: white to move
+Cornered: 1.Kf7#
+
+8/8/8/8/3b4/p1k5/P7/1K6 w - - 0 1
+Endgame 167: white to move
+Avoid the Corner: 1.Kc1 1... Kd3 2.Kb1 2... Kd2
+
+5K2/k7/4P1p1/8/8/8/4b3/8 w - - 0 1
+Endgame 168: white to move
+Square of the Pawn: 1.Ke7 1... g5 2.Kd6 2... g4 3.e7 3... Bb5 4.Kc5 4... Bd7 5.Kd4 5... Kb6 6.Ke4 6... Kc7 7.Kf4 7... Kd6 8.e8=Q 8... Bxe8 9.Kxg4
+
+8/8/3n4/8/8/8/7p/4K2k w - - 0 1
+Endgame 169: white to move
+Color Rule: 1.Kf2 1... Ne4+ 2.Kf1 2... Ng3+ 3.Kf2 3... Ne2 4.Kf1 4... Nf4 5.Kf2 5... Nd3+ 6.Kf1 6... Ne1 7.Kf2 7... Nf3 8.Kf1
+
+8/1k6/8/8/1n6/p1K5/8/8 w - - 0 1
+Endgame 170: white to move
+Force the Pawn to the 7th: 1.Kb3 1... a2 2.Kb2 2... Kb6 3.Ka1 3... Kb5 4.Kb2 4... Ka4 5.Ka1 5... Ka3
+
+8/8/6kP/8/6N1/7K/8/8 w - - 0 1
+Endgame 171: white to move
+Avoiding Stalemate: 1.Kh4 1... Kf7 2.Kg5 2... Kg8 3.Kg6 3... Kh8 4.Ne5 4... Kg8 5.h7+ 5... Kh8 6.Nf7#
+
+k7/6N1/P7/8/8/8/1K6/8 w - - 0 1
+Endgame 172: white to move
+Rear Defense: 1.Ne6 1... Ka7 2.Nc5 2... Kb6 3.Kb3 3... Ka7 4.Kb4 4... Kb6 5.Kc4 5... Ka7 6.Kb5 6... Ka8 7.Kb6 7... Kb8 8.Ne6 8... Ka8 9.Nc7+ 9... Kb8 10.a7+ 10... Kc8 11.a8=Q+ 11... Kd7 12.Qe8+ 12... Kd6 13.Qe6#
+
+8/8/8/8/4n3/5k1p/7P/4K3 w - - 0 1
+Endgame 173: white to move
+Corner Curl Up: 1.Kf1 1... Ng3+ 2.Kg1 2... Ne2+ 3.Kh1
+
+4k3/4N2p/4K2P/8/8/8/8/8 w - - 0 1
+Endgame 174: white to move
+King and Knight Duel: 1.Ng6 1... hxg6 2.h7 2... Kf8 3.h8=Q#
+
+7k/6p1/4K1P1/7N/8/8/8/8 w - - 0 1
+Endgame 175: white to move
+Curled up: 1.Nf6 1... gxf6 2.Kf7 2... f5 3.g7+ 3... Kh7 4.g8=Q+ 4... Kh6 5.Qg6#
+
+N7/1kp5/8/1PK5/8/8/8/8 w - - 0 1
+Endgame 176: white to move
+Outflanking: 1.Nb6 1... cxb6+ 2.Kd6 2... Kb8 3.Kc6 3... Ka7 4.Kc7 4... Ka8 5.Kxb6 5... Kb8 6.Ka6 6... Ka8 7.b6 7... Kb8 8.b7 8... Kc7 9.Ka7 9... Kc6 10.b8=Q
+
+8/4R3/8/8/5q2/2k5/2P5/3K4 w - - 0 1
+Endgame 177: white to move
+The Fortress: 1.Re3+ 1... Kb2 2.Rb3+ 2... Ka2 3.Rd3
+
+3k4/2p5/3r4/3PK3/8/8/8/5Q2 w - - 0 1
+Endgame 178: white to move
+Breaking Down the Fortress 1: 1.Qf8+ 1... Kd7 2.Qxd6+ 2... cxd6+ 3.Kf6 3... Kd8 4.Ke6 4... Kc7 5.Ke7 5... Kc8 6.Kxd6 6... Kd8 7.Ke6 7... Ke8 8.d6 8... Kd8 9.d7 9... Kc7 10.Ke7 10... Kc6 11.d8=Q
+
+4k3/5p2/6r1/6PK/1Q6/8/8/8 w - - 0 1
+Endgame 179: white to move
+Breaking Down the Fortress 2: 1.Qe4+ 1... Kf8 2.Qxg6 2... fxg6+ 3.Kxg6 3... Kg8 4.Kh6 4... Kh8 5.g6 5... Kg8 6.g7 6... Kf7 7.Kh7 7... Kf6 8.g8=Q
+
+5q2/5P2/8/8/8/7Q/k7/5K2 w - - 0 1
+Endgame 180: white to move
+Lifting the Blockade 1: 1.Qe6+ 1... Kb2 2.Qe8 2... Qb4 3.f8=Q 3... Qc4+ 4.Qe2+ 4... Qxe2+ 5.Kxe2
+
+4q3/4P3/8/8/4Q3/8/8/k3K3 w - - 0 1
+Endgame 181: white to move
+Lifting the Blockade 2: 1.Qd4+ 1... Kb1 2.Qd8
+
+2k5/4KP2/6Q1/8/8/4q3/8/8 w - - 0 1
+Endgame 182: white to move
+Cross-Check 1: 1.Qe6+ 1... Qxe6+ 2.Kxe6 2... Kc7 3.f8=Q
+
+8/2q1P1K1/6Q1/8/8/8/8/k7 w - - 0 1
+Endgame 183: white to move
+Cross-Check 2: 1.Qf7 1... Qg3+ 2.Kf8 2... Qa3 3.Kg8 3... Qg3+ 4.Qg7+ 4... Qxg7+ 5.Kxg7
+
+6K1/8/8/4q3/Q7/8/1p6/1k6 w - - 0 1
+Endgame 184: white to move
+Perpetual Check: 1.Qd1+ 1... Ka2 2.Qa4+ 2... Kb1 3.Qd1+ 3... Ka2 4.Qa4+ 4... Kb1
+
+R7/P4k2/8/8/8/1K6/8/r7 w - - 0 1
+Endgame 185: white to move
+Skewer 1: 1.Rh8 1... Rxa7 2.Rh7+ 2... Kg6 3.Rxa7
+
+7R/8/8/8/K7/8/1k5p/7r w - - 0 1
+Endgame 186: white to move
+Hiding: 1.Kb4 1... Kc2 2.Kc4 2... Kd2 3.Kd4 3... Ke2 4.Ke4 4... Kf2 5.Kf4 5... Kg2 6.Rg8+ 6... Kh3 7.Rh8+ 7... Kg2 8.Rg8+ 8... Kf2 9.Rh8 9... Rf1 10.Rxh2+ 10... Kg1+ 11.Kg3
+
+R7/P3r3/8/4k3/2K5/8/8/8 w - - 0 1
+Endgame 187: white to move
+Zugzwang: 1.Kc5 1... Rc7+ 2.Kb6
+
+6R1/4r3/8/8/8/2K5/7p/7k w - - 0 1
+Endgame 188: white to move
+Shut In: 1.Kd2 1... Ra7 2.Ke2 2... Ra1 3.Kf2 3... Rg1 4.Rf8 4... Rg2+ 5.Kf1
+
+K6R/P2k4/8/8/8/8/8/1r6 w - - 0 1
+Endgame 189: white to move
+Driving Off: 1.Rb8 1... Rc1 2.Kb7 2... Rb1+ 3.Ka6 3... Ra1+ 4.Kb6 4... Rb1+ 5.Kc5 5... Rc1+ 6.Kd4 6... Rd1+ 7.Ke3 7... Re1+ 8.Kd2
+
+K6R/P7/3k4/8/8/8/8/1r6 w - - 0 1
+Endgame 190: white to move
+Back-Rank Escape: 1.Rb8 1... Rc1 2.Kb7 2... Rb1+ 3.Kc8 3... Rc1+ 4.Kd8 4... Rh1 5.Rb6+ 5... Kc5 6.Rc6+ 6... Kb5 7.Rc8 7... Rh8+ 8.Kc7 8... Rh7+ 9.Kb8
+
+2K5/2P1k3/8/8/8/8/3R4/2r5 w - - 0 1
+Endgame 191: white to move
+Escaping Along the File: 1.Rb2 1... Rc3 2.Kb7 2... Kd7 3.c8=Q+ 3... Rxc8 4.Rd2+ 4... Ke6 5.Kxc8
+
+2K5/2P1k3/8/8/8/8/3R4/1r6 w - - 0 1
+Endgame 192: white to move
+Breaking the Cut-Off: 1.Ra2 1... Rb3 2.Ra7 2... Rb1 3.Rb7 3... Rc1 4.Kb8 4... Kd7 5.c8=Q+
+
+1K6/1P1k4/8/8/8/8/2R5/r7 w - - 0 1
+Endgame 193: white to move
+The Bridge: 1.Rd2+ 1... Ke7 2.Rd4 2... Ra2 3.Kc7 3... Rc2+ 4.Kb6 4... Rb2+ 5.Ka6 5... Ke6 6.Ra4 6... Kd6 7.Ka7 7... Kc7 8.b8=Q+ 8... Rxb8 9.Rc4+ 9... Kd6 10.Kxb8
+
+1r2K3/4P1k1/8/8/8/8/8/5R2 w - - 0 1
+Endgame 194: white to move
+Preventing the Checking Dista: 1.Kd7 1... Rb7+ 2.Kd8 2... Rb8+ 3.Kc7 3... Ra8 4.Ra1 4... Re8 5.Kd7 5... Kf7 6.Rf1+ 6... Kg7 7.Kxe8
+
+5r2/R7/8/8/8/8/4p1K1/4k3 w - - 0 1
+Endgame 195: white to move
+Flank Attack 1: 1.Ra1+ 1... Kd2 2.Ra2+ 2... Kd3 3.Ra3+ 3... Kd4 4.Ra4+ 4... Kc3 5.Ra3+ 5... Kb2 6.Re3
+
+r3K1k1/4P3/8/8/8/8/8/5R2 w - - 0 1
+Endgame 196: white to move
+Bad King's Position: 1.Kd7 1... Ra7+ 2.Kd6 2... Ra6+ 3.Kc5 3... Ra8 4.Kc6 4... Kg7 5.Ra1 5... Rb8 6.Kc7 6... Re8 7.Kd7 7... Kf7 8.Rf1+ 8... Kg7 9.Kxe8
+
+8/8/1R6/8/8/6pk/r7/6K1 w - - 0 1
+Endgame 197: white to move
+Passive Defense Draws 1: 1.Rb1 1... Rg2+ 2.Kh1 2... Rh2+ 3.Kg1 3... Ra2 4.Rc1
+
+k5r1/1R6/1KP5/8/8/8/8/8 w - - 0 1
+Endgame 198: white to move
+Passive Defense Loses 1: 1.Ra7+ 1... Kb8 2.c7+ 2... Kc8 3.Ra8+ 3... Kd7 4.Rxg8
+
+8/8/8/8/8/3pk2r/2R5/4K3 w - - 0 1
+Endgame 199: white to move
+Stalemate Trick ???: 1.Re2+ 1... Kd4 2.Re8 2... Re3+ 3.Rxe3 3... Kxe3
+
+5r2/4k3/6P1/8/6K1/8/8/5R2 w - - 0 1
+Endgame 200: white to move
+Maintaining the Barrier: 1.Rf5 1... Rf6 2.Kg5 2... Ra6 3.g7 3... Ra1 4.Kg6 4... Rg1+ 5.Kh7 5... Rh1+ 6.Kg8 6... Rh2 7.Rf4
+
+4R3/8/8/8/8/4p3/4k1K1/4r3 w - - 0 1
+Endgame 201: white to move
+Flank Attack 2: 1.Ra8 1... Rd1 2.Ra2+ 2... Rd2 3.Ra1 3... Rd1 4.Ra2+ 4... Kd3 5.Ra3+ 5... Ke4 6.Ra4+ 6... Rd4 7.Ra1 7... Kd3 8.Kf1
+
+3R4/3K1k2/3P4/8/8/8/8/r7 w - - 0 1
+Endgame 202: white to move
+The Short-Side Problem: 1.Rc8 1... Ra7+ 2.Kc6 2... Ra6+ 3.Kc7 3... Ra7+ 4.Kb6 4... Rd7 5.Kc6 5... Ra7 6.Rc7+ 6... Rxc7+ 7.dxc7
+
+R7/6k1/P7/2K5/8/8/8/r7 w - - 0 1
+Endgame 203: white to move
+Pawn Shelter: 1.Kb6 1... Rb1+ 2.Ka7 2... Kf7 3.Rb8 3... Ra1 4.Kb7 4... Rb1+ 5.Ka8 5... Ra1 6.a7 6... Ke7 7.Kb7 7... Rb1+ 8.Kc6
+
+7R/8/2k5/8/8/7p/1K6/7r w - - 0 1
+Endgame 204: white to move
+Flank Attack: 1.Rc8+ 1... Kd5 2.Rc3 2... Kd4 3.Rf3 3... Ke4 4.Rg3 4... Kf4 5.Rc3 5... Kg4 6.Rc4+ 6... Kg3 7.Rc3+ 7... Kh2 8.Rc2+ 8... Kg1 9.Rc1+ 9... Kg2 10.Rc2+ 10... Kf3 11.Rc3+ 11... Ke4 12.Rc4+ 12... Kd5 13.Rc3
+
+8/8/8/8/3R1pk1/8/r7/5K2 w - - 0 1
+Endgame 205: white to move
+Philidor's Draw: 1.Rd3 1... Rb2 2.Ra3 2... f3 3.Ra8 3... Kg3 4.Rg8+ 4... Kf4 5.Rf8+ 5... Ke4 6.Re8+ 6... Kd4 7.Rf8
+
+6R1/8/8/8/6pk/r7/8/6K1 w - - 0 1
+Endgame 206: white to move
+Passive Defense Draws 2: 1.Rb8 1... Kg3 2.Rb1 2... Kh3 3.Rc1 3... g3 4.Rb1 4... Ra2 5.Rc1 5... Rg2+ 6.Kh1 6... Rh2+ 7.Kg1
+
+2k3r1/8/7R/1KP5/8/8/8/8 w - - 0 1
+Endgame 207: white to move
+Passive Defense Loses 2: 1.Kb6 1... Kb8 2.c6 2... Rf8 3.Rh7 3... Re8 4.Rb7+ 4... Kc8 5.Ra7 5... Kb8 6.c7+ 6... Kc8 7.Ra8+ 7... Kd7 8.Rxe8 8... Kxe8 9.Kb7 9... Kd7 10.c8=Q+
+
+1k6/7R/8/KP6/8/8/8/1r6 w - - 0 1
+Endgame 208: white to move
+Driving off the Promotion Squ: 1.Kb6 1... Kc8 2.Rh8+ 2... Kd7 3.Rb8 3... Rb2 4.Ka7 4... Kc7 5.b6+ 5... Kc6 6.Rc8+ 6... Kb5 7.b7 7... Ra2+ 8.Kb8 8... Kb6 9.Rc1 9... Rh2 10.Rb1+ 10... Kc6 11.Ra1 11... Rb2 12.Ka8 12... Rxb7 13.Rc1+ 13... Kb6 14.Rb1+ 14... Kc6 15.Rxb7
+
+5R2/8/8/8/5p2/5k2/r7/5K2 w - - 0 1
+Endgame 209: white to move
+King to the Short Side: 1.Kg1 1... Ra1+ 2.Kh2 2... Rf1 3.Ra8 3... Re1 4.Rf8
+
+1r6/8/3k4/1P6/1K6/8/8/2R5 w - - 0 1
+Endgame 210: white to move
+Cut-Off - No Checking Distanc: 1.Ka5 1... Ra8+ 2.Kb6 2... Rb8+ 3.Ka6 3... Ra8+ 4.Kb7 4... Ra2 5.b6 5... Rb2 6.Ka7 6... Ra2+ 7.Kb8 7... Kd7 8.b7 8... Ra3 9.Rd1+ 9... Ke7 10.Rd4 10... Ra1 11.Kc7 11... Rc1+ 12.Kb6 12... Rb1+ 13.Kc6 13... Ke6 14.Re4+ 14... Kf6 15.Re8 15... Rc1+ 16.Kd5 16... Rd1+ 17.Kc4 17... Rc1+ 18.Kd3 18... Rd1+ 19.Kc2
+
+4r3/8/8/5k2/5p2/8/3K4/5R2 w - - 0 1
+Endgame 211: white to move
+Breaking the Barrier: 1.Re1 1... Ra8 2.Ke2 2... Ra2+ 3.Kf3 3... Ra3+ 4.Kf2 4... Kg4 5.Rg1+ 5... Kf5 6.Rg8
+
+2r5/8/5k2/8/2P5/2K5/8/3R4 w - - 0 1
+Endgame 212: white to move
+Two File Cut-Off: 1.Re1 1... Kf5 2.Kb4 2... Rb8+ 3.Ka5 3... Rc8 4.Kb5 4... Rb8+ 5.Ka6 5... Rc8 6.Rc1 6... Ke6 7.Kb7 7... Rc5 8.Kb6 8... Rc8 9.c5 9... Kd7 10.c6+ 10... Kd6 11.Rd1+ 11... Ke7 12.Kb7 12... Rh8 13.c7
+
+8/8/8/6k1/1p6/7R/2K4p/7r w - - 0 1
+Endgame 213: white to move
+Active Defense: 1.Kb2 1... b3 2.Rh8 2... Kg4 3.Rh7 3... Kg3 4.Rg7+ 4... Kf2 5.Rh7
+
+R7/P5k1/r7/5P2/8/8/1K6/8 w - - 0 1
+Endgame 214: white to move
+Skewer: 1.f6+ 1... Kf7 2.Rh8 2... Rxa7 3.Rh7+ 3... Kxf6 4.Rxa7
+
+1k4r1/8/KPR5/1P6/8/8/8/8 w - - 0 1
+Endgame 215: white to move
+Exchanging Down: 1.b7 1... Rh8 2.Rc8+ 2... Rxc8 3.bxc8=Q+ 3... Kxc8 4.Ka7
+
+K7/2P4R/8/k7/8/8/2r4p/8 w - - 0 1
+Endgame 216: white to move
+Lasker's Pin: 1.Kb7 1... Rb2+ 2.Ka7 2... Rc2 3.Rh5+ 3... Ka4 4.Kb7 4... Rb2+ 5.Ka6 5... Rc2 6.Rh4+ 6... Ka3 7.Kb6 7... Rb2+ 8.Ka5 8... Rc2 9.Rh3+ 9... Ka2 10.Rxh2 10... Rxh2 11.c8=Q
+
+8/1B6/8/8/5K2/8/7p/5bk1 w - - 0 1
+Endgame 217: white to move
+Stop the Block: 1.Kg3 1... Ba6 2.Bd5
+
+1K6/2P5/b2k4/5B2/8/8/8/8 w - - 0 1
+Endgame 218: white to move
+Deflecting Sacrifice: 1.Bd3 1... Bxd3 2.c8=Q
+
+2K5/bP6/2k5/8/8/6B1/8/8 w - - 0 1
+Endgame 219: white to move
+Deflection: 1.Bf2 1... Bxf2 2.b8=Q
+
+K7/BP6/2k5/8/8/8/7b/8 w - - 0 1
+Endgame 220: white to move
+Push-Off 1: 1.Bb8 1... Bg1 2.Bg3
+
+1K6/1bPB4/1k6/8/8/8/8/8 w - - 0 1
+Endgame 221: white to move
+Zugzwang 1: 1.Bb5 1... Kxb5 2.Kxb7
+
+2KB4/1P6/2k5/8/8/8/7b/8 w - - 0 1
+Endgame 222: white to move
+Centurini: 1.Bh4 1... Kb6 2.Bf2+ 2... Ka6 3.Bc5 3... Bg3 4.Be7 4... Kb6 5.Bd8+ 5... Kc6 6.Bh4 6... Bh2 7.Bf2 7... Kb5 8.Ba7 8... Ka6 9.Bb8 9... Bg1 10.Bg3 10... Ba7 11.Bf2 11... Bxf2 12.b8=Q
+
+1B6/1K6/P7/1k6/8/4b3/8/8 w - - 0 1
+Endgame 223: white to move
+Push-Off 2: 1.Ba7 1... Bf4 2.Bf2 2... Bb8 3.Bg3 3... Bxg3 4.a7
+
+8/4K3/8/3b4/1p6/2k5/8/3B4 w - - 0 1
+Endgame 224: white to move
+Rear Defense: 1.Kd6 1... Bb3 2.Bg4 2... Kb2 3.Kc5 3... Ka3 4.Kb6 4... Bf7 5.Bd1 5... Be8 6.Ka5 6... Bf7 7.Bc2 7... Bb3 8.Bf5 8... Ba4 9.Be6 9... Bc2 10.Bf7 10... Bb1 11.Be6 11... Ba2 12.Bxa2 12... Kxa2 13.Kxb4
+
+2b5/8/1K6/PB6/1k6/8/8/8 w - - 0 1
+Endgame 225: white to move
+Zugzwang 2: 1.Bc6 1... Kc4 2.Bb7 2... Bg4 3.a6
+
+8/8/5b2/3kp3/3p4/5K2/8/5B2 w - - 0 1
+Endgame 226: white to move
+Bishops of Opposite Colors: 1.Bd3
+
+8/8/8/3k4/4b3/pp6/3B4/2K5 w - - 0 1
+Endgame 227: white to move
+Stopping the Advance: 1.Bc3 1... b2+ 2.Bxb2 2... axb2+ 3.Kxb2
+
+2k5/8/1PPb4/1K6/8/8/2B5/8 w - - 0 1
+Endgame 228: white to move
+Outflanking: 1.Bf5+ 1... Kb8 2.Kc4 2... Bg3 3.Kd5 3... Bf4 4.Ke6 4... Kc8 5.Ke7+ 5... Kb8 6.Kd7 6... Bg3 7.c7+
+
+8/1NKPkn2/8/8/8/8/8/8 w - - 0 1
+Endgame 229: white to move
+Deflection: 1.Nd6 1... Nxd6 2.d8=Q+
+
+8/8/8/8/2n5/8/2kpK1N1/8 w - - 0 1
+Endgame 230: white to move
+Reduction: 1.Ne1+ 1... Kc1 2.Nd3+ 2... Kc2 3.Ne1+ 3... Kc3 4.Nf3 4... Kc2 5.Nxd2
+
+B2n4/2KPk3/8/8/8/8/8/8 w - - 0 1
+Endgame 231: white to move
+Corralling 1: 1.Bd5 1... Nf7 2.Bxf7 2... Kxf7 3.d8=Q
+
+7k/5Bn1/6P1/8/8/6K1/8/8 w - - 0 1
+Endgame 232: white to move
+Encirclement: 1.Kg4 1... Ne6 2.Bxe6 2... Kg7 3.Kg5 3... Kh8 4.Bd7 4... Kg7 5.Kf5 5... Kg8 6.Kf6 6... Kh8 7.g7+ 7... Kh7 8.Be6 8... Kh6 9.g8=Q 9... Kh5 10.Qh8#
+
+5n2/4K3/3P4/2k5/8/5B2/8/8 w - - 0 1
+Endgame 233: white to move
+Zugzwang 3: 1.Be4 1... Kd4 2.Kxf8 2... Kxe4 3.d7
+
+8/8/8/2b5/8/1kpK4/6N1/8 w - - 0 1
+Endgame 234: white to move
+Blockade: 1.Ne1 1... Bf2 2.Nc2 2... Bb6 3.Ne1 3... Bc5 4.Nc2 4... Bf2 5.Na3
+
+6K1/8/8/n7/8/8/BP6/4k3 w - - 0 1
+Endgame 235: white to move
+Corralling 2: 1.Bd5 1... Kd2 2.b4 2... Nb7 3.Bxb7 3... Kc3 4.b5 4... Kb4 5.Ba6 5... Kc5 6.Kf7 6... Kb6 7.Ke7 7... Kc7 8.Ke8 8... Kb8 9.Kd8 9... Ka8 10.Kc7 10... Ka7 11.Bc8 11... Ka8 12.Bb7+ 12... Ka7 13.b6#
+
+8/8/8/8/n2B4/8/p7/1k1K4 w - - 0 1
+Endgame 236: white to move
+Corner Retreat: 1.Ba1 1... Nb2+ 2.Kd2 2... Nc4+ 3.Kd1 3... Kxa1 4.Kc2 4... Ne3+ 5.Kc1 5... Nd1 6.Kc2 6... Nc3 7.Kc1 7... Ne2+ 8.Kc2 8... Nd4+ 9.Kc1 9... Nb3+ 10.Kc2 10... Nd2 11.Kc1
+
+8/1K1P4/8/b7/3N4/3k4/8/8 w - - 0 1
+Endgame 237: white to move
+Driving Off: 1.Nc6
+
+2N5/8/P7/1K1k4/3b4/8/8/8 w - - 0 1
+Endgame 238: white to move
+Block Out: 1.Nb6+ 1... Bxb6 2.Kxb6 2... Kd6 3.a7
+
+8/8/8/2PK4/4N3/8/7b/7k w - - 0 1
+Endgame 239: white to move
+Convoy: 1.Nd6 1... Bg1 2.c6 2... Bb6 3.Ke6 3... Bc7 4.Kd7 4... Bb8 5.Ne8 5... Kg2 6.Nc7 6... Ba7 7.Na6 7... Bb6 8.Nc5 8... Kf3 9.Na4 9... Ba5 10.Nb2 10... Ke4 11.Nc4
+

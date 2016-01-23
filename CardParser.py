@@ -51,7 +51,7 @@ def parseCards(fileNames):
             if re.match(Common.regexFen, line):
                 currFen = line
             elif re.match(Common.regexFenLazy, line):
-                currFen = line + 'w KQkq - 0 1'
+                currFen = line + ' w KQkq - 0 1'
             else:
                 raise Exception("expected FEN string, got: -%s-" % line)
 
