@@ -5,30 +5,25 @@
 #
 # used sqlitebrowser to export a .csv file (puzzles.csv)
 #
-# used this to make a .pgn
+# used this to make a .cards
 
-fp = open("puzzles.csv", 'r')
-lines = fp.readlines()
-fp.close()
+import os
+import sys
 
 import re
 
-template = ''
-template += '[Event "%s"]\n'
-template += '[Site "s"]\n'
-template += '[Date "1-1-2000"]\n'
-template += '[Round "r"]\n'
-template += '[White "%s"]\n'
-template += '[Black "%s"]\n'
-template += '[FEN "%s"]\n'
-template += '[Result "%s"]\n'
-template += '\n'
-template += '%s\n'
-template += '\n'
+if len(sys.argv) < 3:
+    raise Exception("provide in file and out file")
+
+(inFile, outFile) = sys.argv[1:3]
+
+fp = open(inFile, 'r')
+lines = fp.readlines()
+fp.close()
 
 game_num = 1
         
-fp = open('puzzles.pgn', 'w')
+fp = open(outFile, 'w')
 
 # get descriptions
 descr_i = []
@@ -65,17 +60,12 @@ for (line_num, line) in enumerate(lines):
                     descr = descr_text[i]
                     break;
 
-        result = solution.split()[-1]
+        # out to file
+        fp.write("%s\n" % fen);
+        fp.write("puzzle %d: %s\n" % (game_num, descr));
+        fp.write("%s\n"% solution)
+        fp.write("\n")
 
-        # store the puzzle information in the player names 'cause often they appear
-        # first in the games list (eg: my current version of SCID)
-        white_text = "Puzzle %04d" % game_num
-        black_text = descr
-        event_text = white_text + ': ' + black_text 
-        
-        print "%s fen:%s" % (event_text, fen)
-
-        fp.write(template % (event_text, white_text, black_text, fen, result, solution))
         game_num += 1
      
 fp.close()
