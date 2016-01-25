@@ -25,8 +25,9 @@ initCrazyFEN = 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR/ w KQkq - 0 1'
 initBugFEN = initCrazyFEN + ' | ' + initCrazyFEN
 
 t = r'[rnbqkpRNBQKP12345678]{1,8}'
-regexFenLazy = r'^'+t+'/'+t+'/'+t+'/'+t+'/'+t+'/'+t+'/'+t+'/'+t+'$'
-regexFen = regexFenLazy[:-1] + r' [wb] (?:(?:K?Q?k?q?)|-) (?:(?:[a-h][1-8])|-) \d+ \d+$'
+regexFenQuick = r'^'+t+'/'+t+'/'+t+'/'+t+'/'+t+'/'+t+'/'+t+'/'+t+'$'
+# we allow '?' for unknown player to move
+regexFen = regexFenQuick[:-1] + r' [wb\?] (?:(?:K?Q?k?q?)|-) (?:(?:[a-h][1-8])|-) \d+ \d+$'
 
 
 # SAN - [s]tandard [a]lgebraic [n]otation
