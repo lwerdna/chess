@@ -1,0 +1,120 @@
+[Event "Event 1"]
+[Site "Site"]
+[Date "1-1-2000"]
+[Round "Round"]
+[White "white"]
+[Black "black"]
+[Result "*"]
+[FEN "8/8/8/6P1/8/5K2/1r6/k7 w - - 0 0"]
+[Question "black to move"]
+
+{ null } *
+
+[Event "Event 2"]
+[Site "Site"]
+[Date "1-1-2000"]
+[Round "Round"]
+[White "white"]
+[Black "black"]
+[Result "*"]
+[FEN "8/8/2N5/8/8/p7/8/k1K5 w - - 0 0"]
+[Question "white to move, win or draw?"]
+
+{ null } *
+
+[Event "Event 3"]
+[Site "Site"]
+[Date "1-1-2000"]
+[Round "Round"]
+[White "white"]
+[Black "black"]
+[Result "*"]
+[FEN "1k6/1P6/2K5/5p1p/5PpP/6P1/8/8 w - - 0 0"]
+[Question "white to move and win"]
+
+{ null } *
+
+[Event "Event 4"]
+[Site "Site"]
+[Date "1-1-2000"]
+[Round "Round"]
+[White "white"]
+[Black "black"]
+[Result "*"]
+[FEN "8/8/8/8/8/p2K4/k3N3/8 w - - 0 0"]
+[Question "evaluate the position, white to move"]
+
+{ null } *
+
+[Event "Event 5"]
+[Site "Site"]
+[Date "1-1-2000"]
+[Round "Round"]
+[White "white"]
+[Black "black"]
+[Result "*"]
+[FEN "8/3k4/8/3K4/3P4/8/8/8 w - - 0 0"]
+[Question "who wins?"]
+
+{ null } *
+
+[Event "Event 6"]
+[Site "Site"]
+[Date "1-1-2000"]
+[Round "Round"]
+[White "white"]
+[Black "black"]
+[Result "*"]
+[FEN "8/8/1k6/8/1K6/8/1P6/8 w - - 0 0"]
+[Question "who wins?"]
+
+{ null } *
+
+[Event "Event 7"]
+[Site "Site"]
+[Date "1-1-2000"]
+[Round "Round"]
+[White "white"]
+[Black "black"]
+[Result "*"]
+[FEN "8/8/8/2N5/3N4/k1K5/8/8 w - - 0 0"]
+[Question "can white win?"]
+
+{ null } *
+
+[Event "Event 8"]
+[Site "Site"]
+[Date "1-1-2000"]
+[Round "Round"]
+[White "white"]
+[Black "black"]
+[Result "*"]
+[FEN "8/8/k7/5p2/PK3P2/8/8/8 w - - 0 0"]
+[Question "black to move, who wins?"]
+
+{ null } *
+
+[Event "Event 9"]
+[Site "Site"]
+[Date "1-1-2000"]
+[Round "Round"]
+[White "white"]
+[Black "black"]
+[Result "*"]
+[FEN "8/8/5pk1/5r2/R7/5K2/8/8 w - - 0 0"]
+[Question "after 1.Rf4, what is better for black? 1..Rxf4 or 1..Kg5"]
+
+{ null } *
+
+[Event "Event 10"]
+[Site "Site"]
+[Date "1-1-2000"]
+[Round "Round"]
+[White "white"]
+[Black "black"]
+[Result "*"]
+[FEN "8/8/8/p7/6p1/2N4k/5p1P/6K1 w - - 0 0"]
+[Question "white's in check, is he lost?"]
+
+{ null } *
+
