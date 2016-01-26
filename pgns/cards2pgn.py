@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-# reads "cards" format of chess position file(s) which is:
+# converts the "cards" format of chess position file which is:
 #
 # <fen>
 # [<question>]
@@ -19,10 +19,16 @@ import sys
 
 import re
 
-import Common
+sys.path.append('..')
 
-def parseCards(fileNames):
+import Common
+import PgnTokenizer
+
+def parseCards(fileName):
     cards = []
+
+    # setup
+    regexFenQuick = Common.regexFenPosition[:-1] + r' [wb]'
 
     # state machine variables
     state = 'WAIT'
@@ -30,10 +36,9 @@ def parseCards(fileNames):
     
     # collect lines from all files
     lines = []
-    for fName in fileNames:
-        fobj = open(fName, 'r')
-        lines += fobj.readlines()
-        fobj.close()
+    fobj = open(fileName, 'r')
+    lines += fobj.readlines()
+    fobj.close()
 
     lines = map(lambda x: x.strip(), lines)
 
@@ -50,8 +55,8 @@ def parseCards(fileNames):
             # must be FEN
             if re.match(Common.regexFen, line):
                 currFen = line
-            elif re.match(Common.regexFenQuick, line):
-                currFen = line + ' ? KQkq - 0 1'
+            elif re.match(regexFenQuick, line):
+                currFen = line + ' KQkq - 0 1'
             else:
                 raise Exception("expected FEN string, got: -%s-" % line)
 
@@ -86,15 +91,87 @@ def parseCards(fileNames):
 
     return cards
 
-if __name__ == '__main__':
-    fNames = sys.argv[1:]
+def isValidMoveText(text):
+    ok = 1
 
-    cards = parseCards(fNames)
+    try:
+        tokens = PgnTokenizer.tokenize(text)
+       
+        for token in tokens:
+            # 1) comments
+            if re.match('^{(.*)}$', token):
+                pass
+            # 2) move numbers
+            elif re.match(r'(\d+)\.', token):
+                pass
+            # 3) normal move (SAN)
+            elif re.match(Common.regexSanChess, token):
+                pass
+            # 4) nope
+            else:
+                ok = 0
+                break
+    except:
+        pass
+
+    return ok
+
+if __name__ == '__main__':
+    if len(sys.argv) < 3:
+        raise Exception("missing <infile> <outfile> params")
+
+    (inFile, outFile) = sys.argv[1:]
+
+
+    cards = parseCards(inFile)
+
+    fObj = open(outFile, 'w')
 
     for (i,card) in enumerate(cards):
-        print 'card %d:' % i
-        print "FEN: %s" % card['fen']
-        print "  Q: %s" % card['question']
-        print "  A: %s" % card['answer']
-        print ''
+        (fen, question, answer) = (card['fen'], card['question'], card['answer'])
 
+        # detect result (Result tag must match end of movetext)
+
+        result = '*'
+        moveText = ''
+        if not answer or re.match(r'^\s*$', answer):
+            moveText = '{ null } *'
+        elif isValidMoveText(answer):
+            append = True
+
+            try:
+                ansToks = PgnTokenizer.tokenize(answer)
+                if ansTokes and re.match(Common.regexResults, ansToks[-1]):
+                    result = ansToks[-1]
+                    append = False
+            except:
+                pass
+                
+            if append:
+                moveText = '%s %s' % (answer, result)
+            else:
+                moveText = answer
+        else:
+            moveText = '{ %s } *' % answer
+
+        pgnEntry = ''
+        # mandatory tags (seven tag roster)
+        pgnEntry += '[Event "Event %d"]\n' % (i+1)
+        pgnEntry += '[Site "Site"]\n'
+        pgnEntry += '[Date "1-1-2000"]\n'
+        pgnEntry += '[Round "Round"]\n'
+        pgnEntry += '[White "white"]\n'
+        pgnEntry += '[Black "black"]\n'
+        pgnEntry += '[Result "%s"]\n' % result
+        # initial board position tag
+        pgnEntry += '[FEN "%s"]\n' % fen
+        # our custom tag
+        pgnEntry += '[Question "%s"]\n' % question
+        pgnEntry += '\n'
+        # movetext section
+        pgnEntry += '%s\n\n' % moveText
+
+        fObj.write(pgnEntry)
+
+    fObj.close()
+        

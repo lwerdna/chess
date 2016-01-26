@@ -1,0 +1,40 @@
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+
+1.d4 Nf6 2.Bg5 e6 
+    {rock-solid positional choice}
+3.e4 
+    ( 3.Nd2 {next chapter, looking for e2-e4 without yielding bishop pair}
+    3...h6 )
+3...h6 
+    ( 3...c5 4.d5 {keeps control d5} 
+        ( 4.e5 h6 {worse for white} 5.Bh4 g5 6.exf6 gxh4 {ugly, and black 
+        picks up f6} )
+    4...Qb6 
+        ( 4...exd5 5.e5 h6 {won't work, e file open, pawn on f6} 
+            ( 5...Qe7 6.Qe2 h6 7.Bf4 )
+        6.exf6 hxg5 7.Qe2+ )
+        ( 4...d6 {most solid for black} )
+    5.Nc3 Qxb2 6.Bd2 Qb6 
+        ( 6...exd5 7.Rb1 Qa3 8.Rb3 Qa5 9.e5 Ng8 10.Nxd5 )
+        ( 6...Nxe4 {behind devel} 7.Nxe4 )
+    7.f4 d6 {a setup discussed later} )
+    ( 3...Be7 {passive play by black} 4.Nd2 {transposing to other Nd2 
+    coverage} 
+        ( 4.e5 Nd5 5.Bxe7 Qxe7 6.c4 Nb6 7.Nc3 d6 8.Nf3 Nc6 9.exd6 
+            ( 9.Bd3 )
+        9...cxd6 10.Bd3 {with plans O-O and Re1} )
+    )
+4.Bxf6 
+    ( 4.Bh4 {NO!} 4...g5 5.Bg3 Nxe4 )
+4...Qxf6 5.c3 
+    {plans Bd3,Ne2,O-O,f4}
+    ( 5.Nc3 )
+    ( 5.Nf3 )
+*
+

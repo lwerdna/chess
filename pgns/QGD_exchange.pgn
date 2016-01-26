@@ -1,0 +1,78 @@
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+
+
+	   1.	d4    	d5    
+	   2.	c4    	e6    
+	   3.	Nc3   	Be7   
+	   4.	Nf3   	Nf6   
+	   5.	Bg5   	
+
+    ( 5.cxd5 {Bobotsov-Petrosian
+    } 5...exd5 )
+
+	   5.	...        	O-O   
+	   6.	e3    	Nbd7  
+
+    ( 6...h6 {counter Rubenstein attack by kicking bishop before Qc2} )
+
+	   7.	cxd5  
+    {exchange variation}
+	
+
+    ( 7.Qc2 {Rubinstein attack - white prepares to castle long, hoping to have his hands free kingside} 7...h6 8.h4 {notice R and Q attack h7} 
+        ( 8.Bh4 {see Lasker-Capablanca} )
+        ( 8.Bf4 c5 {black opens position} 9.cxd5 
+            ( 9.Nb5 cxd4 10.Nc7 Bb4+ 11.Ke2 e5 {black is winning} )
+        9...cxd4 {black plans Nxd5} )
+    8...c5 9.O-O-O Qa5 10.g4 dxc4 11.Bxc4 Nb6 12.Be2 Bd7 13.Bxf6 gxf6 
+        ( 13...Bxf6 {then white cracks the castle with g5} )
+    14.g5 cxd4 {black has counterplay says Pachman} )
+
+	   7.	...        	exd5  
+	   8.	Qc2   	c6    
+	   9.	Bd3   
+    {basic exchange variation position, white stops Ne4 freeing move}
+	   9.	...        	Re8   
+    {preparing Ne4}
+
+	  10.	O-O   	
+
+    ( 10.O-O-O {attempt attack on K-wing (unrealistic, black has not weakened his king position, N on f8 is strong} 10...Nf8 11.Ne5 Ng4 {black plans to simplify, meet further kingside attacks with ...Be6, ...Rc8, ...c5} )
+
+	  10.	...        	Nf8   
+	  11.	Rab1  
+    {begin minority attack}
+	
+
+    ( 11.Rae1 {try prevent Ne4} 11...Ne4 {freeing move attempt} 
+        ( 11...Nh5 {another freeing maneuver} 12.Bxe7 Qxe7 )
+    12.Bxe7 Qxe7 {white plans Nd2 and f3 to counter} )
+    ( 11.h3 Ne4 )
+    ( 11.Bxf6 {distract bishop to play b4 quickly} 11...Bxf6 12.b4 Be7 13.b5 c5 
+        ( 13...cxb5 {disaster! Bxb5 wins the d5 pawn} )
+    14.dxc5 {text says black ok, isolated pawn not weak, stockfish gives +1} )
+
+	  11.	...        	a5    
+    {to stop white's minority attack: b2-b4-b5 forcing black to either take on b5 (weakening d5) or allow an exchange on c6, creating a backward pawn}
+
+	  12.	a3    
+    {to prepare b4}
+	  12.	...        	Ne4   
+	  13.	Bxe7  	Qxe7  
+	  14.	Bxe4  	
+
+    ( 14.b4 Bf5 {an interesting counter to b4, text says this causes no problem to black} )
+
+	  14.	...        	dxe4  
+	  15.	Nd2   	f5    
+    {black is ok, bishop has home on e6}
+
+
+*
+

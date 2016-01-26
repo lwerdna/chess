@@ -1,0 +1,45 @@
+[Event "?"]
+            [Site "?"]
+            [Date "????.??.??"]
+            [Round "?"]
+            [White "?"]
+            [Black "?"]
+            [Result "*"]
+            
+            
+            	   1.	e4    	c6    
+            	   2.	d4    	d5    
+            	   3.	e5    	Bf5   
+            	   4.	Nf3   	e6    
+            	   5.	Be2   
+                {black must be clever about how to develop king's N and B}
+            	   5.	...        	c5    
+                {goal: break pawn center, provide c6 for N}
+            
+            
+                ( 5...Nd7 {preparing c5} )
+            
+            	   6.	Be3   	
+            
+                ( 6.c3 {pawn structure resembles French, likely equality for black} 6...Nc6 7.O-O {how black bring out kingside pieces?} 7...cxd4 
+                    ( 7...Nge7 {no! c5 hanging} )
+                8.cxd4 Nge7 9.Nc3 Nc8 10.Be3 Be7 11.Rc1 O-O {black in good shape, planning Nb6, Rc8, Qd7} )
+            
+            	   6.	...        	cxd4  
+            	   7.	Nxd4  	Ne7   
+            
+                ( 7...Bg6 {mistake} 8.O-O Ne7 9.c4 Nbc6 10.Nc3 {favorable to white} 10...Nxe5 11.cxd5 exd5 
+                    ( 11...Nxd5 12.Nxd5 exd5 
+                        ( 12...Qxd5 13.Qa4+ Nc6 14.Bf3 )
+                    13.f4 )
+                12.f4 Nc4 13.Bxc4 dxc4 14.f5 )
+            
+            	   8.	c4    	
+            
+                ( 8.Nxf5 Nxf5 {not good for white: black is comfortable} )
+                ( 8.Nd2 Nbc6 9.N2f3 {hold e5} )
+            
+            
+            *
+            
+            

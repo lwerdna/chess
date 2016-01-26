@@ -1,0 +1,89 @@
+[Event "Moscow 1956"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "I.Boleslavsky"]
+[Black "G.Lissitzin"]
+[Result "1-0"]
+[FEN "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"]
+
+
+	   1.	e4    	c5    
+	   2.	Nf3   	d6    
+	   3.	d4    	cxd4  
+	   4.	Nxd4  	Nf6   
+	   5.	Nc3   	g6    
+	   6.	Be3   	Bg7   
+
+    ( 6...Ng4 )
+
+	   7.	f3    
+    {A quiet move, preparing an eventual pawn storm.}
+	   7.	...        	O-O   
+	   8.	Qd2   	Nc6   
+	   9.	O-O-O 	Nxd4  
+
+    ( 9...d5 10.Nxc6 bxc6 11.exd5 cxd5 12.Nxd5 Nxd5 13.Qxd5 Qc7 
+        ( 13...Qxd5 14.Rxd5 )
+    14.Qxa8 Bf5 15.Qxf8+ Kxf8 16.Rd2 )
+
+	  10.	Bxd4  	Qa5   
+	  11.	Kb1   
+    {Threatening 12 Nd5 Qd8 13 Nxf6+ winning a pawn.}
+	  11.	...        	e5    
+	  12.	Be3   	Be6   
+	  13.	a3    	Rfd8  
+	  14.	Nb5   
+    {Interfering with black's ...d5 plans. Now if 14...Qxd2 15 Rxd2 gives white the advantage.}
+	  14.	...        	Qa4   
+    {Now if 15 Nxd6 Ne8 16 Bc5 Bxd6 17 Bxd6 Bf8 18 Qb4 Rxd6! 19 Rxd6 Qxb4 20 axb4 Bxd6 and black has won a piece.}
+
+
+    ( 14...Qxd2 15.Rxd2 d5 16.Nc7 Rac8 17.Nxe6 fxe6 )
+
+	  15.	c4!   
+    {A brilliant pawn sacrifice, which prepares for the knight to come in at d5.}
+	
+
+    ( 15.Nxd6 Ne8 16.Bc5 Nxd6 17.Bxd6 Bf8 18.Qb4 Rxd6 
+        ( 18...Qxb4 19.axb4 Bxd6 )
+    19.Rxd6 Qxb4 20.axb4 Bxd6 )
+    ( 15.Nc7 )
+
+	  15.	...        	Bxc4  
+	  16.	Nc3   	Qb3   
+	  17.	Bxc4  	Qxc4  
+	  18.	Bg5!  
+    {Now white gets rid of the othe defender of d5,}
+	  18.	...        	Qe6   
+	  19.	Bxf6  	Qxf6  
+	  20.	Nd5   
+    {The knight now occupies d5, and the pawn storm is next.}
+	  20.	...        	Qh4   
+	  21.	Qe2   	Bf8   
+	  22.	Qf1!  
+    {A clever move. If at once 22 g3, then 22...Qh3 stops the pawns.}
+	  22.	...        	Rac8  
+	  23.	g3    	Qg5   
+	  24.	h4    	Qh6   
+    {Or 24...Qxg3 25 Rd2 and black cannot prevent 26 Rg2, winning the queen.}
+
+
+    ( 24...Qxg3 )
+
+	  25.	g4    
+    {Threatening 26 g5 Qg7 27 Nf6+ Kh8 28 h5 gxh5 29 Rxh5 and wins.}
+	  25.	...        	g5    
+	  26.	hxg5  	Qxg5  
+	  27.	Rh5   	Qg6   
+	  28.	g5!   
+    {Threatening 29 Nf6+ and 30 Rxh7+. Black cannot play 28...Qxh5 due to 29 Nf6+ winning the queen.}
+	  28.	...        	h6    
+	  29.	Rxh6! 	Qxg5  
+    {Or 29...Bxh6 30 Ne7+.}
+
+	  30.	Rh5!  
+    {Black resigns, as 30...Qg6 31 Qh1 Qe6 32 Rh8+ Kg7 33 Qh7# could follow.}
+
+1-0
+

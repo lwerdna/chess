@@ -1,0 +1,78 @@
+[Event "?"]
+            [Site "?"]
+            [Date "????.??.??"]
+            [Round "?"]
+            [White "?"]
+            [Black "?"]
+            [Result "*"]
+            
+            
+            	   1.	e4    	c6    
+            	   2.	d4    	
+            
+                ( 2.c4 d5 3.exd5 cxd5 4.d4 {transposed into Panov-Botvinnik} 
+                    ( 4.cxd5 Nf6 )
+                )
+                ( 2.Nc3 {Dunst attack} 2...d5 {can transpose to Steinitz, Caro-Kann, or Two-Knights} 
+                    ( 2...g6 )
+                3.Qf3 {cool variant, "early queen sortie"; Graham Burgess gives blessing} 3...d4 4.Bc4 e6 5.Nce2 c5 )
+                ( 2.Nf3 d5 3.Nc3 {two knights variation; white wants to develop rapidly, retain options for d-pawn} 3...Bg4 
+                    ( 3...dxe4 4.Nxe4 Bf5 5.Ng3 Bg6 {bad, Bg4 preferred} )
+                4.h3 Bxf3 
+                    ( 4...Bh5 {complex line where bishop could be trapped} )
+                5.Qxf3 Nf6 
+                    ( 5...e6 )
+                )
+                ( 2.Bc4 {hillbilly attack} 2...d5 3.exd5 cxd5 4.Bb5+ Bd7 )
+            
+            	   2.	...        	d5    
+            	   3.	Nc3   	
+            
+                ( 3.e5 {advance variation} 3...Bf5 
+                    ( 3...c5 {Arkell/Khenkin variation - black lacks the tempo normally spent on ...e6 (french), but white can only exploit this by the weakning of his bind with dxc5 and black has good chances of regaining the pawn} )
+                4.Bd3 
+                    ( 4.Nc3 e6 5.g4 {bayonet attack} )
+                    ( 4.Nf3 e6 5.Be2 {black faces problems developing the king's B and N} 5...c5 {sometimes prepped by Nbd2} 6.Be3 {popularized by Nigel Short in 1990's} )
+                4...Bxd3 5.Qxd3 e6 {black's play is now based on white's light-square weakness; see Nimzowitsch-Capablanca 1927} )
+                ( 3.exd5 cxd5 {exchange variation} 4.Bd3 
+                    ( 4.c4 {Panov-Botvinnik attack} 4...Nf6 5.Nc3 e6 6.Nf3 Bb4 {possible transposition into Nimzo-Indian} 
+                        ( 6...Be7 {is ok} )
+                        ( 6...Nc6 {inferior} 7.c5 {white plans on seizing e5 by bossing this N with b pawn, or Bb5 to exchange it} )
+                    )
+                4...Nc6 5.c3 Nf6 6.Bf4 Bg4 7.Qb3 {plays by Bobby Fischer, ideas are similar to QGD with colors reversed} )
+                ( 3.f3 {Fantasy/Tartakower variation} 3...e6 {preparing to exploit dark squares with ...c5} 
+                    ( 3...dxe4 4.fxe4 e5 5.Nf3 
+                        ( 5.dxe5 Qa5+ 6.Bd2 Qxe5 7.Nc3 )
+                    5...Bg4 6.Bc4 Nd7 7.O-O Ngf6 8.c3 Bd6 {preferred by Schanderff, Shankland - play is supposedly sharp and double-edged} )
+                    ( 3...e5 {twisted fantasy variation - aims to exploit white's weaknesses on the a7-g1 diagonal} )
+                )
+                ( 3.Nd2 {allows c3, stopping any fianchetto attempt from black's kingside} )
+            
+            	   3.	...        	dxe4  
+            
+                ( 3...g6 {Gurgenidze variation} )
+            
+            	   4.	Nxe4  	Bf5   
+                {classical/Capablanca variation}
+            
+            
+                ( 4...Nd7 {modern/Smyslov/Karpov variation - black tries to easy development by the early exchange of knights without compromising position - light-squared bishop development is delayed, but not forced to f5, g6, h7} 5.Ng5 
+                    ( 5.Qe2 {x-ray smother attempt} )
+                5...Ngf6 
+                    ( 5...h6 6.Ne6 Qa5+ 
+                        ( 6...fxe6 {TRAP! m-2} )
+                    7.Bd2 Qb6 )
+                6.Bd3 h6 7.N5f3 )
+                ( 4...Nf6 5.Nxf6+ gxf6 {Bronstein-Larsen variation - inferior pawn structure, nearly forced O-O-O traded for open g-file for rook, unusually active play} 
+                    ( 5...exf6 {Korchnoi variation - considered more sound than Bronstein - cedes white the superior pawn structure (d-pawn could become passed)} )
+                )
+            
+            	   5.	Ng3   	Bg6   
+            	   6.	h4    	h6    
+            	   7.	Nf3   	Nd7   
+            	   8.	h5    	Bh7   
+            	   9.	Bd3   	Bxd3  
+            	  10.	Qxd3  
+            *
+            
+            
