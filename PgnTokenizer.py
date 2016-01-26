@@ -70,9 +70,13 @@ def tokenize(code):
 
         # move number
         elif code[0].isdigit():
-            m = re.match(r'^\d+\.', code)
+            # black (digit followed by 3 periods)
+            m = re.match(r'^\d+\.\.\.', code)
             if not m:
-                raise TokenizerMalformedMoveNumberException(snippet)
+                # white (digit followed by 1 period)
+                m = re.match(r'^\d+\.', code)
+                if not m:
+                    raise TokenizerMalformedMoveNumberException(snippet)
 
         # ignore spaces
         elif re.match('\s', code[0]):

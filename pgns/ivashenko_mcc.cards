@@ -240,75 +240,75 @@ puzzle 60: Mate in 1, pawn checkmates
 
 1k1r4/ppp2p2/4p1b1/7p/N1P3n1/4P2P/PPB3Q1/1K1R4 b - - 0 1
 puzzle 61: Mate in 1
-Rxd1# 0-1
+1...Rxd1# 0-1
 
 6k1/pp3ppp/1q3n2/3Pp3/3nP3/3P4/1PB2QPP/5RKN b - - 0 1
 puzzle 62: Mate in 1
-Ne2# 0-1
+1...Ne2# 0-1
 
 r2qkb1r/5pp1/p1n1p1p1/1p1pP3/3P4/5PK1/PP4PP/R1BQ1B1R b - - 0 1
 puzzle 63: Mate in 1
-Qh4# 0-1
+1...Qh4# 0-1
 
 4k3/3bb2p/p3pr2/5pQ1/7K/1p4P1/1P5P/3R1B1R b - - 0 1
 puzzle 64: Mate in 1
-Rh6# 0-1
+1...Rh6# 0-1
 
 5rk1/2q4p/6p1/1pn1P3/2p3n1/2B1bN2/1PB1Q1PP/4RK2 b - - 0 1
 puzzle 65: Mate in 1
-Nxh2# 0-1
+1...Nxh2# 0-1
 
 5rk1/p2p2p1/1p6/2p4Q/4PP1P/P4K2/3qR1P1/7R b - - 0 1
 puzzle 66: Mate in 1
-Qxf4# 0-1
+1...Qxf4# 0-1
 
 8/1Pp2p2/2p1p3/3nP1pp/2kPK3/4BP1P/8/1R6 b - - 0 1
 puzzle 67: Mate in 1
-Nc3# 0-1
+1...Nc3# 0-1
 
 2r5/4kp2/3p1p2/3RpP2/1p2P2P/1P1K1QP1/r5B1/8 b - - 0 1
 puzzle 68: Mate in 1
-Rc3# 0-1
+1...Rc3# 0-1
 
 2k5/1pq5/p3bp2/4p2p/5P1P/1NPrn1K1/PP3RP1/2Q1B3 b - - 0 1
 puzzle 69: Mate in 1
-Nf1# 0-1
+1...Nf1# 0-1
 
 7k/p2b3p/3p4/2pP1p2/2K1PQ1P/2P5/Pr1R4/7R b - - 0 1
 puzzle 70: Mate in 1
-Bb5# 0-1
+1...Bb5# 0-1
 
 8/p2r1p1R/6P1/2pBp3/Pp2K1k1/1PbPP3/7P/8 b - - 0 1
 puzzle 71: Mate in 1
-f5# 0-1
+1...f5# 0-1
 
 rn2r2k/p4pR1/2pb1p2/1p5P/3P3P/1KPBB3/1P1QNP2/q2R4 b - - 0 1
 puzzle 72: Mate in 1
-Qa4# 0-1
+1...Qa4# 0-1
 
 4r1k1/5p2/2p3p1/2b4p/4n3/1PB3Pq/P1P1Q2P/4R2K b - - 0 1
 puzzle 73: Mate in 1
-Nxg3# 0-1
+1...Nxg3# 0-1
 
 4N1k1/4bp2/4p1p1/p7/1p1QbPP1/1P4K1/P7/7r b - - 0 1
 puzzle 74: Mate in 1
-Bh4# 0-1
+1...Bh4# 0-1
 
 6k1/5pp1/4n3/4p2p/7N/P5PK/1P4QP/5q2 b - - 0 1
 puzzle 75: Mate in 1
-Ng5# 0-1
+1...Ng5# 0-1
 
 6k1/8/8/4b1B1/1Pb3PP/2Q4K/5N2/8 b - - 0 1
 puzzle 76: Mate in 1
-Bf1# 0-1
+1...Bf1# 0-1
 
 3Q4/R5pk/1p4rp/3n4/3Bp3/6P1/5PKP/3r4 b - - 0 1
 puzzle 77: Mate in 1
-Nf4# 0-1
+1...Nf4# 0-1
 
 6k1/pp5p/2p3pQ/2K3R1/P3r3/2R5/1q6/8 b - - 0 1
 puzzle 78: Mate in 1
-Qb4# 0-1
+1...Qb4# 0-1
 
 2rnr3/pp6/3bp1pk/4Q3/3P4/q1P3R1/5PP1/4R1K1 w - - 0 1
 puzzle 79: Mate in 1
@@ -384,51 +384,51 @@ puzzle 96: Mate in 1
 
 rnbqkbnr/pppp1ppp/4p3/8/6P1/5P2/PPPPP2P/RNBQKBNR b KQkq - 0 1
 puzzle 97: Mate in 1
-Qh4# 0-1
+1...Qh4# 0-1
 
 1r3bk1/1r6/p2p1Pp1/4p1Pp/b1p1K3/P1P1B3/1P5Q/3N2RR b - - 0 1
 puzzle 98: Mate in 1
-Bc6# 0-1
+1...Bc6# 0-1
 
 b2r4/5Qpk/p3p2p/1pN5/3q4/P4n1P/1P2K1P1/2R2B2 b - - 0 1
 puzzle 99: Mate in 1
-Qd2# 0-1
+1...Qd2# 0-1
 
 r1b1kbnr/pppp1Npp/8/8/3nq3/8/PPPPBP1P/RNBQKR2 b Qkq - 0 1
 puzzle 100: Mate in 1
-Nf3# 0-1
+1...Nf3# 0-1
 
 2k5/2p5/1p6/p1p1n3/P1P4B/1R4Pp/2Q1RK2/7q b - - 0 1
 puzzle 101: Mate in 1
-Ng4# 0-1
+1...Ng4# 0-1
 
 r1b1k2r/ppp1qppp/5B2/3Pn3/8/8/PPP2PPP/RN1QKB1R b KQkq - 0 1
 puzzle 102: Mate in 1
-Nf3# 0-1
+1...Nf3# 0-1
 
 5rk1/pp1R1pp1/8/1qPQ4/1P3b2/P4P2/1B3PK1/7r b - - 0 1
 puzzle 103: Mate in 1
-Qf1# 0-1
+1...Qf1# 0-1
 
 4n1k1/4QNpp/p7/q7/8/8/4NPPP/2Rb2K1 b - - 0 1
 puzzle 104: Mate in 1
-Qe1# 0-1
+1...Qe1# 0-1
 
 6k1/1pp2p2/7p/2Q5/2PPb1p1/2P1PpP1/r6P/5R1K b - - 0 1
 puzzle 105: Mate in 1
-f2# 0-1
+1...f2# 0-1
 
 6k1/Bp4bp/2p5/7q/1PP1B3/P4nKp/R3QP2/3r4 b - - 0 1
 puzzle 106: Mate in 1
-Be5# 0-1
+1...Be5# 0-1
 
 7k/pp5p/6p1/2pQ4/3b4/3P2p1/PP3r1P/R3R2K b - - 0 1
 puzzle 107: Mate in 1
-Rxh2# 0-1
+1...Rxh2# 0-1
 
 5q2/2k5/1R6/p2Qp3/P3P1K1/2P5/8/4R2r b - - 0 1
 puzzle 108: Mate in 1
-Qf4# 0-1
+1...Qf4# 0-1
 
 3q4/pb1nb1pp/1p2kn2/2p2p2/2PP1B2/3B1N2/PP3PPP/R4RK1 w - - 0 1
 puzzle 109: Mate in 1
@@ -552,51 +552,51 @@ puzzle 138: Mate in 1
 
 k5r1/1b3pp1/p2Q4/1p2p2q/6r1/1B5P/PPP2RP1/6RK b - - 0 1
 puzzle 139: Mate in 1
-Qxh3# 0-1
+1...Qxh3# 0-1
 
 r3r1k1/pq3p2/R2Bp1p1/1pp1P3/6P1/1PP1b2b/1P3Q1N/R5K1 b - - 0 1
 puzzle 140: Mate in 1
-Qg2# 0-1
+1...Qg2# 0-1
 
 rr4k1/5ppp/2pp1b2/p4N2/2K1P3/3nQ2P/P1PRBPP1/7R b - - 0 1
 puzzle 141: Mate in 1
-Nb2# 0-1
+1...Nb2# 0-1
 
 rr4k1/2pn1pb1/2p4p/6p1/4N1P1/Bp1P3P/1P5N/KR3R2 b - - 0 1
 puzzle 142: Mate in 1
-Rxa3# 0-1
+1...Rxa3# 0-1
 
 6k1/pp2ppbp/6p1/3K4/1P6/1N3P2/P1qB1QPP/7R b - - 0 1
 puzzle 143: Mate in 1
-Qc6# 0-1
+1...Qc6# 0-1
 
 2r3k1/5pbp/3p2p1/4r3/2b1PNP1/1R3PN1/2Q4P/KR6 b - - 0 1
 puzzle 144: Mate in 1
-Ra5# 0-1
+1...Ra5# 0-1
 
 r7/1p3ppk/p7/3P2PP/3Qn3/bP6/qBP1r3/2KR3R b - - 0 1
 puzzle 145: Mate in 1
-Qa1# 0-1
+1...Qa1# 0-1
 
 7k/1bpp4/3bp1p1/p4B2/2P5/P3BrP1/1PQ2PKP/4RR2 b - - 0 1
 puzzle 146: Mate in 1
-Rxg3# 0-1
+1...Rxg3# 0-1
 
 6k1/1pp3pp/1b1p1pN1/3P3q/1P3P2/2Q2BPb/4r3/B4R1K b - - 0 1
 puzzle 147: Mate in 1
-Bg2# 0-1
+1...Bg2# 0-1
 
 7k/pp4b1/3p3p/8/2PPP3/5bB1/5pBP/7K b - - 0 1
 puzzle 148: Mate in 1
-f1=Q# 0-1
+1...f1=Q# 0-1
 
 6k1/2Q2p2/p4K1p/2P2b2/3Nq3/2b5/P7/3R3R b - - 0 1
 puzzle 149: Mate in 1
-Qe6# 0-1
+1...Qe6# 0-1
 
 rnb1kbnr/pppp1ppp/8/8/4q3/1P5P/P1PP1Kp1/R1BQ1BNR b kq - 0 1
 puzzle 150: Mate in 1
-gxh1=N# 0-1
+1...gxh1=N# 0-1
 
 1n6/4k2p/2Q3p1/5p2/8/8/7r/3K4 w - - 0 1
 puzzle 151: Gain a rook
@@ -672,27 +672,27 @@ puzzle 168: Gain a rook
 
 r3qr1k/pp4pp/1bn5/6R1/2Q1p2N/1N2P1B1/PP4PP/5RK1 b - - 0 1
 puzzle 169: Gain a rook
-Bxe3+ 2.Bf2 Bxg5 *
+1...Bxe3+ 2.Bf2 Bxg5 *
 
 3kr3/1p2qp2/3b1p1R/1p1p1P2/1P1P2p1/P1r5/R1P1NKP1/3Q4 b - - 0 1
 puzzle 170: Gain a rook
-Qe3+ 2.Kf1 Qxh6 *
+1...Qe3+ 2.Kf1 Qxh6 *
 
 2r3k1/5ppp/p1b1pn2/q7/P1B1PQ2/R1P2P2/6PP/1R4K1 b - - 0 1
 puzzle 171: Gain a rook
-Qc5+ 2.Kh1 Qxa3 *
+1...Qc5+ 2.Kh1 Qxa3 *
 
 8/pb1R1ppk/1p5p/7q/4pQ2/1P6/P4PPP/5K2 b - - 0 1
 puzzle 172: Gain a rook
-Qb5+ 2.Ke1 Qxd7 *
+1...Qb5+ 2.Ke1 Qxd7 *
 
 r5k1/p4ppp/2q5/8/3p4/PRnP1P2/3B2PP/2Q1K3 b - - 0 1
 puzzle 173: Gain a rook
-Qe6+ 2.Kf1 Qxb3 *
+1...Qe6+ 2.Kf1 Qxb3 *
 
 r5k1/5p2/2pPq1p1/p1P3Qn/P7/2P2R2/6K1/1R6 b - - 0 1
 puzzle 174: Gain a rook
-Qa2+ 2.Rf2 Qxb1 *
+1...Qa2+ 2.Rf2 Qxb1 *
 
 rnbqkb1r/p3pppp/1p6/2p5/4n2B/2P2N2/PP2PPPP/RN1QKB1R w KQkq - 0 1
 puzzle 175: Gain a knight
@@ -864,51 +864,51 @@ puzzle 216: Gain a queen
 
 r1bq1rk1/ppp2ppp/2nb4/8/2P5/5N1P/PP2PKP1/RNBQ1B1R b - - 0 1
 puzzle 217: Gain a queen
-Bg3+ 2.Kxg3 Qxd1 *
+1...Bg3+ 2.Kxg3 Qxd1 *
 
 1r3r2/Q5p1/p2kpb2/1p1p4/6P1/3B1K1P/PP3P2/7R b - - 0 1
 puzzle 218: Gain a queen
-Bd4+ *
+1...Bd4+ *
 
 2rq1k2/bp3p2/p2p4/5B1p/1P1p3P/P5P1/2P1Q3/3R1RK1 b - - 0 1
 puzzle 219: Gain a queen
-d3+ 2.Qf2 Bxf2+ *
+1...d3+ 2.Qf2 Bxf2+ *
 
 r1b1k2r/ppppqppp/8/8/1bPQ4/2N3P1/PP2PKBP/R1B4R b kq - 0 1
 puzzle 220: Gain a queen
-Bc5 *
+1...Bc5 *
 
 r1b2rk1/pp2ppbp/2n3p1/q2P4/4P3/4BN2/P2Q1PPP/1R2KB1R b - - 0 1
 puzzle 221: Gain a queen
-Bc3 *
+1...Bc3 *
 
 Q1b1kb1r/1p1n2pp/2n1pq2/1p1p4/3P4/2P2N2/PP1N1PPP/R1B1K2R b KQk - 0 1
 puzzle 222: Gain a queen
-Nb6 *
+1...Nb6 *
 
 6k1/7p/p2p4/3Pp2b/P1BpQp2/5P1q/1P6/1K2N3 b - - 0 1
 puzzle 223: Gain a queen
-Bg6 *
+1...Bg6 *
 
 r5k1/1b3ppp/pQq1p3/8/N1PB2n1/P6r/5PPb/R3RB1K b - - 0 1
 puzzle 224: Gain a queen
-Bc7+ 2.Kg1 Bxb6 *
+1...Bc7+ 2.Kg1 Bxb6 *
 
 6k1/6p1/3p3p/1B2p1n1/RPP5/4P2q/5Q2/6K1 b - - 0 1
 puzzle 225: Gain a queen
-Nf3+ 2.Qxf3 Qxf3 *
+1...Nf3+ 2.Qxf3 Qxf3 *
 
 5r1k/1pb3p1/p1p3qp/P1Pn4/1P1BN3/3Q2PP/5PK1/4R1N1 b - - 0 1
 puzzle 226: Gain a queen
-Nf4+ 2.Kh2 Nxd3 *
+1...Nf4+ 2.Kh2 Nxd3 *
 
 r3r1k1/p4ppp/1p6/1Pp3q1/3P2Bn/2N1P2P/3Q1P1P/1R3RK1 b - - 0 1
 puzzle 227: Gain a queen
-Nf3+ 2.Kh1 Nxd2 *
+1...Nf3+ 2.Kh1 Nxd2 *
 
 6k1/5p2/4p1p1/7p/5P2/1P3BKP/P4QP1/6q1 b - - 0 1
 puzzle 228: Gain a queen
-h4+ 2.Kxh4 Qxf2+ *
+1...h4+ 2.Kxh4 Qxf2+ *
 
 r4r1k/4N1pp/p1b2p2/1pnp1Nq1/6P1/2B5/PP3P1P/3QR1K1 w - - 0 1
 puzzle 229: Gain a queen
@@ -1008,11 +1008,11 @@ puzzle 252: Draw
 
 1Q6/8/2r5/3k4/1K6/8/8/4R3 b - - 0 1
 puzzle 253: Draw
-Rb6+ 2.Qxb6 1/2-1/2
+1...Rb6+ 2.Qxb6 1/2-1/2
 
 4qk2/8/Q4P2/1p2p3/1P2P2B/P6K/5P2/8 b - - 0 1
 puzzle 254: Draw
-Qe6+ 2.Qxe6 1/2-1/2
+1...Qe6+ 2.Qxe6 1/2-1/2
 
 K2k4/B7/1p6/1P1Np3/8/8/8/6qb w - - 0 1
 puzzle 255: Draw
@@ -1024,27 +1024,27 @@ puzzle 256: Draw
 
 6q1/8/2PQ4/8/2P5/1K6/8/7k b - - 0 1
 puzzle 257: Draw
-Qg3+ 2.Qxg3 1/2-1/2
+1...Qg3+ 2.Qxg3 1/2-1/2
 
 1k1K4/8/8/QP2n3/3n4/8/8/8 b - - 0 1
 puzzle 258: Draw
-Nec6+ 2.bxc6 Nxc6+ *
+1...Nec6+ 2.bxc6 Nxc6+ *
 
 8/8/8/8/6p1/4rkP1/7P/1R4K1 b - - 0 1
 puzzle 259: Draw
-Re1+ 2.Rxe1 1/2-1/2
+1...Re1+ 2.Rxe1 1/2-1/2
 
 6Q1/8/2r5/8/7k/p7/P1P2N2/6K1 b - - 0 1
 puzzle 260: Draw
-Rg6+ 2.Qxg6 1/2-1/2
+1...Rg6+ 2.Qxg6 1/2-1/2
 
 8/8/1P6/7p/7k/5PR1/1r4PK/8 b - - 0 1
 puzzle 261: Draw
-Rxg2+ 2.Rxg2 1/2-1/2
+1...Rxg2+ 2.Rxg2 1/2-1/2
 
 2Q5/8/8/k1K5/8/3r4/4N3/8 b - - 0 1
 puzzle 262: Draw
-Rc3+ 2.Nxc3 1/2-1/2
+1...Rc3+ 2.Nxc3 1/2-1/2
 
 8/1B6/8/5k2/4p3/4p3/1p2K3/1r6 w - - 0 1
 puzzle 263: Draw
@@ -1052,7 +1052,7 @@ puzzle 263: Draw
 
 6R1/P7/8/5P2/7p/7k/r7/6K1 b - - 0 1
 puzzle 264: Draw
-Rg2+ 2.Rxg2 1/2-1/2
+1...Rg2+ 2.Rxg2 1/2-1/2
 
 8/8/4R3/8/5b2/8/3k1nKp/8 w - - 0 1
 puzzle 265: Draw
@@ -1152,27 +1152,27 @@ puzzle 288: Mate in 2 by means of a double check
 
 r2r1k2/p3ppb1/2p1P2p/1p2nP1Q/4N3/1P6/PK4P1/2R2B1R b - - 0 1
 puzzle 289: Mate in 2 by means of a double check
-Nc4+ 2.Kc2 Na3# 0-1
+1...Nc4+ 2.Kc2 Na3# 0-1
 
 r3r1k1/ppp1bpp1/2bp3p/4P3/3BnP2/3B3P/PPP4P/R2Q1R1K b - - 0 1
 puzzle 290: Mate in 2 by means of a double check
-Nf2+ 2.Kg1 Nxh3# 0-1
+1...Nf2+ 2.Kg1 Nxh3# 0-1
 
 r1b1N1k1/pp3pbp/1q4p1/3p4/4PP2/2N5/PP2QnPP/1RB2BK1 b - - 0 1
 puzzle 291: Mate in 2 by means of a double check
-Nh3+ 2.Kh1 Qg1# 0-1
+1...Nh3+ 2.Kh1 Qg1# 0-1
 
 3rr1k1/ppp1b1pp/2p2n2/8/3P3R/8/PPQ2PP1/R1B1K3 b - - 0 1
 puzzle 292: Mate in 2 by means of a double check
-Bb4+ 2.Kf1 Re1# 0-1
+1...Bb4+ 2.Kf1 Re1# 0-1
 
 5rk1/1pp4p/p3R1p1/3R1n2/6B1/2P5/2PQ2PP/5K2 b - - 0 1
 puzzle 293: Mate in 2 by means of a double check
-Ng3+ 2.Kg1 Rf1# 0-1
+1...Ng3+ 2.Kg1 Rf1# 0-1
 
 2k2b1r/pp3ppp/2p5/2n5/4pBb1/1PN1PnPP/P2NKP2/R4B1R b - - 0 1
 puzzle 294: Mate in 2 by means of a double check
-Nd4+ 2.Ke1 Nc2# 0-1
+1...Nd4+ 2.Ke1 Nc2# 0-1
 
 r1br4/1p1n2bk/1np1p2p/p6B/3PN3/qP2B3/2Q2PPP/2RR2K1 w - - 0 1
 puzzle 295: Mate in 2 by means of a double check
@@ -1184,7 +1184,7 @@ puzzle 296: Mate in 2 by means of a double check
 
 r3k2r/1p3p2/2p2n2/p1P1p1pb/P1B1P3/2P2NB1/4QP2/R4R1K b kq - 0 1
 puzzle 297: Mate in 2 by means of a double check
-Bxf3+ 2.Kg1 Rh1# 0-1
+1...Bxf3+ 2.Kg1 Rh1# 0-1
 
 r1bq1rk1/1pp3pn/1pnp2pp/3N4/2B1P3/3P4/PPP3PP/R2Q1RK1 w - - 0 1
 puzzle 298: Mate in 2 by means of a double check
@@ -1192,11 +1192,11 @@ puzzle 298: Mate in 2 by means of a double check
 
 5r1k/1R4p1/3QB2p/2P4P/7q/7n/6P1/7K b - - 0 1
 puzzle 299: Mate in 2 by means of a double check
-Nf2+ 2.Kg1 Qh1# 0-1
+1...Nf2+ 2.Kg1 Qh1# 0-1
 
 r3k3/pb3p1p/3bpp2/1P2n3/3N4/3B3P/1P2QP1K/R1B2R2 b q - 0 1
 puzzle 300: Mate in 2 by means of a double check
-Ng4+ 2.Kg1 Bh2# 0-1
+1...Ng4+ 2.Kg1 Bh2# 0-1
 
 kb6/1p1B4/1K6/8/p1Q5/8/8/3q4 w - - 0 1
 puzzle 301: Mate in 2 by means of a queen sacrifice
@@ -1392,51 +1392,51 @@ puzzle 348: Mate in 2 by means of a queen sacrifice
 
 2k5/8/5p1B/2b1p1p1/3q2P1/P4PK1/Q5NP/5b2 b - - 0 1
 puzzle 349: Mate in 2 by means of a queen sacrifice
-Qf4+ 2.Nxf4 exf4# 0-1
+1...Qf4+ 2.Nxf4 exf4# 0-1
 
 8/8/1kN2Q1p/1pbP2p1/4q3/1p3RPK/7P/6r1 b - - 0 1
 puzzle 350: Mate in 2 by means of a queen sacrifice
-Qh4+ 2.gxh4 g4# 0-1
+1...Qh4+ 2.gxh4 g4# 0-1
 
 8/1pQ2pk1/4qn1p/p3p1p1/1Pb1P3/P1P1BPP1/2B3KP/8 b - - 0 1
 puzzle 351: Mate in 2 by means of a queen sacrifice
-Qh3+ 2.Kxh3 Bf1# 0-1
+1...Qh3+ 2.Kxh3 Bf1# 0-1
 
 r3k3/p1p3pp/3b4/1p2N3/2P2n2/1B3Pnq/PP1P1R1P/RNB1Q1K1 b q - 0 1
 puzzle 352: Mate in 2 by means of a queen sacrifice
-Qg2+ 2.Rxg2 Nh3# 0-1
+1...Qg2+ 2.Rxg2 Nh3# 0-1
 
 1r4rk/5p1p/p2Q4/3P4/4BP2/1P1n4/P1N2q1P/3R3K b - - 0 1
 puzzle 353: Mate in 2 by means of a queen sacrifice
-Qg1+ 2.Rxg1 Nf2# 0-1
+1...Qg1+ 2.Rxg1 Nf2# 0-1
 
 1k4rr/pp4q1/2n5/3QP3/P4P1p/2PpR2K/3N2P1/R4N2 b - - 0 1
 puzzle 354: Mate in 2 by means of a queen sacrifice
-Qg3+ 2.Nxg3 hxg3# 0-1
+1...Qg3+ 2.Nxg3 hxg3# 0-1
 
 2r3k1/pb1p2pp/1p2p1r1/3P1p2/1PP4q/P4n1P/2Q2PP1/R2RBB1K b - - 0 1
 puzzle 355: Mate in 2 by means of a queen sacrifice
-Qxh3+ 2.gxh3 Rg1# 0-1
+1...Qxh3+ 2.gxh3 Rg1# 0-1
 
 8/pp2ppkp/6p1/4P3/5P2/1P2NBP1/P2Qnq1P/2rR3K b - - 0 1
 puzzle 356: Mate in 2 by means of a queen sacrifice
-Qg1+ 2.Rxg1 Rxg1# 0-1
+1...Qg1+ 2.Rxg1 Rxg1# 0-1
 
 2k1rb1r/ppp3pp/2n2q2/3B1b2/5P2/2P1BQ2/PP1N1P1P/2KR3R b - - 0 1
 puzzle 357: Mate in 2 by means of a queen sacrifice
-Qxc3+ 2.bxc3 Ba3# 0-1
+1...Qxc3+ 2.bxc3 Ba3# 0-1
 
 2k5/1r5p/2p2p2/3p4/qPp4P/P2n2P1/K2Q1P1R/1R2N3 b - - 0 1
 puzzle 358: Mate in 2 by means of a queen sacrifice
-Qxa3+ 2.Kxa3 Ra7# 0-1
+1...Qxa3+ 2.Kxa3 Ra7# 0-1
 
 4r1k1/pbp2ppp/8/1NP1N3/2P1q3/P3p3/4Q1PP/R1Br1R1K b - - 0 1
 puzzle 359: Mate in 2 by means of a queen sacrifice
-Qxg2+ 2.Qxg2 Rxf1# 0-1
+1...Qxg2+ 2.Qxg2 Rxf1# 0-1
 
 6r1/3b1k1p/1p1p3r/p1pP1p1n/P1P1pP1q/1P2Q1P1/2R1N2P/2B3RK b - - 0 1
 puzzle 360: Mate in 2 by means of a queen sacrifice
-Qxh2+ 2.Kxh2 Nxf4# 0-1
+1...Qxh2+ 2.Kxh2 Nxf4# 0-1
 
 rn1qr1k1/1p2np2/2p3p1/8/1pPb4/7Q/PB1P1PP1/1K1R1B1R w - - 0 1
 puzzle 361: Mate in 2 by means of a queen sacrifice
@@ -1464,27 +1464,27 @@ puzzle 366: Mate in 2 by means of a queen sacrifice
 
 2kr4/qbb2Q2/8/1B5p/5P2/2ppB3/2P2KPP/6R1 b - - 0 1
 puzzle 367: Mate in 2 by means of a queen sacrifice
-Qxe3+ 2.Kxe3 Bb6# 0-1
+1...Qxe3+ 2.Kxe3 Bb6# 0-1
 
 6k1/1pp2p2/7p/2Q5/2PPb1p1/2P1PpPq/r4R1P/5R1K b - - 0 1
 puzzle 368: Mate in 2 by means of a queen sacrifice
-Qxf1+ 2.Rxf1 f2# 0-1
+1...Qxf1+ 2.Rxf1 f2# 0-1
 
 2kr4/p7/1p2p1pb/2p1Q2p/8/qPP2P1P/2K5/1B1R3R b - - 0 1
 puzzle 369: Mate in 2 by means of a queen sacrifice
-Qc1+ 2.Rxc1 Rd2# 0-1
+1...Qc1+ 2.Rxc1 Rd2# 0-1
 
 r3r1k1/1p3p2/p7/3P1Q2/P4Pnp/5B2/1P3NPq/R1B2K2 b - - 0 1
 puzzle 370: Mate in 2 by means of a queen sacrifice
-Qg1+ 2.Kxg1 Re1# 0-1
+1...Qg1+ 2.Kxg1 Re1# 0-1
 
 3rr2k/p1pq2pp/bp3p2/3B3R/P4P2/1PK1bQ2/1BP3PP/R7 b - - 0 1
 puzzle 371: Mate in 2 by means of a queen sacrifice
-Qc6+ 2.Bxc6 Bd2# 0-1
+1...Qc6+ 2.Bxc6 Bd2# 0-1
 
 7k/1bpp4/3bp1p1/p4B2/2P5/P3BrPq/1PQ2P1P/4RRK1 b - - 0 1
 puzzle 372: Mate in 2 by means of a queen sacrifice
-Qg2+ 2.Kxg2 Rxg3# 0-1
+1...Qg2+ 2.Kxg2 Rxg3# 0-1
 
 3r4/p1p4p/1pb3pk/4R3/2P3B1/2Q3PP/P2q1P2/6K1 w - - 0 1
 puzzle 373: Mate in 2 by means of a rook sacrifice
@@ -1536,27 +1536,27 @@ puzzle 384: Mate in 2 by means of a rook sacrifice
 
 8/p2p1k2/3Ppp2/8/4qP1p/8/2Q3RP/1r4NK b - - 0 1
 puzzle 385: Mate in 2 by means of a rook sacrifice
-Rxg1+ 2.Kxg1 Qe1# 0-1
+1...Rxg1+ 2.Kxg1 Qe1# 0-1
 
 6k1/pp3p1p/3p1p2/2p1r3/2P1r1P1/P7/1P1QnPP1/3R1R1K b - - 0 1
 puzzle 386: Mate in 2 by means of a rook sacrifice
-Rh5+ 2.gxh5 Rh4# 0-1
+1...Rh5+ 2.gxh5 Rh4# 0-1
 
 8/p1k5/B1p5/2Pp1p2/P2Pb2p/6r1/3Q1RPK/1r6 b - - 0 1
 puzzle 387: Mate in 2 by means of a rook sacrifice
-Rh3+ 2.gxh3 Rh1# 0-1
+1...Rh3+ 2.gxh3 Rh1# 0-1
 
 6k1/6pp/p2bN3/3p4/2r4q/P2QP2P/1B3P2/5RK1 b - - 0 1
 puzzle 388: Mate in 2 by means of a rook sacrifice
-Rg4+ 2.hxg4 Qh2# 0-1
+1...Rg4+ 2.hxg4 Qh2# 0-1
 
 8/5pkp/p3p1p1/5n2/3P4/P2R1NP1/3RQPK1/1rq4r b - - 0 1
 puzzle 389: Mate in 2 by means of a rook sacrifice
-Rh2+ 2.Nxh2 Qh1+ *
+1...Rh2+ 2.Nxh2 Qh1+ *
 
 3Q4/6pk/4N3/2pP4/p1P3n1/Pr6/4r1P1/3R2RK b - - 0 1
 puzzle 390: Mate in 2 by means of a rook sacrifice
-Rh3+ 2.gxh3 Rh2# 0-1
+1...Rh3+ 2.gxh3 Rh2# 0-1
 
 r2q3k/pp1b1Q1p/3p1bp1/5p2/2B5/1P5P/P1PP1PP1/4R1K1 w - - 0 1
 puzzle 391: Mate in 2 by means of a rook sacrifice
@@ -1592,7 +1592,7 @@ puzzle 398: Mate in 2 by means of a rook sacrifice
 
 7k/p5pp/1p4rr/1PpPp3/4P1n1/2N1qPP1/P3B1Q1/2RR1K2 b - - 0 1
 puzzle 399: Mate in 2 by means of a rook sacrifice
-Rh1+ 2.Qxh1 Qf2# 0-1
+1...Rh1+ 2.Qxh1 Qf2# 0-1
 
 b1rrk3/3n1pp1/1p1Rp1p1/pP2P3/2P5/B2B1P2/5KPP/3R4 w - - 0 1
 puzzle 400: Mate in 2 by means of a rook sacrifice
@@ -1604,7 +1604,7 @@ puzzle 401: Mate in 2 by means of a rook sacrifice
 
 8/pkp5/3p1P2/2p5/1p6/3P3P/2P1rP2/qQKR3R b - - 0 1
 puzzle 402: Mate in 2 by means of a rook sacrifice
-Rxc2+ 2.Kxc2 Qc3# 0-1
+1...Rxc2+ 2.Kxc2 Qc3# 0-1
 
 2Q2qk1/1p4pp/p7/5P1B/2pP1r2/3b2K1/PP5P/8 w - - 0 1
 puzzle 403: Mate in 2 by means of a bishop sacrifice
@@ -1624,7 +1624,7 @@ puzzle 406: Mate in 2 by means of a bishop sacrifice
 
 5rk1/1p4pp/2p1p1q1/1PPp1b2/3P1P2/2QnP3/3N2BP/R1R4K b - - 0 1
 puzzle 407: Mate in 2 by means of a bishop sacrifice
-Bh3 2.Bxh3 Nf2# 0-1
+1...Bh3 2.Bxh3 Nf2# 0-1
 
 2r1kbr1/2p2ppp/p1p5/3NpqB1/5P2/8/PPP3PP/2KR3R w - - 0 1
 puzzle 408: Mate in 2 by means of a knight sacrifice
@@ -1652,23 +1652,23 @@ puzzle 413: Mate in 2 by means of a knight sacrifice
 
 r1b1k2r/ppp5/6pp/2bpp1N1/6P1/3P4/PPPQn1PP/R1B2R1K b kq - 0 1
 puzzle 414: Mate in 2 by means of a knight sacrifice
-Ng3+ 2.hxg3 hxg5# 0-1
+1...Ng3+ 2.hxg3 hxg5# 0-1
 
 r1b2rk1/pp3p1p/3p2p1/2pPp3/2PbPPnq/3B3P/PPQ3P1/R1BN1R1K b - - 0 1
 puzzle 415: Mate in 2 by means of a knight sacrifice
-Qg3 2.hxg4 Qh4# 0-1
+1...Qg3 2.hxg4 Qh4# 0-1
 
 7r/pr3pk1/7p/2p1N1p1/1nQp2P1/P1n5/4PP1P/K1R2B1R b - - 0 1
 puzzle 416: Mate in 2 by means of a knight sacrifice
-Nc2+ 2.Rxc2 Rb1# 0-1
+1...Nc2+ 2.Rxc2 Rb1# 0-1
 
 4kb1r/1q1p1ppp/p4n2/4pP2/1nP1P3/2N1B3/2PQ2PP/2KR3R b k - 0 1
 puzzle 417: Mate in 2 by means of a knight sacrifice
-Na2+ 2.Nxa2 Ba3# 0-1
+1...Na2+ 2.Nxa2 Ba3# 0-1
 
 5r2/4k1r1/3N4/1QpPp2n/pp2P3/5PPK/PP6/2R3R1 b - - 0 1
 puzzle 418: Mate in 2 by means of a knight sacrifice
-Nf4+ 2.gxf4 Rh8# 0-1
+1...Nf4+ 2.gxf4 Rh8# 0-1
 
 8/8/Q7/2kpq3/8/P7/1P1K4/8 w - - 0 1
 puzzle 419: Mate in 2 by means of a knight sacrifice
@@ -1676,27 +1676,27 @@ puzzle 419: Mate in 2 by means of a knight sacrifice
 
 8/5Rpk/P1p5/2Pp3q/4p2p/4P1P1/1Q3PKP/8 b - - 0 1
 puzzle 420: Mate in 2, queen checkmates
-h3+ 2.Kf1 Qd1# 0-1
+1...h3+ 2.Kf1 Qd1# 0-1
 
 8/1pQ4R/p1b2kp1/P6p/7K/2q4P/2P2P2/8 b - - 0 1
 puzzle 421: Mate in 2, queen checkmates
-g5+ 2.Kxh5 Qxh3# 0-1
+1...g5+ 2.Kxh5 Qxh3# 0-1
 
 8/2b2pk1/2q5/p1pr1p2/Q5p1/1P2P1PN/P1R5/2R4K b - - 0 1
 puzzle 422: Mate in 2, queen checkmates
-Rd1+ 2.Kh2 Qh1# 0-1
+1...Rd1+ 2.Kh2 Qh1# 0-1
 
 6k1/1b3p1p/p3p2Q/2r3p1/1P2q3/P5P1/5RBP/6K1 b - - 0 1
 puzzle 423: Mate in 2, queen checkmates
-Rc1+ 2.Bf1 Qh1# 0-1
+1...Rc1+ 2.Bf1 Qh1# 0-1
 
 6k1/p4pp1/7p/8/3QPK2/7q/PPP5/R1B2R2 b - - 0 1
 puzzle 424: Mate in 2, queen checkmates
-g5+ 2.Ke5 Qe6# 0-1
+1...g5+ 2.Ke5 Qe6# 0-1
 
 6k1/5pbp/3p2p1/8/3N1PP1/1p6/1P4q1/K1QR3R b - - 0 1
 puzzle 425: Mate in 2, queen checkmates
-Qa8+ 2.Kb1 Qa2# 0-1
+1...Qa8+ 2.Kb1 Qa2# 0-1
 
 7Q/3q1N2/r3b1k1/2ppP2r/p2P4/7P/1P6/4R1K1 w - - 0 1
 puzzle 426: Mate in 2, queen checkmates
@@ -1796,51 +1796,51 @@ puzzle 449: Mate in 2, queen checkmates
 
 5rk1/1p2q1pp/1pp4r/2b2p2/2P5/P1B2P2/1P1Q2PP/2R2R1K b - - 0 1
 puzzle 450: Mate in 2, queen checkmates
-Rxh2+ 2.Kxh2 Qh4# 0-1
+1...Rxh2+ 2.Kxh2 Qh4# 0-1
 
 2kr3r/pp1n2p1/2p1p1p1/2b5/2P5/1P3RqP/PB2Q1P1/RN5K b - - 0 1
 puzzle 451: Mate in 2, queen checkmates
-Rxh3+ 2.gxh3 Qg1# 0-1
+1...Rxh3+ 2.gxh3 Qg1# 0-1
 
 2b1k3/8/p1pp2P1/2p3P1/5K2/2Q4r/PPP1q1R1/6R1 b - - 0 1
 puzzle 452: Mate in 2, queen checkmates
-Rf3+ 2.Qxf3 Qe5# 0-1
+1...Rf3+ 2.Qxf3 Qe5# 0-1
 
 r4n1k/ppB3pp/8/8/2Qq2b1/3B1r2/PPP3PK/R6R b - - 0 1
 puzzle 453: Mate in 2, queen checkmates
-Rh3+ 2.gxh3 Qf2# 0-1
+1...Rh3+ 2.gxh3 Qf2# 0-1
 
 1k6/p4p2/1pp2R2/4p3/PK6/1P1P4/8/q1N4Q b - - 0 1
 puzzle 454: Mate in 2, queen checkmates
-a5+ 2.Kc4 Qd4# 0-1
+1...a5+ 2.Kc4 Qd4# 0-1
 
 k5r1/8/1pqB3p/p2nPQ2/3P3P/7K/3P2N1/8 b - - 0 1
 puzzle 455: Mate in 2, queen checkmates
-Nf4+ 2.Nxf4 Qh1# 0-1
+1...Nf4+ 2.Nxf4 Qh1# 0-1
 
 3b2k1/1p3pp1/3Bb3/pP1pp2p/P1q5/2N1P1P1/1Q3PKP/8 b - - 0 1
 puzzle 456: Mate in 2, queen checkmates
-Bh3+ 2.Kxh3 Qf1# 0-1
+1...Bh3+ 2.Kxh3 Qf1# 0-1
 
 r5k1/p1p3pp/1p1ppn1r/2P2p2/3Pq3/1QB1P3/PP4RP/6RK b - - 0 1
 puzzle 457: Mate in 2, queen checkmates
-Rxh2+ 2.Kxh2 Qh4# 0-1
+1...Rxh2+ 2.Kxh2 Qh4# 0-1
 
 r5k1/ppp3pp/8/1NbP2q1/2P3p1/3Q2P1/PP5K/3R1R2 b - - 0 1
 puzzle 458: Mate in 2, queen checkmates
-Qh5+ 2.Kg2 Qh3# 0-1
+1...Qh5+ 2.Kg2 Qh3# 0-1
 
 8/p1P3pp/4p1k1/1Q3n2/1P6/P5P1/5RKP/3q4 b - - 0 1
 puzzle 459: Mate in 2, queen checkmates
-Ne3+ 2.Kh3 Qg4# 0-1
+1...Ne3+ 2.Kh3 Qg4# 0-1
 
 2r3k1/p3Q1p1/8/5p2/3Pp3/1P2P1q1/P3K3/4R2R b - - 0 1
 puzzle 460: Mate in 2, queen checkmates
-Qg2+ 2.Kd1 Qc2# 0-1
+1...Qg2+ 2.Kd1 Qc2# 0-1
 
 rn2r2k/p4pR1/2pb1p2/1p1b3P/3P3P/2PBB3/1PKQNP2/q2R4 b - - 0 1
 puzzle 461: Mate in 2, queen checkmates
-Bb3+ 2.Kxb3 Qa4# 0-1
+1...Bb3+ 2.Kxb3 Qa4# 0-1
 
 k3rb1R/1bQn2p1/p2RNq2/8/8/4B3/PPP2p2/2K5 w - - 0 1
 puzzle 462: Mate in 2, queen checkmates
@@ -1964,27 +1964,27 @@ puzzle 491: Mate in 2, rook checkmates
 
 r5kb/qppbP2p/4n1p1/3QB3/8/1P4NP/2P3B1/1K1R3R b - - 0 1
 puzzle 492: Mate in 2, rook checkmates
-Qa1+ 2.Bxa1 Rxa1# 0-1
+1...Qa1+ 2.Bxa1 Rxa1# 0-1
 
 6k1/1pQ3p1/3B3p/1P1rn2r/4pp2/2P5/P2P1PP1/R4RK1 b - - 0 1
 puzzle 493: Mate in 2, rook checkmates
-Nf3+ 2.gxf3 Rdg5# 0-1
+1...Nf3+ 2.gxf3 Rdg5# 0-1
 
 3qr1k1/1b3p2/pp4p1/2n1r3/2P3NP/1P4RK/P4Q2/1BR5 b - - 0 1
 puzzle 494: Mate in 2, rook checkmates
-Qxh4+ 2.Kxh4 Rh5# 0-1
+1...Qxh4+ 2.Kxh4 Rh5# 0-1
 
 8/7k/6rp/p2Q1N2/P2PpP2/8/1P2K3/2r5 b - - 0 1
 puzzle 495: Mate in 2, rook checkmates
-Rg2+ 2.Ke3 Re1# 0-1
+1...Rg2+ 2.Ke3 Re1# 0-1
 
 2kr1r2/ppp3pp/2P5/7b/P4q2/B1P1P3/R2P2PP/4KQ1R b K - 0 1
 puzzle 496: Mate in 2, rook checkmates
-Qxe3+ 2.dxe3 Rd1# 0-1
+1...Qxe3+ 2.dxe3 Rd1# 0-1
 
 6k1/1P5p/3p4/P2P1pP1/Q1p1r3/2N1q1PK/3r3P/2R5 b - - 0 1
 puzzle 497: Mate in 2, rook checkmates
-Rh4+ 2.Kxh4 Rxh2# 0-1
+1...Rh4+ 2.Kxh4 Rxh2# 0-1
 
 5k2/p2bpp2/3p4/2q2PN1/1p1p4/3P1B2/P1P4n/6RK w - - 0 1
 puzzle 498: Mate in 2, rook checkmates
@@ -2036,27 +2036,27 @@ puzzle 509: Mate in 2, knight checkmates
 
 3Q4/2p4p/1p6/p1nPp2n/4Pp2/P1N2P2/1P3K1k/5b2 b - - 0 1
 puzzle 510: Mate in 2, knight checkmates
-Nd3+ 2.Kxf1 Ng3# 0-1
+1...Nd3+ 2.Kxf1 Ng3# 0-1
 
 1br1r1k1/p2q1ppp/1p6/4p3/1PPp1n1n/PB1P2NP/1B1Q1P1K/3R2NR b - - 0 1
 puzzle 511: Mate in 2, knight checkmates
-Qxh3+ 2.Nxh3 Nf3# 0-1
+1...Qxh3+ 2.Nxh3 Nf3# 0-1
 
 r3kb1r/pp5p/3p2p1/q1pQ1p2/2P1B3/1P1n2P1/PB2PP1P/R2K2NR b kq - 0 1
 puzzle 512: Mate in 2, knight checkmates
-Qe1+ 2.Kc2 Nb4# 0-1
+1...Qe1+ 2.Kc2 Nb4# 0-1
 
 r2q1rk1/pp3ppp/5b2/2pN2n1/4P1b1/6P1/PPP1NPKP/R2Q1R2 b - - 0 1
 puzzle 513: Mate in 2, knight checkmates
-Bf3+ 2.Kg1 Nh3# 0-1
+1...Bf3+ 2.Kg1 Nh3# 0-1
 
 2k5/2p5/1pq5/p1p1n3/P1P4B/1R4Pp/4R3/2Q2K2 b - - 0 1
 puzzle 514: Mate in 2, knight checkmates
-Qh1+ 2.Kf2 Ng4# 0-1
+1...Qh1+ 2.Kf2 Ng4# 0-1
 
 8/6N1/8/7p/4np1P/7K/5k2/8 b - - 0 1
 puzzle 515: Mate in 2, knight checkmates
-Kg1 2.Nxh5 Nf2# 0-1
+1...Kg1 2.Nxh5 Nf2# 0-1
 
 4r1rn/2pq1p1k/p2p1Qnp/1p5N/3Pb3/1B5P/PPP2RPK/5R2 w - - 0 1
 puzzle 516: Mate in 2, knight checkmates
@@ -2088,11 +2088,11 @@ puzzle 522: Mate in 2, knight checkmates
 
 r4rk1/4Q2p/2p3pb/p1n2b2/Pp1B2P1/1B3N1P/1PPn1P2/2KR3R b - - 0 1
 puzzle 523: Mate in 2, knight checkmates
-Ncxb3+ 2.cxb3 Nxb3# 0-1
+1...Ncxb3+ 2.cxb3 Nxb3# 0-1
 
 r5k1/1p3pbp/p5p1/5b2/3n1P2/4QN2/NP1B2PP/2KR3R b - - 0 1
 puzzle 524: Mate in 2, knight checkmates
-Rc8+ 2.Bc3 Nb3# 0-1
+1...Rc8+ 2.Bc3 Nb3# 0-1
 
 kr6/pr6/1b6/1N3n2/4B1p1/5pBq/5P2/R5K1 w - - 0 1
 puzzle 525: Mate in 2, knight checkmates
@@ -2100,11 +2100,11 @@ puzzle 525: Mate in 2, knight checkmates
 
 3Q4/R5pk/1p4rp/3n4/3Bp3/3r2P1/5P1P/6K1 b - - 0 1
 puzzle 526: Mate in 2, knight checkmates
-Rd1+ 2.Kg2 Nf4# 0-1
+1...Rd1+ 2.Kg2 Nf4# 0-1
 
 1k6/p5pp/1p1q1p2/2p4n/3P2PP/Q1P2P1K/P3r3/6RR b - - 0 1
 puzzle 527: Mate in 2, knight checkmates
-Qg3+ 2.Rxg3 Nf4# 0-1
+1...Qg3+ 2.Rxg3 Nf4# 0-1
 
 b4k2/1qrr1p1p/4nQ1N/p7/1p4P1/1P3P1P/1P6/R1R3K1 w - - 0 1
 puzzle 528: Mate in 2, knight checkmates
@@ -2180,27 +2180,27 @@ puzzle 545: Mate in 2, bishop checkmates
 
 r2qkb1r/ppp2p1p/5np1/3Pp3/2Bn2b1/8/PPPPNP1P/RNBQK2R b KQkq - 0 1
 puzzle 546: Mate in 2, bishop checkmates
-Nf3+ 2.Kf1 Bh3# 0-1
+1...Nf3+ 2.Kf1 Bh3# 0-1
 
 4r3/1Q3pbk/1p4pp/8/1BPp4/1P5n/P3P1B1/R5RK b - - 0 1
 puzzle 547: Mate in 2, bishop checkmates
-Nf2+ 2.Kh2 Be5# 0-1
+1...Nf2+ 2.Kh2 Be5# 0-1
 
 6r1/1b2k3/p2pp3/1p2bP1P/8/1PNB3K/1PP5/3R1R2 b - - 0 1
 puzzle 548: Mate in 2, bishop checkmates
-Bg2+ 2.Kh4 Bg3# 0-1
+1...Bg2+ 2.Kh4 Bg3# 0-1
 
 8/7k/b2R4/p3Rpp1/7p/2P4K/1P4PP/5r2 b - - 0 1
 puzzle 549: Mate in 2, bishop checkmates
-Rf3+ 2.gxf3 Bf1# 0-1
+1...Rf3+ 2.gxf3 Bf1# 0-1
 
 N1b2rk1/pp3ppp/8/P7/8/K2pQ3/P1q2PPP/3R3R b - - 0 1
 puzzle 550: Mate in 2, bishop checkmates
-Qc3+ 2.Ka4 Bd7# 0-1
+1...Qc3+ 2.Ka4 Bd7# 0-1
 
 8/8/6p1/1p3b2/1P4R1/5k1K/1P3B1P/8 b - - 0 1
 puzzle 551: Mate in 2, bishop checkmates
-g5 2.Bh4 Bxg4# 0-1
+1...g5 2.Bh4 Bxg4# 0-1
 
 rn1qkb1r/ppp2ppp/3p4/4N3/2B5/2P5/PPP2PPP/R1Bb1RK1 w kq - 0 1
 puzzle 552: Mate in 2, bishop checkmates
@@ -2276,27 +2276,27 @@ puzzle 569: Mate in 2, pawn checkmates
 
 5r1k/3b3p/5b1P/1p4p1/1P2R3/6P1/8/4K2R b K - 0 1
 puzzle 570: Gain a rook
-Bc6 2.Re6 Bxh1 *
+1...Bc6 2.Re6 Bxh1 *
 
 8/8/8/3k2b1/4p3/P3R3/3K4/8 b - - 0 1
 puzzle 571: Gain a rook
-Kd4 2.Ke2 Bxe3 *
+1...Kd4 2.Ke2 Bxe3 *
 
 6k1/3b2pp/p7/1ppP1p2/2Pb4/1P2R2P/P4K2/7B b - - 0 1
 puzzle 572: Gain a rook
-f4 *
+1...f4 *
 
 3r4/1pr2pk1/p1pq2p1/2N1Rp1p/P1RP3P/4P1P1/1P3P2/3Q2K1 b - - 0 1
 puzzle 573: Gain a rook
-Qxe5 2.dxe5 Rxd1+ *
+1...Qxe5 2.dxe5 Rxd1+ *
 
 6k1/p4p2/1p1b2p1/3P4/3R4/7P/PP6/6K1 b - - 0 1
 puzzle 574: Gain a rook
-Bc5 2.Kf1 Bxd4 *
+1...Bc5 2.Kf1 Bxd4 *
 
 5rk1/1pp2ppp/pq3n2/8/P7/2P5/QPB2RPP/6K1 b - - 0 1
 puzzle 575: Gain a rook
-Ng4 *
+1...Ng4 *
 
 2R5/8/8/8/r7/8/2K5/k7 w - - 0 1
 puzzle 576: Gain a rook
@@ -2324,27 +2324,27 @@ puzzle 581: Gain a rook
 
 r4rk1/pbq2pbp/1p2n1p1/2p5/2PpPP2/1P6/P1Q1B1NP/R1B1RNK1 b - - 0 1
 puzzle 582: Gain a rook
-d3 2.Bxd3 Bxa1 *
+1...d3 2.Bxd3 Bxa1 *
 
 3kb3/p2r2Q1/1p3p2/2p2P2/2q5/3R4/P1PB2PP/5K2 b - - 0 1
 puzzle 583: Gain a rook
-Qxd3+ 2.cxd3 Rxg7 *
+1...Qxd3+ 2.cxd3 Rxg7 *
 
 6k1/5pbp/2p3p1/3p4/3P4/4q1P1/2R1B2P/4K2R b K - 0 1
 puzzle 584: Gain a rook
-Qe4 2.Rf1 Qxc2 *
+1...Qe4 2.Rf1 Qxc2 *
 
 1R6/2p1r1k1/3p1p1p/2pP1PnP/p1r2R2/6p1/P2B2P1/6K1 b - - 0 1
 puzzle 585: Gain a rook
-Rxf4 *
+1...Rxf4 *
 
 3R4/pp4bk/6pp/5p2/4P3/P6P/4NRPK/1q6 b - - 0 1
 puzzle 586: Gain a rook
-Qb6 2.Rf1 Qxd8 *
+1...Qb6 2.Rf1 Qxd8 *
 
 5r1k/1p3Pbp/p2p4/3Q2PP/6q1/8/PPB5/1K2R3 b - - 0 1
 puzzle 587: Gain a rook
-Qb4 2.Bb3 Qxe1+ *
+1...Qb4 2.Bb3 Qxe1+ *
 
 k6B/1n6/2N5/8/4K3/8/8/8 w - - 0 1
 puzzle 588: Gain a knight
@@ -2372,27 +2372,27 @@ puzzle 593: Gain a knight
 
 r5k1/1N3pp1/4b3/8/8/5RP1/7K/8 b - - 0 1
 puzzle 594: Gain a knight
-Bd5 2.Rc3 Bxb7 *
+1...Bd5 2.Rc3 Bxb7 *
 
 r2rb1k1/n1p2pp1/4pq1p/1p2NP2/pP1P4/P2QP3/B5PP/R4RK1 b - - 0 1
 puzzle 595: Gain a knight
-Qxe5 2.dxe5 Rxd3 *
+1...Qxe5 2.dxe5 Rxd3 *
 
 k2qr2r/2p2ppp/p1p1bn2/2b1N3/4P3/2NP4/PPP3PP/R1BQK2R b KQ - 0 1
 puzzle 596: Gain a knight
-Qd4 2.Qe2 Qxe5 *
+1...Qd4 2.Qe2 Qxe5 *
 
 1n3rk1/5ppp/pprNq3/4P3/3PQ3/8/P5PP/2R2RK1 b - - 0 1
 puzzle 597: Gain a knight
-Rxd6 *
+1...Rxd6 *
 
 1r3rk1/5ppp/bnp2n2/p3N3/1bP1P3/6PP/P2N1PB1/R1B1R1K1 b - - 0 1
 puzzle 598: Gain a knight
-Bc3 2.Rb1 Bxe5 *
+1...Bc3 2.Rb1 Bxe5 *
 
 r4rk1/ppq1b1pp/2n3b1/2pp4/5pQN/P1PP3P/1PBN1P2/R1B2RK1 b - - 0 1
 puzzle 599: Gain a knight
-Ne5 2.Qd1 Bxh4 *
+1...Ne5 2.Qd1 Bxh4 *
 
 5k2/5pp1/8/r1n5/8/6PP/1PN1RPK1/8 w - - 0 1
 puzzle 600: Gain a knight
@@ -2420,7 +2420,7 @@ puzzle 605: Gain a knight
 
 rnb1kb1r/pp3ppp/4pn2/q7/3NN3/8/PPPB1PPP/R2QKB1R b KQkq - 0 1
 puzzle 606: Gain a knight
-Qe5 *
+1...Qe5 *
 
 r3r2k/5pnp/p2p2p1/3P4/1pP5/1BQ2P2/qP4PP/2R2RK1 w - - 0 1
 puzzle 607: Gain a knight
@@ -2432,7 +2432,7 @@ puzzle 608: Gain a knight
 
 r1bq1rk1/pp2nppp/3p1n2/2pP4/2P1p2N/2P1P3/P1Q1BPPP/R1B2RK1 b - - 0 1
 puzzle 609: Gain a knight
-g5 *
+1...g5 *
 
 2r1rbk1/1bqn1ppp/pp2p3/4P3/2P5/P1N5/1BB1QPPP/3RR1K1 w - - 0 1
 puzzle 610: Gain a knight
@@ -2492,51 +2492,51 @@ puzzle 623: Gain a bishop
 
 2r4k/pp4pp/3pP2b/3qp3/1P3PKP/1Q6/PB2B3/1R6 b - - 0 1
 puzzle 624: Gain a bishop
-Qg2+ 2.Qg3 Qxe2+ 3.Kh3 Bxf4 *
+1...Qg2+ 2.Qg3 Qxe2+ 3.Kh3 Bxf4 *
 
 r1b2r1k/1p4bp/8/4p2n/1P3pp1/3P2P1/5PBP/1Q2NR1K b - - 0 1
 puzzle 625: Gain a bishop
-f3 2.Bxf3 gxf3 *
+1...f3 2.Bxf3 gxf3 *
 
 3r4/2k2p2/1p4pp/n1p1p3/2P1b3/2P1N3/rR4PP/2B1KB1R b K - 0 1
 puzzle 626: Gain a bishop
-Ra1 *
+1...Ra1 *
 
 4rbk1/1q3ppp/3pp3/8/3NQ3/BP6/5PPP/4R1K1 b - - 0 1
 puzzle 627: Gain a bishop
-d5 2.Qd3 Bxa3 *
+1...d5 2.Qd3 Bxa3 *
 
 3r2k1/pb3pp1/1p2p2p/8/3PPPn1/P1rBB1Pq/3Q3P/4RRK1 b - - 0 1
 puzzle 628: Gain a bishop
-Rxd3 *
+1...Rxd3 *
 
 1r6/1B3bk1/1R4pp/1P2bp2/7P/6PN/5P2/6K1 b - - 0 1
 puzzle 629: Gain a bishop
-Bc7 2.Rc6 Rxb7 *
+1...Bc7 2.Rc6 Rxb7 *
 
 r1b1kbnr/pp3p1p/4p3/3pP1Q1/1q3B2/1N1P4/PP1N1PPP/R3K2R b Qkq - 0 1
 puzzle 630: Gain a bishop
-Bh6 *
+1...Bh6 *
 
 2q2rk1/5pbp/4p1p1/Bp2nnN1/2P5/P3P1PP/2Q2P1N/4K2R b K - 0 1
 puzzle 631: Gain a bishop
-Qa8 2.O-O Qxa5 *
+1...Qa8 2.O-O Qxa5 *
 
 1r2r1k1/2p3bp/3p2p1/1p1Pn3/4PBq1/1P2K1N1/P2Q2PP/3RR3 b - - 0 1
 puzzle 632: Gain a bishop
-Qxf4+ 2.Ke2 Qxd2+ *
+1...Qxf4+ 2.Ke2 Qxd2+ *
 
 2k5/pb1n1p2/3qp3/2b2P2/PpB4B/3p1PN1/1P4PK/R4R2 b - - 0 1
 puzzle 633: Gain a bishop
-Qf4 2.Kh3 Qxc4 *
+1...Qf4 2.Kh3 Qxc4 *
 
 2rq2k1/5pbp/pp1p2p1/4r3/1PP1B3/P3Q2P/2R2PP1/4R1K1 b - - 0 1
 puzzle 634: Gain a bishop
-d5 *
+1...d5 *
 
 r3kb1r/p2q1ppp/1pn1p3/2ppPn2/3P1PP1/2PQB3/PP1NN2P/R4RK1 b kq - 0 1
 puzzle 635: Gain a bishop
-c4 2.Qc2 Nxe3 *
+1...c4 2.Qc2 Nxe3 *
 
 rn1qkb1r/ppp1pppp/5n2/4N2b/2B5/4P3/PPPP1PPP/RNBQK2R w KQkq - 0 1
 puzzle 636: Gain a bishop
@@ -2564,27 +2564,27 @@ puzzle 641: Gain a bishop
 
 r2qkb1r/ppp1pppp/3p1n2/3Pn3/2P3b1/2N5/PP1NPPPP/R1BQKB1R b KQkq - 0 1
 puzzle 642: Gain a queen
-Nd3+ 2.exd3 Bxd1 *
+1...Nd3+ 2.exd3 Bxd1 *
 
 8/5p1k/1p4rp/8/8/4qQ2/PP5P/5R1K b - - 0 1
 puzzle 643: Gain a queen
-Rg1+ 2.Rxg1 Qxf3+ *
+1...Rg1+ 2.Rxg1 Qxf3+ *
 
 3r4/4kpp1/pqQ1p3/8/P7/6P1/2P3B1/4R2K b - - 0 1
 puzzle 644: Gain a queen
-Rh8+ 2.Bh3 Qxc6+ *
+1...Rh8+ 2.Bh3 Qxc6+ *
 
 r1bqkb1r/ppp2ppp/2n5/1QnpP3/8/P1NB1N2/1PPP2PP/R1B1K2R b KQkq - 0 1
 puzzle 645: Gain a queen
-a6 *
+1...a6 *
 
 6k1/6p1/2Np2qp/1P1P4/5p1n/4r3/P1Q3PP/2R1N2K b - - 0 1
 puzzle 646: Gain a queen
-Rxe1+ 2.Rxe1 Qxc2 *
+1...Rxe1+ 2.Rxe1 Qxc2 *
 
 r2qkb1r/3n1ppp/4pn2/1Q1b4/NppP1B2/5NP1/1P2PPBP/R4RK1 b kq - 0 1
 puzzle 647: Gain a queen
-Ra5 2.Qxa5 Qxa5 *
+1...Ra5 2.Qxa5 Qxa5 *
 
 1r3b1r/pp2k1p1/2p1bnB1/q3p1p1/4P3/1QN1B3/PP4PP/2KR3R w - - 0 1
 puzzle 648: Gain a queen
@@ -2708,27 +2708,27 @@ puzzle 677: Gain a queen
 
 r1bq1rk1/pp2np1p/3p4/2pP2p1/2P1Q3/2P1PN2/P4PPP/R1B2RK1 b - - 0 1
 puzzle 678: Gain a queen
-Bf5 *
+1...Bf5 *
 
 r3brk1/1pq1b1pp/p1n5/2pp1p2/Q7/P1PP1N1P/1PB2PP1/R1BR1NK1 b - - 0 1
 puzzle 679: Gain a queen
-Nd4 *
+1...Nd4 *
 
 r3r1k1/2pb1pp1/3p2np/2q5/8/P1N3PP/1PQB2B1/R2R1K2 b - - 0 1
 puzzle 680: Gain a queen
-Bb5+ 2.Nxb5 Qxc2 *
+1...Bb5+ 2.Nxb5 Qxc2 *
 
 r7/4bpk1/p3p3/4N1p1/2ppN1Q1/2P2KP1/PP3P1q/4R3 b - - 0 1
 puzzle 681: Gain a queen
-f5 *
+1...f5 *
 
 rnbqkbnr/ppp2ppp/8/3p4/4pQ2/2N1P3/PPPP1PPP/R1B1KBNR b KQkq - 0 1
 puzzle 682: Gain a queen
-Bd6 *
+1...Bd6 *
 
 r1b1k1nr/ppp2ppp/8/q2Pp3/1bQn4/2NB4/PPP2PPP/R1B1K1NR b KQkq - 0 1
 puzzle 683: Gain a queen
-b5 *
+1...b5 *
 
 r1b2rkb/pp2pp1p/4n1p1/2pNP3/2Bq2P1/7P/PPPBQP2/R3K2R w KQ - 0 1
 puzzle 684: Gain a queen
@@ -2756,27 +2756,27 @@ puzzle 689: Gain a queen
 
 6k1/pr4p1/1rnb1nQp/4p1P1/qP6/3P3N/PRNB1P1P/K1R5 b - - 0 1
 puzzle 690: Gain a queen
-Ne7 *
+1...Ne7 *
 
 r2q1bk1/1Q1b1p2/4r1p1/4p3/2PpPPPp/1P5P/PB4BK/R2R4 b - - 0 1
 puzzle 691: Gain a queen
-Bc6 *
+1...Bc6 *
 
 r5k1/5pp1/4p2p/1P2P3/1bp5/1P1n1NP1/2Q1RPKP/r7 b - - 0 1
 puzzle 692: Gain a queen
-Rc1 *
+1...Rc1 *
 
 4r1k1/1pp3pp/p1p3q1/8/8/2Pb1QbP/PP4PN/R5BK b - - 0 1
 puzzle 693: Gain a queen
-Be2 *
+1...Be2 *
 
 2rq1rk1/p4ppp/4b3/1B2p3/1Q6/P1n1P3/1B3PPP/R3K2R b KQ - 0 1
 puzzle 694: Gain a queen
-a5 *
+1...a5 *
 
 r3q1k1/1b3ppp/p1pb4/1p1n2N1/5P2/1BP5/PP3QPP/R1B3K1 b - - 0 1
 puzzle 695: Gain a queen
-Bc5 *
+1...Bc5 *
 
 r5k1/5p2/4bnp1/1p2q2p/1Pp1P3/2P1B1P1/2B3PN/4Q1K1 w - - 0 1
 puzzle 696: Gain a queen
@@ -3040,7 +3040,7 @@ puzzle 760: Gain a queen
 
 1r4k1/3R1ppp/pq6/2r1p3/4Q3/1P2P1P1/5P1P/3R2K1 w - - 0 1
 puzzle 761: Gain a queen
-1.Rb7 -- *
+1.Rb7 *
 
 r5k1/2pN2p1/pp5p/3q4/6B1/5PR1/1P5P/6K1 w - - 0 1
 puzzle 762: Gain a queen
@@ -3052,7 +3052,7 @@ puzzle 763: Gain a queen
 
 r3rk2/pp2qp2/2p1bNpp/8/8/P1Q1P3/1P3PPP/1BR3K1 w - - 0 1
 puzzle 764: Gain a queen
-1.Nd5 -- *
+1.Nd5 *
 
 3r2k1/6pp/4q3/1PQpb3/2p5/6P1/6BP/5R1K w - - 0 1
 puzzle 765: Gain a queen
@@ -3060,7 +3060,7 @@ puzzle 765: Gain a queen
 
 r6r/2qbkppp/p2pp3/1pnnPP2/3N4/2NB1Q2/PPP3PP/2KRR3 w - - 0 1
 puzzle 766: Gain a queen
-1.Nxd5+ exd5 2.exd6+ -- *
+1.Nxd5+ exd5 2.exd6+ *
 
 8/qp6/p7/pk6/2R5/P2K4/8/8 w - - 0 1
 puzzle 767: Gain a queen
@@ -3096,7 +3096,7 @@ puzzle 774: Gain a queen
 
 4kb1r/1b3p1p/p1qp1np1/B1n1p3/2N1P3/1PN3PB/2P2P1P/3QR1K1 w k - 0 1
 puzzle 775: Gain a queen
-1.Nxe5 -- *
+1.Nxe5 *
 
 r3bk1r/1p2bp2/4pn1p/p3N3/2Pp1B2/8/q1B1QPPP/3R1RK1 w - - 0 1
 puzzle 776: Gain a queen
@@ -3104,7 +3104,7 @@ puzzle 776: Gain a queen
 
 r4k1r/pp4pp/n1p2nB1/3pN3/7q/2B4b/PPP1QPPP/R3R1K1 w - - 0 1
 puzzle 777: Gain a queen
-1.Nf3 -- *
+1.Nf3 *
 
 r1b2rk1/pp3p1p/2n1pBp1/4P3/2qN2Q1/8/P4PPP/R5KR w - - 0 1
 puzzle 778: Gain a queen
@@ -3112,15 +3112,15 @@ puzzle 778: Gain a queen
 
 r3k2r/pp1q1ppp/1b6/3p4/Q7/B7/P4PPP/3R1RK1 w kq - 0 1
 puzzle 779: Gain a queen
-1.Rxd5 -- *
+1.Rxd5 *
 
 4r1k1/5p1p/6pB/4q3/3Q4/6P1/PrP2PKP/5R2 w - - 0 1
 puzzle 780: Gain a queen
-1.Re1 -- *
+1.Re1 *
 
 r1bq3k/pppp1Qp1/2n4p/4P3/2BP4/8/P4PPP/b1B2RK1 w - - 0 1
 puzzle 781: Gain a queen
-1.Bg5 -- *
+1.Bg5 *
 
 Q7/8/3R4/P4p2/8/2k1p1P1/4b2K/2q5 w - - 0 1
 puzzle 782: Gain a queen
@@ -3128,7 +3128,7 @@ puzzle 782: Gain a queen
 
 5r1k/bp4pp/1n6/5qN1/1PR5/P2Q3P/5PP1/6K1 w - - 0 1
 puzzle 783: Gain a queen
-1.Rf4 -- *
+1.Rf4 *
 
 4q1k1/4bnp1/6Qp/1pp5/5B2/2P4P/1PB2PPK/r7 w - - 0 1
 puzzle 784: Gain a queen
@@ -3140,123 +3140,123 @@ puzzle 785: Gain a queen
 
 8/7k/4p1p1/3p1p2/3P1K1P/P4PQ1/6q1/8 b - - 0 1
 puzzle 786: Gain a queen
-e5+ 2.Kxe5 Qxg3+ *
+1...e5+ 2.Kxe5 Qxg3+ *
 
 2b1r1k1/5p1p/pp3qp1/2pP4/P2b2P1/2N2Q2/1P2B3/R3BK2 b - - 0 1
 puzzle 787: Gain a queen
-Bxg4 2.-- *
+1...Bxg4 *
 
 6k1/1N3ppp/4b3/1P6/1n3pn1/8/1PPQ3P/r2B3K b - - 0 1
 puzzle 788: Gain a queen
-Rxd1+ 2.Qxd1 Nf2+ 3.Kg2 Nxd1 *
+1...Rxd1+ 2.Qxd1 Nf2+ 3.Kg2 Nxd1 *
 
 r1b1kbnr/pppp1Npp/8/8/2BnP3/8/PPPP1PqP/RNBQKR2 b Qkq - 0 1
 puzzle 789: Gain a queen
-Qxe4+ 2.Qe2 Nxe2 *
+1...Qxe4+ 2.Qe2 Nxe2 *
 
 8/p2R1p1k/6p1/2p1p3/2P1P1Kb/4Q2P/1q2N3/5r2 b - - 0 1
 puzzle 790: Gain a queen
-Qxe2+ 2.Kxh4 Qxe3 *
+1...Qxe2+ 2.Kxh4 Qxe3 *
 
 8/pQ3ppk/3q2pp/5b2/8/P3P3/1P3PPP/n1KN1B1R b - - 0 1
 puzzle 791: Gain a queen
-Qc6+ 2.Nc3 Qxb7 *
+1...Qc6+ 2.Nc3 Qxb7 *
 
 rnbqk2r/ppp2ppp/2p5/2b1P3/4P3/8/PPP2PPP/RNBQKB1R b KQkq - 0 1
 puzzle 792: Gain a queen
-Bxf2+ 2.Ke2 Bg4+ 3.Kxf2 Qxd1 *
+1...Bxf2+ 2.Ke2 Bg4+ 3.Kxf2 Qxd1 *
 
 8/p4p1k/1p4pP/3QPb2/1P2q3/8/PBr5/K2R4 b - - 0 1
 puzzle 793: Gain a queen
-Rc1+ 2.Rxc1 Qxd5 *
+1...Rc1+ 2.Rxc1 Qxd5 *
 
 2q2rk1/1n2Qp1p/2p3p1/1p2p3/1P2P3/2P4P/5PP1/3NR1K1 b - - 0 1
 puzzle 794: Gain a queen
-f6 2.Ne3 Rf7 *
+1...f6 2.Ne3 Rf7 *
 
 r4rk1/pp3ppp/4p3/P1b1P3/Rn2n1q1/5N2/1PB1Q1PP/2B2R1K b - - 0 1
 puzzle 795: Gain a queen
-Ng3+ 2.hxg3 Qh5+ 3.Nh2 Qxe2 *
+1...Ng3+ 2.hxg3 Qh5+ 3.Nh2 Qxe2 *
 
 B4rk1/p4ppp/2pb4/8/2pn2b1/3P2Pq/PP2PP1P/R1BQR1K1 b - - 0 1
 puzzle 796: Gain a queen
-Bxe2 2.Qxe2 Nxe2+ *
+1...Bxe2 2.Qxe2 Nxe2+ *
 
 r2qkb1r/ppp2ppp/2n5/1QnpPb2/8/P1N2N2/1PPP2PP/R1B1KB1R b KQkq - 0 1
 puzzle 797: Gain a queen
-Bd3 2.Bxd3 a6 *
+1...Bd3 2.Bxd3 a6 *
 
 3R1rk1/8/5Qpp/2p5/2P1p1q1/P3P3/1P2PK2/8 b - - 0 1
 puzzle 798: Gain a queen
-Qh4+ 2.Kg1 Qxf6 *
+1...Qh4+ 2.Kg1 Qxf6 *
 
 r4knr/1p2pp1p/pq1p2pb/2pP4/Q1PnP1b1/P5P1/1P1N1P1P/R1B1KBNR b KQ - 0 1
 puzzle 799: Gain a queen
-Qa5 2.-- *
+1...Qa5 *
 
 r3r1k1/ppqbBppp/2n1p3/1B6/2P3n1/2N2N2/PP2QPPP/R4RK1 b - - 0 1
 puzzle 800: Gain a queen
-Nd4 2.g3 Nxe2+ *
+1...Nd4 2.g3 Nxe2+ *
 
 r1bqk2r/pppp1ppp/5n2/2b1n3/4P3/1BP3Q1/PP3PPP/RNB1K1NR b KQkq - 0 1
 puzzle 801: Gain a queen
-Bxf2+ 2.Qxf2 Nd3+ *
+1...Bxf2+ 2.Qxf2 Nd3+ *
 
 2r3k1/p4ppp/1p6/8/3n4/P7/1P3PPP/5Q1K b - - 0 1
 puzzle 802: Gain a queen
-Ne2 2.g3 Rc1 *
+1...Ne2 2.g3 Rc1 *
 
 r4rk1/6pp/1q2p3/pB1p4/P2n1P2/8/1P3QPP/R4RK1 b - - 0 1
 puzzle 803: Gain a queen
-Rxf4 2.Qxf4 Ne2+ 3.Kh1 Nxf4 *
+1...Rxf4 2.Qxf4 Ne2+ 3.Kh1 Nxf4 *
 
 4q1k1/p6p/5p2/3p1Pp1/P3p3/2rnP1PK/4Q1NP/1R6 b - - 0 1
 puzzle 804: Gain a queen
-Qh5+ 2.Nh4 Qxe2 *
+1...Qh5+ 2.Nh4 Qxe2 *
 
 8/4kp2/3p1pb1/1p2b3/1P2P1P1/5Q2/7R/2q2B1K b - - 0 1
 puzzle 805: Gain a queen
-Bxe4 2.-- *
+1...Bxe4 *
 
 5rk1/pQ3ppp/8/2P1p3/5nP1/qB5P/P4P2/3RKNn1 b - - 0 1
 puzzle 806: Gain a queen
-Qb4+ 2.-- *
+1...Qb4+ *
 
 R7/2k5/1p2p1p1/1Q1pPp2/1PpP4/6P1/2P1q1P1/2K5 b - - 0 1
 puzzle 807: Gain a queen
-Qf1+ 2.Kb2 c3+ 3.Kxc3 Qxb5 *
+1...Qf1+ 2.Kb2 c3+ 3.Kxc3 Qxb5 *
 
 4r3/3k4/q1p1n2p/3p1pp1/R2P1P2/1QP2KP1/7P/R7 b - - 0 1
 puzzle 808: Gain a queen
-Nxd4+ 2.-- *
+1...Nxd4+ *
 
 R4bk1/5ppp/2p4q/1p6/3P4/2P1rNPb/1P1Q3P/3B2K1 b - - 0 1
 puzzle 809: Gain a queen
-Rxf3 2.-- *
+1...Rxf3 *
 
 8/6pk/5r2/3Q4/1P1P2np/8/8/6K1 b - - 0 1
 puzzle 810: Gain a queen
-Rf1+ 2.Kxf1 Ne3+ 3.Kf2 Nxd5 *
+1...Rf1+ 2.Kxf1 Ne3+ 3.Kf2 Nxd5 *
 
 6k1/p5p1/1p2qp2/1Q3b2/5B2/5N2/PP4PP/3r1RK1 b - - 0 1
 puzzle 811: Gain a queen
-Bd3 2.Rxd1 Bxb5 *
+1...Bd3 2.Rxd1 Bxb5 *
 
 r3kbnr/ppp2ppp/8/q2Ppb2/1n6/2N5/PPPBNPPP/2RQKB1R b Kkq - 0 1
 puzzle 812: Gain a queen
-Bxc2 2.Qxc2 Nxc2+ *
+1...Bxc2 2.Qxc2 Nxc2+ *
 
 6k1/p4p1p/q5p1/8/3p4/1P1NrPb1/P2R3P/3Q3K b - - 0 1
 puzzle 813: Gain a queen
-Re1+ 2.Qxe1 Bxe1 *
+1...Re1+ 2.Qxe1 Bxe1 *
 
 2kr3r/pp4pp/3p1p1n/3Pp2Q/1P1n2q1/3P2N1/P4PPP/R1B2RK1 b - - 0 1
 puzzle 814: Gain a queen
-Ne2+ 2.Nxe2 Qxh5 *
+1...Ne2+ 2.Nxe2 Qxh5 *
 
 2k1r2r/pppn2pp/5nq1/3P4/1PPP1p1b/3Q1B2/P4NPP/R1B2K1R b - - 0 1
 puzzle 815: Gain a queen
-Re1+ 2.Kxe1 Qxd3 *
+1...Re1+ 2.Kxe1 Qxd3 *
 
 7R/7P/3k4/8/8/8/7r/4K3 w - - 0 1
 puzzle 816: Gain a rook
@@ -3284,7 +3284,7 @@ puzzle 821: Gain a rook
 
 1q1r2k1/1br2ppp/p7/1pQPR1P1/1P6/7P/5PB1/4R1K1 w - - 0 1
 puzzle 822: Gain a rook
-1.Qxc7 -- *
+1.Qxc7 *
 
 r1bq1rk1/p1p1bppp/1p2pn2/6B1/3P4/3B1N2/PPP1QPPP/R3K2R w - - 0 1
 puzzle 823: Gain a rook
@@ -3348,7 +3348,7 @@ puzzle 837: Gain a rook
 
 1rb1k2r/2q1bp1p/p5pB/1pnB4/8/8/PPP1Q1PP/1K1RR3 w k - 0 1
 puzzle 838: Gain a rook
-1.Bf4 -- *
+1.Bf4 *
 
 1n6/2pq1kp1/p2pNpp1/b2r4/2R1Q3/7P/1B3PP1/6K1 w - - 0 1
 puzzle 839: Gain a rook
@@ -3356,75 +3356,75 @@ puzzle 839: Gain a rook
 
 r1b1R3/p5pk/1p1B2p1/3p2P1/NP1bp3/8/P6P/7K b - - 0 1
 puzzle 840: Gain a rook
-Bg4 2.-- *
+1...Bg4 *
 
 6k1/p1p2pp1/2n4r/8/3Pp1n1/P3P1Pq/1P2R3/2BQKR2 b - - 0 1
 puzzle 841: Gain a rook
-Qxf1+ 2.Kxf1 Rh1+ 3.Kg2 Rxd1 *
+1...Qxf1+ 2.Kxf1 Rh1+ 3.Kg2 Rxd1 *
 
 r1bq1rk1/ppp2ppp/3b4/8/2P3n1/5N1P/PP2PPP1/RNBQKB1R b KQ - 0 1
 puzzle 842: Gain a rook
-Nxf2 2.Qc2 Nxh1 *
+1...Nxf2 2.Qc2 Nxh1 *
 
 2k5/1pq5/p3bp2/4p2p/5PpP/1NPrn3/PP3RPK/2Q1B3 b - - 0 1
 puzzle 843: Gain a rook
-g3+ 2.Kg1 gxf2+ *
+1...g3+ 2.Kg1 gxf2+ *
 
 4rrk1/1p3pp1/4p3/pPPpP3/3Pn2p/2NQPRqP/6P1/6RK b - - 0 1
 puzzle 844: Gain a rook
-Qxf3 2.gxf3 Nf2+ 3.Kg2 Nxd3 *
+1...Qxf3 2.gxf3 Nf2+ 3.Kg2 Nxd3 *
 
 3Q4/5p1k/5Pp1/pB5q/P7/6P1/1r1R2KP/8 b - - 0 1
 puzzle 845: Gain a rook
-Qd1 *
+1...Qd1 *
 
 6k1/p4p1p/1p2p1p1/q7/3R4/PQ5P/1P3PP1/6K1 b - - 0 1
 puzzle 846: Gain a rook
-Qe1+ 2.Kh2 Qe5+ 3.Kg1 Qxd4 *
+1...Qe1+ 2.Kh2 Qe5+ 3.Kg1 Qxd4 *
 
 1k6/7r/2pRK3/8/3P4/8/8/8 b - - 0 1
 puzzle 847: Gain a rook
-Kc7 2.Ke5 Rh5+ 3.Ke6 Rh6+ 4.Ke5 Rxd6 *
+1...Kc7 2.Ke5 Rh5+ 3.Ke6 Rh6+ 4.Ke5 Rxd6 *
 
 6k1/pp4pp/1q2p3/1B1b4/1P3R2/P5KP/6PQ/8 b - - 0 1
 puzzle 848: Gain a rook
-g5 2.-- *
+1...g5 *
 
 2r2rk1/6pp/p7/1p1q1b2/3P4/PQ2p1R1/KB3P1P/3R1B2 b - - 0 1
 puzzle 849: Gain a rook
-Qxb3+ 2.Kxb3 Bc2+ 3.Kb4 Bxd1 *
+1...Qxb3+ 2.Kxb3 Bc2+ 3.Kb4 Bxd1 *
 
 1q2r2k/2RQ1pp1/1p5p/p2p4/Pn1P2P1/1B6/1P3PP1/6K1 b - - 0 1
 puzzle 850: Gain a rook
-Re1+ 2.Kh2 Rc1 *
+1...Re1+ 2.Kh2 Rc1 *
 
 3r2k1/p4ppp/1q6/8/8/2R1P3/P3QPPP/6K1 b - - 0 1
 puzzle 851: Gain a rook
-Qb2 2.Rc2 Qb1+ 3.Qf1 Qxc2 *
+1...Qb2 2.Rc2 Qb1+ 3.Qf1 Qxc2 *
 
 q4rk1/2rR1ppp/p3p3/1p6/8/1QN3P1/PP2PK1P/3R4 b - - 0 1
 puzzle 852: Gain a rook
-Qa7+ 2.R7d4 e5 *
+1...Qa7+ 2.R7d4 e5 *
 
 6k1/3b1p2/8/5P2/1p4Nq/2n4P/2Pr2B1/4RQK1 b - - 0 1
 puzzle 853: Gain a rook
-Bb5 2.Qf4 Qxe1+ *
+1...Bb5 2.Qf4 Qxe1+ *
 
 8/5ppk/Q6p/3r4/8/P2R1P2/KP4PP/2q5 b - - 0 1
 puzzle 854: Gain a rook
-Qf1 *
+1...Qf1 *
 
 3r2k1/4ppbp/b5p1/q1p1P1n1/2P5/N3Q1PP/1B3P2/4RBK1 b - - 0 1
 puzzle 855: Gain a rook
-Qxe1 2.Qxe1 Nf3+ 3.Kh1 Nxe1 *
+1...Qxe1 2.Qxe1 Nf3+ 3.Kh1 Nxe1 *
 
 5r1k/6p1/1p5p/p1q5/3Q4/5P2/PP4PP/3R2K1 b - - 0 1
 puzzle 856: Gain a rook
-Rd8 2.Qxc5 Rxd1+ 3.Kf2 bxc5 *
+1...Rd8 2.Qxc5 Rxd1+ 3.Kf2 bxc5 *
 
 3r2k1/pp2bppp/5n2/7q/8/1P3PP1/PBQ3BP/3R2K1 b - - 0 1
 puzzle 857: Gain a rook
-Qc5+ 2.Qxc5 Rxd1+ 3.Kf2 Bxc5+ *
+1...Qc5+ 2.Qxc5 Rxd1+ 3.Kf2 Bxc5+ *
 
 8/8/8/6kp/4R2b/8/6K1/8 w - - 0 1
 puzzle 858: Gain a bishop
@@ -3456,7 +3456,7 @@ puzzle 864: Gain a bishop
 
 3R4/pp3pkp/2p1rpq1/5b2/8/2Q3N1/PPP3PP/6K1 w - - 0 1
 puzzle 865: Gain a bishop
-1.Qc5 -- *
+1.Qc5 *
 
 rn3rk1/1b2bp1p/p2ppqp1/8/1p1NP3/3B4/PPP1NPQP/1K1R2R1 w - - 0 1
 puzzle 866: Gain a bishop
@@ -3480,7 +3480,7 @@ puzzle 870: Gain a bishop
 
 4kr2/2rb1p2/1q2p3/4P2p/1p1RB2P/pP3Q2/P1P5/1K1R4 w - - 0 1
 puzzle 871: Gain a bishop
-1.Rxd7 -- *
+1.Rxd7 *
 
 k7/5p2/8/p4q2/4b3/8/1P4B1/K5Q1 w - - 0 1
 puzzle 872: Gain a bishop
@@ -3500,7 +3500,7 @@ puzzle 875: Gain a bishop
 
 rnb2r1k/pp2p2p/2pp2p1/q2P1p2/8/1Pb2NP1/PB2PPBP/R2QR1K1 w - - 0 1
 puzzle 876: Gain a bishop
-1.Qd2 -- *
+1.Qd2 *
 
 r3k2r/pb2bppp/1pp1p2q/4B3/3P4/2PB1Q2/PP3PPP/R3K2R w KQkq - 0 1
 puzzle 877: Gain a bishop
@@ -3508,7 +3508,7 @@ puzzle 877: Gain a bishop
 
 r1b2rk1/ppp2ppp/1b1p1q2/3P4/BPPp4/8/PB1PQPPP/R4RK1 b - - 0 1
 puzzle 878: Gain a bishop
-d3 2.Bxf6 dxe2 3.Rfe1 gxf6 *
+1...d3 2.Bxf6 dxe2 3.Rfe1 gxf6 *
 
 1r4k1/R4ppp/8/1pR1P3/2b5/5BP1/1r2PPKP/8 w - - 0 1
 puzzle 879: Gain a bishop
@@ -3520,79 +3520,79 @@ puzzle 880: Gain a bishop
 
 r2r2k1/2p2ppp/p7/1p2P1n1/P6q/5P2/2B1QP1P/R5RK b - - 0 1
 puzzle 881: Gain a bishop
-Rd2 2.Rg4 Rxe2 3.Rxh4 Rxc2 *
+1...Rd2 2.Rg4 Rxe2 3.Rxh4 Rxc2 *
 
 8/5pk1/8/4p3/pp1qPn2/5P2/PP2B3/2Q2K2 b - - 0 1
 puzzle 882: Gain a bishop
-Qg1+ 2.Kxg1 Nxe2+ 3.Kf2 Nxc1 *
+1...Qg1+ 2.Kxg1 Nxe2+ 3.Kf2 Nxc1 *
 
 2r2bk1/2q4p/p3P1p1/1p3p2/4p3/2B5/PPPQ2PP/2KR4 b - - 0 1
 puzzle 883: Gain a bishop
-b4 2.Bf6 Bh6 3.Bg5 Bxg5 4.Qxg5 Qxc2# 0-1
+1...b4 2.Bf6 Bh6 3.Bg5 Bxg5 4.Qxg5 Qxc2# 0-1
 
 4rr1k/1pp3pp/p1nb4/8/6Qq/4B2P/PPP2PP1/RN2R1K1 b - - 0 1
 puzzle 884: Gain a bishop
-Rxe3 2.-- *
+1...Rxe3 *
 
 1r6/2p5/3p1bk1/3P2p1/2P1p1R1/R4P2/P1K3P1/r1B5 b - - 0 1
 puzzle 885: Gain a bishop
-Rxc1+ 2.Kxc1 Bb2+ 3.Kc2 Bxa3 *
+1...Rxc1+ 2.Kxc1 Bb2+ 3.Kc2 Bxa3 *
 
 6rk/p5bp/1p1Q4/2p1B3/2P5/1P2R2P/q5PK/8 b - - 0 1
 puzzle 886: Gain a bishop
-Qxg2+ 2.Kxg2 Bxe5+ 3.Kf2 Bxd6 *
+1...Qxg2+ 2.Kxg2 Bxe5+ 3.Kf2 Bxd6 *
 
 5rk1/q4ppp/2b1pb2/8/r1Bp4/P2Q1N2/R1P2PPP/3R2K1 b - - 0 1
 puzzle 887: Gain a bishop
-Rxc4 2.Qxc4 Bd5 3.Qd3 Bxa2 *
+1...Rxc4 2.Qxc4 Bd5 3.Qd3 Bxa2 *
 
 b3r2k/p2q1nb1/1p4p1/2p2p2/5B2/2PB1PN1/PPQ2KP1/5R2 b - - 0 1
 puzzle 888: Gain a bishop
-Bd4+ 2.Be3 Bxe3+ *
+1...Bd4+ 2.Be3 Bxe3+ *
 
 r1bq1rk1/1p1nppbp/2n3p1/p7/QPPp4/B2P1NP1/P2N1PBP/R4RK1 b - - 0 1
 puzzle 889: Gain a bishop
-axb4 2.-- *
+1...axb4 *
 
 4r1k1/5p2/1p5B/p7/2P1q3/PPQ4P/3R1KP1/4r3 b - - 0 1
 puzzle 890: Gain a bishop
-Rf1+ 2.Kg3 Qg6+ 3.Kh2 Qxh6 *
+1...Rf1+ 2.Kg3 Qg6+ 3.Kh2 Qxh6 *
 
 r1b1kb1r/pp1n1ppp/2p1p3/q2p2B1/2PPn3/2NBPN2/PPQ2PPP/R3K2R b KQkq - 0 1
 puzzle 891: Gain a bishop
-Nxg5 2.Nxg5 dxc4 3.Bxc4 Qxg5 *
+1...Nxg5 2.Nxg5 dxc4 3.Bxc4 Qxg5 *
 
 r4bk1/2p2pp1/7p/3br1q1/1p2B3/4RQ1P/PP3PP1/R4NK1 b - - 0 1
 puzzle 892: Gain a bishop
-Rxe4 2.Rxe4 f5 *
+1...Rxe4 2.Rxe4 f5 *
 
 2rq1rk1/p3b1pp/bp2p3/4Pp2/3p4/Pn1P1N1Q/1P1BB1PP/1R1N1R1K b - - 0 1
 puzzle 893: Gain a bishop
-Nxd2 2.Nxd2 Rc2 *
+1...Nxd2 2.Nxd2 Rc2 *
 
 3rkb1r/p2bpp1p/2B5/2p3p1/Q3P3/2q5/P3KPPP/1RB3NR b k - 0 1
 puzzle 894: Gain a bishop
-Qd3+ 2.Kxd3 Bxc6+ 3.Ke2 Bxa4 *
+1...Qd3+ 2.Kxd3 Bxc6+ 3.Ke2 Bxa4 *
 
 r4rk1/pp2pp1p/6p1/8/Qnq1P3/2P1BPP1/P5KP/R4R2 b - - 0 1
 puzzle 895: Gain a bishop
-Nd5 2.Qxc4 Nxe3+ 3.Kf2 Nxc4 *
+1...Nd5 2.Qxc4 Nxe3+ 3.Kf2 Nxc4 *
 
 r4rk1/pbq2ppp/1p2pn2/n1p5/3P4/PBP1P1N1/1B3PPP/2RQ1RK1 b - - 0 1
 puzzle 896: Gain a bishop
-Qc6 2.f3 Qb5 *
+1...Qc6 2.f3 Qb5 *
 
 r5k1/1p3ppp/3B1p2/3P1q2/8/1P3N2/1P3PPP/3Q2K1 b - - 0 1
 puzzle 897: Gain a bishop
-Qxd5 2.-- *
+1...Qxd5 *
 
 2r2bk1/1p3pp1/7p/1P1Pp3/B7/P2q4/Q4PPP/4R1K1 b - - 0 1
 puzzle 898: Gain a bishop
-Qe4 2.Kf1 Qxa4 *
+1...Qe4 2.Kf1 Qxa4 *
 
 8/6pk/7p/2r2p2/5Pqn/1P6/P2Q2PP/2B2RK1 b - - 0 1
 puzzle 899: Gain a bishop
-Rxc1 2.h3 Nf3+ *
+1...Rxc1 2.h3 Nf3+ *
 
 8/4p3/8/8/3n2k1/8/4P3/R3K3 w Q - 0 1
 puzzle 900: Gain a knight
@@ -3620,7 +3620,7 @@ puzzle 905: Gain a knight
 
 5rk1/1N3pbp/p3p3/4n3/4Qp2/P4N2/1PP2PqP/1K4R1 b - - 0 1
 puzzle 906: Gain a knight
-Nxf3 2.Rxg2 Nd2+ 3.Kc1 Nxe4 *
+1...Nxf3 2.Rxg2 Nd2+ 3.Kc1 Nxe4 *
 
 2qr2k1/pp3pp1/4pn2/2n1Q1N1/3R4/2P3NP/PP3PP1/6K1 w - - 0 1
 puzzle 907: Gain a knight
@@ -3628,7 +3628,7 @@ puzzle 907: Gain a knight
 
 r3k1nr/p5b1/2qpp2p/1Q2n1p1/3N1p2/2P5/PP4PP/RNB2RK1 b kq - 0 1
 puzzle 908: Gain a knight
-Nf3+ 2.Kh1 Nxd4 *
+1...Nf3+ 2.Kh1 Nxd4 *
 
 1r3rk1/pp3pp1/3b4/2pP1P1p/3pPn1q/5Q1P/PP1B1P2/1K1R1BR1 w - - 0 1
 puzzle 909: Gain a knight
@@ -3640,7 +3640,7 @@ puzzle 910: Gain a knight
 
 5rn1/p3rqk1/3Rp1pp/1p1nP3/2pQN3/8/PPB2PPP/3R2K1 w - - 0 1
 puzzle 911: Gain a knight
-1.Rxd5 -- *
+1.Rxd5 *
 
 5rk1/5ppp/2q1Pn2/2p5/p3R2P/P5P1/5PB1/Q5K1 w - - 0 1
 puzzle 912: Gain a knight
@@ -3652,7 +3652,7 @@ puzzle 913: Gain a knight
 
 4kb1r/r1pb1ppp/p1n2q1n/4p1N1/B3P3/1QP5/PP3PPP/RNB1K2R w KQk - 0 1
 puzzle 914: Gain a knight
-1.Bxc6 -- *
+1.Bxc6 *
 
 r1q2k1r/5ppp/p7/pB3n2/4Q3/P7/2P2PPP/R3R1K1 w - - 0 1
 puzzle 915: Gain a knight
@@ -3664,47 +3664,47 @@ puzzle 916: Gain a knight
 
 r3r2k/pp2Nppp/5n2/1q6/8/5Q2/P4PPP/1R2R1K1 b - - 0 1
 puzzle 917: Gain a knight
-Rxe7 2.-- *
+1...Rxe7 *
 
 5rk1/6pp/1p3p2/3P4/PNr1b1q1/8/3Q1RPP/R6K b - - 0 1
 puzzle 918: Gain a knight
-Rxb4 2.-- *
+1...Rxb4 *
 
 8/pb3pk1/1p4p1/2p5/5P2/2PqN1PP/PP1n3K/3BQ3 b - - 0 1
 puzzle 919: Gain a knight
-Qxe3 2.Qxe3 Nf1+ 3.Kg1 Nxe3 *
+1...Qxe3 2.Qxe3 Nf1+ 3.Kg1 Nxe3 *
 
 r3k3/pp1n1p1p/4pqr1/3pb3/3N3R/2P2Q2/PP3BPP/4R1K1 b q - 0 1
 puzzle 920: Gain a knight
-Bxd4 2.Qxf6 Bxf6 *
+1...Bxd4 2.Qxf6 Bxf6 *
 
 2r3k1/b1q4p/6p1/1p2rp2/3p4/PP1Q1R1P/4N1P1/3R2K1 b - - 0 1
 puzzle 921: Gain a knight
-Rxe2 2.-- *
+1...Rxe2 *
 
 8/pb1R1ppk/1p5p/7q/4pQ2/1P6/P4PPP/2r2NK1 b - - 0 1
 puzzle 922: Gain a knight
-Rxf1+ 2.Kxf1 Qb5+ 3.Ke1 Qxd7 *
+1...Rxf1+ 2.Kxf1 Qb5+ 3.Ke1 Qxd7 *
 
 3rk1nr/1pp2pbp/p7/3Pp3/2N3pq/8/PPP2PPP/R1BQR1K1 b k - 0 1
 puzzle 923: Gain a knight
-g3 2.hxg3 Qxc4 *
+1...g3 2.hxg3 Qxc4 *
 
 4r1k1/p2b1p2/1p1q1n1p/3p2p1/P1pP2P1/2P1rPNP/3Q1K2/RR3B2 b - - 0 1
 puzzle 924: Gain a knight
-Qxg3+ 2.Kxg3 Ne4+ 3.Kg2 Nxd2 *
+1...Qxg3+ 2.Kxg3 Ne4+ 3.Kg2 Nxd2 *
 
 6r1/3bp1rk/1p1p2qp/p1pP1p2/P1P1nP1B/3Q1B1P/2P3P1/R3R1K1 w - - 0 1
 puzzle 925: Gain a knight
-1.Rxe4 -- *
+1.Rxe4 *
 
 r3r1k1/1b1n1p1p/1pp3p1/p2p4/P2P2n1/4qN1P/NPQ1B1P1/1R1RBK2 b - - 0 1
 puzzle 926: Gain a knight
-Qxf3+ 2.Bxf3 Ne3+ 3.Kf2 Nxc2 *
+1...Qxf3+ 2.Bxf3 Ne3+ 3.Kf2 Nxc2 *
 
 5rk1/5pp1/7p/3qP3/n1N5/pQ6/R4PPP/6K1 b - - 0 1
 puzzle 927: Gain a knight
-Nb2 *
+1...Nb2 *
 
 3rkb1r/pBpq2p1/3pn1bp/5p2/2P2P1P/4Q1N1/PP6/R1B1K2R w KQk - 0 1
 puzzle 928: Gain a knight
@@ -3712,27 +3712,27 @@ puzzle 928: Gain a knight
 
 6k1/3q4/4n3/2p1B2Q/p1PpK3/P2P4/1P6/8 b - - 0 1
 puzzle 929: Gain a knight
-Qc6+ 2.Kf5 Ng7+ 3.Bxg7 Qg6+ 4.Qxg6 1/2-1/2
+1...Qc6+ 2.Kf5 Ng7+ 3.Bxg7 Qg6+ 4.Qxg6 1/2-1/2
 
 8/1P6/3Q3p/7k/6p1/4q2P/6PK/8 b - - 0 1
 puzzle 930: Draw
-g3+ 2.Qxg3 Qg1+ 3.Kxg1 1/2-1/2
+1...g3+ 2.Qxg3 Qg1+ 3.Kxg1 1/2-1/2
 
 7k/6R1/8/8/8/r7/1BK5/8 b - - 0 1
 puzzle 931: Draw
-Rc3+ 2.Bxc3 1/2-1/2
+1...Rc3+ 2.Bxc3 1/2-1/2
 
 8/8/8/2p2p2/P1P2P1k/1Pq2Q2/5K2/8 b - - 0 1
 puzzle 932: Draw
-Qe1+ 2.Kg2 Qg1+ 3.Kxg1 1/2-1/2
+1...Qe1+ 2.Kg2 Qg1+ 3.Kxg1 1/2-1/2
 
 7k/5Qp1/8/7P/7K/4B1P1/8/8 b - - 0 1
 puzzle 933: Draw
-g5+ 2.Kh3 g4+ 3.Kxg4 1/2-1/2
+1...g5+ 2.Kh3 g4+ 3.Kxg4 1/2-1/2
 
 3kb3/8/3P2r1/P1Q2p2/5P2/8/7P/7K b - - 0 1
 puzzle 934: Draw
-Bc6+ 2.Qxc6 Rg1+ 3.Kxg1 1/2-1/2
+1...Bc6+ 2.Qxc6 Rg1+ 3.Kxg1 1/2-1/2
 
 6k1/1b3p2/3p4/7p/6qP/8/5Q1K/8 w - - 0 1
 puzzle 935: Draw
@@ -3780,7 +3780,7 @@ puzzle 945: Draw
 
 8/7p/5Qpk/8/P7/5P1q/5P2/6K1 b - - 0 1
 puzzle 946: Draw
-Qg4+ 2.fxg4 1/2-1/2
+1...Qg4+ 2.fxg4 1/2-1/2
 
 1R6/8/8/8/3k2K1/1pp5/8/8 w - - 0 1
 puzzle 947: Draw
@@ -3796,7 +3796,7 @@ puzzle 949: Draw
 
 4k3/7r/4KP2/R7/8/8/8/8 b - - 0 1
 puzzle 950: Draw
-Re7+ 2.Kf5 Re1 *
+1...Re7+ 2.Kf5 Re1 *
 
 8/p7/8/Pp6/4k3/2K5/8/8 w - - 0 1
 puzzle 951: Draw
@@ -3896,7 +3896,7 @@ puzzle 974: How to proceed?
 
 8/8/8/8/2k5/4p3/8/2K5 b - - 0 1
 puzzle 975: How to proceed?
-Kc3 2.Kd1 Kd3 3.Ke1 e2 *
+1...Kc3 2.Kd1 Kd3 3.Ke1 e2 *
 
 8/8/k5p1/8/8/8/K7/8 w - - 0 1
 puzzle 976: How to proceed?
@@ -3928,7 +3928,7 @@ puzzle 982: How to proceed?
 
 8/8/p7/k7/6K1/5n1P/8/8 b - - 0 1
 puzzle 983: How to proceed?
-Nh4 2.Kxh4 Kb4 3.Kg5 a5 4.h4 a4 5.h5 a3 6.h6 a2 7.h7 a1=Q *
+1...Nh4 2.Kxh4 Kb4 3.Kg5 a5 4.h4 a4 5.h5 a3 6.h6 a2 7.h7 a1=Q *
 
 8/Pk6/8/8/N7/7n/1K6/1B5q w - - 0 1
 puzzle 984: How to proceed?
@@ -4008,7 +4008,7 @@ puzzle 1002: How to proceed?
 
 3k4/7R/8/3PK3/8/8/8/r7 b - - 0 1
 puzzle 1003: How to proceed?
-Ra6 2.d6 Ra1 3.Ke6 Re1+ 4.Kd5 Rd1+ *
+1...Ra6 2.d6 Ra1 3.Ke6 Re1+ 4.Kd5 Rd1+ *
 
 8/2k5/1p6/1P6/4K3/8/8/8 w - - 0 1
 puzzle 1004: How to proceed?
@@ -4016,11 +4016,11 @@ puzzle 1004: How to proceed?
 
 1k3r2/RP6/K7/1P6/8/8/8/8 b - - 0 1
 puzzle 1005: How to proceed?
-Rf6+ 2.b6 Rxb6+ 3.Kxb6 1/2-1/2
+1...Rf6+ 2.b6 Rxb6+ 3.Kxb6 1/2-1/2
 
 8/8/6P1/7p/8/6k1/7p/7K b - - 0 1
 puzzle 1006: How to proceed?
-Kh3 2.g7 h4 3.g8=Q 1/2-1/2
+1...Kh3 2.g7 h4 3.g8=Q 1/2-1/2
 
 8/5p2/5k1P/7P/8/p1p5/8/K7 w - - 0 1
 puzzle 1007: How to proceed?
@@ -4072,7 +4072,7 @@ puzzle 1018: How to proceed?
 
 r1b2rk1/ppq2ppp/3bp3/2p4n/3pP1n1/2PP1N1P/PP1NBPP1/R1BQR1K1 b - - 0 1
 puzzle 1019: How to proceed?
-Bh2+ 2.Kf1 Ng3+ 3.fxg3 Ne3+ 4.Kf2 Qxg3# 0-1
+1...Bh2+ 2.Kf1 Ng3+ 3.fxg3 Ne3+ 4.Kf2 Qxg3# 0-1
 
 2r2k1r/1p4p1/p5B1/1b3P2/3pPBn1/1q6/6PP/R1R4K w - - 0 1
 puzzle 1020: How to proceed?
@@ -4244,79 +4244,79 @@ puzzle 1061: How to proceed?
 
 6k1/p1p4p/1npr4/6pq/2P5/2BPRbP1/PRQ2P1P/6K1 b - - 0 1
 puzzle 1062: How to proceed?
-Qxh2+ 2.Kxh2 Rh6+ 3.Kg1 Rh1# 0-1
+1...Qxh2+ 2.Kxh2 Rh6+ 3.Kg1 Rh1# 0-1
 
 6k1/1p5p/2pp2p1/p7/2Pb2Rq/1P1PpK2/P1N4P/1RQ5 b - - 0 1
 puzzle 1063: How to proceed?
-Qf2+ 2.Ke4 Qf5+ 3.Kxd4 Qe5# 0-1
+1...Qf2+ 2.Ke4 Qf5+ 3.Kxd4 Qe5# 0-1
 
 8/7R/2r5/8/P3n3/8/3nk1PP/R5K1 b - - 0 1
 puzzle 1064: How to proceed?
-Nf3+ 2.Kh1 Nf2# 0-1
+1...Nf3+ 2.Kh1 Nf2# 0-1
 
 8/2k5/1p1p1p2/p1pPp3/2P1Pn2/1KP1QP2/2BB1R2/r6q b - - 0 1
 puzzle 1065: How to proceed?
-Ra3+ 2.Kxa3 Qa1+ 3.Kb3 a4# 0-1
+1...Ra3+ 2.Kxa3 Qa1+ 3.Kb3 a4# 0-1
 
 6k1/5pp1/8/1bBn1q1p/1P5P/5PP1/3Qp1B1/4K3 b - - 0 1
 puzzle 1066: How to proceed?
-Qb1+ 2.Kf2 Qf1+ 3.Bxf1 exf1=Q# 0-1
+1...Qb1+ 2.Kf2 Qf1+ 3.Bxf1 exf1=Q# 0-1
 
 r3k2r/1p2qpp1/p1p5/2b1p3/2B1P1P1/2N1B1p1/PP2Q1P1/3R1RK1 b kq - 0 1
 puzzle 1067: How to proceed?
-Rh1+ 2.Kxh1 Qh4+ 3.Kg1 Qh2# 0-1
+1...Rh1+ 2.Kxh1 Qh4+ 3.Kg1 Qh2# 0-1
 
 r3r3/p7/3R2pk/2P5/1PB1bpQq/P6P/5pP1/3R1K2 b - - 0 1
 puzzle 1068: How to proceed?
-Bd3+ 2.Bxd3 Re1+ 3.Rxe1 fxe1=Q# 0-1
+1...Bd3+ 2.Bxd3 Re1+ 3.Rxe1 fxe1=Q# 0-1
 
 2r1kb2/3b1p1Q/p2ppPN1/q1n5/3NP3/P6B/1PpR3P/2K5 b - - 0 1
 puzzle 1069: How to proceed?
-Nd3+ 2.Rxd3 Qe1+ 3.Rd1 Qxd1# 0-1
+1...Nd3+ 2.Rxd3 Qe1+ 3.Rd1 Qxd1# 0-1
 
 7k/pp4pp/6r1/8/3Ppq1P/1P2Nb1K/P7/R1B1Q3 b - - 0 1
 puzzle 1070: How to proceed?
-Bg2+ 2.Nxg2 Qf3+ 3.Qg3 Qxg3# 0-1
+1...Bg2+ 2.Nxg2 Qf3+ 3.Qg3 Qxg3# 0-1
 
 6k1/pp4bp/2p1bnp1/2B5/2P1p2N/PP2P2P/2Q3BK/3Nq3 b - - 0 1
 puzzle 1071: How to proceed?
-Ng4+ 2.hxg4 Be5+ 3.Kh3 Qg3# 0-1
+1...Ng4+ 2.hxg4 Be5+ 3.Kh3 Qg3# 0-1
 
 6nr/pQ4pp/2Bk4/2b5/3r1pbq/2N5/PPP3PP/R1B2K1R b - - 0 1
 puzzle 1072: How to proceed?
-Qf2+ 2.Kxf2 Rd1+ 3.Be3 Bxe3# 0-1
+1...Qf2+ 2.Kxf2 Rd1+ 3.Be3 Bxe3# 0-1
 
 6rk/7p/8/4p3/p1P2Pq1/P2r4/1Q5P/3R1R1K b - - 0 1
 puzzle 1073: How to proceed?
-Qf3+ 2.Rxf3 Rxd1+ 3.Rf1 Rxf1# 0-1
+1...Qf3+ 2.Rxf3 Rxd1+ 3.Rf1 Rxf1# 0-1
 
 1kr5/1p1r1pR1/p1bbp2p/2q5/3pN2P/5B2/PPP5/2KRQ3 b - - 0 1
 puzzle 1074: How to proceed?
-Qxc2+ 2.Kxc2 Bxe4+ 3.Kb3 Bc2# 0-1
+1...Qxc2+ 2.Kxc2 Bxe4+ 3.Kb3 Bc2# 0-1
 
 7k/p4QpN/1p1p1pB1/8/2P2nb1/4r3/PB2q1PP/6RK b - - 0 1
 puzzle 1075: How to proceed?
-Qxg2+ 2.Rxg2 Re1+ 3.Rg1 Bf3# 0-1
+1...Qxg2+ 2.Rxg2 Re1+ 3.Rg1 Bf3# 0-1
 
 2kr4/pp2r3/2b2Q2/6P1/4pqP1/P7/1PR1KP1N/7R b - - 0 1
 puzzle 1076: How to proceed?
-Qf3+ 2.Nxf3 exf3+ 3.Kf1 Rd1# 0-1
+1...Qf3+ 2.Nxf3 exf3+ 3.Kf1 Rd1# 0-1
 
 6rk/1b1n1p1p/4pP2/p1p5/1p1p3P/1P1PNnq1/P1P1K1B1/2RQR3 b - - 0 1
 puzzle 1077: How to proceed?
-Qxg2+ 2.Nxg2 Rxg2+ 3.Kf1 Nh2# 0-1
+1...Qxg2+ 2.Nxg2 Rxg2+ 3.Kf1 Nh2# 0-1
 
 3r2k1/3r1ppp/1p6/8/2B2P1q/1P2Nn2/PQ2K1bP/2RR4 b - - 0 1
 puzzle 1078: How to proceed?
-Qe1+ 2.Rxe1 Rd2+ 3.Qxd2 Rxd2# 0-1
+1...Qe1+ 2.Rxe1 Rd2+ 3.Qxd2 Rxd2# 0-1
 
 1k1r4/pp1b1Rpp/3q4/4p3/2B5/4Q3/PPP2B2/2K5 b - - 0 1
 puzzle 1079: How to proceed?
-Qd1+ 2.Kxd1 Bg4+ 3.Ke1 Rd1# 0-1
+1...Qd1+ 2.Kxd1 Bg4+ 3.Ke1 Rd1# 0-1
 
 rn1qrk2/ppp1ppbQ/8/6Np/2BP2b1/8/PPP2PP1/R3K3 w Q - 0 1
 puzzle 1080: How to proceed?
-1.Qg6 -- *
+1.Qg6 *
 
 4r1k1/pR3pp1/1n3P1p/q2p4/5N1P/P1rQpP2/8/2B2RK1 w - - 0 1
 puzzle 1081: How to proceed?
@@ -4484,75 +4484,75 @@ puzzle 1121: How to proceed?
 
 5rk1/1R4b1/8/4BpQp/6pP/6K1/4RPP1/q6r b - - 0 1
 puzzle 1122: How to proceed?
-f4+ 2.Bxf4 Rh3+ 3.gxh3 Qg1# 0-1
+1...f4+ 2.Bxf4 Rh3+ 3.gxh3 Qg1# 0-1
 
 5k2/5p2/6p1/2P3P1/3Q2K1/6P1/8/5q2 b - - 0 1
 puzzle 1123: How to proceed?
-f5+ 2.gxf6 Qf5+ 3.Kh4 Qh5# 0-1
+1...f5+ 2.gxf6 Qf5+ 3.Kh4 Qh5# 0-1
 
 4r2k/p1p3rp/1p3B2/8/2P2P2/PP1Q1P1q/7P/6RK b - - 0 1
 puzzle 1124: How to proceed?
-Qg2+ 2.Rxg2 Re1+ 3.Rg1 Rxg1# 0-1
+1...Qg2+ 2.Rxg2 Re1+ 3.Rg1 Rxg1# 0-1
 
 4r1k1/pp1q1ppp/2pb4/3p4/3P1P2/3Q1P2/PP1Br2P/4RR1K b - - 0 1
 puzzle 1125: How to proceed?
-Qh3 *
+1...Qh3 *
 
 8/5n2/8/4qp2/2Q4P/1r2k2K/6B1/8 b - - 0 1
 puzzle 1126: How to proceed?
-Kf2+ 2.Qxb3 Ng5+ 3.hxg5 Qh8# 0-1
+1...Kf2+ 2.Qxb3 Ng5+ 3.hxg5 Qh8# 0-1
 
 7k/pb5q/1p3p2/2p1p1p1/6P1/QP5R/P4PPK/1B1r4 b - - 0 1
 puzzle 1127: How to proceed?
-Rh1+ 2.Kxh1 Qxh3+ 3.Kg1 Qxg2# 0-1
+1...Rh1+ 2.Kxh1 Qxh3+ 3.Kg1 Qxg2# 0-1
 
 1r4k1/2R2ppp/4p1nq/3pP3/3NnP1P/3KBQP1/1r2N3/2R5 b - - 0 1
 puzzle 1128: How to proceed?
-Nxe5+ 2.fxe5 Rd2+ 3.Bxd2 Qxd2# 0-1
+1...Nxe5+ 2.fxe5 Rd2+ 3.Bxd2 Qxd2# 0-1
 
 5rk1/pp5p/2pR2p1/4nr2/2q5/2B5/PPQ2PPP/5RK1 b - - 0 1
 puzzle 1129: How to proceed?
-Nf3+ 2.gxf3 Rg5+ 3.Kh1 Qxf1# 0-1
+1...Nf3+ 2.gxf3 Rg5+ 3.Kh1 Qxf1# 0-1
 
 1Q1b1rk1/3q3r/3p4/3Pp3/P3b3/1Q4B1/6R1/2R3K1 b - - 0 1
 puzzle 1130: How to proceed?
-Rh1+ 2.Kxh1 Qh3+ 3.Bh2+ Qxg2# 0-1
+1...Rh1+ 2.Kxh1 Qh3+ 3.Bh2+ Qxg2# 0-1
 
 5rk1/6bp/R2N2p1/7r/2P3K1/3Q2P1/P4q1P/7R b - - 0 1
 puzzle 1131: How to proceed?
-Rf4+ 2.gxf4 Rh4+ 3.Kg5 Qxf4# 0-1
+1...Rf4+ 2.gxf4 Rh4+ 3.Kg5 Qxf4# 0-1
 
 6k1/5ppp/4p3/p3n3/PpP1Pq2/5bBP/7K/R3R1Q1 b - - 0 1
 puzzle 1132: How to proceed?
-Ng4+ 2.hxg4 Qh6+ 3.Bh4 Qxh4# 0-1
+1...Ng4+ 2.hxg4 Qh6+ 3.Bh4 Qxh4# 0-1
 
 6rr/1b2k3/p2pp3/1p2bP1P/6P1/1PNB3K/1PP5/3R1R2 b - - 0 1
 puzzle 1133: How to proceed?
-Rxh5+ 2.gxh5 Bg2+ 3.Kh4 Bg3# 0-1
+1...Rxh5+ 2.gxh5 Bg2+ 3.Kh4 Bg3# 0-1
 
 5rk1/1p4pp/1p4r1/3R4/1P6/P3b1nP/1Q4PK/8 b - - 0 1
 puzzle 1134: How to proceed?
-Bg1+ 2.Kxg1 Rf1+ 3.Kh2 Rh1# 0-1
+1...Bg1+ 2.Kxg1 Rf1+ 3.Kh2 Rh1# 0-1
 
 3RQ3/pp3pk1/6p1/2q4p/5PbK/2r5/P1n3PP/7R b - - 0 1
 puzzle 1135: How to proceed?
-Rh3+ 2.gxh3 Qf2+ 3.Kg5 f6# 0-1
+1...Rh3+ 2.gxh3 Qf2+ 3.Kg5 f6# 0-1
 
 7k/4p2p/1p2Q3/p1pP2p1/4P1P1/2R2K2/PP3b2/5q2 b - - 0 1
 puzzle 1136: How to proceed?
-Bg1+ 2.Kg3 Qf2+ 3.Kh3 Qh2# 0-1
+1...Bg1+ 2.Kg3 Qf2+ 3.Kh3 Qh2# 0-1
 
 1nr3k1/6p1/p4r1p/bq1p1n2/1N1Pp1Q1/1P2P3/N2B2RP/5RK1 b - - 0 1
 puzzle 1137: How to proceed?
-Qxf1+ 2.Kxf1 Ng3+ 3.Kg1 Rf1# 0-1
+1...Qxf1+ 2.Kxf1 Ng3+ 3.Kg1 Rf1# 0-1
 
 8/8/8/8/8/7k/3n1p2/6BK b - - 0 1
 puzzle 1138: How to proceed?
-f1=B 2.Be3 Nf3 3.Bf2 Bg2# 0-1
+1...f1=B 2.Be3 Nf3 3.Bf2 Bg2# 0-1
 
 6rk/8/p4b2/P1p2p1p/2P4P/5B1r/R4P1B/5R1K b - - 0 1
 puzzle 1139: How to proceed?
-Be5 2.Bg2 Rxh2+ 3.Kg1 Rgxg2# 0-1
+1...Be5 2.Bg2 Rxh2+ 3.Kg1 Rgxg2# 0-1
 
 5r1k/3RQ1bp/2p3p1/p3q3/2P1p3/1P2B2P/P4P2/6K1 w - - 0 1
 puzzle 1140: How to proceed?
@@ -4580,75 +4580,75 @@ puzzle 1145: How to proceed?
 
 r3r1k1/1p3p1p/p4Bp1/8/3n1Q2/8/qP3PPP/3RR1K1 b - - 0 1
 puzzle 1146: How to proceed?
-Rxe1+ 2.Rxe1 Ne2+ 3.Rxe2 Qb1+ *
+1...Rxe1+ 2.Rxe1 Ne2+ 3.Rxe2 Qb1+ *
 
 6k1/pp1b1qp1/2p4p/8/3Q4/6P1/1P2R1KP/8 b - - 0 1
 puzzle 1147: How to proceed?
-Bh3+ 2.Kxh3 Qh5+ 3.Kg2 Qxe2+ *
+1...Bh3+ 2.Kxh3 Qh5+ 3.Kg2 Qxe2+ *
 
 4r1k1/pp3ppp/4r3/5q2/2P5/2N3B1/PP1Q1PPP/2R3K1 b - - 0 1
 puzzle 1148: How to proceed?
-Qc2 2.Rxc2 Re1+ 3.Qxe1 Rxe1# 0-1
+1...Qc2 2.Rxc2 Re1+ 3.Qxe1 Rxe1# 0-1
 
 6k1/1p1qrpp1/p7/7p/PQ6/8/1PPp2PP/3R2K1 b - - 0 1
 puzzle 1149: How to proceed?
-Re1+ 2.Rxe1 Qd4+ 3.Qxd4 dxe1=Q# 0-1
+1...Re1+ 2.Rxe1 Qd4+ 3.Qxd4 dxe1=Q# 0-1
 
 3r2k1/pp2bppp/4p3/5P2/2Q5/2N2R2/PqP3PP/7K b - - 0 1
 puzzle 1150: How to proceed?
-Qxc3 2.Rxc3 Rd1+ 3.Qf1 Rxf1# 0-1
+1...Qxc3 2.Rxc3 Rd1+ 3.Qf1 Rxf1# 0-1
 
 7k/5prp/6q1/p2pP3/P2P3b/4B2Q/7P/5R1K b - - 0 1
 puzzle 1151: How to proceed?
-Bf2 2.Bxf2 Qe4+ 3.Qg2 Qxg2# 0-1
+1...Bf2 2.Bxf2 Qe4+ 3.Qg2 Qxg2# 0-1
 
 r4knr/ppp3bp/3pp1p1/7b/4P2q/2N1BP2/PPP1BP1P/R2Q1R1K b - - 0 1
 puzzle 1152: How to proceed?
-Bxf3+ 2.Bxf3 Be5 *
+1...Bxf3+ 2.Bxf3 Be5 *
 
 k5r1/pp4pp/5n2/qP2Q1N1/3Pp3/2r1P3/5PPP/R1R3K1 b - - 0 1
 puzzle 1153: How to proceed?
-Rgc8 *
+1...Rgc8 *
 
 2r3k1/2r2ppp/8/8/p7/1p6/PP3RPP/1K3R2 b - - 0 1
 puzzle 1154: How to proceed?
-Rc1+ 2.Rxc1 Rxc1+ 3.Kxc1 bxa2 *
+1...Rc1+ 2.Rxc1 Rxc1+ 3.Kxc1 bxa2 *
 
 1q1r1rk1/1b3ppp/1R2p3/1p2Q3/5P2/P7/1PP3PP/2K2B1R b - - 0 1
 puzzle 1155: How to proceed?
-Bf3 2.gxf3 Qxb6 *
+1...Bf3 2.gxf3 Qxb6 *
 
 k1r1r3/pp5p/1q6/3R1Np1/1b6/1P3P2/2Q1R1PP/7K b - - 0 1
 puzzle 1156: How to proceed?
-Qf2 2.Rxf2 Re1+ 3.Rf1 Rxf1# 0-1
+1...Qf2 2.Rxf2 Re1+ 3.Rf1 Rxf1# 0-1
 
 r4rk1/p1p3pp/1p1pp3/8/2PP2n1/2B1PRPq/PPQ4P/5RK1 b - - 0 1
 puzzle 1157: How to proceed?
-Qxf1+ 2.Rxf1 Rxf1+ 3.Kxf1 Nxe3+ 4.Ke2 Nxc2 *
+1...Qxf1+ 2.Rxf1 Rxf1+ 3.Kxf1 Nxe3+ 4.Ke2 Nxc2 *
 
 1r4k1/p4p2/2pq1pp1/2bp4/8/1P1Q1PN1/P1P3PP/5R1K b - - 0 1
 puzzle 1158: How to proceed?
-Qxg3 2.hxg3 Kg7 3.Kh2 Rh8# 0-1
+1...Qxg3 2.hxg3 Kg7 3.Kh2 Rh8# 0-1
 
 5rk1/5ppp/8/8/8/4PQ2/r1q2PPP/RR4K1 b - - 0 1
 puzzle 1159: How to proceed?
-Qb2 2.Rxb2 Rxa1+ *
+1...Qb2 2.Rxb2 Rxa1+ *
 
 2r5/1Q1R3p/1p4pk/7q/1P3P2/B3n3/7P/7K b - - 0 1
 puzzle 1160: How to proceed?
-Rc7 2.Qxc7 Qf3+ 3.Kg1 Qg2# 0-1
+1...Rc7 2.Qxc7 Qf3+ 3.Kg1 Qg2# 0-1
 
 5rk1/pp4pp/4p3/2R3Q1/3n4/2q4r/P1P2PPP/5RK1 b - - 0 1
 puzzle 1161: How to proceed?
-Qg3 2.Qxg3 Ne2+ 3.Kh1 Nxg3+ 4.fxg3 Rxf1# 0-1
+1...Qg3 2.Qxg3 Ne2+ 3.Kh1 Nxg3+ 4.fxg3 Rxf1# 0-1
 
 4r1k1/5ppp/p1qb4/1p3b2/3P4/3P3P/PP3PP1/RNBQ2K1 b - - 0 1
 puzzle 1162: How to proceed?
-Qc2 2.Qxc2 Re1# 0-1
+1...Qc2 2.Qxc2 Re1# 0-1
 
 8/pQRq2pk/4p2p/3r1p2/3P4/4P3/PP3PPP/6K1 b - - 0 1
 puzzle 1163: How to proceed?
-Rc5 2.Rxd7 Rc1# 0-1
+1...Rc5 2.Rxd7 Rc1# 0-1
 
 2Rr2k1/5ppp/1q2p3/p3P3/1p6/5PP1/P3Q1KP/8 w - - 0 1
 puzzle 1164: How to proceed?
@@ -4724,75 +4724,75 @@ puzzle 1181: How to proceed?
 
 r3r1k1/1p1b1pp1/1p5p/3Pq3/1R6/P2Q1B2/1P4PP/R6K b - - 0 1
 puzzle 1182: How to proceed?
-Rxa3 2.Qxa3 Qe1+ 3.Rxe1 Rxe1# 0-1
+1...Rxa3 2.Qxa3 Qe1+ 3.Rxe1 Rxe1# 0-1
 
 1r3rk1/4p1bp/R2p2p1/2pP4/2P1bB2/4Q3/2q1BPPP/4R1K1 b - - 0 1
 puzzle 1183: How to proceed?
-Rxf4 2.Qxf4 Qxe2 *
+1...Rxf4 2.Qxf4 Qxe2 *
 
 r5k1/2r2ppp/8/p2p4/1R1P4/1P6/1P3PPP/R5K1 b - - 0 1
 puzzle 1184: How to proceed?
-Rac8 *
+1...Rac8 *
 
 1q2r1k1/2p2p2/6pp/2N2b2/R1PN2n1/8/1P4PP/2Q3K1 b - - 0 1
 puzzle 1185: How to proceed?
-Qxb2 2.Qxb2 Re1# 0-1
+1...Qxb2 2.Qxb2 Re1# 0-1
 
 8/3nk1p1/7p/1P1K1p2/2N1p3/8/6PP/8 b - - 0 1
 puzzle 1186: How to proceed?
-Nb6+ 2.Nxb6 e3 *
+1...Nb6+ 2.Nxb6 e3 *
 
 6k1/5r1p/1pqpQ1p1/p7/2P2r2/1P1R4/P5PP/3R3K b - - 0 1
 puzzle 1187: How to proceed?
-Qe4 2.Qxe4 Rf1+ 3.Rxf1 Rxf1# 0-1
+1...Qe4 2.Qxe4 Rf1+ 3.Rxf1 Rxf1# 0-1
 
 r1bqkb1r/ppp2ppp/2p5/4P3/4n3/3P4/PPP2PPP/RNBQKB1R b KQkq - 0 1
 puzzle 1188: How to proceed?
-Bc5 2.dxe4 Bxf2+ 3.Ke2 Bg4+ *
+1...Bc5 2.dxe4 Bxf2+ 3.Ke2 Bg4+ *
 
 3r1bk1/1q3ppp/1p6/pP3R2/N3p3/P3P3/1BQ3PP/7K b - - 0 1
 puzzle 1189: How to proceed?
-Qc8 2.Qxc8 Rd1+ *
+1...Qc8 2.Qxc8 Rd1+ *
 
 8/pkp5/1p5r/3r4/5RQP/3q4/PP6/K6R b - - 0 1
 puzzle 1190: How to proceed?
-Rxh4 2.Qxh4 Qd1+ 3.Rxd1 Rxd1# 0-1
+1...Rxh4 2.Qxh4 Qd1+ 3.Rxd1 Rxd1# 0-1
 
 5rk1/ppr2p1p/1q1pp1p1/8/5P2/8/PPR1Q1PP/2R4K b - - 0 1
 puzzle 1191: How to proceed?
-Qxb2 2.Rxb2 Rxc1+ 3.Qe1 Rxe1# 0-1
+1...Qxb2 2.Rxb2 Rxc1+ 3.Qe1 Rxe1# 0-1
 
 1r6/p2Q2pk/6rp/2p2P1q/2PpP3/3P4/P2R3P/5R1K b - - 0 1
 puzzle 1192: How to proceed?
-Qf3+ 2.Rxf3 Rb1+ *
+1...Qf3+ 2.Rxf3 Rb1+ *
 
 5rk1/5p2/2pp1Qp1/7q/N1P1P1b1/3P2Pp/P1P4P/1R5K b - - 0 1
 puzzle 1193: How to proceed?
-Bf5 2.Rf1 Qe2 3.Rg1 Qf3+ *
+1...Bf5 2.Rf1 Qe2 3.Rg1 Qf3+ *
 
 5rk1/pp3r1p/3p2p1/3NP2q/2Pn4/1P4Q1/P2R2PP/4R1K1 b - - 0 1
 puzzle 1194: How to proceed?
-Qe2 2.Nf6+ Rxf6 3.exf6 Qxd2 *
+1...Qe2 2.Nf6+ Rxf6 3.exf6 Qxd2 *
 
 4rbk1/3Q1ppp/3p4/3P4/5q2/B7/P5PP/5RK1 b - - 0 1
 puzzle 1195: How to proceed?
-Qd4+ 2.Kh1 Qf2 3.Rg1 Re1 *
+1...Qd4+ 2.Kh1 Qf2 3.Rg1 Re1 *
 
 r6k/3bq2p/1Qp1p1r1/3pPp2/1P2n3/5N2/P3PPBP/R5RK b - - 0 1
 puzzle 1196: How to proceed?
-Qxb4 2.Qe3 f4 *
+1...Qxb4 2.Qe3 f4 *
 
 3r1rk1/p3Rp1p/6p1/Q7/4Pqb1/5N2/P1R2PPP/6K1 b - - 0 1
 puzzle 1197: How to proceed?
-Qg5 2.Qxg5 Rd1+ *
+1...Qg5 2.Qxg5 Rd1+ *
 
 3rr1k1/1p3ppp/p7/R3N1q1/1Q1PR3/8/1P3PPP/6K1 b - - 0 1
 puzzle 1198: How to proceed?
-Rxd4 2.Qxd4 Qc1+ *
+1...Rxd4 2.Qxd4 Qc1+ *
 
 4r1k1/2p3p1/p1b1r2p/3q4/3b4/N2P2B1/PPQ3PP/4RR1K b - - 0 1
 puzzle 1199: How to proceed?
-Bf2 2.Qxf2 Rxe1 3.Rxe1 Rxe1+ 4.Qxe1 Qxg2# 0-1
+1...Bf2 2.Qxf2 Rxe1 3.Rxe1 Rxe1+ 4.Qxe1 Qxg2# 0-1
 
 r1b2r1k/ppp3pp/3b4/4Npq1/2B5/8/PPP2PPP/R2QR1K1 w - - 0 1
 puzzle 1200: How to proceed?
@@ -4868,75 +4868,75 @@ puzzle 1217: How to proceed?
 
 5rk1/1B2bp1p/p2p1p2/q4R2/8/2r5/P1PQ2PP/1R5K b - - 0 1
 puzzle 1218: How to proceed?
-Rb3 2.Rxa5 Rxb1+ *
+1...Rb3 2.Rxa5 Rxb1+ *
 
 r1b2r1k/ppb2ppB/3q4/8/2PN1n1Q/PP6/1B3PPP/R4RK1 b - - 0 1
 puzzle 1219: How to proceed?
-Nh3+ 2.-- *
+1...Nh3+ *
 
 4r1k1/pp2rpp1/2n2q1p/3p4/6b1/2P2N2/P1PQ1PPP/1R1BR1K1 b - - 0 1
 puzzle 1220: How to proceed?
-Rxe1+ 2.Nxe1 Qf4 3.Nf3 Bxf3 *
+1...Rxe1+ 2.Nxe1 Qf4 3.Nf3 Bxf3 *
 
 rn2r2k/p4pR1/2pb1p2/1p1b3P/q2P3P/2PBB3/1P1QNP2/2KR4 b - - 0 1
 puzzle 1221: How to proceed?
-Qa1+ 2.Kc2 Bb3+ 3.Kxb3 Qa4# 0-1
+1...Qa1+ 2.Kc2 Bb3+ 3.Kxb3 Qa4# 0-1
 
 2k4r/ppp2p1p/5p2/8/1P1n2q1/1PpPr3/2P2QPP/R1K2B1R b - - 0 1
 puzzle 1222: How to proceed?
-Qf4 2.Qxf4 Re1# 0-1
+1...Qf4 2.Qxf4 Re1# 0-1
 
 6k1/p2B1pp1/8/4q2p/Q2nP3/P2r4/6PP/1R5K b - - 0 1
 puzzle 1223: How to proceed?
-Nf3 2.gxf3 Rd2 *
+1...Nf3 2.gxf3 Rd2 *
 
 1k1rr3/pp4bp/6p1/2p2pPP/3n1P2/1PN5/1PP5/2KRN2R b - - 0 1
 puzzle 1224: How to proceed?
-Ne2+ 2.Nxe2 Bxb2+ 3.Kxb2 Rxd1 *
+1...Ne2+ 2.Nxe2 Bxb2+ 3.Kxb2 Rxd1 *
 
 5rk1/p1q2pp1/2P2n1p/3p4/QN2n3/7P/PPR1BPPb/4RK2 b - - 0 1
 puzzle 1225: How to proceed?
-Qb6 2.Bf3 Qxf2+ 3.Rxf2 Ng3# 0-1
+1...Qb6 2.Bf3 Qxf2+ 3.Rxf2 Ng3# 0-1
 
 4q3/1b4kp/p5p1/1pb1p3/4P2P/2PQ2P1/1P5B/5N1K b - - 0 1
 puzzle 1226: How to proceed?
-Qd8 2.Qe2 Qd1 3.Qg2 Bxe4 4.Qxe4 Qxf1+ 5.Bg1 Qxg1# 0-1
+1...Qd8 2.Qe2 Qd1 3.Qg2 Bxe4 4.Qxe4 Qxf1+ 5.Bg1 Qxg1# 0-1
 
 6k1/p4p2/3qbQp1/8/4Pp2/2N2P2/PP1r3P/6RK b - - 0 1
 puzzle 1227: How to proceed?
-Bg4 2.Qxd6 Bxf3+ 3.Rg2 Bxg2+ 4.Kg1 Rxd6 *
+1...Bg4 2.Qxd6 Bxf3+ 3.Rg2 Bxg2+ 4.Kg1 Rxd6 *
 
 r2q2rk/ppp4p/3p4/2b2Q2/3pPPR1/2P2n2/PP3P1P/RNB4K b - - 0 1
 puzzle 1228: How to proceed?
-Qh4 2.Rxh4 Rg1# 0-1
+1...Qh4 2.Rxh4 Rg1# 0-1
 
 2q5/5ppk/2N2n1p/1PN1P3/5b2/2r4P/5QP1/1R5K b - - 0 1
 puzzle 1229: How to proceed?
-Rxh3+ 2.gxh3 Qxh3+ 3.Kg1 Be3 *
+1...Rxh3+ 2.gxh3 Qxh3+ 3.Kg1 Be3 *
 
 2r4k/p4Qp1/3pPR1p/8/8/4q3/P5PP/7K b - - 0 1
 puzzle 1230: How to proceed?
-Qxe6 2.Rxe6 Rc1+ *
+1...Qxe6 2.Rxe6 Rc1+ *
 
 4r2k/6p1/7p/p1q3r1/2P5/1P6/P4QR1/5RK1 b - - 0 1
 puzzle 1231: How to proceed?
-Re2 2.Qxc5 Rgxg2+ 3.Kh1 Rh2+ 4.Kg1 Reg2# 0-1
+1...Re2 2.Qxc5 Rgxg2+ 3.Kh1 Rh2+ 4.Kg1 Reg2# 0-1
 
 r4rk1/pp3ppb/2p1pn1p/8/2PP1B2/1B4Pq/PP2QP2/R4RK1 b - - 0 1
 puzzle 1232: How to proceed?
-Bd3 2.Qxd3 Ng4 *
+1...Bd3 2.Qxd3 Ng4 *
 
 k5r1/1b3p1p/p2Q4/1p2p2q/6r1/1B6/PPP2RPP/6RK b - - 0 1
 puzzle 1233: How to proceed?
-Qxh2+ 2.Kxh2 Rh4# 0-1
+1...Qxh2+ 2.Kxh2 Rh4# 0-1
 
 2r3k1/5ppp/4p3/5q2/8/Pp1Q4/1P4PP/1K1R4 b - - 0 1
 puzzle 1234: How to proceed?
-Rd8 2.Qxf5 Rxd1# 0-1
+1...Rd8 2.Qxf5 Rxd1# 0-1
 
 r4rk1/ppb2ppp/2b1p2q/8/2BNn3/1NP4R/PP2Q1PP/3R3K b - - 0 1
 puzzle 1235: How to proceed?
-Qxh3 2.gxh3 Ng3+ 3.Kg1 Nxe2+ *
+1...Qxh3 2.gxh3 Ng3+ 3.Kg1 Nxe2+ *
 
 3r3k/p5qp/8/3n4/4N1p1/6P1/P2Q2KP/4R3 w - - 0 1
 puzzle 1236: How to proceed?
@@ -5092,7 +5092,7 @@ puzzle 1273: How to proceed?
 
 8/8/8/7p/6pP/6k1/6P1/5K2 b - - 0 1
 puzzle 1274: How to proceed?
-Kh2 2.Kf2 Kh1 3.Kf1 g3 *
+1...Kh2 2.Kf2 Kh1 3.Kf1 g3 *
 
 8/8/8/k3p3/8/6K1/3P4/8 w - - 0 1
 puzzle 1275: How to proceed?
@@ -5160,7 +5160,7 @@ puzzle 1290: How to proceed?
 
 8/5p1p/5K1P/8/6k1/8/8/8 b - - 0 1
 puzzle 1291: How to proceed?
-Kf4 2.Kg7 f5 3.Kxh7 Ke3 4.Kg6 f4 5.h7 f3 6.h8=Q f2 7.Qh1 Ke2 *
+1...Kf4 2.Kg7 f5 3.Kxh7 Ke3 4.Kg6 f4 5.h7 f3 6.h8=Q f2 7.Qh1 Ke2 *
 
 8/1p6/1P1p4/1K1p2B1/P2P4/6pp/1P6/5k2 w - - 0 1
 puzzle 1292: How to proceed?
@@ -5188,7 +5188,7 @@ puzzle 1297: How to proceed?
 
 8/8/8/6Pp/7p/6k1/8/6K1 b - - 0 1
 puzzle 1298: How to proceed?
-h3 2.g6 h2+ 3.Kh1 h4 4.g7 Kh3 5.g8=Q 1/2-1/2
+1...h3 2.g6 h2+ 3.Kh1 h4 4.g7 Kh3 5.g8=Q 1/2-1/2
 
 8/8/7k/8/1p6/7K/2P5/8 w - - 0 1
 puzzle 1299: How to proceed?
@@ -5216,7 +5216,7 @@ puzzle 1304: How to proceed?
 
 8/8/6k1/pp6/3p1KP1/P2P4/2P5/8 b - - 0 1
 puzzle 1305: How to proceed?
-a4 2.Ke4 b4 3.Kxd4 bxa3 4.Kc3 Kg5 5.d4 Kxg4 *
+1...a4 2.Ke4 b4 3.Kxd4 bxa3 4.Kc3 Kg5 5.d4 Kxg4 *
 
 8/5p2/3k1P1p/3pp2P/3P2P1/3K4/8/8 w - - 0 1
 puzzle 1306: How to proceed?

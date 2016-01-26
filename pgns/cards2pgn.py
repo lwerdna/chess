@@ -107,8 +107,12 @@ def isValidMoveText(text):
             # 3) normal move (SAN)
             elif re.match(Common.regexSanChess, token):
                 pass
-            # 4) nope
+            # 4)  result
+            elif re.match(Common.regexResults, token):
+                pass
+            # 5) nope
             else:
+                print "token -%s- is not allowed" % token
                 ok = 0
                 break
     except:
@@ -141,10 +145,11 @@ if __name__ == '__main__':
 
             try:
                 ansToks = PgnTokenizer.tokenize(answer)
-                if ansTokes and re.match(Common.regexResults, ansToks[-1]):
+                if ansToks and re.match(Common.regexResults, ansToks[-1]):
                     result = ansToks[-1]
                     append = False
             except:
+                print "answer: -%s- is not valid movetext, commenting it..." % answer
                 pass
                 
             if append:

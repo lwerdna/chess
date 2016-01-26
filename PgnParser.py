@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-# Copyright 2012, 2013 Andrew Lamoureux
+# Copyright 2012-2016 Andrew Lamoureux
 #
 # This file is a part of FunChess
 #
