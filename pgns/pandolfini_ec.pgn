@@ -7,8 +7,9 @@
 [Result "*"]
 [FEN "8/8/8/4k3/5R2/8/8/3QK3 w - - 0 1"]
 [Question "Endgame 001: white to move"]
+[Theme "Queen and Rook Roll"] 
 
-Queen and Rook Roll: 1.Qd4+ 1... Ke6 2.Rf6+ 2... Ke7 3.Qd6+ 3... Ke8 4.Rf8# *
+1.Qd4+ Ke6 2.Rf6+ Ke7 3.Qd6+ Ke8 4.Rf8# *
 
 [Event "Event 2"]
 [Site "Site"]
@@ -19,8 +20,9 @@ Queen and Rook Roll: 1.Qd4+ 1... Ke6 2.Rf6+ 2... Ke7 3.Qd6+ 3... Ke8 4.Rf8# *
 [Result "*"]
 [FEN "8/8/8/4k3/1R6/Q7/8/4K3 w - - 0 1"]
 [Question "Endgame 002: white to move"]
+[Theme "Rolling Barrier"] 
 
-Rolling Barrier: 1.Qa5+ 1... Kd6 2.Rb6+ 2... Kc7 3.Qa7+ 3... Kc8 4.Rb8# *
+1.Qa5+ Kd6 2.Rb6+ Kc7 3.Qa7+ Kc8 4.Rb8# *
 
 [Event "Event 3"]
 [Site "Site"]
@@ -31,8 +33,9 @@ Rolling Barrier: 1.Qa5+ 1... Kd6 2.Rb6+ 2... Kc7 3.Qa7+ 3... Kc8 4.Rb8# *
 [Result "*"]
 [FEN "6k1/8/8/8/8/8/7R/5K1R w - - 0 1"]
 [Question "Endgame 003: white to move"]
+[Theme "Rook Barrier"] 
 
-Rook Barrier: 1.Rf2 1... Kg7 2.Rg1+ 2... Kh6 3.Rh2# *
+1.Rf2 Kg7 2.Rg1+ Kh6 3.Rh2# *
 
 [Event "Event 4"]
 [Site "Site"]
@@ -43,8 +46,9 @@ Rook Barrier: 1.Rf2 1... Kg7 2.Rg1+ 2... Kh6 3.Rh2# *
 [Result "*"]
 [FEN "k7/3Q4/8/3K4/8/8/8/8 w - - 0 1"]
 [Question "Endgame 004: white to move"]
+[Theme "Closing In"] 
 
-Closing In: 1.Kc6 1... Kb8 2.Qb7# *
+1.Kc6 Kb8 2.Qb7# *
 
 [Event "Event 5"]
 [Site "Site"]
@@ -55,8 +59,9 @@ Closing In: 1.Kc6 1... Kb8 2.Qb7# *
 [Result "*"]
 [FEN "k7/8/1Q6/3K4/8/8/8/8 w - - 0 1"]
 [Question "Endgame 005: white to move"]
+[Theme "Backing Off"] 
 
-Backing Off: 1.Qb5 1... Ka7 2.Kc6 2... Ka8 3.Qb7# *
+1.Qb5 Ka7 2.Kc6 Ka8 3.Qb7# *
 
 [Event "Event 6"]
 [Site "Site"]
@@ -67,8 +72,9 @@ Backing Off: 1.Qb5 1... Ka7 2.Kc6 2... Ka8 3.Qb7# *
 [Result "*"]
 [FEN "6Q1/5K2/8/7k/8/8/8/8 w - - 0 1"]
 [Question "Endgame 006: white to move"]
+[Theme "Cut-Off"] 
 
-Cut-Off: 1.Qg3 1... Kh6 2.Qg6# *
+1.Qg3 Kh6 2.Qg6# *
 
 [Event "Event 7"]
 [Site "Site"]
@@ -79,8 +85,9 @@ Cut-Off: 1.Qg3 1... Kh6 2.Qg6# *
 [Result "*"]
 [FEN "4k3/8/8/2K5/8/8/8/7Q w - - 0 1"]
 [Question "Endgame 007: white to move"]
+[Theme "Erecting the Barrier"] 
 
-Erecting the Barrier: 1.Qh7 1... Kf8 2.Kd6 2... Ke8 3.Qe7# *
+1.Qh7 Kf8 2.Kd6 Ke8 3.Qe7# *
 
 [Event "Event 8"]
 [Site "Site"]
@@ -91,8 +98,9 @@ Erecting the Barrier: 1.Qh7 1... Kf8 2.Kd6 2... Ke8 3.Qe7# *
 [Result "*"]
 [FEN "5k2/R7/4K3/8/8/8/8/8 w - - 0 1"]
 [Question "Endgame 008: white to move"]
+[Theme "Waiting-Move Mate"] 
 
-Waiting-Move Mate: 1.Rb7 1... Kg8 2.Kf6 2... Kh8 3.Kg6 3... Kg8 4.Rb8# *
+1.Rb7 Kg8 2.Kf6 Kh8 3.Kg6 Kg8 4.Rb8# *
 
 [Event "Event 9"]
 [Site "Site"]
@@ -103,8 +111,9 @@ Waiting-Move Mate: 1.Rb7 1... Kg8 2.Kf6 2... Kh8 3.Kg6 3... Kg8 4.Rb8# *
 [Result "*"]
 [FEN "5k2/8/4K3/3R4/8/8/8/8 w - - 0 1"]
 [Question "Endgame 009: white to move"]
+[Theme "The 'Cut-Off' Mate"] 
 
-The 'Cut-Off' Mate: 1.Rg5 1... Ke8 2.Rg8# *
+1.Rg5 Ke8 2.Rg8# *
 
 [Event "Event 10"]
 [Site "Site"]
@@ -115,8 +124,9 @@ The 'Cut-Off' Mate: 1.Rg5 1... Ke8 2.Rg8# *
 [Result "*"]
 [FEN "4k3/8/4K3/8/8/8/4R3/8 w - - 0 1"]
 [Question "Endgame 010: white to move"]
+[Theme "The Any-Rook Move Mate"] 
 
-The Any-Rook Move Mate: 1.Re5 1... Kd8 2.Rc5 2... Ke8 *
+1.Re5 Kd8 2.Rc5 Ke8 *
 
 [Event "Event 11"]
 [Site "Site"]
@@ -127,8 +137,9 @@ The Any-Rook Move Mate: 1.Re5 1... Kd8 2.Rc5 2... Ke8 *
 [Result "*"]
 [FEN "8/6k1/8/4RK2/8/8/8/8 w - - 0 1"]
 [Question "Endgame 011: white to move"]
+[Theme "Closing the Net"] 
 
-Closing the Net: 1.Re7+ 1... Kf8 2.Kf6 2... Kg8 3.Kg6 3... Kf8 4.Re6 4... Kg8 5.Re8# *
+1.Re7+ Kf8 2.Kf6 Kg8 3.Kg6 Kf8 4.Re6 Kg8 5.Re8# *
 
 [Event "Event 12"]
 [Site "Site"]
@@ -139,8 +150,9 @@ Closing the Net: 1.Re7+ 1... Kf8 2.Kf6 2... Kg8 3.Kg6 3... Kf8 4.Re6 4... Kg8 5.
 [Result "*"]
 [FEN "8/2K5/k7/8/1B6/1B6/8/8 w - - 0 1"]
 [Question "Endgame 012: white to move"]
+[Theme "The Bishop Roll"] 
 
-The Bishop Roll: 1.Bc4+ 1... Ka7 2.Bc5+ 2... Ka8 3.Bd5# *
+1.Bc4+ Ka7 2.Bc5+ Ka8 3.Bd5# *
 
 [Event "Event 13"]
 [Site "Site"]
@@ -151,8 +163,9 @@ The Bishop Roll: 1.Bc4+ 1... Ka7 2.Bc5+ 2... Ka8 3.Bd5# *
 [Result "*"]
 [FEN "1k6/8/2K1BB2/8/8/8/8/8 w - - 0 1"]
 [Question "Endgame 013: white to move"]
+[Theme "Positioning the King"] 
 
-Positioning the King: 1.Kb6 1... Ka8 2.Be7 2... Kb8 3.Bd6+ 3... Ka8 4.Bd5# *
+1.Kb6 Ka8 2.Be7 Kb8 3.Bd6+ Ka8 4.Bd5# *
 
 [Event "Event 14"]
 [Site "Site"]
@@ -163,8 +176,9 @@ Positioning the King: 1.Kb6 1... Ka8 2.Be7 2... Kb8 3.Bd6+ 3... Ka8 4.Bd5# *
 [Result "*"]
 [FEN "1k6/5BB1/2K5/8/8/8/8/8 w - - 0 1"]
 [Question "Endgame 014: white to move"]
+[Theme "Closing the Door"] 
 
-Closing the Door: 1.Bd4 1... Kc8 2.Bf6 2... Kb8 3.Kb6 3... Kc8 4.Be6+ 4... Kb8 5.Be5+ 5... Ka8 6.Bd5# *
+1.Bd4 Kc8 2.Bf6 Kb8 3.Kb6 Kc8 4.Be6+ Kb8 5.Be5+ Ka8 6.Bd5# *
 
 [Event "Event 15"]
 [Site "Site"]
@@ -175,8 +189,9 @@ Closing the Door: 1.Bd4 1... Kc8 2.Bf6 2... Kb8 3.Kb6 3... Kc8 4.Be6+ 4... Kb8 5
 [Result "*"]
 [FEN "5k2/8/2K5/3BB3/8/8/8/8 w - - 0 1"]
 [Question "Endgame 015: white to move"]
+[Theme "Taking Away Squares"] 
 
-Taking Away Squares: 1.Kd6 1... Ke8 2.Bg7 2... Kd8 3.Bf7 3... Kc8 4.Kc6 4... Kd8 5.Bf6+ 5... Kc8 6.Be6+ 6... Kb8 7.Kb6 *
+1.Kd6 Ke8 2.Bg7 Kd8 3.Bf7 Kc8 4.Kc6 Kd8 5.Bf6+ Kc8 6.Be6+ Kb8 7.Kb6 *
 
 [Event "Event 16"]
 [Site "Site"]
@@ -187,8 +202,9 @@ Taking Away Squares: 1.Kd6 1... Ke8 2.Bg7 2... Kd8 3.Bf7 3... Kc8 4.Kc6 4... Kd8
 [Result "*"]
 [FEN "5B1k/5K2/8/8/6N1/8/8/8 w - - 0 1"]
 [Question "Endgame 016: white to move"]
+[Theme "Mate in Two"] 
 
-Mate in Two: 1.Bg7+ 1... Kh7 2.Nf6# *
+1.Bg7+ Kh7 2.Nf6# *
 
 [Event "Event 17"]
 [Site "Site"]
@@ -199,8 +215,9 @@ Mate in Two: 1.Bg7+ 1... Kh7 2.Nf6# *
 [Result "*"]
 [FEN "7k/5K2/8/4N1B1/8/8/8/8 w - - 0 1"]
 [Question "Endgame 017: white to move"]
+[Theme "Mate in Three"] 
 
-Mate in Three: 1.Ng6+ 1... Kh7 2.Nf8+ 2... Kh8 3.Bf6# *
+1.Ng6+ Kh7 2.Nf8+ Kh8 3.Bf6# *
 
 [Event "Event 18"]
 [Site "Site"]
@@ -211,8 +228,9 @@ Mate in Three: 1.Ng6+ 1... Kh7 2.Nf8+ 2... Kh8 3.Bf6# *
 [Result "*"]
 [FEN "6k1/6N1/6K1/8/1B6/8/8/8 w - - 0 1"]
 [Question "Endgame 018: white to move"]
+[Theme "Mate in Four"] 
 
-Mate in Four: 1.Nf5 1... Kh8 2.Be7 2... Kg8 3.Nh6+ 3... Kh8 4.Bf6# *
+1.Nf5 Kh8 2.Be7 Kg8 3.Nh6+ Kh8 4.Bf6# *
 
 [Event "Event 19"]
 [Site "Site"]
@@ -223,8 +241,9 @@ Mate in Four: 1.Nf5 1... Kh8 2.Be7 2... Kg8 3.Nh6+ 3... Kh8 4.Bf6# *
 [Result "*"]
 [FEN "4KBk1/8/8/4N3/8/8/8/8 w - - 0 1"]
 [Question "Endgame 019: white to move"]
+[Theme "Another Mate in Four"] 
 
-Another Mate in Four: 1.Nd7 1... Kh7 2.Kf7 2... Kh8 3.Bg7+ 3... Kh7 4.Nf8# *
+1.Nd7 Kh7 2.Kf7 Kh8 3.Bg7+ Kh7 4.Nf8# *
 
 [Event "Event 20"]
 [Site "Site"]
@@ -235,8 +254,9 @@ Another Mate in Four: 1.Nd7 1... Kh7 2.Kf7 2... Kh8 3.Bg7+ 3... Kh7 4.Nf8# *
 [Result "*"]
 [FEN "8/4N2k/4K3/6B1/8/8/8/8 w - - 0 1"]
 [Question "Endgame 020: white to move"]
+[Theme "A Third Mate in Four"] 
 
-A Third Mate in Four: 1.Kf7 1... Kh8 2.Ng6+ 2... Kh7 3.Nf8+ 3... Kh8 4.Bf6# *
+1.Kf7 Kh8 2.Ng6+ Kh7 3.Nf8+ Kh8 4.Bf6# *
 
 [Event "Event 21"]
 [Site "Site"]
@@ -247,8 +267,9 @@ A Third Mate in Four: 1.Kf7 1... Kh8 2.Ng6+ 2... Kh7 3.Nf8+ 3... Kh8 4.Bf6# *
 [Result "*"]
 [FEN "4k3/8/3K4/4N1B1/8/8/8/8 w - - 0 1"]
 [Question "Endgame 021: white to move"]
+[Theme "The Lock"] 
 
-The Lock: 1.Kc7 1... Kf8 2.Kd7 2... Kg7 3.Ke7 3... Kg8 4.Bh6 4... Kh7 5.Bf8 5... Kg8 6.Ng4 6... Kh7 7.Kf7 7... Kh8 8.Bg7+ 8... Kh7 9.Nf6# *
+1.Kc7 Kf8 2.Kd7 Kg7 3.Ke7 Kg8 4.Bh6 Kh7 5.Bf8 Kg8 6.Ng4 Kh7 7.Kf7 Kh8 8.Bg7+ Kh7 9.Nf6# *
 
 [Event "Event 22"]
 [Site "Site"]
@@ -259,8 +280,9 @@ The Lock: 1.Kc7 1... Kf8 2.Kd7 2... Kg7 3.Ke7 3... Kg8 4.Bh6 4... Kh7 5.Bf8 5...
 [Result "*"]
 [FEN "8/4Nk2/3K4/8/8/4B3/8/8 w - - 0 1"]
 [Question "Endgame 022: white to move"]
+[Theme "Transition to the Lock"] 
 
-Transition to the Lock: 1.Bg5 1... Ke8 2.Ng6 2... Kf7 3.Ne5+ 3... Ke8 4.Kc6 4... Kf8 5.Kd7 5... Kg7 6.Ke7 6... Kh8 7.Bh6 7... Kh7 8.Bf8 8... Kg8 9.Ng4 9... Kh7 10.Kf7 10... Kh8 11.Bg7+ 11... Kh7 12.Nf6# *
+1.Bg5 Ke8 2.Ng6 Kf7 3.Ne5+ Ke8 4.Kc6 Kf8 5.Kd7 Kg7 6.Ke7 Kh8 7.Bh6 Kh7 8.Bf8 Kg8 9.Ng4 Kh7 10.Kf7 Kh8 11.Bg7+ Kh7 12.Nf6# *
 
 [Event "Event 23"]
 [Site "Site"]
@@ -271,8 +293,9 @@ Transition to the Lock: 1.Bg5 1... Ke8 2.Ng6 2... Kf7 3.Ne5+ 3... Ke8 4.Kc6 4...
 [Result "*"]
 [FEN "4k3/B7/2K5/3N4/8/8/8/8 w - - 0 1"]
 [Question "Endgame 023: white to move"]
+[Theme "The King Shift"] 
 
-The King Shift: 1.Kd6 1... Kf7 2.Ne7 2... Kf6 3.Be3 3... Kf7 4.Bg5 4... Ke8 5.Ng6 5... Kf7 6.Ne5+ 6... Ke8 7.Kc7 7... Kf8 8.Kd7 8... Kg7 9.Ke7 9... Kh8 10.Bh6 10... Kh7 11.Bf8 11... Kh8 12.Ng4 12... Kh7 13.Kf7 13... Kh8 14.Bg7+ 14... Kh7 15.Nf6# *
+1.Kd6 Kf7 2.Ne7 Kf6 3.Be3 Kf7 4.Bg5 Ke8 5.Ng6 Kf7 6.Ne5+ Ke8 7.Kc7 Kf8 8.Kd7 Kg7 9.Ke7 Kh8 10.Bh6 Kh7 11.Bf8 Kh8 12.Ng4 Kh7 13.Kf7 Kh8 14.Bg7+ Kh7 15.Nf6# *
 
 [Event "Event 24"]
 [Site "Site"]
@@ -283,8 +306,9 @@ The King Shift: 1.Kd6 1... Kf7 2.Ne7 2... Kf6 3.Be3 3... Kf7 4.Bg5 4... Ke8 5.Ng
 [Result "*"]
 [FEN "k7/8/2K5/3N4/8/4B3/8/8 w - - 0 1"]
 [Question "Endgame 024: white to move"]
+[Theme "The Drive"] 
 
-The Drive: 1.Nc7+ 1... Kb8 2.Bb6 2... Kc8 3.Ba7 3... Kd8 4.Nd5 4... Ke8 5.Kd6 5... Kf7 6.Ne7 6... Kf6 7.Be3 7... Kf7 8.Bf4 8... Ke8 9.Ng6 9... Kf7 10.Ne5+ 10... Ke8 11.Kc7 11... Kf8 12.Kd7 12... Kg7 13.Ke7 13... Kh8 14.Bh6 14... Kh7 15.Bf8 15... Kg8 16.Ng4 16... Kh7 17.Kf7 17... Kh8 18.Bg7+ 18... Kh7 19.Nf6# *
+1.Nc7+ Kb8 2.Bb6 Kc8 3.Ba7 Kd8 4.Nd5 Ke8 5.Kd6 Kf7 6.Ne7 Kf6 7.Be3 Kf7 8.Bf4 Ke8 9.Ng6 Kf7 10.Ne5+ Ke8 11.Kc7 Kf8 12.Kd7 Kg7 13.Ke7 Kh8 14.Bh6 Kh7 15.Bf8 Kg8 16.Ng4 Kh7 17.Kf7 Kh8 18.Bg7+ Kh7 19.Nf6# *
 
 [Event "Event 25"]
 [Site "Site"]
@@ -295,8 +319,9 @@ The Drive: 1.Nc7+ 1... Kb8 2.Bb6 2... Kc8 3.Ba7 3... Kd8 4.Nd5 4... Ke8 5.Kd6 5.
 [Result "*"]
 [FEN "8/8/8/8/8/1K6/7q/3Q2qk w - - 0 1"]
 [Question "Endgame 025: white to move"]
+[Theme "Perpetual Check"] 
 
-Perpetual Check: 1.Qf3+ 1... Qgg2 2.Qd1+ 2... Qhg1 3.Qh5+ 3... Q2h2 4.Qf3+ 4... Qgg2 5.Qd1+ 5... Qhg1 6.Qh5+ *
+1.Qf3+ Qgg2 2.Qd1+ Qhg1 3.Qh5+ Q2h2 4.Qf3+ Qgg2 5.Qd1+ Qhg1 6.Qh5+ *
 
 [Event "Event 26"]
 [Site "Site"]
@@ -307,8 +332,9 @@ Perpetual Check: 1.Qf3+ 1... Qgg2 2.Qd1+ 2... Qhg1 3.Qh5+ 3... Q2h2 4.Qf3+ 4... 
 [Result "*"]
 [FEN "8/8/8/8/1K6/8/3Q4/qk6 w - - 0 1"]
 [Question "Endgame 026: white to move"]
+[Theme "Forced Mate"] 
 
-Forced Mate: 1.Kb3 1... Qc3+ 2.Kxc3 2... Ka1 3.Qb2# *
+1.Kb3 Qc3+ 2.Kxc3 Ka1 3.Qb2# *
 
 [Event "Event 27"]
 [Site "Site"]
@@ -319,8 +345,9 @@ Forced Mate: 1.Kb3 1... Qc3+ 2.Kxc3 2... Ka1 3.Qb2# *
 [Result "*"]
 [FEN "4Q3/8/3K1k2/8/8/8/8/6q1 w - - 0 1"]
 [Question "Endgame 027: white to move"]
+[Theme "X-Ray Attack"] 
 
-X-Ray Attack: 1.Qf8+ 1... Kg6 2.Qg8+ 2... Kf5 3.Qxg1 *
+1.Qf8+ Kg6 2.Qg8+ Kf5 3.Qxg1 *
 
 [Event "Event 28"]
 [Site "Site"]
@@ -331,8 +358,9 @@ X-Ray Attack: 1.Qf8+ 1... Kg6 2.Qg8+ 2... Kf5 3.Qxg1 *
 [Result "*"]
 [FEN "8/8/8/8/8/5qk1/7R/6K1 w - - 0 1"]
 [Question "Endgame 028: white to move"]
+[Theme "Stalemate Sacrifice"] 
 
-Stalemate Sacrifice: 1.Rh3+ 1... Kxh3 *
+1.Rh3+ Kxh3 *
 
 [Event "Event 29"]
 [Site "Site"]
@@ -343,8 +371,9 @@ Stalemate Sacrifice: 1.Rh3+ 1... Kxh3 *
 [Result "*"]
 [FEN "8/8/8/8/8/4q2k/6R1/5K2 w - - 0 1"]
 [Question "Endgame 029: white to move"]
+[Theme "Perpetual Attack"] 
 
-Perpetual Attack: 1.Rh2+ 1... Kg3 2.Rg2+ 2... Kf3 3.Rg3+ 3... Kxg3 *
+1.Rh2+ Kg3 2.Rg2+ Kf3 3.Rg3+ Kxg3 *
 
 [Event "Event 30"]
 [Site "Site"]
@@ -355,8 +384,9 @@ Perpetual Attack: 1.Rh2+ 1... Kg3 2.Rg2+ 2... Kf3 3.Rg3+ 3... Kxg3 *
 [Result "*"]
 [FEN "4Q3/6rk/5K2/8/8/8/8/8 w - - 0 1"]
 [Question "Endgame 030: white to move"]
+[Theme "Philidor's Position"] 
 
-Philidor's Position: 1.Qe4+ 1... Kg8 2.Qa8+ 2... Kh7 3.Qe8 3... Ra7 4.Qe4+ 4... Kg8 5.Qd5+ 5... Kh7 6.Qh1+ 6... Kg8 7.Qg1+ *
+1.Qe4+ Kg8 2.Qa8+ Kh7 3.Qe8 Ra7 4.Qe4+ Kg8 5.Qd5+ Kh7 6.Qh1+ Kg8 7.Qg1+ *
 
 [Event "Event 31"]
 [Site "Site"]
@@ -367,8 +397,9 @@ Philidor's Position: 1.Qe4+ 1... Kg8 2.Qa8+ 2... Kh7 3.Qe8 3... Ra7 4.Qe4+ 4... 
 [Result "*"]
 [FEN "2k5/r7/3K4/1Q6/8/8/8/8 w - - 0 1"]
 [Question "Endgame 031: white to move"]
+[Theme "From Edge to Edge"] 
 
-From Edge to Edge: 1.Qe8+ 1... Kb7 2.Qd7+ 2... Kb8 3.Qd8+ 3... Kb7 4.Qc7+ 4... Ka6 5.Qc6+ 5... Ka5 6.Kc5 6... Rc7 7.Qxc7+ 7... Ka4 8.Qg3 8... Ka5 9.Qa3# *
+1.Qe8+ Kb7 2.Qd7+ Kb8 3.Qd8+ Kb7 4.Qc7+ Ka6 5.Qc6+ Ka5 6.Kc5 Rc7 7.Qxc7+ Ka4 8.Qg3 Ka5 9.Qa3# *
 
 [Event "Event 32"]
 [Site "Site"]
@@ -379,8 +410,9 @@ From Edge to Edge: 1.Qe8+ 1... Kb7 2.Qd7+ 2... Kb8 3.Qd8+ 3... Kb7 4.Qc7+ 4... K
 [Result "*"]
 [FEN "3k4/3r4/4K3/2Q5/8/8/8/8 w - - 0 1"]
 [Question "Endgame 032: white to move"]
+[Theme "Double-Threat Queen"] 
 
-Double-Threat Queen: 1.Qb5 1... Re7+ 2.Kd6 2... Rc7 3.Qb6 3... Ke8 4.Qxc7 4... Kf8 5.Qh7 5... Ke8 6.Qe7# *
+1.Qb5 Re7+ 2.Kd6 Rc7 3.Qb6 Ke8 4.Qxc7 Kf8 5.Qh7 Ke8 6.Qe7# *
 
 [Event "Event 33"]
 [Site "Site"]
@@ -391,8 +423,9 @@ Double-Threat Queen: 1.Qb5 1... Re7+ 2.Kd6 2... Rc7 3.Qb6 3... Ke8 4.Qxc7 4... K
 [Result "*"]
 [FEN "3k4/8/4K3/8/8/2Q5/8/3r4 w - - 0 1"]
 [Question "Endgame 033: white to move"]
+[Theme "Dual Methods"] 
 
-Dual Methods: 1.Qh8+ 1... Kc7 2.Qh2+ 2... Kb7 3.Qb2+ 3... Ka7 4.Qa3+ 4... Kb7 5.Qb3+ 5... Kc6 6.Qxd1 *
+1.Qh8+ Kc7 2.Qh2+ Kb7 3.Qb2+ Ka7 4.Qa3+ Kb7 5.Qb3+ Kc6 6.Qxd1 *
 
 [Event "Event 34"]
 [Site "Site"]
@@ -403,8 +436,9 @@ Dual Methods: 1.Qh8+ 1... Kc7 2.Qh2+ 2... Kb7 3.Qb2+ 3... Ka7 4.Qa3+ 4... Kb7 5.
 [Result "*"]
 [FEN "8/8/6k1/8/8/1q6/5R2/K7 w - - 0 1"]
 [Question "Endgame 034: white to move"]
+[Theme "Perpetual Attack 2"] 
 
-Perpetual Attack 2: 1.Rg2+ 1... Kf5 2.Rf2+ 2... Ke4 3.Re2+ 3... Kd3 4.Rd2+ 4... Kc4 5.Rc2+ *
+1.Rg2+ Kf5 2.Rf2+ Ke4 3.Re2+ Kd3 4.Rd2+ Kc4 5.Rc2+ *
 
 [Event "Event 35"]
 [Site "Site"]
@@ -415,8 +449,9 @@ Perpetual Attack 2: 1.Rg2+ 1... Kf5 2.Rf2+ 2... Ke4 3.Re2+ 3... Kd3 4.Rd2+ 4... 
 [Result "*"]
 [FEN "7B/4r3/8/8/8/6k1/8/7K w - - 0 1"]
 [Question "Endgame 035: white to move"]
+[Theme "The Right-Corner Draw"] 
 
-The Right-Corner Draw: 1.Bd4 1... Re1+ 2.Bg1 2... Rd1 *
+1.Bd4 Re1+ 2.Bg1 Rd1 *
 
 [Event "Event 36"]
 [Site "Site"]
@@ -427,8 +462,9 @@ The Right-Corner Draw: 1.Bd4 1... Re1+ 2.Bg1 2... Rd1 *
 [Result "*"]
 [FEN "1k6/5b2/1K6/8/8/8/1R6/8 w - - 0 1"]
 [Question "Endgame 036: white to move"]
+[Theme "Pin and Win"] 
 
-Pin and Win: 1.Rf2 1... Be6 2.Rf8+ 2... Bc8 3.Rh8 3... Ka8 4.Rxc8# *
+1.Rf2 Be6 2.Rf8+ Bc8 3.Rh8 Ka8 4.Rxc8# *
 
 [Event "Event 37"]
 [Site "Site"]
@@ -439,8 +475,9 @@ Pin and Win: 1.Rf2 1... Be6 2.Rf8+ 2... Bc8 3.Rh8 3... Ka8 4.Rxc8# *
 [Result "*"]
 [FEN "6k1/5R2/6K1/8/8/8/8/6b1 w - - 0 1"]
 [Question "Endgame 037: white to move"]
+[Theme "The Chase"] 
 
-The Chase: 1.Rf1 1... Bh2 2.Rf2 2... Bg3 3.Rg2 3... Bd6 4.Rd2 4... Be7 5.Rc2 5... Bd6 6.Rc8+ 6... Bf8 7.Ra8 7... Kh8 8.Rxf8# *
+1.Rf1 Bh2 2.Rf2 Bg3 3.Rg2 Bd6 4.Rd2 Be7 5.Rc2 Bd6 6.Rc8+ Bf8 7.Ra8 Kh8 8.Rxf8# *
 
 [Event "Event 38"]
 [Site "Site"]
@@ -451,8 +488,9 @@ The Chase: 1.Rf1 1... Bh2 2.Rf2 2... Bg3 3.Rg2 3... Bd6 4.Rd2 4... Be7 5.Rc2 5..
 [Result "*"]
 [FEN "4k3/3R4/1b1K4/8/8/8/8/8 w - - 0 1"]
 [Question "Endgame 038: white to move"]
+[Theme "Corner Drive"] 
 
-Corner Drive: 1.Ke6 1... Kf8 2.Rf7+ 2... Kg8 3.Kf6 3... Bd4+ 4.Kg6 4... Bg1 5.Rf1 5... Bh2 6.Rf2 6... Bg3 7.Rg2 *
+1.Ke6 Kf8 2.Rf7+ Kg8 3.Kf6 Bd4+ 4.Kg6 Bg1 5.Rf1 Bh2 6.Rf2 Bg3 7.Rg2 *
 
 [Event "Event 39"]
 [Site "Site"]
@@ -463,8 +501,9 @@ Corner Drive: 1.Ke6 1... Kf8 2.Rf7+ 2... Kg8 3.Kf6 3... Bd4+ 4.Kg6 4... Bg1 5.Rf
 [Result "*"]
 [FEN "8/8/8/8/8/4k1B1/4r3/3K4 w - - 0 1"]
 [Question "Endgame 039: white to move"]
+[Theme "Positional Draw"] 
 
-Positional Draw: 1.Kc1 1... Kd3 2.Kb1 2... Kc3 3.Kc1 *
+1.Kc1 Kd3 2.Kb1 Kc3 3.Kc1 *
 
 [Event "Event 40"]
 [Site "Site"]
@@ -475,8 +514,9 @@ Positional Draw: 1.Kc1 1... Kd3 2.Kb1 2... Kc3 3.Kc1 *
 [Result "*"]
 [FEN "4n3/8/2R5/1k2K3/8/8/8/8 w - - 0 1"]
 [Question "Endgame 040: white to move"]
+[Theme "Separation"] 
 
-Separation: 1.Rc8 1... Ng7 2.Rg8 2... Nh5 3.Rg5 *
+1.Rc8 Ng7 2.Rg8 Nh5 3.Rg5 *
 
 [Event "Event 41"]
 [Site "Site"]
@@ -487,8 +527,9 @@ Separation: 1.Rc8 1... Ng7 2.Rg8 2... Nh5 3.Rg5 *
 [Result "*"]
 [FEN "5K2/7r/4k2N/8/8/8/8/8 w - - 0 1"]
 [Question "Endgame 041: white to move"]
+[Theme "Togetherness"] 
 
-Togetherness: 1.Ng8 1... Rf7+ 2.Ke8 2... Ra7 3.Kf8 3... Rh7 4.Ke8 4... Rf7 5.Nh6 5... Rf1 6.Ng8 *
+1.Ng8 Rf7+ 2.Ke8 Ra7 3.Kf8 Rh7 4.Ke8 Rf7 5.Nh6 Rf1 6.Ng8 *
 
 [Event "Event 42"]
 [Site "Site"]
@@ -499,8 +540,9 @@ Togetherness: 1.Ng8 1... Rf7+ 2.Ke8 2... Ra7 3.Kf8 3... Rh7 4.Ke8 4... Rf7 5.Nh6
 [Result "*"]
 [FEN "2k1r3/5R2/3K4/3B4/8/8/8/8 w - - 0 1"]
 [Question "Endgame 042: white to move"]
+[Theme "Attacking the Weak Side"] 
 
-Attacking the Weak Side: 1.Ra7 1... Rd8+ 2.Kc6 2... Kb8 3.Ra5 3... Rh8 4.Kb6 4... Rh6+ 5.Bc6 5... Rxc6+ 6.Kxc6 6... Kc8 7.Ra8# *
+1.Ra7 Rd8+ 2.Kc6 Kb8 3.Ra5 Rh8 4.Kb6 Rh6+ 5.Bc6 Rxc6+ 6.Kxc6 Kc8 7.Ra8# *
 
 [Event "Event 43"]
 [Site "Site"]
@@ -511,8 +553,9 @@ Attacking the Weak Side: 1.Ra7 1... Rd8+ 2.Kc6 2... Kb8 3.Ra5 3... Rh8 4.Kb6 4..
 [Result "*"]
 [FEN "4k3/5R2/3K4/3B4/8/4r3/8/8 w - - 0 1"]
 [Question "Endgame 043: white to move"]
+[Theme "Rook Lift"] 
 
-Rook Lift 1: 1.Rf4 1... Kd8 2.Be4 2... Ke8 3.Bc6+ 3... Kd8 4.Rf8+ 4... Re8 5.Rxe8# *
+1.Rf4 Kd8 2.Be4 Ke8 3.Bc6+ Kd8 4.Rf8+ Re8 5.Rxe8# *
 
 [Event "Event 44"]
 [Site "Site"]
@@ -523,8 +566,9 @@ Rook Lift 1: 1.Rf4 1... Kd8 2.Be4 2... Ke8 3.Bc6+ 3... Kd8 4.Rf8+ 4... Re8 5.Rxe
 [Result "*"]
 [FEN "3k4/5R2/3K4/3B4/8/4r3/8/8 w - - 0 1"]
 [Question "Endgame 044: white to move"]
+[Theme "Breaking Coordination"] 
 
-Breaking Coordination: 1.Rd7+ 1... Ke8 2.Rb7 2... Kf8 3.Rf7+ 3... Ke8 4.Rf4 4... Kd8 5.Be4 5... Ke8 6.Bc6+ 6... Kd8 7.Rf8+ 7... Re8 8.Rxe8# *
+1.Rd7+ Ke8 2.Rb7 Kf8 3.Rf7+ Ke8 4.Rf4 Kd8 5.Be4 Ke8 6.Bc6+ Kd8 7.Rf8+ Re8 8.Rxe8# *
 
 [Event "Event 45"]
 [Site "Site"]
@@ -535,8 +579,9 @@ Breaking Coordination: 1.Rd7+ 1... Ke8 2.Rb7 2... Kf8 3.Rf7+ 3... Ke8 4.Rf4 4...
 [Result "*"]
 [FEN "4k3/5R2/3K4/8/8/5B2/8/4r3 w - - 0 1"]
 [Question "Endgame 045: white to move"]
+[Theme "Rook Lift 2"] 
 
-Rook Lift 2: 1.Rf5 1... Kd8 2.Bh5 2... Kc8 3.Rb5 3... Rc1 4.Bg4+ 4... Kd8 5.Rb8+ 5... Rc8 6.Rxc8# *
+1.Rf5 Kd8 2.Bh5 Kc8 3.Rb5 Rc1 4.Bg4+ Kd8 5.Rb8+ Rc8 6.Rxc8# *
 
 [Event "Event 46"]
 [Site "Site"]
@@ -547,8 +592,9 @@ Rook Lift 2: 1.Rf5 1... Kd8 2.Bh5 2... Kc8 3.Rb5 3... Rc1 4.Bg4+ 4... Kd8 5.Rb8+
 [Result "*"]
 [FEN "3k4/6R1/3K4/3B4/8/8/8/4r3 w - - 0 1"]
 [Question "Endgame 046: white to move"]
+[Theme "Shifting Sides"] 
 
-Shifting Sides: 1.Ra7 1... Rc1 2.Rf7 2... Re1 3.Bf3 3... Re3 4.Bc6 4... Rd3+ 5.Bd5 5... Re3 6.Rd7+ *
+1.Ra7 Rc1 2.Rf7 Re1 3.Bf3 Re3 4.Bc6 Rd3+ 5.Bd5 Re3 6.Rd7+ *
 
 [Event "Event 47"]
 [Site "Site"]
@@ -559,8 +605,9 @@ Shifting Sides: 1.Ra7 1... Rc1 2.Rf7 2... Re1 3.Bf3 3... Re3 4.Bc6 4... Rd3+ 5.B
 [Result "*"]
 [FEN "3k4/4r3/3K4/3B4/8/8/8/5R2 w - - 0 1"]
 [Question "Endgame 047: white to move"]
+[Theme "Philidor's Position"] 
 
-Philidor's Position: 1.Rf8+ 1... Re8 2.Rf7 2... Re2 3.Rg7 3... Re1 4.Ra7 4... Rc1 5.Rf7 5... Re1 6.Bf3 6... Re3 7.Bc6 7... Rd3+ 8.Bd5 8... Re3 9.Rd7+ 9... Ke8 10.Rb7 10... Kf8 11.Rf7+ 11... Ke8 12.Rf4 12... Kd8 13.Be4 13... Ke8 14.Bc6+ 14... Kd8 15.Rf8+ 15... Re8 16.Rxe8# *
+1.Rf8+ Re8 2.Rf7 Re2 3.Rg7 Re1 4.Ra7 Rc1 5.Rf7 Re1 6.Bf3 Re3 7.Bc6 Rd3+ 8.Bd5 Re3 9.Rd7+ Ke8 10.Rb7 Kf8 11.Rf7+ Ke8 12.Rf4 Kd8 13.Be4 Ke8 14.Bc6+ Kd8 15.Rf8+ Re8 16.Rxe8# *
 
 [Event "Event 48"]
 [Site "Site"]
@@ -571,8 +618,9 @@ Philidor's Position: 1.Rf8+ 1... Re8 2.Rf7 2... Re2 3.Rg7 3... Re1 4.Ra7 4... Rc
 [Result "*"]
 [FEN "6k1/8/8/8/8/8/P7/7K w - - 0 1"]
 [Question "Endgame 048: white to move"]
+[Theme "Square of the Pawn"] 
 
-Square of the Pawn: 1.a4 1... Kf7 2.a5 2... Ke6 3.a6 3... Kd6 4.a7 4... Kc7 5.a8=Q *
+1.a4 Kf7 2.a5 Ke6 3.a6 Kd6 4.a7 Kc7 5.a8=Q *
 
 [Event "Event 49"]
 [Site "Site"]
@@ -583,8 +631,9 @@ Square of the Pawn: 1.a4 1... Kf7 2.a5 2... Ke6 3.a6 3... Kd6 4.a7 4... Kc7 5.a8
 [Result "*"]
 [FEN "k7/8/2K5/7p/8/8/8/8 w - - 0 1"]
 [Question "Endgame 049: white to move"]
+[Theme "Stepping into the Square"] 
 
-Stepping into the Square: 1.Kd5 1... h4 2.Ke4 2... h3 3.Kf3 3... h2 4.Kg2 4... h1=Q+ 5.Kxh1 *
+1.Kd5 h4 2.Ke4 h3 3.Kf3 h2 4.Kg2 h1=Q+ 5.Kxh1 *
 
 [Event "Event 50"]
 [Site "Site"]
@@ -595,8 +644,9 @@ Stepping into the Square: 1.Kd5 1... h4 2.Ke4 2... h3 3.Kf3 3... h2 4.Kg2 4... h
 [Result "*"]
 [FEN "8/3k4/1K6/8/8/8/P7/8 w - - 0 1"]
 [Question "Endgame 050: white to move"]
+[Theme "Clearing the Path"] 
 
-Clearing the Path: 1.Kb7 1... Kd6 2.a4 2... Kc5 3.a5 3... Kb5 4.a6 *
+1.Kb7 Kd6 2.a4 Kc5 3.a5 Kb5 4.a6 *
 
 [Event "Event 51"]
 [Site "Site"]
@@ -607,8 +657,9 @@ Clearing the Path: 1.Kb7 1... Kd6 2.a4 2... Kc5 3.a5 3... Kb5 4.a6 *
 [Result "*"]
 [FEN "8/8/8/6K1/8/5k2/P7/8 w - - 0 1"]
 [Question "Endgame 051: white to move"]
+[Theme "Shielding Off"] 
 
-Shielding Off: 1.Kf5 1... Ke3 2.Ke5 2... Kd3 3.Kd5 3... Kc3 4.Kc5 4... Kb2 5.a4 *
+1.Kf5 Ke3 2.Ke5 Kd3 3.Kd5 Kc3 4.Kc5 Kb2 5.a4 *
 
 [Event "Event 52"]
 [Site "Site"]
@@ -619,8 +670,9 @@ Shielding Off: 1.Kf5 1... Ke3 2.Ke5 2... Kd3 3.Kd5 3... Kc3 4.Kc5 4... Kb2 5.a4 
 [Result "*"]
 [FEN "5k2/8/5PK1/8/8/8/8/8 w - - 0 1"]
 [Question "Endgame 052: white to move"]
+[Theme "The Squeeze"] 
 
-The Squeeze: 1.f7 1... Ke7 2.Kg7 2... Kd6 3.f8=Q+ 3... Kd5 4.Qb4 4... Kc6 5.Kf6 5... Kd5 6.Kf5 6... Kc6 7.Ke6 7... Kc7 8.Qb5 8... Kc8 9.Kd6 9... Kd8 10.Qd7# *
+1.f7 Ke7 2.Kg7 Kd6 3.f8=Q+ Kd5 4.Qb4 Kc6 5.Kf6 Kd5 6.Kf5 Kc6 7.Ke6 Kc7 8.Qb5 Kc8 9.Kd6 Kd8 10.Qd7# *
 
 [Event "Event 53"]
 [Site "Site"]
@@ -631,8 +683,9 @@ The Squeeze: 1.f7 1... Ke7 2.Kg7 2... Kd6 3.f8=Q+ 3... Kd5 4.Qb4 4... Kc6 5.Kf6 
 [Result "*"]
 [FEN "8/8/8/8/8/5pk1/8/5K2 w - - 0 1"]
 [Question "Endgame 053: white to move"]
+[Theme "Opposing"] 
 
-Opposing: 1.Kg1 1... f2+ 2.Kf1 2... Kf3 *
+1.Kg1 f2+ 2.Kf1 Kf3 *
 
 [Event "Event 54"]
 [Site "Site"]
@@ -643,8 +696,9 @@ Opposing: 1.Kg1 1... f2+ 2.Kf1 2... Kf3 *
 [Result "*"]
 [FEN "3k4/8/4P3/3K4/8/8/8/8 w - - 0 1"]
 [Question "Endgame 054: white to move"]
+[Theme "Oppositional Squeeze"] 
 
-Oppositional Squeeze: 1.Kd6 1... Ke8 2.e7 2... Kf7 3.Kd7 3... Kf6 4.e8=Q 4... Kf5 5.Qe3 5... Kf6 6.Qe4 6... Kg5 7.Ke6 7... Kh6 8.Kf6 8... Kh5 9.Qd4 9... Kh6 10.Qh4# *
+1.Kd6 Ke8 2.e7 Kf7 3.Kd7 Kf6 4.e8=Q Kf5 5.Qe3 Kf6 6.Qe4 Kg5 7.Ke6 Kh6 8.Kf6 Kh5 9.Qd4 Kh6 10.Qh4# *
 
 [Event "Event 55"]
 [Site "Site"]
@@ -655,8 +709,9 @@ Oppositional Squeeze: 1.Kd6 1... Ke8 2.e7 2... Kf7 3.Kd7 3... Kf6 4.e8=Q 4... Kf
 [Result "*"]
 [FEN "3k4/8/2P5/K7/8/8/8/8 w - - 0 1"]
 [Question "Endgame 055: white to move"]
+[Theme "Diagonal Squeeze"] 
 
-Diagonal Squeeze: 1.Kb6 1... Kc8 2.c7 2... Kd7 3.Kb7 3... Kd6 4.c8=Q 4... Kd5 5.Qg4 5... Ke5 6.Kc6 6... Kf6 7.Kd6 7... Kf7 8.Qg5 8... Kf8 9.Ke6 9... Ke8 10.Qe7# *
+1.Kb6 Kc8 2.c7 Kd7 3.Kb7 Kd6 4.c8=Q Kd5 5.Qg4 Ke5 6.Kc6 Kf6 7.Kd6 Kf7 8.Qg5 Kf8 9.Ke6 Ke8 10.Qe7# *
 
 [Event "Event 56"]
 [Site "Site"]
@@ -667,8 +722,9 @@ Diagonal Squeeze: 1.Kb6 1... Kc8 2.c7 2... Kd7 3.Kb7 3... Kd6 4.c8=Q 4... Kd5 5.
 [Result "*"]
 [FEN "k7/8/2P5/K7/8/8/8/8 w - - 0 1"]
 [Question "Endgame 056: white to move"]
+[Theme "Vertical Squeeze"] 
 
-Vertical Squeeze: 1.Ka6 1... Kb8 2.Kb6 2... Kc8 3.c7 3... Kd7 4.Kb7 4... Kd6 5.c8=Q 5... Ke5 6.Qg4 6... Kd5 7.Qf4 7... Kc5 8.Qe4 8... Kd6 9.Kb6 9... Kd7 10.Qe5 10... Kd8 11.Kc6 11... Kc8 12.Qc7# *
+1.Ka6 Kb8 2.Kb6 Kc8 3.c7 Kd7 4.Kb7 Kd6 5.c8=Q Ke5 6.Qg4 Kd5 7.Qf4 Kc5 8.Qe4 Kd6 9.Kb6 Kd7 10.Qe5 Kd8 11.Kc6 Kc8 12.Qc7# *
 
 [Event "Event 57"]
 [Site "Site"]
@@ -679,8 +735,9 @@ Vertical Squeeze: 1.Ka6 1... Kb8 2.Kb6 2... Kc8 3.c7 3... Kd7 4.Kb7 4... Kd6 5.c
 [Result "*"]
 [FEN "8/8/8/8/4k3/4p3/4K3/8 w - - 0 1"]
 [Question "Endgame 057: white to move"]
+[Theme "Frontal Defense"] 
 
-Frontal Defense: 1.Ke1 1... Kd3 2.Kd1 2... e2+ 3.Ke1 3... Ke3 *
+1.Ke1 Kd3 2.Kd1 e2+ 3.Ke1 Ke3 *
 
 [Event "Event 58"]
 [Site "Site"]
@@ -691,8 +748,9 @@ Frontal Defense: 1.Ke1 1... Kd3 2.Kd1 2... e2+ 3.Ke1 3... Ke3 *
 [Result "*"]
 [FEN "8/6k1/4P3/6K1/8/8/8/8 w - - 0 1"]
 [Question "Endgame 058: white to move"]
+[Theme "Transition to a Squeeze"] 
 
-Transition to a Squeeze: 1.Kf5 1... Kg8 2.Kg6 2... Kf8 3.Kf6 3... Ke8 4.e7 4... Kd7 5.Kf7 5... Kd6 6.e8=Q 6... Kd5 7.Qa4 7... Kc5 8.Ke6 8... Kb6 9.Kd6 9... Kb7 10.Qa5 10... Kb8 11.Kc6 11... Kc8 12.Qc7# *
+1.Kf5 Kg8 2.Kg6 Kf8 3.Kf6 Ke8 4.e7 Kd7 5.Kf7 Kd6 6.e8=Q Kd5 7.Qa4 Kc5 8.Ke6 Kb6 9.Kd6 Kb7 10.Qa5 Kb8 11.Kc6 Kc8 12.Qc7# *
 
 [Event "Event 59"]
 [Site "Site"]
@@ -703,8 +761,9 @@ Transition to a Squeeze: 1.Kf5 1... Kg8 2.Kg6 2... Kf8 3.Kf6 3... Ke8 4.e7 4... 
 [Result "*"]
 [FEN "8/8/8/8/8/5kp1/7K/8 w - - 0 1"]
 [Question "Endgame 059: white to move"]
+[Theme "Stalemate"] 
 
-Stalemate: 1.Kh1 1... g2+ 2.Kg1 2... Kg3 *
+1.Kh1 g2+ 2.Kg1 Kg3 *
 
 [Event "Event 60"]
 [Site "Site"]
@@ -715,8 +774,9 @@ Stalemate: 1.Kh1 1... g2+ 2.Kg1 2... Kg3 *
 [Result "*"]
 [FEN "5k2/8/4K3/5P2/8/8/8/8 w - - 0 1"]
 [Question "Endgame 060: white to move"]
+[Theme "Direct Opposition"] 
 
-Direct Opposition: 1.Kf6 1... Ke8 2.Kg7 2... Ke7 3.f6+ 3... Ke6 4.f7 4... Kd5 5.f8=Q 5... Kc4 6.Qa3 6... Kd5 7.Kf6 7... Ke4 8.Qc3 8... Kd5 9.Kf5 9... Kd6 10.Qc4 10... Kd7 11.Qc5 11... Ke8 12.Ke6 12... Kd8 13.Qc3 13... Ke8 14.Qh8# *
+1.Kf6 Ke8 2.Kg7 Ke7 3.f6+ Ke6 4.f7 Kd5 5.f8=Q Kc4 6.Qa3 Kd5 7.Kf6 Ke4 8.Qc3 Kd5 9.Kf5 Kd6 10.Qc4 Kd7 11.Qc5 Ke8 12.Ke6 Kd8 13.Qc3 Ke8 14.Qh8# *
 
 [Event "Event 61"]
 [Site "Site"]
@@ -727,8 +787,9 @@ Direct Opposition: 1.Kf6 1... Ke8 2.Kg7 2... Ke7 3.f6+ 3... Ke6 4.f7 4... Kd5 5.
 [Result "*"]
 [FEN "8/1k6/8/2PK4/8/8/8/8 w - - 0 1"]
 [Question "Endgame 061: white to move"]
+[Theme "Critical Squares"] 
 
-Critical Squares: 1.Kd6 1... Kc8 2.Kc6 2... Kb8 3.Kd7 3... Kb7 4.c6+ 4... Kb6 5.c7 5... Kc5 6.c8=Q+ 6... Kd4 7.Ke6 7... Ke4 8.Qc3 8... Kf4 9.Qd3 9... Kg4 10.Qe3 10... Kh5 11.Kf5 11... Kh4 12.Qc3 12... Kh5 13.Qh8# *
+1.Kd6 Kc8 2.Kc6 Kb8 3.Kd7 Kb7 4.c6+ Kb6 5.c7 Kc5 6.c8=Q+ Kd4 7.Ke6 Ke4 8.Qc3 Kf4 9.Qd3 Kg4 10.Qe3 Kh5 11.Kf5 Kh4 12.Qc3 Kh5 13.Qh8# *
 
 [Event "Event 62"]
 [Site "Site"]
@@ -739,8 +800,9 @@ Critical Squares: 1.Kd6 1... Kc8 2.Kc6 2... Kb8 3.Kd7 3... Kb7 4.c6+ 4... Kb6 5.
 [Result "*"]
 [FEN "7k/5K2/8/6P1/8/8/8/8 w - - 0 1"]
 [Question "Endgame 062: white to move"]
+[Theme "Knight-Pawn Trap"] 
 
-Knight-Pawn Trap: 1.Kg6 1... Kg8 2.Kh6 2... Kh8 3.g6 3... Kg8 4.g7 4... Kf7 5.Kh7 5... Kf6 6.g8=Q 6... Ke5 7.Qc4 7... Kd6 8.Kg6 8... Ke5 9.Kg5 9... Kd6 10.Kf6 10... Kd7 11.Qc5 11... Kd8 12.Qa7 12... Kc8 13.Ke6 13... Kd8 14.Qb8# *
+1.Kg6 Kg8 2.Kh6 Kh8 3.g6 Kg8 4.g7 Kf7 5.Kh7 Kf6 6.g8=Q Ke5 7.Qc4 Kd6 8.Kg6 Ke5 9.Kg5 Kd6 10.Kf6 Kd7 11.Qc5 Kd8 12.Qa7 Kc8 13.Ke6 Kd8 14.Qb8# *
 
 [Event "Event 63"]
 [Site "Site"]
@@ -751,8 +813,9 @@ Knight-Pawn Trap: 1.Kg6 1... Kg8 2.Kh6 2... Kh8 3.g6 3... Kg8 4.g7 4... Kf7 5.Kh
 [Result "*"]
 [FEN "8/8/8/1kp5/8/8/8/K7 w - - 0 1"]
 [Question "Endgame 063: white to move"]
+[Theme "Distant Opposition"] 
 
-Distant Opposition: 1.Kb1 1... Kb4 2.Kb2 2... Kc4 3.Kc2 3... Kd4 4.Kd2 4... c4 5.Kc2 5... c3 6.Kc1 6... Kd3 7.Kd1 7... c2+ 8.Kc1 8... Kc3 *
+1.Kb1 Kb4 2.Kb2 Kc4 3.Kc2 Kd4 4.Kd2 c4 5.Kc2 c3 6.Kc1 Kd3 7.Kd1 c2+ 8.Kc1 Kc3 *
 
 [Event "Event 64"]
 [Site "Site"]
@@ -763,8 +826,9 @@ Distant Opposition: 1.Kb1 1... Kb4 2.Kb2 2... Kc4 3.Kc2 3... Kd4 4.Kd2 4... c4 5
 [Result "*"]
 [FEN "5k2/8/8/8/3PK3/8/8/8 w - - 0 1"]
 [Question "Endgame 064: white to move"]
+[Theme "Outside Critical Square"] 
 
-Outside Critical Square: 1.Kd5 1... Ke7 2.Kc6 2... Kd8 3.Kd6 3... Kc8 4.Ke7 4... Kc7 5.d5 5... Kc8 6.d6 6... Kb7 7.d7 7... Kc6 8.d8=Q *
+1.Kd5 Ke7 2.Kc6 Kd8 3.Kd6 Kc8 4.Ke7 Kc7 5.d5 Kc8 6.d6 Kb7 7.d7 Kc6 8.d8=Q *
 
 [Event "Event 65"]
 [Site "Site"]
@@ -775,8 +839,9 @@ Outside Critical Square: 1.Kd5 1... Ke7 2.Kc6 2... Kd8 3.Kd6 3... Kc8 4.Ke7 4...
 [Result "*"]
 [FEN "k7/8/8/8/4P3/8/1K6/8 w - - 0 1"]
 [Question "Endgame 065: white to move"]
+[Theme "Extended Overpass"] 
 
-Extended Overpass: 1.Kc3 1... Kb7 2.Kd4 2... Kc6 3.Ke5 3... Kd7 4.Kf6 4... Ke8 5.Ke6 5... Kf8 6.Kd7 6... Kf7 7.e5 7... Kf8 8.e6 8... Kg7 9.e7 9... Kf6 10.e8=Q *
+1.Kc3 Kb7 2.Kd4 Kc6 3.Ke5 Kd7 4.Kf6 Ke8 5.Ke6 Kf8 6.Kd7 Kf7 7.e5 Kf8 8.e6 Kg7 9.e7 Kf6 10.e8=Q *
 
 [Event "Event 66"]
 [Site "Site"]
@@ -787,8 +852,9 @@ Extended Overpass: 1.Kc3 1... Kb7 2.Kd4 2... Kc6 3.Ke5 3... Kd7 4.Kf6 4... Ke8 5
 [Result "*"]
 [FEN "2k5/8/8/8/6P1/8/8/4K3 w - - 0 1"]
 [Question "Endgame 066: white to move"]
+[Theme "The Underpas"] 
 
-The Underpass 1: 1.Kf2 1... Kd7 2.Kg3 2... Ke6 3.Kh4 3... Kf6 4.Kh5 4... Kg7 5.Kg5 5... Kh7 6.Kf6 6... Kh8 7.Kg6 7... Kg8 8.g5 8... Kh8 9.Kf7 9... Kh7 10.g6+ 10... Kh6 11.g7 11... Kg5 12.g8=Q+ *
+1.Kf2 Kd7 2.Kg3 Ke6 3.Kh4 Kf6 4.Kh5 Kg7 5.Kg5 Kh7 6.Kf6 Kh8 7.Kg6 Kg8 8.g5 Kh8 9.Kf7 Kh7 10.g6+ Kh6 11.g7 Kg5 12.g8=Q+ *
 
 [Event "Event 67"]
 [Site "Site"]
@@ -799,8 +865,9 @@ The Underpass 1: 1.Kf2 1... Kd7 2.Kg3 2... Ke6 3.Kh4 3... Kf6 4.Kh5 4... Kg7 5.K
 [Result "*"]
 [FEN "8/8/2p5/2k5/8/3K4/8/8 w - - 0 1"]
 [Question "Endgame 067: white to move"]
+[Theme "Opposition"] 
 
-Opposition: 1.Kc3 1... Kd5 2.Kd3 2... c5 3.Kc3 3... c4 4.Kc2 4... Kd4 5.Kd2 5... c3+ 6.Kc2 6... Kc4 7.Kc1 7... Kb3 8.Kb1 8... c2+ 9.Kc1 9... Kc3 *
+1.Kc3 Kd5 2.Kd3 c5 3.Kc3 c4 4.Kc2 Kd4 5.Kd2 c3+ 6.Kc2 Kc4 7.Kc1 Kb3 8.Kb1 c2+ 9.Kc1 Kc3 *
 
 [Event "Event 68"]
 [Site "Site"]
@@ -811,8 +878,9 @@ Opposition: 1.Kc3 1... Kd5 2.Kd3 2... c5 3.Kc3 3... c4 4.Kc2 4... Kd4 5.Kd2 5...
 [Result "*"]
 [FEN "8/6k1/8/6K1/8/6P1/8/8 w - - 0 1"]
 [Question "Endgame 068: white to move"]
+[Theme "Reserve Tempo"] 
 
-Reserve Tempo: 1.g4 1... Kh7 2.Kf6 2... Kh8 3.Kg6 3... Kg8 4.g5 4... Kh8 5.Kf7 5... Kh7 6.g6+ 6... Kh6 7.g7 7... Kg5 8.g8=Q+ *
+1.g4 Kh7 2.Kf6 Kh8 3.Kg6 Kg8 4.g5 Kh8 5.Kf7 Kh7 6.g6+ Kh6 7.g7 Kg5 8.g8=Q+ *
 
 [Event "Event 69"]
 [Site "Site"]
@@ -823,8 +891,9 @@ Reserve Tempo: 1.g4 1... Kh7 2.Kf6 2... Kh8 3.Kg6 3... Kg8 4.g5 4... Kh8 5.Kf7 5
 [Result "*"]
 [FEN "4k3/8/8/8/8/1P6/8/2K5 w - - 0 1"]
 [Question "Endgame 069: white to move"]
+[Theme "The Underpass 2"] 
 
-The Underpass 2: 1.Kb2 1... Kd7 2.Ka3 2... Kc6 3.Ka4 3... Kb6 4.Kb4 4... Ka6 5.Kc5 5... Kb7 6.Kb5 6... Kc7 7.Ka6 7... Kc6 8.b4 8... Kc7 9.b5 9... Kb8 10.Kb6 10... Ka8 11.Kc7 11... Ka7 12.b6+ 12... Ka8 13.b7+ 13... Ka7 14.b8=Q+ 14... Ka6 15.Qb6# *
+1.Kb2 Kd7 2.Ka3 Kc6 3.Ka4 Kb6 4.Kb4 Ka6 5.Kc5 Kb7 6.Kb5 Kc7 7.Ka6 Kc6 8.b4 Kc7 9.b5 Kb8 10.Kb6 Ka8 11.Kc7 Ka7 12.b6+ Ka8 13.b7+ Ka7 14.b8=Q+ Ka6 15.Qb6# *
 
 [Event "Event 70"]
 [Site "Site"]
@@ -835,8 +904,9 @@ The Underpass 2: 1.Kb2 1... Kd7 2.Ka3 2... Kc6 3.Ka4 3... Kb6 4.Kb4 4... Ka6 5.K
 [Result "*"]
 [FEN "8/8/8/1k6/8/K7/6P1/8 w - - 0 1"]
 [Question "Endgame 070: white to move"]
+[Theme "Maintaining the Opposition"] 
 
-Maintaining the Opposition: 1.Kb3 1... Kc5 2.Kc3 2... Kd5 3.Kd3 3... Ke5 4.Ke3 4... Kf5 5.Kf3 5... Kg5 6.Kg3 6... Kf5 7.Kh4 7... Kg6 8.Kg4 8... Kf6 9.Kh5 9... Kg7 10.Kg5 10... Kf7 11.Kh6 11... Kg8 12.Kg6 12... Kh8 13.g4 13... Kg8 14.g5 14... Kh8 15.Kf7 15... Kh7 16.g6+ 16... Kh8 17.g7+ 17... Kh7 18.g8=Q+ 18... Kh6 19.Qg6# *
+1.Kb3 Kc5 2.Kc3 Kd5 3.Kd3 Ke5 4.Ke3 Kf5 5.Kf3 Kg5 6.Kg3 Kf5 7.Kh4 Kg6 8.Kg4 Kf6 9.Kh5 Kg7 10.Kg5 Kf7 11.Kh6 Kg8 12.Kg6 Kh8 13.g4 Kg8 14.g5 Kh8 15.Kf7 Kh7 16.g6+ Kh8 17.g7+ Kh7 18.g8=Q+ Kh6 19.Qg6# *
 
 [Event "Event 71"]
 [Site "Site"]
@@ -847,8 +917,9 @@ Maintaining the Opposition: 1.Kb3 1... Kc5 2.Kc3 2... Kd5 3.Kd3 3... Ke5 4.Ke3 4
 [Result "*"]
 [FEN "4k3/8/8/8/8/8/4P3/4K3 w - - 0 1"]
 [Question "Endgame 071: white to move"]
+[Theme "Critical Squares #2"] 
 
-Critical Squares #2: 1.Kd2 1... Kd8 2.Ke3 2... Ke7 3.Ke4 3... Ke6 4.e3 4... Kd6 5.Kf5 5... Kd5 6.e4+ 6... Kd6 7.Kf6 7... Kd7 8.e5 8... Ke8 9.Ke6 9... Kf8 10.Kd7 10... Kf7 11.e6+ 11... Kf8 12.e7+ 12... Kf7 13.e8=Q+ *
+1.Kd2 Kd8 2.Ke3 Ke7 3.Ke4 Ke6 4.e3 Kd6 5.Kf5 Kd5 6.e4+ Kd6 7.Kf6 Kd7 8.e5 Ke8 9.Ke6 Kf8 10.Kd7 Kf7 11.e6+ Kf8 12.e7+ Kf7 13.e8=Q+ *
 
 [Event "Event 72"]
 [Site "Site"]
@@ -859,8 +930,9 @@ Critical Squares #2: 1.Kd2 1... Kd8 2.Ke3 2... Ke7 3.Ke4 3... Ke6 4.e3 4... Kd6 
 [Result "*"]
 [FEN "2k5/2p5/8/8/8/8/8/2K5 w - - 0 1"]
 [Question "Endgame 072: white to move"]
+[Theme "Long-Distance Opposition"] 
 
-Long-Distance Opposition: 1.Kc2 1... Kb7 2.Kb3 2... Kc6 3.Kc4 3... Kd6 4.Kd4 4... c6 5.Kc4 5... c5 6.Kc3 6... Kd5 7.Kd3 7... c4+ 8.Kc3 8... Kc5 9.Kc2 9... Kb4 10.Kb2 10... c3+ 11.Kc2 11... Kc4 12.Kc1 12... Kd3 13.Kd1 13... c2+ 14.Kc1 14... Kc3 *
+1.Kc2 Kb7 2.Kb3 Kc6 3.Kc4 Kd6 4.Kd4 c6 5.Kc4 c5 6.Kc3 Kd5 7.Kd3 c4+ 8.Kc3 Kc5 9.Kc2 Kb4 10.Kb2 c3+ 11.Kc2 Kc4 12.Kc1 Kd3 13.Kd1 c2+ 14.Kc1 Kc3 *
 
 [Event "Event 73"]
 [Site "Site"]
@@ -871,8 +943,9 @@ Long-Distance Opposition: 1.Kc2 1... Kb7 2.Kb3 2... Kc6 3.Kc4 3... Kd6 4.Kd4 4..
 [Result "*"]
 [FEN "8/8/8/8/8/6kp/8/5K2 w - - 0 1"]
 [Question "Endgame 073: white to move"]
+[Theme "Rook-Pawn Draws"] 
 
-Rook-Pawn Draws: 1.Kg1 1... h2+ 2.Kh1 2... Kh3 *
+1.Kg1 h2+ 2.Kh1 Kh3 *
 
 [Event "Event 74"]
 [Site "Site"]
@@ -883,8 +956,9 @@ Rook-Pawn Draws: 1.Kg1 1... h2+ 2.Kh1 2... Kh3 *
 [Result "*"]
 [FEN "8/8/8/p7/8/1k6/3K4/8 w - - 0 1"]
 [Question "Endgame 074: white to move"]
+[Theme "Controlling the Critical Squa"] 
 
-Controlling the Critical Squa: 1.Kc1 1... a4 2.Kb1 2... a3 3.Ka1 3... a2 *
+1.Kc1 a4 2.Kb1 a3 3.Ka1 a2 *
 
 [Event "Event 75"]
 [Site "Site"]
@@ -895,8 +969,9 @@ Controlling the Critical Squa: 1.Kc1 1... a4 2.Kb1 2... a3 3.Ka1 3... a2 *
 [Result "*"]
 [FEN "8/8/8/8/5K2/7p/8/7k w - - 0 1"]
 [Question "Endgame 075: white to move"]
+[Theme "Rear Defense"] 
 
-Rear Defense: 1.Kg3 1... h2 2.Kf2 *
+1.Kg3 h2 2.Kf2 *
 
 [Event "Event 76"]
 [Site "Site"]
@@ -907,8 +982,9 @@ Rear Defense: 1.Kg3 1... h2 2.Kf2 *
 [Result "*"]
 [FEN "1k6/8/1PK5/1P6/8/8/8/8 w - - 0 1"]
 [Question "Endgame 076: white to move"]
+[Theme "Pawn Pitc"] 
 
-Pawn Pitch 1: 1.b7 1... Ka7 2.b8=Q+ 2... Kxb8 3.Kb6 3... Ka8 4.Kc7 4... Ka7 5.b6+ 5... Ka8 6.b7+ 6... Ka7 7.b8=Q+ 7... Ka6 8.Qb6# *
+1.b7 Ka7 2.b8=Q+ Kxb8 3.Kb6 Ka8 4.Kc7 Ka7 5.b6+ Ka8 6.b7+ Ka7 7.b8=Q+ Ka6 8.Qb6# *
 
 [Event "Event 77"]
 [Site "Site"]
@@ -919,8 +995,9 @@ Pawn Pitch 1: 1.b7 1... Ka7 2.b8=Q+ 2... Kxb8 3.Kb6 3... Ka8 4.Kc7 4... Ka7 5.b6
 [Result "*"]
 [FEN "8/1k6/8/1P6/1P6/1K6/8/8 w - - 0 1"]
 [Question "Endgame 077: white to move"]
+[Theme "King Dance"] 
 
-King Dance: 1.Kc3 1... Kc7 2.Kd4 2... Kb6 3.Kc4 3... Kc7 4.Kc5 4... Kb7 5.b6 5... Ka6 6.b7 6... Kxb7 7.Kb5 7... Ka7 8.Kc6 8... Kb8 9.Kb6 9... Ka8 10.b5 10... Kb8 11.Ka6 11... Ka8 12.b6 12... Kb8 13.b7 13... Kc7 14.Ka7 14... Kc6 15.b8=Q *
+1.Kc3 Kc7 2.Kd4 Kb6 3.Kc4 Kc7 4.Kc5 Kb7 5.b6 Ka6 6.b7 Kxb7 7.Kb5 Ka7 8.Kc6 Kb8 9.Kb6 Ka8 10.b5 Kb8 11.Ka6 Ka8 12.b6 Kb8 13.b7 Kc7 14.Ka7 Kc6 15.b8=Q *
 
 [Event "Event 78"]
 [Site "Site"]
@@ -931,8 +1008,9 @@ King Dance: 1.Kc3 1... Kc7 2.Kd4 2... Kb6 3.Kc4 3... Kc7 4.Kc5 4... Kb7 5.b6 5..
 [Result "*"]
 [FEN "6k1/6P1/6KP/8/8/8/8/8 w - - 0 1"]
 [Question "Endgame 078: white to move"]
+[Theme "Pawn Mate"] 
 
-Pawn Mate: 1.h7# *
+1.h7# *
 
 [Event "Event 79"]
 [Site "Site"]
@@ -943,8 +1021,9 @@ Pawn Mate: 1.h7# *
 [Result "*"]
 [FEN "8/Pk6/1P6/3K4/8/8/8/8 w - - 0 1"]
 [Question "Endgame 079: white to move"]
+[Theme "Pawn Pitch 2"] 
 
-Pawn Pitch 2: 1.a8=Q+ 1... Kxa8 2.Kc6 2... Kb8 3.b7 3... Ka7 4.Kc7 4... Ka6 5.b8=Q 5... Ka5 6.Qb3 6... Ka6 7.Qb6# *
+1.a8=Q+ Kxa8 2.Kc6 Kb8 3.b7 Ka7 4.Kc7 Ka6 5.b8=Q Ka5 6.Qb3 Ka6 7.Qb6# *
 
 [Event "Event 80"]
 [Site "Site"]
@@ -955,8 +1034,9 @@ Pawn Pitch 2: 1.a8=Q+ 1... Kxa8 2.Kc6 2... Kb8 3.b7 3... Ka7 4.Kc7 4... Ka6 5.b8
 [Result "*"]
 [FEN "8/8/8/5k2/5P1P/8/8/6K1 w - - 0 1"]
 [Question "Endgame 080: white to move"]
+[Theme "Split Pawn Defense"] 
 
-Split Pawn Defense: 1.h5 1... Kf6 2.Kg2 2... Kg7 3.f5 3... Kh6 4.f6 4... Kh7 5.Kg3 5... Kg8 6.h6 6... Kf7 7.h7 7... Kxf6 8.h8=Q+ *
+1.h5 Kf6 2.Kg2 Kg7 3.f5 Kh6 4.f6 Kh7 5.Kg3 Kg8 6.h6 Kf7 7.h7 Kxf6 8.h8=Q+ *
 
 [Event "Event 81"]
 [Site "Site"]
@@ -967,8 +1047,9 @@ Split Pawn Defense: 1.h5 1... Kf6 2.Kg2 2... Kg7 3.f5 3... Kh6 4.f6 4... Kh7 5.K
 [Result "*"]
 [FEN "8/1k6/8/2P5/P7/8/8/7K w - - 0 1"]
 [Question "Endgame 081: white to move"]
+[Theme "Alignment"] 
 
-Alignment: 1.a5 1... Kc6 2.a6 2... Kc7 3.Kg2 3... Kc6 4.Kf3 4... Kc7 5.Ke4 5... Kc6 6.Ke5 6... Kc7 7.Kd5 7... Kc8 8.c6 8... Kb8 9.Kc5 9... Ka8 10.c7 10... Ka7 11.c8=R 11... Kxa6 12.Rc7 12... Ka5 13.Ra7# *
+1.a5 Kc6 2.a6 Kc7 3.Kg2 Kc6 4.Kf3 Kc7 5.Ke4 Kc6 6.Ke5 Kc7 7.Kd5 Kc8 8.c6 Kb8 9.Kc5 Ka8 10.c7 Ka7 11.c8=R Kxa6 12.Rc7 Ka5 13.Ra7# *
 
 [Event "Event 82"]
 [Site "Site"]
@@ -979,8 +1060,9 @@ Alignment: 1.a5 1... Kc6 2.a6 2... Kc7 3.Kg2 3... Kc6 4.Kf3 4... Kc7 5.Ke4 5... 
 [Result "*"]
 [FEN "8/2k5/8/1p1p4/3K4/8/8/8 w - - 0 1"]
 [Question "Endgame 082: white to move"]
+[Theme "Opposition"] 
 
-Opposition: 1.Kc5 1... b4 2.Kxb4 2... Kd6 3.Kc3 3... Ke5 4.Kd3 4... d4 5.Kd2 5... Ke4 6.Ke2 6... d3+ 7.Kd2 7... Kd4 8.Kd1 8... Kc3 9.Kc1 9... d2+ 10.Kd1 10... Kd3 *
+1.Kc5 b4 2.Kxb4 Kd6 3.Kc3 Ke5 4.Kd3 d4 5.Kd2 Ke4 6.Ke2 d3+ 7.Kd2 Kd4 8.Kd1 Kc3 9.Kc1 d2+ 10.Kd1 Kd3 *
 
 [Event "Event 83"]
 [Site "Site"]
@@ -991,8 +1073,9 @@ Opposition: 1.Kc5 1... b4 2.Kxb4 2... Kd6 3.Kc3 3... Ke5 4.Kd3 4... d4 5.Kd2 5..
 [Result "*"]
 [FEN "8/8/8/8/3k3p/7K/5p2/8 w - - 0 1"]
 [Question "Endgame 083: white to move"]
+[Theme "Getting Back"] 
 
-Getting Back: 1.Kg2 1... Ke3 2.Kf1 2... Kf3 *
+1.Kg2 Ke3 2.Kf1 Kf3 *
 
 [Event "Event 84"]
 [Site "Site"]
@@ -1003,8 +1086,9 @@ Getting Back: 1.Kg2 1... Ke3 2.Kf1 2... Kf3 *
 [Result "*"]
 [FEN "8/8/8/4k3/1P2P3/8/8/7K w - - 0 1"]
 [Question "Endgame 084: white to move"]
+[Theme "Decoy"] 
 
-Decoy: 1.b5 1... Kd6 2.Kg2 2... Kc5 3.Kf3 3... Kxb5 4.Kf4 4... Kc5 5.Ke5 5... Kc6 6.Ke6 6... Kc7 7.e5 7... Kd8 8.Kf7 8... Kd7 9.e6+ 9... Kd6 10.e7 10... Ke5 11.e8=Q+ *
+1.b5 Kd6 2.Kg2 Kc5 3.Kf3 Kxb5 4.Kf4 Kc5 5.Ke5 Kc6 6.Ke6 Kc7 7.e5 Kd8 8.Kf7 Kd7 9.e6+ Kd6 10.e7 Ke5 11.e8=Q+ *
 
 [Event "Event 85"]
 [Site "Site"]
@@ -1015,8 +1099,9 @@ Decoy: 1.b5 1... Kd6 2.Kg2 2... Kc5 3.Kf3 3... Kxb5 4.Kf4 4... Kc5 5.Ke5 5... Kc
 [Result "*"]
 [FEN "7k/8/8/4p2p/8/6K1/8/8 w - - 0 1"]
 [Question "Endgame 085: white to move"]
+[Theme "Inside the Pawn's Square"] 
 
-Inside the Pawn's Square: 1.Kh4 1... e4 2.Kg3 2... Kg7 3.Kf4 3... Kg6 4.Kxe4 4... Kg5 5.Kf3 5... h4 6.Kg2 6... Kg4 7.Kh2 7... h3 8.Kh1 8... Kg3 9.Kg1 9... h2+ 10.Kh1 10... Kh3 *
+1.Kh4 e4 2.Kg3 Kg7 3.Kf4 Kg6 4.Kxe4 Kg5 5.Kf3 h4 6.Kg2 Kg4 7.Kh2 h3 8.Kh1 Kg3 9.Kg1 h2+ 10.Kh1 Kh3 *
 
 [Event "Event 86"]
 [Site "Site"]
@@ -1027,8 +1112,9 @@ Inside the Pawn's Square: 1.Kh4 1... e4 2.Kg3 2... Kg7 3.Kf4 3... Kg6 4.Kxe4 4..
 [Result "*"]
 [FEN "k7/8/1p6/1P6/8/8/7K/8 w - - 0 1"]
 [Question "Endgame 086: white to move"]
+[Theme "Outflanking"] 
 
-Outflanking: 1.Kg3 1... Kb7 2.Kf4 2... Kc7 3.Ke5 3... Kd7 4.Kd5 4... Kc7 5.Ke6 5... Kc8 6.Kd6 6... Kb7 7.Kd7 7... Kb8 8.Kc6 8... Ka7 9.Kc7 9... Ka8 10.Kxb6 10... Kb8 11.Ka6 11... Ka8 12.b6 12... Kb8 13.b7 13... Kc7 14.Ka7 14... Kc6 15.b8=Q *
+1.Kg3 Kb7 2.Kf4 Kc7 3.Ke5 Kd7 4.Kd5 Kc7 5.Ke6 Kc8 6.Kd6 Kb7 7.Kd7 Kb8 8.Kc6 Ka7 9.Kc7 Ka8 10.Kxb6 Kb8 11.Ka6 Ka8 12.b6 Kb8 13.b7 Kc7 14.Ka7 Kc6 15.b8=Q *
 
 [Event "Event 87"]
 [Site "Site"]
@@ -1039,8 +1125,9 @@ Outflanking: 1.Kg3 1... Kb7 2.Kf4 2... Kc7 3.Ke5 3... Kd7 4.Kd5 4... Kc7 5.Ke6 5
 [Result "*"]
 [FEN "8/2K5/4p3/4P3/6k1/8/8/8 w - - 0 1"]
 [Question "Endgame 087: white to move"]
+[Theme "Trebuchet"] 
 
-Trebuchet: 1.Kd7 1... Kf5 2.Kd6 2... Kg6 3.Kxe6 3... Kg7 4.Kd7 4... Kf7 5.e6+ 5... Kf8 6.e7+ 6... Kf7 7.e8=Q+ *
+1.Kd7 Kf5 2.Kd6 Kg6 3.Kxe6 Kg7 4.Kd7 Kf7 5.e6+ Kf8 6.e7+ Kf7 7.e8=Q+ *
 
 [Event "Event 88"]
 [Site "Site"]
@@ -1051,8 +1138,9 @@ Trebuchet: 1.Kd7 1... Kf5 2.Kd6 2... Kg6 3.Kxe6 3... Kg7 4.Kd7 4... Kf7 5.e6+ 5.
 [Result "*"]
 [FEN "K7/5k2/4p3/4P3/8/8/8/8 w - - 0 1"]
 [Question "Endgame 088: white to move"]
+[Theme "Outflanking Trebuchet"] 
 
-Outflanking Trebuchet: 1.Kb7 1... Ke7 2.Kc7 2... Ke8 3.Kd6 3... Kf7 4.Kd7 4... Kf8 5.Kxe6 5... Ke8 6.Kf6 6... Kf8 7.e6 7... Ke8 8.e7 8... Kd7 9.Kf7 9... Kd6 10.e8=Q *
+1.Kb7 Ke7 2.Kc7 Ke8 3.Kd6 Kf7 4.Kd7 Kf8 5.Kxe6 Ke8 6.Kf6 Kf8 7.e6 Ke8 8.e7 Kd7 9.Kf7 Kd6 10.e8=Q *
 
 [Event "Event 89"]
 [Site "Site"]
@@ -1063,8 +1151,9 @@ Outflanking Trebuchet: 1.Kb7 1... Ke7 2.Kc7 2... Ke8 3.Kd6 3... Kf7 4.Kd7 4... K
 [Result "*"]
 [FEN "8/8/8/5p2/3k4/5P2/8/6K1 w - - 0 1"]
 [Question "Endgame 089: white to move"]
+[Theme "Defensive Pitch"] 
 
-Defensive Pitch: 1.f4 1... Ke4 2.Kg2 2... Kxf4 3.Kf2 3... Ke4 4.Ke2 4... f4 5.Kf2 5... f3 6.Kf1 6... Ke3 7.Ke1 7... f2+ 8.Kf1 8... Kf3 *
+1.f4 Ke4 2.Kg2 Kxf4 3.Kf2 Ke4 4.Ke2 f4 5.Kf2 f3 6.Kf1 Ke3 7.Ke1 f2+ 8.Kf1 Kf3 *
 
 [Event "Event 90"]
 [Site "Site"]
@@ -1075,8 +1164,9 @@ Defensive Pitch: 1.f4 1... Ke4 2.Kg2 2... Kxf4 3.Kf2 3... Ke4 4.Ke2 4... f4 5.Kf
 [Result "*"]
 [FEN "1K6/8/1k6/8/8/7p/7P/8 w - - 0 1"]
 [Question "Endgame 090: white to move"]
+[Theme "Critical Retreating Diagonal"] 
 
-Critical Retreating Diagonal: 1.Ka8 1... Kc6 2.Ka7 2... Kd5 3.Kb6 3... Ke4 4.Kc5 4... Kf3 5.Kd4 5... Kg2 6.Ke3 6... Kxh2 7.Kf2 7... Kh1 8.Kg3 8... h2 9.Kh3 *
+1.Ka8 Kc6 2.Ka7 Kd5 3.Kb6 Ke4 4.Kc5 Kf3 5.Kd4 Kg2 6.Ke3 Kxh2 7.Kf2 Kh1 8.Kg3 h2 9.Kh3 *
 
 [Event "Event 91"]
 [Site "Site"]
@@ -1087,8 +1177,9 @@ Critical Retreating Diagonal: 1.Ka8 1... Kc6 2.Ka7 2... Kd5 3.Kb6 3... Ke4 4.Kc5
 [Result "*"]
 [FEN "8/p7/P3K3/8/8/2k5/8/8 w - - 0 1"]
 [Question "Endgame 091: white to move"]
+[Theme "Shielding Off"] 
 
-Shielding Off: 1.Kd5 1... Kb4 2.Kc6 2... Ka5 3.Kb7 3... Kb5 4.Kxa7 4... Kc6 5.Kb8 5... Kb6 6.a7 *
+1.Kd5 Kb4 2.Kc6 Ka5 3.Kb7 Kb5 4.Kxa7 Kc6 5.Kb8 Kb6 6.a7 *
 
 [Event "Event 92"]
 [Site "Site"]
@@ -1099,8 +1190,9 @@ Shielding Off: 1.Kd5 1... Kb4 2.Kc6 2... Ka5 3.Kb7 3... Kb5 4.Kxa7 4... Kc6 5.Kb
 [Result "*"]
 [FEN "k7/p7/3K4/1P6/8/8/8/8 w - - 0 1"]
 [Question "Endgame 092: white to move"]
+[Theme "Squeeze"] 
 
-Squeeze: 1.Kc7 1... a5 2.b6 2... a4 3.b7+ 3... Ka7 4.b8=Q+ 4... Ka6 5.Qb6# *
+1.Kc7 a5 2.b6 a4 3.b7+ Ka7 4.b8=Q+ Ka6 5.Qb6# *
 
 [Event "Event 93"]
 [Site "Site"]
@@ -1111,8 +1203,9 @@ Squeeze: 1.Kc7 1... a5 2.b6 2... a4 3.b7+ 3... Ka7 4.b8=Q+ 4... Ka6 5.Qb6# *
 [Result "*"]
 [FEN "8/8/5p2/8/4P1k1/8/7K/8 w - - 0 1"]
 [Question "Endgame 093: white to move"]
+[Theme "Changing the Critical Squares"] 
 
-Changing the Critical Squares: 1.e5 1... fxe5 2.Kg2 2... Kf4 3.Kf2 3... e4 4.Ke2 4... e3 5.Ke1 5... Kf3 6.Kf1 6... e2+ 7.Ke1 7... Ke3 *
+1.e5 fxe5 2.Kg2 Kf4 3.Kf2 e4 4.Ke2 e3 5.Ke1 Kf3 6.Kf1 e2+ 7.Ke1 Ke3 *
 
 [Event "Event 94"]
 [Site "Site"]
@@ -1123,8 +1216,9 @@ Changing the Critical Squares: 1.e5 1... fxe5 2.Kg2 2... Kf4 3.Kf2 3... e4 4.Ke2
 [Result "*"]
 [FEN "8/8/2p5/1k6/3P4/8/8/K7 w - - 0 1"]
 [Question "Endgame 094: white to move"]
+[Theme "Distant Opposition"] 
 
-Distant Opposition: 1.d5 1... cxd5 2.Kb1 2... Kc5 3.Kc1 3... Kc4 4.Kc2 4... d4 5.Kd2 5... d3 6.Kd1 6... Kc3 7.Kc1 7... d2+ 8.Kd1 8... Kd3 *
+1.d5 cxd5 2.Kb1 Kc5 3.Kc1 Kc4 4.Kc2 d4 5.Kd2 d3 6.Kd1 Kc3 7.Kc1 d2+ 8.Kd1 Kd3 *
 
 [Event "Event 95"]
 [Site "Site"]
@@ -1135,8 +1229,9 @@ Distant Opposition: 1.d5 1... cxd5 2.Kb1 2... Kc5 3.Kc1 3... Kc4 4.Kc2 4... d4 5
 [Result "*"]
 [FEN "8/8/5k2/8/p7/8/1PK5/8 w - - 0 1"]
 [Question "Endgame 095: white to move"]
+[Theme "Underpass"] 
 
-Underpass: 1.Kb1 1... a3 2.b3 2... Ke5 3.Ka2 3... Kd5 4.Kxa3 4... Kc5 5.Ka4 5... Kb6 6.Kb4 6... Ka6 7.Kc5 7... Kb7 8.Kb5 8... Ka7 9.Kc6 9... Kb8 10.b4 10... Ka7 11.b5 11... Kb8 12.Kb6 12... Ka8 13.Kc7 13... Ka7 14.b6+ 14... Ka8 15.b7+ 15... Ka7 16.b8=Q+ 16... Ka6 17.Qb6# *
+1.Kb1 a3 2.b3 Ke5 3.Ka2 Kd5 4.Kxa3 Kc5 5.Ka4 Kb6 6.Kb4 Ka6 7.Kc5 Kb7 8.Kb5 Ka7 9.Kc6 Kb8 10.b4 Ka7 11.b5 Kb8 12.Kb6 Ka8 13.Kc7 Ka7 14.b6+ Ka8 15.b7+ Ka7 16.b8=Q+ Ka6 17.Qb6# *
 
 [Event "Event 96"]
 [Site "Site"]
@@ -1147,8 +1242,9 @@ Underpass: 1.Kb1 1... a3 2.b3 2... Ke5 3.Ka2 3... Kd5 4.Kxa3 4... Kc5 5.Ka4 5...
 [Result "*"]
 [FEN "8/3k4/1Pp5/8/1K6/8/8/8 w - - 0 1"]
 [Question "Endgame 096: white to move"]
+[Theme "Squeezing In"] 
 
-Squeezing In: 1.Kc5 1... Kd8 2.Kd6 2... Kc8 3.Kxc6 3... Kb8 4.b7 4... Ka7 5.Kc7 5... Ka6 6.b8=Q 6... Ka5 7.Qb3 7... Ka6 8.Qb6# *
+1.Kc5 Kd8 2.Kd6 Kc8 3.Kxc6 Kb8 4.b7 Ka7 5.Kc7 Ka6 6.b8=Q Ka5 7.Qb3 Ka6 8.Qb6# *
 
 [Event "Event 97"]
 [Site "Site"]
@@ -1159,8 +1255,9 @@ Squeezing In: 1.Kc5 1... Kd8 2.Kd6 2... Kc8 3.Kxc6 3... Kb8 4.b7 4... Ka7 5.Kc7 
 [Result "*"]
 [FEN "8/8/5p2/8/8/2k5/7P/3K4 w - - 0 1"]
 [Question "Endgame 097: white to move"]
+[Theme "Diagonal Block"] 
 
-Diagonal Block: 1.h4 1... Kd4 2.h5 2... Ke5 3.h6 3... Kf5 4.h7 4... Kg6 5.h8=Q *
+1.h4 Kd4 2.h5 Ke5 3.h6 Kf5 4.h7 Kg6 5.h8=Q *
 
 [Event "Event 98"]
 [Site "Site"]
@@ -1171,8 +1268,9 @@ Diagonal Block: 1.h4 1... Kd4 2.h5 2... Ke5 3.h6 3... Kf5 4.h7 4... Kg6 5.h8=Q *
 [Result "*"]
 [FEN "8/P7/8/8/8/3k4/5p1K/8 w - - 0 1"]
 [Question "Endgame 098: white to move"]
+[Theme "The Skewer"] 
 
-The Skewer: 1.a8=Q 1... f1=Q 2.Qa6+ 2... Kd2 3.Qxf1 *
+1.a8=Q f1=Q 2.Qa6+ Kd2 3.Qxf1 *
 
 [Event "Event 99"]
 [Site "Site"]
@@ -1183,8 +1281,9 @@ The Skewer: 1.a8=Q 1... f1=Q 2.Qa6+ 2... Kd2 3.Qxf1 *
 [Result "*"]
 [FEN "3K4/8/5p2/8/Pk6/8/8/8 w - - 0 1"]
 [Question "Endgame 099: white to move"]
+[Theme "The Feint"] 
 
-The Feint: 1.Kc7 1... f5 2.Kb6 2... f4 3.a5 3... f3 4.a6 4... f2 5.a7 5... f1=Q 6.a8=Q *
+1.Kc7 f5 2.Kb6 f4 3.a5 f3 4.a6 f2 5.a7 f1=Q 6.a8=Q *
 
 [Event "Event 100"]
 [Site "Site"]
@@ -1195,8 +1294,9 @@ The Feint: 1.Kc7 1... f5 2.Kb6 2... f4 3.a5 3... f3 4.a6 4... f2 5.a7 5... f1=Q 
 [Result "*"]
 [FEN "7K/8/k1P5/7p/8/8/8/8 w - - 0 1"]
 [Question "Endgame 100: white to move"]
+[Theme "Diagonal March"] 
 
-Diagonal March: 1.Kg7 1... h4 2.Kf6 2... h3 3.Ke6 3... h2 4.c7 4... h1=Q 5.c8=Q+ *
+1.Kg7 h4 2.Kf6 h3 3.Ke6 h2 4.c7 h1=Q 5.c8=Q+ *
 
 [Event "Event 101"]
 [Site "Site"]
@@ -1207,8 +1307,9 @@ Diagonal March: 1.Kg7 1... h4 2.Kf6 2... h3 3.Ke6 3... h2 4.c7 4... h1=Q 5.c8=Q+
 [Result "*"]
 [FEN "8/6k1/3pPp2/5K2/8/8/8/8 w - - 0 1"]
 [Question "Endgame 101: white to move"]
+[Theme "Clearance"] 
 
-Clearance: 1.e7 1... Kf7 2.e8=Q+ 2... Kxe8 3.Ke6 3... f5 4.Kxf5 4... Kd7 5.Ke4 5... Kc6 6.Kd4 *
+1.e7 Kf7 2.e8=Q+ Kxe8 3.Ke6 f5 4.Kxf5 Kd7 5.Ke4 Kc6 6.Kd4 *
 
 [Event "Event 102"]
 [Site "Site"]
@@ -1219,8 +1320,9 @@ Clearance: 1.e7 1... Kf7 2.e8=Q+ 2... Kxe8 3.Ke6 3... f5 4.Kxf5 4... Kd7 5.Ke4 5
 [Result "*"]
 [FEN "8/1p6/2p2P1k/K7/8/8/8/8 w - - 0 1"]
 [Question "Endgame 102: white to move"]
+[Theme "Diagonal March"] 
 
-Diagonal March: 1.Kb6 1... Kg6 2.Kxb7 2... c5 3.Kc6 3... c4 4.Kd5 4... c3 5.Ke6 5... c2 6.f7 6... c1=Q 7.f8=Q *
+1.Kb6 Kg6 2.Kxb7 c5 3.Kc6 c4 4.Kd5 c3 5.Ke6 c2 6.f7 c1=Q 7.f8=Q *
 
 [Event "Event 103"]
 [Site "Site"]
@@ -1231,8 +1333,9 @@ Diagonal March: 1.Kb6 1... Kg6 2.Kxb7 2... c5 3.Kc6 3... c4 4.Kd5 4... c3 5.Ke6 
 [Result "*"]
 [FEN "8/5k2/7p/4PK1P/8/8/8/8 w - - 0 1"]
 [Question "Endgame 103: white to move"]
+[Theme "Outside Passed Pawn"] 
 
-Outside Passed Pawn: 1.e6+ 1... Ke7 2.Ke5 2... Ke8 3.Kf6 3... Kf8 4.Kg6 4... Ke7 5.Kxh6 5... Kxe6 6.Kg7 6... Kf5 7.h6 7... Kg5 8.h7 8... Kf5 9.h8=Q *
+1.e6+ Ke7 2.Ke5 Ke8 3.Kf6 Kf8 4.Kg6 Ke7 5.Kxh6 Kxe6 6.Kg7 Kf5 7.h6 Kg5 8.h7 Kf5 9.h8=Q *
 
 [Event "Event 104"]
 [Site "Site"]
@@ -1243,8 +1346,9 @@ Outside Passed Pawn: 1.e6+ 1... Ke7 2.Ke5 2... Ke8 3.Kf6 3... Kf8 4.Kg6 4... Ke7
 [Result "*"]
 [FEN "5k2/5P1p/4K3/8/8/8/7P/8 w - - 0 1"]
 [Question "Endgame 104: white to move"]
+[Theme "Temporizing"] 
 
-Temporizing: 1.Kf6 1... h5 2.h3 2... h4 3.Kg6 3... Ke7 4.Kg7 4... Ke6 5.f8=Q *
+1.Kf6 h5 2.h3 h4 3.Kg6 Ke7 4.Kg7 Ke6 5.f8=Q *
 
 [Event "Event 105"]
 [Site "Site"]
@@ -1255,8 +1359,9 @@ Temporizing: 1.Kf6 1... h5 2.h3 2... h4 3.Kg6 3... Ke7 4.Kg7 4... Ke6 5.f8=Q *
 [Result "*"]
 [FEN "2k5/8/p1P5/P2K4/8/8/8/8 w - - 0 1"]
 [Question "Endgame 105: white to move"]
+[Theme "Triangulation"] 
 
-Triangulation: 1.Kd4 1... Kd8 2.Kc4 2... Kc8 3.Kd5 3... Kc7 4.Kc5 4... Kc8 5.Kb6 5... Kb8 6.Kxa6 6... Kc7 7.Kb5 7... Kc8 8.Kb6 8... Kb8 9.c7+ 9... Kc8 10.a6 10... Kd7 11.a7 11... Kc8 12.a8=Q+ 12... Kd7 13.Qe4 13... Kc8 14.Qe8# *
+1.Kd4 Kd8 2.Kc4 Kc8 3.Kd5 Kc7 4.Kc5 Kc8 5.Kb6 Kb8 6.Kxa6 Kc7 7.Kb5 Kc8 8.Kb6 Kb8 9.c7+ Kc8 10.a6 Kd7 11.a7 Kc8 12.a8=Q+ Kd7 13.Qe4 Kc8 14.Qe8# *
 
 [Event "Event 106"]
 [Site "Site"]
@@ -1267,8 +1372,9 @@ Triangulation: 1.Kd4 1... Kd8 2.Kc4 2... Kc8 3.Kd5 3... Kc7 4.Kc5 4... Kc8 5.Kb6
 [Result "*"]
 [FEN "8/8/8/4p1p1/8/5P2/6K1/3k4 w - - 0 1"]
 [Question "Endgame 106: white to move"]
+[Theme "Distant Opposition"] 
 
-Distant Opposition: 1.Kh1 1... Ke1 2.Kg1 2... Ke2 3.Kg2 3... Kd2 4.Kh2 4... Ke3 5.Kg3 5... Kd3 6.Kh3 6... g4+ 7.Kxg4 7... Ke3 8.Kf5 8... Kxf3 9.Kxe5 *
+1.Kh1 Ke1 2.Kg1 Ke2 3.Kg2 Kd2 4.Kh2 Ke3 5.Kg3 Kd3 6.Kh3 g4+ 7.Kxg4 Ke3 8.Kf5 Kxf3 9.Kxe5 *
 
 [Event "Event 107"]
 [Site "Site"]
@@ -1279,8 +1385,9 @@ Distant Opposition: 1.Kh1 1... Ke1 2.Kg1 2... Ke2 3.Kg2 3... Kd2 4.Kh2 4... Ke3 
 [Result "*"]
 [FEN "5k2/8/5Pp1/4K1P1/8/8/8/8 w - - 0 1"]
 [Question "Endgame 107: white to move"]
+[Theme "Pawn Pitch"] 
 
-Pawn Pitch: 1.f7 1... Kxf7 2.Kd6 2... Kf8 3.Ke6 3... Kg7 4.Ke7 4... Kg8 5.Kf6 5... Kh7 6.Kf7 6... Kh8 7.Kxg6 7... Kg8 8.Kh6 8... Kh8 9.g6 9... Kg8 10.g7 10... Kf7 11.Kh7 11... Kf6 12.g8=Q *
+1.f7 Kxf7 2.Kd6 Kf8 3.Ke6 Kg7 4.Ke7 Kg8 5.Kf6 Kh7 6.Kf7 Kh8 7.Kxg6 Kg8 8.Kh6 Kh8 9.g6 Kg8 10.g7 Kf7 11.Kh7 Kf6 12.g8=Q *
 
 [Event "Event 108"]
 [Site "Site"]
@@ -1291,8 +1398,9 @@ Pawn Pitch: 1.f7 1... Kxf7 2.Kd6 2... Kf8 3.Ke6 3... Kg7 4.Ke7 4... Kg8 5.Kf6 5.
 [Result "*"]
 [FEN "8/2k5/8/pP6/P2K4/8/8/8 w - - 0 1"]
 [Question "Endgame 108: white to move"]
+[Theme "Knight's Move Opposition"] 
 
-Knight's Move Opposition: 1.Kd5 1... Kb6 2.Kd6 2... Kb7 3.Kc5 3... Ka7 4.Kc6 4... Ka8 5.Kb6 5... Kb8 6.Kxa5 *
+1.Kd5 Kb6 2.Kd6 Kb7 3.Kc5 Ka7 4.Kc6 Ka8 5.Kb6 Kb8 6.Kxa5 *
 
 [Event "Event 109"]
 [Site "Site"]
@@ -1303,8 +1411,9 @@ Knight's Move Opposition: 1.Kd5 1... Kb6 2.Kd6 2... Kb7 3.Kc5 3... Ka7 4.Kc6 4..
 [Result "*"]
 [FEN "k7/1p1K4/1P6/2P5/8/8/8/8 w - - 0 1"]
 [Question "Endgame 109: white to move"]
+[Theme "Pawn Sac"] 
 
-Pawn Sac: 1.c6 1... bxc6 2.Kc7 2... c5 3.b7+ 3... Ka7 4.b8=Q+ 4... Ka6 5.Qb6# *
+1.c6 bxc6 2.Kc7 c5 3.b7+ Ka7 4.b8=Q+ Ka6 5.Qb6# *
 
 [Event "Event 110"]
 [Site "Site"]
@@ -1315,8 +1424,9 @@ Pawn Sac: 1.c6 1... bxc6 2.Kc7 2... c5 3.b7+ 3... Ka7 4.b8=Q+ 4... Ka6 5.Qb6# *
 [Result "*"]
 [FEN "8/3k2p1/6P1/3K1P2/8/8/8/8 w - - 0 1"]
 [Question "Endgame 110: white to move"]
+[Theme "Breakthroug"] 
 
-Breakthrough 1: 1.f6 1... gxf6 2.g7 2... Ke7 3.g8=Q *
+1.f6 gxf6 2.g7 Ke7 3.g8=Q *
 
 [Event "Event 111"]
 [Site "Site"]
@@ -1327,8 +1437,9 @@ Breakthrough 1: 1.f6 1... gxf6 2.g7 2... Ke7 3.g8=Q *
 [Result "*"]
 [FEN "8/4k1p1/6P1/4KP2/8/8/8/8 w - - 0 1"]
 [Question "Endgame 111: white to move"]
+[Theme "Outflanking-Opposition"] 
 
-Outflanking-Opposition: 1.Kd5 1... Kf6 2.Ke4 2... Ke7 3.Ke5 3... Ke8 4.Ke6 4... Kf8 5.Kd7 5... Kg8 6.Ke8 6... Kh8 7.f6 7... gxf6 8.Kf7 8... f5 9.g7+ 9... Kh7 10.g8=Q+ 10... Kh6 11.Qg6# *
+1.Kd5 Kf6 2.Ke4 Ke7 3.Ke5 Ke8 4.Ke6 Kf8 5.Kd7 Kg8 6.Ke8 Kh8 7.f6 gxf6 8.Kf7 f5 9.g7+ Kh7 10.g8=Q+ Kh6 11.Qg6# *
 
 [Event "Event 112"]
 [Site "Site"]
@@ -1339,8 +1450,9 @@ Outflanking-Opposition: 1.Kd5 1... Kf6 2.Ke4 2... Ke7 3.Ke5 3... Ke8 4.Ke6 4... 
 [Result "*"]
 [FEN "8/3k2p1/8/3K1PP1/8/8/8/8 w - - 0 1"]
 [Question "Endgame 112: white to move"]
+[Theme "Outflankin"] 
 
-Outflanking 1: 1.Ke5 1... Ke7 2.g6 2... Ke8 3.Ke6 3... Kf8 4.Kd7 4... Kg8 5.Ke8 5... Kh8 6.f6 6... gxf6 7.Kf7 7... f5 8.g7+ 8... Kh7 9.g8=Q+ 9... Kh6 10.Qg6# *
+1.Ke5 Ke7 2.g6 Ke8 3.Ke6 Kf8 4.Kd7 Kg8 5.Ke8 Kh8 6.f6 gxf6 7.Kf7 f5 8.g7+ Kh7 9.g8=Q+ Kh6 10.Qg6# *
 
 [Event "Event 113"]
 [Site "Site"]
@@ -1351,8 +1463,9 @@ Outflanking 1: 1.Ke5 1... Ke7 2.g6 2... Ke8 3.Ke6 3... Kf8 4.Kd7 4... Kg8 5.Ke8 
 [Result "*"]
 [FEN "8/8/8/3k2p1/6P1/4K3/7P/8 w - - 0 1"]
 [Question "Endgame 113: white to move"]
+[Theme "Corresponding Squares"] 
 
-Corresponding Squares: 1.Kf3 1... Ke5 2.Kg3 2... Kf6 3.Kg2 3... Ke6 4.Kf2 4... Kf6 5.Kg3 5... Kg6 6.Kf3 6... Kf6 7.Ke4 7... Ke6 8.h3 8... Kf6 9.Kd5 9... Kf7 10.Ke5 10... Kg6 11.Ke6 11... Kg7 12.Kf5 12... Kh6 13.Kf6 13... Kh7 14.Kxg5 *
+1.Kf3 Ke5 2.Kg3 Kf6 3.Kg2 Ke6 4.Kf2 Kf6 5.Kg3 Kg6 6.Kf3 Kf6 7.Ke4 Ke6 8.h3 Kf6 9.Kd5 Kf7 10.Ke5 Kg6 11.Ke6 Kg7 12.Kf5 Kh6 13.Kf6 Kh7 14.Kxg5 *
 
 [Event "Event 114"]
 [Site "Site"]
@@ -1363,8 +1476,9 @@ Corresponding Squares: 1.Kf3 1... Ke5 2.Kg3 2... Kf6 3.Kg2 3... Ke6 4.Kf2 4... K
 [Result "*"]
 [FEN "k7/8/5p2/4p3/4P3/8/8/K7 w - - 0 1"]
 [Question "Endgame 114: white to move"]
+[Theme "Long-Distant Opposition"] 
 
-Long-Distant Opposition: 1.Ka2 1... Ka7 2.Ka3 2... Ka6 3.Ka4 3... Kb6 4.Kb4 4... Kb7 5.Kb3 5... Kc6 6.Kc4 6... Kc7 7.Kc3 7... Kd7 8.Kd3 8... Ke7 9.Ke3 9... Kf7 10.Kf3 10... Kg7 11.Kg3 11... Kg6 12.Kg4 12... Kh6 13.Kh4 *
+1.Ka2 Ka7 2.Ka3 Ka6 3.Ka4 Kb6 4.Kb4 Kb7 5.Kb3 Kc6 6.Kc4 Kc7 7.Kc3 Kd7 8.Kd3 Ke7 9.Ke3 Kf7 10.Kf3 Kg7 11.Kg3 Kg6 12.Kg4 Kh6 13.Kh4 *
 
 [Event "Event 115"]
 [Site "Site"]
@@ -1375,8 +1489,9 @@ Long-Distant Opposition: 1.Ka2 1... Ka7 2.Ka3 2... Ka6 3.Ka4 3... Kb6 4.Kb4 4...
 [Result "*"]
 [FEN "8/5p2/8/6Pk/5P2/8/8/7K w - - 0 1"]
 [Question "Endgame 115: white to move"]
+[Theme "Jettison"] 
 
-Jettison: 1.g6 1... fxg6 2.f5 2... gxf5 3.Kg1 3... Kg5 4.Kf1 4... Kg4 5.Kg2 5... f4 6.Kf2 6... f3 7.Kf1 7... Kg3 8.Kg1 8... f2+ 9.Kf1 9... Kf3 *
+1.g6 fxg6 2.f5 gxf5 3.Kg1 Kg5 4.Kf1 Kg4 5.Kg2 f4 6.Kf2 f3 7.Kf1 Kg3 8.Kg1 f2+ 9.Kf1 Kf3 *
 
 [Event "Event 116"]
 [Site "Site"]
@@ -1387,8 +1502,9 @@ Jettison: 1.g6 1... fxg6 2.f5 2... gxf5 3.Kg1 3... Kg5 4.Kf1 4... Kg4 5.Kg2 5...
 [Result "*"]
 [FEN "8/7p/8/4k1PP/6K1/8/8/8 w - - 0 1"]
 [Question "Endgame 116: white to move"]
+[Theme "Breakthrough"] 
 
-Breakthrough: 1.h6 1... Ke6 2.g6 2... hxg6 3.h7 3... Kf7 4.h8=Q *
+1.h6 Ke6 2.g6 hxg6 3.h7 Kf7 4.h8=Q *
 
 [Event "Event 117"]
 [Site "Site"]
@@ -1399,8 +1515,9 @@ Breakthrough: 1.h6 1... Ke6 2.g6 2... hxg6 3.h7 3... Kf7 4.h8=Q *
 [Result "*"]
 [FEN "8/8/2p1k3/8/2PP4/4K3/8/8 w - - 0 1"]
 [Question "Endgame 117: white to move"]
+[Theme "Outflanking"] 
 
-Outflanking: 1.Ke4 1... Kd6 2.Kf5 2... Kd7 3.Ke5 3... Ke7 4.c5 4... Kd7 5.Kf6 5... Kd8 6.Ke6 6... Kc7 7.Ke7 7... Kc8 8.Kd6 8... Kb7 9.Kd7 9... Kb8 10.Kxc6 10... Kc8 11.Kb6 11... Kb8 12.c6 12... Kc8 13.c7 13... Kd7 14.Kb7 14... Kd6 15.c8=Q *
+1.Ke4 Kd6 2.Kf5 Kd7 3.Ke5 Ke7 4.c5 Kd7 5.Kf6 Kd8 6.Ke6 Kc7 7.Ke7 Kc8 8.Kd6 Kb7 9.Kd7 Kb8 10.Kxc6 Kc8 11.Kb6 Kb8 12.c6 Kc8 13.c7 Kd7 14.Kb7 Kd6 15.c8=Q *
 
 [Event "Event 118"]
 [Site "Site"]
@@ -1411,8 +1528,9 @@ Outflanking: 1.Ke4 1... Kd6 2.Kf5 2... Kd7 3.Ke5 3... Ke7 4.c5 4... Kd7 5.Kf6 5.
 [Result "*"]
 [FEN "6k1/7p/7K/6P1/8/8/7P/8 w - - 0 1"]
 [Question "Endgame 118: white to move"]
+[Theme "Reserve Tempo"] 
 
-Reserve Tempo: 1.h3 1... Kh8 2.h4 2... Kg8 3.h5 3... Kh8 4.g6 4... hxg6 5.hxg6 5... Kg8 6.g7 6... Kf7 7.Kh7 7... Kf6 8.g8=Q *
+1.h3 Kh8 2.h4 Kg8 3.h5 Kh8 4.g6 hxg6 5.hxg6 Kg8 6.g7 Kf7 7.Kh7 Kf6 8.g8=Q *
 
 [Event "Event 119"]
 [Site "Site"]
@@ -1423,8 +1541,9 @@ Reserve Tempo: 1.h3 1... Kh8 2.h4 2... Kg8 3.h5 3... Kh8 4.g6 4... hxg6 5.hxg6 5
 [Result "*"]
 [FEN "8/8/1K6/p1p5/P1P5/1k6/8/8 w - - 0 1"]
 [Question "Endgame 119: white to move"]
+[Theme "Direct Opposition"] 
 
-Direct Opposition: 1.Kb5 1... Ka3 2.Kxa5 2... Kb3 3.Kb5 3... Kc3 4.a5 *
+1.Kb5 Ka3 2.Kxa5 Kb3 3.Kb5 Kc3 4.a5 *
 
 [Event "Event 120"]
 [Site "Site"]
@@ -1435,8 +1554,9 @@ Direct Opposition: 1.Kb5 1... Ka3 2.Kxa5 2... Kb3 3.Kb5 3... Kc3 4.a5 *
 [Result "*"]
 [FEN "8/7k/4K1p1/5p1p/5P1P/6P1/8/8 w - - 0 1"]
 [Question "Endgame 120: white to move"]
+[Theme "Horizontal Opposition"] 
 
-Horizontal Opposition: 1.Kf7 1... Kh6 2.Kg8 2... g5 3.hxg5+ 3... Kg6 4.Kh8 4... Kf7 5.Kh7 5... Kf8 6.g6 6... Ke7 7.g7 7... Kf7 8.g8=Q+ *
+1.Kf7 Kh6 2.Kg8 g5 3.hxg5+ Kg6 4.Kh8 Kf7 5.Kh7 Kf8 6.g6 Ke7 7.g7 Kf7 8.g8=Q+ *
 
 [Event "Event 121"]
 [Site "Site"]
@@ -1447,8 +1567,9 @@ Horizontal Opposition: 1.Kf7 1... Kh6 2.Kg8 2... g5 3.hxg5+ 3... Kg6 4.Kh8 4... 
 [Result "*"]
 [FEN "6K1/8/6kp/4p2p/4P2P/8/8/8 w - - 0 1"]
 [Question "Endgame 121: white to move"]
+[Theme "Rear Outflanking"] 
 
-Rear Outflanking: 1.Kh8 1... Kf6 2.Kh7 2... Kf7 3.Kxh6 3... Kf6 4.Kxh5 4... Kf7 5.Kg5 5... Kg7 6.Kf5 6... Kh6 7.Kxe5 7... Kh5 8.Kf6 8... Kxh4 9.e5 *
+1.Kh8 Kf6 2.Kh7 Kf7 3.Kxh6 Kf6 4.Kxh5 Kf7 5.Kg5 Kg7 6.Kf5 Kh6 7.Kxe5 Kh5 8.Kf6 Kxh4 9.e5 *
 
 [Event "Event 122"]
 [Site "Site"]
@@ -1459,8 +1580,9 @@ Rear Outflanking: 1.Kh8 1... Kf6 2.Kh7 2... Kf7 3.Kxh6 3... Kf6 4.Kxh5 4... Kf7 
 [Result "*"]
 [FEN "4k3/8/2p1P3/2p2K2/1pP5/1P6/8/8 w - - 0 1"]
 [Question "Endgame 122: white to move"]
+[Theme "Triangulation"] 
 
-Triangulation: 1.Ke4 1... Kd8 2.Kf4 2... Ke8 3.Kf5 3... Ke7 4.Ke5 4... Ke8 5.Kd6 5... Kd8 6.Kxc6 6... Ke7 7.Kd5 7... Ke8 8.Kxc5 *
+1.Ke4 Kd8 2.Kf4 Ke8 3.Kf5 Ke7 4.Ke5 Ke8 5.Kd6 Kd8 6.Kxc6 Ke7 7.Kd5 Ke8 8.Kxc5 *
 
 [Event "Event 123"]
 [Site "Site"]
@@ -1471,8 +1593,9 @@ Triangulation: 1.Ke4 1... Kd8 2.Kf4 2... Ke8 3.Kf5 3... Ke7 4.Ke5 4... Ke8 5.Kd6
 [Result "*"]
 [FEN "8/8/6p1/p4p1p/5P1P/kP4P1/2K5/8 w - - 0 1"]
 [Question "Endgame 123: white to move"]
+[Theme "Oppositional Fight"] 
 
-Oppositional Fight: 1.Kc3 1... Ka2 2.b4 2... axb4+ 3.Kxb4 3... Kb2 4.Kc5 4... Kc2 5.Kd5 5... Kd2 6.Ke6 6... Ke3 7.Kf6 7... Kf3 8.Kxg6 8... Kxg3 9.Kg5 *
+1.Kc3 Ka2 2.b4 axb4+ 3.Kxb4 Kb2 4.Kc5 Kc2 5.Kd5 Kd2 6.Ke6 Ke3 7.Kf6 Kf3 8.Kxg6 Kxg3 9.Kg5 *
 
 [Event "Event 124"]
 [Site "Site"]
@@ -1483,8 +1606,9 @@ Oppositional Fight: 1.Kc3 1... Ka2 2.b4 2... axb4+ 3.Kxb4 3... Kb2 4.Kc5 4... Kc
 [Result "*"]
 [FEN "8/4k1pp/8/4KPPP/8/8/8/8 w - - 0 1"]
 [Question "Endgame 124: white to move"]
+[Theme "Oppositional Field"] 
 
-Oppositional Field: 1.g6 1... h6 2.Kd5 2... Kf6 3.Ke4 3... Kg5 4.Ke5 4... Kxh5 5.Ke6 5... Kg5 6.f6 6... Kxg6 7.f7 7... h5 8.f8=Q *
+1.g6 h6 2.Kd5 Kf6 3.Ke4 Kg5 4.Ke5 Kxh5 5.Ke6 Kg5 6.f6 Kxg6 7.f7 h5 8.f8=Q *
 
 [Event "Event 125"]
 [Site "Site"]
@@ -1495,8 +1619,9 @@ Oppositional Field: 1.g6 1... h6 2.Kd5 2... Kf6 3.Ke4 3... Kg5 4.Ke5 4... Kxh5 5
 [Result "*"]
 [FEN "8/5p2/4p3/8/3P4/5k2/P7/5K2 w - - 0 1"]
 [Question "Endgame 125: white to move"]
+[Theme "Blocking the Critical Diagona"] 
 
-Blocking the Critical Diagona: 1.d5 1... exd5 2.a4 2... d4 3.a5 3... d3 4.Ke1 *
+1.d5 exd5 2.a4 d4 3.a5 d3 4.Ke1 *
 
 [Event "Event 126"]
 [Site "Site"]
@@ -1507,8 +1632,9 @@ Blocking the Critical Diagona: 1.d5 1... exd5 2.a4 2... d4 3.a5 3... d3 4.Ke1 *
 [Result "*"]
 [FEN "7k/ppp5/8/PPP5/8/8/8/7K w - - 0 1"]
 [Question "Endgame 126: white to move"]
+[Theme "Breakthrough Combinatio"] 
 
-Breakthrough Combination 1: 1.b6 1... axb6 2.c6 2... bxc6 3.a6 3... b5 4.a7 4... b4 5.a8=Q+ *
+1.b6 axb6 2.c6 bxc6 3.a6 b5 4.a7 b4 5.a8=Q+ *
 
 [Event "Event 127"]
 [Site "Site"]
@@ -1519,8 +1645,9 @@ Breakthrough Combination 1: 1.b6 1... axb6 2.c6 2... bxc6 3.a6 3... b5 4.a7 4...
 [Result "*"]
 [FEN "8/5pp1/4p2p/4P2P/5PP1/k7/8/K7 w - - 0 1"]
 [Question "Endgame 127: white to move"]
+[Theme "Breakthrough Combination 2"] 
 
-Breakthrough Combination 2: 1.f5 1... Kb4 2.g5 2... hxg5 3.f6 3... gxf6 4.h6 4... g4 5.h7 5... g3 6.h8=Q 6... g2 7.Qg7 *
+1.f5 Kb4 2.g5 hxg5 3.f6 gxf6 4.h6 g4 5.h7 g3 6.h8=Q g2 7.Qg7 *
 
 [Event "Event 128"]
 [Site "Site"]
@@ -1531,8 +1658,9 @@ Breakthrough Combination 2: 1.f5 1... Kb4 2.g5 2... hxg5 3.f6 3... gxf6 4.h6 4..
 [Result "*"]
 [FEN "8/2p5/P1k5/2P5/5ppp/8/6K1/8 w - - 0 1"]
 [Question "Endgame 128: white to move"]
+[Theme "Tempo"] 
 
-Tempo: 1.Kg1 1... f3 2.Kf2 2... h3 3.Kg3 3... f2 4.Kxf2 4... h2 5.Kg2 5... g3 6.Kh1 6... Kxc5 7.a7 7... Kb6 8.a8=Q *
+1.Kg1 f3 2.Kf2 h3 3.Kg3 f2 4.Kxf2 h2 5.Kg2 g3 6.Kh1 Kxc5 7.a7 Kb6 8.a8=Q *
 
 [Event "Event 129"]
 [Site "Site"]
@@ -1543,8 +1671,9 @@ Tempo: 1.Kg1 1... f3 2.Kf2 2... h3 3.Kg3 3... f2 4.Kxf2 4... h2 5.Kg2 5... g3 6.
 [Result "*"]
 [FEN "6K1/8/3Q4/8/8/8/5kp1/8 w - - 0 1"]
 [Question "Endgame 129: white to move"]
+[Theme "Blocking the Queening Square"] 
 
-Blocking the Queening Square: 1.Qf4+ 1... Ke2 2.Qg3 2... Kf1 3.Qf3+ 3... Kg1 4.Kg7 4... Kh2 5.Qf2 5... Kh1 6.Qh4+ 6... Kg1 7.Kg6 7... Kf1 8.Qf4+ 8... Ke2 9.Qg3 9... Kf1 10.Qf3+ 10... Kg1 11.Kg5 11... Kh2 12.Qf2 12... Kh1 13.Qh4+ 13... Kg1 14.Kg4 14... Kf1 15.Qh3 15... Kf2 16.Qf3+ 16... Kg1 17.Kg3 17... Kh1 18.Qxg2# *
+1.Qf4+ Ke2 2.Qg3 Kf1 3.Qf3+ Kg1 4.Kg7 Kh2 5.Qf2 Kh1 6.Qh4+ Kg1 7.Kg6 Kf1 8.Qf4+ Ke2 9.Qg3 Kf1 10.Qf3+ Kg1 11.Kg5 Kh2 12.Qf2 Kh1 13.Qh4+ Kg1 14.Kg4 Kf1 15.Qh3 Kf2 16.Qf3+ Kg1 17.Kg3 Kh1 18.Qxg2# *
 
 [Event "Event 130"]
 [Site "Site"]
@@ -1555,8 +1684,9 @@ Blocking the Queening Square: 1.Qf4+ 1... Ke2 2.Qg3 2... Kf1 3.Qf3+ 3... Kg1 4.K
 [Result "*"]
 [FEN "8/5K1P/8/8/3q4/8/8/2k5 w - - 0 1"]
 [Question "Endgame 130: white to move"]
+[Theme "Stalemat"] 
 
-Stalemate 1: 1.Kg8 1... Qd8+ 2.Kg7 2... Qg5+ 3.Kf8 3... Qh6+ 4.Kg8 4... Qg6+ 5.Kh8 *
+1.Kg8 Qd8+ 2.Kg7 Qg5+ 3.Kf8 Qh6+ 4.Kg8 Qg6+ 5.Kh8 *
 
 [Event "Event 131"]
 [Site "Site"]
@@ -1567,8 +1697,9 @@ Stalemate 1: 1.Kg8 1... Qd8+ 2.Kg7 2... Qg5+ 3.Kf8 3... Qh6+ 4.Kg8 4... Qg6+ 5.K
 [Result "*"]
 [FEN "8/5P2/3K4/8/8/1k6/8/q7 w - - 0 1"]
 [Question "Endgame 131: white to move"]
+[Theme "Stalemate 2"] 
 
-Stalemate 2: 1.Ke7 1... Qe5+ 2.Kd8 2... Qf6+ 3.Ke8 3... Qe6+ 4.Kf8 4... Kc4 5.Kg7 5... Qe7 6.Kg8 6... Qg5+ 7.Kh7 7... Qf6 8.Kg8 8... Qg6+ 9.Kh8 9... Qxf7 *
+1.Ke7 Qe5+ 2.Kd8 Qf6+ 3.Ke8 Qe6+ 4.Kf8 Kc4 5.Kg7 Qe7 6.Kg8 Qg5+ 7.Kh7 Qf6 8.Kg8 Qg6+ 9.Kh8 Qxf7 *
 
 [Event "Event 132"]
 [Site "Site"]
@@ -1579,8 +1710,9 @@ Stalemate 2: 1.Ke7 1... Qe5+ 2.Kd8 2... Qf6+ 3.Ke8 3... Qe6+ 4.Kf8 4... Kc4 5.Kg
 [Result "*"]
 [FEN "8/8/8/8/8/6Q1/2K2p2/5k2 w - - 0 1"]
 [Question "Endgame 132: white to move"]
+[Theme "Mate in Two"] 
 
-Mate in Two: 1.Qg4 1... Ke1 2.Qd1# *
+1.Qg4 Ke1 2.Qd1# *
 
 [Event "Event 133"]
 [Site "Site"]
@@ -1591,8 +1723,9 @@ Mate in Two: 1.Qg4 1... Ke1 2.Qd1# *
 [Result "*"]
 [FEN "6Q1/6K1/8/8/8/8/7p/7k w - - 0 1"]
 [Question "Endgame 133: white to move"]
+[Theme "Gaining Time"] 
 
-Gaining Time: 1.Kg6 1... Kg2 2.Kf5+ 2... Kf2 3.Qd5 3... Kg1 4.Qd1+ 4... Kg2 5.Qe2+ 5... Kg1 6.Kg4 6... h1=Q 7.Kg3 7... Qd5 8.Qe1# *
+1.Kg6 Kg2 2.Kf5+ Kf2 3.Qd5 Kg1 4.Qd1+ Kg2 5.Qe2+ Kg1 6.Kg4 h1=Q 7.Kg3 Qd5 8.Qe1# *
 
 [Event "Event 134"]
 [Site "Site"]
@@ -1603,8 +1736,9 @@ Gaining Time: 1.Kg6 1... Kg2 2.Kf5+ 2... Kf2 3.Qd5 3... Kg1 4.Qd1+ 4... Kg2 5.Qe
 [Result "*"]
 [FEN "5KQ1/8/8/8/6p1/8/p7/k7 w - - 0 1"]
 [Question "Endgame 134: white to move"]
+[Theme "No Stalemate"] 
 
-No Stalemate: 1.Qb3 1... g3 2.Qc2 2... g2 3.Qc1# *
+1.Qb3 g3 2.Qc2 g2 3.Qc1# *
 
 [Event "Event 135"]
 [Site "Site"]
@@ -1615,8 +1749,9 @@ No Stalemate: 1.Qb3 1... g3 2.Qc2 2... g2 3.Qc1# *
 [Result "*"]
 [FEN "K7/1R6/6k1/7p/8/8/8/8 w - - 0 1"]
 [Question "Endgame 135: white to move"]
+[Theme "Cut-Off Along Rank"] 
 
-Cut-Off Along Rank: 1.Rb5 1... Kh6 2.Kb7 2... Kg6 3.Kc6 3... Kh6 4.Kd6 4... Kg6 5.Ke6 5... Kh6 6.Kf7 6... h4 7.Kf6 7... h3 8.Rb3 8... Kh7 9.Rxh3+ 9... Kg8 10.Rh6 10... Kf8 11.Rh8# *
+1.Rb5 Kh6 2.Kb7 Kg6 3.Kc6 Kh6 4.Kd6 Kg6 5.Ke6 Kh6 6.Kf7 h4 7.Kf6 h3 8.Rb3 Kh7 9.Rxh3+ Kg8 10.Rh6 Kf8 11.Rh8# *
 
 [Event "Event 136"]
 [Site "Site"]
@@ -1627,8 +1762,9 @@ Cut-Off Along Rank: 1.Rb5 1... Kh6 2.Kb7 2... Kg6 3.Kc6 3... Kh6 4.Kd6 4... Kg6 
 [Result "*"]
 [FEN "6R1/8/5K2/2k5/1p6/8/8/8 w - - 0 1"]
 [Question "Endgame 136: white to move"]
+[Theme "Getting Back"] 
 
-Getting Back: 1.Ke5 1... Kc4 2.Ke4 2... Kc3 3.Ke3 3... b3 4.Rc8+ 4... Kb2 5.Kd2 5... Ka2 6.Rb8 6... Kb2 7.Rb7 7... Ka2 8.Kc3 8... Kb1 9.Kxb3 9... Kc1 10.Rd7 10... Kb1 11.Rd1# *
+1.Ke5 Kc4 2.Ke4 Kc3 3.Ke3 b3 4.Rc8+ Kb2 5.Kd2 Ka2 6.Rb8 Kb2 7.Rb7 Ka2 8.Kc3 Kb1 9.Kxb3 Kc1 10.Rd7 Kb1 11.Rd1# *
 
 [Event "Event 137"]
 [Site "Site"]
@@ -1639,8 +1775,9 @@ Getting Back: 1.Ke5 1... Kc4 2.Ke4 2... Kc3 3.Ke3 3... b3 4.Rc8+ 4... Kb2 5.Kd2 
 [Result "*"]
 [FEN "1R6/8/8/8/8/2K5/p7/k7 w - - 0 1"]
 [Question "Endgame 137: white to move"]
+[Theme "Reposition"] 
 
-Reposition: 1.Kb3 1... Kb1 2.Ka3+ 2... Ka1 3.Rh8 3... Kb1 4.Rh1+ 4... Kc2 5.Kxa2 *
+1.Kb3 Kb1 2.Ka3+ Ka1 3.Rh8 Kb1 4.Rh1+ Kc2 5.Kxa2 *
 
 [Event "Event 138"]
 [Site "Site"]
@@ -1651,8 +1788,9 @@ Reposition: 1.Kb3 1... Kb1 2.Ka3+ 2... Ka1 3.Rh8 3... Kb1 4.Rh1+ 4... Kc2 5.Kxa2
 [Result "*"]
 [FEN "8/1K6/8/1k6/1p6/8/1R6/8 w - - 0 1"]
 [Question "Endgame 138: white to move"]
+[Theme "Tempo Finesse-Opposition"] 
 
-Tempo Finesse-Opposition: 1.Rb1 1... Kc4 2.Ka6 2... b3 3.Ka5 3... Kc3 4.Ka4 4... b2 5.Ka3 5... Kc2 6.Rxb2+ *
+1.Rb1 Kc4 2.Ka6 b3 3.Ka5 Kc3 4.Ka4 b2 5.Ka3 Kc2 6.Rxb2+ *
 
 [Event "Event 139"]
 [Site "Site"]
@@ -1663,8 +1801,9 @@ Tempo Finesse-Opposition: 1.Rb1 1... Kc4 2.Ka6 2... b3 3.Ka5 3... Kc3 4.Ka4 4...
 [Result "*"]
 [FEN "8/8/5KP1/7r/8/8/8/1k6 w - - 0 1"]
 [Question "Endgame 139: white to move"]
+[Theme "Badly Placed Rook"] 
 
-Badly Placed Rook: 1.g7 1... Rh6+ 2.Kf5 2... Rh5+ 3.Kf4 3... Rh4+ 4.Kf3 4... Rh3+ 5.Kg2 *
+1.g7 Rh6+ 2.Kf5 Rh5+ 3.Kf4 Rh4+ 4.Kf3 Rh3+ 5.Kg2 *
 
 [Event "Event 140"]
 [Site "Site"]
@@ -1675,8 +1814,9 @@ Badly Placed Rook: 1.g7 1... Rh6+ 2.Kf5 2... Rh5+ 3.Kf4 3... Rh4+ 4.Kf3 4... Rh3
 [Result "*"]
 [FEN "8/8/1KP5/3r4/8/8/8/k7 w - - 0 1"]
 [Question "Endgame 140: white to move"]
+[Theme "Underpromotion"] 
 
-Underpromotion: 1.c7 1... Rd6+ 2.Kb5 2... Rd5+ 3.Kb4 3... Rd4+ 4.Kb3 4... Rd3+ 5.Kc2 5... Rd4 6.c8=R 6... Ra4 7.Kb3 *
+1.c7 Rd6+ 2.Kb5 Rd5+ 3.Kb4 Rd4+ 4.Kb3 Rd3+ 5.Kc2 Rd4 6.c8=R Ra4 7.Kb3 *
 
 [Event "Event 141"]
 [Site "Site"]
@@ -1687,8 +1827,9 @@ Underpromotion: 1.c7 1... Rd6+ 2.Kb5 2... Rd5+ 3.Kb4 3... Rd4+ 4.Kb3 4... Rd3+ 5
 [Result "*"]
 [FEN "8/1r6/3P4/4P3/8/1k6/8/7K w - - 0 1"]
 [Question "Endgame 141: white to move"]
+[Theme "Connected Pawns on 6th Rank"] 
 
-Connected Pawns on 6th Rank: 1.e6 1... Kc4 2.d7 2... Rb8 3.e7 3... Kd5 4.d8=Q+ 4... Rxd8 5.exd8=Q+ *
+1.e6 Kc4 2.d7 Rb8 3.e7 Kd5 4.d8=Q+ Rxd8 5.exd8=Q+ *
 
 [Event "Event 142"]
 [Site "Site"]
@@ -1699,8 +1840,9 @@ Connected Pawns on 6th Rank: 1.e6 1... Kc4 2.d7 2... Rb8 3.e7 3... Kd5 4.d8=Q+ 4
 [Result "*"]
 [FEN "K6k/1R6/8/8/4p3/3p4/8/8 w - - 0 1"]
 [Question "Endgame 142: white to move"]
+[Theme "Rear Attack on Advanced Pawn"] 
 
-Rear Attack on Advanced Pawn: 1.Rd7 1... Kg8 2.Kb7 2... Kf8 3.Kc6 3... Ke8 4.Rd4 4... Kf7 5.Kd5 5... e3 6.Rxd3 6... e2 7.Re3 7... e1=Q 8.Rxe1 *
+1.Rd7 Kg8 2.Kb7 Kf8 3.Kc6 Ke8 4.Rd4 Kf7 5.Kd5 e3 6.Rxd3 e2 7.Re3 e1=Q 8.Rxe1 *
 
 [Event "Event 143"]
 [Site "Site"]
@@ -1711,8 +1853,9 @@ Rear Attack on Advanced Pawn: 1.Rd7 1... Kg8 2.Kb7 2... Kf8 3.Kc6 3... Ke8 4.Rd4
 [Result "*"]
 [FEN "8/1k3K2/8/8/5p2/4p3/6R1/8 w - - 0 1"]
 [Question "Endgame 143: white to move"]
+[Theme "Frontal Attack"] 
 
-Frontal Attack: 1.Re2 1... Kc6 2.Kf6 2... Kd5 3.Kf5 3... f3 4.Rxe3 4... f2 5.Rf3 5... f1=Q 6.Rxf1 *
+1.Re2 Kc6 2.Kf6 Kd5 3.Kf5 f3 4.Rxe3 f2 5.Rf3 f1=Q 6.Rxf1 *
 
 [Event "Event 144"]
 [Site "Site"]
@@ -1723,8 +1866,9 @@ Frontal Attack: 1.Re2 1... Kc6 2.Kf6 2... Kd5 3.Kf5 3... f3 4.Rxe3 4... f2 5.Rf3
 [Result "*"]
 [FEN "5k2/8/5K2/8/8/6R1/6pp/8 w - - 0 1"]
 [Question "Endgame 144: white to move"]
+[Theme "Perpetual Attack"] 
 
-Perpetual Attack: 1.Ra3 1... Kg8 2.Rg3+ 2... Kh7 3.Rh3+ 3... Kg8 4.Rg3+ 4... Kf8 5.Ra3 5... Ke8 6.Ke6 6... Kd8 7.Kd6 7... Kc8 8.Kc6 8... Kb8 9.Rb3+ 9... Ka7 10.Ra3+ 10... Kb8 11.Rb3+ 11... Kc8 12.Ra3 12... Kd8 13.Kd6 13... Ke8 14.Ke6 14... Kf8 15.Kf6 *
+1.Ra3 Kg8 2.Rg3+ Kh7 3.Rh3+ Kg8 4.Rg3+ Kf8 5.Ra3 Ke8 6.Ke6 Kd8 7.Kd6 Kc8 8.Kc6 Kb8 9.Rb3+ Ka7 10.Ra3+ Kb8 11.Rb3+ Kc8 12.Ra3 Kd8 13.Kd6 Ke8 14.Ke6 Kf8 15.Kf6 *
 
 [Event "Event 145"]
 [Site "Site"]
@@ -1735,8 +1879,9 @@ Perpetual Attack: 1.Ra3 1... Kg8 2.Rg3+ 2... Kh7 3.Rh3+ 3... Kg8 4.Rg3+ 4... Kf8
 [Result "*"]
 [FEN "k7/p7/2K5/3B4/8/8/8/8 w - - 0 1"]
 [Question "Endgame 145: white to move"]
+[Theme "Discovered Mate"] 
 
-Discovered Mate: 1.Kc7# *
+1.Kc7# *
 
 [Event "Event 146"]
 [Site "Site"]
@@ -1747,8 +1892,9 @@ Discovered Mate: 1.Kc7# *
 [Result "*"]
 [FEN "8/8/5k1b/P2K4/6P1/8/8/8 w - - 0 1"]
 [Question "Endgame 146: white to move"]
+[Theme "Creating a Block"] 
 
-Creating a Block: 1.g5+ 1... Bxg5 2.Ke4 2... Bh6 3.a6 3... Bf8 4.a7 4... Bd6 5.a8=Q *
+1.g5+ Bxg5 2.Ke4 Bh6 3.a6 Bf8 4.a7 Bd6 5.a8=Q *
 
 [Event "Event 147"]
 [Site "Site"]
@@ -1759,8 +1905,9 @@ Creating a Block: 1.g5+ 1... Bxg5 2.Ke4 2... Bh6 3.a6 3... Bf8 4.a7 4... Bd6 5.a
 [Result "*"]
 [FEN "8/K7/8/8/8/1k6/1N1p4/8 w - - 0 1"]
 [Question "Endgame 147: white to move"]
+[Theme "Pawn's Way"] 
 
-Pawn's Way: 1.Nd1 1... Kc2 2.Nf2 2... Kc3 3.Kb6 3... Kd4 4.Kb5 4... Ke3 5.Nd1+ 5... Kd3 6.Kb4 6... Kc2 7.Nf2 7... Kb1 8.Kb3 8... Kc1 9.Kc3 9... d1=Q 10.Nxd1 10... Kxd1 *
+1.Nd1 Kc2 2.Nf2 Kc3 3.Kb6 Kd4 4.Kb5 Ke3 5.Nd1+ Kd3 6.Kb4 Kc2 7.Nf2 Kb1 8.Kb3 Kc1 9.Kc3 d1=Q 10.Nxd1 Kxd1 *
 
 [Event "Event 148"]
 [Site "Site"]
@@ -1771,8 +1918,9 @@ Pawn's Way: 1.Nd1 1... Kc2 2.Nf2 2... Kc3 3.Kb6 3... Kd4 4.Kb5 4... Ke3 5.Nd1+ 5
 [Result "*"]
 [FEN "8/8/4N3/8/8/6K1/5p2/6k1 w - - 0 1"]
 [Question "Endgame 148: white to move"]
+[Theme "Perpetual Check"] 
 
-Perpetual Check: 1.Ng5 1... f1=Q 2.Nh3+ 2... Kh1 3.Nf2+ 3... Kg1 4.Nh3+ 4... Kh1 5.Nf2+ 5... Kg1 6.Nh3+ *
+1.Ng5 f1=Q 2.Nh3+ Kh1 3.Nf2+ Kg1 4.Nh3+ Kh1 5.Nf2+ Kg1 6.Nh3+ *
 
 [Event "Event 149"]
 [Site "Site"]
@@ -1783,8 +1931,9 @@ Perpetual Check: 1.Ng5 1... f1=Q 2.Nh3+ 2... Kh1 3.Nf2+ 3... Kg1 4.Nh3+ 4... Kh1
 [Result "*"]
 [FEN "8/8/8/8/4N3/1k6/1p5K/8 w - - 0 1"]
 [Question "Endgame 149: white to move"]
+[Theme "Knight Fork"] 
 
-Knight Fork: 1.Nd2+ 1... Kc2 2.Nc4 2... b1=Q 3.Na3+ 3... Kc1 4.Nxb1 4... Kxb1 *
+1.Nd2+ Kc2 2.Nc4 b1=Q 3.Na3+ Kc1 4.Nxb1 Kxb1 *
 
 [Event "Event 150"]
 [Site "Site"]
@@ -1795,8 +1944,9 @@ Knight Fork: 1.Nd2+ 1... Kc2 2.Nc4 2... b1=Q 3.Na3+ 3... Kc1 4.Nxb1 4... Kxb1 *
 [Result "*"]
 [FEN "1K6/8/1P3n2/8/7k/8/8/8 w - - 0 1"]
 [Question "Endgame 150: white to move"]
+[Theme "The Board's Edge"] 
 
-The Board's Edge: 1.b7 1... Nd7+ 2.Kc8 2... Nb6+ 3.Kd8 *
+1.b7 Nd7+ 2.Kc8 Nb6+ 3.Kd8 *
 
 [Event "Event 151"]
 [Site "Site"]
@@ -1807,8 +1957,9 @@ The Board's Edge: 1.b7 1... Nd7+ 2.Kc8 2... Nb6+ 3.Kd8 *
 [Result "*"]
 [FEN "8/7K/8/8/4k3/N7/p7/8 w - - 0 1"]
 [Question "Endgame 151: white to move"]
+[Theme "Setting the Barrier"] 
 
-Setting the Barrier: 1.Nc2 1... Kf3 2.Kg6 2... Ke2 3.Kf5 3... Kd2 4.Na1 4... Kc1 5.Ke4 5... Kb2 6.Kd3 6... Kxa1 7.Kc2 *
+1.Nc2 Kf3 2.Kg6 Ke2 3.Kf5 Kd2 4.Na1 Kc1 5.Ke4 Kb2 6.Kd3 Kxa1 7.Kc2 *
 
 [Event "Event 152"]
 [Site "Site"]
@@ -1819,8 +1970,9 @@ Setting the Barrier: 1.Nc2 1... Kf3 2.Kg6 2... Ke2 3.Kf5 3... Kd2 4.Na1 4... Kc1
 [Result "*"]
 [FEN "8/7K/8/8/3N4/4k3/p7/8 w - - 0 1"]
 [Question "Endgame 152: white to move"]
+[Theme "Setting the Barrier 2"] 
 
-Setting the Barrier 2: 1.Nb3 1... Ke4 2.Kg6 2... Kd5 3.Kf5 3... Kc4 4.Na1 4... Kc3 5.Ke4 5... Kb2 6.Kd3 6... Kxa1 7.Kc2 *
+1.Nb3 Ke4 2.Kg6 Kd5 3.Kf5 Kc4 4.Na1 Kc3 5.Ke4 Kb2 6.Kd3 Kxa1 7.Kc2 *
 
 [Event "Event 153"]
 [Site "Site"]
@@ -1831,8 +1983,9 @@ Setting the Barrier 2: 1.Nb3 1... Ke4 2.Kg6 2... Kd5 3.Kf5 3... Kc4 4.Na1 4... K
 [Result "*"]
 [FEN "8/8/K7/8/6N1/6kp/8/8 w - - 0 1"]
 [Question "Endgame 153: white to move"]
+[Theme "The Circuit"] 
 
-The Circuit: 1.Ne3 1... Kf3 2.Nf1 2... Kf2 3.Nh2 3... Kg2 4.Ng4 4... Kg3 *
+1.Ne3 Kf3 2.Nf1 Kf2 3.Nh2 Kg2 4.Ng4 Kg3 *
 
 [Event "Event 154"]
 [Site "Site"]
@@ -1843,8 +1996,9 @@ The Circuit: 1.Ne3 1... Kf3 2.Nf1 2... Kf2 3.Nh2 3... Kg2 4.Ng4 4... Kg3 *
 [Result "*"]
 [FEN "8/8/8/8/8/p7/2K1N3/k7 w - - 0 1"]
 [Question "Endgame 154: white to move"]
+[Theme "Mate in the Corner"] 
 
-Mate in the Corner: 1.Nc1 1... a2 2.Nb3# *
+1.Nc1 a2 2.Nb3# *
 
 [Event "Event 155"]
 [Site "Site"]
@@ -1855,8 +2009,9 @@ Mate in the Corner: 1.Nc1 1... a2 2.Nb3# *
 [Result "*"]
 [FEN "3k4/1n6/8/P7/8/8/7K/8 w - - 0 1"]
 [Question "Endgame 155: white to move"]
+[Theme "The Dangerous Rook-Pawn"] 
 
-The Dangerous Rook-Pawn: 1.a6 1... Kc7 2.a7 2... Nd6 3.a8=Q *
+1.a6 Kc7 2.a7 Nd6 3.a8=Q *
 
 [Event "Event 156"]
 [Site "Site"]
@@ -1867,8 +2022,9 @@ The Dangerous Rook-Pawn: 1.a6 1... Kc7 2.a7 2... Nd6 3.a8=Q *
 [Result "*"]
 [FEN "8/8/8/8/6N1/6Kp/7N/7k w - - 0 1"]
 [Question "Endgame 156: white to move"]
+[Theme "Mate in Two Moves"] 
 
-Mate in Two Moves: 1.Nf3 1... h2 2.Nf2# *
+1.Nf3 h2 2.Nf2# *
 
 [Event "Event 157"]
 [Site "Site"]
@@ -1879,8 +2035,9 @@ Mate in Two Moves: 1.Nf3 1... h2 2.Nf2# *
 [Result "*"]
 [FEN "8/8/8/8/6K1/8/3N1p2/5Nk1 w - - 0 1"]
 [Question "Endgame 157: white to move"]
+[Theme "Mate in Three Moves"] 
 
-Mate in Three Moves: 1.Kh3 1... Kh1 2.Ng3+ 2... Kg1 3.Nf3# *
+1.Kh3 Kh1 2.Ng3+ Kg1 3.Nf3# *
 
 [Event "Event 158"]
 [Site "Site"]
@@ -1891,8 +2048,9 @@ Mate in Three Moves: 1.Kh3 1... Kh1 2.Ng3+ 2... Kg1 3.Nf3# *
 [Result "*"]
 [FEN "6k1/3N4/6K1/8/8/7p/7N/8 w - - 0 1"]
 [Question "Endgame 158: white to move"]
+[Theme "Mate in Four Moves"] 
 
-Mate in Four Moves: 1.Ng4 1... h2 2.Nh6+ 2... Kh8 3.Nf6 3... h1=Q 4.Nf7# *
+1.Ng4 h2 2.Nh6+ Kh8 3.Nf6 h1=Q 4.Nf7# *
 
 [Event "Event 159"]
 [Site "Site"]
@@ -1903,8 +2061,9 @@ Mate in Four Moves: 1.Ng4 1... h2 2.Nh6+ 2... Kh8 3.Nf6 3... h1=Q 4.Nf7# *
 [Result "*"]
 [FEN "7B/8/8/5k1K/8/5P2/8/8 w - - 0 1"]
 [Question "Endgame 159: white to move"]
+[Theme "Critical Squar"] 
 
-Critical Square 1: 1.Be5 1... Kxe5 2.Kg5 2... Ke6 3.f4 3... Kf7 4.Kf5 4... Ke7 5.Kg6 5... Kf8 6.f5 6... Kg8 7.f6 7... Kh8 8.Kf7 8... Kh7 9.Ke7 9... Kg6 10.f7 10... Kf5 11.f8=Q+ *
+1.Be5 Kxe5 2.Kg5 Ke6 3.f4 Kf7 4.Kf5 Ke7 5.Kg6 Kf8 6.f5 Kg8 7.f6 Kh8 8.Kf7 Kh7 9.Ke7 Kg6 10.f7 Kf5 11.f8=Q+ *
 
 [Event "Event 160"]
 [Site "Site"]
@@ -1915,8 +2074,9 @@ Critical Square 1: 1.Be5 1... Kxe5 2.Kg5 2... Ke6 3.f4 3... Kf7 4.Kf5 4... Ke7 5
 [Result "*"]
 [FEN "8/8/2k5/8/4K3/6p1/7b/8 w - - 0 1"]
 [Question "Endgame 160: white to move"]
+[Theme "Misplaced Bishop"] 
 
-Misplaced Bishop: 1.Kf3 1... Kd5 2.Kg2 2... Ke4 3.Kh1 3... Kf4 4.Kg2 4... Bg1 5.Kxg1 5... Kf3 6.Kf1 6... g2+ 7.Kg1 7... Kg3 *
+1.Kf3 Kd5 2.Kg2 Ke4 3.Kh1 Kf4 4.Kg2 Bg1 5.Kxg1 Kf3 6.Kf1 g2+ 7.Kg1 Kg3 *
 
 [Event "Event 161"]
 [Site "Site"]
@@ -1927,8 +2087,9 @@ Misplaced Bishop: 1.Kf3 1... Kd5 2.Kg2 2... Ke4 3.Kh1 3... Kf4 4.Kg2 4... Bg1 5.
 [Result "*"]
 [FEN "8/8/8/4b3/8/6kp/8/5K2 w - - 0 1"]
 [Question "Endgame 161: white to move"]
+[Theme "Wrong Color Bishop"] 
 
-Wrong Color Bishop: 1.Kg1 1... h2+ 2.Kh1 2... Kf2 *
+1.Kg1 h2+ 2.Kh1 Kf2 *
 
 [Event "Event 162"]
 [Site "Site"]
@@ -1939,8 +2100,9 @@ Wrong Color Bishop: 1.Kg1 1... h2+ 2.Kh1 2... Kf2 *
 [Result "*"]
 [FEN "6k1/4B3/6KP/8/8/8/8/8 w - - 0 1"]
 [Question "Endgame 162: white to move"]
+[Theme "Right Color Bishop"] 
 
-Right Color Bishop: 1.h7+ 1... Kh8 2.Bf6# *
+1.h7+ Kh8 2.Bf6# *
 
 [Event "Event 163"]
 [Site "Site"]
@@ -1951,8 +2113,9 @@ Right Color Bishop: 1.h7+ 1... Kh8 2.Bf6# *
 [Result "*"]
 [FEN "2K5/8/k7/P7/1B6/8/8/8 w - - 0 1"]
 [Question "Endgame 163: white to move"]
+[Theme "Critical Square 2"] 
 
-Critical Square 2: 1.Kb8 1... Kb5 2.Be1 2... Ka6 3.Bd2 3... Kb5 4.Kb7 *
+1.Kb8 Kb5 2.Be1 Ka6 3.Bd2 Kb5 4.Kb7 *
 
 [Event "Event 164"]
 [Site "Site"]
@@ -1963,8 +2126,9 @@ Critical Square 2: 1.Kb8 1... Kb5 2.Be1 2... Ka6 3.Bd2 3... Kb5 4.Kb7 *
 [Result "*"]
 [FEN "8/5k2/7P/8/4B3/5K2/8/8 w - - 0 1"]
 [Question "Endgame 164: white to move"]
+[Theme "Critical-Square Fight"] 
 
-Critical-Square Fight: 1.Bh7 1... Kf6 2.Kf4 2... Ke6 3.Kg5 3... Kf7 4.Kf5 4... Ke7 5.Kg6 5... Kf8 6.Kf6 6... Ke8 7.Bg8 7... Kf8 8.h7 8... Ke8 9.h8=Q *
+1.Bh7 Kf6 2.Kf4 Ke6 3.Kg5 Kf7 4.Kf5 Ke7 5.Kg6 Kf8 6.Kf6 Ke8 7.Bg8 Kf8 8.h7 Ke8 9.h8=Q *
 
 [Event "Event 165"]
 [Site "Site"]
@@ -1975,8 +2139,9 @@ Critical-Square Fight: 1.Bh7 1... Kf6 2.Kf4 2... Ke6 3.Kg5 3... Kf7 4.Kf5 4... K
 [Result "*"]
 [FEN "8/8/8/8/2p5/2K5/bP6/7k w - - 0 1"]
 [Question "Endgame 165: white to move"]
+[Theme "Misplaced Bishop"] 
 
-Misplaced Bishop: 1.b4 1... cxb3 2.Kb2 2... Kg2 3.Kc1 3... Kf3 4.Kb2 4... Ke2 5.Kc1 5... Kd3 6.Kb2 6... Kd2 7.Ka1 7... Kc3 *
+1.b4 cxb3 2.Kb2 Kg2 3.Kc1 Kf3 4.Kb2 Ke2 5.Kc1 Kd3 6.Kb2 Kd2 7.Ka1 Kc3 *
 
 [Event "Event 166"]
 [Site "Site"]
@@ -1987,8 +2152,9 @@ Misplaced Bishop: 1.b4 1... cxb3 2.Kb2 2... Kg2 3.Kc1 3... Kf3 4.Kb2 4... Ke2 5.
 [Result "*"]
 [FEN "7k/7p/5K1P/4B3/8/8/8/8 w - - 0 1"]
 [Question "Endgame 166: white to move"]
+[Theme "Cornered"] 
 
-Cornered: 1.Kf7# *
+1.Kf7# *
 
 [Event "Event 167"]
 [Site "Site"]
@@ -1999,8 +2165,9 @@ Cornered: 1.Kf7# *
 [Result "*"]
 [FEN "8/8/8/8/3b4/p1k5/P7/1K6 w - - 0 1"]
 [Question "Endgame 167: white to move"]
+[Theme "Avoid the Corner"] 
 
-Avoid the Corner: 1.Kc1 1... Kd3 2.Kb1 2... Kd2 *
+1.Kc1 Kd3 2.Kb1 Kd2 *
 
 [Event "Event 168"]
 [Site "Site"]
@@ -2011,8 +2178,9 @@ Avoid the Corner: 1.Kc1 1... Kd3 2.Kb1 2... Kd2 *
 [Result "*"]
 [FEN "5K2/k7/4P1p1/8/8/8/4b3/8 w - - 0 1"]
 [Question "Endgame 168: white to move"]
+[Theme "Square of the Pawn"] 
 
-Square of the Pawn: 1.Ke7 1... g5 2.Kd6 2... g4 3.e7 3... Bb5 4.Kc5 4... Bd7 5.Kd4 5... Kb6 6.Ke4 6... Kc7 7.Kf4 7... Kd6 8.e8=Q 8... Bxe8 9.Kxg4 *
+1.Ke7 g5 2.Kd6 g4 3.e7 Bb5 4.Kc5 Bd7 5.Kd4 Kb6 6.Ke4 Kc7 7.Kf4 Kd6 8.e8=Q Bxe8 9.Kxg4 *
 
 [Event "Event 169"]
 [Site "Site"]
@@ -2023,8 +2191,9 @@ Square of the Pawn: 1.Ke7 1... g5 2.Kd6 2... g4 3.e7 3... Bb5 4.Kc5 4... Bd7 5.K
 [Result "*"]
 [FEN "8/8/3n4/8/8/8/7p/4K2k w - - 0 1"]
 [Question "Endgame 169: white to move"]
+[Theme "Color Rule"] 
 
-Color Rule: 1.Kf2 1... Ne4+ 2.Kf1 2... Ng3+ 3.Kf2 3... Ne2 4.Kf1 4... Nf4 5.Kf2 5... Nd3+ 6.Kf1 6... Ne1 7.Kf2 7... Nf3 8.Kf1 *
+1.Kf2 Ne4+ 2.Kf1 Ng3+ 3.Kf2 Ne2 4.Kf1 Nf4 5.Kf2 Nd3+ 6.Kf1 Ne1 7.Kf2 Nf3 8.Kf1 *
 
 [Event "Event 170"]
 [Site "Site"]
@@ -2035,8 +2204,9 @@ Color Rule: 1.Kf2 1... Ne4+ 2.Kf1 2... Ng3+ 3.Kf2 3... Ne2 4.Kf1 4... Nf4 5.Kf2 
 [Result "*"]
 [FEN "8/1k6/8/8/1n6/p1K5/8/8 w - - 0 1"]
 [Question "Endgame 170: white to move"]
+[Theme "Force the Pawn to the 7th"] 
 
-Force the Pawn to the 7th: 1.Kb3 1... a2 2.Kb2 2... Kb6 3.Ka1 3... Kb5 4.Kb2 4... Ka4 5.Ka1 5... Ka3 *
+1.Kb3 a2 2.Kb2 Kb6 3.Ka1 Kb5 4.Kb2 Ka4 5.Ka1 Ka3 *
 
 [Event "Event 171"]
 [Site "Site"]
@@ -2047,8 +2217,9 @@ Force the Pawn to the 7th: 1.Kb3 1... a2 2.Kb2 2... Kb6 3.Ka1 3... Kb5 4.Kb2 4..
 [Result "*"]
 [FEN "8/8/6kP/8/6N1/7K/8/8 w - - 0 1"]
 [Question "Endgame 171: white to move"]
+[Theme "Avoiding Stalemate"] 
 
-Avoiding Stalemate: 1.Kh4 1... Kf7 2.Kg5 2... Kg8 3.Kg6 3... Kh8 4.Ne5 4... Kg8 5.h7+ 5... Kh8 6.Nf7# *
+1.Kh4 Kf7 2.Kg5 Kg8 3.Kg6 Kh8 4.Ne5 Kg8 5.h7+ Kh8 6.Nf7# *
 
 [Event "Event 172"]
 [Site "Site"]
@@ -2059,8 +2230,9 @@ Avoiding Stalemate: 1.Kh4 1... Kf7 2.Kg5 2... Kg8 3.Kg6 3... Kh8 4.Ne5 4... Kg8 
 [Result "*"]
 [FEN "k7/6N1/P7/8/8/8/1K6/8 w - - 0 1"]
 [Question "Endgame 172: white to move"]
+[Theme "Rear Defense"] 
 
-Rear Defense: 1.Ne6 1... Ka7 2.Nc5 2... Kb6 3.Kb3 3... Ka7 4.Kb4 4... Kb6 5.Kc4 5... Ka7 6.Kb5 6... Ka8 7.Kb6 7... Kb8 8.Ne6 8... Ka8 9.Nc7+ 9... Kb8 10.a7+ 10... Kc8 11.a8=Q+ 11... Kd7 12.Qe8+ 12... Kd6 13.Qe6# *
+1.Ne6 Ka7 2.Nc5 Kb6 3.Kb3 Ka7 4.Kb4 Kb6 5.Kc4 Ka7 6.Kb5 Ka8 7.Kb6 Kb8 8.Ne6 Ka8 9.Nc7+ Kb8 10.a7+ Kc8 11.a8=Q+ Kd7 12.Qe8+ Kd6 13.Qe6# *
 
 [Event "Event 173"]
 [Site "Site"]
@@ -2071,8 +2243,9 @@ Rear Defense: 1.Ne6 1... Ka7 2.Nc5 2... Kb6 3.Kb3 3... Ka7 4.Kb4 4... Kb6 5.Kc4 
 [Result "*"]
 [FEN "8/8/8/8/4n3/5k1p/7P/4K3 w - - 0 1"]
 [Question "Endgame 173: white to move"]
+[Theme "Corner Curl Up"] 
 
-Corner Curl Up: 1.Kf1 1... Ng3+ 2.Kg1 2... Ne2+ 3.Kh1 *
+1.Kf1 Ng3+ 2.Kg1 Ne2+ 3.Kh1 *
 
 [Event "Event 174"]
 [Site "Site"]
@@ -2083,8 +2256,9 @@ Corner Curl Up: 1.Kf1 1... Ng3+ 2.Kg1 2... Ne2+ 3.Kh1 *
 [Result "*"]
 [FEN "4k3/4N2p/4K2P/8/8/8/8/8 w - - 0 1"]
 [Question "Endgame 174: white to move"]
+[Theme "King and Knight Duel"] 
 
-King and Knight Duel: 1.Ng6 1... hxg6 2.h7 2... Kf8 3.h8=Q# *
+1.Ng6 hxg6 2.h7 Kf8 3.h8=Q# *
 
 [Event "Event 175"]
 [Site "Site"]
@@ -2095,8 +2269,9 @@ King and Knight Duel: 1.Ng6 1... hxg6 2.h7 2... Kf8 3.h8=Q# *
 [Result "*"]
 [FEN "7k/6p1/4K1P1/7N/8/8/8/8 w - - 0 1"]
 [Question "Endgame 175: white to move"]
+[Theme "Curled up"] 
 
-Curled up: 1.Nf6 1... gxf6 2.Kf7 2... f5 3.g7+ 3... Kh7 4.g8=Q+ 4... Kh6 5.Qg6# *
+1.Nf6 gxf6 2.Kf7 f5 3.g7+ Kh7 4.g8=Q+ Kh6 5.Qg6# *
 
 [Event "Event 176"]
 [Site "Site"]
@@ -2107,8 +2282,9 @@ Curled up: 1.Nf6 1... gxf6 2.Kf7 2... f5 3.g7+ 3... Kh7 4.g8=Q+ 4... Kh6 5.Qg6# 
 [Result "*"]
 [FEN "N7/1kp5/8/1PK5/8/8/8/8 w - - 0 1"]
 [Question "Endgame 176: white to move"]
+[Theme "Outflanking"] 
 
-Outflanking: 1.Nb6 1... cxb6+ 2.Kd6 2... Kb8 3.Kc6 3... Ka7 4.Kc7 4... Ka8 5.Kxb6 5... Kb8 6.Ka6 6... Ka8 7.b6 7... Kb8 8.b7 8... Kc7 9.Ka7 9... Kc6 10.b8=Q *
+1.Nb6 cxb6+ 2.Kd6 Kb8 3.Kc6 Ka7 4.Kc7 Ka8 5.Kxb6 Kb8 6.Ka6 Ka8 7.b6 Kb8 8.b7 Kc7 9.Ka7 Kc6 10.b8=Q *
 
 [Event "Event 177"]
 [Site "Site"]
@@ -2119,8 +2295,9 @@ Outflanking: 1.Nb6 1... cxb6+ 2.Kd6 2... Kb8 3.Kc6 3... Ka7 4.Kc7 4... Ka8 5.Kxb
 [Result "*"]
 [FEN "8/4R3/8/8/5q2/2k5/2P5/3K4 w - - 0 1"]
 [Question "Endgame 177: white to move"]
+[Theme "The Fortress"] 
 
-The Fortress: 1.Re3+ 1... Kb2 2.Rb3+ 2... Ka2 3.Rd3 *
+1.Re3+ Kb2 2.Rb3+ Ka2 3.Rd3 *
 
 [Event "Event 178"]
 [Site "Site"]
@@ -2131,8 +2308,9 @@ The Fortress: 1.Re3+ 1... Kb2 2.Rb3+ 2... Ka2 3.Rd3 *
 [Result "*"]
 [FEN "3k4/2p5/3r4/3PK3/8/8/8/5Q2 w - - 0 1"]
 [Question "Endgame 178: white to move"]
+[Theme "Breaking Down the Fortres"] 
 
-Breaking Down the Fortress 1: 1.Qf8+ 1... Kd7 2.Qxd6+ 2... cxd6+ 3.Kf6 3... Kd8 4.Ke6 4... Kc7 5.Ke7 5... Kc8 6.Kxd6 6... Kd8 7.Ke6 7... Ke8 8.d6 8... Kd8 9.d7 9... Kc7 10.Ke7 10... Kc6 11.d8=Q *
+1.Qf8+ Kd7 2.Qxd6+ cxd6+ 3.Kf6 Kd8 4.Ke6 Kc7 5.Ke7 Kc8 6.Kxd6 Kd8 7.Ke6 Ke8 8.d6 Kd8 9.d7 Kc7 10.Ke7 Kc6 11.d8=Q *
 
 [Event "Event 179"]
 [Site "Site"]
@@ -2143,8 +2321,9 @@ Breaking Down the Fortress 1: 1.Qf8+ 1... Kd7 2.Qxd6+ 2... cxd6+ 3.Kf6 3... Kd8 
 [Result "*"]
 [FEN "4k3/5p2/6r1/6PK/1Q6/8/8/8 w - - 0 1"]
 [Question "Endgame 179: white to move"]
+[Theme "Breaking Down the Fortress 2"] 
 
-Breaking Down the Fortress 2: 1.Qe4+ 1... Kf8 2.Qxg6 2... fxg6+ 3.Kxg6 3... Kg8 4.Kh6 4... Kh8 5.g6 5... Kg8 6.g7 6... Kf7 7.Kh7 7... Kf6 8.g8=Q *
+1.Qe4+ Kf8 2.Qxg6 fxg6+ 3.Kxg6 Kg8 4.Kh6 Kh8 5.g6 Kg8 6.g7 Kf7 7.Kh7 Kf6 8.g8=Q *
 
 [Event "Event 180"]
 [Site "Site"]
@@ -2155,8 +2334,9 @@ Breaking Down the Fortress 2: 1.Qe4+ 1... Kf8 2.Qxg6 2... fxg6+ 3.Kxg6 3... Kg8 
 [Result "*"]
 [FEN "5q2/5P2/8/8/8/7Q/k7/5K2 w - - 0 1"]
 [Question "Endgame 180: white to move"]
+[Theme "Lifting the Blockad"] 
 
-Lifting the Blockade 1: 1.Qe6+ 1... Kb2 2.Qe8 2... Qb4 3.f8=Q 3... Qc4+ 4.Qe2+ 4... Qxe2+ 5.Kxe2 *
+1.Qe6+ Kb2 2.Qe8 Qb4 3.f8=Q Qc4+ 4.Qe2+ Qxe2+ 5.Kxe2 *
 
 [Event "Event 181"]
 [Site "Site"]
@@ -2167,8 +2347,9 @@ Lifting the Blockade 1: 1.Qe6+ 1... Kb2 2.Qe8 2... Qb4 3.f8=Q 3... Qc4+ 4.Qe2+ 4
 [Result "*"]
 [FEN "4q3/4P3/8/8/4Q3/8/8/k3K3 w - - 0 1"]
 [Question "Endgame 181: white to move"]
+[Theme "Lifting the Blockade 2"] 
 
-Lifting the Blockade 2: 1.Qd4+ 1... Kb1 2.Qd8 *
+1.Qd4+ Kb1 2.Qd8 *
 
 [Event "Event 182"]
 [Site "Site"]
@@ -2179,8 +2360,9 @@ Lifting the Blockade 2: 1.Qd4+ 1... Kb1 2.Qd8 *
 [Result "*"]
 [FEN "2k5/4KP2/6Q1/8/8/4q3/8/8 w - - 0 1"]
 [Question "Endgame 182: white to move"]
+[Theme "Cross-Chec"] 
 
-Cross-Check 1: 1.Qe6+ 1... Qxe6+ 2.Kxe6 2... Kc7 3.f8=Q *
+1.Qe6+ Qxe6+ 2.Kxe6 Kc7 3.f8=Q *
 
 [Event "Event 183"]
 [Site "Site"]
@@ -2191,8 +2373,9 @@ Cross-Check 1: 1.Qe6+ 1... Qxe6+ 2.Kxe6 2... Kc7 3.f8=Q *
 [Result "*"]
 [FEN "8/2q1P1K1/6Q1/8/8/8/8/k7 w - - 0 1"]
 [Question "Endgame 183: white to move"]
+[Theme "Cross-Check 2"] 
 
-Cross-Check 2: 1.Qf7 1... Qg3+ 2.Kf8 2... Qa3 3.Kg8 3... Qg3+ 4.Qg7+ 4... Qxg7+ 5.Kxg7 *
+1.Qf7 Qg3+ 2.Kf8 Qa3 3.Kg8 Qg3+ 4.Qg7+ Qxg7+ 5.Kxg7 *
 
 [Event "Event 184"]
 [Site "Site"]
@@ -2203,8 +2386,9 @@ Cross-Check 2: 1.Qf7 1... Qg3+ 2.Kf8 2... Qa3 3.Kg8 3... Qg3+ 4.Qg7+ 4... Qxg7+ 
 [Result "*"]
 [FEN "6K1/8/8/4q3/Q7/8/1p6/1k6 w - - 0 1"]
 [Question "Endgame 184: white to move"]
+[Theme "Perpetual Check"] 
 
-Perpetual Check: 1.Qd1+ 1... Ka2 2.Qa4+ 2... Kb1 3.Qd1+ 3... Ka2 4.Qa4+ 4... Kb1 *
+1.Qd1+ Ka2 2.Qa4+ Kb1 3.Qd1+ Ka2 4.Qa4+ Kb1 *
 
 [Event "Event 185"]
 [Site "Site"]
@@ -2215,8 +2399,9 @@ Perpetual Check: 1.Qd1+ 1... Ka2 2.Qa4+ 2... Kb1 3.Qd1+ 3... Ka2 4.Qa4+ 4... Kb1
 [Result "*"]
 [FEN "R7/P4k2/8/8/8/1K6/8/r7 w - - 0 1"]
 [Question "Endgame 185: white to move"]
+[Theme "Skewe"] 
 
-Skewer 1: 1.Rh8 1... Rxa7 2.Rh7+ 2... Kg6 3.Rxa7 *
+1.Rh8 Rxa7 2.Rh7+ Kg6 3.Rxa7 *
 
 [Event "Event 186"]
 [Site "Site"]
@@ -2227,8 +2412,9 @@ Skewer 1: 1.Rh8 1... Rxa7 2.Rh7+ 2... Kg6 3.Rxa7 *
 [Result "*"]
 [FEN "7R/8/8/8/K7/8/1k5p/7r w - - 0 1"]
 [Question "Endgame 186: white to move"]
+[Theme "Hiding"] 
 
-Hiding: 1.Kb4 1... Kc2 2.Kc4 2... Kd2 3.Kd4 3... Ke2 4.Ke4 4... Kf2 5.Kf4 5... Kg2 6.Rg8+ 6... Kh3 7.Rh8+ 7... Kg2 8.Rg8+ 8... Kf2 9.Rh8 9... Rf1 10.Rxh2+ 10... Kg1+ 11.Kg3 *
+1.Kb4 Kc2 2.Kc4 Kd2 3.Kd4 Ke2 4.Ke4 Kf2 5.Kf4 Kg2 6.Rg8+ Kh3 7.Rh8+ Kg2 8.Rg8+ Kf2 9.Rh8 Rf1 10.Rxh2+ Kg1+ 11.Kg3 *
 
 [Event "Event 187"]
 [Site "Site"]
@@ -2239,8 +2425,9 @@ Hiding: 1.Kb4 1... Kc2 2.Kc4 2... Kd2 3.Kd4 3... Ke2 4.Ke4 4... Kf2 5.Kf4 5... K
 [Result "*"]
 [FEN "R7/P3r3/8/4k3/2K5/8/8/8 w - - 0 1"]
 [Question "Endgame 187: white to move"]
+[Theme "Zugzwang"] 
 
-Zugzwang: 1.Kc5 1... Rc7+ 2.Kb6 *
+1.Kc5 Rc7+ 2.Kb6 *
 
 [Event "Event 188"]
 [Site "Site"]
@@ -2251,8 +2438,9 @@ Zugzwang: 1.Kc5 1... Rc7+ 2.Kb6 *
 [Result "*"]
 [FEN "6R1/4r3/8/8/8/2K5/7p/7k w - - 0 1"]
 [Question "Endgame 188: white to move"]
+[Theme "Shut In"] 
 
-Shut In: 1.Kd2 1... Ra7 2.Ke2 2... Ra1 3.Kf2 3... Rg1 4.Rf8 4... Rg2+ 5.Kf1 *
+1.Kd2 Ra7 2.Ke2 Ra1 3.Kf2 Rg1 4.Rf8 Rg2+ 5.Kf1 *
 
 [Event "Event 189"]
 [Site "Site"]
@@ -2263,8 +2451,9 @@ Shut In: 1.Kd2 1... Ra7 2.Ke2 2... Ra1 3.Kf2 3... Rg1 4.Rf8 4... Rg2+ 5.Kf1 *
 [Result "*"]
 [FEN "K6R/P2k4/8/8/8/8/8/1r6 w - - 0 1"]
 [Question "Endgame 189: white to move"]
+[Theme "Driving Off"] 
 
-Driving Off: 1.Rb8 1... Rc1 2.Kb7 2... Rb1+ 3.Ka6 3... Ra1+ 4.Kb6 4... Rb1+ 5.Kc5 5... Rc1+ 6.Kd4 6... Rd1+ 7.Ke3 7... Re1+ 8.Kd2 *
+1.Rb8 Rc1 2.Kb7 Rb1+ 3.Ka6 Ra1+ 4.Kb6 Rb1+ 5.Kc5 Rc1+ 6.Kd4 Rd1+ 7.Ke3 Re1+ 8.Kd2 *
 
 [Event "Event 190"]
 [Site "Site"]
@@ -2275,8 +2464,9 @@ Driving Off: 1.Rb8 1... Rc1 2.Kb7 2... Rb1+ 3.Ka6 3... Ra1+ 4.Kb6 4... Rb1+ 5.Kc
 [Result "*"]
 [FEN "K6R/P7/3k4/8/8/8/8/1r6 w - - 0 1"]
 [Question "Endgame 190: white to move"]
+[Theme "Back-Rank Escape"] 
 
-Back-Rank Escape: 1.Rb8 1... Rc1 2.Kb7 2... Rb1+ 3.Kc8 3... Rc1+ 4.Kd8 4... Rh1 5.Rb6+ 5... Kc5 6.Rc6+ 6... Kb5 7.Rc8 7... Rh8+ 8.Kc7 8... Rh7+ 9.Kb8 *
+1.Rb8 Rc1 2.Kb7 Rb1+ 3.Kc8 Rc1+ 4.Kd8 Rh1 5.Rb6+ Kc5 6.Rc6+ Kb5 7.Rc8 Rh8+ 8.Kc7 Rh7+ 9.Kb8 *
 
 [Event "Event 191"]
 [Site "Site"]
@@ -2287,8 +2477,9 @@ Back-Rank Escape: 1.Rb8 1... Rc1 2.Kb7 2... Rb1+ 3.Kc8 3... Rc1+ 4.Kd8 4... Rh1 
 [Result "*"]
 [FEN "2K5/2P1k3/8/8/8/8/3R4/2r5 w - - 0 1"]
 [Question "Endgame 191: white to move"]
+[Theme "Escaping Along the File"] 
 
-Escaping Along the File: 1.Rb2 1... Rc3 2.Kb7 2... Kd7 3.c8=Q+ 3... Rxc8 4.Rd2+ 4... Ke6 5.Kxc8 *
+1.Rb2 Rc3 2.Kb7 Kd7 3.c8=Q+ Rxc8 4.Rd2+ Ke6 5.Kxc8 *
 
 [Event "Event 192"]
 [Site "Site"]
@@ -2299,8 +2490,9 @@ Escaping Along the File: 1.Rb2 1... Rc3 2.Kb7 2... Kd7 3.c8=Q+ 3... Rxc8 4.Rd2+ 
 [Result "*"]
 [FEN "2K5/2P1k3/8/8/8/8/3R4/1r6 w - - 0 1"]
 [Question "Endgame 192: white to move"]
+[Theme "Breaking the Cut-Off"] 
 
-Breaking the Cut-Off: 1.Ra2 1... Rb3 2.Ra7 2... Rb1 3.Rb7 3... Rc1 4.Kb8 4... Kd7 5.c8=Q+ *
+1.Ra2 Rb3 2.Ra7 Rb1 3.Rb7 Rc1 4.Kb8 Kd7 5.c8=Q+ *
 
 [Event "Event 193"]
 [Site "Site"]
@@ -2311,8 +2503,9 @@ Breaking the Cut-Off: 1.Ra2 1... Rb3 2.Ra7 2... Rb1 3.Rb7 3... Rc1 4.Kb8 4... Kd
 [Result "*"]
 [FEN "1K6/1P1k4/8/8/8/8/2R5/r7 w - - 0 1"]
 [Question "Endgame 193: white to move"]
+[Theme "The Bridge"] 
 
-The Bridge: 1.Rd2+ 1... Ke7 2.Rd4 2... Ra2 3.Kc7 3... Rc2+ 4.Kb6 4... Rb2+ 5.Ka6 5... Ke6 6.Ra4 6... Kd6 7.Ka7 7... Kc7 8.b8=Q+ 8... Rxb8 9.Rc4+ 9... Kd6 10.Kxb8 *
+1.Rd2+ Ke7 2.Rd4 Ra2 3.Kc7 Rc2+ 4.Kb6 Rb2+ 5.Ka6 Ke6 6.Ra4 Kd6 7.Ka7 Kc7 8.b8=Q+ Rxb8 9.Rc4+ Kd6 10.Kxb8 *
 
 [Event "Event 194"]
 [Site "Site"]
@@ -2323,8 +2516,9 @@ The Bridge: 1.Rd2+ 1... Ke7 2.Rd4 2... Ra2 3.Kc7 3... Rc2+ 4.Kb6 4... Rb2+ 5.Ka6
 [Result "*"]
 [FEN "1r2K3/4P1k1/8/8/8/8/8/5R2 w - - 0 1"]
 [Question "Endgame 194: white to move"]
+[Theme "Preventing the Checking Dista"] 
 
-Preventing the Checking Dista: 1.Kd7 1... Rb7+ 2.Kd8 2... Rb8+ 3.Kc7 3... Ra8 4.Ra1 4... Re8 5.Kd7 5... Kf7 6.Rf1+ 6... Kg7 7.Kxe8 *
+1.Kd7 Rb7+ 2.Kd8 Rb8+ 3.Kc7 Ra8 4.Ra1 Re8 5.Kd7 Kf7 6.Rf1+ Kg7 7.Kxe8 *
 
 [Event "Event 195"]
 [Site "Site"]
@@ -2335,8 +2529,9 @@ Preventing the Checking Dista: 1.Kd7 1... Rb7+ 2.Kd8 2... Rb8+ 3.Kc7 3... Ra8 4.
 [Result "*"]
 [FEN "5r2/R7/8/8/8/8/4p1K1/4k3 w - - 0 1"]
 [Question "Endgame 195: white to move"]
+[Theme "Flank Attack"] 
 
-Flank Attack 1: 1.Ra1+ 1... Kd2 2.Ra2+ 2... Kd3 3.Ra3+ 3... Kd4 4.Ra4+ 4... Kc3 5.Ra3+ 5... Kb2 6.Re3 *
+1.Ra1+ Kd2 2.Ra2+ Kd3 3.Ra3+ Kd4 4.Ra4+ Kc3 5.Ra3+ Kb2 6.Re3 *
 
 [Event "Event 196"]
 [Site "Site"]
@@ -2347,8 +2542,9 @@ Flank Attack 1: 1.Ra1+ 1... Kd2 2.Ra2+ 2... Kd3 3.Ra3+ 3... Kd4 4.Ra4+ 4... Kc3 
 [Result "*"]
 [FEN "r3K1k1/4P3/8/8/8/8/8/5R2 w - - 0 1"]
 [Question "Endgame 196: white to move"]
+[Theme "Bad King's Position"] 
 
-Bad King's Position: 1.Kd7 1... Ra7+ 2.Kd6 2... Ra6+ 3.Kc5 3... Ra8 4.Kc6 4... Kg7 5.Ra1 5... Rb8 6.Kc7 6... Re8 7.Kd7 7... Kf7 8.Rf1+ 8... Kg7 9.Kxe8 *
+1.Kd7 Ra7+ 2.Kd6 Ra6+ 3.Kc5 Ra8 4.Kc6 Kg7 5.Ra1 Rb8 6.Kc7 Re8 7.Kd7 Kf7 8.Rf1+ Kg7 9.Kxe8 *
 
 [Event "Event 197"]
 [Site "Site"]
@@ -2359,8 +2555,9 @@ Bad King's Position: 1.Kd7 1... Ra7+ 2.Kd6 2... Ra6+ 3.Kc5 3... Ra8 4.Kc6 4... K
 [Result "*"]
 [FEN "8/8/1R6/8/8/6pk/r7/6K1 w - - 0 1"]
 [Question "Endgame 197: white to move"]
+[Theme "Passive Defense Draw"] 
 
-Passive Defense Draws 1: 1.Rb1 1... Rg2+ 2.Kh1 2... Rh2+ 3.Kg1 3... Ra2 4.Rc1 *
+1.Rb1 Rg2+ 2.Kh1 Rh2+ 3.Kg1 Ra2 4.Rc1 *
 
 [Event "Event 198"]
 [Site "Site"]
@@ -2371,8 +2568,9 @@ Passive Defense Draws 1: 1.Rb1 1... Rg2+ 2.Kh1 2... Rh2+ 3.Kg1 3... Ra2 4.Rc1 *
 [Result "*"]
 [FEN "k5r1/1R6/1KP5/8/8/8/8/8 w - - 0 1"]
 [Question "Endgame 198: white to move"]
+[Theme "Passive Defense Lose"] 
 
-Passive Defense Loses 1: 1.Ra7+ 1... Kb8 2.c7+ 2... Kc8 3.Ra8+ 3... Kd7 4.Rxg8 *
+1.Ra7+ Kb8 2.c7+ Kc8 3.Ra8+ Kd7 4.Rxg8 *
 
 [Event "Event 199"]
 [Site "Site"]
@@ -2383,8 +2581,9 @@ Passive Defense Loses 1: 1.Ra7+ 1... Kb8 2.c7+ 2... Kc8 3.Ra8+ 3... Kd7 4.Rxg8 *
 [Result "*"]
 [FEN "8/8/8/8/8/3pk2r/2R5/4K3 w - - 0 1"]
 [Question "Endgame 199: white to move"]
+[Theme "Stalemate Trick ???"] 
 
-Stalemate Trick ???: 1.Re2+ 1... Kd4 2.Re8 2... Re3+ 3.Rxe3 3... Kxe3 *
+1.Re2+ Kd4 2.Re8 Re3+ 3.Rxe3 Kxe3 *
 
 [Event "Event 200"]
 [Site "Site"]
@@ -2395,8 +2594,9 @@ Stalemate Trick ???: 1.Re2+ 1... Kd4 2.Re8 2... Re3+ 3.Rxe3 3... Kxe3 *
 [Result "*"]
 [FEN "5r2/4k3/6P1/8/6K1/8/8/5R2 w - - 0 1"]
 [Question "Endgame 200: white to move"]
+[Theme "Maintaining the Barrier"] 
 
-Maintaining the Barrier: 1.Rf5 1... Rf6 2.Kg5 2... Ra6 3.g7 3... Ra1 4.Kg6 4... Rg1+ 5.Kh7 5... Rh1+ 6.Kg8 6... Rh2 7.Rf4 *
+1.Rf5 Rf6 2.Kg5 Ra6 3.g7 Ra1 4.Kg6 Rg1+ 5.Kh7 Rh1+ 6.Kg8 Rh2 7.Rf4 *
 
 [Event "Event 201"]
 [Site "Site"]
@@ -2407,8 +2607,9 @@ Maintaining the Barrier: 1.Rf5 1... Rf6 2.Kg5 2... Ra6 3.g7 3... Ra1 4.Kg6 4... 
 [Result "*"]
 [FEN "4R3/8/8/8/8/4p3/4k1K1/4r3 w - - 0 1"]
 [Question "Endgame 201: white to move"]
+[Theme "Flank Attack 2"] 
 
-Flank Attack 2: 1.Ra8 1... Rd1 2.Ra2+ 2... Rd2 3.Ra1 3... Rd1 4.Ra2+ 4... Kd3 5.Ra3+ 5... Ke4 6.Ra4+ 6... Rd4 7.Ra1 7... Kd3 8.Kf1 *
+1.Ra8 Rd1 2.Ra2+ Rd2 3.Ra1 Rd1 4.Ra2+ Kd3 5.Ra3+ Ke4 6.Ra4+ Rd4 7.Ra1 Kd3 8.Kf1 *
 
 [Event "Event 202"]
 [Site "Site"]
@@ -2419,8 +2620,9 @@ Flank Attack 2: 1.Ra8 1... Rd1 2.Ra2+ 2... Rd2 3.Ra1 3... Rd1 4.Ra2+ 4... Kd3 5.
 [Result "*"]
 [FEN "3R4/3K1k2/3P4/8/8/8/8/r7 w - - 0 1"]
 [Question "Endgame 202: white to move"]
+[Theme "The Short-Side Problem"] 
 
-The Short-Side Problem: 1.Rc8 1... Ra7+ 2.Kc6 2... Ra6+ 3.Kc7 3... Ra7+ 4.Kb6 4... Rd7 5.Kc6 5... Ra7 6.Rc7+ 6... Rxc7+ 7.dxc7 *
+1.Rc8 Ra7+ 2.Kc6 Ra6+ 3.Kc7 Ra7+ 4.Kb6 Rd7 5.Kc6 Ra7 6.Rc7+ Rxc7+ 7.dxc7 *
 
 [Event "Event 203"]
 [Site "Site"]
@@ -2431,8 +2633,9 @@ The Short-Side Problem: 1.Rc8 1... Ra7+ 2.Kc6 2... Ra6+ 3.Kc7 3... Ra7+ 4.Kb6 4.
 [Result "*"]
 [FEN "R7/6k1/P7/2K5/8/8/8/r7 w - - 0 1"]
 [Question "Endgame 203: white to move"]
+[Theme "Pawn Shelter"] 
 
-Pawn Shelter: 1.Kb6 1... Rb1+ 2.Ka7 2... Kf7 3.Rb8 3... Ra1 4.Kb7 4... Rb1+ 5.Ka8 5... Ra1 6.a7 6... Ke7 7.Kb7 7... Rb1+ 8.Kc6 *
+1.Kb6 Rb1+ 2.Ka7 Kf7 3.Rb8 Ra1 4.Kb7 Rb1+ 5.Ka8 Ra1 6.a7 Ke7 7.Kb7 Rb1+ 8.Kc6 *
 
 [Event "Event 204"]
 [Site "Site"]
@@ -2443,8 +2646,9 @@ Pawn Shelter: 1.Kb6 1... Rb1+ 2.Ka7 2... Kf7 3.Rb8 3... Ra1 4.Kb7 4... Rb1+ 5.Ka
 [Result "*"]
 [FEN "7R/8/2k5/8/8/7p/1K6/7r w - - 0 1"]
 [Question "Endgame 204: white to move"]
+[Theme "Flank Attack"] 
 
-Flank Attack: 1.Rc8+ 1... Kd5 2.Rc3 2... Kd4 3.Rf3 3... Ke4 4.Rg3 4... Kf4 5.Rc3 5... Kg4 6.Rc4+ 6... Kg3 7.Rc3+ 7... Kh2 8.Rc2+ 8... Kg1 9.Rc1+ 9... Kg2 10.Rc2+ 10... Kf3 11.Rc3+ 11... Ke4 12.Rc4+ 12... Kd5 13.Rc3 *
+1.Rc8+ Kd5 2.Rc3 Kd4 3.Rf3 Ke4 4.Rg3 Kf4 5.Rc3 Kg4 6.Rc4+ Kg3 7.Rc3+ Kh2 8.Rc2+ Kg1 9.Rc1+ Kg2 10.Rc2+ Kf3 11.Rc3+ Ke4 12.Rc4+ Kd5 13.Rc3 *
 
 [Event "Event 205"]
 [Site "Site"]
@@ -2455,8 +2659,9 @@ Flank Attack: 1.Rc8+ 1... Kd5 2.Rc3 2... Kd4 3.Rf3 3... Ke4 4.Rg3 4... Kf4 5.Rc3
 [Result "*"]
 [FEN "8/8/8/8/3R1pk1/8/r7/5K2 w - - 0 1"]
 [Question "Endgame 205: white to move"]
+[Theme "Philidor's Draw"] 
 
-Philidor's Draw: 1.Rd3 1... Rb2 2.Ra3 2... f3 3.Ra8 3... Kg3 4.Rg8+ 4... Kf4 5.Rf8+ 5... Ke4 6.Re8+ 6... Kd4 7.Rf8 *
+1.Rd3 Rb2 2.Ra3 f3 3.Ra8 Kg3 4.Rg8+ Kf4 5.Rf8+ Ke4 6.Re8+ Kd4 7.Rf8 *
 
 [Event "Event 206"]
 [Site "Site"]
@@ -2467,8 +2672,9 @@ Philidor's Draw: 1.Rd3 1... Rb2 2.Ra3 2... f3 3.Ra8 3... Kg3 4.Rg8+ 4... Kf4 5.R
 [Result "*"]
 [FEN "6R1/8/8/8/6pk/r7/8/6K1 w - - 0 1"]
 [Question "Endgame 206: white to move"]
+[Theme "Passive Defense Draws 2"] 
 
-Passive Defense Draws 2: 1.Rb8 1... Kg3 2.Rb1 2... Kh3 3.Rc1 3... g3 4.Rb1 4... Ra2 5.Rc1 5... Rg2+ 6.Kh1 6... Rh2+ 7.Kg1 *
+1.Rb8 Kg3 2.Rb1 Kh3 3.Rc1 g3 4.Rb1 Ra2 5.Rc1 Rg2+ 6.Kh1 Rh2+ 7.Kg1 *
 
 [Event "Event 207"]
 [Site "Site"]
@@ -2479,8 +2685,9 @@ Passive Defense Draws 2: 1.Rb8 1... Kg3 2.Rb1 2... Kh3 3.Rc1 3... g3 4.Rb1 4... 
 [Result "*"]
 [FEN "2k3r1/8/7R/1KP5/8/8/8/8 w - - 0 1"]
 [Question "Endgame 207: white to move"]
+[Theme "Passive Defense Loses 2"] 
 
-Passive Defense Loses 2: 1.Kb6 1... Kb8 2.c6 2... Rf8 3.Rh7 3... Re8 4.Rb7+ 4... Kc8 5.Ra7 5... Kb8 6.c7+ 6... Kc8 7.Ra8+ 7... Kd7 8.Rxe8 8... Kxe8 9.Kb7 9... Kd7 10.c8=Q+ *
+1.Kb6 Kb8 2.c6 Rf8 3.Rh7 Re8 4.Rb7+ Kc8 5.Ra7 Kb8 6.c7+ Kc8 7.Ra8+ Kd7 8.Rxe8 Kxe8 9.Kb7 Kd7 10.c8=Q+ *
 
 [Event "Event 208"]
 [Site "Site"]
@@ -2491,8 +2698,9 @@ Passive Defense Loses 2: 1.Kb6 1... Kb8 2.c6 2... Rf8 3.Rh7 3... Re8 4.Rb7+ 4...
 [Result "*"]
 [FEN "1k6/7R/8/KP6/8/8/8/1r6 w - - 0 1"]
 [Question "Endgame 208: white to move"]
+[Theme "Driving off the Promotion Squ"] 
 
-Driving off the Promotion Squ: 1.Kb6 1... Kc8 2.Rh8+ 2... Kd7 3.Rb8 3... Rb2 4.Ka7 4... Kc7 5.b6+ 5... Kc6 6.Rc8+ 6... Kb5 7.b7 7... Ra2+ 8.Kb8 8... Kb6 9.Rc1 9... Rh2 10.Rb1+ 10... Kc6 11.Ra1 11... Rb2 12.Ka8 12... Rxb7 13.Rc1+ 13... Kb6 14.Rb1+ 14... Kc6 15.Rxb7 *
+1.Kb6 Kc8 2.Rh8+ Kd7 3.Rb8 Rb2 4.Ka7 Kc7 5.b6+ Kc6 6.Rc8+ Kb5 7.b7 Ra2+ 8.Kb8 Kb6 9.Rc1 Rh2 10.Rb1+ Kc6 11.Ra1 Rb2 12.Ka8 Rxb7 13.Rc1+ Kb6 14.Rb1+ Kc6 15.Rxb7 *
 
 [Event "Event 209"]
 [Site "Site"]
@@ -2503,8 +2711,9 @@ Driving off the Promotion Squ: 1.Kb6 1... Kc8 2.Rh8+ 2... Kd7 3.Rb8 3... Rb2 4.K
 [Result "*"]
 [FEN "5R2/8/8/8/5p2/5k2/r7/5K2 w - - 0 1"]
 [Question "Endgame 209: white to move"]
+[Theme "King to the Short Side"] 
 
-King to the Short Side: 1.Kg1 1... Ra1+ 2.Kh2 2... Rf1 3.Ra8 3... Re1 4.Rf8 *
+1.Kg1 Ra1+ 2.Kh2 Rf1 3.Ra8 Re1 4.Rf8 *
 
 [Event "Event 210"]
 [Site "Site"]
@@ -2515,8 +2724,9 @@ King to the Short Side: 1.Kg1 1... Ra1+ 2.Kh2 2... Rf1 3.Ra8 3... Re1 4.Rf8 *
 [Result "*"]
 [FEN "1r6/8/3k4/1P6/1K6/8/8/2R5 w - - 0 1"]
 [Question "Endgame 210: white to move"]
+[Theme "Cut-Off - No Checking Distanc"] 
 
-Cut-Off - No Checking Distanc: 1.Ka5 1... Ra8+ 2.Kb6 2... Rb8+ 3.Ka6 3... Ra8+ 4.Kb7 4... Ra2 5.b6 5... Rb2 6.Ka7 6... Ra2+ 7.Kb8 7... Kd7 8.b7 8... Ra3 9.Rd1+ 9... Ke7 10.Rd4 10... Ra1 11.Kc7 11... Rc1+ 12.Kb6 12... Rb1+ 13.Kc6 13... Ke6 14.Re4+ 14... Kf6 15.Re8 15... Rc1+ 16.Kd5 16... Rd1+ 17.Kc4 17... Rc1+ 18.Kd3 18... Rd1+ 19.Kc2 *
+1.Ka5 Ra8+ 2.Kb6 Rb8+ 3.Ka6 Ra8+ 4.Kb7 Ra2 5.b6 Rb2 6.Ka7 Ra2+ 7.Kb8 Kd7 8.b7 Ra3 9.Rd1+ Ke7 10.Rd4 Ra1 11.Kc7 Rc1+ 12.Kb6 Rb1+ 13.Kc6 Ke6 14.Re4+ Kf6 15.Re8 Rc1+ 16.Kd5 Rd1+ 17.Kc4 Rc1+ 18.Kd3 Rd1+ 19.Kc2 *
 
 [Event "Event 211"]
 [Site "Site"]
@@ -2527,8 +2737,9 @@ Cut-Off - No Checking Distanc: 1.Ka5 1... Ra8+ 2.Kb6 2... Rb8+ 3.Ka6 3... Ra8+ 4
 [Result "*"]
 [FEN "4r3/8/8/5k2/5p2/8/3K4/5R2 w - - 0 1"]
 [Question "Endgame 211: white to move"]
+[Theme "Breaking the Barrier"] 
 
-Breaking the Barrier: 1.Re1 1... Ra8 2.Ke2 2... Ra2+ 3.Kf3 3... Ra3+ 4.Kf2 4... Kg4 5.Rg1+ 5... Kf5 6.Rg8 *
+1.Re1 Ra8 2.Ke2 Ra2+ 3.Kf3 Ra3+ 4.Kf2 Kg4 5.Rg1+ Kf5 6.Rg8 *
 
 [Event "Event 212"]
 [Site "Site"]
@@ -2539,8 +2750,9 @@ Breaking the Barrier: 1.Re1 1... Ra8 2.Ke2 2... Ra2+ 3.Kf3 3... Ra3+ 4.Kf2 4... 
 [Result "*"]
 [FEN "2r5/8/5k2/8/2P5/2K5/8/3R4 w - - 0 1"]
 [Question "Endgame 212: white to move"]
+[Theme "Two File Cut-Off"] 
 
-Two File Cut-Off: 1.Re1 1... Kf5 2.Kb4 2... Rb8+ 3.Ka5 3... Rc8 4.Kb5 4... Rb8+ 5.Ka6 5... Rc8 6.Rc1 6... Ke6 7.Kb7 7... Rc5 8.Kb6 8... Rc8 9.c5 9... Kd7 10.c6+ 10... Kd6 11.Rd1+ 11... Ke7 12.Kb7 12... Rh8 13.c7 *
+1.Re1 Kf5 2.Kb4 Rb8+ 3.Ka5 Rc8 4.Kb5 Rb8+ 5.Ka6 Rc8 6.Rc1 Ke6 7.Kb7 Rc5 8.Kb6 Rc8 9.c5 Kd7 10.c6+ Kd6 11.Rd1+ Ke7 12.Kb7 Rh8 13.c7 *
 
 [Event "Event 213"]
 [Site "Site"]
@@ -2551,8 +2763,9 @@ Two File Cut-Off: 1.Re1 1... Kf5 2.Kb4 2... Rb8+ 3.Ka5 3... Rc8 4.Kb5 4... Rb8+ 
 [Result "*"]
 [FEN "8/8/8/6k1/1p6/7R/2K4p/7r w - - 0 1"]
 [Question "Endgame 213: white to move"]
+[Theme "Active Defense"] 
 
-Active Defense: 1.Kb2 1... b3 2.Rh8 2... Kg4 3.Rh7 3... Kg3 4.Rg7+ 4... Kf2 5.Rh7 *
+1.Kb2 b3 2.Rh8 Kg4 3.Rh7 Kg3 4.Rg7+ Kf2 5.Rh7 *
 
 [Event "Event 214"]
 [Site "Site"]
@@ -2563,8 +2776,9 @@ Active Defense: 1.Kb2 1... b3 2.Rh8 2... Kg4 3.Rh7 3... Kg3 4.Rg7+ 4... Kf2 5.Rh
 [Result "*"]
 [FEN "R7/P5k1/r7/5P2/8/8/1K6/8 w - - 0 1"]
 [Question "Endgame 214: white to move"]
+[Theme "Skewer"] 
 
-Skewer: 1.f6+ 1... Kf7 2.Rh8 2... Rxa7 3.Rh7+ 3... Kxf6 4.Rxa7 *
+1.f6+ Kf7 2.Rh8 Rxa7 3.Rh7+ Kxf6 4.Rxa7 *
 
 [Event "Event 215"]
 [Site "Site"]
@@ -2575,8 +2789,9 @@ Skewer: 1.f6+ 1... Kf7 2.Rh8 2... Rxa7 3.Rh7+ 3... Kxf6 4.Rxa7 *
 [Result "*"]
 [FEN "1k4r1/8/KPR5/1P6/8/8/8/8 w - - 0 1"]
 [Question "Endgame 215: white to move"]
+[Theme "Exchanging Down"] 
 
-Exchanging Down: 1.b7 1... Rh8 2.Rc8+ 2... Rxc8 3.bxc8=Q+ 3... Kxc8 4.Ka7 *
+1.b7 Rh8 2.Rc8+ Rxc8 3.bxc8=Q+ Kxc8 4.Ka7 *
 
 [Event "Event 216"]
 [Site "Site"]
@@ -2587,8 +2802,9 @@ Exchanging Down: 1.b7 1... Rh8 2.Rc8+ 2... Rxc8 3.bxc8=Q+ 3... Kxc8 4.Ka7 *
 [Result "*"]
 [FEN "K7/2P4R/8/k7/8/8/2r4p/8 w - - 0 1"]
 [Question "Endgame 216: white to move"]
+[Theme "Lasker's Pin"] 
 
-Lasker's Pin: 1.Kb7 1... Rb2+ 2.Ka7 2... Rc2 3.Rh5+ 3... Ka4 4.Kb7 4... Rb2+ 5.Ka6 5... Rc2 6.Rh4+ 6... Ka3 7.Kb6 7... Rb2+ 8.Ka5 8... Rc2 9.Rh3+ 9... Ka2 10.Rxh2 10... Rxh2 11.c8=Q *
+1.Kb7 Rb2+ 2.Ka7 Rc2 3.Rh5+ Ka4 4.Kb7 Rb2+ 5.Ka6 Rc2 6.Rh4+ Ka3 7.Kb6 Rb2+ 8.Ka5 Rc2 9.Rh3+ Ka2 10.Rxh2 Rxh2 11.c8=Q *
 
 [Event "Event 217"]
 [Site "Site"]
@@ -2599,8 +2815,9 @@ Lasker's Pin: 1.Kb7 1... Rb2+ 2.Ka7 2... Rc2 3.Rh5+ 3... Ka4 4.Kb7 4... Rb2+ 5.K
 [Result "*"]
 [FEN "8/1B6/8/8/5K2/8/7p/5bk1 w - - 0 1"]
 [Question "Endgame 217: white to move"]
+[Theme "Stop the Block"] 
 
-Stop the Block: 1.Kg3 1... Ba6 2.Bd5 *
+1.Kg3 Ba6 2.Bd5 *
 
 [Event "Event 218"]
 [Site "Site"]
@@ -2611,8 +2828,9 @@ Stop the Block: 1.Kg3 1... Ba6 2.Bd5 *
 [Result "*"]
 [FEN "1K6/2P5/b2k4/5B2/8/8/8/8 w - - 0 1"]
 [Question "Endgame 218: white to move"]
+[Theme "Deflecting Sacrifice"] 
 
-Deflecting Sacrifice: 1.Bd3 1... Bxd3 2.c8=Q *
+1.Bd3 Bxd3 2.c8=Q *
 
 [Event "Event 219"]
 [Site "Site"]
@@ -2623,8 +2841,9 @@ Deflecting Sacrifice: 1.Bd3 1... Bxd3 2.c8=Q *
 [Result "*"]
 [FEN "2K5/bP6/2k5/8/8/6B1/8/8 w - - 0 1"]
 [Question "Endgame 219: white to move"]
+[Theme "Deflection"] 
 
-Deflection: 1.Bf2 1... Bxf2 2.b8=Q *
+1.Bf2 Bxf2 2.b8=Q *
 
 [Event "Event 220"]
 [Site "Site"]
@@ -2635,8 +2854,9 @@ Deflection: 1.Bf2 1... Bxf2 2.b8=Q *
 [Result "*"]
 [FEN "K7/BP6/2k5/8/8/8/7b/8 w - - 0 1"]
 [Question "Endgame 220: white to move"]
+[Theme "Push-Of"] 
 
-Push-Off 1: 1.Bb8 1... Bg1 2.Bg3 *
+1.Bb8 Bg1 2.Bg3 *
 
 [Event "Event 221"]
 [Site "Site"]
@@ -2647,8 +2867,9 @@ Push-Off 1: 1.Bb8 1... Bg1 2.Bg3 *
 [Result "*"]
 [FEN "1K6/1bPB4/1k6/8/8/8/8/8 w - - 0 1"]
 [Question "Endgame 221: white to move"]
+[Theme "Zugzwan"] 
 
-Zugzwang 1: 1.Bb5 1... Kxb5 2.Kxb7 *
+1.Bb5 Kxb5 2.Kxb7 *
 
 [Event "Event 222"]
 [Site "Site"]
@@ -2659,8 +2880,9 @@ Zugzwang 1: 1.Bb5 1... Kxb5 2.Kxb7 *
 [Result "*"]
 [FEN "2KB4/1P6/2k5/8/8/8/7b/8 w - - 0 1"]
 [Question "Endgame 222: white to move"]
+[Theme "Centurini"] 
 
-Centurini: 1.Bh4 1... Kb6 2.Bf2+ 2... Ka6 3.Bc5 3... Bg3 4.Be7 4... Kb6 5.Bd8+ 5... Kc6 6.Bh4 6... Bh2 7.Bf2 7... Kb5 8.Ba7 8... Ka6 9.Bb8 9... Bg1 10.Bg3 10... Ba7 11.Bf2 11... Bxf2 12.b8=Q *
+1.Bh4 Kb6 2.Bf2+ Ka6 3.Bc5 Bg3 4.Be7 Kb6 5.Bd8+ Kc6 6.Bh4 Bh2 7.Bf2 Kb5 8.Ba7 Ka6 9.Bb8 Bg1 10.Bg3 Ba7 11.Bf2 Bxf2 12.b8=Q *
 
 [Event "Event 223"]
 [Site "Site"]
@@ -2671,8 +2893,9 @@ Centurini: 1.Bh4 1... Kb6 2.Bf2+ 2... Ka6 3.Bc5 3... Bg3 4.Be7 4... Kb6 5.Bd8+ 5
 [Result "*"]
 [FEN "1B6/1K6/P7/1k6/8/4b3/8/8 w - - 0 1"]
 [Question "Endgame 223: white to move"]
+[Theme "Push-Off 2"] 
 
-Push-Off 2: 1.Ba7 1... Bf4 2.Bf2 2... Bb8 3.Bg3 3... Bxg3 4.a7 *
+1.Ba7 Bf4 2.Bf2 Bb8 3.Bg3 Bxg3 4.a7 *
 
 [Event "Event 224"]
 [Site "Site"]
@@ -2683,8 +2906,9 @@ Push-Off 2: 1.Ba7 1... Bf4 2.Bf2 2... Bb8 3.Bg3 3... Bxg3 4.a7 *
 [Result "*"]
 [FEN "8/4K3/8/3b4/1p6/2k5/8/3B4 w - - 0 1"]
 [Question "Endgame 224: white to move"]
+[Theme "Rear Defense"] 
 
-Rear Defense: 1.Kd6 1... Bb3 2.Bg4 2... Kb2 3.Kc5 3... Ka3 4.Kb6 4... Bf7 5.Bd1 5... Be8 6.Ka5 6... Bf7 7.Bc2 7... Bb3 8.Bf5 8... Ba4 9.Be6 9... Bc2 10.Bf7 10... Bb1 11.Be6 11... Ba2 12.Bxa2 12... Kxa2 13.Kxb4 *
+1.Kd6 Bb3 2.Bg4 Kb2 3.Kc5 Ka3 4.Kb6 Bf7 5.Bd1 Be8 6.Ka5 Bf7 7.Bc2 Bb3 8.Bf5 Ba4 9.Be6 Bc2 10.Bf7 Bb1 11.Be6 Ba2 12.Bxa2 Kxa2 13.Kxb4 *
 
 [Event "Event 225"]
 [Site "Site"]
@@ -2695,8 +2919,9 @@ Rear Defense: 1.Kd6 1... Bb3 2.Bg4 2... Kb2 3.Kc5 3... Ka3 4.Kb6 4... Bf7 5.Bd1 
 [Result "*"]
 [FEN "2b5/8/1K6/PB6/1k6/8/8/8 w - - 0 1"]
 [Question "Endgame 225: white to move"]
+[Theme "Zugzwang 2"] 
 
-Zugzwang 2: 1.Bc6 1... Kc4 2.Bb7 2... Bg4 3.a6 *
+1.Bc6 Kc4 2.Bb7 Bg4 3.a6 *
 
 [Event "Event 226"]
 [Site "Site"]
@@ -2707,8 +2932,9 @@ Zugzwang 2: 1.Bc6 1... Kc4 2.Bb7 2... Bg4 3.a6 *
 [Result "*"]
 [FEN "8/8/5b2/3kp3/3p4/5K2/8/5B2 w - - 0 1"]
 [Question "Endgame 226: white to move"]
+[Theme "Bishops of Opposite Colors"] 
 
-Bishops of Opposite Colors: 1.Bd3 *
+1.Bd3 *
 
 [Event "Event 227"]
 [Site "Site"]
@@ -2719,8 +2945,9 @@ Bishops of Opposite Colors: 1.Bd3 *
 [Result "*"]
 [FEN "8/8/8/3k4/4b3/pp6/3B4/2K5 w - - 0 1"]
 [Question "Endgame 227: white to move"]
+[Theme "Stopping the Advance"] 
 
-Stopping the Advance: 1.Bc3 1... b2+ 2.Bxb2 2... axb2+ 3.Kxb2 *
+1.Bc3 b2+ 2.Bxb2 axb2+ 3.Kxb2 *
 
 [Event "Event 228"]
 [Site "Site"]
@@ -2731,8 +2958,9 @@ Stopping the Advance: 1.Bc3 1... b2+ 2.Bxb2 2... axb2+ 3.Kxb2 *
 [Result "*"]
 [FEN "2k5/8/1PPb4/1K6/8/8/2B5/8 w - - 0 1"]
 [Question "Endgame 228: white to move"]
+[Theme "Outflanking"] 
 
-Outflanking: 1.Bf5+ 1... Kb8 2.Kc4 2... Bg3 3.Kd5 3... Bf4 4.Ke6 4... Kc8 5.Ke7+ 5... Kb8 6.Kd7 6... Bg3 7.c7+ *
+1.Bf5+ Kb8 2.Kc4 Bg3 3.Kd5 Bf4 4.Ke6 Kc8 5.Ke7+ Kb8 6.Kd7 Bg3 7.c7+ *
 
 [Event "Event 229"]
 [Site "Site"]
@@ -2743,8 +2971,9 @@ Outflanking: 1.Bf5+ 1... Kb8 2.Kc4 2... Bg3 3.Kd5 3... Bf4 4.Ke6 4... Kc8 5.Ke7+
 [Result "*"]
 [FEN "8/1NKPkn2/8/8/8/8/8/8 w - - 0 1"]
 [Question "Endgame 229: white to move"]
+[Theme "Deflection"] 
 
-Deflection: 1.Nd6 1... Nxd6 2.d8=Q+ *
+1.Nd6 Nxd6 2.d8=Q+ *
 
 [Event "Event 230"]
 [Site "Site"]
@@ -2755,8 +2984,9 @@ Deflection: 1.Nd6 1... Nxd6 2.d8=Q+ *
 [Result "*"]
 [FEN "8/8/8/8/2n5/8/2kpK1N1/8 w - - 0 1"]
 [Question "Endgame 230: white to move"]
+[Theme "Reduction"] 
 
-Reduction: 1.Ne1+ 1... Kc1 2.Nd3+ 2... Kc2 3.Ne1+ 3... Kc3 4.Nf3 4... Kc2 5.Nxd2 *
+1.Ne1+ Kc1 2.Nd3+ Kc2 3.Ne1+ Kc3 4.Nf3 Kc2 5.Nxd2 *
 
 [Event "Event 231"]
 [Site "Site"]
@@ -2767,8 +2997,9 @@ Reduction: 1.Ne1+ 1... Kc1 2.Nd3+ 2... Kc2 3.Ne1+ 3... Kc3 4.Nf3 4... Kc2 5.Nxd2
 [Result "*"]
 [FEN "B2n4/2KPk3/8/8/8/8/8/8 w - - 0 1"]
 [Question "Endgame 231: white to move"]
+[Theme "Corralling"] 
 
-Corralling 1: 1.Bd5 1... Nf7 2.Bxf7 2... Kxf7 3.d8=Q *
+1.Bd5 Nf7 2.Bxf7 Kxf7 3.d8=Q *
 
 [Event "Event 232"]
 [Site "Site"]
@@ -2779,8 +3010,9 @@ Corralling 1: 1.Bd5 1... Nf7 2.Bxf7 2... Kxf7 3.d8=Q *
 [Result "*"]
 [FEN "7k/5Bn1/6P1/8/8/6K1/8/8 w - - 0 1"]
 [Question "Endgame 232: white to move"]
+[Theme "Encirclement"] 
 
-Encirclement: 1.Kg4 1... Ne6 2.Bxe6 2... Kg7 3.Kg5 3... Kh8 4.Bd7 4... Kg7 5.Kf5 5... Kg8 6.Kf6 6... Kh8 7.g7+ 7... Kh7 8.Be6 8... Kh6 9.g8=Q 9... Kh5 10.Qh8# *
+1.Kg4 Ne6 2.Bxe6 Kg7 3.Kg5 Kh8 4.Bd7 Kg7 5.Kf5 Kg8 6.Kf6 Kh8 7.g7+ Kh7 8.Be6 Kh6 9.g8=Q Kh5 10.Qh8# *
 
 [Event "Event 233"]
 [Site "Site"]
@@ -2791,8 +3023,9 @@ Encirclement: 1.Kg4 1... Ne6 2.Bxe6 2... Kg7 3.Kg5 3... Kh8 4.Bd7 4... Kg7 5.Kf5
 [Result "*"]
 [FEN "5n2/4K3/3P4/2k5/8/5B2/8/8 w - - 0 1"]
 [Question "Endgame 233: white to move"]
+[Theme "Zugzwang 3"] 
 
-Zugzwang 3: 1.Be4 1... Kd4 2.Kxf8 2... Kxe4 3.d7 *
+1.Be4 Kd4 2.Kxf8 Kxe4 3.d7 *
 
 [Event "Event 234"]
 [Site "Site"]
@@ -2803,8 +3036,9 @@ Zugzwang 3: 1.Be4 1... Kd4 2.Kxf8 2... Kxe4 3.d7 *
 [Result "*"]
 [FEN "8/8/8/2b5/8/1kpK4/6N1/8 w - - 0 1"]
 [Question "Endgame 234: white to move"]
+[Theme "Blockade"] 
 
-Blockade: 1.Ne1 1... Bf2 2.Nc2 2... Bb6 3.Ne1 3... Bc5 4.Nc2 4... Bf2 5.Na3 *
+1.Ne1 Bf2 2.Nc2 Bb6 3.Ne1 Bc5 4.Nc2 Bf2 5.Na3 *
 
 [Event "Event 235"]
 [Site "Site"]
@@ -2815,8 +3049,9 @@ Blockade: 1.Ne1 1... Bf2 2.Nc2 2... Bb6 3.Ne1 3... Bc5 4.Nc2 4... Bf2 5.Na3 *
 [Result "*"]
 [FEN "6K1/8/8/n7/8/8/BP6/4k3 w - - 0 1"]
 [Question "Endgame 235: white to move"]
+[Theme "Corralling 2"] 
 
-Corralling 2: 1.Bd5 1... Kd2 2.b4 2... Nb7 3.Bxb7 3... Kc3 4.b5 4... Kb4 5.Ba6 5... Kc5 6.Kf7 6... Kb6 7.Ke7 7... Kc7 8.Ke8 8... Kb8 9.Kd8 9... Ka8 10.Kc7 10... Ka7 11.Bc8 11... Ka8 12.Bb7+ 12... Ka7 13.b6# *
+1.Bd5 Kd2 2.b4 Nb7 3.Bxb7 Kc3 4.b5 Kb4 5.Ba6 Kc5 6.Kf7 Kb6 7.Ke7 Kc7 8.Ke8 Kb8 9.Kd8 Ka8 10.Kc7 Ka7 11.Bc8 Ka8 12.Bb7+ Ka7 13.b6# *
 
 [Event "Event 236"]
 [Site "Site"]
@@ -2827,8 +3062,9 @@ Corralling 2: 1.Bd5 1... Kd2 2.b4 2... Nb7 3.Bxb7 3... Kc3 4.b5 4... Kb4 5.Ba6 5
 [Result "*"]
 [FEN "8/8/8/8/n2B4/8/p7/1k1K4 w - - 0 1"]
 [Question "Endgame 236: white to move"]
+[Theme "Corner Retreat"] 
 
-Corner Retreat: 1.Ba1 1... Nb2+ 2.Kd2 2... Nc4+ 3.Kd1 3... Kxa1 4.Kc2 4... Ne3+ 5.Kc1 5... Nd1 6.Kc2 6... Nc3 7.Kc1 7... Ne2+ 8.Kc2 8... Nd4+ 9.Kc1 9... Nb3+ 10.Kc2 10... Nd2 11.Kc1 *
+1.Ba1 Nb2+ 2.Kd2 Nc4+ 3.Kd1 Kxa1 4.Kc2 Ne3+ 5.Kc1 Nd1 6.Kc2 Nc3 7.Kc1 Ne2+ 8.Kc2 Nd4+ 9.Kc1 Nb3+ 10.Kc2 Nd2 11.Kc1 *
 
 [Event "Event 237"]
 [Site "Site"]
@@ -2839,8 +3075,9 @@ Corner Retreat: 1.Ba1 1... Nb2+ 2.Kd2 2... Nc4+ 3.Kd1 3... Kxa1 4.Kc2 4... Ne3+ 
 [Result "*"]
 [FEN "8/1K1P4/8/b7/3N4/3k4/8/8 w - - 0 1"]
 [Question "Endgame 237: white to move"]
+[Theme "Driving Off"] 
 
-Driving Off: 1.Nc6 *
+1.Nc6 *
 
 [Event "Event 238"]
 [Site "Site"]
@@ -2851,8 +3088,9 @@ Driving Off: 1.Nc6 *
 [Result "*"]
 [FEN "2N5/8/P7/1K1k4/3b4/8/8/8 w - - 0 1"]
 [Question "Endgame 238: white to move"]
+[Theme "Block Out"] 
 
-Block Out: 1.Nb6+ 1... Bxb6 2.Kxb6 2... Kd6 3.a7 *
+1.Nb6+ Bxb6 2.Kxb6 Kd6 3.a7 *
 
 [Event "Event 239"]
 [Site "Site"]
@@ -2863,6 +3101,7 @@ Block Out: 1.Nb6+ 1... Bxb6 2.Kxb6 2... Kd6 3.a7 *
 [Result "*"]
 [FEN "8/8/8/2PK4/4N3/8/7b/7k w - - 0 1"]
 [Question "Endgame 239: white to move"]
+[Theme "Convoy"] 
 
-Convoy: 1.Nd6 1... Bg1 2.c6 2... Bb6 3.Ke6 3... Bc7 4.Kd7 4... Bb8 5.Ne8 5... Kg2 6.Nc7 6... Ba7 7.Na6 7... Bb6 8.Nc5 8... Kf3 9.Na4 9... Ba5 10.Nb2 10... Ke4 11.Nc4 *
+1.Nd6 Bg1 2.c6 Bb6 3.Ke6 Bc7 4.Kd7 Bb8 5.Ne8 Kg2 6.Nc7 Ba7 7.Na6 Bb6 8.Nc5 Kf3 9.Na4 Ba5 10.Nb2 Ke4 11.Nc4 *
 
