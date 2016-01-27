@@ -1,0 +1,252 @@
+[Event "Event 1"]
+[Site "Site"]
+[Date "1-1-2000"]
+[Round "Round"]
+[White "white"]
+[Black "black"]
+[Result "*"]
+[FEN "8/6k1/8/8/8/1R5K/7R/8 w KQkq - 0 1"]
+[Question "white mates in 4"]
+
+{ null } *
+
+[Event "Event 2"]
+[Site "Site"]
+[Date "1-1-2000"]
+[Round "Round"]
+[White "white"]
+[Black "black"]
+[Result "*"]
+[FEN "7k/8/8/8/8/8/2R3Q1/K7 w KQkq - 0 1"]
+[Question "evaluate 1.Rc7"]
+
+{ null } *
+
+[Event "Event 3"]
+[Site "Site"]
+[Date "1-1-2000"]
+[Round "Round"]
+[White "white"]
+[Black "black"]
+[Result "*"]
+[FEN "8/8/8/3k4/7R/5K2/8/8 w KQkq - 0 1"]
+[Question "white to trap enemy king in smallest box"]
+
+{ null } *
+
+[Event "Event 4"]
+[Site "Site"]
+[Date "1-1-2000"]
+[Round "Round"]
+[White "white"]
+[Black "black"]
+[Result "*"]
+[FEN "1k6/7R/2K5/8/8/8/8/8 w KQkq - 0 1"]
+[Question "white mates in 3"]
+
+{ null } *
+
+[Event "Event 5"]
+[Site "Site"]
+[Date "1-1-2000"]
+[Round "Round"]
+[White "white"]
+[Black "black"]
+[Result "*"]
+[FEN "4k3/8/3K1p2/8/8/2Q5/8/8 w KQkq - 0 1"]
+[Question "evaluate 1.Qxf6"]
+
+{ null } *
+
+[Event "Event 6"]
+[Site "Site"]
+[Date "1-1-2000"]
+[Round "Round"]
+[White "white"]
+[Black "black"]
+[Result "*"]
+[FEN "k7/6R1/1K6/8/8/8/8/8 w KQkq - 0 1"]
+[Question "white mates in 1"]
+
+{ null } *
+
+[Event "Event 7"]
+[Site "Site"]
+[Date "1-1-2000"]
+[Round "Round"]
+[White "white"]
+[Black "black"]
+[Result "*"]
+[FEN "k7/8/1K1b4/8/8/8/1Q6/8 w - - 0 0"]
+[Question "win with white"]
+
+{ null } *
+
+[Event "Event 8"]
+[Site "Site"]
+[Date "1-1-2000"]
+[Round "Round"]
+[White "white"]
+[Black "black"]
+[Result "*"]
+[FEN "8/8/2Q5/8/2nk4/8/5K2/8 w - - 0 0"]
+[Question "evaluate 1.Kf3"]
+
+{ null } *
+
+[Event "Event 9"]
+[Site "Site"]
+[Date "1-1-2000"]
+[Round "Round"]
+[White "white"]
+[Black "black"]
+[Result "*"]
+[FEN "8/3k4/3P4/3K4/8/8/8/8 w - - 0 0"]
+[Question "black to move and draw"]
+
+{ null } *
+
+[Event "Event 10"]
+[Site "Site"]
+[Date "1-1-2000"]
+[Round "Round"]
+[White "white"]
+[Black "black"]
+[Result "*"]
+[FEN "8/7k/7P/7K/8/8/8/8 w - - 0 0"]
+[Question "which move(s) draw for black?"]
+
+{ null } *
+
+[Event "Event 11"]
+[Site "Site"]
+[Date "1-1-2000"]
+[Round "Round"]
+[White "white"]
+[Black "black"]
+[Result "*"]
+[FEN "8/8/8/2N5/3N4/k1K5/8/8 w - - 0 0"]
+[Question "can white win?"]
+
+{ null } *
+
+[Event "Event 12"]
+[Site "Site"]
+[Date "1-1-2000"]
+[Round "Round"]
+[White "white"]
+[Black "black"]
+[Result "*"]
+[FEN "8/8/8/6P1/8/5K2/1r6/k7 w - - 0 0"]
+[Question "black to move"]
+
+{ null } *
+
+[Event "Event 13"]
+[Site "Site"]
+[Date "1-1-2000"]
+[Round "Round"]
+[White "white"]
+[Black "black"]
+[Result "*"]
+[FEN "8/8/2N5/8/8/p7/8/k1K5 w - - 0 0"]
+[Question "white to move, win or draw?"]
+
+{ null } *
+
+[Event "Event 14"]
+[Site "Site"]
+[Date "1-1-2000"]
+[Round "Round"]
+[White "white"]
+[Black "black"]
+[Result "*"]
+[FEN "1k6/1P6/2K5/5p1p/5PpP/6P1/8/8 w - - 0 0"]
+[Question "white to move and win"]
+
+{ null } *
+
+[Event "Event 15"]
+[Site "Site"]
+[Date "1-1-2000"]
+[Round "Round"]
+[White "white"]
+[Black "black"]
+[Result "*"]
+[FEN "8/8/8/8/8/p2K4/k3N3/8 w - - 0 0"]
+[Question "evaluate the position, white to move"]
+
+{ null } *
+
+[Event "Event 16"]
+[Site "Site"]
+[Date "1-1-2000"]
+[Round "Round"]
+[White "white"]
+[Black "black"]
+[Result "*"]
+[FEN "8/3k4/8/3K4/3P4/8/8/8 w - - 0 0"]
+[Question "who wins?"]
+
+{ null } *
+
+[Event "Event 17"]
+[Site "Site"]
+[Date "1-1-2000"]
+[Round "Round"]
+[White "white"]
+[Black "black"]
+[Result "*"]
+[FEN "8/8/1k6/8/1K6/8/1P6/8 w - - 0 0"]
+[Question "who wins?"]
+
+{ null } *
+
+[Event "Event 18"]
+[Site "Site"]
+[Date "1-1-2000"]
+[Round "Round"]
+[White "white"]
+[Black "black"]
+[Result "*"]
+[FEN "8/8/8/2N5/3N4/k1K5/8/8 w - - 0 0"]
+[Question "can white win?"]
+
+{ null } *
+
+[Event "Event 19"]
+[Site "Site"]
+[Date "1-1-2000"]
+[Round "Round"]
+[White "white"]
+[Black "black"]
+[Result "*"]
+[FEN "8/8/k7/5p2/PK3P2/8/8/8 w - - 0 0"]
+[Question "black to move, who wins?"]
+
+{ null } *
+
+[Event "Event 20"]
+[Site "Site"]
+[Date "1-1-2000"]
+[Round "Round"]
+[White "white"]
+[Black "black"]
+[Result "*"]
+[FEN "8/8/5pk1/5r2/R7/5K2/8/8 w - - 0 0"]
+[Question "after 1.Rf4, what is better for black? 1..Rxf4 or 1..Kg5"]
+
+{ null } *
+
+[Event "Event 21"]
+[Site "Site"]
+[Date "1-1-2000"]
+[Round "Round"]
+[White "white"]
+[Black "black"]
+[Result "*"]
+[FEN "8/8/8/p7/6p1/2N4k/5p1P/6K1 w - - 0 0"]
+[Question "white's in check, is he lost?"]
+
+{ null } *
+
