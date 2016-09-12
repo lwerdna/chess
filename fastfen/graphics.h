@@ -1,5 +1,5 @@
 /* XPM */
-static const char *bdd__[] = {
+const char *bdd__[] = {
 /* columns rows colors chars-per-pixel */
 "64 64 84 1",
 "  c #00B400AC009E",
@@ -153,7 +153,7 @@ static const char *bdd__[] = {
 "YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY"
 };
 /* XPM */
-static const char *bdl__[] = {
+const char *bdl__[] = {
 /* columns rows colors chars-per-pixel */
 "64 64 103 2",
 "   c #00BF00B700AA",
@@ -326,7 +326,7 @@ static const char *bdl__[] = {
 "O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.X.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O."
 };
 /* XPM */
-static const char *bld__[] = {
+const char *bld__[] = {
 /* columns rows colors chars-per-pixel */
 "64 64 94 2",
 "   c #0070006D0068",
@@ -490,7 +490,7 @@ static const char *bld__[] = {
 "W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W W "
 };
 /* XPM */
-static const char *bll__[] = {
+const char *bll__[] = {
 /* columns rows colors chars-per-pixel */
 "64 64 108 2",
 "   c #00730070006B",
@@ -668,7 +668,7 @@ static const char *bll__[] = {
 "#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#.#."
 };
 /* XPM */
-static const char *dsq__[] = {
+const char *dsq__[] = {
 /* columns rows colors chars-per-pixel */
 "64 64 1 1",
 "  c #D9D9CCCCB7B7",
@@ -739,7 +739,7 @@ static const char *dsq__[] = {
 "                                                                "
 };
 /* XPM */
-static const char *kdd__[] = {
+const char *kdd__[] = {
 /* columns rows colors chars-per-pixel */
 "64 64 91 1",
 "  c #00B300B100AE",
@@ -900,7 +900,7 @@ static const char *kdd__[] = {
 "UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU"
 };
 /* XPM */
-static const char *kdl__[] = {
+const char *kdl__[] = {
 /* columns rows colors chars-per-pixel */
 "64 64 100 2",
 "   c #00B300B200AF",
@@ -1070,7 +1070,7 @@ static const char *kdl__[] = {
 "} } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } } "
 };
 /* XPM */
-static const char *kld__[] = {
+const char *kld__[] = {
 /* columns rows colors chars-per-pixel */
 "64 64 89 1",
 "  c #00C900C400BB",
@@ -1229,7 +1229,7 @@ static const char *kld__[] = {
 "UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU"
 };
 /* XPM */
-static const char *kll__[] = {
+const char *kll__[] = {
 /* columns rows colors chars-per-pixel */
 "64 64 105 2",
 "   c #00CE00CA00C0",
@@ -1404,7 +1404,7 @@ static const char *kll__[] = {
 "o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o.o."
 };
 /* XPM */
-static const char *lsq__[] = {
+const char *lsq__[] = {
 /* columns rows colors chars-per-pixel */
 "64 64 1 1",
 "  c #FFFFF1F1DADA",
@@ -1475,7 +1475,7 @@ static const char *lsq__[] = {
 "                                                                "
 };
 /* XPM */
-static const char *ndd__[] = {
+const char *ndd__[] = {
 /* columns rows colors chars-per-pixel */
 "64 64 108 2",
 "   c #009600900087",
@@ -1653,7 +1653,7 @@ static const char *ndd__[] = {
 "{ { { { { { { { { { { { { { { { { { { { { { { { { { { { { { { { { { { { { { { { { { { { { { { { { { { { { { { { { { { { { { { { "
 };
 /* XPM */
-static const char *ndl__[] = {
+const char *ndl__[] = {
 /* columns rows colors chars-per-pixel */
 "64 64 107 2",
 "   c #009F009A0090",
@@ -1830,7 +1830,7 @@ static const char *ndl__[] = {
 "@.@.@.@.@.@.@.@.@.@.@.@.@.@.@.@.@.@.@.@.@.@.@.@.@.@.@.@.@.@.@.@.@.O.@.@.@.@.@.@.@.@.@.@.@.@.@.@.@.@.@.@.@.@.@.@.@.@.@.@.@.@.@.@."
 };
 /* XPM */
-static const char *nld__[] = {
+const char *nld__[] = {
 /* columns rows colors chars-per-pixel */
 "64 64 102 2",
 "   c #00C700C100B8",
@@ -2002,7 +2002,7 @@ static const char *nld__[] = {
 ") ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) "
 };
 /* XPM */
-static const char *nll__[] = {
+const char *nll__[] = {
 /* columns rows colors chars-per-pixel */
 "64 64 105 2",
 "   c #00D200CD00C2",
@@ -2177,7 +2177,7 @@ static const char *nll__[] = {
 "X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X...X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X.X."
 };
 /* XPM */
-static const char *pdd__[] = {
+const char *pdd__[] = {
 /* columns rows colors chars-per-pixel */
 "64 64 164 2",
 "   c #000200020002",
@@ -2411,7 +2411,7 @@ static const char *pdd__[] = {
 "u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u.u."
 };
 /* XPM */
-static const char *pdl__[] = {
+const char *pdl__[] = {
 /* columns rows colors chars-per-pixel */
 "64 64 179 2",
 "   c #000300030002",
@@ -2660,7 +2660,7 @@ static const char *pdl__[] = {
 "n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n.n."
 };
 /* XPM */
-static const char *pld__[] = {
+const char *pld__[] = {
 /* columns rows colors chars-per-pixel */
 "64 64 245 2",
 "   c #000100010001",
@@ -2975,7 +2975,7 @@ static const char *pld__[] = {
 "[.[.[.[.[.[.[.[.[.[.[.[.[.[.[.[.[.[.[.[.[.[.[.[.[.[.[.[./.}.'.}.'.}.}.}./.}.'.}.[.[.[.[.[.[.[.[.[.[.[.[.[.[.[.[.[.[.[.[.[.[.[.[."
 };
 /* XPM */
-static const char *pll__[] = {
+const char *pll__[] = {
 /* columns rows colors chars-per-pixel */
 "64 64 85 1",
 "  c #007C0076006C",
@@ -3130,7 +3130,7 @@ static const char *pll__[] = {
 "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW"
 };
 /* XPM */
-static const char *qdd__[] = {
+const char *qdd__[] = {
 /* columns rows colors chars-per-pixel */
 "64 64 94 2",
 "   c #00A3009C0091",
@@ -3294,7 +3294,7 @@ static const char *qdd__[] = {
 "Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q Q "
 };
 /* XPM */
-static const char *qdl__[] = {
+const char *qdl__[] = {
 /* columns rows colors chars-per-pixel */
 "64 64 100 2",
 "   c #00B100AC00A0",
@@ -3464,7 +3464,7 @@ static const char *qdl__[] = {
 "| | | | | | | | | | | | | | | | | | | | | } | | | | | | | | | | | } | | | | | | | | | | | | | | | | | | | | | | | | | | } | | | "
 };
 /* XPM */
-static const char *qld__[] = {
+const char *qld__[] = {
 /* columns rows colors chars-per-pixel */
 "64 64 96 2",
 "   c #00AB00A6009E",
@@ -3630,7 +3630,7 @@ static const char *qld__[] = {
 "~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ "
 };
 /* XPM */
-static const char *qll__[] = {
+const char *qll__[] = {
 /* columns rows colors chars-per-pixel */
 "64 64 105 2",
 "   c #00AF00AB00A3",
@@ -3805,7 +3805,7 @@ static const char *qll__[] = {
 "O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.o.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.O.o.O.O.O.O.O.O.O."
 };
 /* XPM */
-static const char *rdd__[] = {
+const char *rdd__[] = {
 /* columns rows colors chars-per-pixel */
 "64 64 165 2",
 "   c #000400040004",
@@ -4040,7 +4040,7 @@ static const char *rdd__[] = {
 "9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9.9."
 };
 /* XPM */
-static const char *rdl__[] = {
+const char *rdl__[] = {
 /* columns rows colors chars-per-pixel */
 "64 64 171 2",
 "   c #000500040004",
@@ -4281,7 +4281,7 @@ static const char *rdl__[] = {
 "j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j.j."
 };
 /* XPM */
-static const char *rld__[] = {
+const char *rld__[] = {
 /* columns rows colors chars-per-pixel */
 "64 64 236 2",
 "   c #000100010001",
@@ -4587,7 +4587,7 @@ static const char *rld__[] = {
 "`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`.`."
 };
 /* XPM */
-static const char *rll__[] = {
+const char *rll__[] = {
 /* columns rows colors chars-per-pixel */
 "64 64 247 2",
 "   c #000100010001",

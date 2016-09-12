@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 
 #include <map>
@@ -29,6 +31,7 @@ extern "C" {
 ChessView::ChessView(int x_, int y_, int w, int h, const char *label): 
     Fl_Widget(x_, y_, w, h, label)
 {
+	fenSet("rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1");
 }
 
 void ChessView::setCallback(ChessView_callback cb)
@@ -51,8 +54,128 @@ void ChessView::clrCallback(void)
 /*****************************************************************************/
 void ChessView::draw(void)
 {
+	map<int,int> foo = {{1,1},{2,2},{3,3}};
+
+	map<char,int> bar = {{'a',1},{'b',2},{'c',3}};
+
+	const char *wtf = "hi there";
+	//map<int, const char *> baz = { {'R', wtf} };
+
+	/* map piece characters to images for DARK squares */
+	map<char,const char **> p2imgDark = {
+		{'R',rld__}, {'r',rdd__},
+		{'N',nld__}, {'n',ndd__},
+		{'B',bld__}, {'b',bdd__},
+		{'Q',qld__}, {'q',qdd__},
+		{'K',kld__}, {'k',kdd__},
+		{'P',pld__}, {'p',pdd__},
+		{'_',dsq__}
+	};
+
+	/* map piece characters to images for LIGHT squares */
+	map<char,const char **> p2imgLight = {
+		{'R',rll__}, {'r',rdl__},
+		{'N',nll__}, {'n',ndl__},
+		{'B',bll__}, {'b',bdl__},
+		{'Q',qll__}, {'q',qdl__},
+		{'K',kll__}, {'k',kdl__},
+		{'P',pll__}, {'p',pdl__},
+		{'_',lsq__}
+	};
+
+	/* active map */
+	map<char,const char **> lookup;
+
     fl_draw_box(FL_FLAT_BOX, x(), y(), w(), h(), fl_rgb_color(255, 0, 0));
-	fl_draw_pixmap(bdd__, 0, 0);
+	for(int rank=0; rank<8; ++rank) {
+		for(int file=0; file<8; ++file) {
+
+			if(rank==file || (rank>file && !((rank-file)%2)) || (file>rank && !((file-rank)%2)))
+				lookup = p2imgDark;
+			else
+				lookup = p2imgLight;
+
+			printf("trying to look up indices %d,%d and got %c\n", rank, file, boardArray[rank][file]);
+
+			const char **pixmapData = lookup[boardArray[rank][file]];
+			fl_draw_pixmap(pixmapData, file*64, rank*64);
+		}
+	}
+}
+
+void ChessView::fenSet(const char *fen)
+{
+	int rank=0, file=0;
+	bool breakLoop = false;
+
+	map<char,int> char2val = {
+		{'0',0}, {'1',1}, {'2',2}, {'3',3},
+		{'4',4}, {'5',5}, {'6',6}, {'7',7},
+		{'8',8}, {'9',9}
+	};
+
+	/* initialize board map to blanks */
+	for(int rank=0; rank<8; ++rank) {
+		for(int file=0; file<8; ++file) { 
+			boardArray[rank][file] = '_';
+		}
+	}
+
+	for(int i=0; i<strlen(fen) && !breakLoop; ++i) {
+		int advance = 0;
+		char advanceWith;
+		
+		switch(fen[i]) {
+			case 'r': case 'n': case 'b':
+			case 'q': case 'k': case 'p':
+			case 'R': case 'N': case 'B':
+			case 'Q': case 'K': case 'P':
+				advance = 1;
+				advanceWith = fen[i];
+				break;
+			case '0': case '1': case '2': case '3':
+			case '4': case '5': case '6': case '7':
+			case '8': case '9':
+				advance = char2val[fen[i]];
+				advanceWith = '_';
+				break;
+			case '/':
+				if(rank < 7) {
+					rank += 1;
+					file = 0;
+				}
+				else {
+					printf("ERROR: too many rows given\n");
+				}
+				break;
+			case ' ':
+				breakLoop = true;
+				break;
+			default:
+				printf("ERROR: unrecognized character %c", fen[i]);
+				while(0);	
+		}
+
+		for(int j=0; j<advance; ++j) {
+			if(file<8) {
+				printf("setting (rank,file)=(%d,%d) to %c\n", rank, file, advanceWith);
+				boardArray[rank][file] = advanceWith;
+				file += 1;
+			}
+			else {
+				// ERROR "too many columns given"
+			}
+		}
+	}
+
+	printf("Resulting board array:\n");
+	printf("----------------------\n");
+	for(int rank=0; rank<8; ++rank) {
+		for(int file=0; file<8; ++file) { 
+			printf("%c ", boardArray[rank][file]);
+		}
+		printf("\n");
+	}
 }
 
 int ChessView::handle(int event)
