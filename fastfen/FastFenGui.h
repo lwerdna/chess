@@ -3,13 +3,18 @@
 #ifndef FastFenGui_h
 #define FastFenGui_h
 #include <FL/Fl.H>
-#include "chessView.h"
+#include "Fl_Text_Display_Log.h"
+#include "ChessView.h"
 #include <FL/Fl_Double_Window.H>
+#include <FL/Fl_Output.H>
 
 class FastFenGui {
 public:
   Fl_Double_Window* make_window();
   Fl_Double_Window *mainWindow;
   ChessView *chessView;
+  Fl_Output *outFenInitial;
+  Fl_Output *outFenCurrent;
+  Fl_Text_Display_Log *log;
 };
 #endif

@@ -6,11 +6,12 @@ using namespace std;
 
 #include <FL/Fl_Widget.H>
 
-typedef void (*ChessView_callback)(int type, void *data);
+typedef void (*ChessView_callback)(void);
 
 class ChessView : public Fl_Widget {
 	bool shiftHeld = false;
-	int selRank=0, selFile=0;	
+	int selRank=0, selFile=0;
+	string remainder; // second half of fen (after piece info)
 
     public:
     ChessView(int X, int Y, int W, int H, const char *label=0);
@@ -21,7 +22,7 @@ class ChessView : public Fl_Widget {
 	/* fen stuff */
 	char boardArray[8][8];
 	void fenSet(const char *fen);
-	//void fenGet(string& fen)
+	void fenGet(string& fen);
 
 	/* draw helpers, function */
 	void pixCoordToRankFile(int xPix, int yPix, int& rank, int& file);

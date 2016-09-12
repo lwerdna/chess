@@ -34,8 +34,12 @@ FastFenGui *gui = NULL;
 /* chessView CALLBACK */
 /*****************************************************************************/
 
-void chessView_cb(int type, void *data)
+void chessView_cb(void)
 {
+	// something happened, refresh the junk!
+	string fen;
+	gui->chessView->fenGet(fen);
+	gui->outFenCurrent->value(fen.c_str());	
 
 }
 
@@ -61,6 +65,11 @@ onGuiFinished(FastFenGui *gui_, int argc, char **argv)
             //load_tags(argv[2]);
         }
     }
+
+	/* get from ChessView into our output */
+	string fen;
+	gui->chessView->fenGet(fen);
+	gui->outFenCurrent->value(fen.c_str());	
 
     rc = 0;
     //cleanup:

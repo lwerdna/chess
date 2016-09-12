@@ -73,7 +73,7 @@ void ChessView::draw(void)
 		{'Q',qld__}, {'q',qdd__},
 		{'K',kld__}, {'k',kdd__},
 		{'P',pld__}, {'p',pdd__},
-		{'_',dsq__}
+		{' ',dsq__}
 	};
 
 	/* map piece characters to images for LIGHT squares */
@@ -84,7 +84,7 @@ void ChessView::draw(void)
 		{'Q',qll__}, {'q',qdl__},
 		{'K',kll__}, {'k',kdl__},
 		{'P',pll__}, {'p',pdl__},
-		{'_',lsq__}
+		{' ',lsq__}
 	};
 
 	/* active map */
@@ -110,6 +110,37 @@ void ChessView::draw(void)
 	  fl_rgb_color(255, 0, 0));
 }
 
+void ChessView::fenGet(string &result)
+{
+	result = "";
+
+	for(int rank=0; rank<8; ++rank) {
+		for(int file=0; file<8; ++file) {
+			printf("boardArray[%d][%d] is %c\n", rank, file, boardArray[rank][file]);
+			if(boardArray[rank][file] == ' ') {
+				int start = file;
+				while(file<8) {
+					if(boardArray[rank][file]!=' ') break;
+					file++;
+				}
+				char buf[4];
+				sprintf(buf, "%d", file-start);
+				result += buf;
+				file--;
+			}
+			else {
+				result += boardArray[rank][file];
+			}
+			printf("result is now: %s\n", result.c_str());
+		}
+		result += '/';
+	}
+
+	/* and the remaining stuff */
+	result += ' ';
+	result += remainder;
+}
+
 void ChessView::fenSet(const char *fen)
 {
 	int rank=0, file=0;
@@ -124,7 +155,7 @@ void ChessView::fenSet(const char *fen)
 	/* initialize board map to blanks */
 	for(int rank=0; rank<8; ++rank) {
 		for(int file=0; file<8; ++file) { 
-			boardArray[rank][file] = '_';
+			boardArray[rank][file] = ' ';
 		}
 	}
 
@@ -144,7 +175,7 @@ void ChessView::fenSet(const char *fen)
 			case '4': case '5': case '6': case '7':
 			case '8': case '9':
 				advance = char2val[fen[i]];
-				advanceWith = '_';
+				advanceWith = ' ';
 				break;
 			case '/':
 				if(rank < 7) {
@@ -156,6 +187,7 @@ void ChessView::fenSet(const char *fen)
 				}
 				break;
 			case ' ':
+				remainder = string(fen+i+1);
 				breakLoop = true;
 				break;
 			default:
@@ -216,13 +248,17 @@ int ChessView::handle(int event)
 						case 'q': case 'k': case 'p':
 						case 'R': case 'N': case 'B':
 						case 'Q': case 'K': case 'P':
+						case ' ':
 							boardArray[selRank][selFile] = text[0];
 							rc = 1;
 					}
 				}
         }
 		/* new selection? new piece? redraw */
-		if(rc) redraw();
+		if(rc) {
+			redraw();
+			callback();
+		}
     }
     else
 	if(event == FL_RELEASE || event == FL_RELEASE) {
@@ -233,6 +269,7 @@ int ChessView::handle(int event)
 		//	mouseX, mouseY, selRank, selFile);
 		// with possible selection change, redraw()
 		redraw();
+		callback();
 	}
     return rc;
 }

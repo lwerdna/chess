@@ -14,6 +14,9 @@ ChessView.o: ChessView.cxx ChessView.h
 FastFenGui.o: FastFenGui.cxx FastFenGui.h
 	g++ $(CFLAGS) $(FLAGS_FLTK) $(FLAGS_DEBUG) -c FastFenGui.cxx
 
+Fl_Text_Display_Log.o: Fl_Text_Display_Log.cxx Fl_Text_Display_Log.h
+	g++ $(CFLAGS) $(FLAGS_FLTK) $(FLAGS_DEBUG) -c Fl_Text_Display_Log.cxx
+
 # LOGIC objects
 #
 FastFenLogic.o: FastFenLogic.cxx FastFenLogic.h
@@ -21,8 +24,8 @@ FastFenLogic.o: FastFenLogic.cxx FastFenLogic.h
 
 # LINK
 #
-FastFen: FastFenGui.o FastFenLogic.o ChessView.o Makefile
-	$(LINK) FastFenGui.o FastFenLogic.o ChessView.o -o fastfen $(LD_FLTK) -lautils
+FastFen: FastFenGui.o FastFenLogic.o ChessView.o Fl_Text_Display_Log.o Makefile
+	$(LINK) FastFenGui.o FastFenLogic.o ChessView.o Fl_Text_Display_Log.o -o fastfen $(LD_FLTK) -lautils
 
 # OTHER targets
 #

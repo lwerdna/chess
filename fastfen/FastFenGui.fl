@@ -5,7 +5,10 @@ code_name {.cxx}
 decl {\#include "FastFenLogic.h"} {private global
 } 
 
-decl {\#include "chessView.h"} {public global
+decl {\#include "Fl_Text_Display_Log.h"} {public global
+} 
+
+decl {\#include "ChessView.h"} {selected public global
 } 
 
 class FastFenGui {open
@@ -13,12 +16,24 @@ class FastFenGui {open
   Function {make_window()} {open
   } {
     Fl_Window mainWindow {
-      label FastFen open selected
-      xywh {332 169 512 512} type Double visible
+      label FastFen open
+      xywh {122 108 512 659} type Double visible
     } {
       Fl_Box chessView {
         xywh {0 0 512 512} box BORDER_BOX color 7 labeltype NO_LABEL
         class ChessView
+      }
+      Fl_Output outFenInitial {
+        label {initial:}
+        xywh {54 515 454 24}
+      }
+      Fl_Output outFenCurrent {
+        label {current:}
+        xywh {54 543 454 24}
+      }
+      Fl_Text_Display log {
+        xywh {4 571 504 83}
+        class Fl_Text_Display_Log
       }
     }
   }

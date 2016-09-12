@@ -4,7 +4,7 @@
 #include "FastFenLogic.h"
 
 Fl_Double_Window* FastFenGui::make_window() {
-  { mainWindow = new Fl_Double_Window(512, 512, "FastFen");
+  { mainWindow = new Fl_Double_Window(512, 659, "FastFen");
     mainWindow->user_data((void*)(this));
     { chessView = new ChessView(0, 0, 512, 512);
       chessView->box(FL_BORDER_BOX);
@@ -17,6 +17,21 @@ Fl_Double_Window* FastFenGui::make_window() {
       chessView->align(Fl_Align(FL_ALIGN_CENTER));
       chessView->when(FL_WHEN_RELEASE);
     } // ChessView* chessView
+    { outFenInitial = new Fl_Output(54, 515, 454, 24, "initial:");
+    } // Fl_Output* outFenInitial
+    { outFenCurrent = new Fl_Output(54, 543, 454, 24, "current:");
+    } // Fl_Output* outFenCurrent
+    { log = new Fl_Text_Display_Log(4, 571, 504, 83);
+      log->box(FL_DOWN_FRAME);
+      log->color(FL_BACKGROUND2_COLOR);
+      log->selection_color(FL_SELECTION_COLOR);
+      log->labeltype(FL_NORMAL_LABEL);
+      log->labelfont(0);
+      log->labelsize(14);
+      log->labelcolor(FL_FOREGROUND_COLOR);
+      log->align(Fl_Align(FL_ALIGN_TOP));
+      log->when(FL_WHEN_RELEASE);
+    } // Fl_Text_Display_Log* log
     mainWindow->end();
   } // Fl_Double_Window* mainWindow
   return mainWindow;
