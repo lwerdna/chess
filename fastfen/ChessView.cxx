@@ -28,6 +28,8 @@ extern "C" {
 
 #include "graphics.h"
 
+#define SQUARE_DIMENSION 64
+
 ChessView::ChessView(int x_, int y_, int w, int h, const char *label): 
     Fl_Widget(x_, y_, w, h, label)
 {
@@ -47,19 +49,21 @@ void ChessView::clrCallback(void)
 /*****************************************************************************/
 /* drawing helpers */
 /*****************************************************************************/
-
+void ChessView::pixCoordToRankFile(int xPix, int yPix, int& rank, int& file)
+{
+	int xx = xPix - x();
+	int yy = yPix - y();
+	rank = yy / SQUARE_DIMENSION;
+	file = xx / SQUARE_DIMENSION;
+}
 
 /*****************************************************************************/
 /* draw */
 /*****************************************************************************/
 void ChessView::draw(void)
 {
-	map<int,int> foo = {{1,1},{2,2},{3,3}};
-
-	map<char,int> bar = {{'a',1},{'b',2},{'c',3}};
-
-	const char *wtf = "hi there";
-	//map<int, const char *> baz = { {'R', wtf} };
+	int anchorX = x();
+	int anchorY = y();
 
 	/* map piece characters to images for DARK squares */
 	map<char,const char **> p2imgDark = {
@@ -86,21 +90,24 @@ void ChessView::draw(void)
 	/* active map */
 	map<char,const char **> lookup;
 
-    fl_draw_box(FL_FLAT_BOX, x(), y(), w(), h(), fl_rgb_color(255, 0, 0));
+	/* draw pieces */
 	for(int rank=0; rank<8; ++rank) {
 		for(int file=0; file<8; ++file) {
 
 			if(rank==file || (rank>file && !((rank-file)%2)) || (file>rank && !((file-rank)%2)))
-				lookup = p2imgDark;
-			else
 				lookup = p2imgLight;
-
-			printf("trying to look up indices %d,%d and got %c\n", rank, file, boardArray[rank][file]);
+			else
+				lookup = p2imgDark;
 
 			const char **pixmapData = lookup[boardArray[rank][file]];
-			fl_draw_pixmap(pixmapData, file*64, rank*64);
+			fl_draw_pixmap(pixmapData, anchorX+file*SQUARE_DIMENSION, anchorY+rank*SQUARE_DIMENSION);
 		}
 	}
+    
+	/* draw selection */
+	fl_draw_box(FL_BORDER_FRAME, anchorX+selFile*SQUARE_DIMENSION, 
+	  anchorY+selRank*SQUARE_DIMENSION, SQUARE_DIMENSION, SQUARE_DIMENSION, 
+	  fl_rgb_color(255, 0, 0));
 }
 
 void ChessView::fenSet(const char *fen)
@@ -158,7 +165,7 @@ void ChessView::fenSet(const char *fen)
 
 		for(int j=0; j<advance; ++j) {
 			if(file<8) {
-				printf("setting (rank,file)=(%d,%d) to %c\n", rank, file, advanceWith);
+				//printf("setting (rank,file)=(%d,%d) to %c\n", rank, file, advanceWith);
 				boardArray[rank][file] = advanceWith;
 				file += 1;
 			}
@@ -168,19 +175,18 @@ void ChessView::fenSet(const char *fen)
 		}
 	}
 
-	printf("Resulting board array:\n");
-	printf("----------------------\n");
-	for(int rank=0; rank<8; ++rank) {
-		for(int file=0; file<8; ++file) { 
-			printf("%c ", boardArray[rank][file]);
-		}
-		printf("\n");
-	}
+//	printf("Resulting board array:\n");
+//	printf("----------------------\n");
+//	for(int rank=0; rank<8; ++rank) {
+//		for(int file=0; file<8; ++file) { 
+//			printf("%c ", boardArray[rank][file]);
+//		}
+//		printf("\n");
+//	}
 }
 
 int ChessView::handle(int event)
 {
-    int x, y;
     int rc = 0; /* 0 if not used or understood, 1 if event was used and can be deleted */
 
 	int keyCode = Fl::event_key();
@@ -193,26 +199,41 @@ int ChessView::handle(int event)
     }
     else
     if(event == FL_KEYDOWN) {
-
         switch(keyCode) {
-            case FL_Shift_L:
-            case FL_Shift_R:
-                redraw();
-                break;
-
+            case FL_Up:
+				if(selRank>0) selRank--; rc=1; break;
+            case FL_Left:
+				if(selFile>0) selFile--; rc=1; break;
+            case FL_Right:
+				if(selFile<7) selFile++; rc=1; break;
+            case FL_Down:
+				if(selRank<7) selRank++; rc=1; break;
+			default:
+				if(Fl::event_length()==1) {
+					const char *text = Fl::event_text();
+					switch(text[0]) {
+						case 'r': case 'n': case 'b':
+						case 'q': case 'k': case 'p':
+						case 'R': case 'N': case 'B':
+						case 'Q': case 'K': case 'P':
+							boardArray[selRank][selFile] = text[0];
+							rc = 1;
+					}
+				}
         }
+		/* new selection? new piece? redraw */
+		if(rc) redraw();
     }
     else
-    if(event == FL_KEYUP) {
-        int keyCode = Fl::event_key();
-
-        switch(keyCode) {
-            case FL_Shift_L:
-            case FL_Shift_R:
-                break;
-        }
-    }
-
+	if(event == FL_RELEASE || event == FL_RELEASE) {
+		int mouseX = Fl::event_x() - x();
+		int mouseY = Fl::event_y() - y();
+		ChessView::pixCoordToRankFile(mouseX, mouseY, selRank, selFile);
+		//printf("translated click (%d,%d) to (rank,file)=(%d,%d)\n",
+		//	mouseX, mouseY, selRank, selFile);
+		// with possible selection change, redraw()
+		redraw();
+	}
     return rc;
 }
 
