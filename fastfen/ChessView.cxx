@@ -116,7 +116,7 @@ void ChessView::fenGet(string &result)
 
 	for(int rank=0; rank<8; ++rank) {
 		for(int file=0; file<8; ++file) {
-			printf("boardArray[%d][%d] is %c\n", rank, file, boardArray[rank][file]);
+			//printf("boardArray[%d][%d] is %c\n", rank, file, boardArray[rank][file]);
 			if(boardArray[rank][file] == ' ') {
 				int start = file;
 				while(file<8) {
@@ -131,9 +131,10 @@ void ChessView::fenGet(string &result)
 			else {
 				result += boardArray[rank][file];
 			}
-			printf("result is now: %s\n", result.c_str());
+			//printf("result is now: %s\n", result.c_str());
 		}
-		result += '/';
+
+		if(rank != 7) result += '/';
 	}
 
 	/* and the remaining stuff */
@@ -223,14 +224,20 @@ int ChessView::handle(int event)
 
 	int keyCode = Fl::event_key();
 
-    if(event == FL_FOCUS || event == FL_UNFOCUS) {
+    if(event == FL_FOCUS) {
         /* To receive FL_KEYBOARD events you must also respond to the FL_FOCUS
             and FL_UNFOCUS events by returning 1. */
-        //printf("I'm focused!\n");
-        rc = 1;
+		printf("got focus!\n");
+		rc = 1;
+	}
+	else
+	if(event == FL_UNFOCUS) {
+        printf("I'm UNfocused!\n");
+        rc = 0;
     }
     else
     if(event == FL_KEYDOWN) {
+		printf("keydown!\n");
         switch(keyCode) {
             case FL_Up:
 				if(selRank>0) selRank--; rc=1; break;

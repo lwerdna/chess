@@ -28,7 +28,51 @@ void tree_cb(Fl_Tree *, void *);
 
 /* globals */
 FastFenGui *gui = NULL;
+char * filePath = NULL;
 
+#define MAX_FEN_SIZE 1024
+void fenFromFile(char *path, string &fen)
+{
+	int fileSize = 0;
+	char buf[MAX_FEN_SIZE];
+	FILE *fp;
+	fen = "";
+	int i=0;
+
+	memset(buf, '\0', MAX_FEN_SIZE);
+
+	fp = fopen(path, "r");
+	fseek(fp, 0, SEEK_END);
+	fileSize = ftell(fp);
+	fseek(fp, 0, SEEK_SET);
+	
+	if(fileSize > MAX_FEN_SIZE) {
+		gui->log->append("ERROR: too large!");
+		return;
+	}
+
+	if(fread(buf, 1, fileSize, fp) != fileSize) {
+		gui->log->append("ERROR: fread()\n");
+		return;
+	}
+
+	// strip off left side
+	while(buf[i]==' ' || buf[i]=='\t')
+		i += 1;
+	// strip off right side
+	while(buf[strlen(buf)-1]==' ' || buf[strlen(buf)-1]=='\t')
+		buf[strlen(buf)-1] = '\0';
+	
+	// done
+	fen = string(buf+i);
+
+	cleanup:
+	if(fp) {
+		fclose(fp);
+		fp = NULL;
+	}
+	return;
+}
 
 /*****************************************************************************/
 /* chessView CALLBACK */
@@ -56,19 +100,25 @@ onGuiFinished(FastFenGui *gui_, int argc, char **argv)
     gui = gui_;
 
     gui->chessView->setCallback(chessView_cb);
+	
+	string fen;
 
     /* if command line parameter, open that */
     if(argc > 1) {
-        //file_load(argv[1]); 
+		filePath = argv[1];
 
-        if(argc > 2) {
-            //load_tags(argv[2]);
-        }
+		gui->log->append("loading from file: ");
+		gui->log->append(argv[1]);
+		gui->log->append("\n");
+        fenFromFile(argv[1], fen); 
+		gui->chessView->fenSet(fen.c_str());
     }
+	else {
+		gui->log->append("no file given, loading default fen");
+		gui->chessView->fenGet(fen);
+	}
 
-	/* get from ChessView into our output */
-	string fen;
-	gui->chessView->fenGet(fen);
+	gui->outFenInitial->value(fen.c_str());	
 	gui->outFenCurrent->value(fen.c_str());	
 
     rc = 0;
@@ -85,5 +135,21 @@ onIdle(void *data)
 void
 onExit(void)
 {
+	FILE *fp;
+	string fen;
     printf("onExit()\n");
+
+	if(!filePath) goto cleanup;
+
+	printf("writing back to: %s\n", filePath);
+	fp = fopen(filePath, "w");
+	if(!fp) goto cleanup;
+
+	gui->chessView->fenGet(fen);
+	printf("got final fen: %s\n", fen.c_str());
+	fprintf(fp, "%s", fen.c_str());
+	fclose(fp);
+
+	cleanup:
+	return;
 }
