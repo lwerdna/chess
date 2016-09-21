@@ -15,11 +15,13 @@ from reportlab.pdfgen import canvas
 
 class RlChessDiagram:
 	def __init__(self, canvas, maxWidth, maxHeight):
+		self.topBorderStr = u'\u00f9\u00fa\u00fa\u00fa\u00fa\u00fa\u00fa\u00fa\u00fa\u00fb'
+
 		# we draw the left border character (which includes the rank number), 
 		# eight squares, and then the right border character
 		self.widthInChessChars = 1+8+1
 
-		# we drop the top border character, the 8 squares in a file,
+		# we draw the top border character, the 8 squares in a file,
 		# and the bottom border character (which includes the file name)
 		self.heightInChessChars = 1+8+1
 
@@ -27,24 +29,22 @@ class RlChessDiagram:
 		self.maxHeight = maxHeight
 		self.canvas = canvas
 
+		# increase the font size until we surpass the limits, then decrement back
 		self.fontSize = 1 
-		testSize = 2
 		while 1:
-			canvas.setFont('ChessAlpha2', testSize)
+			canvas.setFont('ChessAlpha2', self.fontSize)
+			candidateWidth = canvas.stringWidth(self.topBorderStr)
 
-			if self.widthInChessChars * canvas.stringWidth(' ') > maxWidth:
+			if candidateWidth > maxWidth:
 				break
-			if testSize * self.heightInChessChars > maxHeight:
+			if self.fontSize * self.heightInChessChars > maxHeight:
 				break
+			self.fontSize += 1
+		self.fontSize -= 1
 
-			self.fontSize = testSize
-			#print "new font size is: %d" % self.fontSize
-			testSize += 1
-
-		# calculate max font size
+		# final calculations
 		canvas.setFont('ChessAlpha2', self.fontSize)
-		self.width = canvas.stringWidth("'") * self.widthInChessChars
-		self.height = self.fontSize * self.heightInChessChars
+		self.width = self.height = canvas.stringWidth(self.topBorderStr)
 
 	# input:
 	#   piece is a character representing the piece [pbnrqkPBNRQK]
@@ -158,6 +158,13 @@ class RlChessDiagram:
 		borderBot = u'\u00d9\u00f1\u00f2\u00f3\u00f4\u00f5\u00f6\u00f7\u00f8\u00db'
 		self.canvas.drawString(x, y, borderBot)
 
+		# print whose turn to move
+		self.canvas.setStrokeColorRGB(0,0,0)
+		charWidth = self.width / self.widthInChessChars
+		fill_ = {'b':1,'w':0}[activePlayer]
+		self.canvas.circle(xInit+charWidth/2, yInit+1.3*charWidth, charWidth/4, fill=fill_)
+
+
 	def __str__(self):
 		s = 'RlChessDiagram:'
 
@@ -216,4 +223,165 @@ def writeWithWrap(canvas, text, x, y, maxWidth, textHeight):
 		canvas.drawString(x, y, line) 
 		y -= textHeight
 
+# Calculate locations and sizes of diagrams per page.
+#
+# given:
+#   - canvas (where font will be drawn/measured)
+#   - total area for diagrams
+#   - desired spacing between diagrams
+#   - arrangement on the page, eg 2x3, etc.
+# return:
+#   - diagram width/height
+#   - locations of diagrams
+#
+def getDiagLayout(canvas, areaWidth, areaHeight, diagSpacing, arrangement):
+	diagWidthMax = None
+	diagHeightMax = None
+	diagLocations = []
+
+	if arrangement == '1x1':
+		# +-+
+		# | |
+		# +-+
+
+		# width is page width
+		diagWidthMax = areaWidth
+		diagHeightMax = areaHeight
+		diagram = RlChessDiagram(canvas, diagWidthMax, diagHeightMax)
+	
+		# center the diagram in the diagArea
+		x = (areaWidth - diagram.width)/2
+		y = (areaHeight - diagram.height)/2
+	
+		diagLocations.append([x,y])
+	
+	elif arrangement == '1x2':
+		# +-+
+		# | |
+		# +-+
+		#
+		# +-+
+		# | |
+		# +-+
+
+		# width is page width
+		diagWidthMax = areaWidth
+		diagHeightMax = (areaHeight - diagSpacing)/2
+		diagram = RlChessDiagram(canvas, diagWidthMax, diagHeightMax)
+		[diagWidthActual,diagHeightActual] = [diagram.width,diagram.height]	  
+ 
+		# deltaX = (areaWidth - diagram.width)/2 # to center it
+		deltaX = (areaWidth - diagram.height)/2
+		deltaY = (areaHeight - 2*diagram.height)/3
+	
+		x = deltaX 
+		y = deltaY
+	
+		diagLocations.append([x,y])
+		diagLocations.append([x,y + diagram.height + deltaY])
+	
+	elif arrangement == '2x2':
+		# +-+ +-+
+		# | | | |
+		# +-+ +-+
+		#
+		# +-+ +-+
+		# | | | |
+		# +-+ +-+
+
+		# width is page width minus inter diagram spacing
+		diagWidthMax = (areaWidth - diagSpacing) / 2
+		diagHeightMax = (areaHeight - diagSpacing) / 2
+		diagram = RlChessDiagram(canvas, diagWidthMax, diagHeightMax)
+		[diagWidthActual,diagHeightActual] = [diagram.width,diagram.height]	  
+	
+		deltaX = (areaWidth - 2*diagram.width)/3
+		deltaY = (areaHeight - 2*diagram.height)/3
+	
+		x = deltaX
+		y = deltaY 
+	
+		diagLocations.append([x,y])
+		diagLocations.append([x + diagram.width + deltaX, y])
+		diagLocations.append([x, y + diagram.height + deltaY])
+		diagLocations.append([x + diagram.width + deltaX, y + diagram.height + deltaY])
+	  
+	elif arrangement == '2x3':
+		# +-+ +-+
+		# | | | |
+		# +-+ +-+
+		#
+		# +-+ +-+
+		# | | | |
+		# +-+ +-+
+		#
+		# +-+ +-+
+		# | | | |
+		# +-+ +-+
+
+		# width is page width minus inter diagram spacing
+		diagWidthMax = (areaWidth - diagSpacing) / 2
+		diagHeightMax = (areaHeight - 2*diagSpacing) / 3
+		diagram = RlChessDiagram(canvas, diagWidthMax, diagHeightMax)
+		[diagWidthActual,diagHeightActual] = [diagram.width,diagram.height]	  
+	
+		deltaX = (areaWidth - 2*diagram.width)/3
+		deltaY = (areaHeight - 3*diagram.height)/4
+	
+		x = deltaX
+		y = deltaY 
+	
+		diagLocations.append([x + 0*diagram.width + 0*deltaX, y + 0*diagram.height + 0*deltaY])
+		diagLocations.append([x + 1*diagram.width + 1*deltaX, y + 0*diagram.height + 0*deltaY])
+	
+		diagLocations.append([x + 0*diagram.width + 0*deltaX, y + 1*diagram.height + 1*deltaY])
+		diagLocations.append([x + 1*diagram.width + 1*deltaX, y + 1*diagram.height + 1*deltaY])
+	
+		diagLocations.append([x + 0*diagram.width + 0*deltaX, y + 2*diagram.height + 2*deltaY])
+		diagLocations.append([x + 1*diagram.width + 1*deltaX, y + 2*diagram.height + 2*deltaY])
+	
+	elif arrangement == '3x3':
+		# +-+ +-+ +-+
+		# | | | | | |
+		# +-+ +-+ +-+
+		#
+		# +-+ +-+ +-+
+		# | | | | | |
+		# +-+ +-+ +-+
+		#
+		# +-+ +-+ +-+
+		# | | | | | |
+		# +-+ +-+ +-+
+
+		# width is page width minus inter diagram spacing
+		diagWidthMax = (areaWidth - 2*diagSpacing) / 3
+		diagHeightMax = (areaHeight - 2*diagSpacing) / 3
+		diagram = RlChessDiagram(canvas, diagWidthMax, diagHeightMax)
+		
+		diagWidthActual = diagram.width
+		diagHeightActual = diagram.height
+
+		x = (areaWidth - 3*diagram.width)/4
+		y = (areaHeight - 3*diagram.height)/4
+		d = diagWidthActual
+		
+		# top row	
+		diagLocations.append([x,         y])
+		diagLocations.append([x+d+x,     y])
+		diagLocations.append([x+d+x+d+x, y])
+	
+		# middle row
+		diagLocations.append([x,         y+d+y])
+		diagLocations.append([x+d+x,     y+d+y])
+		diagLocations.append([x+d+x+d+x, y+d+y])
+	
+		# bottom row
+		diagLocations.append([x,         y+d+y+d+y])
+		diagLocations.append([x+d+x,     y+d+y+d+y])
+		diagLocations.append([x+d+x+d+x, y+d+y+d+y])
+	
+	else:
+		raise Exception("unknown arrangement: %s" % arrangement)
+
+	return [diagWidthActual, diagHeightActual, diagLocations]
 
