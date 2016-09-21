@@ -1,0 +1,1501 @@
+[Event "1"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Basic mates"]
+[Black "queen"]
+[Result "*"]
+[SetUp "1"]
+[FEN "4k3/8/8/8/8/8/8/3QK3 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "2"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Basic mates"]
+[Black "rook"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/8/8/4k3/8/8/8/4K2R w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "3"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Basic mates"]
+[Black "two bishops"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/8/8/4k3/8/8/8/2B1KB2 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "4"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Basic mates"]
+[Black "knight and bishop"]
+[Result "*"]
+[SetUp "1"]
+[FEN "B6N/8/8/4k3/8/8/8/K7 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "5"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Basic mates"]
+[Black "two knights vs pawn"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/n4K2/P7/5k2/6n1/8/8/8 b - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "6"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "King and pawn vs king"]
+[Black "draw"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/8/4k3/4P3/4K3/8/8/8 b - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "7"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "King and pawn vs king"]
+[Black "attacking king on sixth rank"]
+[Result "*"]
+[SetUp "1"]
+[FEN "1k6/8/1K6/1P6/8/8/8/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "8"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "King and pawn vs king"]
+[Black "opposition"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/3k4/8/4K3/4P3/8/8/8 b - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "9"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "King and pawn vs king"]
+[Black "flank pawn"]
+[Result "*"]
+[SetUp "1"]
+[FEN "5k2/8/6K1/7P/8/8/8/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "10"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Pawn endings"]
+[Black "h+g vs h"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/6kp/8/6K1/6P1/8/7P/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "11"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Pawn endings"]
+[Black "fort with 2 vs 1"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/1k6/pP6/P1K5/8/8/8/8 b - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "12"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Pawn endings"]
+[Black "stalemate with 3 vs 3"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/8/p2k1K2/2p5/1pP5/1P6/P7/8 b - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "13"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Pawn endings"]
+[Black "floating square rule"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/6k1/6P1/7P/p1p5/8/1K6/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "14"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Pawn endings"]
+[Black "corresponding squares"]
+[Result "*"]
+[SetUp "1"]
+[FEN "2k5/8/p1P5/P2K4/8/8/8/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "15"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Pawn endings"]
+[Black "Bährs rule"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/8/4k3/p7/P3KP2/8/8/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "16"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Queen vs pawn"]
+[Black "winning method"]
+[Result "*"]
+[SetUp "1"]
+[FEN "2Q5/3K4/8/8/8/8/3kp3/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "17"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Queen vs pawn"]
+[Black "flank pawn"]
+[Result "*"]
+[SetUp "1"]
+[FEN "5Q2/8/8/1K6/8/8/pk6/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "18"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Queen vs pawn"]
+[Black "c-pawn"]
+[Result "*"]
+[SetUp "1"]
+[FEN "5Q2/8/8/1K6/8/8/1kp5/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "19"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Queen vs pawn"]
+[Black "h+g-pawn"]
+[Result "*"]
+[SetUp "1"]
+[FEN "7K/6P1/5q2/7P/8/1k6/8/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "20"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Queen vs rook"]
+[Black "Philidors position"]
+[Result "*"]
+[SetUp "1"]
+[FEN "1k6/1r6/2K5/Q7/8/8/8/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "21"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Queen vs rook"]
+[Black "second rank defence"]
+[Result "*"]
+[SetUp "1"]
+[FEN "2k5/4r3/1K6/3Q4/8/8/8/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "22"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Queen vs rook"]
+[Black "third rank defence"]
+[Result "*"]
+[SetUp "1"]
+[FEN "3k4/5Q2/1r6/3K4/8/8/8/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "23"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Queen vs rook and pawn"]
+[Black "winning method"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/4k3/3p4/4r3/5K2/3Q4/8/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "24"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Queen vs rook and pawn"]
+[Black "pawn on seventh rank"]
+[Result "*"]
+[SetUp "1"]
+[FEN "1Q6/3pk3/4r3/5K2/8/8/8/8 b - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "25"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Queen vs rook and pawn"]
+[Black "rook behind the pawn"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/4k3/4P3/8/8/4R3/3K4/7q w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "26"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Queen vs rook and pawn"]
+[Black "rook pawn on sixth rank"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/1k6/p7/1r6/2K5/Q7/8/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "27"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Queen vs rook and pawn"]
+[Black "rook pawn on seventh rank"]
+[Result "*"]
+[SetUp "1"]
+[FEN "6k1/7p/6r1/5K2/7Q/8/8/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "28"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Queen vs rook and pawn"]
+[Black "knight pawn"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/2k5/1p6/2r5/3K4/1Q6/8/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "29"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Queen + pawn vs rook + pawn"]
+[Black "f7 vs g-pawn"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/4kp2/4r3/6PK/8/8/7Q/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "30"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Queen + pawn vs rook + pawn"]
+[Black "g7 vs h-pawn"]
+[Result "*"]
+[SetUp "1"]
+[FEN "2Q5/4K1pk/5r2/7P/8/8/8/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "31"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Queen + pawn vs rook + pawn"]
+[Black "g7 vs f-pawn"]
+[Result "*"]
+[SetUp "1"]
+[FEN "5k2/1Q4p1/5r2/5PK1/8/8/8/8 b - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "32"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Queen + pawn vs rook + pawn"]
+[Black "f7 vs h-pawn"]
+[Result "*"]
+[SetUp "1"]
+[FEN "3Q4/5pk1/4r3/6KP/8/8/8/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "33"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Queen and pawn vs queen"]
+[Black "general rules"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/K7/8/8/5q2/8/2Q2pk1/8 b - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "34"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Queen and pawn vs queen"]
+[Black "g-pawn"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/K7/8/8/6q1/8/3Q2pk/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "35"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Rook and bishop vs rook"]
+[Black "Cochrane defence"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/6R1/8/8/r2BK2k/8/8/8 w - - 0 82"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "36"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Rook and bishop vs rook"]
+[Black "second rank defence"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/8/8/8/3bk3/7r/3RK3/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "37"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Rook and bishop vs rook"]
+[Black "Philidors position"]
+[Result "*"]
+[SetUp "1"]
+[FEN "3k4/4r3/3K4/3B4/8/8/8/5R2 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "38"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Rook and bishop vs rook"]
+[Black "Philidor position to the left"]
+[Result "*"]
+[SetUp "1"]
+[FEN "2k5/3r4/2K5/2B5/8/8/8/4R3 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "39"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Rook vs bishop"]
+[Black "correct corner"]
+[Result "*"]
+[SetUp "1"]
+[FEN "7k/R7/7K/8/8/1b6/8/8 b - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "40"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Rook vs bishop"]
+[Black "wrong corner"]
+[Result "*"]
+[SetUp "1"]
+[FEN "6k1/5R2/6K1/8/8/8/8/6b1 w - - 0 5"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "41"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Rook + pawn vs bishop"]
+[Black "f-pawn on sixth rank"]
+[Result "*"]
+[SetUp "1"]
+[FEN "5k2/1R6/5P2/4K3/2b5/8/8/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "42"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Rook + pawn vs bishop"]
+[Black "h-pawn and draw"]
+[Result "*"]
+[SetUp "1"]
+[FEN "7k/R7/7K/7P/8/3b4/8/8 b - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "43"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Rook + pawn vs bishop"]
+[Black "h-pawn and win"]
+[Result "*"]
+[SetUp "1"]
+[FEN "7k/R7/8/6K1/4b2P/8/8/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "44"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Rook + pawn vs bishop + pawn"]
+[Black "same file - win"]
+[Result "*"]
+[SetUp "1"]
+[FEN "5k2/1R6/4K3/8/5p2/4bP2/8/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "45"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Rook + pawn vs bishop + pawn"]
+[Black "same file - draw"]
+[Result "*"]
+[SetUp "1"]
+[FEN "6r1/8/8/6p1/6P1/3k1K2/8/2B5 b - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "46"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Rook + pawn vs bishop + pawn"]
+[Black "h-pawns, non-blocked"]
+[Result "*"]
+[SetUp "1"]
+[FEN "6k1/1R5p/4K3/7P/8/2b5/8/8 b - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "47"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Rook + pawn vs bishop + pawn"]
+[Black "g vs h-pawn"]
+[Result "*"]
+[SetUp "1"]
+[FEN "6k1/1R5p/8/6PK/8/b7/8/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "48"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Rook + pawn vs bishop + pawn"]
+[Black "blocked h-pawns"]
+[Result "*"]
+[SetUp "1"]
+[FEN "5r2/8/8/6Bp/4k2P/6K1/8/8 b - - 0 60"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "49"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Rook + pawn vs bishop + pawn"]
+[Black "2 p each - wrong corner"]
+[Result "*"]
+[SetUp "1"]
+[FEN "6k1/3R3p/6p1/8/8/2b2K2/6PP/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "50"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Rook + pawn vs bishop + pawn"]
+[Black "2 p each - correct corner"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/6k1/R6p/4K1p1/8/1b4P1/7P/8 b - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "51"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Rook vs knight"]
+[Black "draw"]
+[Result "*"]
+[SetUp "1"]
+[FEN "5R2/8/8/8/8/6K1/8/4n1k1 b - - 0 78"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "52"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Rook vs knight"]
+[Black "knight on h8"]
+[Result "*"]
+[SetUp "1"]
+[FEN "6kn/R7/7K/8/8/8/8/8 b - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "53"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Rook vs knight"]
+[Black "knight on b7"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/kn6/8/1K6/8/8/8/7R w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "54"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Rook + pawn vs knight + pawn"]
+[Black "adjacent files - draw"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/5k2/5p2/r7/4N1P1/5K2/8/8 w - - 0 55"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "55"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Rook + pawn vs knight + pawn"]
+[Black "the same file - draw"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/5k2/R4n2/6p1/6P1/4K3/8/8 w - - 0 70"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "56"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Rook + pawn vs knight + pawn"]
+[Black "the same file - win"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/5k2/R7/5p1n/5P2/4K3/8/8 b - - 0 69"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "57"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Bishop and pawn"]
+[Black "wrong rook pawn"]
+[Result "*"]
+[SetUp "1"]
+[FEN "7k/8/7P/5B1K/8/8/8/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "58"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Bishop and pawn"]
+[Black "theoretical fortress"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/6kB/6P1/5K2/8/8/8/8 b - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "59"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Bishop and pawn"]
+[Black "Rauzers line"]
+[Result "*"]
+[SetUp "1"]
+[FEN "3k4/8/3K4/1B6/7p/7P/8/8 b - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "60"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Opposite coloured bishop"]
+[Black "two passed pawns"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/3b1k2/8/4PP2/4K3/2B5/8/8 b - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "61"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Opposite coloured bishop"]
+[Black "drawing fort vs two pawns"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/3k4/3P1KP1/2B5/2b5/8/8/8 b - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "62"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Centurinis rule"]
+[Black "intro, 2 drawn positions"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/1K6/2P5/bk4B1/8/8/8/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "63"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Centurinis rule"]
+[Black "2 winning positions"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/K7/bP6/k4B2/8/8/8/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "64"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Centurinis rule"]
+[Black "2 winning positions - b7-pawn"]
+[Result "*"]
+[SetUp "1"]
+[FEN "2KB4/1P6/2k5/8/8/8/7b/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "65"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Centurinis rule"]
+[Black "pawn on f7 - Kg8/g6 or Ke8/e6"]
+[Result "*"]
+[SetUp "1"]
+[FEN "6K1/5P2/6k1/2b1B3/8/8/8/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "66"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Knight endings"]
+[Black "knight vs h-pawn"]
+[Result "*"]
+[SetUp "1"]
+[FEN "K7/8/8/8/8/7p/5k1N/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "67"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Knight endings"]
+[Black "h-pawn and king in the corner"]
+[Result "*"]
+[SetUp "1"]
+[FEN "N6K/4k2P/8/8/8/8/8/8 b - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "68"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Knight endings"]
+[Black "Horwitz win"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/P1K1k3/8/8/8/3N4/8/7b w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "69"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Unusual material"]
+[Black "rook and knight vs rook"]
+[Result "*"]
+[SetUp "1"]
+[FEN "6k1/8/6K1/6N1/8/8/5r2/4R3 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "70"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Unusual material"]
+[Black "queen vs two knights"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/6k1/5nn1/6Q1/8/4K3/8/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "71"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Unusual material"]
+[Black "queen vs two bishops"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/1k6/1bbQ4/8/1K6/8/8/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "72"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Unusual material"]
+[Black "queen vs bishop and knight"]
+[Result "*"]
+[SetUp "1"]
+[FEN "4K1k1/6b1/8/4n2Q/8/8/8/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "73"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Unusual material"]
+[Black "two bishops vs knight"]
+[Result "*"]
+[SetUp "1"]
+[FEN "5B2/1n6/1k6/3K4/B7/8/8/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "74"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Rook vs pawn(s)"]
+[Black "h-pawn, cutting of, bodycheck"]
+[Result "*"]
+[SetUp "1"]
+[FEN "6KR/8/pk6/8/8/8/8/8 b - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "75"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Rook vs pawn(s)"]
+[Black "drawing vs second rank pawns"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/8/5K2/7k/8/p7/1p6/1R6 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "76"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Rook vs pawn(s)"]
+[Black "3 pawns, rook from the side"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/4k3/R7/3p4/3Kp3/5p2/8/8 b - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "77"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Rook vs pawn(s)"]
+[Black "3 pawns, rook from behind"]
+[Result "*"]
+[SetUp "1"]
+[FEN "3R4/8/4k3/3p4/3Kp3/5p2/8/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "78"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Rook and pawn vs rook"]
+[Black "Philidors defence"]
+[Result "*"]
+[SetUp "1"]
+[FEN "4k3/7R/1r6/5K2/4P3/8/8/8 b - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "79"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Rook and pawn vs rook"]
+[Black "extra double pawn"]
+[Result "*"]
+[SetUp "1"]
+[FEN "3k4/6R1/7r/2KP4/3P4/8/8/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "80"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Rook and pawn vs rook"]
+[Black "Lucenas position"]
+[Result "*"]
+[SetUp "1"]
+[FEN "4K3/4P1k1/8/8/8/8/3r4/5R2 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "81"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Rook and pawn vs rook"]
+[Black "go to short side"]
+[Result "*"]
+[SetUp "1"]
+[FEN "4k3/7R/4K3/4P3/8/8/8/5r2 b - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "82"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Rook and pawn vs rook"]
+[Black "last rank defence, g-pawn"]
+[Result "*"]
+[SetUp "1"]
+[FEN "1r4k1/R7/6PK/8/8/8/8/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "83"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Rook and pawn vs rook"]
+[Black "last rank defence, f-pawn"]
+[Result "*"]
+[SetUp "1"]
+[FEN "1r4k1/R7/5PK1/8/8/8/8/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "84"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Rook and pawn vs rook"]
+[Black "h-pawn, king in front of"]
+[Result "*"]
+[SetUp "1"]
+[FEN "K7/P4k2/8/8/8/8/4R3/1r6 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "85"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Rook and pawn vs rook"]
+[Black "h-pawn, rook in front of"]
+[Result "*"]
+[SetUp "1"]
+[FEN "R7/6k1/P7/8/8/5K2/7P/r7 b - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "86"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "R+p vs R, king cut off"]
+[Black "pawn crossed the central line"]
+[Result "*"]
+[SetUp "1"]
+[FEN "2r5/8/4k3/2P5/2K5/8/8/3R4 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "87"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "R+p vs R, king cut off"]
+[Black "cut of one line"]
+[Result "*"]
+[SetUp "1"]
+[FEN "3r4/8/5k2/8/3P4/3K4/8/4R3 b - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "88"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "R+p vs R, king cut off"]
+[Black "cut of two lines"]
+[Result "*"]
+[SetUp "1"]
+[FEN "2r5/8/8/5k2/2P5/2K5/8/4R3 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "89"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "R+p vs R, king cut off"]
+[Black "¤-pawn, cut of three lines"]
+[Result "*"]
+[SetUp "1"]
+[FEN "1r6/8/8/5k2/1P6/1K6/8/4R3 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "90"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Rook and pawn vs rook"]
+[Black "¦-pawn, cut of three files"]
+[Result "*"]
+[SetUp "1"]
+[FEN "r7/8/8/4k3/P7/K7/8/3R4 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "91"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "R+p vs R, king cut off"]
+[Black "cut of sixth rank"]
+[Result "*"]
+[SetUp "1"]
+[FEN "2r5/8/7R/4k3/2P5/2K5/8/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "92"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "R+p vs R, king cut off"]
+[Black "cut of sixth rank, d-pawn"]
+[Result "*"]
+[SetUp "1"]
+[FEN "3r4/8/7R/5k2/3P4/3K4/8/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "93"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Rook endings"]
+[Black "4 vs 3, on the same side"]
+[Result "*"]
+[SetUp "1"]
+[FEN "3r4/5ppk/8/7p/4P3/5PP1/2R3KP/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "94"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Rook endings"]
+[Black "2 vs 1"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/4k3/4p3/8/3PPK2/8/1r6/R7 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "95"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Rook endings"]
+[Black "f+g vs h-pawn"]
+[Result "*"]
+[SetUp "1"]
+[FEN "5r2/8/R4ppk/8/6KP/8/8/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "96"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Rook endings"]
+[Black "h+g-pawns"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/8/r5kP/6P1/1R3K2/8/8/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "97"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Rook endings"]
+[Black "f+h-pawns"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/6k1/R7/1r5P/5PK1/8/8/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "98"]
+[Site "?"]
+[Date "1954.09.14"]
+[Round "3"]
+[White "Unzicker, Wolfgang"]
+[Black "Lundin, Erik"]
+[Result "1-0"]
+[ECO "C01"]
+[SetUp "1"]
+[FEN "R7/8/P4pp1/7p/4k2P/r5P1/4KP2/8 w - - 0 48"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ 1-0
+
+[Event "99"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Extra a-pawn"]
+[Black "Steckner's winning method"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/R4p2/P4kp1/7p/7P/4K1P1/r4P2/8 w - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+
+[Event "100"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Extra a-pawn"]
+[Black "Dautov's drawing method"]
+[Result "*"]
+[SetUp "1"]
+[FEN "8/R4p2/P4kp1/7p/7P/4K1P1/r4P2/8 b - - 0 1"]
+[PlyCount "0"]
+[Source "Quality Chess"]
+[SourceDate "2013.02.01"]
+
+ *
+

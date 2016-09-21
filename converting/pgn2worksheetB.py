@@ -6,6 +6,7 @@ HEIGHT_HEADER_INCHES = 0
 HEIGHT_FOOTER_INCHES = 0 
 INTER_DIAGRAM_SPACING_INCHES = .25
 LAYOUT = '2x3'
+DEBUG_LINES = False
 
 import re
 import sys
@@ -59,6 +60,7 @@ diagram = rltools.RlChessDiagram(c, diagWidthActual, diagHeightActual)
 #
 assert(len(sys.argv)==2)
 pathPgn = sys.argv[1]
+print "path to pgn: %s" % pathPgn
 
 # collect games from pgn
 #
@@ -67,13 +69,17 @@ fpPgn = open(pathPgn)
 while 1:
 	game = chess.pgn.read_game(fpPgn)
 	if not game: break
+	if not 'FEN' in game.headers:
+		print game
+		raise Exception('missing FEN before file offset %d' % fpPgn.tell())
 	games.append(game)
 fpPgn.close()
 
 # draw games
 #
-c.setStrokeColorRGB(0xFF,0,0)
-c.rect(margin, margin, diagAreaWidth, diagAreaHeight)
+if DEBUG_LINES:
+	c.setStrokeColorRGB(0xFF,0,0)
+	c.rect(margin, margin, diagAreaWidth, diagAreaHeight)
 
 i = 0
 while games:
@@ -88,12 +94,13 @@ while games:
 
 		x += margin
 		y += margin
-	
-		#print "drawing diagram at (%d, %d) in page area" % (x, y)
-		diagram.drawBoard(x, y, fen)
 
-		c.setStrokeColorRGB(0xFF,0,0)
-		c.rect(x,y,diagWidthActual, diagHeightActual)
+		if DEBUG_LINES:
+			print "drawing diagram at (%d, %d) in page area" % (x, y)
+			c.setStrokeColorRGB(0xFF,0,0)
+			c.rect(x,y,diagWidthActual, diagHeightActual)
+		
+		diagram.drawBoard(x, y, fen)
 
 	# new page!
 	c.showPage()
