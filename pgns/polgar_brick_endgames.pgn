@@ -1,0 +1,1736 @@
+[Event "#5063 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1/2-1/2"]
+[FEN "4k3/4P3/3K4/8/8/8/8/8 w - - 0 1"]
+[Description "endgame draw"]
+
+1.Ke6 = 1/2-1/2
+
+[Event "#5064 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1/2-1/2"]
+[FEN "8/8/8/8/4k3/5p2/8/5K2 w - - 0 1"]
+[Description "endgame draw"]
+
+1.Kf2 Kf4 2.Kf1 Kg3 3.Kg1 f2+ 4.Kf1 Kf3 = 1/2-1/2
+
+[Event "#5065 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1/2-1/2"]
+[FEN "8/8/8/8/8/pk6/8/2K5 w - - 0 1"]
+[Description "endgame draw"]
+
+1.Kb1 = 1/2-1/2
+
+[Event "#5066 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1/2-1/2"]
+[FEN "8/8/8/8/p2K4/8/k7/8 w - - 0 1"]
+[Description "endgame draw"]
+
+1.Kc3 Kb1 2.Kb4 = 1/2-1/2
+
+[Event "#5067 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1/2-1/2"]
+[FEN "8/8/8/8/p7/1k6/3K4/8 w - - 0 1"]
+[Description "endgame draw"]
+
+1.Kc1 Ka2 2.Kc2 Ka1 3.Kc1 = 1/2-1/2
+
+[Event "#5068 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1/2-1/2"]
+[FEN "8/8/2k5/4K3/p7/8/8/8 w - - 0 1"]
+[Description "endgame draw"]
+
+1.Kd4 a3 2.Kc3 a2 3.Kb2 = 1/2-1/2
+
+[Event "#5069 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1/2-1/2"]
+[FEN "8/8/5K2/8/5p2/6k1/6P1/8 w - - 0 1"]
+[Description "endgame draw"]
+
+1.Kg5 = 1/2-1/2
+
+[Event "#5070 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1/2-1/2"]
+[FEN "1k6/pP6/P7/3K4/8/8/8/8 w - - 0 1"]
+[Description "endgame draw"]
+
+1.Kc6 = 1/2-1/2
+
+[Event "#5071 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1/2-1/2"]
+[FEN "8/8/6p1/7p/5k1K/8/6P1/8 w - - 0 1"]
+[Description "endgame draw"]
+
+1.g4 hxg4 = 1/2-1/2
+
+[Event "#5072 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1/2-1/2"]
+[FEN "6K1/5P2/6q1/8/8/1k6/8/8 w - - 0 1"]
+[Description "endgame draw"]
+
+1.Kh8 Qxf7 = 1/2-1/2
+
+[Event "#5073 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1/2-1/2"]
+[FEN "7K/7P/8/8/8/5q2/2k5/8 w - - 0 1"]
+[Description "endgame draw"]
+
+1.Kg7 Qg4+ 2.Kh8 Qg6 = 1/2-1/2
+
+[Event "#5074 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1/2-1/2"]
+[FEN "8/P7/2K5/8/8/8/6k1/7q w - - 0 1"]
+[Description "endgame draw"]
+
+1.Kb7 = 1/2-1/2
+
+[Event "#5075 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1/2-1/2"]
+[FEN "1K6/2P5/1q6/8/8/8/5k2/8 w - - 0 1"]
+[Description "endgame draw"]
+
+1.Ka8 Qxc7 = 1/2-1/2
+
+[Event "#5076 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1/2-1/2"]
+[FEN "K1k5/8/8/3R4/8/8/8/2q5 w - - 0 1"]
+[Description "endgame draw"]
+
+1.Rc5+ Qxc5 1/2-1/2
+
+[Event "#5077 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1/2-1/2"]
+[FEN "7r/8/8/8/8/2pk4/2R5/3K4 w - - 0 1"]
+[Description "endgame draw"]
+
+1.Rd2+ 1/2-1/2
+
+[Event "#5078 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1/2-1/2"]
+[FEN "6K1/r5P1/5k2/8/8/8/8/8 w - - 0 1"]
+[Description "endgame draw"]
+
+1.Kh8 Rxg7 1/2-1/2
+
+[Event "#5079 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1/2-1/2"]
+[FEN "3K4/r3P3/3k4/8/8/8/8/8 w - - 0 1"]
+[Description "endgame draw"]
+
+1.e8=N+ 1/2-1/2
+
+[Event "#5080 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1/2-1/2"]
+[FEN "3R4/8/8/8/8/6K1/4p3/4k3 w - - 0 1"]
+[Description "endgame draw"]
+
+1.Kg2 1/2-1/2
+
+[Event "#5081 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1/2-1/2"]
+[FEN "8/8/8/8/8/5R2/2pk1K2/8 w - - 0 1"]
+[Description "endgame draw"]
+
+1.Rf8 c1=Q 2.Rd8+ Kc2 3.Rc8+ 1/2-1/2
+
+[Event "#5082 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1/2-1/2"]
+[FEN "2k5/1R6/K7/8/8/8/2p5/8 w - - 0 1"]
+[Description "endgame draw"]
+
+1.Rb5 c1=Q 2.Rc5+ Qxc5 1/2-1/2
+
+[Event "#5083 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1/2-1/2"]
+[FEN "8/6R1/8/4K3/8/4k3/5pp1/8 w - - 0 1"]
+[Description "endgame draw"]
+
+1.Rg3+ Ke2 2.Rxg2 1/2-1/2
+
+[Event "#5084 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1/2-1/2"]
+[FEN "1R6/8/8/3K4/8/2pk4/1p6/8 w - - 0 1"]
+[Description "endgame draw"]
+
+1.Rb3 Kc2 2.Kc4 Kd2 3.Rb8 1/2-1/2
+
+[Event "#5085 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1/2-1/2"]
+[FEN "8/8/8/K7/8/2p5/1pk5/6R1 w - - 0 1"]
+[Description "endgame draw"]
+
+1.Kb4 1/2-1/2
+
+[Event "#5086 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1/2-1/2"]
+[FEN "8/2PkPK2/8/8/8/8/8/4r3 w - - 0 1"]
+[Description "endgame draw"]
+
+1.c8=Q+ Kxc8 2.e8=Q+ Rxe8 3.Kxe8 1/2-1/2
+
+[Event "#5087 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1/2-1/2"]
+[FEN "7R/8/8/8/6k1/5ppp/5p2/5K2 w - - 0 1"]
+[Description "endgame draw"]
+
+1.Rg8+ Kf4 2.Rxg3 Kxg3 1/2-1/2
+
+[Event "#5088 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1/2-1/2"]
+[FEN "8/8/8/8/5k2/R4pp1/5p1p/5K2 w - - 0 1"]
+[Description "endgame draw"]
+
+1.Rxf3+ Kg4 2.Kg2 h1=Q+ 3.Kxh1 Kxf3 1/2-1/2
+
+[Event "#5089 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1/2-1/2"]
+[FEN "8/8/8/8/8/2kp4/2p1p3/2K1R3 w - - 0 1"]
+[Description "endgame draw"]
+
+1.Rxe2 dxe2 1/2-1/2
+
+[Event "#5090 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1/2-1/2"]
+[FEN "8/8/2B5/1K6/8/8/3pk3/8 w - - 0 1"]
+[Description "endgame draw"]
+
+1.Be8 d1=Q 2.Bh5+ 1/2-1/2
+
+[Event "#5091 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1/2-1/2"]
+[FEN "8/8/1b6/7p/8/6k1/8/6K1 w - - 0 1"]
+[Description "endgame draw"]
+
+1.Kh1 1/2-1/2
+
+[Event "#5092 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1/2-1/2"]
+[FEN "8/1k6/8/8/8/p7/b2K4/8 w - - 0 1"]
+[Description "endgame draw"]
+
+1.Kc3 Kb6 
+    ( 1...Bg8 2.Kc2 Kb6 3.Kb1 )
+2.Kb4 1/2-1/2
+
+[Event "#5093 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1/2-1/2"]
+[FEN "8/6B1/8/8/2K5/8/p7/1kb5 w - - 0 1"]
+[Description "endgame draw"]
+
+1.Kb3 1/2-1/2
+
+[Event "#5094 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1/2-1/2"]
+[FEN "8/8/4K3/8/1p6/8/2k5/1N6 w - - 0 1"]
+[Description "endgame draw"]
+
+1.Kd5 Kxb1 2.Kc4 1/2-1/2
+
+[Event "#5095 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1/2-1/2"]
+[FEN "8/8/2N5/8/8/5p2/2K3k1/8 w - - 0 1"]
+[Description "endgame draw"]
+
+1.Ne5 f2 2.Ng4 f1=Q 3.Ne3+ 1/2-1/2
+
+[Event "#5096 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1/2-1/2"]
+[FEN "8/8/8/2N5/8/1K6/4kp2/8 w - - 0 1"]
+[Description "endgame draw"]
+
+1.Ne4 f1=Q 2.Ng3+ 1/2-1/2
+
+[Event "#5097 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1/2-1/2"]
+[FEN "k7/8/8/5p2/5K1n/8/8/8 w - - 0 1"]
+[Description "endgame draw"]
+
+1.Kg5 Kb7 2.Kxh4 Kc6 3.Kg5 1/2-1/2
+
+[Event "#5098 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1/2-1/2"]
+[FEN "8/8/8/2K5/8/5k2/7p/7N w - - 0 1"]
+[Description "endgame draw"]
+
+1.Kd4 Kg2 2.Ke3 Kxh1 3.Kf2 1/2-1/2
+
+[Event "#5099 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1/2-1/2"]
+[FEN "8/8/8/6n1/8/8/4K2p/7k w - - 0 1"]
+[Description "endgame draw"]
+
+1.Kf2 Nh3+ 2.Kf1 Nf4 3.Kf2 1/2-1/2
+
+[Event "#5100 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1/2-1/2"]
+[FEN "8/6B1/8/8/8/6k1/4r3/7K w - - 0 1"]
+[Description "endgame draw"]
+
+1.Bd4 Re1+ 2.Bg1 1/2-1/2
+
+[Event "#5101 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "8/8/6b1/8/8/kp6/8/K3N3 w - - 0 1"]
+[Description "endgame draw"]
+
+1.Nc2+ Bxc2 = *
+
+[Event "#5102 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "B7/2k5/8/R2bK3/8/8/7p/3r4 w - - 0 1"]
+[Description "endgame draw"]
+
+1.Rxd5 h1=Q 2.Rc5+ Kb6 3.Bxh1 = *
+
+[Event "#5103 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "8/1k6/8/8/3K4/7p/7n/8 w - - 0 1"]
+[Description "endgame draw"]
+
+1.Ke3 Ng4+ 2.Kf3 Kc6 3.Kg3 h2 4.Kg2 Kd5 5.Kh1 = *
+
+[Event "#5104 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "1B6/8/5k2/4n3/4P3/2K4p/8/8 w - - 0 3"]
+[Description "endgame draw"]
+
+3.Kd4 Nc6+ 4.Ke3 Nxb8 5.Kf3 = *
+
+[Event "#5105 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "4k3/4P3/4K3/8/8/8/8/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.Kd6 +- *
+
+[Event "#5106 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "4k3/8/3P4/4K3/8/8/8/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.Ke6 Kd8 2.d7 Kc7 3.Ke7 +- *
+
+[Event "#5107 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "5k2/8/6KP/8/8/8/8/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.h7 +- *
+
+[Event "#5108 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "8/8/8/1P6/5k2/8/4K3/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.b6 +- *
+
+[Event "#5109 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "8/6kP/6P1/6K1/8/8/8/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.h8=Q+ Kxh8 2.Kh6 Kg8 3.g7 +- *
+
+[Event "#5110 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "8/8/4K2P/8/8/p2k4/8/8 w - - 0 3"]
+[Description "endgame win"]
+
+3.h7 a2 4.h8=Q Kc2 5.Qa1 +- *
+
+[Event "#5111 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "8/8/7P/8/8/2k5/p3K3/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.h7 a1=Q 2.h8=Q+ +- *
+
+[Event "#5112 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "8/1K6/P7/8/4k3/7p/8/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.a7 h2 2.a8=Q h1=Q 3.Kb6+ +- *
+
+[Event "#5113 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "8/4P3/4K3/8/4k3/8/4p3/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.e8=Q e1=Q 2.Kf6+ +- *
+
+[Event "#5114 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "8/8/3k4/1P1P4/8/8/6K1/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.b6 Kxd5 2.b7 *
+
+[Event "#5115 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "k7/1p6/PP1K4/8/8/8/8/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.Kc7 bxa6 2.b7+ +- *
+
+[Event "#5116 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "8/2p5/K1Pk4/8/8/8/8/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.Kb7 +- *
+
+[Event "#5117 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "8/K1p5/2P5/4k3/8/8/8/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.Kb8 Kd6 2.Kb7 +- *
+
+[Event "#5118 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "8/2k1p3/4P1K1/8/8/8/8/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.Kg7 Kc6 2.Kf8 Kd6 3.Kf7 +- *
+
+[Event "#5119 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "8/8/8/p7/kp1K4/p7/P7/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.Kc4 b3 2.axb3# *
+
+[Event "#5120 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "8/5K2/8/8/2Q5/p7/1k6/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.Qb4+ Ka2 2.Ke6 Ka1 3.Qxa3+ +- *
+
+[Event "#5121 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "K7/8/8/8/8/1Q5p/p7/k7 w - - 0 1"]
+[Description "endgame win"]
+
+1.Qc2 h2 2.Qc1# *
+
+[Event "#5122 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "8/8/8/8/6K1/8/4Q3/6kq w - - 0 1"]
+[Description "endgame win"]
+
+1.Kg3 +- *
+
+[Event "#5123 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "8/8/8/8/5K2/8/4Q2p/6k1 w - - 0 1"]
+[Description "endgame win"]
+
+1.Kg3 h1=Q 2.Qf2# *
+
+[Event "#5124 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "8/3k1P2/6q1/8/8/P7/K7/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.f8=N+ +- *
+
+[Event "#5125 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "5k2/R7/4K3/6r1/8/8/8/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.Kf6 +- *
+
+[Event "#5126 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "1r6/8/8/8/k2K4/8/8/7R w - - 0 1"]
+[Description "endgame win"]
+
+1.Ra1+ Kb3 2.Rb1+ +- *
+
+[Event "#5127 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "2R5/8/8/8/r7/8/2K5/k7 w - - 0 2"]
+[Description "endgame win"]
+
+2.Kb3 +- *
+
+[Event "#5128 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "4K3/4P2k/8/6R1/8/8/8/3r4 w - - 0 2"]
+[Description "endgame win"]
+
+2.Kf7 Rf1+ 3.Ke6 Re1+ 4.Re5 +- *
+
+[Event "#5129 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "r7/4K2k/5P2/8/8/8/8/3R4 w - - 0 2"]
+[Description "endgame win"]
+
+2.f7 Kg7 
+    ( 2...Ra7+ 3.Rd7 +- )
+3.Rg1+ +- *
+
+[Event "#5130 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "1r3k2/R7/5PK1/8/8/8/8/8 w - - 0 2"]
+[Description "endgame win"]
+
+2.Rh7 Kg8 3.f7+ Kf8 4.Rh8+ +- *
+
+[Event "#5131 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "R7/P4k2/8/8/8/8/6K1/r7 w - - 0 2"]
+[Description "endgame win"]
+
+2.Rh8 Rxa7 3.Rh7+ +- *
+
+[Event "#5132 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "R7/P7/8/2K5/8/2k5/8/r7 w - - 0 2"]
+[Description "endgame win"]
+
+2.Rc8 Rxa7 3.Kb6+ +- *
+
+[Event "#5133 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "4k1r1/1R6/5p2/5K2/8/8/8/8 w - - 0 2"]
+[Description "endgame win"]
+
+2.Ke6 Kf8 3.Kxf6 Ke8 4.Rb8+ +- *
+
+[Event "#5134 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "R6r/4k3/4P3/4K3/8/8/8/8 w - - 0 2"]
+[Description "endgame win"]
+
+2.Ra7+ Kf8 3.e7+ Kf7 4.e8=Q+ Kxe8 5.Ra8+ +- *
+
+[Event "#5135 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "7r/R2Pk3/4P3/4K3/8/8/8/8 w - - 0 2"]
+[Description "endgame win"]
+
+2.d8=Q+ Kxd8 3.e7+ Ke8 4.Ra8+ +- *
+
+[Event "#5136 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "1r4k1/5RP1/6PK/8/8/8/8/8 w - - 0 2"]
+[Description "endgame win"]
+
+2.Rf8+ Rxf8 3.gxf8=Q+ Kxf8 4.Kh7 +- *
+
+[Event "#5137 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "1k3r1r/7R/K1R5/8/8/8/8/8 w - - 0 2"]
+[Description "endgame win"]
+
+2.Rb7+ Ka8 3.Rcb6 Rhg8 4.Ra7# *
+
+[Event "#5138 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "3rr2k/3R4/7K/8/8/8/8/4R3 w - - 0 2"]
+[Description "endgame win"]
+
+2.Ree7 Ra8 3.Rh7+ Kg8 4.Rdg7+ Kf8 5.Rh8# *
+
+[Event "#5139 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "1R6/8/8/8/8/2K5/1p6/k7 w - - 0 2"]
+[Description "endgame win"]
+
+2.Kc2 +- *
+
+[Event "#5140 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "7R/8/8/8/8/5K2/3p4/3k4 w - - 0 2"]
+[Description "endgame win"]
+
+2.Rh1+ Kc2 3.Ke2 +- *
+
+[Event "#5141 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "3R4/8/8/8/8/8/4p1K1/4k3 w - - 0 2"]
+[Description "endgame win"]
+
+2.Re8 Kd1 3.Kf2 +- *
+
+[Event "#5142 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "8/3K4/8/8/3pk3/8/8/3R4 w - - 0 2"]
+[Description "endgame win"]
+
+2.Kc6 +- *
+
+[Event "#5143 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "8/4K3/8/8/3kp3/8/8/4R3 w - - 0 2"]
+[Description "endgame win"]
+
+2.Kf6 e3 3.Kf5 Kd3 4.Kf4 e2 5.Kf3 +- *
+
+[Event "#5144 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "3K4/8/8/3k4/3p4/8/8/3R4 w - - 0 2"]
+[Description "endgame win"]
+
+2.Kd7 Ke4 
+    ( 2...Kc4 3.Ke6 +- )
+3.Kc6 +- *
+
+[Event "#5145 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "1R6/8/8/8/2K5/8/p7/k7 w - - 0 2"]
+[Description "endgame win"]
+
+2.Kb3 Kb1 3.Rh8 a1=N+ 4.Kc3 Ka2 5.Rb8 +- *
+
+[Event "#5146 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "8/4K3/8/3pk3/3R4/8/8/8 w - - 0 2"]
+[Description "endgame win"]
+
+2.Rd2 d4 3.Rd1 Kd5 4.Kd7 +- *
+
+[Event "#5147 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "8/8/8/8/8/3K1kp1/8/1R6 w - - 0 2"]
+[Description "endgame win"]
+
+2.Rf1+ Kg2 3.Ke2 +- *
+
+[Event "#5148 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "8/7R/8/8/2K5/8/p7/1k6 w - - 0 2"]
+[Description "endgame win"]
+
+2.Kb3 a1=N+ 3.Kc3 Ka2 4.Rb7 +- *
+
+[Event "#5149 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "8/3KR3/8/8/3kp3/8/8/8 w - - 0 2"]
+[Description "endgame win"]
+
+2.Ke6 e3 3.Kf5 Kd3 4.Kf4 e2 5.Kf3 +- *
+
+[Event "#5150 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "8/8/4K3/8/2k5/3p4/8/3R4 w - - 0 2"]
+[Description "endgame win"]
+
+2.Ke5 Kc3 3.Ke4 d2 4.Ke3 +- *
+
+[Event "#5151 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "2k5/P1P5/1Kr5/8/8/8/8/8 w - - 0 4"]
+[Description "endgame win"]
+
+4.Kb5 Kb7 5.a8=Q+ Kxa8 6.Kxc6 Ka7 7.c8=R 1-0
+
+[Event "#5152 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "8/8/8/8/8/3k4/2p1p3/2K4R w - - 0 1"]
+[Description "endgame win"]
+
+1.Re1 Ke3 2.Kxc2 Kf2 3.Kd2 1-0
+
+[Event "#5153 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "8/1Pk5/2Pr4/2K5/8/8/8/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.b8=Q+ Kxb8 2.Kxd6 Kc8 3.c7 1-0
+
+[Event "#5154 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "8/6P1/4KP2/8/3k4/8/8/6r1 w - - 0 1"]
+[Description "endgame win"]
+
+1.f7 1-0
+
+[Event "#5155 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "8/8/2P5/3P4/6K1/8/4k3/3r4 w - - 0 1"]
+[Description "endgame win"]
+
+1.c7 Rc1 2.d6 Ke3 3.d7 *
+
+[Event "#5156 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "8/8/1PP5/8/6K1/8/4k3/1r6 w - - 0 1"]
+[Description "endgame win"]
+
+1.c7 Rc1 2.b7 1-0
+
+[Event "#5157 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "8/8/8/8/8/4p3/2Kp1k2/R7 w - - 0 1"]
+[Description "endgame win"]
+
+1.Kd3 Kf3 2.Rf1+ Kg2 3.Ke2 1-0
+
+[Event "#5158 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "5R2/8/8/8/8/8/2p1p3/2K1k3 w - - 0 1"]
+[Description "endgame win"]
+
+1.Rh8 Kf2 2.Rh2+ Kf1 3.Rh1+ Kf2 4.Kd2 1-0
+
+[Event "#5159 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "7R/8/8/8/8/8/2p1p3/2K1k3 w - - 0 1"]
+[Description "endgame win"]
+
+1.Rh1+ Kf2 2.Kd2 1-0
+
+[Event "#5160 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "8/5P2/8/8/4r3/8/5K2/7k w - - 0 1"]
+[Description "endgame win"]
+
+1.f8=R Rh4 2.Kg3 1-0
+
+[Event "#5161 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "2k5/2P1P3/2KPr3/8/8/8/8/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.e8=Q+ Rxe8 2.d7# 1-0
+
+[Event "#5162 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "8/1Pk5/2P4r/2KP4/8/8/8/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.d6+ Rxd6 2.b8=Q+ 1-0
+
+[Event "#5163 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "1k6/2N5/1K6/5B2/8/8/8/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.Na6+ Ka8 2.Be4# 1-0
+
+[Event "#5164 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "1k6/8/1K6/8/8/4B3/4B3/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.Bg4 Ka8 2.Ka6 Kb8 3.Bf4+ Ka8 4.Bf3# 1-0
+
+[Event "#5165 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "8/8/2B1p3/1P5K/8/8/3pk3/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.Kg4 d1=Q 2.Bf3+ Ke1 3.Bxd1 Kxd1 4.b6 1-0
+
+[Event "#5166 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "6K1/7P/3B4/8/3bk3/8/8/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.Bf8 Kf5 2.Bg7 1-0
+
+[Event "#5167 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "2k5/4P3/3K4/8/b7/8/4B3/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.Bg4+ Kb7 2.Bd7 1-0
+
+[Event "#5168 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "8/6KB/7P/6k1/8/1b6/8/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.Bg6 Bg8 2.Be8 1-0
+
+[Event "#5169 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "4n3/6k1/3P4/8/1K6/8/8/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.d7 1-0
+
+[Event "#5170 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "8/1nk5/P7/8/8/8/2K5/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.a7 1-0
+
+[Event "#5171 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "6n1/3k4/5PK1/8/8/8/8/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.f7 Ne7+ 2.Kg5 1-0
+
+[Event "#5172 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "8/2N3k1/1K1P1n2/8/8/8/8/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.Ne8+ Nxe8 2.d7 1-0
+
+[Event "#5173 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "5b2/8/2K1P1n1/6k1/8/8/8/5R2 w - - 0 1"]
+[Description "endgame win"]
+
+1.Rxf8 Nxf8 2.e7 1-0
+
+[Event "#5174 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "6n1/2k5/4K3/6P1/8/8/8/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.Kf7 Kd6 2.Kxg8 Ke6 3.g6 1-0
+
+[Event "#5175 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "n7/P7/8/3K4/8/5k2/8/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.Kc6 Ke4 2.Kb7 Kd5 3.Kxa8 Kc6 4.Kb8 1-0
+
+[Event "#5176 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "K1k5/P7/8/2N5/8/8/8/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.Na6 Kd7 2.Kb7 1-0
+
+[Event "#5177 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "8/8/8/8/8/p2N4/2K5/k7 w - - 0 1"]
+[Description "endgame win"]
+
+1.Nc1 a2 2.Nb3# 1-0
+
+[Event "#5178 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "8/8/8/4P3/2k5/6K1/8/2n5 w - - 0 1"]
+[Description "endgame win"]
+
+1.e6 Ne2+ 2.Kh2 1-0
+
+[Event "#5179 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "k1K5/1p6/1P6/8/3N4/8/8/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.Nc6 bxc6 2.b7+ 1-0
+
+[Event "#5180 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "k1K5/1p6/1P6/8/8/p7/N7/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.Nb4 a2 2.Nd5 a1=Q 3.Nc7# 1-0
+
+[Event "#5181 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "k1K5/8/2N5/8/8/2p5/2N5/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.Na3 c2 2.Nc4 c1=Q 3.Nb6# 1-0
+
+[Event "#5182 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "4k3/1R6/4K3/8/8/6b1/8/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.Rg7 1-0
+
+[Event "#5183 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "1k6/3b4/1K6/8/8/6R1/8/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.Rg8+ Bc8 2.Rh8 1-0
+
+[Event "#5184 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "6R1/8/8/8/8/4K3/7k/7n w - - 0 1"]
+[Description "endgame win"]
+
+1.Kf3 1-0
+
+[Event "#5185 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "8/8/8/8/2K5/8/3k4/2b4R w - - 0 1"]
+[Description "endgame win"]
+
+1.Kb3 1-0
+
+[Event "#5186 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "8/8/8/6k1/7b/4K3/8/7R w - - 0 1"]
+[Description "endgame win"]
+
+1.Kf3 Kh5 2.Kf4 1-0
+
+[Event "#5187 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "8/8/8/6kp/4R2b/8/6K1/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.Kf3 1-0
+
+[Event "#5188 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "7R/2k1K3/6b1/8/4p3/8/8/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.Kf6 1-0
+
+[Event "#5189 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "k7/5R2/1K1b4/8/8/8/8/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.Ra7+ Kb8 2.Rd7 1-0
+
+[Event "#5190 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "8/P7/1K6/8/8/1R3b2/5kp1/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.Rxf3+ Kxf3 2.a8=Q+ 1-0
+
+[Event "#5191 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "8/3k4/8/4B2n/3K4/8/6P1/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.g4 1-0
+
+[Event "#5192 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "7k/6n1/6P1/6K1/8/1B6/8/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.Bf7 1-0
+
+[Event "#5193 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "3n4/8/5K2/3B4/8/p1k5/P7/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.Ke7 Kd4 2.Bg2 1-0
+
+[Event "#5194 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "8/8/6k1/5N1b/7K/8/2B5/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.Bb1 Bd1 2.Ne3+ 1-0
+
+[Event "#5195 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "6b1/k7/8/2K2N2/4B3/8/8/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.Ne7 Bf7 2.Nc6+ Ka6 3.Bd3+ Kb7 4.Nd8+ 1-0
+
+[Event "#5196 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "2b5/K7/8/5p2/8/3B4/4N3/5k2 w - - 0 1"]
+[Description "endgame win"]
+
+1.Kb8 Bd7 2.Kc7 Be8 3.Kd8 Bf7 4.Ke7 Bg8 5.Kf8 Bh7 6.Kg7 1-0
+
+[Event "#5197 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "3b4/8/2K4B/8/8/8/3N4/2k5 w - - 0 1"]
+[Description "endgame win"]
+
+1.Kd7 Bf6 2.Ne4+ 1-0
+
+[Event "#5198 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "2k5/2P2N2/8/8/8/P7/2K5/b7 w - - 0 1"]
+[Description "endgame win"]
+
+1.Kb1 Bc3 2.Nd6+ Kxc7 3.Nb5+ 1-0
+
+[Event "#5199 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "1k6/1p6/3P4/8/3N4/1P6/8/1b1K4 w - - 0 1"]
+[Description "endgame win"]
+
+1.Kc1 Bd3 2.d7 Kc7 3.Ne6+ Kxd7 4.Nc5+ 1-0
+
+[Event "#5200 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "1-0"]
+[FEN "8/8/7b/P1k5/3N4/8/5PKp/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.Kh1 1-0
+
+[Event "#5201 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "8/P3P1k1/6p1/8/8/1P1B4/1KP3b1/4r3 w - - 0 1"]
+[Description "endgame win"]
+
+1.Be4 +- *
+
+[Event "#5202 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "8/1P2P3/6k1/6p1/2N5/P5b1/K1P5/4r3 w - - 0 1"]
+[Description "endgame win"]
+
+1.Ne5+ +- *
+
+[Event "#5203 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "8/8/P1N5/3p4/k7/2K5/5b2/8 w - - 0 1"]
+[Description "endgame win"]
+
+1.Nd4 +- *
+
+[Event "#5204 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "8/6k1/5pp1/P7/7b/3K3p/7P/4N3 w - - 0 1"]
+[Description "endgame win"]
+
+1.Nf3 Bf2 2.Nd4 Bg3 3.a6 Bb8 4.Nc6 +- *
+
+[Event "#5205 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "8/2K5/5p2/5P2/4k3/8/8/5N2 w - - 0 1"]
+[Description "endgame win"]
+
+1.Ng3+ Kf4 2.Kd6 Kxg3 3.Ke6 Kg4 4.Kxf6 +- *
+
+[Event "#5206 Chess: 5334 Problems, Combinations, and Games by László Polgár"]
+[Site "Copyright 1994 Könemann"]
+[Date "1994.??.??"]
+[Round "-"]
+[White "Simple endgames"]
+[Black "White to move"]
+[Result "*"]
+[FEN "3r4/8/8/8/k2P4/3K4/8/1R6 w - - 0 1"]
+[Description "endgame win"]
+
+1.d5 Ka5 2.Kd4 Ka6 3.Ke5 Re8+ 4.Kd6 Rd8+ 5.Ke6 Re8+ 6.Kd7 Re2 7.d6 Rd2 8.
+Kc7 Rc2+ 9.Kd8 Rd2 10.d7 Re2 11.Rb4 Re1 12.Kc7 Rc1+ 13.Kd6 Rd1+ 14.Kc6 
+Rc1+ 15.Kd5 Rd1+ 16.Rd4 +- *
+

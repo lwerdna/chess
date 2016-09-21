@@ -6,10 +6,9 @@ HEIGHT_HEADER_INCHES = 0
 HEIGHT_FOOTER_INCHES = 0 
 INTER_DIAGRAM_SPACING_INCHES = 0
 
-ARRANGEMENT = '2x1'
-
 import re
 import sys
+import random
 
 # reportlab stuff
 from reportlab.lib.units import inch
@@ -21,15 +20,11 @@ from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfgen import canvas
 
 # reportlab helper
-from RlTools import RlChessDiagram
+from rltools import RlChessDiagram
 
 # python-chess
 import chess
 import chess.pgn
-
-###############################################################################
-# main
-###############################################################################
 
 pdfmetrics.registerFont(TTFont('ChessAlpha2', 'resources/ChessAlpha2.ttf'))
 pdfmetrics.registerFont(TTFont('KGPrimaryPenmanshipLined', 'resources/KGPrimaryPenmanshipLined.ttf'))
@@ -61,98 +56,20 @@ diagMaxWidth = 0
 diagMaxHeight = 0
 diagram = None
 
-if ARRANGEMENT == '1x1':
-	# width is page width minus margins
-	diagMaxWidth = diagAreaWidth
-	diagMaxHeight = diagAreaHeight
-	diagram = RlChessDiagram(c, diagMaxWidth, diagMaxHeight)
+# width is page width minus margins
+diagMaxWidth = diagAreaWidth
+diagMaxHeight = (diagAreaHeight - diagSpacing)/2
+diagram = RlChessDiagram(c, diagMaxWidth, diagMaxHeight)
 
-	# center the diagram in the diagArea
-	x = (diagAreaWidth - diagram.width)/2
-	y = (diagAreaHeight - diagram.height)/2
+# deltaX = (diagAreaWidth - diagram.width)/2 # to center it
+deltaX = 0 
+deltaY = (diagAreaHeight - 2*diagram.height)/3
 
-	diagLocations.append([x,y])
+x = deltaX 
+y = deltaY
 
-elif ARRANGEMENT == '2x1':
-	# width is page width minus margins
-	diagMaxWidth = diagAreaWidth
-	diagMaxHeight = (diagAreaHeight - diagSpacing)/2
-	diagram = RlChessDiagram(c, diagMaxWidth, diagMaxHeight)
-   
-	# deltaX = (diagAreaWidth - diagram.width)/2 # to center it
-	deltaX = 0 
-	deltaY = (diagAreaHeight - 2*diagram.height)/3
-
-	x = deltaX 
-	y = deltaY
-
-	diagLocations.append([x,y])
-	diagLocations.append([x,y + diagram.height + deltaY])
-
-elif ARRANGEMENT == '2x2':
-	# width is page width minus margins minus inter diagram spacing
-	diagMaxWidth = (diagAreaWidth - diagSpacing) / 2
-	diagMaxHeight = (diagAreaHeight - diagSpacing) / 2
-	diagram = RlChessDiagram(c, diagMaxWidth, diagMaxHeight)
-
-	deltaX = (diagAreaWidth - 2*diagram.width)/3
-	deltaY = (diagAreaHeight - 2*diagram.height)/3
-
-	x = deltaX
-	y = deltaY 
-
-	diagLocations.append([x,y])
-	diagLocations.append([x + diagram.width + deltaX, y])
-	diagLocations.append([x, y + diagram.height + deltaY])
-	diagLocations.append([x + diagram.width + deltaX, y + diagram.height + deltaY])
-  
-elif ARRANGEMENT == '3x2':
-	# width is page width minus margins minus inter diagram spacing
-	diagMaxWidth = (diagAreaWidth - diagSpacing) / 2
-	diagMaxHeight = (diagAreaHeight - 2*diagSpacing) / 3
-	diagram = RlChessDiagram(c, diagMaxWidth, diagMaxHeight)
-
-	deltaX = (diagAreaWidth - 2*diagram.width)/3
-	deltaY = (diagAreaHeight - 3*diagram.height)/4
-
-	x = deltaX
-	y = deltaY 
-
-	diagLocations.append([x + 0*diagram.width + 0*deltaX, y + 0*diagram.height + 0*deltaY])
-	diagLocations.append([x + 1*diagram.width + 1*deltaX, y + 0*diagram.height + 0*deltaY])
-
-	diagLocations.append([x + 0*diagram.width + 0*deltaX, y + 1*diagram.height + 1*deltaY])
-	diagLocations.append([x + 1*diagram.width + 1*deltaX, y + 1*diagram.height + 1*deltaY])
-
-	diagLocations.append([x + 0*diagram.width + 0*deltaX, y + 2*diagram.height + 2*deltaY])
-	diagLocations.append([x + 1*diagram.width + 1*deltaX, y + 2*diagram.height + 2*deltaY])
-
-
-elif ARRANGEMENT == '3x3':
-	# width is page width minus margins minus inter diagram spacing
-	diagMaxWidth = (diagAreaWidth - 2*diagSpacing) / 3
-	diagMaxHeight = (diagAreaHeight - 2*diagSpacing) / 3
-	diagram = RlChessDiagram(c, diagMaxWidth, diagMaxHeight)
-
-	deltaX = (diagAreaWidth - 3*diagram.width)/4
-	deltaY = (diagAreaHeight - 3*diagram.height)/4
-
-	x = deltaX
-	y = deltaY 
-
-	diagLocations.append([x + 0*diagram.width + 0*deltaX, y + 0*diagram.height + 0*deltaY])
-	diagLocations.append([x + 1*diagram.width + 1*deltaX, y + 0*diagram.height + 0*deltaY])
-	diagLocations.append([x + 2*diagram.width + 2*deltaX, y + 0*diagram.height + 0*deltaY])
-
-	diagLocations.append([x + 0*diagram.width + 0*deltaX, y + 1*diagram.height + 1*deltaY])
-	diagLocations.append([x + 1*diagram.width + 1*deltaX, y + 1*diagram.height + 1*deltaY])
-	diagLocations.append([x + 2*diagram.width + 2*deltaX, y + 1*diagram.height + 1*deltaY])
-
-	diagLocations.append([x + 0*diagram.width + 0*deltaX, y + 2*diagram.height + 2*deltaY])
-	diagLocations.append([x + 1*diagram.width + 1*deltaX, y + 2*diagram.height + 2*deltaY])
-	diagLocations.append([x + 2*diagram.width + 2*deltaX, y + 2*diagram.height + 2*deltaY])
-
-import random
+diagLocations.append([x,y])
+diagLocations.append([x,y + diagram.height + deltaY])
 
 HERO_SIZE = 64
 DESCRIPTION_SIZE = 16
@@ -172,8 +89,6 @@ fpPgn.close()
 
 i = 0
 while i < len(games):
-	print "i is: %d" % i
-
 	for k in [i,i+1]:
 		if k>=len(games): continue
 
@@ -189,7 +104,7 @@ while i < len(games):
 		y += margin + HEIGHT_FOOTER_INCHES * unitsPerInch - 20
 	
 		print "drawing diagram at (%d, %d) in page area" % (x, y)
-		diagram.drawBoard(x, y, fenStart)
+		diagram.drawBoard(x, y, fen)
 	
 		# locate top right of diagram and draw hero 
 		x += diagram.width - 16
@@ -199,7 +114,7 @@ while i < len(games):
 		c.drawString(x, y, heroChar)
 	
 		# locate below hero and draw problem description
-		problemDescription = games[k].headers['Description']
+		problemDescription = games[k].headers['Description'].upper()
 		y -= DESCRIPTION_SIZE + 48
 		c.setFont('Comic', DESCRIPTION_SIZE)
 		c.drawString(x, y, problemDescription)
@@ -219,13 +134,13 @@ while i < len(games):
 	
 		# locate below
 		y -= ANSWER_SIZE + 8
+		x -= 28 
 		c.setFont('KGPrimaryPenmanshipLined', ANSWER_SIZE)
-		c.drawString(x, y, '	   ')
+		c.drawString(x, y, '	       ')
 
 	# new page!
 	c.showPage()
 	i = i+2
 	print "on %d/%d (%f%%)" % (i,len(games),1.0*i/len(games))
-	break
 
 c.save()

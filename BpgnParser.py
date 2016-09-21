@@ -167,13 +167,6 @@ class PgnChessMatch:
 
             self.states.append(nextState)
 
-    # return list of lists 
-    def getOccupancyArrays(self):
-        result = []
-
-        for state in self.states:
-            result.append(x. 
-
     def __str__(self):
         answer = ''
         #answer = '%s[%s],%s[%s] vs %s[%s],%s[%s]\n' % ( \
