@@ -1,7 +1,8 @@
-CFLAGS = -std=c++11
+CFLAGS = -std=c++11 -I/usr/local/lib
 FLAGS_DEBUG = -g -O0
 FLAGS_FLTK = $(shell fltk-config --use-images --cxxflags )
 LD_FLTK = $(shell fltk-config --use-images --ldstaticflags)
+LD_FLAGS = -L/usr/local/lib
 LINK = $(CXX)
 
 all: FastFen
@@ -25,7 +26,7 @@ FastFenLogic.o: FastFenLogic.cxx FastFenLogic.h
 # LINK
 #
 FastFen: FastFenGui.o FastFenLogic.o ChessView.o Fl_Text_Display_Log.o Makefile
-	$(LINK) FastFenGui.o FastFenLogic.o ChessView.o Fl_Text_Display_Log.o -o fastfen $(LD_FLTK) -lautils
+	$(LINK) FastFenGui.o FastFenLogic.o ChessView.o Fl_Text_Display_Log.o -o fastfen $(LD_FLAGS) $(LD_FLTK) -lautils
 
 # OTHER targets
 #

@@ -30,20 +30,22 @@ class RlChessDiagram:
 		self.canvas = canvas
 
 		# increase the font size until we surpass the limits, then decrement back
-		self.fontSize = 1 
+		self.fontSymSize = 1 
 		while 1:
-			canvas.setFont('ChessAlpha2', self.fontSize)
+			canvas.setFont('ChessAlpha2', self.fontSymSize)
 			candidateWidth = canvas.stringWidth(self.topBorderStr)
 
 			if candidateWidth > maxWidth:
 				break
-			if self.fontSize * self.heightInChessChars > maxHeight:
+			if self.fontSymSize * self.heightInChessChars > maxHeight:
 				break
-			self.fontSize += 1
-		self.fontSize -= 1
+			self.fontSymSize += 1
+		self.fontSymSize -= 1
+
+		self.fontTextSize = self.fontSymSize - 8
 
 		# final calculations
-		canvas.setFont('ChessAlpha2', self.fontSize)
+		canvas.setFont('ChessAlpha2', self.fontSymSize)
 		self.width = self.height = canvas.stringWidth(self.topBorderStr)
 
 	# input:
@@ -92,23 +94,27 @@ class RlChessDiagram:
 	#   fen string
 	# notes:
 	#   assumes that "Alpha2" is registered font 
-	def drawBoard(self, xInit, yInit, fen):
-		print "drawing fen: %s" % fen
+	def drawBoard(self, xInit, yInit, fen, title):
+		print "drawing fen: %s (title: %s)" % (fen, title)
 		[places, activePlayer, castleAvail, enPassTarget, \
 			halfMoveClock, fullMoveNum] = re.split(' ', fen)
-	
-		self.canvas.setFont('ChessAlpha2', self.fontSize)
-		charWidth = self.canvas.stringWidth('\'')
-		charHeight = self.fontSize
 	
 		rank = 8
 		file_ = 'a'
 
 		# start a little higher, since we draw top-down for ease with order of fen encoding
 		x = xInit
-		y = yInit + self.heightInChessChars * self.fontSize
-	
+		y = yInit + self.heightInChessChars * self.fontSymSize
+
+		# print title
+		self.canvas.setFont('Helvetica', self.fontTextSize)
+		self.canvas.drawString(x, y+2, title)
+		
 		# print top board border
+		self.canvas.setFont('ChessAlpha2', self.fontSymSize)
+		charWidth = self.canvas.stringWidth('\'')
+		charHeight = self.fontSymSize
+	
 		#print "drew top border at: (%d, %d)" % (x, y)
 		self.canvas.drawString(x, y, u'\u00f9\u00fa\u00fa\u00fa\u00fa\u00fa\u00fa\u00fa\u00fa\u00fb')
 		y -= charHeight
@@ -177,7 +183,7 @@ class RlChessDiagram:
 		s += '  dimensions: (%d, %d)\n' % \
 			(self.width, self.height)
 
-		s += '  font size: %d\n' % self.fontSize
+		s += '  font size: %d\n' % self.fontSymSize
 
 		return s
 
@@ -330,16 +336,16 @@ def getDiagLayout(canvas, areaWidth, areaHeight, diagSpacing, arrangement):
 	
 		x = deltaX
 		y = deltaY 
-	
-		diagLocations.append([x + 0*diagram.width + 0*deltaX, y + 0*diagram.height + 0*deltaY])
-		diagLocations.append([x + 1*diagram.width + 1*deltaX, y + 0*diagram.height + 0*deltaY])
+
+		diagLocations.append([x + 0*diagram.width + 0*deltaX, y + 2*diagram.height + 2*deltaY])
+		diagLocations.append([x + 1*diagram.width + 1*deltaX, y + 2*diagram.height + 2*deltaY])
 	
 		diagLocations.append([x + 0*diagram.width + 0*deltaX, y + 1*diagram.height + 1*deltaY])
 		diagLocations.append([x + 1*diagram.width + 1*deltaX, y + 1*diagram.height + 1*deltaY])
 	
-		diagLocations.append([x + 0*diagram.width + 0*deltaX, y + 2*diagram.height + 2*deltaY])
-		diagLocations.append([x + 1*diagram.width + 1*deltaX, y + 2*diagram.height + 2*deltaY])
-	
+		diagLocations.append([x + 0*diagram.width + 0*deltaX, y + 0*diagram.height + 0*deltaY])
+		diagLocations.append([x + 1*diagram.width + 1*deltaX, y + 0*diagram.height + 0*deltaY])
+		
 	elif arrangement == '3x3':
 		# +-+ +-+ +-+
 		# | | | | | |

@@ -23,7 +23,7 @@ while 1:
 		print node.board()
 
 		engine.position(node.board())
-		(moveBest, movePonder) = engine.go(movetime=3000)
+		(moveBest, movePonder) = engine.go(movetime=3000, ponder=False)
 		print moveBest
 		print dir(moveBest)
 

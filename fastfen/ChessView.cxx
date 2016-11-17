@@ -100,6 +100,7 @@ void ChessView::draw(void)
 				lookup = p2imgDark;
 
 			const char **pixmapData = lookup[boardArray[rank][file]];
+			
 			fl_draw_pixmap(pixmapData, anchorX+file*SQUARE_DIMENSION, anchorY+rank*SQUARE_DIMENSION);
 		}
 	}
@@ -220,7 +221,7 @@ void ChessView::fenSet(const char *fen)
 
 int ChessView::handle(int event)
 {
-    int rc = 0; /* 0 if not used or understood, 1 if event was used and can be deleted */
+    int i,j,rc = 0; /* 0 if not used or understood, 1 if event was used and can be deleted */
 
 	int keyCode = Fl::event_key();
 
@@ -247,6 +248,12 @@ int ChessView::handle(int event)
 				if(selFile<7) selFile++; rc=1; break;
             case FL_Down:
 				if(selRank<7) selRank++; rc=1; break;
+			case FL_Escape:
+				for(i=0; i<8; ++i)
+					for(j=0; j<8; ++j)
+						boardArray[i][j] = ' ';
+				rc = 1;
+				break;
 			default:
 				if(Fl::event_length()==1) {
 					const char *text = Fl::event_text();
