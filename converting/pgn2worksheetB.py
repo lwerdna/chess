@@ -45,6 +45,11 @@ print "diag area (w,h)=(%d,%d) units" % (diagAreaWidth, diagAreaHeight)
 
 # diagram locations, numbers
 c = canvas.Canvas('worksheets.pdf', pagesize=letter)
+#print repr(c.getAvailableFonts())
+#['Courier', 'Courier-Bold', 'Courier-BoldOblique', 'Courier-Oblique', \
+# 'Helvetica', 'Helvetica-Bold', 'Helvetica-BoldOblique', 'Helvetica-Oblique', \
+# 'Symbol', 'Times-Bold', 'Times-BoldItalic', 'Times-Italic', 'Times-Roman', ' \
+# ZapfDingbats']
 
 [diagWidthActual, diagHeightActual, diagLocations] = \
 	rltools.getDiagLayout(c, diagAreaWidth, diagAreaHeight, diagSpacing, LAYOUT)
@@ -59,38 +64,48 @@ diagram = rltools.RlChessDiagram(c, diagWidthActual, diagHeightActual)
 # parse arguments
 #
 assert(len(sys.argv)==2)
-pathPgn = sys.argv[1]
-print "path to pgn: %s" % pathPgn
+inputFname = sys.argv[1]
+print "path to pgn: %s" % inputFname
 
-# collect games from pgn
+# collect positions from pgn
 #
-games=[]
-fpPgn = open(pathPgn)
-while 1:
-	game = chess.pgn.read_game(fpPgn)
-	if not game: break
-	if not 'FEN' in game.headers:
-		print game
-		raise Exception('missing FEN before file offset %d' % fpPgn.tell())
-	games.append(game)
-fpPgn.close()
+positions=[]
 
-# draw games
+# treat it like a pgn?
+if re.match(r'^.*\.pgn$', inputFname):
+	fpPgn = open(inputFname)
+	while 1:
+		game = chess.pgn.read_game(fpPgn)
+		if not game: break
+		if not 'FEN' in game.headers:
+			print game
+			raise Exception('missing FEN before file offset %d' % fpPgn.tell())
+		positions.append(game)
+	fpPgn.close()
+# else just newlines
+else:
+	fp = open(inputFname)
+	positions = fp.readlines()
+	positions = filter(lambda x: x and not x.isspace(), positions)
+	fp.close()
+
+random.shuffle(positions)
+
+# draw positions
 #
 if DEBUG_LINES:
 	c.setStrokeColorRGB(0xFF,0,0)
 	c.rect(margin, margin, diagAreaWidth, diagAreaHeight)
 
-i = 0
-while games:
+i=0;
+while positions:
 	for [x,y] in diagLocations:
 		#c.setFillColorRGB(.3,.3,.3)
 		c.setFillColorRGB(0,0,0)
 
-		if not games: break
-		game = games[0]
-		games = games[1:]
-		fen = game.headers['FEN']
+		if not positions: break
+		position = positions[0]
+		positions = positions[1:]
 
 		x += margin
 		y += margin
@@ -100,7 +115,9 @@ while games:
 			c.setStrokeColorRGB(0xFF,0,0)
 			c.rect(x,y,diagWidthActual, diagHeightActual)
 		
-		diagram.drawBoard(x, y, fen)
+		diagram.drawBoard(x, y, position, "                    Quiz %d:" % (i+1))
+		#diagram.drawBoard(x, y, position, "")
+		i += 1
 
 	# new page!
 	c.showPage()
