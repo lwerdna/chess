@@ -69,7 +69,9 @@ print "path to pgn: %s" % inputFname
 
 # collect positions from pgn
 #
-positions=[]
+
+# quiz is list of (FEN, description) tuples
+quizes=[]
 
 # treat it like a pgn?
 if re.match(r'^.*\.pgn$', inputFname):
@@ -80,7 +82,12 @@ if re.match(r'^.*\.pgn$', inputFname):
 		if not 'FEN' in game.headers:
 			print game
 			raise Exception('missing FEN before file offset %d' % fpPgn.tell())
-		positions.append(game)
+
+		description = 'quiz %d' % (len(quizes)+1)
+		if 'Description' in game.headers:
+			description = game.headers['Description']
+			
+		quizes.append( (game.headers['FEN'], description) )
 	fpPgn.close()
 # else just newlines
 else:
@@ -88,8 +95,10 @@ else:
 	positions = fp.readlines()
 	positions = filter(lambda x: x and not x.isspace(), positions)
 	fp.close()
+	for (quizNum,position) in enumerate(positions):
+		quizes.append( (position, ('quiz %d'%(quizNum+1))) )
 
-random.shuffle(positions)
+#random.shuffle(quizes)
 
 # draw positions
 #
@@ -97,15 +106,14 @@ if DEBUG_LINES:
 	c.setStrokeColorRGB(0xFF,0,0)
 	c.rect(margin, margin, diagAreaWidth, diagAreaHeight)
 
-i=0;
-while positions:
+while quizes:
 	for [x,y] in diagLocations:
 		#c.setFillColorRGB(.3,.3,.3)
 		c.setFillColorRGB(0,0,0)
 
-		if not positions: break
-		position = positions[0]
-		positions = positions[1:]
+		if not quizes: break
+		(fen,descr) = quizes[0]
+		quizes = quizes[1:]
 
 		x += margin
 		y += margin
@@ -115,9 +123,7 @@ while positions:
 			c.setStrokeColorRGB(0xFF,0,0)
 			c.rect(x,y,diagWidthActual, diagHeightActual)
 		
-		diagram.drawBoard(x, y, position, "                    Quiz %d:" % (i+1))
-		#diagram.drawBoard(x, y, position, "")
-		i += 1
+		diagram.drawBoard(x, y, fen, descr)
 
 	# new page!
 	c.showPage()

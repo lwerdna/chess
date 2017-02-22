@@ -104,7 +104,7 @@ while i < len(games):
 		y += margin + HEIGHT_FOOTER_INCHES * unitsPerInch - 20
 	
 		print "drawing diagram at (%d, %d) in page area" % (x, y)
-		diagram.drawBoard(x, y, fen)
+		diagram.drawBoard(x, y, fen, "")
 	
 		# locate top right of diagram and draw hero 
 		x += diagram.width - 16
