@@ -617,15 +617,15 @@ if __name__ == '__main__':
     print "TESTING FIRST MOVE!"
     state.fromFEN('rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 0')
     print state
-    state = state.transition('e4')
+    state = state.transition(ChessMove.ChessMove('w', 1, 'e4'))
     print state
-    print state.toOccupancyArray()
+    print state.occupancy()
 
     print "TESTING CASTLE!"
     state.fromFEN('r1bqk2r/1ppp1ppp/1p2np2/8/3PP3/2P2N2/PP3PPP/R2QK2R b KQkq - 0 0')
     print state
-    state = state.transition('O-O')
+    state = state.transition(ChessMove.ChessMove('b', 1, 'O-O'))
     print state
-    print state.toOccupancyArray()
+    print state.occupancy()
 
     
